@@ -1,4 +1,3 @@
-// 1. page.js (Server Component)
 import AboutCardSection from "@/components/about/AboutCardSection";
 import OurValues from "@/components/about/OurValues";
 import LogoSlider from "@/components/about/LogoSlider";
