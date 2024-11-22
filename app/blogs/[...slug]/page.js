@@ -1,4 +1,3 @@
-// app/blogs/blog/[...slug]/page.js
 import { BlogContent } from "@/components/blogs/BlogContent";
 import axios from "axios";
 
@@ -112,7 +111,7 @@ export default async function Page({ params }) {
             Blog Not Found
           </h1>
           <p className="text-gray-600">
-            The blog post you're looking for doesn't exist or has been removed.
+            The blog post you&apos;re looking for doesn&apos;t exist or has been removed.
           </p>
         </div>
       </div>
