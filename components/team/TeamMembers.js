@@ -36,11 +36,11 @@ const TeamMembers = () => {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover transition-all duration-300 group-hover:grayscale"
+                  className="object-cover transition-all duration-300 group-hover:grayscale-[50%]"                  
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <h3 className="text-xl font-serif text-customBlue mb-1">
+              <h3 className="text-xl font-semibold text-customBlue mb-1">
                 {member.name}
               </h3>
               <p className="text-gray-600 text-sm text-center">
