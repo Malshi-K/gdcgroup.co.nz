@@ -65,15 +65,15 @@ const AboutCardSection = () => {
       <motion.h1 className="text-lg uppercase font-semibold text-gray-500">
         About Us
       </motion.h1>
-      <motion.h1
+      <motion.h2
         className="text-4xl text-customBlue font-bold mt-2 mb-4"
         variants={fadeInUp}
       >
         GDC Consultants LTD
-      </motion.h1>
-      <motion.p className="text-xl text-gray-700 mb-8" variants={fadeInUp}>
+      </motion.h2>
+      <motion.h3 className="text-xl text-gray-700 mb-8" variants={fadeInUp}>
         Chartered Professional Engineers & Architectural Designers
-      </motion.p>
+      </motion.h3>
 
       <div className="w-full rounded-lg overflow-hidden">
         <Image

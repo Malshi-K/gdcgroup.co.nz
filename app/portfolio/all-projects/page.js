@@ -5,13 +5,13 @@ import ProjectSlider from "@/components/projects/ProjectSlider";
 
 export const generateMetadata = async () => {
   return {
-    title: "Innovative Engineering Projects | GDC Consultants Portfolio",
+    title: "Engineering Projects | GDC Consultants",
     description:
       "Discover cutting-edge engineering solutions with GDC Consultant. Our innovative projects and expert consultancy services drive success in every endeavor.",
     keywords:
       "engineering projects, GDC consultants, architectural projects, New Zealand construction, engineering solutions, heritage buildings, educational facilities, medical facilities",
     openGraph: {
-      title: "Innovative Engineering Projects | GDC Consultants Portfolio",
+      title: "Engineering Projects | GDC Consultants",
       description:
         "Explore our portfolio of cutting-edge engineering and architectural projects across New Zealand.",
       type: "website",

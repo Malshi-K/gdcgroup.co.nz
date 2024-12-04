@@ -6,14 +6,14 @@ import "@/app/globals.css";
 
 export const generateMetadata = async () => {
   return {
-    title: "Who We Are | GDC Consultants - Development Engineering Excellence",
+    title: "GDC Consultants - Development Engineering Excellence",
     description:
       "Discover expert Development Engineering Consultants dedicated to delivering innovative solutions. Our team ensures quality and efficiency in every project across New Zealand.",
     keywords:
       "GDC consultants, development engineering, New Zealand engineers, engineering consultancy, professional engineers, engineering expertise, engineering solutions",
     openGraph: {
       title:
-        "Who We Are | GDC Consultants - Development Engineering Excellence",
+        "GDC Consultants - Development Engineering Excellence",
       description:
         "Leading engineering consultancy delivering innovative solutions across New Zealand. Meet our expert team and discover our values.",
       type: "website",

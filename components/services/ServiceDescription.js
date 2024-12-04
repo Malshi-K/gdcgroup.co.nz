@@ -6,9 +6,9 @@ const ServiceDescription = ({ title, description }) => {
         Services
       </h1>
       {/* Render the title */}
-      <h1 className="text-customBlue text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-2">
+      <h2 className="text-customBlue text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-2">
         {title}
-      </h1>
+      </h2>
       {/* Render description as a single paragraph */}
       <p className="text-lg text-gray-600 leading-relaxed">{description}</p>
     </div>

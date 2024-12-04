@@ -41,9 +41,9 @@ const TeamMembers = () => {
                 />
                 {/* Overlay with qualification */}
                 <div className="absolute inset-0 bg-customYellow bg-opacity-70 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-base text-center">
+                  <h2 className="text-white text-base text-center">
                     {member.qualifications}
-                  </p>
+                  </h2>
                 </div>
               </div>
               <h3 className="text-2xl font-semibold text-customBlue mb-2">

@@ -36,7 +36,7 @@ export const teamMembers = [
     name: "Danyon Fernando",
     position: "Director of Operations",
     qualifications:
-      "Bachelor of Arts with Honours (Criminology) - Victoria University of Wellington",
+      "Bachelor of Arts with Honours - Victoria University of Wellington",
   },
   {
     image: "/images/team/Vazin-Shareef.webp",
