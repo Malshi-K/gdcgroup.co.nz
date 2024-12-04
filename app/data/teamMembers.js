@@ -19,20 +19,6 @@ export const teamMembers = [
       "BE(Hons), MEngSt(Hons), CPEng, CMEngNZ, IntPE(NZ)/APEC Engineer",
   },
   {
-    image: "/images/team/Janine-Barrett.webp",
-    name: "Janine Barrett",
-    position: "Group Manager: Finance & Administration (Hamilton)",
-    qualifications:
-      "Bachelor of Communications, Post Grad diploma in Management Studies",
-  },
-  {
-    image: "/images/team/Joel-Bishop.webp",
-    name: "Joel Bishop",
-    position: "Planning Manager",
-    qualifications:
-      "Bachelor of Environmental Planning (University of Waikato)",
-  },
-  {
     image: "/images/team/Maurice-Bellantoni.webp",
     name: "Maurice Bellantoni",
     position: "Senior Architectural Designer",
@@ -60,10 +46,24 @@ export const teamMembers = [
       "Bachelor of Commerce (BCom) - Victoria University of Wellington",
   },
   {
+    image: "/images/team/Janine-Barrett.webp",
+    name: "Janine Barrett",
+    position: "Group Manager: Finance & Administration (Hamilton)",
+    qualifications:
+      "Bachelor of Communications, Post Grad diploma in Management Studies",
+  },
+  {
     image: "/images/team/Kasia-Irvine.webp",
     name: "Kasia Irvine",
     position: "Office Manager (Thames & Whitianga)",
     qualifications: "",
+  },
+  {
+    image: "/images/team/Joel-Bishop.webp",
+    name: "Joel Bishop",
+    position: "Planning Manager",
+    qualifications:
+      "Bachelor of Environmental Planning (University of Waikato)",
   },
   {
     image: "/images/team/Dion Herniman.webp",
