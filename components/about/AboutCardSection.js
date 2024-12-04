@@ -83,7 +83,7 @@ const AboutCardSection = () => {
           width={800} // Adjust to your image's aspect ratio
           height={450} // Adjust to your image's aspect ratio
           objectFit="contain" // Maintains the 'object-contain' effect
-          className="transition-transform duration-300 hover:scale-105"
+          className="transition-transform duration-300"
         />
       </div>
 

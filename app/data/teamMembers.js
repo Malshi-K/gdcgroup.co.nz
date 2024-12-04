@@ -19,17 +19,17 @@ export const teamMembers = [
       "BE(Hons), MEngSt(Hons), CPEng, CMEngNZ, IntPE(NZ)/APEC Engineer",
   },
   {
+    image: "/images/team/John-Kim.webp",
+    name: "John Kim",
+    position: "Geotechnical Manager",
+    qualifications: "MEngNZ, MEngSt (University of Canterbury)",
+  },
+  {
     image: "/images/team/Maurice-Bellantoni.webp",
     name: "Maurice Bellantoni",
     position: "Senior Architectural Designer",
     qualifications:
       "Bachelor & PhD in Architecture, Master in Urban Planning, Residential Design & Project Management",
-  },
-  {
-    image: "/images/team/John-Kim.webp",
-    name: "John Kim",
-    position: "Geotechnical Manager",
-    qualifications: "MEngNZ, MEngSt (University of Canterbury)",
   },
   {
     image: "/images/team/Danyon-Fernando.webp",
@@ -48,7 +48,7 @@ export const teamMembers = [
   {
     image: "/images/team/Janine-Barrett.webp",
     name: "Janine Barrett",
-    position: "Group Manager: Finance & Administration (Hamilton)",
+    position: "Group Manager: Finance & Administration",
     qualifications:
       "Bachelor of Communications, Post Grad diploma in Management Studies",
   },
@@ -68,7 +68,13 @@ export const teamMembers = [
   {
     image: "/images/team/Dion Herniman.webp",
     name: "Dion Herniman",
-    position: "Rotorua Branch Manager",
+    position: "BOP Region Manager / Projects Engineer",
+    qualifications: "University of Waikato ,BE Civil(Hons)",
+  },
+  {
+    image: "/images/team/Rojesh Koshy.webp",
+    name: "Rojesh Koshy",
+    position: "Civil Engineer",
     qualifications: "University of Waikato ,BE Civil(Hons)",
   },
 ];
