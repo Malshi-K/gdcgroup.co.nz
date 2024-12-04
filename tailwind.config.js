@@ -17,7 +17,7 @@ module.exports = {
         customGrayLight: "#A6A6A6",
       },
       fontFamily: {
-        sans: ['"Inter"', "sans-serif"],
+        sans: ['"Roboto"', "sans-serif"],
       },
     },
   },
