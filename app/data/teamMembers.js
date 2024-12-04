@@ -69,7 +69,7 @@ export const teamMembers = [
     image: "/images/team/Dion Herniman.webp",
     name: "Dion Herniman",
     position: "BOP Region Manager / Projects Engineer",
-    qualifications: "BE Civil(Hons) - University of Waikato",
+    qualifications: "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
   },
   {
     image: "/images/team/Rojesh Koshy.webp",
