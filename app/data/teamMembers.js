@@ -63,7 +63,7 @@ export const teamMembers = [
     name: "Joel Bishop",
     position: "Planning Manager",
     qualifications:
-      "Bachelor of Environmental Planning (University of Waikato)",
+      "Bachelor of Environmental Planning - University of Waikato",
   },
   {
     image: "/images/team/Dion Herniman.webp",
