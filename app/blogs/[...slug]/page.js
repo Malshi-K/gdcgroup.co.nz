@@ -1,5 +1,6 @@
 import { BlogContent } from "@/components/blogs/BlogContent";
 import axios from "axios";
+import "@/app/globals.css";
 
 async function fetchBlogData(slug) {
   try {

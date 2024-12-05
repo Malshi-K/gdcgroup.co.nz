@@ -1,5 +1,5 @@
 // components/SubContact.js
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -77,7 +77,11 @@ const SubContact = () => {
               GDC would love to hear from you and your experience with GDC
               Consultants Ltd. All feedback is appreciated and used to help GDC
               Consultants Ltd to provide the best services to you in the future.
-              Feel free to send us a message or contact us on 07 838 0090.
+              Feel free to send us a message or contact us on{" "}
+              <a href="tel:078380090" className="underline">
+                07 838 0090
+              </a>
+              .
             </p>
           </div>
         </div>

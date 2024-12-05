@@ -430,14 +430,18 @@ export default function Footer() {
                 <li>Withdraw your consent to data processing at any time.</li>
               </ul>
               <p className="text-gray-800">
-                To exercise any of these rights, please contact us at&nbsp;
+                To exercise any of these rights, please contact us at{" "}
                 <a
                   href="mailto:info@gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
                   info@gdcgroup.co.nz
                 </a>{" "}
-                or 07 838 0090.
+                or{" "}
+                <a href="tel:078380090" className="text-customBlue underline">
+                  07 838 0090
+                </a>
+                .
               </p>
 
               <h3 className="mt-4 font-semibold text-lg text-customBlue">
@@ -477,7 +481,11 @@ export default function Footer() {
                   info@gdcgroup.co.nz
                 </a>
               </p>
-              <p className="text-gray-800">07 838 0090</p>
+              <p className="text-gray-800">
+                <a href="tel:078380090" className="text-customBlue underline">
+                  07 838 0090
+                </a>
+              </p>
               <p className="text-gray-800">
                 <a
                   href="https://www.gdcgroup.co.nz"
@@ -699,7 +707,11 @@ export default function Footer() {
                   info@gdcgroup.co.nz
                 </a>
               </p>
-              <p className="text-gray-800">07 838 0090</p>
+              <p className="text-gray-800">
+                <a href="tel:078380090" className="text-customBlue underline">
+                  07 838 0090
+                </a>
+              </p>
               <p className="text-gray-800">
                 <a
                   href="https://www.gdcgroup.co.nz"

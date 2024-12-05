@@ -3,13 +3,17 @@ import BlogGalleryClient from '@/components/blogs/BlogGalleryClient';
 
 async function fetchBlogs() {
   try {
-    // Fix the URL to point to your local API route
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs`, {
+    const response = await fetch(
+      'https://api.hubapi.com/cms/v3/blogs/posts', {
+      headers: {
+        'Authorization': `Bearer ${process.env.HUBSPOT_BLOG_MANAGER_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
       next: { 
         revalidate: 3600 // Revalidate every hour
       }
     });
-
+    
     if (!response.ok) {
       throw new Error('Failed to fetch blogs');
     }

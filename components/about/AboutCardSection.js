@@ -14,15 +14,15 @@ const AboutCardSection = () => {
     },
     {
       id: 2,
-      title: "Who We Are",
-      description:
-        "Through our expertise, competency, and continuous client support, we have earned the trust of our clients. By developing long lasting partnerships and consistently providing the best possible solutions and services, we are considered industry leaders. \nAt GDC Consultants, we believe in having strong values and priorities in everything we do. We take responsibility for the way our work affects society and the environment, and we are constantly aiming to give back to our community.",
-    },
-    {
-      id: 3,
       title: "We Provide Sustainable Solutions",
       description:
         "We understand the vital necessity of sustainability in everything we do. Our corporate practice is founded on ethical behavior, innovation, and ensuring the sustainability of our community and environment.",
+    },
+    {
+      id: 3,
+      title: "Who We Are",
+      description:
+        "Through our expertise, competency, and continuous client support, we have earned the trust of our clients. By developing long lasting partnerships and consistently providing the best possible solutions and services, we are considered industry leaders. \nAt GDC Consultants, we believe in having strong values and priorities in everything we do. We take responsibility for the way our work affects society and the environment, and we are constantly aiming to give back to our community.",
     },
   ];
 
