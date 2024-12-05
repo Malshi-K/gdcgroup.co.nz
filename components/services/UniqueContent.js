@@ -1,5 +1,5 @@
 // Dynamic service data with alternating content sections
-"use client"
+"use client";
 import Image from "next/image";
 
 import useInView from "../services/useInView"; // Import the custom hook
@@ -15,7 +15,9 @@ export const WatersUniqueContent = () => {
         className={`relative w-full h-64 md:h-72 flex items-center justify-center bg-cover bg-center shadow-md rounded-md mb-6 md:mb-10 transition-all duration-700 ease-in-out ${
           isVisible ? "animate-slide-up" : "opacity-0" // Apply animations only when visible
         }`}
-        style={{ backgroundImage: `url('/images/services/1/3 Waters and Contamination 2.webp')` }}
+        style={{
+          backgroundImage: `url('/images/services/1/3 Waters and Contamination 2.webp')`,
+        }}
       >
         {/* Dark overlay for contrast */}
         <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
@@ -522,60 +524,8 @@ export const PlanningUniqueContent = () => {
               are already being felt in many areas and we can provide planning
               solutions which will ensure the future vibrancy of your project.
             </h4>
-          </div>
+          </div>{" "}
         </div>
-
-        {/* Cards */}
-        {/* <div className="mt-10 px-6 lg:px-10">
-          <h1 className="text-4xl text-customBlue font-bold text-center mb-8">
-            Recent Planning Projects
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 justify-center">
-            {[
-              {
-                title: "Lost Springs",
-                image: "/images/services/RearC-1536x864.webp",
-              },
-              {
-                title: "Kennedy Bay",
-                image: "/images/services/Screenshot-2024-01-19-093510.webp",
-              },
-              {
-                title: "Kennedy Bay",
-                image: "/images/services/Screenshot-2024-01-23-154320.webp",
-              },
-              {
-                title: "Brownlee Avenue Dog Pound",
-                image: "/images/services/Coming-Soon.webp",
-              },
-            ].map((card, index) => (
-              <div
-                key={index}
-                className="group relative w-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer transition-transform transform hover:scale-105 animate-scale-up duration-500 ease-in-out"
-              >
-                
-                <div className="relative w-full h-full">
-                  <Image
-                    src={card.image}
-                    alt={card.title}
-                    width={320} // Set width and height explicitly
-                    height={384} // Adjust these values to fit your design
-                    className="w-full h-full object-cover"
-                  />
-                 
-                  <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
-                </div>
-
-                
-                <div className="absolute inset-0 flex flex-col justify-center items-center p-4 text-white z-10 animate-fade-in">
-                  <h3 className="text-lg md:text-2xl text-center font-bold mb-2 drop-shadow-lg">
-                    {card.title}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
     </div>
   );

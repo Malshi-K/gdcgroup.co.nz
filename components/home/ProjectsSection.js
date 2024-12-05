@@ -12,23 +12,20 @@ const ProjectsSection = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const uniqueTitles = new Set();
-    const uniqueProjects = [];
-
-    projectsData.forEach((category) => {
-      const availableProjects = category.projects.filter(
-        (project) => !uniqueTitles.has(project.title)
+    // Optimize project filtering
+    const uniqueProjects = projectsData.reduce((acc, category) => {
+      const firstUniqueProject = category.projects.find(
+        project => !acc.some(p => p.title === project.title)
       );
-
-      if (availableProjects.length > 0) {
-        const selectedProject = availableProjects[0];
-        uniqueTitles.add(selectedProject.title);
-        uniqueProjects.push({
-          ...selectedProject,
+      
+      if (firstUniqueProject) {
+        acc.push({
+          ...firstUniqueProject,
           category: category.category,
         });
       }
-    });
+      return acc;
+    }, []);
 
     setProjects(uniqueProjects);
   }, []);
@@ -41,33 +38,38 @@ const ProjectsSection = () => {
           setAnimationTriggered(true);
         }
       },
-      { root: null, threshold: 0.1 }
+      { 
+        root: null, 
+        threshold: 0.1,
+        rootMargin: '50px' // Preload before element comes into view
+      }
     );
 
-    const currentSection = sectionRef.current;
-    if (currentSection) observer.observe(currentSection);
-
-    return () => {
-      if (currentSection) observer.unobserve(currentSection);
-    };
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
   }, [animationTriggered]);
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+  const animations = {
+    title: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" }
+      }
     },
-  };
-
-  const titleVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
+    card: {
+      hidden: { opacity: 0, y: 50 },
+      visible: (index) => ({
+        opacity: 1,
+        y: 0,
+        transition: { 
+          duration: 0.5, 
+          ease: "easeOut",
+          delay: index * 0.1 // Stagger animation
+        }
+      })
+    }
   };
 
   return (
@@ -76,13 +78,13 @@ const ProjectsSection = () => {
         className="text-center mb-12 px-6 md:px-10 xl:px-16"
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
-        variants={titleVariants}
+        variants={animations.title}
       >
         <h2 className="text-4xl text-customYellow uppercase font-bold mt-2">
           Explore Our Portfolio
         </h2>
-        <h3 className="text-md text-customBlue tracking-wide">
-          Our portfolio showcases the diverse range of successful projects we’ve
+        <h3 className="text-md text-customBlue tracking-wide max-w-3xl mx-auto">
+          Our portfolio showcases the diverse range of successful projects we've
           completed across New Zealand. From large-scale commercial developments
           to smaller residential builds.
         </h3>
@@ -91,27 +93,32 @@ const ProjectsSection = () => {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {projects.map((project, index) => (
           <motion.div
-            key={index}
-            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 ease-in-out"
+            key={project.title}
+            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 ease-in-out hover:shadow-lg"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
-            variants={cardVariants}
+            variants={animations.card}
+            custom={index}
           >
             <div className="relative w-full h-48">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg"
-                loading={index < 3 ? "eager" : "lazy"} // Load the first row eagerly, rest lazily                              
+                loading={index < 3 ? "eager" : "lazy"}
+                quality={75} // Optimized quality
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC1ELjAsQU5MTlAvRWFGS0VKU0ZPVk9gZGR4Y0tgiXBfcXR4c2z/2wBDARUXFx4aHR4eHWxvQkJsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-3 bg-white bg-opacity-80 group-hover:bg-opacity-100 transition duration-300">
+            <div className="absolute bottom-0 left-0 right-0 p-3 bg-white/90 backdrop-blur-sm group-hover:bg-white transition duration-300">
               <span className="text-xs font-semibold uppercase text-customBlue bg-customYellow/30 px-2 py-1 rounded-md">
                 {project.category}
               </span>
-              <h4 className="text-lg text-customBlue font-semibold mt-2">
+              <h4 className="text-lg text-customBlue font-semibold mt-2 line-clamp-1">
                 {project.title}
               </h4>
             </div>
@@ -120,13 +127,11 @@ const ProjectsSection = () => {
       </div>
 
       <div className="flex justify-center mt-8">
-        <Link href="/portfolio/all-projects" passHref legacyBehavior>
-          <motion.a
-            className="bg-customYellow text-white font-semibold px-6 py-3 rounded-md hover:bg-customBlue transition duration-300"
-            whileHover={{ scale: 1.05 }}
-          >
-            View All Projects
-          </motion.a>
+        <Link 
+          href="/portfolio/all-projects"
+          className="bg-customYellow text-white font-semibold px-6 py-3 rounded-md hover:bg-customBlue transition duration-300 transform hover:scale-105"
+        >
+          View All Projects
         </Link>
       </div>
     </section>

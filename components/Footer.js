@@ -227,33 +227,51 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-md tracking-wide">
               FOLLOW US
             </h4>
-            <div className="flex space-x-4">
+            <div
+              className="flex space-x-4"
+              role="navigation"
+              aria-label="Social Media Links"
+            >
               {/* Facebook Icon */}
               <a
                 href="https://www.facebook.com/GdcConsultantsLtd/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300"
+                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
+                aria-label="Visit GDC Consultants on Facebook"
               >
-                <FaFacebookF size={24} />
+                <span className="sr-only">
+                  Visit GDC Consultants on Facebook
+                </span>
+                <FaFacebookF size={24} aria-hidden="true" title="Facebook" />
               </a>
+
               {/* LinkedIn Icon */}
               <a
                 href="https://nz.linkedin.com/company/gdcconsultants"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300"
+                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
+                aria-label="Connect with GDC Consultants on LinkedIn"
               >
-                <FaLinkedinIn size={24} />
+                <span className="sr-only">
+                  Connect with GDC Consultants on LinkedIn
+                </span>
+                <FaLinkedinIn size={24} aria-hidden="true" title="LinkedIn" />
               </a>
+
               {/* Instagram Icon */}
               <a
                 href="https://www.instagram.com/gdc_consultants/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300"
+                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
+                aria-label="Follow GDC Consultants on Instagram"
               >
-                <FaInstagram size={24} />
+                <span className="sr-only">
+                  Follow GDC Consultants on Instagram
+                </span>
+                <FaInstagram size={24} aria-hidden="true" title="Instagram" />
               </a>
             </div>
           </div>

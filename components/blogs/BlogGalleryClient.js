@@ -69,9 +69,9 @@ const BlogGalleryClient = ({ blogs }) => {
           <nav className="text-2xl text-white font-bold mb-2 flex items-center justify-center md:justify-start space-x-1">
             <h1 className="hover:text-customYellow">Our Blog</h1>
           </nav>
-          <h1 className="text-white text-5xl font-bold leading-tight">
+          <h2 className="text-white text-5xl font-bold leading-tight">
             Latest News & Updates
-          </h1>
+          </h2>
         </motion.div>
       </div>
 

@@ -19,7 +19,7 @@ const Header = () => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const dropdownRef = useRef(null);
   const timeoutRef = useRef(null);
-  
+
   const pathname = usePathname(); // Get the current pathname
 
   // Detect if the current view is mobile or desktop
@@ -97,10 +97,11 @@ const Header = () => {
               <Image
                 src="/images/GDC LOGOS 2024 BLUE.webp"
                 alt="GDC Consultants Ltd Logo"
-                width={500} // Set a higher intrinsic width
-                height={200} // Set a higher intrinsic height
-                priority
+                width={200} // Reduced from 500 to actual display size
+                height={80} // Maintained aspect ratio
+                priority // Critical for above-the-fold logo
                 className="w-[150px] h-auto md:w-[150px] lg:w-[200px] cursor-pointer"
+                quality={90} // Higher quality for logo
               />
             </Link>
           </div>
