@@ -12,7 +12,6 @@ const ProjectsSection = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Optimize project filtering
     const uniqueProjects = projectsData.reduce((acc, category) => {
       const firstUniqueProject = category.projects.find(
         project => !acc.some(p => p.title === project.title)
@@ -41,7 +40,7 @@ const ProjectsSection = () => {
       { 
         root: null, 
         threshold: 0.1,
-        rootMargin: '50px' // Preload before element comes into view
+        rootMargin: '50px'
       }
     );
 
@@ -66,7 +65,7 @@ const ProjectsSection = () => {
         transition: { 
           duration: 0.5, 
           ease: "easeOut",
-          delay: index * 0.1 // Stagger animation
+          delay: index * 0.1
         }
       })
     }
@@ -84,7 +83,7 @@ const ProjectsSection = () => {
           Explore Our Portfolio
         </h2>
         <h3 className="text-md text-customBlue tracking-wide max-w-3xl mx-auto">
-          Our portfolio showcases the diverse range of successful projects we've
+          Our portfolio showcases the diverse range of successful projects we&apos;ve
           completed across New Zealand. From large-scale commercial developments
           to smaller residential builds.
         </h3>
@@ -108,7 +107,7 @@ const ProjectsSection = () => {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg"
                 loading={index < 3 ? "eager" : "lazy"}
-                quality={75} // Optimized quality
+                quality={75}
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC1ELjAsQU5MTlAvRWFGS0VKU0ZPVk9gZGR4Y0tgiXBfcXR4c2z/2wBDARUXFx4aHR4eHWxvQkJsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
