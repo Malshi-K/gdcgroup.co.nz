@@ -126,14 +126,14 @@ const BlogSection = () => {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 text-center">
                 <h4 className="text-lg font-semibold text-customBlue mb-4 line-clamp-2 group-hover:text-customYellow transition-colors duration-300">
                   {blog.name}
                 </h4>
 
                 <Link
                   href={blog.slug}
-                  className="inline-block text-sm text-white bg-customBlue py-2 px-4 rounded-full hover:bg-customYellow transition-colors duration-300"
+                  className="m-auto inline-block text-sm text-white bg-customBlue py-2 px-4 rounded-full hover:bg-customYellow transition-colors duration-300"
                 >
                   Read More
                 </Link>
