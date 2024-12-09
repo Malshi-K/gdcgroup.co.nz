@@ -1,13 +1,8 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  CalendarIcon,
-  UserIcon,
-  ChatBubbleLeftEllipsisIcon,
-} from "@heroicons/react/24/solid";
 
 const BlogSkeleton = () => (
   <div className="bg-white shadow-lg rounded-lg overflow-hidden animate-pulse">
@@ -28,11 +23,12 @@ const BlogSection = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('/api/blogs');
+        const response = await fetch("/api/blogs");
         const data = await response.json();
-        
-        if (!response.ok) throw new Error(data.error || 'Failed to fetch blogs');
-        
+
+        if (!response.ok)
+          throw new Error(data.error || "Failed to fetch blogs");
+
         setBlogs(data.blogs);
       } catch (err) {
         setError(err.message);
@@ -47,19 +43,19 @@ const BlogSection = () => {
   const animations = {
     container: {
       hidden: { opacity: 0 },
-      visible: { 
+      visible: {
         opacity: 1,
-        transition: { staggerChildren: 0.1 }
-      }
+        transition: { staggerChildren: 0.1 },
+      },
     },
     item: {
       hidden: { opacity: 0, y: 20 },
       visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.5, ease: "easeOut" }
-      }
-    }
+        transition: { duration: 0.5, ease: "easeOut" },
+      },
+    },
   };
 
   if (loading) {
@@ -99,10 +95,7 @@ const BlogSection = () => {
         viewport={{ once: true, amount: 0.2 }}
         variants={animations.container}
       >
-        <motion.div
-          className="text-center mb-12"
-          variants={animations.item}
-        >
+        <motion.div className="text-center mb-12" variants={animations.item}>
           <h2 className="text-4xl text-customYellow uppercase font-bold mt-2">
             Latest News & Updates
           </h2>
@@ -134,25 +127,6 @@ const BlogSection = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex flex-wrap items-center text-sm text-gray-500 gap-4 mb-2">
-                  <span className="flex items-center">
-                    <CalendarIcon className="w-4 h-4 text-customYellow mr-1" />
-                    {new Date(blog.publishDate).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </span>
-                  <span className="flex items-center">
-                    <UserIcon className="w-4 h-4 text-customYellow mr-1" />
-                    Bethany Rutter
-                  </span>
-                  <span className="flex items-center">
-                    <ChatBubbleLeftEllipsisIcon className="w-4 h-4 text-customYellow mr-1" />
-                    {blog.commentsCount || 0}
-                  </span>
-                </div>
-
                 <h4 className="text-lg font-semibold text-customBlue mb-4 line-clamp-2 group-hover:text-customYellow transition-colors duration-300">
                   {blog.name}
                 </h4>
