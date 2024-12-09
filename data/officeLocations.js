@@ -65,6 +65,7 @@ const officeLocations = [
   {
     id: 7,
     name: "Whitianga Office",
+    address: "21 Coghill Street, Whitianga 3510, New Zealand",
     email: "whitianga@gdcgroup.co.nz",
     phone: "+64 7 869 0640",
     mapSrc:
