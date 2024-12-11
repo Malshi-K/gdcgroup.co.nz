@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import "@/app/globals.css";
-import projectsData from "@/data/projectsData.json";
+import projectsData from "@/app/data/projectsData.json";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const ProjectSlider = () => {
