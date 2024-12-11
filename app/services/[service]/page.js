@@ -30,11 +30,11 @@ export async function generateMetadata({ params }) {
     title: serviceData.metaTitle,
     description: serviceData.metaDescription,
     alternates: {
-      canonical: `https://gdcgroup.co.nz/services/${serviceData.slug}`,
+      canonical: `https://gdcgroup.co.nz/services/${serviceData.title}`,
       languages: {
-        'en-NZ': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
-        'en': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
-        'x-default': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
+        'en-NZ': `https://gdcgroup.co.nz/services/${serviceData.title}`,
+        'en': `https://gdcgroup.co.nz/services/${serviceData.title}`,
+        'x-default': `https://gdcgroup.co.nz/services/${serviceData.title}`,
       },
     },
   };

@@ -77,9 +77,9 @@ async function fetchBlogData(slug) {
 
 export async function generateMetadata({ params }) {
   const rawSlug = await Promise.resolve(params.slug);
-  const slugPath = Array.isArray(rawSlug) ? rawSlug.join("/") : rawSlug;
+  const slug = Array.isArray(rawSlug) ? rawSlug.join("/") : rawSlug;
 
-  const data = await fetchBlogData(slugPath);
+  const data = await fetchBlogData(slug);
 
   if (!data?.blog) {
     return {
@@ -93,16 +93,16 @@ export async function generateMetadata({ params }) {
       data.blog.metaDescription ||
       "Read the latest blog post from GDC Consultants about architecture, engineering, and project management.",
     alternates: {
-      canonical: `https://gdcgroup.co.nz/blogs/blog/${slugPath}`,
+      canonical: `https://gdcgroup.co.nz/blogs/${slug}`,
     },
   };
 }
 
 export default async function Page({ params }) {
   const rawSlug = await Promise.resolve(params.slug);
-  const slugPath = Array.isArray(rawSlug) ? rawSlug.join("/") : rawSlug;
+  const slug = Array.isArray(rawSlug) ? rawSlug.join("/") : rawSlug;
 
-  const data = await fetchBlogData(slugPath);
+  const data = await fetchBlogData(slug);
 
   if (!data || !data.blog) {
     return (
