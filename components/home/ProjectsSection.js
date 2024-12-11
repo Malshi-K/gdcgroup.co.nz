@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import projectsData from "@/data/projectsData.json";
+import projectsData from "@/app/data/projectsData.json";
 
 const ProjectsSection = () => {
   const sectionRef = useRef(null);

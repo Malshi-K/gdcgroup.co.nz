@@ -3,7 +3,7 @@ import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
 import ServiceDescription from "@/components/services/ServiceDescription";
 import ServiceSections from "@/components/services/ServiceSections";
-import services from "@/data/servicesData";
+import services from "@/app/data/servicesData";
 import {
   ElectricalEngineeringUniqueContent,
   InternshipsUniqueContent,
@@ -30,11 +30,11 @@ export async function generateMetadata({ params }) {
     title: serviceData.metaTitle,
     description: serviceData.metaDescription,
     alternates: {
-      canonical: `https://www.gdcgroup.co.nz/services/${serviceData.slug}`,
+      canonical: `https://gdcgroup.co.nz/services/${serviceData.slug}`,
       languages: {
-        'en-NZ': `https://www.gdcgroup.co.nz/services/${serviceData.slug}`,
-        'en': `https://www.gdcgroup.co.nz/services/${serviceData.slug}`,
-        'x-default': `https://www.gdcgroup.co.nz/services/${serviceData.slug}`,
+        'en-NZ': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
+        'en': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
+        'x-default': `https://gdcgroup.co.nz/services/${serviceData.slug}`,
       },
     },
   };

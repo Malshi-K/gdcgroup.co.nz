@@ -13,7 +13,7 @@ export const generateMetadata = async () => {
       description:
         "Get to know the experienced leadership and expert team members at GDC Consultants.",
       type: "website",
-      url: "https://www.gdcgroup.co.nz/team",
+      url: "https://gdcgroup.co.nz/team",
       siteName: "GDC Consultants",
       locale: "en_NZ",
       images: [
@@ -44,10 +44,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: "https://www.gdcgroup.co.nz/team",
+      canonical: "https://gdcgroup.co.nz/team",
       languages: {
-        "en-NZ": "https://www.gdcgroup.co.nz/team",
-        en: "https://www.gdcgroup.co.nz/team",
+        "en-NZ": "https://gdcgroup.co.nz/team",
+        en: "https://gdcgroup.co.nz/team",
       },
     },
   };

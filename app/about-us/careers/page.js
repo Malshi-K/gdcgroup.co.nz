@@ -16,7 +16,7 @@ export const generateMetadata = async () => {
       description:
         "Join our team of innovative engineers and architects at GDC Consultants. Discover exciting career opportunities across New Zealand.",
       type: "website",
-      url: "https://www.gdcgroup.co.nz/about-us/careers",
+      url: "https://gdcgroup.co.nz/about-us/careers",
       siteName: "GDC Consultants",
       locale: "en_NZ",
     },
@@ -32,10 +32,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: "https://www.gdcgroup.co.nz/about-us/careers",
+      canonical: "https://gdcgroup.co.nz/about-us/careers",
       languages: {
-        "en-NZ": "https://www.gdcgroup.co.nz/about-us/careers",
-        en: "https://www.gdcgroup.co.nz/about-us/careers",
+        "en-NZ": "https://gdcgroup.co.nz/about-us/careers",
+        en: "https://gdcgroup.co.nz/about-us/careers",
       },
     },
   };

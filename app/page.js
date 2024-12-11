@@ -16,7 +16,7 @@ export const generateMetadata = async () => {
       title: 'GDC Consultants | Engineering & Architectural Design Solutions',
       description: 'Leading engineering and architectural design consultancy in New Zealand',
       type: 'website',
-      url: 'https://www.gdcgroup.co.nz',
+      url: 'https://gdcgroup.co.nz',
       siteName: 'GDC Consultants',
       locale: 'en_NZ',
       images: [
@@ -44,14 +44,14 @@ export const generateMetadata = async () => {
       google: 'your-google-verification-code', // Replace with your actual Google verification code
     },
     alternates: {
-      canonical: 'https://www.gdcgroup.co.nz',
+      canonical: 'https://gdcgroup.co.nz',
     },
   };
 };
 
 async function fetchBlogs() {
   try {
-    const response = await fetch('https://www.gdcgroup.co.nz/api/blogs', {
+    const response = await fetch('https://gdcgroup.co.nz/api/blogs', {
       next: { 
         revalidate: 3600 // Revalidate every hour
       }

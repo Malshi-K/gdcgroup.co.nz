@@ -15,7 +15,7 @@ export const generateMetadata = async () => {
       description:
         "Explore our portfolio of cutting-edge engineering and architectural projects across New Zealand.",
       type: "website",
-      url: "https://www.gdcgroup.co.nz/portfolio/all-projects",
+      url: "https://gdcgroup.co.nz/portfolio/all-projects",
       siteName: "GDC Consultants",
       locale: "en_NZ",
     },
@@ -31,10 +31,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: "https://www.gdcgroup.co.nz/portfolio/all-projects",
+      canonical: "https://gdcgroup.co.nz/portfolio/all-projects",
       languages: {
-        "en-NZ": "https://www.gdcgroup.co.nz/portfolio/all-projects",
-        en: "https://www.gdcgroup.co.nz/portfolio/all-projects",
+        "en-NZ": "https://gdcgroup.co.nz/portfolio/all-projects",
+        en: "https://gdcgroup.co.nz/portfolio/all-projects",
       },
     },
   };

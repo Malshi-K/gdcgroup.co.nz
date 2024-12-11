@@ -2,7 +2,7 @@
 "use client";
 import Image from "next/image";
 
-import useInView from "../services/useInView"; // Import the custom hook
+import useInView from "@/services/useInView"; // Import the custom hook
 
 export const WatersUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Use the hook inside the component

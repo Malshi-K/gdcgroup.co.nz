@@ -93,7 +93,7 @@ export async function generateMetadata({ params }) {
       data.blog.metaDescription ||
       "Read the latest blog post from GDC Consultants about architecture, engineering, and project management.",
     alternates: {
-      canonical: `https://www.gdcgroup.co.nz/blogs/blog/${slugPath}`,
+      canonical: `https://gdcgroup.co.nz/blogs/blog/${slugPath}`,
     },
   };
 }

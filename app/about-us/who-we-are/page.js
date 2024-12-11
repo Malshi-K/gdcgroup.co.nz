@@ -17,7 +17,7 @@ export const generateMetadata = async () => {
       description:
         "Leading engineering consultancy delivering innovative solutions across New Zealand. Meet our expert team and discover our values.",
       type: "website",
-      url: "https://www.gdcgroup.co.nz/about-us/who-we-are",
+      url: "https://gdcgroup.co.nz/about-us/who-we-are",
       siteName: "GDC Consultants",
       locale: "en_NZ",
     },
@@ -33,10 +33,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: "https://www.gdcgroup.co.nz/about-us/who-we-are",
+      canonical: "https://gdcgroup.co.nz/about-us/who-we-are",
       languages: {
-        "en-NZ": "https://www.gdcgroup.co.nz/about-us/who-we-are",
-        en: "https://www.gdcgroup.co.nz/about-us/who-we-are",
+        "en-NZ": "https://gdcgroup.co.nz/about-us/who-we-are",
+        en: "https://gdcgroup.co.nz/about-us/who-we-are",
       },
     },
   };

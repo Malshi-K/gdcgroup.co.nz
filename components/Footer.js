@@ -332,10 +332,10 @@ export default function Footer() {
                 collect, use, and protect the personal data you provide to us
                 through our website (
                 <a
-                  href="https://www.gdcgroup.co.nz"
+                  href="https://gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
-                  www.gdcgroup.co.nz
+                  gdcgroup.co.nz
                 </a>
                 ). Personal information refers to any information about an
                 identifiable individual (a natural person).
@@ -506,10 +506,10 @@ export default function Footer() {
               </p>
               <p className="text-gray-800">
                 <a
-                  href="https://www.gdcgroup.co.nz"
+                  href="https://gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
-                  www.gdcgroup.co.nz
+                  gdcgroup.co.nz
                 </a>
               </p>
             </div>
@@ -535,10 +535,10 @@ export default function Footer() {
               <p className="text-gray-800">
                 Welcome to&nbsp;
                 <a
-                  href="https://www.gdcgroup.co.nz"
+                  href="https://gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
-                  www.gdcgroup.co.nz
+                  gdcgroup.co.nz
                 </a>
                 &nbsp;(the &quot;Website&quot;). These terms and conditions
                 (&quot;Terms&quot;) govern your access to and use of the Website
@@ -732,10 +732,10 @@ export default function Footer() {
               </p>
               <p className="text-gray-800">
                 <a
-                  href="https://www.gdcgroup.co.nz"
+                  href="https://gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
-                  www.gdcgroup.co.nz
+                  gdcgroup.co.nz
                 </a>
               </p>
             </div>

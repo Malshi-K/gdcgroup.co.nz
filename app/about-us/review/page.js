@@ -15,7 +15,7 @@ export const generateMetadata = async () => {
       description:
         "Help us improve our engineering and architectural services by sharing your valuable feedback.",
       type: "website",
-      url: "https://www.gdcgroup.co.nz/about-us/review",
+      url: "https://gdcgroup.co.nz/about-us/review",
       siteName: "GDC Consultants",
       locale: "en_NZ",
     },
@@ -32,10 +32,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: "https://www.gdcgroup.co.nz/about-us/review",
+      canonical: "https://gdcgroup.co.nz/about-us/review",
       languages: {
-        "en-NZ": "https://www.gdcgroup.co.nz/about-us/review",
-        en: "https://www.gdcgroup.co.nz/about-us/review",
+        "en-NZ": "https://gdcgroup.co.nz/about-us/review",
+        en: "https://gdcgroup.co.nz/about-us/review",
       },
     },
   };

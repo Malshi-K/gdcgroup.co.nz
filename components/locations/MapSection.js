@@ -2,7 +2,7 @@
 
 import React from "react";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid"; // Import Heroicons if needed
-import officeLocations from "../../data/officeLocations"; // Adjust the path as needed
+import officeLocations from "@/app/data/officeLocations"; // Adjust the path as needed
 import Image from "next/image";
 
 const MapSection = () => {
