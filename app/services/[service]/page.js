@@ -15,9 +15,17 @@ import {
 } from "@/components/services/UniqueContent";
 import { notFound } from 'next/navigation';
 
+// Generate static params for all services
+export async function generateStaticParams() {
+  return Object.keys(services).map((service) => ({
+    service: service,
+  }));
+}
+
 // Generate metadata for the page
-export async function generateMetadata({ params }) {
-  const serviceData = services[params.service];
+export async function generateMetadata(props) {
+  const service = await Promise.resolve(props.params.service);
+  const serviceData = services[service];
   
   if (!serviceData) {
     return {
@@ -30,19 +38,15 @@ export async function generateMetadata({ params }) {
     title: serviceData.metaTitle,
     description: serviceData.metaDescription,
     alternates: {
-      canonical: `https://gdcgroup.co.nz/services/${serviceData.title}`,
-      languages: {
-        'en-NZ': `https://gdcgroup.co.nz/services/${serviceData.title}`,
-        'en': `https://gdcgroup.co.nz/services/${serviceData.title}`,
-        'x-default': `https://gdcgroup.co.nz/services/${serviceData.title}`,
-      },
+      canonical: `https://gdcgroup.co.nz/services/${service}`,
     },
   };
 }
 
 // Main page component
-export default function Page({ params }) {
-  const serviceData = services[params.service];
+export default async function Page(props) {
+  const service = await Promise.resolve(props.params.service);
+  const serviceData = services[service];
 
   // Handle 404 for unknown services
   if (!serviceData) {
@@ -91,11 +95,4 @@ export default function Page({ params }) {
       <GetInTouch />
     </main>
   );
-}
-
-// Optional: Generate static params if you want to statically generate some pages
-export async function generateStaticParams() {
-  return Object.keys(services).map((service) => ({
-    service: service,
-  }));
 }

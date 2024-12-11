@@ -9,9 +9,16 @@ const nextConfig = {
         port: "",
         pathname: "/hubfs/**",
       },
-    ],
+    ],    
   },
-  // other configurations...
+  async rewrites() {
+    return [
+      {
+        source: '/services/:path*',
+        destination: '/services/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
