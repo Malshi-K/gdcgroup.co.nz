@@ -329,7 +329,7 @@ const Header = () => {
               { href: "/team", label: "Our Team" },
               { href: "/blogs", label: "Blogs" },
               { href: "tel:+6478380090", label: "Call Now" },
-              { href: "/locations", label: "Our Locations" },
+              { href: "/contact-us", label: "Our Locations" },
             ].map((item) =>
               item.items ? (
                 <li key={item.label} className="relative">
@@ -410,7 +410,7 @@ const Header = () => {
 
             {/* OUR LOCATIONS Button */}
             <Link
-              href="/locations"
+              href="/contact-us"
               className="hidden text-center lg:flex justify-center items-center bg-customYellow text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-yellow-600"
               onClick={() => setIsMenuOpen(false)}
             >

@@ -180,7 +180,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/locations"
+                  href="/contact-us"
                   className="hover:text-customYellow tracking-wide"
                 >
                   Contact Us
