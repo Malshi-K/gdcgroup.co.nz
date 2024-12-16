@@ -19,11 +19,11 @@ export const teamMembers = [
       "BE(Hons), MEngSt(Hons), CPEng, CMEngNZ, IntPE(NZ)/APEC Engineer",
   },
   {
-    image: "/images/team/John-Kim.webp",
-    name: "John Kim",
-    position: "Geotechnical Manager",
-    qualifications: "MEngNZ, MEngSt (University of Canterbury)",
-  },
+    image: "/images/team/David Mcbryde.webp",
+    name: "David Mcbryde",
+    position: "Three Waters Senior Consultant",
+    qualifications: "BE (Civil), AFNZIM, CMEngNZ",
+  },  
   {
     image: "/images/team/Maurice-Bellantoni.webp",
     name: "Maurice Bellantoni",
@@ -46,12 +46,11 @@ export const teamMembers = [
       "Bachelor of Commerce (BCom) - Victoria University of Wellington",
   },
   {
-    image: "/images/team/Janine-Barrett.webp",
-    name: "Janine Barrett",
-    position: "Group Manager: Finance & Administration",
-    qualifications:
-      "Bachelor of Communications, Post Grad diploma in Management Studies",
-  },
+    image: "/images/team/John-Kim.webp",
+    name: "John Kim",
+    position: "Geotechnical Manager",
+    qualifications: "MEngNZ, MEngSt (University of Canterbury)",
+  }, 
   {
     image: "/images/team/Kasia-Irvine.webp",
     name: "Kasia Irvine",
@@ -70,6 +69,13 @@ export const teamMembers = [
     name: "Dion Herniman",
     position: "BOP Region Manager / Projects Engineer",
     qualifications: "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
+  },
+  {
+    image: "/images/team/Janine-Barrett.webp",
+    name: "Janine Barrett",
+    position: "Group Manager: Finance & Administration",
+    qualifications:
+      "Bachelor of Communications, Post Grad diploma in Management Studies",
   },
   {
     image: "/images/team/Rojesh Koshy.webp",
