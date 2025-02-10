@@ -23,7 +23,7 @@ export const teamMembers = [
     name: "David Mcbryde",
     position: "Three Waters Senior Consultant",
     qualifications: "BE (Civil), AFNZIM, CMEngNZ",
-  },  
+  },
   {
     image: "/images/team/Maurice-Bellantoni.webp",
     name: "Maurice Bellantoni",
@@ -50,7 +50,7 @@ export const teamMembers = [
     name: "John Kim",
     position: "Geotechnical Manager",
     qualifications: "MEngNZ, MEngSt (University of Canterbury)",
-  }, 
+  },
   {
     image: "/images/team/Kasia-Irvine.webp",
     name: "Kasia Irvine",
@@ -68,14 +68,8 @@ export const teamMembers = [
     image: "/images/team/Dion Herniman.webp",
     name: "Dion Herniman",
     position: "BOP Region Manager / Projects Engineer",
-    qualifications: "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
-  },
-  {
-    image: "/images/team/Janine-Barrett.webp",
-    name: "Janine Barrett",
-    position: "Group Manager: Finance & Administration",
     qualifications:
-      "Bachelor of Communications, Post Grad diploma in Management Studies",
+      "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
   },
   {
     image: "/images/team/Rojesh Koshy.webp",
