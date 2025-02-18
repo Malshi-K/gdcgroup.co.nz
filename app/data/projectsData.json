@@ -90,13 +90,7 @@
         "image": "/images/projects/content (27).webp",
         "description": "",
         "jobDescription": "Structural Design of extension and alterations"
-      },
-      {
-        "title": "Te Whatu Ora - Capital Coast & Hut Valley_Clock Tower - Lower Hutt",
-        "image": "/images/projects/content (27).webp",
-        "description": "",
-        "jobDescription": ""
-      }
+      }      
     ]
   },
   {
@@ -659,6 +653,12 @@
         "title": "Maraenui Medical Centre",
         "image": "/images/projects/image-51-1.webp",
         "description": "We performed extensive works at Waikato Hospital, including comprehensive structural repairs of a major service tunnel and the Wairoa building, as well as the construction of a new vehicle ramp. This was a large and complex job, and we were able to complete it in a timely and cost-effective manner without significant interruption to the hospital."
+      },
+      {
+        "title": "Te Whatu Ora - Capital Coast & Hut Valley_Clock Tower - Lower Hutt",
+        "image": "/images/projects/Te Whatu Ora.png",
+        "description": "",
+        "jobDescription": ""
       }
     ]
   },
