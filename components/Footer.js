@@ -121,14 +121,71 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo and Company Info Column */}
           <div className="flex flex-col items-start">
-            <Image
-              src="/images/GDC logo 2024 white.webp"
-              alt="GDC Logo"
-              width={200}
-              height={60}
-              className="h-auto mb-4 object-contain"
-              style={{ objectFit: "contain" }}
-            />
+            {/* Additional logos in a 2x2 grid */}
+            <div className="grid grid-cols-2 gap-4 mt-2 w-full">
+              {/* Main logo repeated in top-left position */}
+              <div className="transition-transform hover:scale-105">
+                <Image
+                  src="/images/GDC logo 2024 white.webp"
+                  alt="GDC Consultants"
+                  width={100}
+                  height={35}
+                  className="h-auto object-contain"
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+
+              {/* Digital Solutions logo in top-right */}
+              <Link
+                href="https://www.gdcdigital.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <Image
+                  src="/images/Digital Solution Logo.webp"
+                  alt="GDC Digital Solutions"
+                  width={100}
+                  height={35}
+                  className="h-auto object-contain"
+                  style={{ objectFit: "contain" }}
+                />
+              </Link>
+
+              {/* Recruitment logo in bottom-left */}
+              <Link
+                href="https://www.gdcrecruit.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <Image
+                  src="/images/logos/recruit/3.png"
+                  alt="GDC Recruitment"
+                  width={100}
+                  height={35}
+                  className="h-auto object-contain"
+                  style={{ objectFit: "contain" }}
+                />
+              </Link>
+
+              {/* Properties logo in bottom-right */}
+              <Link
+                href="https://gdcproperties.co.nz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <Image
+                  src="/images/logos/properties/properties (2).png"
+                  alt="GDC Properties"
+                  width={100}
+                  height={35}
+                  className="h-auto object-contain"
+                  style={{ objectFit: "contain" }}
+                />
+              </Link>
+            </div>
           </div>
 
           {/* COMPANY Section */}
