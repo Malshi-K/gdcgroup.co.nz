@@ -93,39 +93,46 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
-            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 ease-in-out hover:shadow-lg"
+            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 ease-in-out hover:shadow-lg hover:-translate-y-1"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={animations.card}
             custom={index}
           >
-            <div className="relative w-full h-48">
+            {/* Image container with modified height and improved display */}
+            <div className="relative w-full h-64">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg"
+                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                 loading={index < 3 ? "eager" : "lazy"}
-                quality={75}
+                quality={90}
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSAyVC1ELjAsQU5MTlAvRWFGS0VKU0ZPVk9gZGR4Y0tgiXBfcXR4c2z/2wBDARUXFx4aHR4eHWxvQkJsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-3 bg-white/90 backdrop-blur-sm group-hover:bg-white transition duration-300">
+            {/* Improved project info container with better spacing */}
+            <div className="p-4">
               <span className="text-xs font-semibold uppercase text-customBlue bg-customYellow/30 px-2 py-1 rounded-md">
                 {project.category}
               </span>
-              <h4 className="text-lg text-customBlue font-semibold mt-2 line-clamp-1">
+              <h4 className="text-lg text-customBlue font-semibold mt-2">
                 {project.title}
               </h4>
+              {project.description && (
+                <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                  {project.description}
+                </p>
+              )}              
             </div>
           </motion.div>
         ))}
       </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-10">
         <Link 
           href="/portfolio/all-projects"
           className="bg-customYellow text-white font-semibold px-6 py-3 rounded-md hover:bg-customBlue transition duration-300 transform hover:scale-105"
