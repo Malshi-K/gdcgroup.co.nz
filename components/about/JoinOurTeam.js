@@ -1,4 +1,3 @@
-// components/ProjectHeader.js
 "use client"; // Ensure this is treated as a client component
 
 import React, { useState, useEffect } from "react";
@@ -64,7 +63,7 @@ const ProjectHeader = () => {
             }`}
             style={{ transitionDelay: "300ms" }}
           >
-            At GDC, we're always looking for talented and motivated individuals
+            At GDC, we&apos;re always looking for talented and motivated individuals
             to join our team.
           </p>
         </div>
