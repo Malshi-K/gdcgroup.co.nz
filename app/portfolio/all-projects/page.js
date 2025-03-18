@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import ProjectHeader from "@/components/projects/ProjectHeader";
 import GetInTouch from "@/components/GetInTouch";
 import ProjectSlider from "@/components/projects/ProjectSlider";
+import ProjectsFilterView from "@/components/projects/ProjectsFilterView";
 
 export const generateMetadata = async () => {
   return {
@@ -45,7 +46,8 @@ const ProjectsPage = () => {
     <>
       <ProjectHeader />
 
-      <ProjectSlider />
+      {/* <ProjectSlider /> */}
+      <ProjectsFilterView />
 
       <GetInTouch />
     </>

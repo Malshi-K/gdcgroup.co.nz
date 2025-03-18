@@ -357,6 +357,18 @@
         "image": "/images/projects/content (40).webp",
         "description": "",
         "jobDescription": "Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic strengthening design, Building Consent Documentation"
+      },
+      {
+        "title": "The Living Maori Village",
+        "image": "/images/projects/common/The Living Maori Village.webp",
+        "description": "",
+        "jobDescription": ""
+      },
+      {
+        "title": "Sir Howard Morrison Centre",
+        "image": "/images/projects/common/Sir Howard Morrison Centre.webp",
+        "description": "",
+        "jobDescription": ""
       }
     ]
   },
@@ -549,6 +561,12 @@
         "image": "/images/projects/content (22).webp",
         "description": "",
         "jobDescription": "Detailed Seismic Assessment (DSA), Seismic Strengthening, Peer Review"
+      },
+      {
+        "title": "Sir Howard Morrison Centre",
+        "image": "/images/projects/common/Sir Howard Morrison Centre.webp",
+        "description": "",
+        "jobDescription": ""
       }
     ]
   },
@@ -629,7 +647,73 @@
   },
   {
     "category": "Cultural",
-    "projects": []
+    "projects": [
+      {
+        "title": "Wharekawa Marae, Kaiaua",
+        "image": "/images/projects/Cultural/J002375 - Wharekawa Marae, Kaiaua.webp",
+        "description": ""
+      },
+      {
+        "title": "Tapuekura Marae",
+        "image": "/images/projects/Cultural/J001499 - Tapuekura Marae.webp",
+        "description": ""
+      },
+      {
+        "title": "Mokau Kohunui Marae",
+        "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
+        "description": ""
+      },
+      {
+        "title": "Koutu Marae, Rotorua",
+        "image": "/images/projects/Cultural/J001129 - Koutu Marae, Rotorua.webp",
+        "description": ""
+      },
+      {
+        "title": "Painoaiho Marae",
+        "image": "/images/projects/Cultural/Painoaiho Marae.webp",
+        "description": ""
+      },
+      {
+        "title": "Matahiwi Marae",
+        "image": "/images/projects/Cultural/Matahiwi Marae.webp",
+        "description": "Truss Design, Roof Load Assessment"
+      },
+      {
+        "title": "Kingdom Hall Church",
+        "image": "/images/projects/Cultural/Kingdom Hall Church - 1.webp",
+        "description": "Detailed Seismic Assessment , 33 Arawa Street, Ohakune, Rotorua"
+      },
+      {
+        "title": "Kingdom Hall Church",
+        "image": "/images/projects/Cultural/Kingdom Hall Church - 2.webp",
+        "description": "Detailed Seismic Assessment, 70 Pine Drive, Murapara, Rotorua"
+      },
+      {
+        "title": "South Auckland Assembly Hall",
+        "image": "/images/projects/Cultural/South Auckland Assembly Hall.webp",
+        "description": "Detailed Seismic Assessment, 158-160 Clevedon Road, Papakura"
+      },
+      {
+        "title": "Kingdom Hall Church",
+        "image": "/images/projects/Cultural/Kingdom Hall Church - 3.webp",
+        "description": "Detailed Seismic Assessment, 122-132 MetCalfe Road, Waitakere"
+      },
+      {
+        "title": "Kingdom Hall Church",
+        "image": "/images/projects/Cultural/Kingdom Hall Church - 4.webp",
+        "description": "Detailed Seismic Assessment, 259 Botany Road, Howich, Auckland"
+      },
+      {
+        "title": "Kingdom Hall Church",
+        "image": "/images/projects/Cultural/Kingdom Hall Church - 5.webp",
+        "description": "Detailed Seismic Assessment, 16 Reed Street, Tikipunga, Whangarei , Auckland"
+      },
+      {
+        "title": "The Living Maori Village",
+        "image": "/images/projects/common/The Living Maori Village.webp",
+        "description": ""
+      }
+    ]
   },
   {
     "category": "Medical",
@@ -699,6 +783,12 @@
         "image": "/images/projects/content (33).webp",
         "description": "We performed a detailed Seismic Assessment on the Cambridge Town Hall for Waipa District Council, Identifying it as a high-risk building and suggesting some alterations which greatly improved the safety and integrity of the site.",
         "jobDescription": "Detailed Seismic Analysis (DSA)"
+      },
+      {
+        "title": "Bay Of Plenty Regional Council Building",
+        "image": "/images/projects/council/Bay Of Plenty Regional Council Building.webp",
+        "description": "",
+        "jobDescription": ""
       }
     ]
   }
