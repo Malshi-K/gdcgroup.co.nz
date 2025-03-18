@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
   BriefcaseIcon,
   MapPinIcon,
@@ -105,13 +104,15 @@ const CardsSection = () => {
 
   const CardComponent = ({ color, gradient, Icon, count, label, link }) => {
     const Content = (
-      <motion.div
-        className={`relative ${color} ${cardBaseStyle} text-white shadow-lg p-6 flex flex-col items-center justify-center space-y-2 overflow-hidden transform rounded-xl`}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        whileHover={{ scale: 1.05, zIndex: 10 }}
+      <div
+        className={`relative ${color} ${cardBaseStyle} text-white shadow-lg p-6 flex flex-col items-center justify-center space-y-2 overflow-hidden transform rounded-xl
+          transition-all duration-700 ease-out opacity-0 translate-y-12
+          ${isVisible ? 'opacity-100 translate-y-0 hover:scale-105 hover:z-10' : ''}
+        `}
+        style={{
+          transitionDelay: isVisible ? '100ms' : '0ms',
+          transitionProperty: 'opacity, transform'
+        }}
       >
         <div className={`absolute inset-0 bg-gradient-to-r ${gradient} opacity-60`} />
         <div className="relative z-10 bg-customYellow rounded-full p-3 flex items-center justify-center">
@@ -121,7 +122,7 @@ const CardsSection = () => {
           <p className="text-3xl md:text-4xl font-extrabold leading-tight">{count}</p>
           <p className="text-base md:text-lg font-semibold uppercase tracking-wide">{label}</p>
         </div>
-      </motion.div>
+      </div>
     );
 
     return link ? <Link href={link}>{Content}</Link> : Content;
@@ -133,9 +134,15 @@ const CardsSection = () => {
       className="relative z-10 mt-4 md:mt-8 lg:mt-[-100px] xl:mt-[-150px] px-4 sm:px-6 lg:px-0 py-10"
     >
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0">
-        {cardData.map((card, index) => (
-          <CardComponent key={index} {...card} />
-        ))}
+        {cardData.map((card, index) => {
+          // Add sequential delay to each card
+          const delay = index * 150;
+          return (
+            <div key={index} style={{ transitionDelay: `${delay}ms` }} className="transition-all duration-700">
+              <CardComponent {...card} />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
