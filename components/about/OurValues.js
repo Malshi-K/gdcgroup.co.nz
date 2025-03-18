@@ -6,7 +6,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion"; // Import Framer Motion
 
 // Correct Heroicons imports for v2
 import {
@@ -106,13 +105,13 @@ const OurValues = () => {
       icon: <BeakerIcon className="w-16 h-16 text-customBlue" />,
       title: "Empowered by Advanced Technology",
       description:
-        "Our ultimate objective is to be the New Zealand’s most competent provider of multidisciplinary civil engineering and architecture services – especially at solving persistent and complex engineering problems.",
+        "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering and architecture services – especially at solving persistent and complex engineering problems.",
     },
     {
       icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
       title: "Futuristic Approach",
       description:
-        "We use our extensive knowledge and experience to create development solutions which far exceed current market requirements. We aim not just to meet our client’s current needs, but also to predict and meet their future needs too.",
+        "We use our extensive knowledge and experience to create development solutions which far exceed current market requirements. We aim not just to meet our client's current needs, but also to predict and meet their future needs too.",
     },
     {
       icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
@@ -122,114 +121,88 @@ const OurValues = () => {
     },
   ];
 
-  // Animation Variants
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
-  };
-
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
-  const slideInRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
-  const slideUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
   return (
     <section ref={sectionRef} className="overflow-hidden">
-      <motion.div
-        className="px-10 py-6"
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        variants={fadeIn}
+      <div 
+        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Static Introductory Column */}
-          <motion.div
-            className="flex flex-col items-center justify-center text-center p-6 bg-white"
-            variants={slideInLeft}
+          <div
+            className={`flex flex-col items-center justify-center text-center p-6 bg-white transition-all duration-600 ease-out ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+            }`}
+            style={{ transitionDelay: "100ms" }}
           >
             <h2 className="text-3xl text-customBlue font-bold mb-4">Our Vision</h2>
             <p className="text-gray-600 max-w-md">
               Our vision is to provide unmatched quality, competitive solutions,
               and customized approaches.
             </p>
-          </motion.div>
+          </div>
 
           {/* Slider Columns */}
           <Slider {...sliderSettings} className="col-span-2">
             {visions.map((vision, index) => (
-              <motion.div
+              <div
                 key={index}
-                className="p-6 text-center"
-                variants={slideUp}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                style={{ height: "250px" }} // Adjust height as needed
+                className={`p-6 text-center transition-all duration-600 ease-out ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+                }`}
+                style={{ 
+                  height: "250px",
+                  transitionDelay: `${100 + (index * 75)}ms` 
+                }}
               >
                 <div className="flex justify-center mb-4">{vision.icon}</div>
                 <h3 className="text-lg font-bold">{vision.title}</h3>
                 <p className="text-gray-600 mt-2">{vision.description}</p>
-              </motion.div>
+              </div>
             ))}
           </Slider>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="px-10 py-6"
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        variants={fadeIn}
+      <div 
+        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+        style={{ transitionDelay: "300ms" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Slider Columns */}
           <Slider {...sliderSettings} className="col-span-2">
             {missions.map((mission, index) => (
-              <motion.div
+              <div
                 key={index}
-                className="p-6 text-center"
-                variants={slideUp}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                style={{ height: "250px" }} // Adjust height as needed
+                className={`p-6 text-center transition-all duration-600 ease-out ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+                }`}
+                style={{ 
+                  height: "250px",
+                  transitionDelay: `${400 + (index * 75)}ms` 
+                }}
               >
                 <div className="flex justify-center mb-4">{mission.icon}</div>
                 <h3 className="text-lg font-bold">{mission.title}</h3>
                 <p className="text-gray-600 mt-2">{mission.description}</p>
-              </motion.div>
+              </div>
             ))}
           </Slider>
 
           {/* Static Introductory Column */}
-          <motion.div
-            className="flex flex-col items-center justify-center text-center p-6 bg-white"
-            variants={slideInRight}
+          <div
+            className={`flex flex-col items-center justify-center text-center p-6 bg-white transition-all duration-600 ease-out ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+            }`}
+            style={{ transitionDelay: "400ms" }}
           >
             <h2 className="text-3xl text-customBlue font-bold mb-4">Our Mission</h2>
-          </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

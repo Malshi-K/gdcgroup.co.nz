@@ -3,7 +3,6 @@
 "use client"; // Ensure this is treated as a client component
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
 
 // Sample job data
 const jobs = [
@@ -49,6 +48,7 @@ export default function JobList() {
   const [filteredGroupedJobs, setFilteredGroupedJobs] = useState(
     groupByCategory(jobs)
   );
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // Update filtered jobs based on selected location
   useEffect(() => {
@@ -60,37 +60,23 @@ export default function JobList() {
     setFilteredGroupedJobs(groupByCategory(updatedFilteredJobs));
   }, [selectedLocation]);
 
-  // Animation Variants
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
-
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -30 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
+  // Trigger animations after initial render
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   return (
-    <motion.div
-      className="bg-gray-100"
-      initial="hidden"
-      animate="visible"
-      variants={fadeInUp}
-    >
-      <div className="max-w-6xl p-6 mx-auto rounded-md">
+    <div className="bg-gray-100">
+      <div 
+        className={`max-w-6xl p-6 mx-auto rounded-md transition-all duration-500 ease-out ${
+          isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
         {/* Header */}
-        <motion.div
-          className="flex justify-between items-center mb-4"
-          variants={slideInLeft}
+        <div 
+          className={`flex justify-between items-center mb-4 transition-all duration-500 ease-out ${
+            isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+          }`}
         >
           <h2 className="text-xl text-customBlue font-semibold">
             Job Openings
@@ -106,14 +92,16 @@ export default function JobList() {
               <option>Sri Lanka</option>
             </select>
           </div>
-        </motion.div>
+        </div>
 
         {/* Display jobs section-wise based on categories */}
-        {Object.keys(filteredGroupedJobs).map((category) => (
-          <motion.div
+        {Object.keys(filteredGroupedJobs).map((category, categoryIndex) => (
+          <div
             key={category}
-            className="space-y-6 mb-6"
-            variants={fadeInUp}
+            className={`space-y-6 mb-6 transition-all duration-500 ease-out ${
+              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}
+            style={{ transitionDelay: `${categoryIndex * 100}ms` }}
           >
             <div className="border-b pb-2">
               <h3 className="text-lg text-customBlue font-medium">
@@ -121,10 +109,12 @@ export default function JobList() {
               </h3>
             </div>
             {filteredGroupedJobs[category].map((job, index) => (
-              <motion.div
+              <div
                 key={index}
-                className="flex justify-between items-center p-4 bg-white shadow-sm rounded-md hover:border hover:border-customBlue transition cursor-pointer"
-                variants={fadeInUp}
+                className={`flex justify-between items-center p-4 bg-white shadow-sm rounded-md hover:border hover:border-customBlue transition-all duration-300 cursor-pointer ${
+                  isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+                }`}
+                style={{ transitionDelay: `${(categoryIndex * 100) + (index * 75)}ms` }}
               >
                 <div>
                   <h4 className="text-md text-customYellow font-bold">
@@ -135,11 +125,11 @@ export default function JobList() {
                   </p>
                 </div>
                 <span className="text-sm text-gray-700">{job.location}</span>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }

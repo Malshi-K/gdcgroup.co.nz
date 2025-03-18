@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link"; // Import Link from Next.js
 import dynamic from "next/dynamic"; // Dynamic import for optimized loading
-import { motion } from "framer-motion"; // Import Framer Motion
 
 // Dynamically import icons to improve initial load performance
 const icons = {
@@ -156,36 +155,16 @@ const ServicesSection = () => {
     };
   }, [animationTriggered]);
 
-  // Define animation variants for Framer Motion
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
-
-  const titleVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
   return (
     <section
       id="services"
       ref={sectionRef}
       className="py-8 bg-gray-50 overflow-hidden"
     >
-      <motion.div
-        className="text-center mb-8 px-4 md:px-8 xl:px-12"
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        variants={titleVariants}
+      <div
+        className={`text-center mb-8 px-4 md:px-8 xl:px-12 transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-5"
+        }`}
       >
         <h2 className="text-3xl text-customYellow uppercase font-bold mt-2">
           Our Expertise and Services
@@ -196,18 +175,23 @@ const ServicesSection = () => {
           projects. Explore our services to see how we can help you reach your
           goals.
         </h3>
-      </motion.div>
+      </div>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-6 xl:px-10">
         {services.map((service, index) => {
           const IconComponent = service.icon; // Use dynamically imported icon component
           return (
-            <motion.div
+            <div
               key={index}
-              className="relative bg-white shadow-md overflow-hidden transition duration-300 group flex flex-col items-center border-b-4 border-customBlue transform"
-              initial="hidden"
-              animate={isVisible ? "visible" : "hidden"}
-              variants={cardVariants}
+              className={`relative bg-white shadow-md overflow-hidden transition duration-300 group flex flex-col items-center border-b-4 border-customBlue transform ${
+                isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-12"
+              }`}
+              style={{ 
+                transitionProperty: 'all',
+                transitionDuration: '500ms',
+                transitionTimingFunction: 'ease-out',
+                transitionDelay: `${index * 30}ms` 
+              }}
             >
               {/* Sliding background effect */}
               <div className="absolute inset-0 bg-customBlue transition-transform duration-300 transform translate-y-full group-hover:translate-y-0"></div>
@@ -220,15 +204,13 @@ const ServicesSection = () => {
                 </h4>
                 <Link
                   href={`/services/${service.slug}`}
-                  legacyBehavior
+                  className="mt-2 bg-transparent text-white px-3 py-1 rounded-md text-xs font-semibold transition duration-300 group-hover:bg-customYellow group-hover:text-white opacity-0 group-hover:opacity-100"
                   prefetch={true}
                 >
-                  <a className="mt-2 bg-transparent text-white px-3 py-1 rounded-md text-xs font-semibold transition duration-300 group-hover:bg-customYellow group-hover:text-white opacity-0 group-hover:opacity-100">
-                    View More
-                  </a>
+                  View More
                 </Link>
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </div>

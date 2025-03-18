@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import projectsData from "@/app/data/projectsData.json";
 
 const ProjectsSection = () => {
@@ -48,36 +47,12 @@ const ProjectsSection = () => {
     return () => observer.disconnect();
   }, [animationTriggered]);
 
-  const animations = {
-    title: {
-      hidden: { opacity: 0, y: 20 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, ease: "easeOut" }
-      }
-    },
-    card: {
-      hidden: { opacity: 0, y: 50 },
-      visible: (index) => ({
-        opacity: 1,
-        y: 0,
-        transition: { 
-          duration: 0.5, 
-          ease: "easeOut",
-          delay: index * 0.1
-        }
-      })
-    }
-  };
-
   return (
     <section ref={sectionRef} className="py-16 bg-[#F3F5F6] overflow-hidden">
-      <motion.div
-        className="text-center mb-12 px-6 md:px-10 xl:px-16"
-        initial="hidden"
-        animate={isVisible ? "visible" : "hidden"}
-        variants={animations.title}
+      <div
+        className={`text-center mb-12 px-6 md:px-10 xl:px-16 transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-5"
+        }`}
       >
         <h2 className="text-4xl text-customYellow uppercase font-bold mt-2">
           Explore Our Portfolio
@@ -87,17 +62,20 @@ const ProjectsSection = () => {
           completed across New Zealand. From large-scale commercial developments
           to smaller residential builds.
         </h3>
-      </motion.div>
+      </div>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {projects.map((project, index) => (
-          <motion.div
+          <div
             key={project.title}
-            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 ease-in-out hover:shadow-lg hover:-translate-y-1"
-            initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
-            variants={animations.card}
-            custom={index}
+            className={`relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-all duration-500 ease-in-out hover:shadow-lg hover:-translate-y-1 ${
+              isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-12"
+            }`}
+            style={{ 
+              transitionDelay: `${index * 100}ms`,
+              transitionDuration: "500ms",
+              transitionTimingFunction: "ease-out"
+            }}
           >
             {/* Image container with modified height and improved display */}
             <div className="relative w-full h-64">
@@ -128,7 +106,7 @@ const ProjectsSection = () => {
                 </p>
               )}              
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 

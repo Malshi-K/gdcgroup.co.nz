@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const ContactSection = () => {
@@ -17,6 +16,33 @@ const ContactSection = () => {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  // Handle intersection observer to detect when section is in view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false); // Reset for re-animation when scrolling back
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   // Handle form input change
   const handleChange = (e) => {
@@ -69,28 +95,19 @@ const ContactSection = () => {
     }
   };
 
-  // Animation Variants
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
   return (
-    <motion.section
-      className="relative flex flex-col lg:flex-row bg-white text-black py-6 px-4 md:px-8 lg:px-16 overflow-hidden"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
-      variants={fadeIn}
+    <section
+      ref={sectionRef}
+      className={`relative flex flex-col lg:flex-row bg-white text-black py-6 px-4 md:px-8 lg:px-16 overflow-hidden transition-all duration-600 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+      }`}
     >
       {/* Left Content Column */}
-      <motion.div
-        className="flex-1 flex items-center justify-center py-6 md:py-0"
-        variants={fadeIn}
+      <div
+        className={`flex-1 flex items-center justify-center py-6 md:py-0 transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+        style={{ transitionDelay: "100ms" }}
       >
         <div className="text-left max-w-sm -mt-20 md:mt-0">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-customBlue">
@@ -136,28 +153,30 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Center Map Column */}
-      <motion.div
-        className="flex-1 relative flex justify-center items-center max-w-full min-h-[300px] sm:min-h-[400px] md:min-h-[450px] mx-auto"
-        style={{ width: "100%", height: "auto" }} // Ensure it takes full width and adjusts height automatically
-        variants={fadeIn}
+      <div
+        className={`flex-1 relative flex justify-center items-center max-w-full min-h-[300px] sm:min-h-[400px] md:min-h-[450px] mx-auto transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+        style={{ width: "100%", height: "auto", transitionDelay: "200ms" }}
       >
         <Image
           src="/images/contact-map.webp" // Ensure the correct path is used
           alt="Map"
-          layout="responsive"
           width={700} // You can set this as per the aspect ratio of the image
           height={500} // This should be adjusted for proper aspect ratio
-          objectFit="contain"
+          style={{ objectFit: "contain" }}
         />
-      </motion.div>
+      </div>
 
       {/* Right Form Column */}
-      <motion.div
-        className="flex-1 p-6 bg-white shadow-md rounded-md mt-8 lg:mt-0"
-        variants={fadeIn}
+      <div
+        className={`flex-1 p-6 bg-white shadow-md rounded-md mt-8 lg:mt-0 transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+        style={{ transitionDelay: "300ms" }}
       >
         <h3 className="text-lg md:text-xl lg:text-2xl text-customBlue font-semibold mb-4">
           Send Message
@@ -248,8 +267,8 @@ const ContactSection = () => {
             </button>
           </form>
         )}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 

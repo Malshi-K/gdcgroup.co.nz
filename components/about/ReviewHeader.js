@@ -1,46 +1,50 @@
 "use client"; // Ensure this is treated as a client component
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion"; // Import Framer Motion
 
 const ReviewHeader = () => {
-  // Animation Variants
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
-  };
-
-  const slideInRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
+  // State to control animation
+  const [isVisible, setIsVisible] = useState(false);
+  
+  // Use IntersectionObserver to trigger animations when section comes into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          // Reset for re-animation when scrolling back (since viewport once was false)
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.2 }
+    );
+    
+    const section = document.getElementById('review-header-section');
+    if (section) {
+      observer.observe(section);
+    }
+    
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
 
   return (
-    <motion.section
-      className="px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden" // Add overflow-hidden here
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
-      variants={fadeIn}
+    <section
+      id="review-header-section"
+      className={`px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden transition-opacity duration-600 ease-out ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
     >
       {/* Image Section */}
-      <motion.div
-        className="flex justify-center relative overflow-hidden" // Add relative and overflow-hidden here
-        variants={slideInLeft}
+      <div
+        className={`flex justify-center relative overflow-hidden transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+        }`}
       >
         <Image
           src="/images/about/review.webp" // Replace with the actual path to your image
@@ -49,12 +53,14 @@ const ReviewHeader = () => {
           height={250}
           className="object-cover"
         />
-      </motion.div>
+      </div>
 
       {/* Text Section */}
-      <motion.div
-        className="text-center md:text-left relative overflow-hidden" // Add relative and overflow-hidden here
-        variants={slideInRight}
+      <div
+        className={`text-center md:text-left relative overflow-hidden transition-all duration-600 ease-out ${
+          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+        }`}
+        style={{ transitionDelay: "150ms" }}
       >
         <h1 className="text-lg uppercase font-semibold text-gray-500">
           Leave us a Review
@@ -66,8 +72,8 @@ const ReviewHeader = () => {
           Please provide your feedback for any job you have previously completed
           with us, and kindly include the job number for easy reference.
         </p>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 
