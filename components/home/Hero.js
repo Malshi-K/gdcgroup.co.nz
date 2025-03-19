@@ -9,6 +9,13 @@ const Hero = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef(null);
   
+  // Your Cloudinary video URL (replace with your actual URL)
+  const CLOUDINARY_URL = "https://res.cloudinary.com/dt7jcrlid/video/upload/v1/Hero_chfop8.webm";
+  
+  // Optional: Add quality and format optimization parameters
+  // This delivers an optimized video based on browser capabilities
+  const OPTIMIZED_URL = `${CLOUDINARY_URL.replace('/upload/', '/upload/q_auto,f_auto/')}`;
+  
   useEffect(() => {
     router.prefetch("/locations");
     router.prefetch("/portfolio/all-projects");
@@ -24,7 +31,7 @@ const Hero = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting && videoRef.current) {
           // Only start loading the video when it's in viewport
-          videoRef.current.src = "/video/Hero.webm";
+          videoRef.current.src = OPTIMIZED_URL;
           videoRef.current.load();
           observer.unobserve(entry.target);
         }
@@ -53,7 +60,11 @@ const Hero = () => {
         {/* Preload critical assets */}
         <link rel="preload" href="/images/hero-poster.webp" as="image" />
         
-        {/* Add preconnect hints for faster resource loading */}
+        {/* Add preconnect to Cloudinary for faster video loading */}
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        
+        {/* Font preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </Head>
@@ -96,7 +107,7 @@ const Hero = () => {
           />
         </div>
         {/* Video (loads after initial page load) */}
-        {/* <div className="absolute inset-0 z-1">
+        <div className="absolute inset-0 z-1">
           <video
             ref={videoRef}
             className="w-full h-full object-cover"
@@ -109,7 +120,7 @@ const Hero = () => {
             loading="lazy"
             onLoadedData={() => setVideoLoaded(true)}
           />
-        </div> */}
+        </div>
       </section>
     </>
   );
