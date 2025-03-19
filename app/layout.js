@@ -37,18 +37,18 @@ export default function RootLayout({ children }) {
         <ScrollToTop />
         
         {/* HubSpot Tracking Script */}
-        {/* <Script
+        <Script
           id="hs-tracking-code"
           src="https://js.hs-scripts.com/6187835.js"
           strategy="afterInteractive"
-        /> */}
+        />
         
         {/* HubSpot Chatbot Script */}
-        {/* <Script
+        <Script
           id="hs-chatbot-loader"
           src="https://js.hs-scripts.com/6187835.js"
           strategy="afterInteractive"
-        /> */}
+        />
       </body>
     </html>
   );
