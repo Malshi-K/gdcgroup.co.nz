@@ -77,7 +77,7 @@ const Hero = () => {
           name="description"
           content="GDC Consultants Ltd offers expert engineering consulting services, delivering innovative solutions tailored to meet your project's unique needs and challenges."
         />
-        {/* Preload critical assets */}
+        {/* Explicitly preload critical assets */}
         <link rel="preload" href="/images/hero-poster.webp" as="image" />
         
         {/* Add preconnect to Cloudinary for faster video loading (only if not mobile) */}
@@ -92,32 +92,37 @@ const Hero = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </Head>
+      
+      {/* Fixed height container to prevent layout shift */}
       <section className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[580px] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center md:text-left z-10 transition-opacity duration-700 ease-in-out opacity-100"
-        >
+        {/* Content overlay - now with fixed positioning rather than absolute */}
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center md:text-left z-10">
           <div className="container mx-auto px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-16 lg:py-20 text-white flex flex-col items-center md:items-start">
-            <h1
-              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white"
-            >
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
               TRUSTED ADVISORS FOR EVERY STAGE OF YOUR PROJECT
             </h1>
-            <p
-              className="mb-6 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed"
-            >
+            <p className="mb-6 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
               Team of chartered professional engineers & architectural designers
               providing innovative solutions and expert guidance.
             </p>
-            <div
-              className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4"
-            >
-              <button onClick={() => router.push("/locations")} className="bg-customYellow text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90">GET IN TOUCH</button>
-              <button onClick={() => router.push("/portfolio/all-projects")} className="bg-white text-customBlue px-6 py-3 rounded-xl font-semibold ml-4 transition-colors duration-300 hover:bg-opacity-90">EXPLORE OUR PROJECTS</button>
+            <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
+              <button 
+                onClick={() => router.push("/locations")} 
+                className="bg-customYellow text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+              >
+                GET IN TOUCH
+              </button>
+              <button 
+                onClick={() => router.push("/portfolio/all-projects")} 
+                className="bg-white text-customBlue px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+              >
+                EXPLORE OUR PROJECTS
+              </button>
             </div>
           </div>
         </div>
         
-        {/* Poster image - always visible on mobile, or as fallback on desktop until video loads */}
+        {/* Poster image - always present */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-poster.webp"
@@ -126,15 +131,20 @@ const Hero = () => {
             priority
             sizes="100vw"
             style={{
-              objectFit: 'cover',
-              display: (!isMobile && videoLoaded) ? 'none' : 'block'
+              objectFit: 'cover'
             }}
           />
         </div>
         
         {/* Video - only rendered for non-mobile devices */}
         {!isMobile && (
-          <div className="absolute inset-0 z-1">
+          <div 
+            className="absolute inset-0 z-1" 
+            style={{ 
+              opacity: videoLoaded ? 1 : 0,
+              transition: 'opacity 0.5s ease-in-out'
+            }}
+          >
             <video
               ref={videoRef}
               className="w-full h-full object-cover"
