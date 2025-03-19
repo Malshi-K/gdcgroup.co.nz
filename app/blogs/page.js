@@ -19,7 +19,7 @@ async function fetchBlogs() {
     }
 
     const data = await response.json();
-    console.log('Fetched blogs:', data); // For debugging
+    // console.log('Fetched blogs:', data); // For debugging
     return data.results || [];
   } catch (error) {
     console.error("Error fetching blogs:", error);

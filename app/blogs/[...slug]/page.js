@@ -4,7 +4,7 @@ import "@/app/globals.css";
 
 async function fetchBlogData(slug) {
   try {
-    console.log("Original slug:", slug); // Debug
+    // console.log("Original slug:", slug); // Debug
 
     const res = await axios.get(`https://api.hubapi.com/cms/v3/blogs/posts`, {
       headers: {
@@ -16,10 +16,10 @@ async function fetchBlogData(slug) {
       },
     });
 
-    console.log(
-      "All blog posts:",
-      res.data.results.map((post) => post.slug)
-    );
+    // console.log(
+    //   "All blog posts:",
+    //   res.data.results.map((post) => post.slug)
+    // );
 
     // Find blog post by checking both with and without the prefix
     const blog = res.data.results.find((post) => {
@@ -33,7 +33,7 @@ async function fetchBlogData(slug) {
     });
 
     if (!blog) {
-      console.log("Blog not found for slug:", slug);
+      // console.log("Blog not found for slug:", slug);
       return null;
     }
 

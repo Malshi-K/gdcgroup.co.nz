@@ -19,7 +19,7 @@ export const fetchPublishedBlogs = async () => {
       throw new Error('Unexpected response format from HubSpot API.');
     }
 
-    console.log('Fetched Blogs:', response.data.results); // Log the fetched data for debugging
+    // console.log('Fetched Blogs:', response.data.results); // Log the fetched data for debugging
     return response.data.results;
   } catch (error) {
     // Log detailed error information

@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
 import Image from "next/image";
@@ -8,10 +7,39 @@ import Image from "next/image";
 const Hero = () => {
   const router = useRouter();
   const [videoLoaded, setVideoLoaded] = useState(false);
-
+  const videoRef = useRef(null);
+  
   useEffect(() => {
     router.prefetch("/locations");
     router.prefetch("/portfolio/all-projects");
+    
+    // Implement lazy loading with Intersection Observer
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && videoRef.current) {
+          // Only start loading the video when it's in viewport
+          videoRef.current.src = "/video/Hero.webm";
+          videoRef.current.load();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+    
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
   }, [router]);
 
   return (
@@ -24,8 +52,11 @@ const Hero = () => {
         />
         {/* Preload critical assets */}
         <link rel="preload" href="/images/hero-poster.webp" as="image" />
+        
+        {/* Add preconnect hints for faster resource loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </Head>
-
       <section className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[580px] overflow-hidden">
         <div
           className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center md:text-left z-10 transition-opacity duration-700 ease-in-out opacity-100"
@@ -50,7 +81,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
         {/* Poster image (loads immediately while video loads) */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -65,17 +95,16 @@ const Hero = () => {
             }}
           />
         </div>
-
         {/* Video (loads after initial page load) */}
         <div className="absolute inset-0 z-1">
           <video
+            ref={videoRef}
             className="w-full h-full object-cover"
-            src="/video/Hero.webm"
             autoPlay
             loop
             muted
             playsInline
-            preload="none" // Changed from "metadata" to "none"
+            preload="none"
             poster="/images/hero-poster.webp"
             loading="lazy"
             onLoadedData={() => setVideoLoaded(true)}

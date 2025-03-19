@@ -71,6 +71,11 @@ function useDelayedLoad() {
 }
 
 export default function GoogleTracking() {
+  // Only include tracking in production
+  if (process.env.NODE_ENV !== 'production') {
+    return null;
+  }
+  
   const shouldLoadGA = useDelayedLoad()
 
   useEffect(() => {
