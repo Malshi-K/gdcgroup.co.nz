@@ -7,6 +7,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 const GA_MEASUREMENT_ID = 'G-9YLKY3BK26'
 const ADS_CONVERSION_ID = 'AW-742615805'
 const DEBUG_MODE = true // Toggle this for debugging
+const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 
 // Debug logger with styled console output
 const logAnalytics = (action, data) => {
@@ -71,16 +72,13 @@ function useDelayedLoad() {
 }
 
 export default function GoogleTracking() {
-  // Only include tracking in production
-  if (process.env.NODE_ENV !== 'production') {
-    return null;
-  }
-  
+  // Always call hooks at the top level, regardless of whether we'll use their values
   const shouldLoadGA = useDelayedLoad()
 
+  // Debugging effect - always declare it, even if we don't use the production check yet
   useEffect(() => {
-    // Verify analytics installation
-    if (DEBUG_MODE) {
+    // Only run the debug code if DEBUG_MODE is true
+    if (DEBUG_MODE && IS_PRODUCTION) {
       setTimeout(() => {
         if (typeof window.gtag === 'function') {
           logAnalytics('Status', 'Analytics installed and running')
@@ -96,7 +94,8 @@ export default function GoogleTracking() {
     }
   }, [])
 
-  if (!shouldLoadGA) return null
+  // Only render the actual tracking in production
+  if (!IS_PRODUCTION || !shouldLoadGA) return null
 
   return (
     <>
