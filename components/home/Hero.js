@@ -96,7 +96,7 @@ const Hero = () => {
           />
         </div>
         {/* Video (loads after initial page load) */}
-        <div className="absolute inset-0 z-1">
+        {/* <div className="absolute inset-0 z-1">
           <video
             ref={videoRef}
             className="w-full h-full object-cover"
@@ -109,7 +109,7 @@ const Hero = () => {
             loading="lazy"
             onLoadedData={() => setVideoLoaded(true)}
           />
-        </div>
+        </div> */}
       </section>
     </>
   );
