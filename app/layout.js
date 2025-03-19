@@ -1,54 +1,51 @@
 "use client";
 import { useEffect } from "react";
-import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTracking from "@/components/GoogleTracking";
 
 export default function RootLayout({ children }) {
-  // HubSpot Chatbot widget initialization
   useEffect(() => {
-    // Only run this effect on the client side
-    if (typeof window !== 'undefined') {
-      // Add a delay to ensure HubSpot script is fully loaded
-      const timer = setTimeout(() => {
-        if (window.HubSpotConversations) {
-          window.HubSpotConversations.widget.load({
+    const trackingScriptId = "hs-tracking-code";
+    if (!document.getElementById(trackingScriptId)) {
+      const trackingScript = document.createElement("script");
+      trackingScript.src = `https://js.hs-scripts.com/6187835.js`;
+      trackingScript.id = trackingScriptId;
+      trackingScript.async = true;
+      trackingScript.defer = true;
+      document.head.appendChild(trackingScript);
+    }
+
+    const chatbotScriptId = "hs-chatbot-loader";
+    if (!document.getElementById(chatbotScriptId)) {
+      const chatbotScript = document.createElement("script");
+      chatbotScript.src = `https://js.hs-scripts.com/6187835.js`;
+      chatbotScript.id = chatbotScriptId;
+      chatbotScript.async = true;
+      chatbotScript.defer = true;
+      chatbotScript.onload = () => {
+        setTimeout(() => {
+          window.HubSpotConversations?.widget.load({
             chatflowId: 244224,
             portalId: 6187835,
           });
-        }
-      }, 2000);
-      
-      return () => clearTimeout(timer);
+        }, 2000); // Add a 1-second delay
+      };
+      document.body.appendChild(chatbotScript);
     }
-  }, []); // Empty dependency array ensures this only runs once
+  });
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <GoogleTracking />
       </head>
-      <body className="font-sans" suppressHydrationWarning>
+      <body className="font-sans">
         <Header />
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
-        
-        {/* HubSpot Tracking Script */}
-        <Script
-          id="hs-tracking-code"
-          src="https://js.hs-scripts.com/6187835.js"
-          strategy="afterInteractive"
-        />
-        
-        {/* HubSpot Chatbot Script */}
-        <Script
-          id="hs-chatbot-loader"
-          src="https://js.hs-scripts.com/6187835.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
