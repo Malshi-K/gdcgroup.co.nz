@@ -7,47 +7,67 @@ import Image from "next/image";
 const Hero = () => {
   const router = useRouter();
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const videoRef = useRef(null);
   
-  // Your Cloudinary video URL (replace with your actual URL)
+  // Your Cloudinary video URL
   const CLOUDINARY_URL = "https://res.cloudinary.com/dt7jcrlid/video/upload/v1/Hero_chfop8.webm";
   
-  // Optional: Add quality and format optimization parameters
-  // This delivers an optimized video based on browser capabilities
+  // Optimized URL with quality and format parameters
   const OPTIMIZED_URL = `${CLOUDINARY_URL.replace('/upload/', '/upload/q_auto,f_auto/')}`;
+  
+  useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Run on initial load
+    checkMobile();
+    
+    // Set up listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
   
   useEffect(() => {
     router.prefetch("/locations");
     router.prefetch("/portfolio/all-projects");
     
-    // Implement lazy loading with Intersection Observer
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && videoRef.current) {
-          // Only start loading the video when it's in viewport
-          videoRef.current.src = OPTIMIZED_URL;
-          videoRef.current.load();
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-    
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-    
-    return () => {
+    // Only set up video loading if not on mobile
+    if (!isMobile) {
+      // Implement lazy loading with Intersection Observer
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && videoRef.current) {
+            // Only start loading the video when it's in viewport
+            videoRef.current.src = OPTIMIZED_URL;
+            videoRef.current.load();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+      
       if (videoRef.current) {
-        observer.unobserve(videoRef.current);
+        observer.observe(videoRef.current);
       }
-    };
-  }, [router]);
+      
+      return () => {
+        if (videoRef.current) {
+          observer.unobserve(videoRef.current);
+        }
+      };
+    }
+  }, [router, isMobile, OPTIMIZED_URL]);
 
   return (
     <>
@@ -60,9 +80,13 @@ const Hero = () => {
         {/* Preload critical assets */}
         <link rel="preload" href="/images/hero-poster.webp" as="image" />
         
-        {/* Add preconnect to Cloudinary for faster video loading */}
-        <link rel="preconnect" href="https://res.cloudinary.com" />
-        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        {/* Add preconnect to Cloudinary for faster video loading (only if not mobile) */}
+        {!isMobile && (
+          <>
+            <link rel="preconnect" href="https://res.cloudinary.com" />
+            <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+          </>
+        )}
         
         {/* Font preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,7 +116,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* Poster image (loads immediately while video loads) */}
+        
+        {/* Poster image - always visible on mobile, or as fallback on desktop until video loads */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-poster.webp"
@@ -102,25 +127,28 @@ const Hero = () => {
             sizes="100vw"
             style={{
               objectFit: 'cover',
-              display: videoLoaded ? 'none' : 'block'
+              display: (!isMobile && videoLoaded) ? 'none' : 'block'
             }}
           />
         </div>
-        {/* Video (loads after initial page load) */}
-        <div className="absolute inset-0 z-1">
-          <video
-            ref={videoRef}
-            className="w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="none"
-            poster="/images/hero-poster.webp"
-            loading="lazy"
-            onLoadedData={() => setVideoLoaded(true)}
-          />
-        </div>
+        
+        {/* Video - only rendered for non-mobile devices */}
+        {!isMobile && (
+          <div className="absolute inset-0 z-1">
+            <video
+              ref={videoRef}
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="none"
+              poster="/images/hero-poster.webp"
+              loading="lazy"
+              onLoadedData={() => setVideoLoaded(true)}
+            />
+          </div>
+        )}
       </section>
     </>
   );
