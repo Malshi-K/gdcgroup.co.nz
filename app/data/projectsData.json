@@ -137,6 +137,11 @@
         "description": ""
       },
       {
+        "title": "Dickens Street",
+        "image": "/images/projects/archi/9.webp",
+        "description": "Proposed Renovations"
+      },
+      {
         "title": "134 Riverlea Road",
         "image": "/images/projects/content (27).webp",
         "description": "",
@@ -164,12 +169,7 @@
         "image": "/images/projects/content (31).webp",
         "description": "",
         "jobDescription": "Resource Consent, Traffic"
-      },
-      {
-        "title": "Dickens Street",
-        "image": "/images/projects/6.webp",
-        "description": "Proposed Renovations"
-      },
+      },      
       {
         "title": "Ngāruawāhia - Public Pool",
         "image": "/images/projects/content (28).webp",
@@ -185,7 +185,7 @@
         "title": "Contamination Assessment",
         "image": "/images/projects/content (1).webp",
         "description": "",
-        "jobDescription": "Contamination Assessment"
+        "jobDescription": ""
       },
       {
         "title": "Fairy Springs Motel",
@@ -276,7 +276,13 @@
   },
   {
     "category": "Residential",
-    "projects": []
+    "projects": [
+      {
+        "title": "House",
+        "image": "/images/projects/residential/1.webp",
+        "description": "House Extension"
+      }
+    ]
   },
   {
     "category": "Commercial",
@@ -369,6 +375,31 @@
         "image": "/images/projects/common/Sir Howard Morrison Centre.png",
         "description": "",
         "jobDescription": ""
+      },
+      {
+        "title": "Brightlands Childcare Centre",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "Concept Design"
+      },
+      {
+        "title": "110 Kapanga Road, Coromandel, Star Gallery",
+        "image": "/images/projects/commercial/2.webp",
+        "description": "IEP Report"
+      },
+      {
+        "title": "7 Kent Street Frankton",
+        "image": "/images/projects/commercial/3.webp",
+        "description": "IEP Report"
+      },
+      {
+        "title": "Fin Chaser Marine",
+        "image": "/images/projects/commercial/4.webp",
+        "description": "Structural IEP Report"
+      },
+      {
+        "title": "Ray Staiger Commercial building",
+        "image": "/images/projects/commercial/5.webp",
+        "description": "Structural Design and Supervision, Geotech"
       }
     ]
   },
@@ -712,6 +743,11 @@
         "title": "The Living Maori Village",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": ""
+      },
+      {
+        "title": "Te Awamarahi Maraeh",
+        "image": "/images/projects/Cultural/Te Awamarahi Marae.webp",
+        "description": "Structural Condition Assessment"
       }
     ]
   },
