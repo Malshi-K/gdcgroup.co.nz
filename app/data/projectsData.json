@@ -3,93 +3,93 @@
     "category": "Structural",
     "projects": [
       {
-        "title": "University of Waikato",
+        "title": "University of Waikato, Hamilton, Waikato",
         "image": "/images/projects/content.webp",
         "description": "",
-        "jobDescription": "Seismic Assessment and Retrofit Design"
+        "jobDescription": "GDC provided Detailed Seismic Assessments (DSAs) and Retrofit Designs for multiple buildings."
       },
       {
-        "title": "Borman Road Preschool",
+        "title": "Borman Road Preschool, Hamilton, Waikato",
         "image": "/images/projects/content (3).webp",
         "description": ""
       },
       {
-        "title": "Fairy Springs Motel",
+        "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (4).webp",
         "description": "",
-        "jobDescription": "Geotechnical Report and Structural Design"
+        "jobDescription": "GDC provided a Geotechnical Report and Structural Design for this project."
       },
       {
-        "title": "Te Manatu Drive Dairy",
+        "title": "Te Manatu Drive Dairy, Hamilton, Waikato",
         "image": "/images/projects/content (7).webp",
         "description": "",
-        "jobDescription": "Resource Consent"
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
-        "title": "Rotorua Museum",
+        "title": "Rotorua Museum, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (8).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)"
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (9).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (10).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Storey Avenue Child Care Centre",
+        "title": "Storey Avenue Child Care Centre, Hamilton, Waikato",
         "image": "/images/projects/content (11).webp",
         "description": "",
-        "jobDescription": "3 Waters, Structural Design"
+        "jobDescription": "GDC provided 3 Waters and Structural Design for this project."
       },
       {
-        "title": "Hastings Sports Centre",
+        "title": "Hastings Sports Centre, Hastings, Hawke's Bay",
         "image": "/images/projects/content (12).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) and pavilion retrofit drawings for this project."
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (13).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (14).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
-        "title": "Pump Station Latham Street, Napier",
+        "title": "Pump Station Latham Street, Napier, Hawke's Bay",
         "image": "/images/projects/content (15).webp",
         "description": "",
-        "jobDescription": "Structural Assessment Report"
+        "jobDescription": "GDC provided the Structural Assessment Report for this project."
       },
       {
-        "title": "Masonic Hotel",
+        "title": "Masonic Hotel, Cambridge, Waikato",
         "image": "/images/projects/content (16).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project.(Heritage Bricks)"
       },
       {
-        "title": "Apartments",
+        "title": "Apartments, Hamilton, Waikato",
         "image": "/images/projects/content (6).webp",
         "description": "",
-        "jobDescription": "Geotechnical & Structural"
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
       },
       {
-        "title": "134 Riverlea Road",
+        "title": "Commercial Building, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
         "description": "",
-        "jobDescription": "Structural Design of extension and alterations"
+        "jobDescription": "GDC provided the Structural Design of extension and alterations for this project."
       }      
     ]
   },
@@ -97,84 +97,79 @@
     "category": "Architectural",
     "projects": [
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/1.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/2.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/3.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/4.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/5.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/6.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/7.webp",
         "description": ""
       },
       {
-        "title": "Architectural Design Project",
+        "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/8.webp",
         "description": ""
       },
       {
-        "title": "Dickens Street",
+        "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
-        "description": "Proposed Renovations"
+        "description": "GDC provided a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC provided a Geotechnical Investigation and Report for the rear extension, and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC provided Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project."
       },
       {
-        "title": "134 Riverlea Road",
+        "title": "134 Riverlea Road, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
         "description": "",
-        "jobDescription": "Structural Design of extension and alterations"
+        "jobDescription": "GDC provided the Structural Design of extension and alterations for this project."
       },
       {
-        "title": "Ngaruwahia - Public Pool",
-        "image": "/images/projects/content (28).webp",
-        "description": ""
-      },
-      {
-        "title": "Woodlands Estate - Stage 1",
+        "title": "Woodlands Estate - Stage 1, Taupiri, Waikato",
         "image": "/images/projects/content (29).webp",
         "description": "",
-        "jobDescription": "Architectural Concept Design, 3D Renderings"
+        "jobDescription": "GDC provided the Architectural Concept Design and 3D Renderings for this project."
       },
       {
-        "title": "Karewa Place",
+        "title": "Karewa Place, Hamilton, Waikato",
         "image": "/images/projects/content (30).webp",
         "description": "",
-        "jobDescription": "Geotechnical, 3 Waters"
+        "jobDescription": "GDC provided Geotechnical and 3 Waters services for this project."
       },
       {
-        "title": "Ohaupo Road Motel",
+        "title": "Ohaupo Road Motel, Ohaupo, Waikato",
         "image": "/images/projects/content (31).webp",
         "description": "",
-        "jobDescription": "Resource Consent, Traffic"
+        "jobDescription": "GDC provided Resource Consent and Traffic services for this project."
       },      
       {
-        "title": "Ngāruawāhia - Public Pool",
+        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (28).webp",
         "description": "",
-        "jobDescription": "Geotechnical Investigation"
+        "jobDescription": "GDC provided the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design."
       }
     ]
   },
@@ -182,28 +177,28 @@
     "category": "Geotech",
     "projects": [
       {
-        "title": "Contamination Assessment",
+        "title": "Contamination Assessment, Hamilton, Waikato",
         "image": "/images/projects/content (1).webp",
         "description": "",
-        "jobDescription": ""
+        "jobDescription": "GDC provided a Contaminations Assessment on the land for this project"
       },
       {
-        "title": "Fairy Springs Motel",
+        "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (4).webp",
         "description": "",
-        "jobDescription": "Geotechnical Report and Structural Design"
+        "jobDescription": "GDC provided a Geotechnical Report and Structural Design for this project."
       },
       {
-        "title": "Apartment Building in Hamilton",
+        "title": "Apartment Building, Hamilton, Waikato",
         "image": "/images/projects/image-54.webp",
         "description": "",
-        "jobDescription": "Geotechnical & Structural"
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
       },
       {
-        "title": "Ngāruawāhia - Public Pool",
+        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (28).webp",
         "description": "",
-        "jobDescription": "Geotechnical Investigation"
+        "jobDescription": "GDC provided the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design."
       }
     ]
   },
@@ -211,9 +206,10 @@
     "category": "Environmental + Planning",
     "projects": [
       {
-        "title": "Subdivision Baverstock",
+        "title": "Subdivision Baverstock, Hamilton, Waikato",
         "image": "/images/projects/image-56.webp",
-        "description": ""
+        "description": "",
+        "jobDescription": "GDC provided a Geotechnical Investigation and Assessment, and a 3 Waters Assessment for this project."
       },
       {
         "title": "Baverstock Subdivision",
@@ -222,44 +218,46 @@
         "jobDescription": "Geotechnical Investigation and Assessment, 3 Waters Assessment"
       },
       {
-        "title": "Rotokauri Walkway",
+        "title": "Rotokauri Walkway, Waikato",
         "image": "/images/projects/content (32).webp",
         "description": "",
-        "jobDescription": "Bridge Design, Resource Consent"
+        "jobDescription": "GDC provided a topographical survey, GIS investigation and analysis of the proposed track, designed the walkway, conducted geotechnical investigations and provided foundation recommendations, delivered detailed design drawings and documentation for a timber bridge and elevated boardwalks, and completed the application for land use consent and building consent for this project."
       },
       {
-        "title": "Tuakau Playground",
+        "title": "Buckland Road Playground, Tuakau, Waikato",
         "image": "/images/projects/5.webp",
-        "description": "Concept Plan for proposed Playground and Sports Field"
+        "description": "",
+        "jobDescription": "GDC provided Stage 1 Detailed Design services for this project. This included preparing detailed design drawings with finished and existing ground levels, creating 3D animations with profiles, and providing specifications. GDC also prepared engineering estimates, schedules of quantities, soakage testing and design (including one compulsory and three provisional tests), conducted a profile survey, prepared an erosion and sediment control plan, completed a detailed survey, conducted a geotechnical investigation and report, and lodged a resource consent application."
       },
       {
-        "title": "Holiday Park and Commercial Centre in the Coromandel",
+        "title": "Holiday Park and Commercial Centre in Kennedy Bay, Coromandel, Waikato",
         "image": "/images/projects/Screenshot-2024-01-19-093510.webp",
-        "description": "Concept Plan for proposed Playground and Sports Field"
+        "description": "",
+        "jobDescription": "GDC provided Conceptual 3D Architecture Plans, a Simple Traffic Report, a Three Waters Assessment Report, a Geotechnical Assessment and Report, a Natural Hazards Report, and an Application for Resource Consent to the council for this project."
       },
       {
-        "title": "Borman Road Child Care Centre",
+        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
         "image": "/images/projects/content (35).webp",
         "description": "",
-        "jobDescription": "Resource Consent"
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
-        "title": "Te Manatu Drive Dairy",
+        "title": "Te Manatu Drive Dairy, Hamilton, Waikato",
         "image": "/images/projects/content (7).webp",
         "description": "",
-        "jobDescription": "Resource Consent"
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
-        "title": "Ohaupo Road Motel",
+        "title": "Ohaupo Road Motel, Ohaupo, Waikato",
         "image": "/images/projects/content (31).webp",
         "description": "",
-        "jobDescription": "Resource Consent, Traffic"
+        "jobDescription": "GDC provided Resource Consent and Traffic services for this project."
       },
       {
-        "title": "172-176 Queen Street, Masterton",
+        "title": "172-176 Queen Street, Masterton, Wellington",
         "image": "/images/projects/content (40).webp",
         "description": "",
-        "jobDescription": "Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic strengthening design, Building Consent Documentation"
+        "jobDescription": "GDC provided Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic Strengthening Design, and Building Consent Documentation for this project."
       }
     ]
   },
@@ -267,10 +265,10 @@
     "category": "Roading",
     "projects": [
       {
-        "title": "Blue Bridge, Kawerau",
+        "title": "Blue Bridge, Kawerau, Bay of Plenty",
         "image": "/images/projects/content (23).webp",
         "description": "",
-        "jobDescription": "Bridge Assessment"
+        "jobDescription": "GDC provided a Bridge Assessment for this project."
       }
     ]
   },
@@ -278,7 +276,7 @@
     "category": "Residential",
     "projects": [
       {
-        "title": "House",
+        "title": "House, Thames, Waikato",
         "image": "/images/projects/residential/1.webp",
         "description": "House Extension"
       }
@@ -288,118 +286,105 @@
     "category": "Commercial",
     "projects": [
       {
-        "title": "Commercial Project",
+        "title": "Commercial Project, Hamilton, Waikato",
         "image": "/images/projects/4.webp",
         "description": ""
       },
       {
-        "title": "Te Manatu Drive Dairy",
+        "title": "Te Manatu Drive Dairy, Hamilton, Waikato",
         "image": "/images/projects/content (7).webp",
         "description": "",
-        "jobDescription": "Resource Consent"
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (9).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (10).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Hastings Sports Centre",
+        "title": "Hastings Sports Centre, Hastings, Hawke's Bay",
         "image": "/images/projects/content (12).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) and pavilion retrofit drawings for this project."
       },
       {
-        "title": "134 Riverlea Road",
+        "title": "134 Riverlea Road, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
         "description": "",
-        "jobDescription": "Structural Design of extension and alterations"
+        "jobDescription": "GDC provided the Structural Design of extension and alterations for this project."
       },
       {
-        "title": "Woodlands Estate - Stage 1",
+        "title": "Woodlands Estate - Stage 1, Taupiri, Waikato",
         "image": "/images/projects/content (29).webp",
         "description": "",
-        "jobDescription": "Architectural Concept Design, 3D Renderings"
+        "jobDescription": "GDC provided the Architectural Concept Design and 3D Renderings for this project."
       },
       {
-        "title": "Karewa Place",
+        "title": "Karewa Place, Hamilton, Waikato",
         "image": "/images/projects/content (30).webp",
         "description": "",
-        "jobDescription": "Geotechnical, 3 Waters"
-      },
+        "jobDescription": "GDC provided Geotechnical and 3 Waters services for this project."
+      },     
       {
-        "title": "123 Kapiti Road, Paraparaumu",
-        "image": "/images/projects/content (34).webp",
-        "description": "",
-        "jobDescription": "IEP Report (Initial Evaluation Procedure)"
-      },
-      {
-        "title": "178 Gill Street, New Plymouth",
-        "image": "/images/projects/content (37).webp",
-        "description": "",
-        "jobDescription": "Initial Seismic Assessment (ISA)"
-      },
-      {
-        "title": "140 A&B Juliet Street, Stratford",
+        "title": "140 A & B Juliet Street, Stratford, Taranaki",
         "image": "/images/projects/content (38).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Concept Seismic Strengthening, Concrete Scanning, Seismic Strengthening to 67% NBS and Building Consent Documentation for this project."
       },
       {
-        "title": "Four Square Opunake",
-        "image": "/images/projects/content (39).webp",
-        "description": "",
-        "jobDescription": "Initial Seismic Assessment (ISA)"
-      },
-      {
-        "title": "172-176 Queen Street, Masterton",
+        "title": "172-176 Queen Street, Masterton, Wellington",
         "image": "/images/projects/content (40).webp",
         "description": "",
-        "jobDescription": "Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic strengthening design, Building Consent Documentation"
+        "jobDescription": "GDC provided Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic Strengthening Design, and Building Consent Documentation for this project."
       },
       {
-        "title": "The Living Maori Village",
+        "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": "",
         "jobDescription": ""
       },
       {
-        "title": "Sir Howard Morrison Centre",
+        "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/Sir Howard Morrison Centre.png",
         "description": "",
-        "jobDescription": ""
+        "jobDescription": "GDC provided a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening."
       },
       {
-        "title": "Brightlands Childcare Centre",
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
-        "description": "Concept Design"
+        "description": "",
+        "jobDescription": "GDC provided Architectural Detailed Drawings and Specifications set, GDC coordinated with other project partners, compiled all necessary documentation, and lodged it for building consent. GDC provided a Contamination Report, Preliminary Site Investigation (PS1), a Simple Traffic Report, a 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design for the building, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
-        "title": "110 Kapanga Road, Coromandel, Star Gallery",
+        "title": "110 Kapanga Road, Coromandel, Waikato",
         "image": "/images/projects/commercial/2.webp",
-        "description": "IEP Report"
+        "description": "",
+        "jobDescription": "GDC provided an Initial Seismic Assessment (ISA) for this project."
       },
       {
-        "title": "7 Kent Street Frankton",
+        "title": "7 Kent Street, Hamilton, Waikato",
         "image": "/images/projects/commercial/3.webp",
-        "description": "IEP Report"
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment (ISA) for this project."
       },
       {
-        "title": "Fin Chaser Marine",
+        "title": "Fin Chaser Marine, Hamilton, Waikato",
         "image": "/images/projects/commercial/4.webp",
-        "description": "Structural IEP Report"
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment (ISA) for this project."
       },
       {
-        "title": "Ray Staiger Commercial building",
+        "title": "Ray Staiger Commercial Building, Hamilton, Waikato",
         "image": "/images/projects/commercial/5.webp",
-        "description": "Structural Design and Supervision, Geotech"
+        "description": "",
+        "jobDescription":"GDC provided a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent, including coordination with the architect. Additionally, GDC provided a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, and PS1, Independent Peer Review (PS2), and Construction Monitoring for this project."
       }
     ]
   },
@@ -407,64 +392,58 @@
     "category": "Seismic",
     "projects": [
       {
-        "title": "University of Waikato",
+        "title": "University of Waikato, Hamilton, Waikato",
         "image": "/images/projects/content.webp",
         "description": "",
-        "jobDescription": "Seismic Assessment and Retrofit Design"
+        "jobDescription": "GDC provided Detailed Seismic Assessments (DSAs) and Retrofit Designs for multiple buildings."
       },
       {
-        "title": "La Grand Hotel",
+        "title": "La Grand Hotel, Hamilton, Waikato",
         "image": "/images/projects/content (2).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Rotorua Museum",
+        "title": "Rotorua Museum, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (8).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)"
       },
       {
-        "title": "Masonic Hotel",
+        "title": "Masonic Hotel, Cambridge, Waikato",
         "image": "/images/projects/content (16).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project.(Heritage Bricks)"
       },
       {
-        "title": "9 Locke Street, Wairoa",
+        "title": "9 Locke Street, Wairoa, Hawke's Bay",
         "image": "/images/projects/content (19).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "72 Lucknow Street, Wairoa",
+        "title": "72 Lucknow Street, Wairoa, Hawke's Bay",
         "image": "/images/projects/content (20).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "91 Queen Street, Wairoa",
+        "title": "91 Queen Street, Wairoa, Hawke's Bay",
         "image": "/images/projects/content (21).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Waihi Museum",
+        "title": "Waihi Museum, Waihi, Waikato",
         "image": "/images/projects/content (22).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA), Seismic Strengthening, Peer Review"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA), Seismic Strengthening, and Peer Review for this project."
       },
       {
-        "title": "Cambridge Town Hall",
+        "title": "Cambridge Town Hall, Cambridge, Waikato",
         "image": "/images/projects/content (33).webp",
-        "description": "We performed a detailed Seismic Assessment on the Cambridge Town Hall for Waipa District Council, Identifying it as a high-risk building and suggesting some alterations which greatly improved the safety and integrity of the site.",
-        "jobDescription": "Detailed Seismic Analysis (DSA)"
-      },
-      {
-        "title": "123 Kapiti Road, Paraparaumu",
-        "image": "/images/projects/content (34).webp",
         "description": "",
-        "jobDescription": "IEP Report (Initial Evaluation Procedure)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
         "title": "Waipa District Council",
@@ -472,81 +451,76 @@
         "description": ""
       },
       {
-        "title": "Cambridge Family Health Medical Centre",
+        "title": "Cambridge Family Health Medical Centre, Cambridge, Waikato",
         "image": "/images/projects/4.webp",
-        "description": "Seismic retrofit design and detailed seismic assessment"
+        "description": "",
+        "jobDescription":"GDC provided the Seismic Retrofit Design and Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (9).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Mclean Park",
+        "title": "McLean Park, Napier, Hawke's Bay",
         "image": "/images/projects/content (10).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a condition assessment report for Tower 2 and lighting pole strengthening design for Tower 3 for this project."
       },
       {
-        "title": "Hastings Sports Centre",
+        "title": "Hastings Sports Centre, Hastings, Hawke's Bay",
         "image": "/images/projects/content (12).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessments (DSA) and Designs"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) and pavilion retrofit drawings for this project."
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (13).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (14).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
         "title": "Quadrant Hotel, Auckland",
         "image": "/images/projects/content (36).webp",
         "description": "",
-        "jobDescription": "Seismic Assessment"
+        "jobDescription": "GDC provided a Seismic Assessment for this project."
       },
       {
-        "title": "Te Rapa Motel",
+        "title": "Te Rapa Motel, Hamilton, Waikato",
         "image": "/images/projects/content (18).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Ngāruawāhia Town Hall",
+        "title": "Ngāruawāhia Town Hall, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (25).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "178 Gill Street, New Plymouth",
+        "title": "178 Gill Street, New Plymouth, Taranaki",
         "image": "/images/projects/content (37).webp",
         "description": "",
-        "jobDescription": "Initial Seismic Assessment (ISA)"
+        "jobDescription": "GDC provided an Initial Seismic Assessment (ISA) for this project."
       },
       {
-        "title": "140 A&B Juliet Street, Stratford",
+        "title": "140 A & B Juliet Street, Stratford, Taranaki",
         "image": "/images/projects/content (38).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Concept Seismic Strengthening, Concrete Scanning, Seismic Strengthening to 67% NBS and Building Consent Documentation for this project. "
       },
       {
-        "title": "Four Square Opunake",
-        "image": "/images/projects/content (39).webp",
-        "description": "",
-        "jobDescription": "Initial Seismic Assessment (ISA)"
-      },
-      {
-        "title": "172-176 Queen Street, Masterton",
+        "title": "172-176 Queen Street, Masterton, Wellington",
         "image": "/images/projects/content (40).webp",
         "description": "",
-        "jobDescription": "Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic strengthening design, Building Consent Documentation"
+        "jobDescription": "GDC provided Concept Seismic Strengthening, Concrete Scanning, As-Built Plans, Seismic Strengthening Design, and Building Consent Documentation for this project."
       }
     ]
   },
@@ -554,50 +528,52 @@
     "category": "Heritage",
     "projects": [
       {
-        "title": "Ngāruawāhia Town Hall",
+        "title": "Ngāruawāhia Town Hall, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (25).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Cambridge Town Hall",
+        "title": "Cambridge Town Hall, Cambridge, Waikato",
         "image": "/images/projects/content (33).webp",
-        "description": "We performed a detailed Seismic Assessment on the Cambridge Town Hall for Waipa District Council, Identifying it as a high-risk building and suggesting some alterations which greatly improved the safety and integrity of the site.",
-        "jobDescription": "Detailed Seismic Analysis (DSA)"
+        "description": "",
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Cambridge Clock Tower",
+        "title": "Cambridge Clock Tower, Cambridge, Waikato",
         "image": "/images/projects/11.webp",
-        "description": "The Cambridge Clock Tower is a significant heritage building and community symbol. However, it also presents a potential threat to life and property during an earthquake, with the previous clock tower having been damaged by an earthquake in 1933. We conducted an initial Seismic Assessment which enabled the Waipa District Council to identify and mitigate this risk, protecting the people of Cambridge and the heritage of the district."
+        "description": "",
+        "jobDescription":"GDC provided geotechnical investigations and a report, as well as a Detailed Seismic Assessment for this project. Additionally, GDC produced strengthening designs, detailed drawings, and specifications to support building consent and construction."
       },
       {
-        "title": "Cambridge Museum",
+        "title": "Cambridge Museum, Cambridge, Waikato",
         "image": "/images/projects/12.webp",
-        "description": "Constructed in 1909, the current museum and former court house is a beautiful part of  Cambridge’s heritage. We performed an initial Seismic Assessment for Waipa District Council and were able to identify specific risks like a brick chimney likely to collapse in an earthquake."
+        "description": "",
+        "jobDescription":"GDC provided quantity surveying services, leveraging expertise and knowledge in masonry and timber heritage buildings. GDC provided a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to a minimum of 67% (including specifications and Building Consent Documentation), and prepared an As-Built Set of Plans.(Heritage Bricks)"
       },
       {
-        "title": "Rotorua Museum",
+        "title": "Rotorua Museum, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (8).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)"
       },
       {
-        "title": "Masonic Hotel",
+        "title": "Masonic Hotel, Cambridge, Waikato",
         "image": "/images/projects/content (16).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project.(Heritage Bricks)"
       },
       {
-        "title": "Waihi Museum",
+        "title": "Waihi Museum, Waihi, Waikato",
         "image": "/images/projects/content (22).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA), Seismic Strengthening, Peer Review"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA), Seismic Strengthening, and Peer Review for this project."
       },
       {
-        "title": "Sir Howard Morrison Centre",
+        "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/Sir Howard Morrison Centre.png",
         "description": "",
-        "jobDescription": ""
+        "jobDescription": "GDC provided a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening."
       }
     ]
   },
@@ -605,16 +581,16 @@
     "category": "Accommodation",
     "projects": [
       {
-        "title": "Fairy Springs Motel",
+        "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (4).webp",
         "description": "",
-        "jobDescription": "Geotechnical Report and Structural Design"
+        "jobDescription": "GDC provided a Geotechnical Report and Structural Design for this project."
       },
       {
-        "title": "Apartment Building in Hamilton",
+        "title": "Apartment Building, Hamilton, Waikato",
         "image": "/images/projects/image-54.webp",
         "description": "",
-        "jobDescription": "Geotechnical & Structural"
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
       },
       {
         "title": "Hotel Auckland",
@@ -622,34 +598,34 @@
         "description": ""
       },
       {
-        "title": "Te Rapa Motel",
+        "title": "Te Rapa Motel, Hamilton, Waikato",
         "image": "/images/projects/content (18).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "La Grand Hotel",
+        "title": "La Grand Hotel, Hamilton, Waikato",
         "image": "/images/projects/content (2).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Masonic Hotel",
+        "title": "Masonic Hotel, Cambridge, Waikato",
         "image": "/images/projects/content (16).webp",
         "description": "",
-        "jobDescription": "Detailed Seismic Assessment (DSA)"
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project.(Heritage Bricks)"
       },
       {
         "title": "Quadrant Hotel, Auckland",
         "image": "/images/projects/content (36).webp",
         "description": "",
-        "jobDescription": "Seismic Assessment"
+        "jobDescription": "GDC provided a Seismic Assessment for this project."
       },
       {
-        "title": "Ohaupo Road Motel",
+        "title": "Ohaupo Road Motel, Ohaupo, Waikato",
         "image": "/images/projects/content (31).webp",
         "description": "",
-        "jobDescription": "Resource Consent, Traffic"
+        "jobDescription": "GDC provided Resource Consent and Traffic services for this project."
       }
     ]
   },
@@ -657,22 +633,22 @@
     "category": "Educational",
     "projects": [
       {
-        "title": "University of Waikato",
+        "title": "University of Waikato, Hamilton, Waikato",
         "image": "/images/projects/content.webp",
         "description": "",
-        "jobDescription": "Seismic Assessment and Retrofit Design"
+        "jobDescription": "GDC provided Detailed Seismic Assessments (DSAs) and Retrofit Designs for multiple buildings."
       },
       {
-        "title": "Borman Road Child Care Centre",
+        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
         "image": "/images/projects/content (35).webp",
         "description": "",
-        "jobDescription": "Resource Consent"
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
-        "title": "Storey Avenue Child Care Centre",
+        "title": "Storey Avenue Child Care Centre, Hamilton, Waikato",
         "image": "/images/projects/content (11).webp",
         "description": "",
-        "jobDescription": "3 Waters, Structural Design"
+        "jobDescription": "GDC provided 3 Waters and Structural Design for this project."
       }
     ]
   },
@@ -680,74 +656,87 @@
     "category": "Cultural",
     "projects": [
       {
-        "title": "Wharekawa Marae, Kaiaua",
+        "title": "Wharekawa Marae, Kaiaua, Waikato",
         "image": "/images/projects/Cultural/J002375 - Wharekawa Marae, Kaiaua.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment, Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project."
       },
       {
-        "title": "Tapuekura Marae",
+        "title": "Tapuekura Marae, Rotorua, Bay of Plenty",
         "image": "/images/projects/Cultural/J001499 - Tapuekura Marae.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment (ISA) for this project."
       },
       {
-        "title": "Mokau Kohunui Marae",
+        "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment, Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project."
       },
       {
-        "title": "Koutu Marae, Rotorua",
+        "title": "Koutu Marae, Rotorua, Bay of Plenty",
         "image": "/images/projects/Cultural/J001129 - Koutu Marae, Rotorua.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided Truss Design and Roof Load Assessment for this project."
       },
       {
-        "title": "Painoaiho Marae",
+        "title": "Painoaiho Marae, Galatea, Bay of Plenty",
         "image": "/images/projects/Cultural/Painoaiho Marae.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided a Geotechnical Investigation and Report, and Building Structure Design and Detailing for this project."
       },
       {
-        "title": "Matahiwi Marae",
+        "title": "Matawhiwhi Marae, Clive, Hawke's Bay",
         "image": "/images/projects/Cultural/Matahiwi Marae.webp",
-        "description": "Truss Design, Roof Load Assessment"
+        "description": "",
+        "jobDescription":"GDC provided Truss Design and Roof Load Assessment for this project."
       },
       {
-        "title": "Kingdom Hall Church",
+        "title": "Kingdom Hall Church, Rotorua, Bay of Plenty",
         "image": "/images/projects/Cultural/Kingdom Hall Church - 1.webp",
-        "description": "Detailed Seismic Assessment , 33 Arawa Street, Ohakune, Rotorua"
+        "description": "Detailed Seismic Assessment (DSA), 33 Arawa Street, Ohakune, Rotorua",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Kingdom Hall Church",
+        "title": "KingdoKingdom Hall Church, Rotorua, Bay of Plentym Hall Church",
         "image": "/images/projects/Cultural/Kingdom Hall Church - 2.webp",
-        "description": "Detailed Seismic Assessment, 70 Pine Drive, Murapara, Rotorua"
+        "description": "Detailed Seismic Assessment (DSA), 70 Pine Drive, Murapara, Rotorua",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "South Auckland Assembly Hall",
+        "title": "South Auckland Assembly Hall, Papakura, Auckland",
         "image": "/images/projects/Cultural/South Auckland Assembly Hall.webp",
-        "description": "Detailed Seismic Assessment, 158-160 Clevedon Road, Papakura"
+        "description": "Detailed Seismic Assessment (DSA), 158-160 Clevedon Road, Papakura",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Kingdom Hall Church",
+        "title": "Kingdom Hall Church, Waitakere, Auckland",
         "image": "/images/projects/Cultural/Kingdom Hall Church - 3.webp",
-        "description": "Detailed Seismic Assessment, 122-132 MetCalfe Road, Waitakere"
+        "description": "Detailed Seismic Assessment (DSA), 122-132 MetCalfe Road, Waitakere",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Kingdom Hall Church",
+        "title": "Kingdom Hall Church, Howick, Auckland",
         "image": "/images/projects/Cultural/Kingdom Hall Church - 4.webp",
-        "description": "Detailed Seismic Assessment, 259 Botany Road, Howich, Auckland"
+        "description": "Detailed Seismic Assessment (DSA), 259 Botany Road, Auckland",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Kingdom Hall Church",
+        "title": "Kingdom Hall Church, Whangarei, Northland",
         "image": "/images/projects/Cultural/Kingdom Hall Church - 5.webp",
-        "description": "Detailed Seismic Assessment, 16 Reed Street, Tikipunga, Whangarei , Auckland"
+        "description": "Detailed Seismic Assessment (DSA), 16 Reed Street, Tikipunga, Whangarei",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "The Living Maori Village",
+        "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": ""
       },
       {
-        "title": "Te Awamarahi Maraeh",
+        "title": "Te Awamarahi Marae, Onewhero, Waikatoh",
         "image": "/images/projects/Cultural/Te Awamarahi Marae.webp",
-        "description": "Structural Condition Assessment"
+        "description": "",
+        "jobDescription":"GDC provided a Geotechnical Investigation and Report, and a Structural Condition Assessment for this project."
       }
     ]
   },
@@ -755,30 +744,34 @@
     "category": "Medical",
     "projects": [
       {
-        "title": "Menzies Building, Waikato Hospital",
+        "title": "Menzies Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/7.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided a Seismic Evaluation Report and Seismic Assessment for this project."
       },
       {
-        "title": "Hockin Building, Waikato Hospital",
+        "title": "Hockin Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/8.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided an Initial Seismic Assessment (ISA) and a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Waiora Building, Waikato Hospital",
+        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/9.webp",
-        "description": "We performed extensive works at Waikato Hospital, including comprehensive structural repairs of a major service tunnel and the Wairoa building, as well as the construction of a new vehicle ramp. This was a large and complex job, and we were able to complete it in a timely and cost-effective manner without significant interruption to the hospital."
+        "description": "",
+        "jobDescription":"GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
       },
       {
-        "title": "Maraenui Medical Centre",
+        "title": "Maraenui Medical Centre, Napier, Hawke's Bay",
         "image": "/images/projects/image-51-1.webp",
-        "description": "We performed extensive works at Waikato Hospital, including comprehensive structural repairs of a major service tunnel and the Wairoa building, as well as the construction of a new vehicle ramp. This was a large and complex job, and we were able to complete it in a timely and cost-effective manner without significant interruption to the hospital."
+        "description": "",
+        "jobDescription":"GDC provided a Geotechnical Investigation and Report for this project."
       },
       {
-        "title": "Te Whatu Ora - Capital Coast & Hutt Valley - Clock Tower - Lower Hutt",
+        "title": "Te Whatu Ora - Capital Coast & Hutt Valley - Clock Tower, Lower Hutt, Wellington",
         "image": "/images/projects/Te Whatu Ora.png",
         "description": "",
-        "jobDescription": ""
+        "jobDescription": "GDC conducted a preliminary displacement-based assessment of one of the wings for this project, utilising data from existing calculations"
       }
     ]
   },
@@ -786,45 +779,46 @@
     "category": "Council",
     "projects": [
       {
-        "title": "Ngāruawāhia - Public Pool",
+        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (28).webp",
         "description": "",
-        "jobDescription": "Geotechnical Investigation"
+        "jobDescription": "GDC provided the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design."
       },
       {
-        "title": "Rotokauri Walkway",
+        "title": "Rotokauri Walkway, Waikato",
         "image": "/images/projects/content (32).webp",
         "description": "",
-        "jobDescription": "Bridge Design, Resource Consent"
+        "jobDescription": "GDC provided a topographical survey, GIS investigation and analysis of the proposed track, designed the walkway, conducted geotechnical investigations and provided foundation recommendations, delivered detailed design drawings and documentation for a timber bridge and elevated boardwalks, and completed the application for land use consent and building consent for this project."
       },
       {
-        "title": "Waipa District Council Building",
+        "title": "Waipa District Council Building - Te Awamutu, Waipa, Waikato",
         "image": "/images/projects/3.webp",
-        "description": ""
+        "description": "",
+        "jobDescription":"GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (13).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
-        "title": "Cambridge Water Tower",
+        "title": "Cambridge Water Tower, Cambridge, Waikato",
         "image": "/images/projects/content (14).webp",
         "description": "",
-        "jobDescription": "Seismic Strengthening"
+        "jobDescription": "GDC provided Seismic Strengthening for this project.(Heritage Bricks)"
       },
       {
-        "title": "Cambridge Town Hall",
+        "title": "Cambridge Town Hall, Cambridge, Waikato",
         "image": "/images/projects/content (33).webp",
-        "description": "We performed a detailed Seismic Assessment on the Cambridge Town Hall for Waipa District Council, Identifying it as a high-risk building and suggesting some alterations which greatly improved the safety and integrity of the site.",
-        "jobDescription": "Detailed Seismic Analysis (DSA)"
+        "description": "",
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Bay Of Plenty Regional Council Building",
+        "title": "Western Bay of Plenty District Council Building, 1484 Cameron Road, Greerton, Tauranga, Bay of Plenty",
         "image": "/images/projects/council/Bay Of Plenty Regional Council Building.png",
         "description": "",
-        "jobDescription": ""
+        "jobDescription": "GDC provided a Detailed Seismic Assessment (DSA) for this project."
       }
     ]
   }
