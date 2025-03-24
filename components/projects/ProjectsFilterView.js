@@ -15,6 +15,9 @@ const ProjectsFilterView = () => {
   const scrollContainerRef = useRef(null);
   const modalRef = useRef(null);
   
+  // Current year for Google attribution
+  const currentYear = new Date().getFullYear();
+  
   // Number of projects to show per page
   const PROJECTS_PER_PAGE = 10;
   
@@ -37,30 +40,35 @@ const ProjectsFilterView = () => {
     "Council",
   ];
 
+  // Remove duplicates for All Projects view
+  const removeDuplicateProjects = useCallback((projects) => {
+    const uniqueProjects = new Map();
+    
+    projects.forEach(project => {
+      const projectKey = project.title; // Use title as the unique identifier
+      
+      if (!uniqueProjects.has(projectKey)) {
+        uniqueProjects.set(projectKey, project);
+      }
+    });
+    
+    return Array.from(uniqueProjects.values());
+  }, []);
+
   // Group projects by title within a specific category
   const groupProjectsByTitle = useCallback((projects, category) => {
-    // If it's "All Projects", we need to be careful not to group across categories
+    // If it's "All Projects", we need to be careful not to group across categories and remove duplicates
     if (category === "All Projects") {
-      // Process each category separately to avoid cross-category grouping
-      let allGroupedProjects = [];
+      // First remove duplicates based on title
+      const uniqueProjects = removeDuplicateProjects(projects);
       
-      // For each category in projectsData
-      projectsData.forEach(categoryData => {
-        const categoryProjects = categoryData.projects.filter(project => 
-          projects.some(p => p.title === project.title && p.image === project.image)
-        );
-        
-        // Group within this category
-        const groupedCategoryProjects = groupProjectsInSingleCategory(categoryProjects);
-        allGroupedProjects = [...allGroupedProjects, ...groupedCategoryProjects];
-      });
-      
-      return allGroupedProjects;
+      // Then proceed with grouping
+      return groupProjectsInSingleCategory(uniqueProjects);
     } else {
       // For a specific category, just group within that category
       return groupProjectsInSingleCategory(projects);
     }
-  }, []);
+  }, [removeDuplicateProjects]);
   
   // Helper function to group projects within a single category
   const groupProjectsInSingleCategory = (projects) => {
@@ -76,14 +84,14 @@ const ProjectsFilterView = () => {
         // Create a new group with this project as the main one
         projectMap.set(projectKey, {
           ...project,
-          relatedImages: [project.image],
-          mainImage: project.image
+          relatedImages: project.image ? [project.image] : [],
+          mainImage: project.image || ""
         });
       } else {
         // Only add this project's image if it belongs to the same project
-        // and isn't already included
+        // and isn't already included and the image exists
         const existingProject = projectMap.get(projectKey);
-        if (!existingProject.relatedImages.includes(project.image)) {
+        if (project.image && !existingProject.relatedImages.includes(project.image)) {
           existingProject.relatedImages.push(project.image);
         }
       }
@@ -176,6 +184,22 @@ const ProjectsFilterView = () => {
     }
   }, [handleCloseModal]);
 
+  // Format job description to display "(Heritage Bricks)" on a new line
+  const formatJobDescription = (description) => {
+    if (!description) return null;
+    
+    if (description.includes("(Heritage Bricks)")) {
+      // Split the description at "(Heritage Bricks)" and add line break
+      return (
+        <>
+          {description.replace("(Heritage Bricks)", "")}
+          <span className="block font-medium text-customYellow mt-1">(Heritage Bricks)</span>
+        </>
+      );
+    }
+    return description;
+  };
+
   // Calculate remaining projects count
   const remainingProjects = groupedProjects.length - (currentPage * PROJECTS_PER_PAGE);
 
@@ -187,13 +211,13 @@ const ProjectsFilterView = () => {
   return (
     <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8">
       {/* Left Side - Filter Options */}
-      <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:h-fit">
+      <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:self-start">
         <div className="bg-white rounded-lg shadow-md p-4 mb-6">
           <h2 className="text-xl font-semibold text-customBlue mb-4">
             Filter projects
           </h2>
 
-          {/* Categories Filter */}
+          {/* Categories Filter - Now with max height and hidden scrollbar */}
           <div className="mb-6">
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-medium text-customBlue">
@@ -214,7 +238,7 @@ const ProjectsFilterView = () => {
                 ></path>
               </svg>
             </div>
-            <div className="pl-2">
+            <div className="pl-2 max-h-[350px] overflow-y-auto pr-2 hide-scrollbar">
               {categories.map((category) => (
                 <div key={category} className="mb-2">
                   <button
@@ -248,44 +272,54 @@ const ProjectsFilterView = () => {
                   }`}
                   onClick={() => handleProjectClick(project)}
                 >
-                  <div className="relative h-64">
-                    <Image
-                      src={project.mainImage}
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      quality={90}
-                      priority={index < 4}
-                      className="object-cover w-full h-full"
-                    />
-                    {/* Image count badge - only show if there are multiple images */}
-                    {project.relatedImages.length > 1 && (
-                      <div className="absolute top-2 right-2 bg-customBlue text-white rounded-full p-2 text-xs font-bold flex items-center">
-                        <svg 
-                          className="w-4 h-4 mr-1" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24" 
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth="2" 
-                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14"
-                          ></path>
-                        </svg>
-                        {project.relatedImages.length}
-                      </div>
-                    )}
-                  </div>
+                  {/* Only show image div if project has an image */}
+                  {project.mainImage && (
+                    <div className="relative h-64 group">
+                      <Image
+                        src={project.mainImage}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        quality={90}
+                        priority={index < 4}
+                        className="object-cover w-full h-full"
+                      />
+                      {/* Image count badge - only show if there are multiple images */}
+                      {project.relatedImages.length > 1 && (
+                        <div className="absolute top-2 right-2 bg-customBlue text-white rounded-full p-2 text-xs font-bold flex items-center">
+                          <svg 
+                            className="w-4 h-4 mr-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24" 
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth="2" 
+                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14"
+                            ></path>
+                          </svg>
+                          {project.relatedImages.length}
+                        </div>
+                      )}
+                      
+                      {/* Google Street View Attribution - only show on hover if googleStreetView is true */}
+                      {project.googleStreetView && (
+                        <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                          Image data ©{currentYear} Google
+                        </div>
+                      )}
+                    </div>
+                  )}
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-customBlue mb-2">
                       {project.title}
                     </h3>
                     {project.jobDescription && (
                       <p className="text-sm text-gray-600 mb-2">
-                        {project.jobDescription}
+                        {formatJobDescription(project.jobDescription)}
                       </p>
                     )}
                     {project.description && project.description !== "" && (
@@ -293,6 +327,16 @@ const ProjectsFilterView = () => {
                         {project.description}
                       </p>
                     )}
+                    
+                    {/* Display points as a bullet list if they exist */}
+                    {project.points && project.points.length > 0 && (
+                      <ul className="list-disc list-inside text-sm text-gray-700 mb-3 pl-1 mt-2">
+                        {project.points.map((point, pointIndex) => (
+                          <li key={`point-${pointIndex}`} className="mb-1">{point}</li>
+                        ))}
+                      </ul>
+                    )}
+                    
                     <div className="flex flex-wrap gap-2 mt-3">
                       {project.sector && (
                         <span className="px-2 py-1 bg-customYellow text-white text-xs rounded-full">
@@ -376,7 +420,7 @@ const ProjectsFilterView = () => {
         >
           <div 
             ref={modalRef}
-            className="bg-white rounded-lg max-w-5xl w-full mx-4 max-h-[90vh] overflow-y-auto"
+            className="bg-white rounded-lg max-w-5xl w-full mx-4 max-h-[90vh] overflow-y-auto hide-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6">
@@ -404,27 +448,49 @@ const ProjectsFilterView = () => {
               </div>
               
               {selectedProject.jobDescription && (
-                <p className="text-gray-600 mb-4">{selectedProject.jobDescription}</p>
+                <p className="text-gray-600 mb-4">
+                  {formatJobDescription(selectedProject.jobDescription)}
+                </p>
               )}
               
               {selectedProject.description && selectedProject.description !== "" && (
                 <p className="text-gray-800 mb-6">{selectedProject.description}</p>
               )}
               
-              {/* Only show the grid of images if there are multiple images */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {selectedProject.relatedImages.map((image, index) => (
-                  <div key={`modal-image-${index}`} className="relative h-64 md:h-80">
-                    <Image
-                      src={image}
-                      alt={`${selectedProject.title} - Image ${index + 1}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                ))}
-              </div>
+              {/* Display points as a bullet list in modal if they exist */}
+              {selectedProject.points && selectedProject.points.length > 0 && (
+                <div className="mb-6">
+                  <ul className="list-disc list-inside text-gray-700 pl-2">
+                    {selectedProject.points.map((point, pointIndex) => (
+                      <li key={`modal-point-${pointIndex}`} className="mb-2">{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {/* Only show the grid of images if there are images available */}
+              {selectedProject.relatedImages && selectedProject.relatedImages.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {selectedProject.relatedImages.map((image, index) => (
+                    <div key={`modal-image-${index}`} className="relative h-64 md:h-80 group">
+                      <Image
+                        src={image}
+                        alt={`${selectedProject.title} - Image ${index + 1}`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover rounded-lg"
+                      />
+                      
+                      {/* Show Google Street View attribution in modal images too */}
+                      {selectedProject.googleStreetView && (
+                        <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                          Street View data ©{currentYear} Google
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
