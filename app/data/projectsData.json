@@ -137,13 +137,7 @@
   },
   {
     "category": "Architectural",
-    "projects": [
-      {
-        "title": "Tuakau Dog Pound",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
-      },
+    "projects": [      
       {
         "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/1.webp",
@@ -247,36 +241,18 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed Resource Consent Application, Architectural Design, Seismic Retrofit Design, Building Consents, Detailed Seismic Assessment, Concrete Scanning, and the submission of an application for Historic Trust Funding for this project."
+      },
+      {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
       }
     ]
   },
   {
     "category": "Geotechnical",
     "projects": [      
-      {
-        "title": "Ngāruawāhia Dog Pound, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "",
-        "points": [
-          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
-          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
-          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
-          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
-        ]
-      },
-      {
-        "title": "Te Kauwhata Domain Walkway, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Site Analysis Design, a cost comparison between concrete and hoggin, a set of construction drawings, a developed report of specifications, a schedule of items, and developed drawings to inform the community. GDC also conducted a topographical survey for construction. GDC provided an engineer's estimate, a Geotechnical Investigation & Report, and assistance with identifying and removing high-risk trees. Additional services included the installation of provisional sight rails near open drains and parts of Track 2, estimates for hoggin on Tracks 4 and 5, and alterations to Tracks 10–12. GDC also created aesthetic design imagery for presentation to the local community."
-      },
-      {
-        "title": "Huntly Dog Pound, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
-      },
       {
         "title": "Raglan Arts Centre, Waikato",
         "image": "/images/projects/council/Raglan Arts Centre, Waikato.png",
@@ -402,17 +378,6 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed a Geotechnical Investigation and Report, completed Concrete Scanning and Verification, Structural Design, and Detailing for this project."
-      }
-    ]
-  },
-  {
-    "category": "Planning",
-    "projects": [
-      {
-        "title": "Ngāruawāhia War Memorial Hall, Ngāruawāhia, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. GDC completed site visits, prepared architectural plans, developed electrical and services improvement design drawings, and submitted the Building Consent application."
       },
       {
         "title": "Ngāruawāhia Dog Pound, Waikato",
@@ -427,17 +392,22 @@
         ]
       },
       {
-        "title": "Tuakau Dog Pound",
+        "title": "Te Kauwhata Domain Walkway, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
-        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
+        "jobDescription": "GDC completed a Site Analysis Design, a cost comparison between concrete and hoggin, a set of construction drawings, a developed report of specifications, a schedule of items, and developed drawings to inform the community. GDC also conducted a topographical survey for construction. GDC provided an engineer's estimate, a Geotechnical Investigation & Report, and assistance with identifying and removing high-risk trees. Additional services included the installation of provisional sight rails near open drains and parts of Track 2, estimates for hoggin on Tracks 4 and 5, and alterations to Tracks 10–12. GDC also created aesthetic design imagery for presentation to the local community."
       },
       {
-        "title": "Woodlands School, Ōpōtiki, Bay of Plenty",
+        "title": "Huntly Dog Pound, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
-        "jobDescription": "New Stormwater System: GDC completed Stormwater Testing and a Design Package, including the Building Consent Application for this project."
-      },
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
+      }
+    ]
+  },
+  {
+    "category": "Planning",
+    "projects": [
       {
         "title": "Rotokauri Walkway, Waikato",
         "image": "/images/projects/content (32).webp",
@@ -490,6 +460,36 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed Resource Consent Application, Architectural Design, Seismic Retrofit Design, Building Consents, Detailed Seismic Assessment, Concrete Scanning, and the submission of an application for Historic Trust Funding for this project."
+      },
+      {
+        "title": "Ngāruawāhia War Memorial Hall, Ngāruawāhia, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. GDC completed site visits, prepared architectural plans, developed electrical and services improvement design drawings, and submitted the Building Consent application."
+      },
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
+      },
+      {
+        "title": "Woodlands School, Ōpōtiki, Bay of Plenty",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "New Stormwater System: GDC completed Stormwater Testing and a Design Package, including the Building Consent Application for this project."
       }
     ]
   },
@@ -531,36 +531,6 @@
     "category": "Three Waters",
     "projects": [
       {
-        "title": "Ngāruawāhia Dog Pound, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "",
-        "points": [
-          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
-          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
-          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
-          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
-        ]
-      },
-      {
-        "title": "Tennis Courts (Opuatia Court, Pukekawa Court, Tuakau Court, Ruawaro Court)",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "",
-        "points": [
-          "Ruawaro Tennis Court:GDC completed surveying, an initial site assessment and report, further site assessment of the subbase and subgrade, a stormwater plan and design, and the design of a concrete base. GDC also provided a schedule of quantities and conducted site inspections.",
-          "Opuatia Tennis Court:GDC completed an initial site assessment and report, a stormwater plan and design, and the design of a replacement concrete pad. GDC also prepared a schedule of quantities and conducted site inspections.",
-          "Pukekawa Tennis Court:GDC completed an initial site assessment and report, a stormwater plan and design, a schedule of quantities, and site inspections.",
-          "Tuakau Courts:GDC completed an initial site assessment, including scanning of the block wall, a stormwater site assessment, a stormwater plan and design, and advice on the pothole infill plan before turfing. GDC also prepared a schedule of quantities and conducted site inspections."
-        ]
-      },
-      {
-        "title": "Tuakau Dog Pound",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
-      },
-      {
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
         "description": "",
@@ -601,6 +571,36 @@
         "image": "/images/projects/commercial/5.webp",
         "description": "",
         "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project."
+      },
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Tennis Courts (Opuatia Court, Pukekawa Court, Tuakau Court, Ruawaro Court)",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "Ruawaro Tennis Court:GDC completed surveying, an initial site assessment and report, further site assessment of the subbase and subgrade, a stormwater plan and design, and the design of a concrete base. GDC also provided a schedule of quantities and conducted site inspections.",
+          "Opuatia Tennis Court:GDC completed an initial site assessment and report, a stormwater plan and design, and the design of a replacement concrete pad. GDC also prepared a schedule of quantities and conducted site inspections.",
+          "Pukekawa Tennis Court:GDC completed an initial site assessment and report, a stormwater plan and design, a schedule of quantities, and site inspections.",
+          "Tuakau Courts:GDC completed an initial site assessment, including scanning of the block wall, a stormwater site assessment, a stormwater plan and design, and advice on the pothole infill plan before turfing. GDC also prepared a schedule of quantities and conducted site inspections."
+        ]
+      },
+      {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
       }
     ]
   },
@@ -796,24 +796,6 @@
   {
     "category": "Seismic",
     "projects": [
-      {
-        "title": "Tuakau Town Hall, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA), and concrete scanning, and recommended retrofitting measures, to achieve 67% NBS compliance for this project."
-      },
-      {
-        "title": "Raglan Town Hall, Raglan, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA), and concrete scanning, and recommended retrofitting measures, to achieve 67% NBS compliance for this project."
-      },
-      {
-        "title": "Ngāruawāhia War Memorial Hall, Ngāruawāhia, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. GDC completed site visits, prepared architectural plans, developed electrical and services improvement design drawings, and submitted the Building Consent application."
-      },
       {
         "title": "South Waikato District Council Building, Tokoroa, Waikato",
         "image": "/images/projects/council/South Waikato District Council, Tokoroa.png",
@@ -1096,18 +1078,30 @@
         "image": "/images/projects/12.webp",
         "description": "",
         "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)"
-      }
-    ]
-  },
-  {
-    "category": "Heritage",
-    "projects": [
+      },
       {
         "title": "Tuakau Town Hall, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA), and concrete scanning, and recommended retrofitting measures, to achieve 67% NBS compliance for this project."
       },
+      {
+        "title": "Raglan Town Hall, Raglan, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA), and concrete scanning, and recommended retrofitting measures, to achieve 67% NBS compliance for this project."
+      },
+      {
+        "title": "Ngāruawāhia War Memorial Hall, Ngāruawāhia, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. GDC completed site visits, prepared architectural plans, developed electrical and services improvement design drawings, and submitted the Building Consent application."
+      }
+    ]
+  },
+  {
+    "category": "Heritage",
+    "projects": [
       {
         "title": "Cambridge Town Hall, Cambridge, Waikato",
         "image": "/images/projects/content (33).webp",
@@ -1167,6 +1161,12 @@
         "image": "/images/projects/common/Te Awamutu Commercial Hotel, Waipa, Waikato.png",
         "description": "",
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
+      },
+      {
+        "title": "Tuakau Town Hall, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA), and concrete scanning, and recommended retrofitting measures, to achieve 67% NBS compliance for this project."
       }
     ]
   },
@@ -1314,12 +1314,6 @@
     "category": "Medical",
     "projects": [
       {
-        "title": "Paeroa Medical Centre, Paeroa, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Report, completed Concrete Scanning and Verification, Structural Design, and Detailing for this project."
-      },
-      {
         "title": "Campbell Johnstone Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/council/Campbell Johnstone, Waikato Hospital.png",
         "description": "",
@@ -1366,18 +1360,18 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed Geotechnical and Stormwater Investigation and Report, Structural Design (including Foundation Design, Footing Design, and Posts for Portal Beams), Bracing Calculations, Wind Analysis, and Seismic Analysis. GDC also produced Structural Drawings, Calculations, Specifications, PS1 documentation, and provided draughting services, site inspections, and issued three PS4 certificates covering structural, stormwater, and subgrade foundation works for this project."
+      },
+      {
+        "title": "Paeroa Medical Centre, Paeroa, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Geotechnical Investigation and Report, completed Concrete Scanning and Verification, Structural Design, and Detailing for this project."
       }
     ]
   },
   {
     "category": "Council",
     "projects": [
-      {
-        "title": "Splash Planet Castle, Hastings, Hawkes Bay",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
-      },
       {
         "title": "Ngāruawāhia Town Hall, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (25).webp",
@@ -1558,6 +1552,12 @@
         "image": "/images/projects/12.webp",
         "description": "",
         "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)"
+      },
+      {
+        "title": "Splash Planet Castle, Hastings, Hawkes Bay",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
       }
     ]
   }
