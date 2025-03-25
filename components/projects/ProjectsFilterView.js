@@ -58,6 +58,24 @@ const ProjectsFilterView = () => {
     return Array.from(uniqueProjects.values());
   }, []);
 
+  // Find all categories that a project belongs to
+  const findProjectCategories = useCallback((projectTitle) => {
+    const projectCategories = [];
+    
+    // Iterate through all categories and check if the project exists in any of them
+    projectsData.forEach((categoryData) => {
+      const found = categoryData.projects.some(
+        (project) => project.title === projectTitle
+      );
+      
+      if (found && categoryData.category !== "All Projects") {
+        projectCategories.push(categoryData.category);
+      }
+    });
+    
+    return projectCategories;
+  }, []);
+
   // Group projects by title within a specific category
   const groupProjectsByTitle = useCallback(
     (projects, category) => {
@@ -87,11 +105,15 @@ const ProjectsFilterView = () => {
       const projectKey = `${project.title}|${project.description || ""}`;
 
       if (!projectMap.has(projectKey)) {
+        // Find all categories for this project
+        const projectCategories = findProjectCategories(project.title);
+        
         // Create a new group with this project as the main one
         projectMap.set(projectKey, {
           ...project,
           relatedImages: project.image ? [project.image] : [],
           mainImage: project.image || "",
+          categories: projectCategories, // Add categories to the project object
         });
       } else {
         // Only add this project's image if it belongs to the same project
@@ -273,7 +295,16 @@ const ProjectsFilterView = () => {
                 ></path>
               </svg>
             </div>
-            <div className="pl-2 max-h-[350px] overflow-y-auto pr-2 hide-scrollbar">
+            <div
+              className="pl-2 pr-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+              style={{
+                overflowY: "auto",
+                maxHeight: "400px",
+                boxSizing: "border-box",
+                border: "1px solid #f0f0f0",
+                borderRadius: "4px",
+              }}
+            >
               {categories.map((category) => (
                 <div key={category} className="mb-2">
                   <button
@@ -382,6 +413,18 @@ const ProjectsFilterView = () => {
                           {project.sector}
                         </span>
                       )}
+                      
+                      {/* Display all categories the project belongs to as tags */}
+                      {project.categories && project.categories.length > 0 && 
+                        project.categories.map((category, catIndex) => (
+                          <span 
+                            key={`category-${catIndex}`} 
+                            className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
+                          >
+                            {category}
+                          </span>
+                        ))
+                      }
                     </div>
 
                     {/* View more indicator - only show if there are multiple images */}
@@ -521,6 +564,27 @@ const ProjectsFilterView = () => {
                   </ul>
                 </div>
               )}
+              
+              {/* Display category tags in modal */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {selectedProject.sector && (
+                  <span className="px-2 py-1 bg-customYellow text-white text-xs rounded-full">
+                    {selectedProject.sector}
+                  </span>
+                )}
+                
+                {/* Display all categories the project belongs to */}
+                {selectedProject.categories && selectedProject.categories.length > 0 && 
+                  selectedProject.categories.map((category, catIndex) => (
+                    <span 
+                      key={`modal-category-${catIndex}`} 
+                      className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
+                    >
+                      {category}
+                    </span>
+                  ))
+                }
+              </div>
 
               {/* Only show the grid of images if there are images available */}
               {selectedProject.relatedImages &&
