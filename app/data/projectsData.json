@@ -135,6 +135,12 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC provided Geotechnical and Structural services for this project."
+      },
+      {
+        "title": "Apartments, Hamilton, Waikato",
+        "image": "/images/projects/image-54.webp",
+        "description": "",
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
       }
     ]
   },
@@ -340,7 +346,7 @@
         "jobDescription": "GDC completed a Geotechnical Report and Structural Design for this project."
       },
       {
-        "title": "Apartment Building, Hamilton, Waikato",
+        "title": "Apartments, Hamilton, Waikato",
         "image": "/images/projects/image-54.webp",
         "description": "",
         "jobDescription": "GDC provided Geotechnical and Structural services for this project."
@@ -733,6 +739,12 @@
         "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/8.webp",
         "description": ""
+      },
+      {
+        "title": "Apartments, Hamilton, Waikato",
+        "image": "/images/projects/image-54.webp",
+        "description": "",
+        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
       }
     ]
   },
@@ -1234,13 +1246,7 @@
         "image": "/images/projects/content (4).webp",
         "description": "",
         "jobDescription": "GDC completed a Geotechnical Report and Structural Design for this project."
-      },
-      {
-        "title": "Apartment Building, Hamilton, Waikato",
-        "image": "/images/projects/image-54.webp",
-        "description": "",
-        "jobDescription": "GDC provided Geotechnical and Structural services for this project."
-      },
+      },      
       {
         "title": "Te Rapa Motel, Hamilton, Waikato",
         "image": "/images/projects/content (18).webp",
