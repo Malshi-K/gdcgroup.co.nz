@@ -61,18 +61,18 @@ const ProjectsFilterView = () => {
   // Find all categories that a project belongs to
   const findProjectCategories = useCallback((projectTitle) => {
     const projectCategories = [];
-    
+
     // Iterate through all categories and check if the project exists in any of them
     projectsData.forEach((categoryData) => {
       const found = categoryData.projects.some(
         (project) => project.title === projectTitle
       );
-      
+
       if (found && categoryData.category !== "All Projects") {
         projectCategories.push(categoryData.category);
       }
     });
-    
+
     return projectCategories;
   }, []);
 
@@ -107,7 +107,7 @@ const ProjectsFilterView = () => {
       if (!projectMap.has(projectKey)) {
         // Find all categories for this project
         const projectCategories = findProjectCategories(project.title);
-        
+
         // Create a new group with this project as the main one
         projectMap.set(projectKey, {
           ...project,
@@ -256,6 +256,34 @@ const ProjectsFilterView = () => {
     return description;
   };
 
+  // Function to format text with bold for content within asterisks
+  const formatBoldText = (text) => {
+    if (!text) return null;
+
+    // Check if the text contains any asterisks
+    if (!text.includes("*")) {
+      return text;
+    }
+
+    // Split the text by asterisks
+    const parts = text.split("*");
+
+    // Create an array of regular text and bold elements
+    return parts.map((part, index) => {
+      // Even indices are regular text, odd indices are bold text
+      if (index % 2 === 0) {
+        return part;
+      } else {
+        return (
+          <>
+            <strong key={`bold-${index}`}>{part}</strong>
+            <br />
+          </>
+        );
+      }
+    });
+  };
+
   // Calculate remaining projects count
   const remainingProjects =
     groupedProjects.length - currentPage * PROJECTS_PER_PAGE;
@@ -401,7 +429,7 @@ const ProjectsFilterView = () => {
                       <ul className="list-disc list-inside text-sm text-gray-700 mb-3 pl-1 mt-2">
                         {project.points.map((point, pointIndex) => (
                           <li key={`point-${pointIndex}`} className="mb-1">
-                            {point}
+                            {formatBoldText(point)}
                           </li>
                         ))}
                       </ul>
@@ -413,18 +441,18 @@ const ProjectsFilterView = () => {
                           {project.sector}
                         </span>
                       )}
-                      
+
                       {/* Display all categories the project belongs to as tags */}
-                      {project.categories && project.categories.length > 0 && 
+                      {project.categories &&
+                        project.categories.length > 0 &&
                         project.categories.map((category, catIndex) => (
-                          <span 
-                            key={`category-${catIndex}`} 
+                          <span
+                            key={`category-${catIndex}`}
                             className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
                           >
                             {category}
                           </span>
-                        ))
-                      }
+                        ))}
                     </div>
 
                     {/* View more indicator - only show if there are multiple images */}
@@ -558,13 +586,13 @@ const ProjectsFilterView = () => {
                   <ul className="list-disc list-inside text-gray-700 pl-2">
                     {selectedProject.points.map((point, pointIndex) => (
                       <li key={`modal-point-${pointIndex}`} className="mb-2">
-                        {point}
+                        {formatBoldText(point)}
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
-              
+
               {/* Display category tags in modal */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.sector && (
@@ -572,18 +600,18 @@ const ProjectsFilterView = () => {
                     {selectedProject.sector}
                   </span>
                 )}
-                
+
                 {/* Display all categories the project belongs to */}
-                {selectedProject.categories && selectedProject.categories.length > 0 && 
+                {selectedProject.categories &&
+                  selectedProject.categories.length > 0 &&
                   selectedProject.categories.map((category, catIndex) => (
-                    <span 
-                      key={`modal-category-${catIndex}`} 
+                    <span
+                      key={`modal-category-${catIndex}`}
                       className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
                     >
                       {category}
                     </span>
-                  ))
-                }
+                  ))}
               </div>
 
               {/* Only show the grid of images if there are images available */}
