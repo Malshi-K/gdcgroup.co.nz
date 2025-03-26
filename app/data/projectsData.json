@@ -1,13 +1,7 @@
 [
   {
     "category": "Structural",
-    "projects": [
-      {
-        "title": "150 Dickens Street, Napier, Hawke's Bay",
-        "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
-      },
+    "projects": [      
       {
         "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/9.webp",
@@ -149,13 +143,7 @@
   },
   {
     "category": "Architectural",
-    "projects": [
-      {
-        "title": "150 Dickens Street, Napier, Hawke's Bay",
-        "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
-      },
+    "projects": [      
       {
         "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/1.webp",
@@ -273,13 +261,7 @@
   },
   {
     "category": "Geotechnical",
-    "projects": [
-      {
-        "title": "150 Dickens Street, Napier, Hawke's Bay",
-        "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
-      },
+    "projects": [      
       {
         "title": "Raglan Arts Centre, Waikato",
         "image": "/images/projects/council/Raglan Arts Centre, Waikato.png",
@@ -756,13 +738,7 @@
   },
   {
     "category": "Commercial",
-    "projects": [
-      {
-        "title": "Te Manatu Drive Dairy, Hamilton, Waikato",
-        "image": "/images/projects/content (7).webp",
-        "description": "",
-        "jobDescription": "GDC provided Resource Consent for this project."
-      },
+    "projects": [      
       {
         "title": "134 Riverlea Road, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
@@ -849,13 +825,7 @@
         "image": "/images/projects/common/Multiple commercial shops, Morrinsville.jpg",
         "description": "",
         "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this building"
-      },
-      {
-        "title": "150 Dickens Street, Napier, Hawke's Bay",
-        "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
-      },
+      },      
       {
         "title": "South Waikato District Council Building, Tokoroa, Waikato",
         "image": "/images/projects/council/South Waikato District Council, Tokoroa.png",
@@ -881,7 +851,7 @@
         "jobDescription": "GDC conducted a preliminary displacement-based assessment of one of the wings for this project, utilising data from existing calculations"
       },
       {
-        "title": "Hockins Building, Waikato Hospital, Hamilton, Waikato",
+        "title": "Hockin Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/8.webp",
         "description": "",
         "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) and a Detailed Seismic Assessment (DSA) for this project."
@@ -1391,7 +1361,7 @@
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Hockins Building, Waikato Hospital, Hamilton, Waikato",
+        "title": "Hockin Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/8.webp",
         "description": "",
         "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) and a Detailed Seismic Assessment (DSA) for this project."
@@ -1637,6 +1607,13 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
+      },
+      {
+        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
+        "image": "/images/projects/content (28).png",
+        "description": "",
+        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design.",
+        "isFrontPage": true
       }
     ]
   }
