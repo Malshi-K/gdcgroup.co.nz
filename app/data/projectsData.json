@@ -3,6 +3,44 @@
     "category": "Structural",
     "projects": [
       {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato (2).png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Mokau Kohunui Marae, Piopio, Waikato",
+        "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
         "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
@@ -41,6 +79,12 @@
         "jobDescription": "GDC completed Truss Design and Roof Load Assessment for this project."
       },
       {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
+      },
+      {
         "title": "Painoaiho Marae, Galatea, Bay of Plenty",
         "image": "/images/projects/Cultural/Painoaiho Marae.webp",
         "description": "",
@@ -75,12 +119,6 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC provided Structural Engineering services for this project."
-      },
-      {
-        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
-        "image": "/images/projects/content (35).webp",
-        "description": "",
-        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
         "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
@@ -130,7 +168,7 @@
         "title": "Tamahere Hospital and Healing Centre, Waikato",
         "image": "",
         "description": "",
-        "jobDescription": "GDC completed Geotechnical and Stormwater Investigation and Report, Structural Design (including Foundation Design, Footing Design, and Posts for Portal Beams), Bracing Calculations, Wind Analysis, and Seismic Analysis. GDC also produced Structural Drawings, Calculations, Specifications, PS1 documentation, and provided draughting services, site inspections, and issued three PS4 certificates covering structural, stormwater, and subgrade foundation works for this project."
+        "jobDescription": "GDC completed Geotechnical and Stormwater Investigation and Report, Structural Design (including Foundation Design, Footing Design, and Posts for Portal Beams), Bracing Calculations, Wind Analysis, and Seismic Analysis. GDC completed Structural Drawings, Calculations, Specifications, PS1 documentation, and provided draughting services, site inspections, and issued three PS4 certificates covering structural, stormwater, and subgrade foundation works for this project."
       },
       {
         "title": "Paeroa Medical Centre, Paeroa, Waikato",
@@ -149,12 +187,54 @@
         "image": "/images/projects/image-54.webp",
         "description": "",
         "jobDescription": "GDC provided Geotechnical and Structural services for this project."
+      },
+      {
+        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
+          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
+          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
+        ],
+        "isFrontPage": true
+      },
+      {
+        "title": "134 Riverlea Road, Hamilton, Waikato",
+        "image": "/images/projects/content (27).webp",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of extension and alterations for this project."
       }
     ]
   },
   {
     "category": "Architectural",
     "projects": [
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato (2).png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
@@ -220,13 +300,6 @@
         "jobDescription": "GDC completed the Architectural Concept Design and 3D Renderings for this project."
       },
       {
-        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
-        "image": "/images/projects/content (28).png",
-        "description": "",
-        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design.",
-        "isFrontPage": true
-      },
-      {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
@@ -236,6 +309,13 @@
           "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
           "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
         ],
+        "isFrontPage": true
+      },
+      {
+        "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
+        "image": "/images/projects/content (28).png",
+        "description": "",
+        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design.",
         "isFrontPage": true
       },
       {
@@ -279,6 +359,25 @@
   {
     "category": "Geotechnical",
     "projects": [
+      {
+        "title": "Buckland Road Playground, Tuakau, Waikato",
+        "image": "/images/projects/5.webp",
+        "description": "",
+        "jobDescription": "GDC provided Detailed Design, soakage testing, and design, conducted a profile survey, prepared an erosion and sediment control plan, completed a detailed survey, conducted a geotechnical investigation and report, and lodged a resource consent application."
+      },
+      {
+        "title": "Holiday Park and Commercial Centre in Kennedy Bay, Coromandel, Waikato",
+        "image": "/images/projects/Screenshot-2024-01-19-093510.webp",
+        "description": "",
+        "jobDescription": "GDC completed Conceptual 3D Architecture Plans, a Simple Traffic Report, a Three Waters Assessment Report, a Geotechnical Assessment and Report, a Natural Hazards Report, and an Application for Resource Consent to the council for this project."
+      },
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
@@ -446,19 +545,50 @@
         "title": "Te Kauwhata Domain Walkway, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
-        "jobDescription": "GDC completed a Site Analysis Design, a cost comparison between concrete and hoggin, a set of construction drawings, a developed report of specifications, a schedule of items, and developed drawings to inform the community. GDC also conducted a topographical survey for construction. GDC provided an engineer's estimate, a Geotechnical Investigation & Report, and assistance with identifying and removing high-risk trees. Additional services included the installation of provisional sight rails near open drains and parts of Track 2, estimates for hoggin on Tracks 4 and 5, and alterations to Tracks 10–12. GDC also created aesthetic design imagery for presentation to the local community."
+        "jobDescription": "GDC completed a Site Analysis Design, a set of construction drawings, a topographical survey, and a Geotechnical Investigation & Report for this project."
       },
       {
         "title": "Huntly Dog Pound, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC provided Geotechnical and Structural services for this project."
+      },
+      {
+        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
+          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
+          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
+        ],
+        "isFrontPage": true
+      },
+      {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
       }
     ]
   },
   {
     "category": "Planning",
     "projects": [
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
+        "image": "/images/projects/content (35).webp",
+        "description": "",
+        "jobDescription": "GDC provided Resource Consent for this project."
+      },
       {
         "title": "Rotokauri Walkway, Waikato",
         "image": "/images/projects/content (32).webp",
@@ -489,18 +619,6 @@
         "image": "/images/projects/content (31).webp",
         "description": "",
         "jobDescription": "GDC provided Resource Consent and Traffic services for this project."
-      },
-      {
-        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
-        "image": "/images/coming soon.png",
-        "description": "",
-        "jobDescription": "",
-        "points": [
-          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
-          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
-          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
-        ],
-        "isFrontPage": true
       },
       {
         "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
@@ -549,6 +667,18 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed Stormwater Testing and a Design Package, including the Building Consent Application for this project."
+      },
+      {
+        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
+          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
+          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
+        ],
+        "isFrontPage": true
       }
     ]
   },
@@ -556,16 +686,60 @@
     "category": "Environmental",
     "projects": [
       {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
+        "title": "Ngāruawāhia Dog Pound, Waikato",
+        "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato (2).png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "GDC completed an Architectural Concept Design and Plans (including designs for the car park).",
+          "GDC completed a Geotechnical Investigation for the building and car park, provided a 3 Waters Assessment Report, and completed a Field Survey / Topo Survey.",
+          "GDC completed Structural Design Drawings and Documentation, Three Waters Design Drawings and Documentation (including the carpark), a Fire Design Report, an Acoustic Report, and Lighting Design.",
+          "GDC completed the Resource Consent Application with an Environmental Assessment and applied for Building consent."
+        ]
+      },
+      {
         "title": "Contamination Assessment, Hamilton, Waikato",
         "image": "/images/projects/content (1).webp",
         "description": "",
         "jobDescription": "GDC completed a Contamination Assessment for this project."
+      },
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
       }
     ]
   },
   {
     "category": "Traffic",
     "projects": [
+      {
+        "title": "Holiday Park and Commercial Centre in Kennedy Bay, Coromandel, Waikato",
+        "image": "/images/projects/Screenshot-2024-01-19-093510.webp",
+        "description": "",
+        "jobDescription": "GDC completed Conceptual 3D Architecture Plans, a Simple Traffic Report, a Three Waters Assessment Report, a Geotechnical Assessment and Report, a Natural Hazards Report, and an Application for Resource Consent to the council for this project."
+      },
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "Ohaupo Road Motel, Ohaupo, Waikato",
         "image": "/images/projects/content (31).webp",
@@ -583,12 +757,43 @@
           "*Duplex Dwelling Development:* Borman Road, Hamilton",
           "*Residential Development:* Parry Palm Road, Thames"
         ]
+      },
+      {
+        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
+          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
+          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
+        ],
+        "isFrontPage": true
+      },
+      {
+        "title": "Tuakau Dog Pound",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
       }
     ]
   },
   {
     "category": "Three Waters",
     "projects": [
+      {
+        "title": "Holiday Park and Commercial Centre in Kennedy Bay, Coromandel, Waikato",
+        "image": "/images/projects/Screenshot-2024-01-19-093510.webp",
+        "description": "",
+        "jobDescription": "GDC completed Conceptual 3D Architecture Plans, a Simple Traffic Report, a Three Waters Assessment Report, a Geotechnical Assessment and Report, a Natural Hazards Report, and an Application for Resource Consent to the council for this project."
+      },
+      {
+        "title": "Brightlands Childcare Centre, Hamilton, Waikato",
+        "image": "/images/projects/commercial/1.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
@@ -700,6 +905,24 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed Architectural Design, a Landscape Plan, a 3 Waters Assessment, a Carpark and Pavement Design and Testing, a Geotechnical Investigation and Report, a Traffic Assessment, an Earthworks Report, an Erosion and Sediment Report, a Detailed Structural Design, an Acoustic Report, a Resource Consent Package, and Drawings for Building Consent."
+      },
+      {
+        "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
+        "image": "/images/coming soon.png",
+        "description": "",
+        "jobDescription": "",
+        "points": [
+          "*Stage 1:* GDC completed an Architectural 3D Model, Architectural Drawings for lodging Building Consent (including walkway additions, clamshell pool, and attached deck), and applied for Building Consent.",
+          "*Stage 2:* GDC completed Architectural Drawings, a Resource Consent application, a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, an Architectural 3D Model for the Existing and Proposed stages, Soakage Testing and Report, and Emergency Lighting Design.",
+          "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
+        ],
+        "isFrontPage": true
+      },
+      {
+        "title": "Tamahere Hospital and Healing Centre, Waikato",
+        "image": "",
+        "description": "",
+        "jobDescription": "GDC completed Geotechnical and Stormwater Investigation and Report, Structural Design (including Foundation Design, Footing Design, and Posts for Portal Beams), Bracing Calculations, Wind Analysis, and Seismic Analysis. GDC completed Structural Drawings, Calculations, Specifications, PS1 documentation, and provided draughting services, site inspections, and issued three PS4 certificates covering structural, stormwater, and subgrade foundation works for this project."
       }
     ]
   },
@@ -866,6 +1089,12 @@
         "isFrontPage": true
       },
       {
+        "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
+        "image": "/images/projects/common/FRANKTON HOTEL.png",
+        "description": "",
+        "jobDescription": "GDC completed the Architectural Design, a Detailed Seismic Assessment (DSA), Concrete Scanning, Seismic Retrofit Design, Resource Consent, and Building Consent Application."
+      },
+      {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
@@ -876,12 +1105,6 @@
           "*Phase 1 and 2:* GDC completed Geotechnical CPT testing, a Fire Report, Structural Design for the steel structure, wall and roof bracing, Structural Design for Phase 2, a PS2 Peer Review, Footpath Structure Design, Piles and Footing Design, and Elevated Deck Structure Design."
         ],
         "isFrontPage": true
-      },
-      {
-        "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
-        "image": "/images/projects/common/FRANKTON HOTEL.png",
-        "description": "",
-        "jobDescription": "GDC completed the Architectural Design, a Detailed Seismic Assessment (DSA), Concrete Scanning, Seismic Retrofit Design, Resource Consent, and Building Consent Application."
       }
     ]
   },
@@ -993,7 +1216,7 @@
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
       },
       {
-        "title": "Ngatea Hotel, Hauraki, Waikato",
+        "title": "Ngātea Hotel, Hauraki, Waikato",
         "image": "/images/projects/seismic/Ngatea Hotel, Hauraki, Waikato.png",
         "description": "",
         "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project.",
@@ -1134,12 +1357,6 @@
         "description": "",
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project.",
         "isFrontPage": true
-      },
-      {
-        "title": "Multiple Commercial Shops, Morrinsville",
-        "image": "/images/projects/common/Multiple commercial shops, Morrinsville.jpg",
-        "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment for this building"
       },
       {
         "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
@@ -1292,6 +1509,26 @@
     "category": "Accommodation",
     "projects": [
       {
+        "title": "Sails Motor Inn, Hamilton, Waikato",
+        "image": "/images/projects/seismic/Sails Motor Inn, Hamilton, Waikato.png",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project."
+      },
+      {
+        "title": "Ngātea Hotel, Hauraki, Waikato",
+        "image": "/images/projects/seismic/Ngatea Hotel, Hauraki, Waikato.png",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project.",
+        "googleStreetView": true
+      },
+      {
+        "title": "Te Awamutu Commercial Hotel, Waipa, Waikato",
+        "image": "/images/projects/common/Te Awamutu Commercial Hotel, Waipa, Waikato.png",
+        "description": "",
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (4).webp",
         "description": "",
@@ -1326,6 +1563,12 @@
   {
     "category": "Educational",
     "projects": [
+      {
+        "title": "University of Waikato, Hamilton, Waikato",
+        "image": "/images/projects/content.webp",
+        "description": "",
+        "jobDescription": "GDC completed Detailed Seismic Assessments (DSAs) and Retrofit Designs for multiple buildings."
+      },
       {
         "title": "Borman Road Child Care Centre, Hamilton, Waikato",
         "image": "/images/projects/content (35).webp",
