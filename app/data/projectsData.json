@@ -3,6 +3,12 @@
     "category": "Structural",
     "projects": [
       {
+        "title": "150 Dickens Street, Napier, Hawke's Bay",
+        "image": "/images/projects/archi/9.webp",
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/4.webp",
         "description": "",
@@ -150,6 +156,12 @@
     "category": "Architectural",
     "projects": [
       {
+        "title": "150 Dickens Street, Napier, Hawke's Bay",
+        "image": "/images/projects/archi/9.webp",
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/1.webp",
         "description": ""
@@ -267,6 +279,12 @@
   {
     "category": "Geotechnical",
     "projects": [
+      {
+        "title": "150 Dickens Street, Napier, Hawke's Bay",
+        "image": "/images/projects/archi/9.webp",
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "Raglan Arts Centre, Waikato",
         "image": "/images/projects/council/Raglan Arts Centre, Waikato.png",
@@ -870,6 +888,12 @@
   {
     "category": "Seismic",
     "projects": [
+      {
+        "title": "150 Dickens Street, Napier, Hawke's Bay",
+        "image": "/images/projects/archi/9.webp",
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "Multiple Commercial Shops, Morrinsville, Waikato",
         "image": "/images/projects/common/Multiple commercial shops, Morrinsville.jpg",
