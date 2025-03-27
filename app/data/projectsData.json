@@ -1,7 +1,14 @@
 [
   {
     "category": "Structural",
-    "projects": [      
+    "projects": [
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/4.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
       {
         "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/9.webp",
@@ -67,9 +74,10 @@
         "jobDescription": "GDC completed Concept Design (Structural Engineering), Construction Monitoring, and the issuance of PS4 certification for this project. The scope included inspections such as Prepour Slab Inspection, Prepour Slab Inspection (Roof/Subfloor/Wall Bracing), multiple Retaining Wall Inspections, Entry Ramp Inspection, and Proposed Retaining Wall Inspection. Additionally, GDC undertook tasks related to extending the existing retaining wall, designing a new retaining wall around car park areas, and delivering Preliminary and Developed Design."
       },
       {
-        "title": "Borman Road Preschool, Hamilton, Waikato",
-        "image": "/images/projects/content (3).webp",
-        "description": ""
+        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
+        "image": "/images/projects/content (35).webp",
+        "description": "",
+        "jobDescription": "GDC provided Resource Consent for this project."
       },
       {
         "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
@@ -143,7 +151,7 @@
   },
   {
     "category": "Architectural",
-    "projects": [      
+    "projects": [
       {
         "title": "Architectural Design Project, Thames, Waikato",
         "image": "/images/projects/archi/1.webp",
@@ -261,7 +269,7 @@
   },
   {
     "category": "Geotechnical",
-    "projects": [      
+    "projects": [
       {
         "title": "Raglan Arts Centre, Waikato",
         "image": "/images/projects/council/Raglan Arts Centre, Waikato.png",
@@ -445,12 +453,7 @@
         "description": "",
         "jobDescription": "GDC completed Conceptual 3D Architecture Plans, a Simple Traffic Report, a Three Waters Assessment Report, a Geotechnical Assessment and Report, a Natural Hazards Report, and an Application for Resource Consent to the council for this project."
       },
-      {
-        "title": "Borman Road Child Care Centre, Hamilton, Waikato",
-        "image": "/images/projects/content (35).webp",
-        "description": "",
-        "jobDescription": "GDC provided Resource Consent for this project."
-      },
+
       {
         "title": "Te Manatu Drive Dairy, Hamilton, Waikato",
         "image": "/images/projects/content (7).webp",
@@ -738,7 +741,7 @@
   },
   {
     "category": "Commercial",
-    "projects": [      
+    "projects": [
       {
         "title": "134 Riverlea Road, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
@@ -803,13 +806,6 @@
         "isFrontPage": true
       },
       {
-        "title": "Cambridge Family Health Medical Centre, Cambridge, Waikato",
-        "image": "/images/projects/4.webp",
-        "description": "",
-        "jobDescription": "GDC completed the Seismic Retrofit Design and Detailed Seismic Assessment (DSA) for this project.",
-        "isFrontPage": true
-      },
-      {
         "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
         "image": "/images/coming soon.png",
         "description": "",
@@ -825,7 +821,7 @@
         "image": "/images/projects/common/Multiple commercial shops, Morrinsville.jpg",
         "description": "",
         "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this building"
-      },      
+      },
       {
         "title": "South Waikato District Council Building, Tokoroa, Waikato",
         "image": "/images/projects/council/South Waikato District Council, Tokoroa.png",
@@ -1098,13 +1094,6 @@
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) and As-Built drawings for this project."
       },
       {
-        "title": "Cambridge Family Health Medical Centre, Cambridge, Waikato",
-        "image": "/images/projects/4.webp",
-        "description": "",
-        "jobDescription": "GDC completed the Seismic Retrofit Design and Detailed Seismic Assessment (DSA) for this project.",
-        "isFrontPage": true
-      },
-      {
         "title": "Cambridge Clock Tower, Cambridge, Waikato",
         "image": "/images/projects/11.webp",
         "description": "",
@@ -1355,6 +1344,13 @@
     "category": "Medical",
     "projects": [
       {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/4.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "Campbell Johnstone Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/council/Campbell Johnstone, Waikato Hospital.png",
         "description": "",
@@ -1390,13 +1386,6 @@
         "image": "/images/projects/Te Whatu Ora.png",
         "description": "",
         "jobDescription": "GDC conducted a preliminary displacement-based assessment of one of the wings for this project, utilising data from existing calculations"
-      },
-      {
-        "title": "Cambridge Family Health Medical Centre, Cambridge, Waikato",
-        "image": "/images/projects/4.webp",
-        "description": "",
-        "jobDescription": "GDC completed the Seismic Retrofit Design and Detailed Seismic Assessment (DSA) for this project.",
-        "isFrontPage": true
       },
       {
         "title": "Tamahere Hospital and Healing Centre, Waikato",
