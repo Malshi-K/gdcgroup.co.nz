@@ -3,6 +3,30 @@
     "category": "Structural",
     "projects": [
       {
+        "title": "Kāinga Ora – Homes and Communities, Hawke’s Bay & Gisborne",
+        "image": "/images/projects/common/Kāinga Ora.png",
+        "description": "",
+        "jobDescription": "GDC completed approximately 200 Rapid Structural Assessments, Structural Condition Assessments, Structural Preliminary and Detailed Retrofit Designs for Residential houses in the Hawkes Bay and Gisborne regions."
+      },
+      {
+        "title": "Haumoana Community Hall, Haumoana, Hawke’s Bay",
+        "image": "/images/projects/common/Haumoana Community Hall.png",
+        "description": "",
+        "jobDescription": "GDC completed the Detailed Seismic Assessment (DSA) and Seismic Strengthening Design for Building Consent, Retrofit Design, Architectural Design, Existing Floor Assessment, and Construction Monitoring."
+      },
+      {
+        "title": "Four Square Eastend - Heretaunga Street East, Parkvale, Hastings, Hawke’s Bay",
+        "image": "/images/projects/common/Four Square Eastend.png",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Detailed Seismic Assessment (DSA), Seismic Strengthening of the building above 67% NBS, and Structural Retrofit designs."
+      },
+      {
+        "title": "Napier Municipal Theatre, Napier, Hawke’s Bay",
+        "image": "/images/projects/common/Napier M Centre.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Ceiling Platform Design & Assessment, Site Supervision, and Building Consent Application."
+      },
+      {
         "title": "Ngāruawāhia Dog Pound, Waikato",
         "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato.png",
         "description": "",
@@ -49,6 +73,27 @@
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/4.webp",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 2.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 3.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 4.png",
         "description": "",
         "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
         "isFrontPage": true
@@ -211,6 +256,12 @@
   {
     "category": "Architectural",
     "projects": [
+      {
+        "title": "Haumoana Community Hall, Haumoana, Hawke’s Bay",
+        "image": "/images/projects/common/Haumoana Community Hall.png",
+        "description": "",
+        "jobDescription": "GDC completed the Detailed Seismic Assessment (DSA) and Seismic Strengthening Design for Building Consent, Retrofit Design, Architectural Design, Existing Floor Assessment, and Construction Monitoring."
+      },
       {
         "title": "Ngāruawāhia Dog Pound, Waikato",
         "image": "/images/projects/common/Ngāruawāhia Dog Pound, Waikato.png",
@@ -577,6 +628,12 @@
     "category": "Planning",
     "projects": [
       {
+        "title": "Napier Municipal Theatre, Napier, Hawke’s Bay",
+        "image": "/images/projects/common/Napier M Centre.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Ceiling Platform Design & Assessment, Site Supervision, and Building Consent Application."
+      },
+      {
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
@@ -923,6 +980,13 @@
         "image": "",
         "description": "",
         "jobDescription": "GDC completed Geotechnical and Stormwater Investigation and Report, Structural Design (including Foundation Design, Footing Design, and Posts for Portal Beams), Bracing Calculations, Wind Analysis, and Seismic Analysis. GDC completed Structural Drawings, Calculations, Specifications, PS1 documentation, and provided draughting services, site inspections, and issued three PS4 certificates covering structural, stormwater, and subgrade foundation works for this project."
+      },
+      {
+        "title": "The Living Maori Village, Rotorua, Bay of Plenty",
+        "image": "/images/projects/common/The Living Maori Village.png",
+        "description": "",
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
+        "isFrontPage": true
       }
     ]
   },
@@ -982,6 +1046,12 @@
     "category": "Residential",
     "projects": [
       {
+        "title": "Kāinga Ora – Homes and Communities, Hawke’s Bay & Gisborne",
+        "image": "/images/projects/common/Kāinga Ora.png",
+        "description": "",
+        "jobDescription": "GDC completed approximately 200 Rapid Structural Assessments, Structural Condition Assessments, Structural Preliminary and Detailed Retrofit Designs for Residential houses in the Hawkes Bay and Gisborne regions."
+      },
+      {
         "title": "House, Thames, Waikato",
         "image": "/images/projects/residential/1.webp",
         "description": "GDC completed the Architectural Design for a house extension."
@@ -1037,6 +1107,12 @@
   {
     "category": "Commercial",
     "projects": [
+      {
+        "title": "Napier Municipal Theatre, Napier, Hawke’s Bay",
+        "image": "/images/projects/common/Napier M Centre.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Ceiling Platform Design & Assessment, Site Supervision, and Building Consent Application."
+      },
       {
         "title": "134 Riverlea Road, Hamilton, Waikato",
         "image": "/images/projects/content (27).webp",
@@ -1111,6 +1187,18 @@
   {
     "category": "Seismic",
     "projects": [
+      {
+        "title": "Haumoana Community Hall, Haumoana, Hawke’s Bay",
+        "image": "/images/projects/common/Haumoana Community Hall.png",
+        "description": "",
+        "jobDescription": "GDC completed the Detailed Seismic Assessment (DSA) and Seismic Strengthening Design for Building Consent, Retrofit Design, Architectural Design, Existing Floor Assessment, and Construction Monitoring."
+      },
+      {
+        "title": "Four Square Eastend - Heretaunga Street East, Parkvale, Hastings, Hawke’s Bay",
+        "image": "/images/projects/common/Four Square Eastend.png",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Detailed Seismic Assessment (DSA), Seismic Strengthening of the building above 67% NBS, and Structural Retrofit designs."
+      },
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
@@ -1426,6 +1514,13 @@
         "image": "/images/coming soon.png",
         "description": "",
         "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. GDC completed site visits, prepared architectural plans, developed electrical and services improvement design drawings, and submitted the Building Consent application."
+      },
+      {
+        "title": "The Living Maori Village, Rotorua, Bay of Plenty",
+        "image": "/images/projects/common/The Living Maori Village.png",
+        "description": "",
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
+        "isFrontPage": true
       }
     ]
   },
@@ -1679,6 +1774,27 @@
         "isFrontPage": true
       },
       {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 2.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 3.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
+        "title": "Cambridge Family Health, Cambridge, Waikato",
+        "image": "/images/projects/common/Cambridge Family Health 4.png",
+        "description": "",
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
+        "isFrontPage": true
+      },
+      {
         "title": "Campbell Johnstone Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/council/Campbell Johnstone, Waikato Hospital.png",
         "description": "",
@@ -1732,6 +1848,12 @@
   {
     "category": "Council",
     "projects": [
+      {
+        "title": "Haumoana Community Hall, Haumoana, Hawke’s Bay",
+        "image": "/images/projects/common/Haumoana Community Hall.png",
+        "description": "",
+        "jobDescription": "GDC completed the Detailed Seismic Assessment (DSA) and Seismic Strengthening Design for Building Consent, Retrofit Design, Architectural Design, Existing Floor Assessment, and Construction Monitoring."
+      },
       {
         "title": "Ngāruawāhia Town Hall, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (25).webp",
