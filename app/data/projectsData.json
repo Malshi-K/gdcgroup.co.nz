@@ -1108,6 +1108,12 @@
     "category": "Commercial",
     "projects": [
       {
+        "title": "Multiple Commercial Shops, Hillsborough, Auckland",
+        "image": "/images/projects/common/Multiple Commercial Shops, Hillsborough, Auckland.jpg",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project."
+      },
+      {
         "title": "Napier Municipal Theatre, Napier, Hawke’s Bay",
         "image": "/images/projects/common/Napier M Centre.png",
         "description": "",
@@ -1187,6 +1193,12 @@
   {
     "category": "Seismic",
     "projects": [
+      {
+        "title": "Multiple Commercial Shops, Hillsborough, Auckland",
+        "image": "/images/projects/common/Multiple Commercial Shops, Hillsborough, Auckland.jpg",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project."
+      },
       {
         "title": "Haumoana Community Hall, Haumoana, Hawke’s Bay",
         "image": "/images/projects/common/Haumoana Community Hall.png",
