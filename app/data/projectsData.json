@@ -441,6 +441,12 @@
     "category": "Geotechnical",
     "projects": [
       {
+        "title": "Francis Road Subdivision, Whanganui",
+        "image": "/images/projects/common/Francis Road Subdivision.png",
+        "description": "",
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment for 10 lots, 3 Waters Assessment, and Natural Hazards Assessment for this project."
+      },
+      {
         "title": "Buckland Road Playground, Tuakau, Waikato",
         "image": "/images/projects/5.webp",
         "description": "",
@@ -905,6 +911,12 @@
     "category": "Three Waters",
     "projects": [
       {
+        "title": "Francis Road Subdivision, Whanganui",
+        "image": "/images/projects/common/Francis Road Subdivision.png",
+        "description": "",
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment for 10 lots, 3 Waters Assessment, and Natural Hazards Assessment for this project."
+      },
+      {
         "title": "Holiday Park and Commercial Centre in Kennedy Bay, Coromandel, Waikato",
         "image": "/images/projects/Screenshot-2024-01-19-093510.webp",
         "description": "",
@@ -1284,6 +1296,12 @@
     "category": "Seismic",
     "projects": [
       {
+        "title": "Saint Hill Street, Whanganui",
+        "image": "/images/projects/common/Saint Hill Street.jpg",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project."
+      },
+      {
         "title": "Multiple Commercial Shops, Hillsborough, Auckland",
         "image": "/images/projects/common/Multiple Commercial Shops, Hillsborough, Auckland.jpg",
         "description": "",
@@ -1629,6 +1647,12 @@
   {
     "category": "Heritage",
     "projects": [
+      {
+        "title": "Saint Hill Street, Whanganui",
+        "image": "/images/projects/common/Saint Hill Street.jpg",
+        "description": "",
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA) for this project."
+      },
       {
         "title": "Cambridge Town Hall, Cambridge, Waikato",
         "image": "/images/projects/content (33).webp",
