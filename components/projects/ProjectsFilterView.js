@@ -246,7 +246,7 @@ const ProjectsFilterView = () => {
       // Split the description at "(Heritage early age concrete)" and add line break
       return (
         <>
-          {description.replace("(Heritage early age concrete)")}
+          {description.replace("(Heritage early age concrete)", "")}
           <span className="block font-medium text-customYellow mt-1">
             (Heritage early age concrete)
           </span>
