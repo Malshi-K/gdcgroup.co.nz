@@ -195,7 +195,7 @@ export default function PrivacyPolicy() {
           We use Google Analytics to collect anonymous information about how
           visitors use our website. These cookies help us understand user
           behavior, such as which pages are visited most frequently and how
-          users navigate through our site. The information collected doesn't
+          users navigate through our site. The information collected doesn&apos;t
           identify users personally and helps us make improvements to our
           website.
         </p>
