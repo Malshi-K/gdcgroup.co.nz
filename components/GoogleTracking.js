@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect, Suspense, memo } from 'react'
+import { useState, useEffect, Suspense, memo, useCallback } from 'react'
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
+import { hasAnalyticsCookieConsent, hasMarketingCookieConsent } from '@/utils/cookieUtils'
 
 const GA_MEASUREMENT_ID = 'G-9YLKY3BK26'
 const ADS_CONVERSION_ID = 'AW-742615805'
@@ -23,10 +24,29 @@ const logAnalytics = (action, data) => {
 const GoogleTrackingEvents = memo(function GoogleTrackingEvents() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  
+  // Check for consent each time we're about to track
+  const checkConsent = useCallback(() => {
+    const hasAnalyticsConsent = hasAnalyticsCookieConsent()
+    const hasMarketingConsent = hasMarketingCookieConsent()
+    
+    logAnalytics('Checking consent', { 
+      analytics: hasAnalyticsConsent, 
+      marketing: hasMarketingConsent 
+    })
+    
+    return {
+      analytics: hasAnalyticsConsent,
+      marketing: hasMarketingConsent
+    }
+  }, [])
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      if (typeof window.gtag === 'function') {
+      const consent = checkConsent()
+      
+      // Only track if user has given analytics consent
+      if (typeof window.gtag === 'function' && consent.analytics) {
         const url = pathname + searchParams.toString()
         
         // Debug log before sending
@@ -34,24 +54,34 @@ const GoogleTrackingEvents = memo(function GoogleTrackingEvents() {
           url, 
           title: document.title,
           GA_ID: GA_MEASUREMENT_ID,
-          ADS_ID: ADS_CONVERSION_ID
+          ADS_ID: consent.marketing ? ADS_CONVERSION_ID : null
         })
         
-        // Track pageview for both GA4 and Google Ads
+        // Prepare send_to array based on consent
+        const sendTo = [GA_MEASUREMENT_ID]
+        if (consent.marketing) {
+          sendTo.push(ADS_CONVERSION_ID)
+        }
+        
+        // Track pageview for both GA4 and Google Ads (if marketing consent given)
         window.gtag('event', 'page_view', {
-          send_to: [GA_MEASUREMENT_ID, ADS_CONVERSION_ID],
+          send_to: sendTo,
           page_location: window.location.href,
           page_path: url,
           page_title: document.title,
           debug_mode: DEBUG_MODE
         })
       } else {
-        logAnalytics('Error', 'gtag not found')
+        if (typeof window.gtag !== 'function') {
+          logAnalytics('Error', 'gtag not found')
+        } else {
+          logAnalytics('Tracking skipped', 'No analytics consent')
+        }
       }
     }, 300)
 
     return () => clearTimeout(timeoutId)
-  }, [pathname, searchParams])
+  }, [pathname, searchParams, checkConsent])
 
   return null
 })
@@ -75,27 +105,8 @@ export default function GoogleTracking() {
   // Always call hooks at the top level, regardless of whether we'll use their values
   const shouldLoadGA = useDelayedLoad()
 
-  // Debugging effect - always declare it, even if we don't use the production check yet
-  useEffect(() => {
-    // Only run the debug code if DEBUG_MODE is true
-    if (DEBUG_MODE && IS_PRODUCTION) {
-      setTimeout(() => {
-        if (typeof window.gtag === 'function') {
-          logAnalytics('Status', 'Analytics installed and running')
-          // Test basic event
-          window.gtag('event', 'test_event', {
-            debug_mode: true,
-            send_to: [GA_MEASUREMENT_ID, ADS_CONVERSION_ID]
-          })
-        } else {
-          logAnalytics('Error', 'Analytics not installed properly')
-        }
-      }, 2000)
-    }
-  }, [])
-
-  // Only render the actual tracking in production
-  if (!IS_PRODUCTION || !shouldLoadGA) return null
+  // Always render the tracking, but with consent mode
+  if (!shouldLoadGA) return null
 
   return (
     <>
@@ -118,6 +129,26 @@ export default function GoogleTracking() {
               }
             }
             gtag('js', new Date());
+            
+            // Setup consent mode
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied',
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied'
+            });
+            
+            // Check initial consent state
+            const hasAnalyticsConsent = document.cookie.indexOf('gdcgroup-analytics-consent=true') !== -1;
+            const hasMarketingConsent = document.cookie.indexOf('gdcgroup-marketing-consent=true') !== -1;
+            
+            // Update consent based on cookies
+            gtag('consent', 'update', {
+              'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+              'ad_storage': hasMarketingConsent ? 'granted' : 'denied',
+              'ad_user_data': hasMarketingConsent ? 'granted' : 'denied',
+              'ad_personalization': hasMarketingConsent ? 'granted' : 'denied'
+            });
 
             // Configure GA4
             gtag('config', '${GA_MEASUREMENT_ID}', {

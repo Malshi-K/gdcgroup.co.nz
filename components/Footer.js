@@ -345,12 +345,18 @@ export default function Footer() {
             >
               TERMS & CONDITIONS
             </button>
-            <button
-              onClick={openPrivacyModal}
+            <Link
+              href="/privacy-policy"
               className="hover:text-white tracking-wide"
             >
               PRIVACY POLICY
-            </button>
+            </Link>
+            <Link
+              href="/cookie-preferences"
+              className="hover:text-white tracking-wide"
+            >
+              COOKIE SETTINGS
+            </Link>
           </div>
           <span className="tracking-wide mt-2 sm:mt-0">
             © {currentYear}{" "}
@@ -365,214 +371,6 @@ export default function Footer() {
           </span>
         </div>
       </div>
-
-      {/* Privacy Policy Modal */}
-      {isPrivacyModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex text-justify items-center justify-center z-50">
-          <div className="bg-white w-11/12 max-w-3xl p-6 rounded shadow-lg relative">
-            <button
-              className="absolute top-4 right-4 text-black font-bold"
-              onClick={closePrivacyModal}
-            >
-              <XMarkIcon className="h-6 w-6 text-black" />{" "}
-              {/* Icon as the close button */}
-            </button>
-            <h2 className="text-2xl font-bold mb-4 text-customBlue">
-              Privacy Policy
-            </h2>
-            <div className="overflow-y-auto max-h-96 pr-4 scrollbar-hide">
-              <p className="text-gray-800">
-                At GDC Consultants Ltd. (&quot;we,&quot; &quot;us,&quot;
-                &quot;our&quot;), we are committed to protecting your privacy
-                and ensuring that your personal information is handled in a safe
-                and responsible manner. This privacy policy explains how we
-                collect, use, and protect the personal data you provide to us
-                through our website (
-                <a
-                  href="https://gdcgroup.co.nz"
-                  className="text-customBlue underline"
-                >
-                  gdcgroup.co.nz
-                </a>
-                ). Personal information refers to any information about an
-                identifiable individual (a natural person).
-              </p>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                1. Information We Collect
-              </h3>
-              <p className="text-gray-800">
-                We may collect the following types of information from you:
-              </p>
-              <ul className="list-disc list-inside text-gray-800">
-                <li>
-                  <strong>Personal Information:</strong> Name, email address,
-                  phone number, mailing address, and other contact details when
-                  you contact us or submit inquiries through our website.
-                </li>
-                <li>
-                  <strong>Technical Information:</strong> IP address, browser
-                  type, operating system, device information, and other data
-                  related to your use of our website.
-                </li>
-                <li>
-                  <strong>Cookies and Tracking Technologies:</strong> We use
-                  cookies and similar technologies to enhance your browsing
-                  experience and gather usage data for analytical purposes. You
-                  can control cookies through your browser settings.
-                </li>
-              </ul>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                2. How We Use Your Information
-              </h3>
-              <p className="text-gray-800">
-                We may use the information we collect for the following
-                purposes:
-              </p>
-              <ul className="list-disc list-inside text-gray-800">
-                <li>
-                  To respond to your inquiries and provide you with requested
-                  information about our services.
-                </li>
-                <li>
-                  To process transactions and deliver services you request.
-                </li>
-                <li>
-                  To improve our website and services through data analysis and
-                  usage trends.
-                </li>
-                <li>
-                  To send you newsletters, marketing communications, and
-                  promotional offers, if you have opted in to receive these
-                  communications.
-                </li>
-                <li>
-                  To comply with legal obligations and enforce our agreements.
-                </li>
-              </ul>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                3. Sharing of Your Information
-              </h3>
-              <p className="text-gray-800">
-                We do not sell, trade, or rent your personal information to
-                third parties. However, we may share your information in the
-                following situations:
-              </p>
-              <ul className="list-disc list-inside text-gray-800">
-                <li>
-                  <strong>Service Providers:</strong> We may share your
-                  information with trusted service providers who assist us in
-                  operating our website and providing our services, as long as
-                  they agree to keep your information confidential.
-                </li>
-                <li>
-                  <strong>Legal Requirements:</strong> We may disclose your
-                  personal information if required by law or in response to
-                  legal requests, such as court orders or subpoenas.
-                </li>
-              </ul>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                4. Data Security
-              </h3>
-              <p className="text-gray-800">
-                We implement a variety of security measures to maintain the
-                safety of your personal information. However, no method of
-                transmission over the internet or electronic storage is 100%
-                secure, and we cannot guarantee absolute security.
-              </p>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                5. Your Rights
-              </h3>
-              <p className="text-gray-800">You have the right to:</p>
-              <ul className="list-disc list-inside text-gray-800">
-                <li>Access the personal data we hold about you.</li>
-                <li>
-                  Request corrections to any inaccurate or incomplete
-                  information.
-                </li>
-                <li>
-                  Request the deletion of your personal data in certain
-                  circumstances.
-                </li>
-                <li>
-                  Object to the processing of your data for direct marketing
-                  purposes.
-                </li>
-                <li>Withdraw your consent to data processing at any time.</li>
-              </ul>
-              <p className="text-gray-800">
-                To exercise any of these rights, please contact us at{" "}
-                <a
-                  href="mailto:info@gdcgroup.co.nz"
-                  className="text-customBlue underline"
-                >
-                  info@gdcgroup.co.nz
-                </a>{" "}
-                or{" "}
-                <a href="tel:078380090" className="text-customBlue underline">
-                  07 838 0090
-                </a>
-                .
-              </p>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                6. Third-Party Links
-              </h3>
-              <p className="text-gray-800">
-                Our website may contain links to third-party websites. These
-                websites have their own privacy policies, and we do not assume
-                any responsibility or liability for their content or privacy
-                practices.
-              </p>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                7. Changes to This Privacy Policy
-              </h3>
-              <p className="text-gray-800">
-                We may update this privacy policy from time to time. Any changes
-                will be posted on this page with an updated effective date. We
-                encourage you to review this policy regularly to stay informed
-                about how we are protecting your information.
-              </p>
-
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
-                8. Contact Us
-              </h3>
-              <p className="text-gray-800">
-                If you have any questions about this privacy policy or your
-                personal information, please contact us at:
-              </p>
-              <p className="text-gray-800">GDC Consultants Ltd.</p>
-              <p className="text-gray-800">89 Church Road, Pukete, Hamilton</p>
-              <p className="text-gray-800">
-                <a
-                  href="mailto:info@gdcgroup.co.nz"
-                  className="text-customBlue underline"
-                >
-                  info@gdcgroup.co.nz
-                </a>
-              </p>
-              <p className="text-gray-800">
-                <a href="tel:078380090" className="text-customBlue underline">
-                  07 838 0090
-                </a>
-              </p>
-              <p className="text-gray-800">
-                <a
-                  href="https://gdcgroup.co.nz"
-                  className="text-customBlue underline"
-                >
-                  gdcgroup.co.nz
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Terms and Conditions Modal */}
       {isTermsModalOpen && (
@@ -710,16 +508,14 @@ export default function Footer() {
                 7. Privacy
               </h3>
               <p className="text-gray-800">
-                Your use of the Website is also governed by our&nbsp;
-                <button
-                  onClick={() => {
-                    closeTermsModal(); // Close the Terms modal
-                    openPrivacyModal(); // Open the Privacy Policy modal
-                  }}
+                Your use of the Website is also governed by our{" "}
+                <Link
+                  href="/privacy-policy"
                   className="text-customBlue underline"
+                  onClick={closeTermsModal} // Close the Terms modal when navigating
                 >
                   Privacy Policy
-                </button>
+                </Link>
                 . Please review it to understand how we collect, use, and
                 protect your personal data.
               </p>

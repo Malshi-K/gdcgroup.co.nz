@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTracking from "@/components/GoogleTracking";
+import { initializeEssentialCookies, updateAllConsentStates } from '@/utils/cookieUtils';
+import CookieConsent from "@/components/cookie/CookieConsent";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -30,11 +32,23 @@ export default function RootLayout({ children }) {
             chatflowId: 244224,
             portalId: 6187835,
           });
-        }, 2000); // Add a 1-second delay
+        }, 2000); // Add a 2-second delay
       };
       document.body.appendChild(chatbotScript);
     }
-  });
+  }, []);
+
+  useEffect(() => {
+    // Initialize essential cookies
+    initializeEssentialCookies();
+    
+    // Check and update all consent states
+    const timeoutId = setTimeout(() => {
+      updateAllConsentStates();
+    }, 2500); // Wait for GA to be fully initialized
+    
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <html lang="en">
@@ -46,6 +60,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
+        <CookieConsent />
       </body>
     </html>
   );
