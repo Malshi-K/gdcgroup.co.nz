@@ -8,7 +8,6 @@ import {
   updateAllConsentStates,
   trackConsentSelection,
 } from "@/utils/cookieUtils";
-import Head from "next/head";
 
 export default function CookiePreferences() {
   const [preferences, setPreferences] = useState({
@@ -118,142 +117,159 @@ export default function CookiePreferences() {
   };
 
   return (
-    <>
-      {/* Add Head component with title */}
-      <Head>
-        <title>Cookie Preferences | GDC Group</title>
-        <meta
-          name="description"
-          content="Manage your cookie preferences for GDC Group website"
-        />
-      </Head>
+    <div className="container mx-auto py-16 px-4">
+      <h1 className="text-3xl font-bold mb-8 text-customBlue">
+        Cookie Preferences
+      </h1>
 
-      <div className="container mx-auto py-16 px-4">
-        <h1 className="text-3xl font-bold mb-8 text-customBlue">
-          Cookie Preferences
-        </h1>
-
-        <div className="bg-gray-50 p-6 rounded-lg shadow-sm mb-8 max-w-2xl">
-          <div className="mb-6 pb-4 border-b">
-            <div className="flex items-center justify-between mb-2">
-              <div>
-                <h3 className="text-lg font-medium text-customBlue">
-                  Essential Cookies
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  These cookies are necessary for the website to function
-                  properly.
-                </p>
-              </div>
-              <input
-                type="checkbox"
-                checked={preferences.essential}
-                disabled={true}
-                className="h-5 w-5"
-              />
+      <div className="bg-gray-50 p-6 rounded-lg shadow-sm mb-8 max-w-2xl">
+        <div className="mb-6 pb-4 border-b">
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <h3 className="text-lg font-medium text-customBlue">
+                Essential Cookies
+              </h3>
+              <p className="text-gray-600 text-sm">
+                These cookies are necessary for the website to function
+                properly.
+              </p>
             </div>
-          </div>
-
-          <div className="mb-6 pb-4 border-b">
-            <div className="flex items-center justify-between mb-2">
-              <div>
-                <h3 className="text-lg font-medium text-customBlue">
-                  Analytics Cookies
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  These cookies help us understand how visitors interact with
-                  our website.
-                </p>
-              </div>
-              <input
-                type="checkbox"
-                checked={preferences.analytics}
-                onChange={() => {
-                  const newValue = !preferences.analytics;
-                  // Track checkbox toggle interaction
-                  if (typeof window !== "undefined" && window.gtag) {
-                    window.gtag("event", "preference_checkbox_toggle", {
-                      preference_type: "analytics",
-                      new_state: newValue ? "checked" : "unchecked",
-                    });
-                  }
-                  setPreferences({
-                    ...preferences,
-                    analytics: newValue,
-                  });
-                }}
-                className="h-5 w-5"
-              />
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <div className="flex items-center justify-between mb-2">
-              <div>
-                <h3 className="text-lg font-medium text-customBlue">
-                  Marketing Cookies
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  These cookies are used to deliver relevant advertisements and
-                  track conversions.
-                </p>
-              </div>
-              <input
-                type="checkbox"
-                checked={preferences.marketing}
-                onChange={() => {
-                  const newValue = !preferences.marketing;
-                  // Track checkbox toggle interaction
-                  if (typeof window !== "undefined" && window.gtag) {
-                    window.gtag("event", "preference_checkbox_toggle", {
-                      preference_type: "marketing",
-                      new_state: newValue ? "checked" : "unchecked",
-                    });
-                  }
-                  setPreferences({
-                    ...preferences,
-                    marketing: newValue,
-                  });
-                }}
-                className="h-5 w-5"
-              />
-            </div>
-          </div>
-
-          <div className="flex space-x-4 mt-8">
-            <button
-              onClick={savePreferences}
-              className="bg-customBlue text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
-            >
-              Save Preferences
-            </button>
-            <Link
-              href="/"
-              onClick={handleCancel}
-              className="border border-customBlue text-customBlue px-6 py-2 rounded hover:bg-gray-100 transition-colors"
-            >
-              Cancel
-            </Link>
+            <input
+              type="checkbox"
+              checked={preferences.essential}
+              disabled={true}
+              className="h-5 w-5"
+            />
           </div>
         </div>
 
-        <div>
-          <Link
-            href="/privacy-policy"
-            onClick={() => {
-              if (typeof window !== "undefined" && window.gtag) {
-                window.gtag("event", "preferences_page_action", {
-                  action: "view_privacy_policy",
-                  non_interaction: false,
+        <div className="mb-6 pb-4 border-b">
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <h3 className="text-lg font-medium text-customBlue">
+                Analytics Cookies
+              </h3>
+              <p className="text-gray-600 text-sm">
+                These cookies help us understand how visitors interact with our
+                website.
+              </p>
+            </div>
+            <input
+              type="checkbox"
+              checked={preferences.analytics}
+              onChange={() => {
+                const newValue = !preferences.analytics;
+                // Track checkbox toggle interaction
+                if (typeof window !== "undefined" && window.gtag) {
+                  window.gtag("event", "preference_checkbox_toggle", {
+                    preference_type: "analytics",
+                    new_state: newValue ? "checked" : "unchecked",
+                  });
+                }
+                setPreferences({
+                  ...preferences,
+                  analytics: newValue,
                 });
-              }
-            }}
-            className="text-customBlue underline"
+              }}
+              className="h-5 w-5"
+            />
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <h3 className="text-lg font-medium text-customBlue">
+                Marketing Cookies
+              </h3>
+              <p className="text-gray-600 text-sm">
+                These cookies are used to deliver relevant advertisements and
+                track conversions.
+              </p>
+            </div>
+            <input
+              type="checkbox"
+              checked={preferences.marketing}
+              onChange={() => {
+                const newValue = !preferences.marketing;
+                // Track checkbox toggle interaction
+                if (typeof window !== "undefined" && window.gtag) {
+                  window.gtag("event", "preference_checkbox_toggle", {
+                    preference_type: "marketing",
+                    new_state: newValue ? "checked" : "unchecked",
+                  });
+                }
+                setPreferences({
+                  ...preferences,
+                  marketing: newValue,
+                });
+              }}
+              className="h-5 w-5"
+            />
+          </div>
+        </div>
+
+        <div className="flex space-x-4 mt-8">
+          <button
+            onClick={savePreferences}
+            className="bg-customBlue text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
           >
-            View our Privacy Policy
+            Save Preferences
+          </button>
+          <Link
+            href="/"
+            onClick={handleCancel}
+            className="border border-customBlue text-customBlue px-6 py-2 rounded hover:bg-gray-100 transition-colors"
+          >
+            Cancel
           </Link>
         </div>
       </div>
-    </>
+
+      <div>
+        <Link
+          href="/privacy-policy"
+          onClick={() => {
+            if (typeof window !== "undefined" && window.gtag) {
+              window.gtag("event", "preferences_page_action", {
+                action: "view_privacy_policy",
+                non_interaction: false,
+              });
+            }
+          }}
+          className="text-customBlue underline"
+        >
+          View our Privacy Policy
+        </Link>
+      </div>
+    </div>
   );
 }
+
+export const generateMetadata = async () => {
+  return {
+    title: "Cookie Preferences | GDC Group",
+    description: "Manage your cookie preferences for GDC Group website",
+    keywords:
+      "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
+    
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    alternates: {
+      canonical: "https://gdcgroup.co.nz/cookie-preferences",
+      languages: {
+        "en-NZ": "https://gdcgroup.co.nz/cookie-preferences",
+        en: "https://gdcgroup.co.nz/cookie-preferences",
+      },
+    },
+  };
+};
