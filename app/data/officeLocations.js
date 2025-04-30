@@ -130,7 +130,7 @@ const officeLocations = [
   {
     id: 14,
     name: "Whakatāne Office",
-    address: "233A Harbour road Ohope",
+    address: "233A Harbour Road, Ohope, Whakatāne",
     email: "whakatane@gdcgroup.co.nz",
     phone: "+64 7 282 2173",
     mapSrc:
