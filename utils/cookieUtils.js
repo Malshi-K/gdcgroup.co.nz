@@ -68,6 +68,10 @@ export const updateAllConsentStates = () => {
     window.gtag('event', 'cookie_consent_updated', {
       'cookie_consent_type': consentType
     });
+
+    window.gtag('set', 'user_properties', {
+      'cookie_consent_type': consentType
+    });
     
     return {
       analytics: analyticsConsent,
