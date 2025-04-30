@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import Link from "next/link";
+import { trackConsentSelection } from "@/utils/cookieUtils";
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
@@ -44,6 +45,19 @@ export default function CookieConsent() {
     // Update consent state
     updateConsentState(true, true);
 
+    // Track "Accept All" event
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'cookie_banner_interaction', {
+        'action': 'accept_all',
+        'non_interaction': false
+      });
+      
+      // Track individual consent types
+      trackConsentSelection('essential', true);
+      trackConsentSelection('analytics', true);
+      trackConsentSelection('marketing', true);
+    }
+
     setShowBanner(false);
   };
 
@@ -71,6 +85,19 @@ export default function CookieConsent() {
       cookiePreferences.analytics,
       cookiePreferences.marketing
     );
+    
+    // Track "Save Preferences" event
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'cookie_banner_interaction', {
+        'action': 'save_preferences',
+        'non_interaction': false
+      });
+      
+      // Track individual consent types
+      trackConsentSelection('essential', true);
+      trackConsentSelection('analytics', cookiePreferences.analytics);
+      trackConsentSelection('marketing', cookiePreferences.marketing);
+    }
 
     setShowBanner(false);
   };
@@ -92,6 +119,17 @@ export default function CookieConsent() {
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15)
     );
+  };
+
+  // Track UI interactions 
+  const handleCustomizeClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'cookie_banner_interaction', {
+        'action': showOptions ? 'hide_options' : 'customize',
+        'non_interaction': false
+      });
+    }
+    setShowOptions(!showOptions);
   };
 
   if (!showBanner) return null;
@@ -137,12 +175,15 @@ export default function CookieConsent() {
                   <input
                     type="checkbox"
                     checked={cookiePreferences.analytics}
-                    onChange={() =>
+                    onChange={() => {
+                      const newValue = !cookiePreferences.analytics;
+                      // Track checkbox change
+                      trackConsentSelection('analytics', newValue);
                       setCookiePreferences({
                         ...cookiePreferences,
-                        analytics: !cookiePreferences.analytics,
-                      })
-                    }
+                        analytics: newValue,
+                      });
+                    }}
                     className="h-5 w-5"
                   />
                 </div>
@@ -160,12 +201,15 @@ export default function CookieConsent() {
                   <input
                     type="checkbox"
                     checked={cookiePreferences.marketing}
-                    onChange={() =>
+                    onChange={() => {
+                      const newValue = !cookiePreferences.marketing;
+                      // Track checkbox change
+                      trackConsentSelection('marketing', newValue);
                       setCookiePreferences({
                         ...cookiePreferences,
-                        marketing: !cookiePreferences.marketing,
-                      })
-                    }
+                        marketing: newValue,
+                      });
+                    }}
                     className="h-5 w-5"
                   />
                 </div>
@@ -176,7 +220,7 @@ export default function CookieConsent() {
 
         <div className="flex flex-wrap gap-2">
           <button
-            onClick={() => setShowOptions(!showOptions)}
+            onClick={handleCustomizeClick}
             className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
           >
             {showOptions ? "Hide Options" : "Customize"}
@@ -194,6 +238,14 @@ export default function CookieConsent() {
               <Link
                 href="/privacy-policy"
                 className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
+                onClick={() => {
+                  if (typeof window !== "undefined" && window.gtag) {
+                    window.gtag('event', 'cookie_banner_interaction', {
+                      'action': 'learn_more',
+                      'non_interaction': false
+                    });
+                  }
+                }}
               >
                 Learn More
               </Link>
