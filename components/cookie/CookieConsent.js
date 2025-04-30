@@ -11,13 +11,14 @@ export default function CookieConsent() {
   const [cookiePreferences, setCookiePreferences] = useState({
     essential: true, // Always enabled
     analytics: false,
-    marketing: false
+    marketing: false,
   });
 
   useEffect(() => {
     // Check if essential cookie consent has been given
-    const hasEssentialConsent = Cookies.get("gdcgroup-essential-consent") === "true";
-    
+    const hasEssentialConsent =
+      Cookies.get("gdcgroup-essential-consent") === "true";
+
     if (!hasEssentialConsent) {
       setShowBanner(true);
     } else {
@@ -25,7 +26,7 @@ export default function CookieConsent() {
       setCookiePreferences({
         essential: true,
         analytics: Cookies.get("gdcgroup-analytics-consent") === "true",
-        marketing: Cookies.get("gdcgroup-marketing-consent") === "true"
+        marketing: Cookies.get("gdcgroup-marketing-consent") === "true",
       });
     }
   }, []);
@@ -39,10 +40,10 @@ export default function CookieConsent() {
     Cookies.set("gdcgroup-marketing-consent", "true", { expires: 150 });
     // Set session cookie
     Cookies.set("gdcgroup-session", generateSessionId(), { path: "/" });
-    
+
     // Update consent state
     updateConsentState(true, true);
-    
+
     setShowBanner(false);
   };
 
@@ -50,34 +51,47 @@ export default function CookieConsent() {
     // Essential cookies are always set
     Cookies.set("gdcgroup-essential-consent", "true", { expires: 150 });
     Cookies.set("gdcgroup-session", generateSessionId(), { path: "/" });
-    
+
     // Set analytics cookie based on user preference
-    Cookies.set("gdcgroup-analytics-consent", cookiePreferences.analytics ? "true" : "false", { expires: 150 });
-    
+    Cookies.set(
+      "gdcgroup-analytics-consent",
+      cookiePreferences.analytics ? "true" : "false",
+      { expires: 150 }
+    );
+
     // Set marketing cookie based on user preference
-    Cookies.set("gdcgroup-marketing-consent", cookiePreferences.marketing ? "true" : "false", { expires: 150 });
-    
+    Cookies.set(
+      "gdcgroup-marketing-consent",
+      cookiePreferences.marketing ? "true" : "false",
+      { expires: 150 }
+    );
+
     // Update consent state
-    updateConsentState(cookiePreferences.analytics, cookiePreferences.marketing);
-    
+    updateConsentState(
+      cookiePreferences.analytics,
+      cookiePreferences.marketing
+    );
+
     setShowBanner(false);
   };
 
   const updateConsentState = (analyticsConsent, marketingConsent) => {
     // Update gtag consent settings
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('consent', 'update', {
-        'analytics_storage': analyticsConsent ? 'granted' : 'denied',
-        'ad_storage': marketingConsent ? 'granted' : 'denied',
-        'ad_user_data': marketingConsent ? 'granted' : 'denied',
-        'ad_personalization': marketingConsent ? 'granted' : 'denied'
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("consent", "update", {
+        analytics_storage: analyticsConsent ? "granted" : "denied",
+        ad_storage: marketingConsent ? "granted" : "denied",
+        ad_user_data: marketingConsent ? "granted" : "denied",
+        ad_personalization: marketingConsent ? "granted" : "denied",
       });
     }
   };
 
   const generateSessionId = () => {
-    return Math.random().toString(36).substring(2, 15) + 
-           Math.random().toString(36).substring(2, 15);
+    return (
+      Math.random().toString(36).substring(2, 15) +
+      Math.random().toString(36).substring(2, 15)
+    );
   };
 
   if (!showBanner) return null;
@@ -85,60 +99,73 @@ export default function CookieConsent() {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-customBlue bg-opacity-95 text-white py-4 px-6 z-50 shadow-lg">
       <div className="container mx-auto flex flex-col justify-between items-start">
-        <div className="mb-4 text-sm md:text-base max-w-3xl">
-          This website uses cookies to ensure proper operation and enhance your experience. 
-          You can customize your preferences or accept all cookies.
+        <div className="mb-4 text-sm md:text-base">
+          This website uses cookies to ensure proper operation and enhance your
+          experience. You can customize your preferences or accept all cookies.
         </div>
-        
+
         {showOptions && (
           <div className="mb-4 w-full max-w-3xl">
             <div className="bg-white bg-opacity-10 p-4 rounded-lg mb-3">
               <div className="flex items-center justify-between mb-3 pb-3 border-b border-white border-opacity-20">
                 <div>
                   <h4 className="font-medium">Essential Cookies</h4>
-                  <p className="text-sm text-gray-200">These cookies are necessary for the website to function properly.</p>
+                  <p className="text-sm text-gray-200">
+                    These cookies are necessary for the website to function
+                    properly.
+                  </p>
                 </div>
                 <div className="ml-2">
-                  <input 
-                    type="checkbox" 
-                    checked={cookiePreferences.essential} 
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.essential}
                     disabled={true}
                     className="h-5 w-5"
                   />
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-between mb-3 pb-3 border-b border-white border-opacity-20">
                 <div>
                   <h4 className="font-medium">Analytics Cookies</h4>
-                  <p className="text-sm text-gray-200">These cookies help us understand how visitors interact with our website.</p>
+                  <p className="text-sm text-gray-200">
+                    These cookies help us understand how visitors interact with
+                    our website.
+                  </p>
                 </div>
                 <div className="ml-2">
-                  <input 
-                    type="checkbox" 
-                    checked={cookiePreferences.analytics} 
-                    onChange={() => setCookiePreferences({
-                      ...cookiePreferences,
-                      analytics: !cookiePreferences.analytics
-                    })}
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.analytics}
+                    onChange={() =>
+                      setCookiePreferences({
+                        ...cookiePreferences,
+                        analytics: !cookiePreferences.analytics,
+                      })
+                    }
                     className="h-5 w-5"
                   />
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Marketing Cookies</h4>
-                  <p className="text-sm text-gray-200">These cookies are used to deliver relevant advertisements and track conversions.</p>
+                  <p className="text-sm text-gray-200">
+                    These cookies are used to deliver relevant advertisements
+                    and track conversions.
+                  </p>
                 </div>
                 <div className="ml-2">
-                  <input 
-                    type="checkbox" 
-                    checked={cookiePreferences.marketing} 
-                    onChange={() => setCookiePreferences({
-                      ...cookiePreferences,
-                      marketing: !cookiePreferences.marketing
-                    })}
+                  <input
+                    type="checkbox"
+                    checked={cookiePreferences.marketing}
+                    onChange={() =>
+                      setCookiePreferences({
+                        ...cookiePreferences,
+                        marketing: !cookiePreferences.marketing,
+                      })
+                    }
                     className="h-5 w-5"
                   />
                 </div>
@@ -146,17 +173,17 @@ export default function CookieConsent() {
             </div>
           </div>
         )}
-        
+
         <div className="flex flex-wrap gap-2">
-          <button 
+          <button
             onClick={() => setShowOptions(!showOptions)}
             className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
           >
-            {showOptions ? 'Hide Options' : 'Customize'}
+            {showOptions ? "Hide Options" : "Customize"}
           </button>
-          
+
           {showOptions ? (
-            <button 
+            <button
               onClick={acceptSelectedCookies}
               className="bg-white text-customBlue px-6 py-2 text-sm rounded font-medium hover:bg-customYellow transition-colors"
             >
@@ -164,13 +191,13 @@ export default function CookieConsent() {
             </button>
           ) : (
             <>
-              <Link 
+              <Link
                 href="/privacy-policy"
                 className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
               >
                 Learn More
               </Link>
-              <button 
+              <button
                 onClick={acceptAllCookies}
                 className="bg-customYellow text-customBlue px-6 py-2 text-sm rounded font-medium hover:bg-white transition-colors"
               >
