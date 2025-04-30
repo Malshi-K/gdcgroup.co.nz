@@ -166,15 +166,15 @@ const ServicesSection = () => {
           isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-5"
         }`}
       >
-        <h2 className="text-3xl text-customYellow uppercase font-bold mt-2">
+        <h1 className="text-3xl text-customYellow uppercase font-bold mt-2">
           Our Expertise and Services
-        </h2>
-        <h3 className="text-sm text-customBlue tracking-wide">
+        </h1>
+        <h2 className="text-md text-customBlue tracking-wide">
           At GDC Consultants, we offer a wide range of specialised consulting
           services to help our clients successfully complete their construction
           projects. Explore our services to see how we can help you reach your
           goals.
-        </h3>
+        </h2>
       </div>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-6 xl:px-10">

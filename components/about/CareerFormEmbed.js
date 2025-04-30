@@ -41,7 +41,7 @@ const CareerFormEmbed = () => {
             width={240}
             height={96}
           />
-          <h1 className="text-2xl text-customBlue font-semibold">Apply Now</h1>
+          <h2 className="text-2xl text-customBlue font-semibold">Apply Now</h2>
         </div>
         <div id="hubspotForm" className="w-full"></div>
       </div>

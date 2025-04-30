@@ -76,9 +76,9 @@ export default function ReviewForm() {
             width={240}
             height={96}
           />
-          <h1 className="text-2xl text-customBlue font-semibold">
+          <h2 className="text-2xl text-customBlue font-semibold">
             Share Your Experience
-          </h1>
+          </h2>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
