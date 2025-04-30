@@ -64,7 +64,7 @@ const CardsSection = () => {
     if (isVisible && !animationTriggered) {
       setAnimationTriggered(true);
       animateCount('projects', 10000, 2500); // Increased duration for smoother animation
-      animateCount('locations', 13, 1500);
+      animateCount('locations', 14, 1500);
       animateCount('services', 10, 1500);
       animateCount('experience', 16, 1500);
     }
