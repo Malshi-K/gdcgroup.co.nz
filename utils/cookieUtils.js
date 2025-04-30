@@ -46,31 +46,11 @@ export const updateAllConsentStates = () => {
     const analyticsConsent = hasAnalyticsCookieConsent();
     const marketingConsent = hasMarketingCookieConsent();
     
-    // The existing consent update code
     window.gtag('consent', 'update', {
       'analytics_storage': analyticsConsent ? 'granted' : 'denied',
       'ad_storage': marketingConsent ? 'granted' : 'denied',
       'ad_user_data': marketingConsent ? 'granted' : 'denied',
       'ad_personalization': marketingConsent ? 'granted' : 'denied'
-    });
-    
-    // Add this new event to track consent type
-    let consentType = 'essential_only';
-    if (analyticsConsent && marketingConsent) {
-      consentType = 'all_consents';
-    } else if (analyticsConsent) {
-      consentType = 'analytics_consent';
-    } else if (marketingConsent) {
-      consentType = 'marketing_consent';
-    }
-    
-    // Send a custom event with the consent type
-    window.gtag('event', 'cookie_consent_updated', {
-      'cookie_consent_type': consentType
-    });
-
-    window.gtag('set', 'user_properties', {
-      'cookie_consent_type': consentType
     });
     
     return {
