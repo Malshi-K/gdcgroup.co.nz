@@ -44,8 +44,7 @@ const officeLocations = [
   {
     id: 5,
     name: "Auckland Office",
-    address:
-      "69 Ben Lomond Crescent, Pakuranga ​",
+    address: "69 Ben Lomond Crescent, Pakuranga ​",
     email: "auckland@gdcgroup.co.nz",
     phone: "+64 9 281 2248",
     mapSrc:
@@ -84,6 +83,16 @@ const officeLocations = [
   },
   {
     id: 9,
+    name: "Whakatāne Office",
+    address: "233A Harbour Road, Ohope, Whakatāne",
+    email: "whakatane@gdcgroup.co.nz",
+    phone: "+64 7 282 2173",
+    mapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8559648277055!2d177.09309557574477!3d-37.98049057193414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6f0856c57880ad%3A0xa1b32c0f07fe7dcd!2s233A%20Harbour%20Road%2C%20%C5%8Chope%203121%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1745906785320!5m2!1sen!2slk",
+    qrCodeSrc: "/images/qr-code/Whakatāne-QR.png",
+  },
+  {
+    id: 10,
     name: "Cambridge",
     email: "cambridge@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
@@ -92,7 +101,7 @@ const officeLocations = [
     qrCodeSrc: "/images/qr-code/Cambridge-QR.webp",
   },
   {
-    id: 10,
+    id: 11,
     name: "Raglan",
     email: "info@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
@@ -101,7 +110,7 @@ const officeLocations = [
     qrCodeSrc: "/images/qr-code/Raglan-QR.webp",
   },
   {
-    id: 11,
+    id: 12,
     name: "Palmerston North",
     email: "palmerston@gdcgroup.co.nz",
     phone: "+64 6 281 2270",
@@ -110,7 +119,7 @@ const officeLocations = [
     qrCodeSrc: "/images/qr-code/Palmerston-North-QR.webp",
   },
   {
-    id: 12,
+    id: 13,
     name: "Christchurch",
     email: "christchurch@gdcgroup.co.nz",
     phone: "+64 3 666 0078",
@@ -119,23 +128,13 @@ const officeLocations = [
     qrCodeSrc: "/images/qr-code/Christchurch-QR.webp",
   },
   {
-    id: 13,
+    id: 14,
     name: "New Plymouth",
     email: "newplymouth@gdcgroup.co.nz",
     phone: "+64 6 281 2270",
     mapSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99135.44318312588!2d174.01946843088143!3d-39.061310710411135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d14f9e62364ce0d%3A0x500ef6143a2e9a0!2sNew%20Plymouth%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726213589464!5m2!1sen!2slk",
     qrCodeSrc: "/images/qr-code/New-Plymouth-QR.webp",
-  },
-  {
-    id: 14,
-    name: "Whakatāne Office",
-    address: "233A Harbour Road, Ohope, Whakatāne",
-    email: "whakatane@gdcgroup.co.nz",
-    phone: "+64 7 282 2173",
-    mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8559648277055!2d177.09309557574477!3d-37.98049057193414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6f0856c57880ad%3A0xa1b32c0f07fe7dcd!2s233A%20Harbour%20Road%2C%20%C5%8Chope%203121%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1745906785320!5m2!1sen!2slk",
-    qrCodeSrc: "/images/qr-code/Whakatāne-QR.png",
   },
 ];
 
