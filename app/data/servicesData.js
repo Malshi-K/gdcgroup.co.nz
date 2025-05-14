@@ -113,7 +113,7 @@ const services = {
           "GDC Consultants : New Zealand’s Top Electrical Engineering Specialists",
         description:
           "GDC Consultants are industry leaders in electrical engineering. Our clients know us for providing high-quality designs, innovative electrical engineering solutions, and comprehensive control systems. Our extensive experience in the industrial engineering sector enables us to execute projects with a high level of professionalism, attention to detail, and integrity.",
-        image: "/images/services/2/Electrical Engineering 3.webp",
+        
       },
       {
         id: 2,
@@ -146,7 +146,8 @@ const services = {
         title: "Thinking of starting a new project?",
         description:
           "We are able to manage your project from start to finish – all according to your exact requirements.\nGDC are specialists in planning and design, quality control, contractor management, and government approvals.\nWe are active in a variety of sectors that include housing, infrastructure, commercial, healthcare, education, and corporate.",
-        image: "/images/services/Project & Construction Management.webp",
+        image: "/images/services/1.jpg",
+        photoCredit: "Photo by Tima Miroshnichenko"
       },
       {
         id: 2,
@@ -377,7 +378,7 @@ const services = {
           "GDC Consultants: Road Engineering & Design Services for Modern Infrastructure",
         description:
           "For our communities to progress and thrive economically, they must have the latest and most effective transportation infrastructure possible. Our industry-leading road engineering and design consultancy services provide a variety of transportation infrastructure solutions, from major highways, roads, and bridges to works on local transport networks. \nWe are constantly helping our country grow by connecting its people, services, and goods.We operate across several different infrastructure markets as both an employer and a design contractor. Our clients include government and local authorities, contractors, and private developers.",
-        image: "/images/services/11/Roading 3.webp",
+        image: "/images/projects/content (23).webp",
       },
       {
         id: 2,
@@ -496,7 +497,7 @@ const services = {
           "Expert Structural Engineering for Safe and Cost-Effective Designs",
         description:
           "Having an expert structural team like ours onboard is crucial for the success of any multi-discipline engineering project. We cater to a wide range of industrial designs for small and large construction projects. We offer our services to owners and operators in both conventional and emerging industries. \nWe believe that design and construction should go hand-in-hand! This means that our structural engineering designs are always based not just on the applicable codes and standards, but also the latest and best design principles and ideas – making them both functional and aesthetic spaces. \nGDC’s structural engineering designs are created with a focus on safety, ease of installation, and constructability. We are experienced in designing optimal-modularized building systems, which lower costs, enhance safety, and help to limit field-work. \nWe are consistently ranked amongst the top consulting engineering companies in New Zealand – so you can be sure that we will provide cost-effective designs every time.",
-        image: "/images/services/12/Structural Engineering 2.webp",
+        image: "/images/projects/commercial/1.webp",
       },
       {
         id: 2,

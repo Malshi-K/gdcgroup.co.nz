@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { FaMinus, FaRegCircle } from "react-icons/fa"; // Importing icons from react-icons
+import { FaMinus, FaRegCircle } from "react-icons/fa";
 
 const ServiceSections = ({ sections }) => {
   // State to keep track of the selected section, initialized conditionally
@@ -42,11 +42,11 @@ const ServiceSections = ({ sections }) => {
               key={section.id}
               className={`cursor-pointer p-2 text-sm lg:text-md rounded-md flex items-center text-customBlue transition-all duration-300 ${
                 activeSection === section.id ? "font-semibold" : ""
-              } hover:text-customYellow hover:scale-105`} // Hover animation
+              } hover:text-customYellow hover:scale-105`}
               onClick={() => handleSectionClick(section.id)}
             >
-              <FaMinus className="mr-2 text-customBlue" /> {/* Icon added */}
-              {section.title}
+              <FaMinus className="mr-2 text-customBlue" />
+              {section.title || "Untitled Section"}
             </li>
           ))}
         </ul>
@@ -56,34 +56,47 @@ const ServiceSections = ({ sections }) => {
       <div className="lg:w-3/4 relative bg-white overflow-hidden mt-6 lg:mt-0">
         {activeContent && (
           <div className="flex flex-col items-center">
-            {/* Image as background cover */}
-            <div className="relative w-full h-48 sm:h-64 lg:h-96 mb-6">
-              <Image
-                src={activeContent.image}
-                alt={activeContent.title}
-                layout="fill"
-                objectFit="contain"
-                className="object-contain"
-              />
-            </div>
+            {/* Image container with relative positioning */}
+            {activeContent.image && (
+              <div className="relative w-full h-48 sm:h-64 lg:h-96 mb-6">
+                {/* Image component */}
+                <div className="relative w-full h-full">
+                  <Image
+                    src={activeContent.image}
+                    alt={activeContent.title || "Section image"}
+                    layout="fill"
+                    objectFit="contain"
+                    className="object-contain"
+                  />
+                  
+                  {/* Photo credit - positioned inside the image at the bottom */}
+                  {activeContent.photoCredit && (
+                    <div className="absolute bottom-4 right-4 bg-gray-800 text-white px-2 py-1 text-xs">
+                      {activeContent.photoCredit}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
 
             {/* Content Row */}
             <div className="w-full px-4 lg:px-6 flex flex-col">
               <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-customBlue text-center">
-                {activeContent.title}
+                {activeContent.title || "Untitled Section"}
               </h3>
-              <p className="text-gray-700 mb-4 text-justify">
-                {activeContent.description}
-              </p>
-              {activeContent.points && (
+              {activeContent.description && (
+                <p className="text-gray-700 mb-4 text-justify">
+                  {activeContent.description}
+                </p>
+              )}
+              {activeContent.points && activeContent.points.length > 0 && (
                 <ul className="mb-4">
                   {activeContent.points.map((point, idx) => (
                     <li
                       key={idx}
                       className="text-gray-700 mb-2 flex items-start"
                     >
-                      <FaRegCircle className="text-gray-600 mr-2 mt-1" />{" "}
-                      {/* Custom Icon */}
+                      <FaRegCircle className="text-gray-600 mr-2 mt-1" />
                       {point}
                     </li>
                   ))}
