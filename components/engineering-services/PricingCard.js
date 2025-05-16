@@ -134,9 +134,9 @@ const PricingCard = () => {
           </h2>
           <p className="text-gray-900 text-sm sm:text-base mb-3 max-w-xl mx-auto">
             Our team of structural, geotechnical, and seismic engineering
-            experts is ready to help with your project. Whether you're building
+            experts is ready to help with your project. Whether you&apos;re building
             a new structure or needing assessment of an existing one, we deliver
-            practical and compliant solutions tailored to New Zealand's unique
+            practical and compliant solutions tailored to New Zealand&apos;s unique
             conditions.
           </p>
         </div>
