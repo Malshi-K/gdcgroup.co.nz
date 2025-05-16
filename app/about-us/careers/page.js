@@ -44,7 +44,13 @@ export const generateMetadata = async () => {
 const Careers = () => {
   return (
     <>
-      <Suspense fallback={<div className="text-center py-10">Loading job opportunities...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center min-h-[50vh]">
+            Loading service details...
+          </div>
+        }
+      >
         <JoinOurTeam />
         <CareerFormEmbed />
       </Suspense>
