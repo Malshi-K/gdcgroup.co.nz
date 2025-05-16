@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const ProjectHeader = () => {
+const JoinOurTeam = () => {
   // State to control animation
   const [isVisible, setIsVisible] = useState(false);
   
@@ -88,4 +88,4 @@ const ProjectHeader = () => {
   );
 };
 
-export default ProjectHeader;
+export default JoinOurTeam;

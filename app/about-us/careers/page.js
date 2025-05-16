@@ -1,5 +1,5 @@
 // pages/about-us/who-we-are.js
-import React from "react";
+import React, { Suspense } from "react";
 import "@/app/globals.css";
 import JoinOurTeam from "@/components/about/JoinOurTeam";
 import CareerFormEmbed from "@/components/about/CareerFormEmbed";
@@ -44,9 +44,10 @@ export const generateMetadata = async () => {
 const Careers = () => {
   return (
     <>
-      <JoinOurTeam />
-      {/* <JobList /> */}
-      <CareerFormEmbed />
+      <Suspense fallback={<div className="text-center py-10">Loading job opportunities...</div>}>
+        <JoinOurTeam />
+        <CareerFormEmbed />
+      </Suspense>
     </>
   );
 };
