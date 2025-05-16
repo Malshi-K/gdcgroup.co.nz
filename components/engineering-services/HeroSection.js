@@ -1,4 +1,3 @@
-// HeroSection.jsx
 "use client";
 
 import { useEffect, useState, useRef } from "react";
@@ -13,11 +12,11 @@ const HeroSection = ({ RightSideComponent }) => {
     isDesktop: false,
   });
 
-  // Content for the banner
+  // Content for the banner - without the pipe symbol
   const content = [
-    { highlighted: "Structural |" },
-    { highlighted: "Geotechnical |" },
-    { highlighted: "Seismic Experts |" },
+    { highlighted: "Seismic Experts" },
+    { highlighted: "Structural" }, 
+    { highlighted: "Geotechnical" },
   ];
 
   const marqueeContainerRef = useRef(null);
@@ -50,7 +49,7 @@ const HeroSection = ({ RightSideComponent }) => {
       const containerRect = marqueeContainerRef.current.getBoundingClientRect();
       const containerCenter = containerRect.left + containerRect.width / 2;
 
-      const words = document.querySelectorAll(".scroll-word");
+      const words = document.querySelectorAll(".scroll-word-container");
       let closestWord = null;
       let closestDistance = Infinity;
 
@@ -120,12 +119,13 @@ const HeroSection = ({ RightSideComponent }) => {
           border-radius: 9999px;
           overflow: hidden;
           width: 100%;
-          max-width: 700px; /* Decreased from 900px */
+          max-width: 680px;
           margin: 0 auto;
           z-index: 1;
           display: flex;
           align-items: center;
-          justify-content: center;
+          padding: 0;
+          height: auto;
         }
 
         .scroll-content {
@@ -133,48 +133,87 @@ const HeroSection = ({ RightSideComponent }) => {
           white-space: nowrap;
           animation: scrollWords 40s linear infinite;
           align-items: center;
+          padding-left: 16px; /* Add padding to ensure first word is fully visible */
+        }
+
+        .scroll-word-container {
+          display: inline-flex;
+          align-items: center;
+          white-space: nowrap;
+          overflow: visible;
         }
 
         .scroll-word {
           color: #333333;
           font-weight: bold;
-          padding: 0 20px; /* Decreased padding */
           display: inline-flex;
           align-items: center;
           justify-content: center;
           line-height: 1;
+          white-space: nowrap;
+          overflow: visible;
+        }
+        
+        /* Style for the separator */
+        .word-separator {
+          color: inherit;
+          display: inline-block;
+          margin: 0 12px; /* Consistent spacing */
+          font-weight: bold;
         }
 
         /* Custom responsive font size with better vertical alignment */
         @media (max-width: 640px) {
+          .scroll-word-container {
+            height: 42px;
+          }
           .scroll-word {
-            font-size: 1.75rem; /* Decreased from 2.25rem */
-            height: 50px; /* Decreased from 65px */
-            padding: 0 12px; /* Decreased from 15px */
+            font-size: 1.75rem;
           }
           .scroll-container {
             max-width: 100%;
-            border-radius: 25px; /* Decreased from 30px */
+            border-radius: 21px;
+          }
+          .scroll-content {
+            padding-left: 10px; /* Smaller padding on mobile */
+          }
+          .word-separator {
+            margin: 0 8px; /* Smaller spacing on mobile */
           }
         }
 
         @media (min-width: 641px) and (max-width: 1023px) {
+          .scroll-word-container {
+            height: 56px;
+          }
           .scroll-word {
-            font-size: 2.5rem; /* Decreased from 3.25rem */
-            height: 70px; /* Decreased from 90px */
-            padding: 0 16px; /* Decreased from 20px */
+            font-size: 2.5rem;
           }
           .scroll-container {
-            max-width: 90%; /* Decreased from 95% */
+            max-width: 90%;
+            border-radius: 28px;
+          }
+          .scroll-content {
+            padding-left: 12px; /* Medium padding on tablet */
+          }
+          .word-separator {
+            margin: 0 10px; /* Medium spacing on tablet */
           }
         }
 
         @media (min-width: 1024px) {
+          .scroll-word-container {
+            height: 64px;
+          }
           .scroll-word {
-            font-size: 3rem; /* Decreased from 4rem */
-            height: 80px; /* Decreased from 100px */
-            padding: 8px 20px; /* Decreased from 10px 24px */
+            font-size: 3rem;
             color: #ffb500;
+          }
+          .scroll-container {
+            border-radius: 32px;
+          }
+          .scroll-content {
+            padding-left: 16px; /* Larger padding on desktop */
           }
         }
 
@@ -190,8 +229,8 @@ const HeroSection = ({ RightSideComponent }) => {
 
         .circular-text-container {
           position: absolute;
-          width: 100px; /* Decreased from 120px */
-          height: 100px; /* Decreased from 120px */
+          width: 100px;
+          height: 100px;
           z-index: 20;
         }
 
@@ -207,8 +246,8 @@ const HeroSection = ({ RightSideComponent }) => {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 60px; /* Decreased from 70px */
-          height: 60px; /* Decreased from 70px */
+          width: 60px;
+          height: 60px;
           background-color: #044e80;
           border-radius: 50%;
           display: flex;
@@ -216,7 +255,7 @@ const HeroSection = ({ RightSideComponent }) => {
           justify-content: center;
           transition: transform 0.3s ease;
           z-index: 2;
-          padding: 8px; /* Decreased from 10px */
+          padding: 8px;
         }
 
         .circular-button:hover {
@@ -226,27 +265,27 @@ const HeroSection = ({ RightSideComponent }) => {
         /* Add responsive styles for the circular button */
         @media (max-width: 640px) {
           .circular-text-container {
-            width: 80px; /* Decreased from 100px */
-            height: 80px; /* Decreased from 100px */
+            width: 80px;
+            height: 80px;
             top: 0 !important;
             right: 0 !important;
           }
 
           .circular-button {
-            width: 50px; /* Decreased from 60px */
-            height: 50px; /* Decreased from 60px */
+            width: 50px;
+            height: 50px;
           }
         }
 
         @media (max-width: 480px) {
           .circular-text-container {
-            width: 70px; /* Decreased from 90px */
-            height: 70px; /* Decreased from 90px */
+            width: 70px;
+            height: 70px;
           }
 
           .circular-button {
-            width: 40px; /* Decreased from 50px */
-            height: 40px; /* Decreased from 50px */
+            width: 40px;
+            height: 40px;
           }
         }
       `}</style>
@@ -278,21 +317,22 @@ const HeroSection = ({ RightSideComponent }) => {
                 <br />
                 <span>Stronger Future for Aotearoa</span>
 
-                {/* Single yellow container with scrolling words */}
-                <div className="my-3">
+                {/* Improved scrolling banner */}
+                <div className="my-2">
                   <div
                     className="scroll-container mx-auto md:ml-0"
                     ref={marqueeContainerRef}
                   >
                     <div className="scroll-content">
                       {scrollWords.map((item, index) => (
-                        <span
-                          key={index}
-                          className="scroll-word"
+                        <div 
+                          key={index} 
+                          className="scroll-word-container"
                           data-index={index % content.length}
                         >
-                          {item.highlighted}
-                        </span>
+                          <span className="scroll-word">{item.highlighted}</span>
+                          <span className="word-separator">|</span>
+                        </div>
                       ))}
                     </div>
                   </div>
