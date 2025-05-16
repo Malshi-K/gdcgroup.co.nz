@@ -6,8 +6,16 @@ import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTracking from "@/components/GoogleTracking";
 import { initializeEssentialCookies, updateAllConsentStates } from '@/utils/cookieUtils';
 import CookieConsent from "@/components/cookie/CookieConsent";
+import "@/app/globals.css";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  // Get the current pathname
+  const pathname = usePathname();
+  
+  // Check if we're on the engineering-services page
+  const isEngineeringServicesPage = pathname === "/engineering-services";
+
   useEffect(() => {
     const trackingScriptId = "hs-tracking-code";
     if (!document.getElementById(trackingScriptId)) {
@@ -56,7 +64,7 @@ export default function RootLayout({ children }) {
         <GoogleTracking />
       </head>
       <body className="font-sans">
-        <Header />
+        {!isEngineeringServicesPage && <Header />}
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
