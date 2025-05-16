@@ -14,6 +14,7 @@ import {
   WatersUniqueContent,
 } from "@/components/services/UniqueContent";
 import { notFound } from 'next/navigation';
+import { Suspense } from "react";
 
 // Generate static params for all services
 export async function generateStaticParams() {
@@ -83,16 +84,18 @@ export default async function Page(props) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
       </div>
 
-      <ServiceDescription
-        title={serviceData.title}
-        description={serviceData.description}
-      />
+      <Suspense fallback={<div className="flex justify-center items-center min-h-[50vh]">Loading service details...</div>}>
+        <ServiceDescription
+          title={serviceData.title}
+          description={serviceData.description}
+        />
 
-      <ServiceSections sections={serviceData.sections} />
+        <ServiceSections sections={serviceData.sections} />
 
-      {UniqueContentComponent && <UniqueContentComponent />}
+        {UniqueContentComponent && <UniqueContentComponent />}
 
-      <GetInTouch />
+        <GetInTouch />
+      </Suspense>
     </main>
   );
 }

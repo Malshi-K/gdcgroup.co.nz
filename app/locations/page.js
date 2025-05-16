@@ -1,5 +1,6 @@
 // app/locations/page.js
 import MapSection from "@/components/locations/MapSection";
+import { Suspense } from "react";
 
 // Add metadata for SEO
 export const metadata = {
@@ -28,6 +29,8 @@ export const metadata = {
 
 export default function LocationsPage() {
   return (
-    <MapSection />
+    <Suspense fallback={<div className="flex justify-center items-center min-h-[50vh]">Loading locations...</div>}>
+      <MapSection />
+    </Suspense>
   );
 }
