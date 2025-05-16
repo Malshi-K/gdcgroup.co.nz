@@ -8,6 +8,7 @@ import { initializeEssentialCookies, updateAllConsentStates } from '@/utils/cook
 import CookieConsent from "@/components/cookie/CookieConsent";
 import "@/app/globals.css";
 import { usePathname } from "next/navigation";
+import ClarityScript from "@/components/ClarityScript";
 
 export default function RootLayout({ children }) {
   // Get the current pathname
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <ScrollToTop />
         <CookieConsent />
+        <ClarityScript />
       </body>
     </html>
   );
