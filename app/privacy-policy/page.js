@@ -1,18 +1,28 @@
 import PrivacyPolicy from "@/components/cookie/PrivacyPolicy";
+import { Suspense } from "react";
 
 // pages/privacy-policy.js
 export default function PrivacyPolicyPage() {
   return (
-    <PrivacyPolicy />
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center min-h-[50vh]">
+          Loading service details...
+        </div>
+      }
+    >
+      <PrivacyPolicy />
+    </Suspense>
   );
 }
 
 export const metadata = {
   title: "GDC Group | Privacy Policy",
-  description: "Learn about GDC Group's privacy practices, how we collect, use and protect your personal information, and your rights regarding your data.",
+  description:
+    "Learn about GDC Group's privacy practices, how we collect, use and protect your personal information, and your rights regarding your data.",
   keywords:
     "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
-  
+
   robots: {
     index: true,
     follow: true,
