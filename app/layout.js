@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <ScrollToTop />
         <CookieConsent />
-        <ClarityScript />
+        {/* <ClarityScript /> */}
       </body>
     </html>
   );
