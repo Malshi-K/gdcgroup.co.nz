@@ -54,7 +54,7 @@ export const teamMembers = [
   {
     image: "/images/team/Kasia-Irvine.webp",
     name: "Kasia Irvine",
-    position: "Office Manager (Thames & Whitianga)",
+    position: "Group Manager - Administration (Thames & Whitianga)",
     qualifications: "",
   },
   {
