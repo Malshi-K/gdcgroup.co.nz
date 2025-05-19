@@ -40,9 +40,6 @@ export const generateMetadata = async () => {
       },
     },
     viewport: 'width=device-width, initial-scale=1',
-    verification: {
-      google: 'your-google-verification-code', // Replace with your actual Google verification code
-    },
     alternates: {
       canonical: 'https://gdcgroup.co.nz',
     },
