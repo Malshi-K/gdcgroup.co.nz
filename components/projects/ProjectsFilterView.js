@@ -646,7 +646,7 @@ const ProjectsFilterView = () => {
                 <div className="mb-4 flex items-center">
                   <div>
                     <p className="text-md font-medium text-customBlue">
-                      2025 New Zealand Commercial Project Awards
+                      Gold Award at the Master Builders commercial project award 2025
                     </p>
                     <a
                       href="https://www.commercialprojectawards.co.nz/CPA/Entries and Results/2025_Entries/Health/CPA/Results/Entries_2025/Health.aspx?hkey=67b987f8-f081-4728-9ef5-60be40c5c7df"
