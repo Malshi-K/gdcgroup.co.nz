@@ -284,6 +284,17 @@ const ProjectsFilterView = () => {
     });
   };
 
+  // Check if project is the award-winning Waiora Building project
+  const isAwardWinningProject = (title) => {
+    return title.includes("Waiora Building");
+  };
+
+  // Add custom CSS to fix badge cropping issue
+  useEffect(() => {
+    // This effect intentionally left empty - we're now using relative/absolute positioning
+    // directly on the elements instead of injected CSS
+  }, []);
+
   // Calculate remaining projects count
   const remainingProjects =
     groupedProjects.length - currentPage * PROJECTS_PER_PAGE;
@@ -292,6 +303,54 @@ const ProjectsFilterView = () => {
   useEffect(() => {
     filterProjects("All Projects");
   }, [filterProjects]);
+
+  useEffect(() => {
+    // Add custom CSS to handle the badge positioning globally
+    const style = document.createElement("style");
+    style.innerHTML = `
+    /* Common styles for all badge containers */
+    .badge-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 50;
+      overflow: visible !important;
+      transform: translate(25%, -25%);
+      pointer-events: auto;
+    }
+    
+    /* Ensure badge images are never constrained */
+    .badge-container img {
+      max-width: none !important;
+      border-radius: 0 !important;
+    }
+    
+    /* Ensure card and image containers allow overflow */
+    .project-card {
+      overflow: visible !important;
+    }
+    
+    .project-image-container {
+      position: relative;
+      overflow: visible !important;
+    }
+    
+    /* Fix modal badge positioning */
+    .modal-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 50;
+      overflow: visible !important;
+      transform: translate(25%, -25%);
+    }
+  `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8">
@@ -361,7 +420,7 @@ const ProjectsFilterView = () => {
                 <div
                   id={`project-${index}`}
                   key={`project-${index}`}
-                  className={`bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer ${
+                  className={`bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer project-card ${
                     index >= (currentPage - 1) * PROJECTS_PER_PAGE
                       ? "animate-fadeIn"
                       : ""
@@ -370,7 +429,8 @@ const ProjectsFilterView = () => {
                 >
                   {/* Only show image div if project has an image */}
                   {project.mainImage && (
-                    <div className="relative h-64 group">
+                    <div className="relative h-64 project-image-container">
+                      {/* Main project image */}
                       <Image
                         src={project.mainImage}
                         alt={project.title}
@@ -380,9 +440,23 @@ const ProjectsFilterView = () => {
                         priority={index < 4}
                         className="object-cover w-full h-full"
                       />
+
+                      {/* Award badge overlaid on the image */}
+                      {isAwardWinningProject(project.title) && (
+                        <div className="badge-container">
+                          <Image
+                            src="/images/awards/NZCPA QMs 2025_Gold.png"
+                            alt="Gold Award 2025"
+                            width={90}
+                            height={90}
+                            priority
+                          />
+                        </div>
+                      )}
+
                       {/* Image count badge - only show if there are multiple images */}
                       {project.relatedImages.length > 1 && (
-                        <div className="absolute top-2 right-2 bg-customBlue text-white rounded-full p-2 text-xs font-bold flex items-center">
+                        <div className="absolute top-2 left-2 bg-customBlue text-white rounded-full p-2 text-xs font-bold flex items-center">
                           <svg
                             className="w-4 h-4 mr-1"
                             fill="none"
@@ -538,7 +612,7 @@ const ProjectsFilterView = () => {
         >
           <div
             ref={modalRef}
-            className="bg-white rounded-lg max-w-5xl w-full mx-4 max-h-[90vh] overflow-y-auto hide-scrollbar"
+            className="bg-white rounded-lg max-w-5xl w-full mx-4 max-h-[90vh] overflow-y-auto hide-scrollbar relative"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6">
@@ -566,6 +640,25 @@ const ProjectsFilterView = () => {
                   </svg>
                 </button>
               </div>
+
+              {/* Add award information text section back to the modal */}
+              {isAwardWinningProject(selectedProject.title) && (
+                <div className="mb-4 flex items-center">
+                  <div>
+                    <p className="text-md font-medium text-customBlue">
+                      2025 New Zealand Commercial Project Awards
+                    </p>
+                    <a
+                      href="https://www.commercialprojectawards.co.nz/CPA/Entries and Results/2025_Entries/Health/CPA/Results/Entries_2025/Health.aspx?hkey=67b987f8-f081-4728-9ef5-60be40c5c7df"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-md text-customYellow hover:underline"
+                    >
+                      View award details
+                    </a>
+                  </div>
+                </div>
+              )}
 
               {selectedProject.jobDescription && (
                 <p className="text-gray-600 mb-4">
@@ -630,6 +723,21 @@ const ProjectsFilterView = () => {
                           sizes="(max-width: 768px) 100vw, 50vw"
                           className="object-cover rounded-lg"
                         />
+
+                        {/* Add badge to first image in modal */}
+                        {index === 0 &&
+                          isAwardWinningProject(selectedProject.title) && (
+                            <div className="absolute top-[-20px] right-[-20px] z-50 w-24 h-24 overflow-visible">
+                              <Image
+                                src="/images/awards/NZCPA QMs 2025_Gold.png"
+                                alt="Gold Award 2025"
+                                width={96}
+                                height={96}
+                                className="object-contain"
+                                priority
+                              />
+                            </div>
+                          )}
 
                         {/* Show Google Street View attribution in modal images too */}
                         {selectedProject.googleStreetView && (

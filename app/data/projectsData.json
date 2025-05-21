@@ -3,6 +3,12 @@
     "category": "Structural",
     "projects": [
       {
+        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
+        "image": "/images/projects/9.webp",
+        "description": "",
+        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
+      },
+      {
         "title": "Kāinga Ora – Homes and Communities, Hawke’s Bay & Gisborne",
         "image": "/images/projects/common/Kāinga Ora.png",
         "description": "",
@@ -97,13 +103,7 @@
         "description": "",
         "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
         "isFrontPage": true
-      },
-      {
-        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
-        "image": "/images/projects/9.webp",
-        "description": "",
-        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
-      },
+      },      
       {
         "title": "Raglan Arts Centre, Waikato",
         "image": "/images/projects/council/Raglan Arts Centre, Waikato.png",
@@ -1893,6 +1893,12 @@
     "category": "Medical",
     "projects": [
       {
+        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
+        "image": "/images/projects/9.webp",
+        "description": "",
+        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
+      },
+      {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/4.webp",
         "description": "",
@@ -1938,13 +1944,7 @@
         "description": "",
         "jobDescription": "GDC completed a Seismic Evaluation Report and Seismic Assessment for this project.",
         "isFrontPage": true
-      },
-      {
-        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
-        "image": "/images/projects/9.webp",
-        "description": "",
-        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
-      },
+      },      
       {
         "title": "Maraenui Medical Centre, Napier, Hawke's Bay",
         "image": "/images/projects/image-51-1.webp",
