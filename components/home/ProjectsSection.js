@@ -11,6 +11,11 @@ const ProjectsSection = () => {
   const [animationTriggered, setAnimationTriggered] = useState(false);
   const [projects, setProjects] = useState([]);
 
+  // Check if project is the award-winning Waikato Hospital project
+  const isAwardWinningProject = (title) => {
+    return title.includes("Waikato Hospital Molecular Biology Laboratory");
+  };
+
   // Find all categories that a project belongs to
   const findProjectCategories = useCallback((projectTitle) => {
     const projectCategories = [];
@@ -69,11 +74,38 @@ const ProjectsSection = () => {
     // Convert map to array
     const allFrontPageProjects = Array.from(frontPageProjectsMap.values());
     
-    // Randomly shuffle the projects
-    const shuffledProjects = shuffleArray(allFrontPageProjects);
+    // Define the specific project that should always be first
+    const priorityProjectTitle = "Waikato Hospital Molecular Biology Laboratory, Hamilton, Waikato";
     
-    // Take only the first 12 projects (or fewer if there aren't 12)
-    const selectedProjects = shuffledProjects.slice(0, PROJECTS_TO_DISPLAY);
+    // Find the priority project
+    const priorityProject = allFrontPageProjects.find(
+      project => project.title === priorityProjectTitle
+    );
+    
+    // Get all other projects (excluding the priority one)
+    const otherProjects = allFrontPageProjects.filter(
+      project => project.title !== priorityProjectTitle
+    );
+    
+    // Randomly shuffle the other projects
+    const shuffledOtherProjects = shuffleArray(otherProjects);
+    
+    // Create the final array with priority project first
+    let selectedProjects = [];
+    
+    if (priorityProject) {
+      // Add priority project as first item
+      selectedProjects.push(priorityProject);
+      
+      // Add up to 11 more projects from the shuffled list
+      const remainingSlots = PROJECTS_TO_DISPLAY - 1;
+      selectedProjects = selectedProjects.concat(
+        shuffledOtherProjects.slice(0, remainingSlots)
+      );
+    } else {
+      // If priority project is not found, fall back to original behavior
+      selectedProjects = shuffleArray(allFrontPageProjects).slice(0, PROJECTS_TO_DISPLAY);
+    }
     
     setProjects(selectedProjects);
   }, [findProjectCategories]);
@@ -96,6 +128,44 @@ const ProjectsSection = () => {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, [animationTriggered]);
+
+  // Add CSS for badge positioning
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.innerHTML = `
+      /* Badge container styles for ProjectsSection */
+      .portfolio-badge-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 50;
+        overflow: visible !important;
+        transform: translate(25%, -25%);
+        pointer-events: auto;
+      }
+      
+      /* Ensure badge images are never constrained */
+      .portfolio-badge-container img {
+        max-width: none !important;
+        border-radius: 0 !important;
+      }
+      
+      /* Ensure card and image containers allow overflow */
+      .portfolio-project-card {
+        overflow: visible !important;
+      }
+      
+      .portfolio-image-container {
+        position: relative;
+        overflow: visible !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   return (
     <section ref={sectionRef} className="py-16 bg-[#F3F5F6] overflow-hidden">
@@ -128,7 +198,7 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div
             key={`${project.title}-${index}`}
-            className={`relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-opacity duration-500 ease-in-out hover:shadow-lg ${
+            className={`relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-opacity duration-500 ease-in-out hover:shadow-lg portfolio-project-card ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
             style={{
@@ -138,7 +208,7 @@ const ProjectsSection = () => {
             }}
           >
             {/* Image container with fixed aspect ratio */}
-            <div className="relative w-full pb-[56.25%]">
+            <div className="relative w-full pb-[56.25%] portfolio-image-container">
               {/* 16:9 aspect ratio */}
               <Image
                 src={project.image}
@@ -160,6 +230,19 @@ const ProjectsSection = () => {
                   objectPosition: "center",
                 }}
               />
+
+              {/* Award badge overlaid on the image - only for Waikato Hospital project */}
+              {isAwardWinningProject(project.title) && (
+                <div className="portfolio-badge-container">
+                  <Image
+                    src="/images/awards/NZCPA QMs 2025_Gold.png"
+                    alt="Gold Award 2025"
+                    width={90}
+                    height={90}
+                    priority
+                  />
+                </div>
+              )}
             </div>
 
             {/* Project info container */}

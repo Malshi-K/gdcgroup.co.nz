@@ -3,10 +3,11 @@
     "category": "Structural",
     "projects": [
       {
-        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
+        "title": "Waikato Hospital Molecular Biology Laboratory, Hamilton, Waikato",
         "image": "/images/projects/9.webp",
         "description": "",
-        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
+        "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring.",
+        "isFrontPage": true
       },
       {
         "title": "Kāinga Ora – Homes and Communities, Hawke’s Bay & Gisborne",
@@ -87,22 +88,19 @@
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 2.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 3.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 4.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },      
       {
         "title": "Raglan Arts Centre, Waikato",
@@ -254,8 +252,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "134 Riverlea Road, Hamilton, Waikato",
@@ -307,8 +304,7 @@
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project."
       },
       {
         "title": "Architectural Design Project, Thames, Waikato",
@@ -377,8 +373,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -389,8 +384,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
@@ -420,8 +414,7 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
         "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
@@ -462,14 +455,12 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project."
       },
       {
         "title": "Raglan Arts Centre, Waikato",
@@ -500,15 +491,13 @@
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project."
       },
       {
         "title": "Wharekawa Marae, Kaiaua, Waikato",
         "image": "/images/projects/Cultural/J002375 - Wharekawa Marae, Kaiaua.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project."
       },
       {
         "title": "Waiariki Bay of Plenty Polytechnic, Bay of Plenty",
@@ -549,8 +538,7 @@
         "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (28).png",
         "description": "",
-        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design."
       },
       {
         "title": "Subdivision - Saulbrey Road, Ngāruawāhia, Waikato",
@@ -575,15 +563,13 @@
         "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project."
       },
       {
         "title": "Ray Staiger Commercial Building, Hamilton, Waikato",
         "image": "/images/projects/commercial/5.webp",
         "description": "",
-        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project."
       },
       {
         "title": "Tamahere Hospital and Healing Centre, Waikato",
@@ -649,8 +635,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -661,8 +646,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "Tuakau Dog Pound",
@@ -685,8 +669,7 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
         "title": "Borman Road Child Care Centre, Hamilton, Waikato",
@@ -782,8 +765,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -794,8 +776,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       }
     ]
   },
@@ -836,8 +817,7 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       }
     ]
   },
@@ -854,8 +834,7 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
         "title": "Ohaupo Road Motel, Ohaupo, Waikato",
@@ -884,8 +863,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -896,8 +874,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "Tuakau Dog Pound",
@@ -926,22 +903,19 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       },
       {
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project."
       },
       {
         "title": "Wharekawa Marae, Kaiaua, Waikato",
         "image": "/images/projects/Cultural/J002375 - Wharekawa Marae, Kaiaua.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project."
       },
       {
         "title": "Woodlands School, Ōpōtiki, Bay of Plenty",
@@ -965,15 +939,13 @@
         "title": "Subdivision Baverstock, Hamilton, Waikato",
         "image": "/images/projects/content (24).webp",
         "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, and a 3 Waters Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, and a 3 Waters Assessment for this project."
       },
       {
         "title": "Ray Staiger Commercial Building, Hamilton, Waikato",
         "image": "/images/projects/commercial/5.webp",
         "description": "",
-        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project."
       },
       {
         "title": "Ngāruawāhia Dog Pound, Waikato",
@@ -1050,8 +1022,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -1062,8 +1033,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "Tamahere Hospital and Healing Centre, Waikato",
@@ -1075,8 +1045,7 @@
         "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project."
       }
     ]
   },
@@ -1225,8 +1194,7 @@
         "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project."
       },
       {
         "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
@@ -1239,8 +1207,7 @@
         "title": "Ray Staiger Commercial Building, Hamilton, Waikato",
         "image": "/images/projects/commercial/5.webp",
         "description": "",
-        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project."
       },
       {
         "title": "Multiple Commercial Shops, Morrinsville, Waikato",
@@ -1257,8 +1224,7 @@
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project."
       },
       {
         "title": "Frankton Hotel High Street and Commerce Street, Hamilton, Waikato",
@@ -1275,8 +1241,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       },
       {
         "title": "The Lost Springs, Whitianga, Coromandel, Waikato",
@@ -1287,8 +1252,7 @@
           "*Phase 1 - Walkway Additions, Clamshell SPA pool, and Attached Elevated Deck:* GDC completed Geotechnical CPT testing, Footpath Steel Structure Design, Piles and Footing Design, and Elevated Deck Structural Design. GDC realised the concept Design for the Clam Shell Cover and SPA Pool. GDC completed an Architectural 3D Model, Architectural Drawings and applied for Building Consent. Construction stages are ongoing.",
           "*Phase 3 Pre – Additional Office spaces and Treatment Rooms:* GDC completed Resource Consent application, that included also a Three Waters Assessment Report, an Acoustics Report, a Traffic Report, Soakage Testing and Report. Once RC achieved, GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC has been approved, and Construction stages are ongoing.",
           "*Phase 2 – New Exhibition Centre - Wing Extension* GDC completed Geotechnical CPT testing, Structural Design for all Steel Structure, Wall and Roof Bracing. Phase 2 Proposed Building has been Planned and treated as a Super Structure, including many non-Standard Details & Structural Elements that did need particular attention in Planning and Proposal stage. GDC applied for Building Consent that did include further information: Architectural 3D Model and Emergency Lighting Design Architectural Drawings. BC process is still ongoing."
-        ],
-        "isFrontPage": true
+        ]
       }
     ]
   },
@@ -1322,8 +1286,7 @@
       {
         "title": "150 Dickens Street, Napier, Hawke's Bay",
         "image": "/images/projects/archi/9.webp",
-        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project.",
-        "isFrontPage": true
+        "description": "GDC completed a Detailed Seismic Assessment (DSA) report and Seismic Strengthening Design to achieve 67% NBS. GDC completed a Geotechnical Investigation and Report for the rear extension and delivered an Architectural Design Package for both the fit-out of the existing building and the two-storey extension. GDC completed Structural Design for the new block extension, Seismic Strengthening CAD Drawings, Emergency Lighting Design, and an Electrical Capacity Assessment for this project."
       },
       {
         "title": "Multiple Commercial Shops, Morrinsville, Waikato",
@@ -1408,8 +1371,7 @@
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project."
       },
       {
         "title": "Tapuekura Marae, Rotorua, Bay of Plenty",
@@ -1570,8 +1532,7 @@
         "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/Sir Howard Morrison Centre.png",
         "description": "",
-        "jobDescription": "GDC completed a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening."
       },
       {
         "title": "Star Gallery, Coromandel, Waikato",
@@ -1608,8 +1569,7 @@
         "title": "Cambridge Museum, Cambridge, Waikato",
         "image": "/images/projects/12.webp",
         "description": "",
-        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)"
       },
       {
         "title": "Tuakau Town Hall, Waikato",
@@ -1639,8 +1599,7 @@
         "title": "The Living Maori Village, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/The Living Maori Village.png",
         "description": "",
-        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Geotechnical Investigation and Assessment, an Initial Seismic Assessment (ISA), Structural Design, and a 3 Waters Assessment for this project."
       }
     ]
   },
@@ -1663,22 +1622,19 @@
         "title": "Cambridge Clock Tower, Cambridge, Waikato",
         "image": "/images/projects/11.webp",
         "description": "",
-        "jobDescription": "GDC completed geotechnical investigations and a report, as well as a Detailed Seismic Assessment for this project. Additionally, GDC produced strengthening designs, detailed drawings, and specifications to support building consent and construction.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed geotechnical investigations and a report, as well as a Detailed Seismic Assessment for this project. Additionally, GDC produced strengthening designs, detailed drawings, and specifications to support building consent and construction."
       },
       {
         "title": "Cambridge Museum, Cambridge, Waikato",
         "image": "/images/projects/12.webp",
         "description": "",
-        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)"
       },
       {
         "title": "Rotorua Museum, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (8).webp",
         "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)"
       },
       {
         "title": "Masonic Hotel, Cambridge, Waikato",
@@ -1715,8 +1671,7 @@
         "title": "Te Awamutu Commercial Hotel, Waipa, Waikato",
         "image": "/images/projects/common/Te Awamutu Commercial Hotel, Waipa, Waikato.png",
         "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
       },
       {
         "title": "Tuakau Town Hall, Waikato",
@@ -1746,8 +1701,7 @@
         "title": "Te Awamutu Commercial Hotel, Waipa, Waikato",
         "image": "/images/projects/common/Te Awamutu Commercial Hotel, Waipa, Waikato.png",
         "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project."
       },
       {
         "title": "Fairy Springs Motel, Rotorua, Bay of Plenty",
@@ -1835,8 +1789,7 @@
         "title": "Brightlands Childcare Centre, Hamilton, Waikato",
         "image": "/images/projects/commercial/1.webp",
         "description": "",
-        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Architectural Detailed Drawings and Specifications set, coordinated with project partners, compiled all necessary documentation, and lodged it for building consent. GDC completed a Contamination Report, Preliminary Site Investigation (PS1), Simple Traffic Report, 3 Waters Impact Assessment, 3 Waters and Carpark Design, Structural Design including Foundation Design, a Fire Report, Site Inspection and Construction Monitoring, and a Geotechnical Investigation and Report for this project."
       }
     ]
   },
@@ -1847,8 +1800,7 @@
         "title": "Wharekawa Marae, Kaiaua, Waikato",
         "image": "/images/projects/Cultural/J002375 - Wharekawa Marae, Kaiaua.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), Preliminary Geotechnical Investigation for a new building, Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater, and Structural Design for building consent for this project."
       },
       {
         "title": "Tapuekura Marae, Rotorua, Bay of Plenty",
@@ -1860,8 +1812,7 @@
         "title": "Mokau Kohunui Marae, Piopio, Waikato",
         "image": "/images/projects/Cultural/J002189 - Mokau Kohunui Marae.webp",
         "description": "",
-        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed an Initial Seismic Assessment (ISA), a Detailed Geotechnical Investigation for building consent, Design and Investigation for stormwater and wastewater including a soakage test, and Preliminary Structural Design for this project."
       },
       {
         "title": "Koutu Marae, Rotorua, Bay of Plenty",
@@ -1893,7 +1844,7 @@
     "category": "Medical",
     "projects": [
       {
-        "title": "Waiora Building, Waikato Hospital, Hamilton, Waikato",
+        "title": "Waikato Hospital Molecular Biology Laboratory, Hamilton, Waikato",
         "image": "/images/projects/9.webp",
         "description": "",
         "jobDescription": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring."
@@ -1902,29 +1853,25 @@
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/4.webp",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 2.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 3.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Cambridge Family Health, Cambridge, Waikato",
         "image": "/images/projects/common/Cambridge Family Health 4.png",
         "description": "",
-        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Structural Design of the extension and alterations for this project."
       },
       {
         "title": "Campbell Johnstone Building, Waikato Hospital, Hamilton, Waikato",
@@ -1942,8 +1889,7 @@
         "title": "Menzies Building, Waikato Hospital, Hamilton, Waikato",
         "image": "/images/projects/7.webp",
         "description": "",
-        "jobDescription": "GDC completed a Seismic Evaluation Report and Seismic Assessment for this project.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Seismic Evaluation Report and Seismic Assessment for this project."
       },      
       {
         "title": "Maraenui Medical Centre, Napier, Hawke's Bay",
@@ -2148,8 +2094,7 @@
         "title": "Rotorua Museum, Rotorua, Bay of Plenty",
         "image": "/images/projects/content (8).webp",
         "description": "",
-        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Detailed Seismic Assessment (DSA) for this project. (Heritage early age concrete)"
       },
       {
         "title": "Buckland Road Playground, Tuakau, Waikato",
@@ -2173,8 +2118,7 @@
         "title": "Sir Howard Morrison Centre, Rotorua, Bay of Plenty",
         "image": "/images/projects/common/Sir Howard Morrison Centre.png",
         "description": "",
-        "jobDescription": "GDC completed a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Peer Review for the Seismic Strengthening and Upgrade of the Arts Centre. This included a Structural Peer Review, a Concrete Scanning Report covering 36 different locations, and Concept Seismic Strengthening."
       },
       {
         "title": "Waihi Museum, Waihi, Waikato",
@@ -2186,15 +2130,13 @@
         "title": "Cambridge Clock Tower, Cambridge, Waikato",
         "image": "/images/projects/11.webp",
         "description": "",
-        "jobDescription": "GDC completed geotechnical investigations and a report, as well as a Detailed Seismic Assessment for this project. Additionally, GDC produced strengthening designs, detailed drawings, and specifications to support building consent and construction.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed geotechnical investigations and a report, as well as a Detailed Seismic Assessment for this project. Additionally, GDC produced strengthening designs, detailed drawings, and specifications to support building consent and construction."
       },
       {
         "title": "Cambridge Museum, Cambridge, Waikato",
         "image": "/images/projects/12.webp",
         "description": "",
-        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)",
-        "isFrontPage": true
+        "jobDescription": "GDC completed a Fire Report, a Geotechnical Investigation and Report (including CPT testing), Seismic Strengthening designs to 67% NBS, and As-Built Plans. (Heritage Bricks)"
       },
       {
         "title": "Splash Planet Castle, Hastings, Hawkes Bay",
@@ -2206,8 +2148,7 @@
         "title": "Ngāruawāhia Public Pool, Ngāruawāhia, Waikato",
         "image": "/images/projects/content (28).png",
         "description": "",
-        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design.",
-        "isFrontPage": true
+        "jobDescription": "GDC completed the Concept Design Stage for this project, which included a Site Survey, Geotechnical Investigation, Site Inspection & Assessment Report, Concept Design, and Detailed Design."
       }
     ]
   }

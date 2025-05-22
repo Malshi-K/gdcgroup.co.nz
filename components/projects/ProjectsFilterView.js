@@ -286,7 +286,7 @@ const ProjectsFilterView = () => {
 
   // Check if project is the award-winning Waiora Building project
   const isAwardWinningProject = (title) => {
-    return title.includes("Waiora Building");
+    return title.includes("Waikato Hospital Molecular Biology Laboratory");
   };
 
   // Add custom CSS to fix badge cropping issue
