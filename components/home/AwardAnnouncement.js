@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AwardAnnouncement = ({
   awardTitle,
@@ -24,41 +25,44 @@ const AwardAnnouncement = ({
   }, []);
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-16">
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        {/* Left side - Award image */}
-        <div className="w-full md:w-2/5 flex justify-center">
-          {/* Video with autoplay and loop */}
-          <div className="relative mb-6">
-            <video
-              ref={videoRef}
-              className="w-full rounded-lg"
-              playsInline
-              muted
-              loop
-              autoPlay
-            >
-              <source src={videoSrc} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+    <section className="px-4 sm:px-6 lg:px-0 py-20">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="bg-white">
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Left side - Award image */}
+            <div className="w-full md:w-2/5 flex justify-left">
+              <div className="relative">
+                <Image
+                  src={awardImageSrc}
+                  alt="Award Badge"
+                  width={300}
+                  height={300}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Right side - Content */}
+            <div className="w-full text-center md:text-left">
+              {/* Title */}
+              <Link href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_Entries/Health/CPA/Results/Entries_2025/Health.aspx?hkey=67b987f8-f081-4728-9ef5-60be40c5c7df">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-customBlue mb-4 leading-tight tracking-wide">
+                  {awardTitle} for {projectName}
+                </h1>
+              </Link>
+
+              {/* Divider line */}
+              <div className="border-t border-gray-300 my-6 max-w-md mx-auto md:mx-0"></div>
+
+              {/* Description text */}
+              <p className="text-lg md:text-2xl text-[#727D73] leading-relaxed">
+                {description}
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* Right side - Content */}
-        <div className="w-full md:w-3/5">
-          {/* Title */}
-          <h1 className="text-3xl font-bold text-customBlue mb-4">
-            {awardTitle} for {projectName}
-          </h1>
-
-          {/* Divider line */}
-          <div className="border-t border-gray-300 my-6"></div>
-
-          {/* Description text */}
-          <p className="text-xl text-[#727D73]">{description}</p>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

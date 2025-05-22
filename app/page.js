@@ -5,7 +5,7 @@ import ProjectsSection from "@/components/home/ProjectsSection";
 import BlogSection from "@/components/home/BlogSection";
 import CertificationSection from "@/components/home/CertificationSection";
 import "../app/globals.css";
-// import AwardAnnouncement from "@/components/home/AwardAnnouncement";
+import AwardAnnouncement from "@/components/home/AwardAnnouncement";
 
 // Metadata generation
 export const generateMetadata = async () => {
@@ -84,12 +84,13 @@ export default async function HomePage() {
     <>
       <Hero />
       <CardsSection />
-      {/* <AwardAnnouncement
-        awardTitle="Gold Award Win"
+      <AwardAnnouncement
+        awardTitle="GDC Proudly Annouced - Gold Award Recognition"
         projectName="Waikato Hospital Molecular Biology Laboratory Project"
         description="We're proud to have been part of the project team behind the Waikato Hospital Molecular Biology Laboratory refurbishment, which has been recognised with a Gold Award at the Master Builders NZ Commercial Project Awards 2025."
         videoSrc="/images/awards/Award.mp4"
-      /> */}
+        awardImageSrc="/images/awards/NZCPA QMs 2025_Gold.png"
+      />
       <ServicesSection />
       <ProjectsSection />
       <BlogSection blogs={blogs} error={error} />
