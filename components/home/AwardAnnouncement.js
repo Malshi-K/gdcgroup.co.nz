@@ -30,7 +30,7 @@ const AwardAnnouncement = ({
         <div className="bg-white">
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-6 lg:gap-0">
             {/* Left side - Award image */}
-            <div className="w-full md:w-2/5 flex justify-left">
+            <div className="w-full md:w-2/5 flex justify-center lg:justify-left">
               <div className="relative">
                 <Image
                   src={awardImageSrc}
