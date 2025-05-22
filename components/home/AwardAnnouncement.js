@@ -28,7 +28,7 @@ const AwardAnnouncement = ({
     <section className="px-4 sm:px-6 lg:px-0 py-20">
       <div className="max-w-screen-xl mx-auto">
         <div className="bg-white">
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-6 lg:gap-0">
             {/* Left side - Award image */}
             <div className="w-full md:w-2/5 flex justify-left">
               <div className="relative">

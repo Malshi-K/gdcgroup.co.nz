@@ -85,7 +85,7 @@ export default async function HomePage() {
       <Hero />
       <CardsSection />
       <AwardAnnouncement
-        awardTitle="GDC Proudly Annouced - Gold Award Recognition"
+        awardTitle="GDC Celebrates Gold Award"
         projectName="Waikato Hospital Molecular Biology Laboratory Project"
         description="We're proud to have been part of the project team behind the Waikato Hospital Molecular Biology Laboratory refurbishment, which has been recognised with a Gold Award at the Master Builders NZ Commercial Project Awards 2025."
         videoSrc="/images/awards/Award.mp4"
