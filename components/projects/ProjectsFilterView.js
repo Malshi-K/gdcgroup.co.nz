@@ -289,12 +289,6 @@ const ProjectsFilterView = () => {
     return title.includes("Waikato Hospital Molecular Biology Laboratory");
   };
 
-  // Add custom CSS to fix badge cropping issue
-  useEffect(() => {
-    // This effect intentionally left empty - we're now using relative/absolute positioning
-    // directly on the elements instead of injected CSS
-  }, []);
-
   // Calculate remaining projects count
   const remainingProjects =
     groupedProjects.length - currentPage * PROJECTS_PER_PAGE;
@@ -313,7 +307,7 @@ const ProjectsFilterView = () => {
       position: absolute;
       top: 0;
       right: 0;
-      z-index: 50;
+      z-index: 10; /* Reduced from 50 to stay below header */
       overflow: visible !important;
       transform: translate(25%, -25%);
       pointer-events: auto;
@@ -325,9 +319,11 @@ const ProjectsFilterView = () => {
       border-radius: 0 !important;
     }
     
-    /* Ensure card and image containers allow overflow */
+    /* Ensure card containers have proper z-index context */
     .project-card {
       overflow: visible !important;
+      position: relative;
+      z-index: 1; /* Create stacking context */
     }
     
     .project-image-container {
@@ -340,9 +336,15 @@ const ProjectsFilterView = () => {
       position: absolute;
       top: 0;
       right: 0;
-      z-index: 50;
+      z-index: 50; /* Higher z-index in modal is fine */
       overflow: visible !important;
       transform: translate(25%, -25%);
+    }
+    
+    /* Ensure the main content area has proper stacking context */
+    .projects-content-wrapper {
+      position: relative;
+      z-index: 1;
     }
   `;
     document.head.appendChild(style);
@@ -353,7 +355,7 @@ const ProjectsFilterView = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8">
+    <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8 projects-content-wrapper">
       {/* Left Side - Filter Options */}
       <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:self-start">
         <div className="bg-white rounded-lg shadow-md p-4 mb-6">
