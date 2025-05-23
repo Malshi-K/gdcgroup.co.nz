@@ -649,7 +649,7 @@ const ProjectsFilterView = () => {
                       Gold Award at the Master Builders commercial project award 2025
                     </p>
                     <a
-                      href="https://www.commercialprojectawards.co.nz/CPA/Entries and Results/2025_Entries/Health/CPA/Results/Entries_2025/Health.aspx?hkey=67b987f8-f081-4728-9ef5-60be40c5c7df"
+                      href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_results/Health/CPA/Results/Results_2025/Health.aspx?hkey=3db5dd1c-898e-46bf-9703-1d6b9a3941f9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-md text-customYellow hover:underline"

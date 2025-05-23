@@ -45,7 +45,7 @@ const AwardAnnouncement = ({
             {/* Right side - Content */}
             <div className="w-full text-center md:text-left">
               {/* Title */}
-              <Link href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_Entries/Health/CPA/Results/Entries_2025/Health.aspx?hkey=67b987f8-f081-4728-9ef5-60be40c5c7df">
+              <Link href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_results/Health/CPA/Results/Results_2025/Health.aspx?hkey=3db5dd1c-898e-46bf-9703-1d6b9a3941f9">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-customBlue mb-4 leading-tight tracking-wide">
                   {awardTitle} for {projectName}
                 </h1>
