@@ -4,7 +4,7 @@ import BlogGalleryClient from '@/components/blogs/BlogGalleryClient';
 async function fetchBlogs() {
   try {
     const response = await fetch(
-      'https://api.hubapi.com/cms/v3/blogs/posts', {
+      'https://api.hubapi.com/cms/v3/blogs/posts?state=PUBLISHED', {
       headers: {
         'Authorization': `Bearer ${process.env.HUBSPOT_BLOG_MANAGER_API_KEY}`,
         'Content-Type': 'application/json'
@@ -20,7 +20,11 @@ async function fetchBlogs() {
 
     const data = await response.json();
     // console.log('Fetched blogs:', data); // For debugging
-    return data.results || [];
+    
+    // Additional safety check to ensure we only get published posts
+    const publishedBlogs = (data.results || []).filter(blog => blog.state === 'PUBLISHED');
+    
+    return publishedBlogs;
   } catch (error) {
     console.error("Error fetching blogs:", error);
     return [];
