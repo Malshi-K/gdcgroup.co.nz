@@ -92,8 +92,8 @@ const services = [
     icon: icons.Cog6ToothIcon,
   },
   {
-    title: "Project & Construction Management",
-    slug: "project-management",
+    title: "Construction Management",
+    slug: "construction-management",
     icon: icons.ClipboardDocumentListIcon,
   },
   {
@@ -106,11 +106,11 @@ const services = [
     slug: "infrastructure",
     icon: icons.BriefcaseIcon,
   },
-  {
-    title: "Research & Development",
-    slug: "research-development",
-    icon: icons.AcademicCapIcon,
-  },
+  // {
+  //   title: "Research & Development",
+  //   slug: "research-development",
+  //   icon: icons.AcademicCapIcon,
+  // },
   { title: "Road Transport", slug: "road-transport", icon: icons.TruckIcon },
   {
     title: "Seismic Engineering",
@@ -128,7 +128,7 @@ const services = [
     icon: icons.PresentationChartLineIcon,
   },
   { title: "Surveying", slug: "surveying", icon: icons.MagnifyingGlassIcon },
-  { title: "Training", slug: "training", icon: icons.BookOpenIcon },
+  // { title: "Training", slug: "training", icon: icons.BookOpenIcon },
 ];
 
 const ServicesSection = () => {

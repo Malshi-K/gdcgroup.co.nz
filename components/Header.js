@@ -139,8 +139,8 @@ const Header = () => {
                     label: "Electrical Engineering",
                   },
                   {
-                    href: "/services/project-management",
-                    label: "Project & Construction Management",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/geotechnical-engineering",
@@ -149,11 +149,7 @@ const Header = () => {
                   {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
-                  },
-                  {
-                    href: "/services/research-development",
-                    label: "Research & Development",
-                  },
+                  },                  
                   { href: "/services/road-transport", label: "Road Transport" },
                   {
                     href: "/services/seismic-engineering",
@@ -164,8 +160,7 @@ const Header = () => {
                     label: "Structural Engineering",
                   },
                   { href: "/services/planning", label: "Planning" },
-                  { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/training", label: "Training" },
+                  { href: "/services/surveying", label: "Surveying" },                  
                 ],
               },
               { href: "/portfolio/all-projects", label: "OUR PORTFOLIO" },
@@ -286,8 +281,8 @@ const Header = () => {
                     label: "Electrical Engineering",
                   },
                   {
-                    href: "/services/project-management",
-                    label: "Project & Construction Management",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/geotechnical-engineering",

@@ -133,11 +133,11 @@ const services = {
     uniqueContent: "electricalEngineeringUniqueContent",
   },
 
-  "project-management": {
+  "construction-management": {
     metaTitle: "Top GDC Consultants for Your Civil Construction Needs",
     metaDescription:
       "Elevate your civil construction projects with GDC Consultant. We provide exceptional project management and engineering consultancy services in Wellington, NZ",
-    title: "Project & Construction Management",
+    title: "Construction Management",
     description: "​",
     image: "/images/services/9/Construction Management 1.webp",
     sections: [
