@@ -39,13 +39,6 @@ export const teamMembers = [
       "Bachelor of Arts with Honours - Victoria University of Wellington",
   },
   {
-    image: "/images/team/Vazin-Shareef.webp",
-    name: "Vazin Shareef",
-    position: "Chief Information Officer",
-    qualifications:
-      "Bachelor of Commerce (BCom) - Victoria University of Wellington",
-  },
-  {
     image: "/images/team/John-Kim.webp",
     name: "John Kim",
     position: "Geotechnical Manager",
