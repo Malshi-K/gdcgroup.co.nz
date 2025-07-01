@@ -162,16 +162,22 @@ const ProjectsFilterView = () => {
 
   // Handle filter selections
   const handleCategoryClick = useCallback(
-    (category) => {
-      setSelectedCategory(category);
-      filterProjects(category);
-
-      // Scroll back to top when changing category
-      window.scrollTo(0, 0);
-    },
-    [filterProjects]
-  );
-
+  (category) => {
+    setSelectedCategory(category);
+    filterProjects(category);    
+    
+    // Option 2: Scroll to projects section instead of top
+    setTimeout(() => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+  },
+  [filterProjects]
+);
   // Handle "Show More" button click
   const handleShowMoreClick = useCallback(() => {
     // Increment current page
