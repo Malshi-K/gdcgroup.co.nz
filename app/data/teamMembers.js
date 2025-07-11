@@ -64,10 +64,4 @@ export const teamMembers = [
     qualifications:
       "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
   },
-  {
-    image: "/images/team/Rojesh Koshy.webp",
-    name: "Rojesh Koshy",
-    position: "Civil Engineer",
-    qualifications: "B.Tech Civil Engineering & GDip CM",
-  },
 ];
