@@ -1,0 +1,776 @@
+{
+  "hamilton-head-office": {
+    "id": "hamilton-head-office",
+    "title": "Engineering & Architectural Services in Hamilton, Waikato, New Zealand",
+    "subtitle": "GDC Consultants Hamilton",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "description": "we're your reliable local partner for end-to-end engineering and architectural services throughout Hamilton and the wider Waikato region. Based in Hamilton, Cambridge, and Raglan, our offices are perfectly positioned to support growth and development in one of New Zealand's most dynamic regions.",
+    "introduction": "Our team includes Chartered Professional Engineers, Architectural Designers, Architectural Draftsman, and Landscape Designers, allowing us to deliver fully integrated solutions that address every aspect of your project—from planning and design to compliance and construction.",
+    "locationDescription": "The Waikato landscape includes everything from busy urban centres to rural farmland, lifestyle properties, and emerging subdivisions – all with unique engineering and planning requirements. Our experienced Hamilton engineers specialise in delivering smart, cost-effective, and council-compliant solutions tailored to each project's specific needs and local site conditions.",
+    "serviceArea": "We proudly serve a wide area, including Hamilton City, Rototuna, Cambridge, Te Awamutu, Ngāruawāhia, and Morrinsville. Whether you're planning a residential build, commercial project, industrial site, or infrastructure upgrade, the GDC team in Hamilton, NZ, is here to guide your project from concept to completion – with local knowledge and technical expertise you can trust.",
+    "services": {
+      "title": "Our Services in Hamilton and Waikato",
+      "subtitle": "We offer a full range of engineering and architectural services tailored specifically to the needs of clients across Hamilton and the Waikato region. With a deep understanding of local conditions and council requirements, we're proud to support residential, commercial, and industrial developments in Hamilton, New Zealand.",
+      "serviceList": [
+        {
+          "name": "Geotechnical Engineering",
+          "description": "We provide comprehensive soil investigations, slope stability assessments, liquefaction analysis, and foundation designs that suit the varied terrain across the Waikato. Our Hamilton-based geotechnical engineers understand the complexities of local soil conditions and deliver practical, cost-effective solutions—even for the most challenging sites.",
+          "details": "Our geotechnical services include detailed soil reports, accurate soil sampling, and liquefaction assessments to ensure your project meets engineering standards and council compliance from the ground up. Whether you're developing on urban infill, rural land, or near watercourses, we tailor our approach to provide reliable, site-specific recommendations."
+        },
+        {
+          "name": "Structural Engineering Services",
+          "description": "Our expert structural and seismic engineers in Hamilton design safe, compliant structures for residential, commercial, and industrial buildings, including warehouses and heritage buildings. We also specialise in the design of retaining walls that are both structurally sound and suited to the unique site conditions found across the Waikato region.",
+          "details": "We provide full seismic evaluations, including assessments of existing structures and damage assessment reports following events such as earthquakes or extreme weather. All designs are tailored to meet Waikato's seismic zoning and building standards, ensuring structural integrity and long-term durability, whether it's a multi-storey building, a rural shed, or critical earth-retaining structures."
+        },
+        {
+          "name": "Civil Engineering Solutions",
+          "description": "From stormwater management and drainage systems to driveways, road designs, and traffic assessments, our Hamilton civil engineers deliver comprehensive infrastructure solutions that meet both Hamilton City Council and Waikato District requirements. We design systems that function efficiently in the region's unique climate and soil conditions.",
+          "details": "Our civil engineering services also include:",
+          "features": [
+            "Wastewater system design and septic tank solutions for both urban and rural properties",
+            "Land development/subdivision, including site layout, infrastructure integration, and council approvals",
+            "Expertise in heritage site considerations, ensuring respectful development in historically sensitive areas",
+            "Engineering inspection/damage reports and insurance claim reports for residential and commercial properties",
+            "Independent road safety audits conducted by qualified road safety auditors",
+            "Traffic assessments",
+            "Road design",
+            "Tender evaluations and procurement advice to assist clients with selecting the right contractors and suppliers for their projects"
+          ],
+          "conclusion": "Whether you're planning a new subdivision, upgrading infrastructure, or managing a compliance-related claim, our civil engineering team provides cost-effective, council-compliant, and future-ready solutions throughout Hamilton and the Waikato region."
+        },
+        {
+          "name": "Architectural Design Services",
+          "description": "Our architectural team delivers creative, consent-ready plans that balance form and function. Whether you're building in Hamilton, Cambridge, or Te Awamutu, our architects design homes, commercial spaces, and industrial buildings—including warehouses—that suit the Waikato lifestyle and meet all local compliance requirements.",
+          "details": "We specialise in a wide range of architectural services, including extensions, new builds, Granny flats and interior fitout work, as well as the adaptive reuse and restoration of heritage buildings. From concept to consent, every design is tailored to meet your unique needs while ensuring efficiency, aesthetics, and long-term value.",
+          "additional": "In collaboration with our structural team, we also offer seismic evaluations and provide detailed damage assessment reports for properties requiring compliance upgrades, insurance reporting, or structural rehabilitation."
+        },
+        {
+          "name": "Seismic Assessments & Building Strengthening",
+          "description": "We provide earthquake assessments, including both initial seismic assessments (ISA) and detailed seismic assessments (DSA), as well as comprehensive seismic reports and retrofitting services for older residential (standalone and apartments), commercial, industrial, office, education, community/iwi, and farm buildings common in Hamilton and nearby towns.",
+          "details": "Our team ensures your property meets New Zealand's seismic codes by delivering practical seismic strengthening solutions tailored to the structure's condition, use, and risk profile. Whether you're preparing for future development, meeting insurance requirements, or improving building safety, we offer the expertise to protect your investment."
+        },
+        {
+          "name": "Planning & Resource Consents",
+          "description": "Navigating the resource consent process in the Waikato can be complex – but we make it simple. We prepare planning applications, compile all required documentation, and liaise directly with district and regional councils helping you avoid delays and unnecessary costs.",
+          "details": "Our planning team prepares comprehensive Assessment of Environmental Effects (AEE) reports to support your application, ensuring compliance with local and regional planning requirements. Whether it's for a residential, Granny flats, commercial, or subdivision project, we streamline the process so you can move forward with confidence.",
+          "additional": "Our team also prepares natural hazard assessments covering coastal inundation, stormwater flooding, and other hazards."
+        },
+        {
+          "name": "Surveying Services",
+          "description": "Our surveying team provides accurate topographic / contour surveys, site plans, and boundary surveying across the Waikato, ensuring smooth development from day one."
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "Featured Hamilton Projects",
+      "projects": [
+        {
+          "name": "Waikato DHB – Wairoa Building seismic",
+          "description": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring.",
+          "image": "/images/projects/9.webp",
+          "labels": ["Structural", "Medical"]
+        },
+        {
+          "name": "Ray Staiger Building",
+          "description": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project.",
+          "image": "/images/projects/commercial/5.webp",
+          "labels": ["Structural", "Geotechnical", "Three Waters", "Commercial"]
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Hamilton?",
+      "reasons": [
+        "Deep knowledge of Waikato soil conditions and council processes",
+        "Close working relationships with Hamilton City and Waikato District Councils",
+        "Local team with on-the-ground experience in Hamilton and surrounding areas",
+        "End-to-end service – from concept to consent, we manage the full process",
+        "Proven track record of successful developments in Hamilton, Cambridge, and the wider region"
+      ]
+    },
+    "areasServed": {
+      "title": "Areas We Serve",
+      "subtitle": "Our Hamilton engineering consultants proudly serve clients throughout:",
+      "areas": [
+        "Hamilton City & CBD",
+        "Rototuna & Flagstaff",
+        "Chartwell & Fairfield",
+        "Te Rapa & Pukete",
+        "Cambridge & Leamington",
+        "Raglan and Kawhia",
+        "Te Awamutu & Kihikihi",
+        "Ohaupo",
+        "Ngāruawāhia & Huntly",
+        "Morrinsville & Matamata",
+        "Te Aroha",
+        "Tuakau",
+        "Te Kauwhata",
+        "Pukekohe",
+        "Tokoroa and South Waikato",
+        "Putaruru",
+        "Taupo",
+        "Ngatea, Paeroa, and the Hauraki Plains"
+      ],
+      "conclusion": "And all surrounding Waikato communities"
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions – Engineering & Architectural Services in Hamilton, NZ",
+      "questions": [
+        {
+          "question": "What areas of Hamilton and the Waikato region do you service?",
+          "answer": "Our Hamilton office delivers professional engineering and architectural services across the entire Waikato region, including Hamilton City, Cambridge, Te Awamutu, Ngāruawāhia, Huntly, Morrinsville, and all surrounding towns and rural communities. Wherever you are in Hamilton or Waikato, GDC Consultants is ready to support your project."
+        },
+        {
+          "question": "How familiar are you with Hamilton City Council requirements?",
+          "answer": "Our local team works with Hamilton City Council every day. We have strong relationships with council staff and a deep understanding of the region's planning and compliance requirements. This allows us to guide you efficiently through the resource consent and building consent processes in Hamilton, New Zealand."
+        },
+        {
+          "question": "Do you handle both residential and commercial projects in Hamilton, NZ?",
+          "answer": "Yes, absolutely. We've completed a wide range of residential, commercial, and industrial projects throughout Hamilton and the wider Waikato. From new home builds and renovations to multi-unit housing developments, retail spaces, and warehouse structures – our Hamilton-based engineers and architects are equipped to manage it all."
+        },
+        {
+          "question": "What makes buildings in the Waikato region different?",
+          "answer": "Building in Waikato comes with its own unique challenges – including variable soil types, flood zones, and New Zealand's seismic requirements. Our team's deep local knowledge ensures your project is designed to handle Hamilton's and Waikato's environmental conditions, while fully complying with council and national standards. We create smart, tailored solutions that help you get the most from your site."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    }
+  },
+  "rotorua-office": {
+    "id": "rotorua-office",
+    "title": "Engineering & Architectural Services in Rotorua & Bay of Plenty",
+    "subtitle": "GDC Consultants Rotorua",
+    "locationImage": "/images/locations/rotorua.jpg",
+    "description": "We combine local knowledge with national expertise, offering comprehensive engineering and architectural design services across Rotorua and the Bay of Plenty. Known for its unique building challenges, this region demands specialized solutions—and that's where our team comes in.",
+    "introduction": "From the geothermal soils of Rotorua to the rural landscapes of Reporoa, we bring our deep understanding of the local environment to every project. Our Rotorua-based engineering team is skilled in addressing the specific challenges posed by geothermal zones, such as soil movement, thermal activity, and strict environmental regulations.",
+    "locationDescription": "Whether you're looking to build a new home, start a subdivision, renovate an existing property, or upgrade infrastructure in Rotorua or throughout the Bay of Plenty, we provide tailored, smart, and future-proof solutions. Our team ensures that each project is not only compliant with local regulations but also designed to thrive in the unique conditions of the region.",
+    "serviceArea": "",
+    "services": {
+      "title": "Our Services in Rotorua",
+      "subtitle": "",
+      "serviceList": [
+        {
+          "name": "Geotechnical Engineering",
+          "description": "Specialized thermal ground assessments, soil profiling, and foundation design are essential for projects in Rotorua's geothermal zones and soft soil/ liquifiable areas. Our geotechnical engineers bring years of experience in navigating Rotorua's unique subsurface conditions, ensuring stable and safe foundations for every build."
+        },
+        {
+          "name": "Architectural Design",
+          "description": "From custom homes and renovations to rural buildings and subdivision layouts, our architectural designs align with Rotorua Lakes Council guidelines while embracing the region's beauty. Our Rotorua architects craft designs that combine aesthetic appeal with practical solutions, carefully considering local environmental factors."
+        },
+        {
+          "name": "Structural & Civil Engineering",
+          "description": "We provide comprehensive structural design for both residential and commercial projects, along with stormwater management systems tailored to Rotorua's rainfall patterns. Our civil engineering services cover roading layouts, utility planning, and infrastructure development, all while ensuring your project meets local standards and thrives in the unique Rotorua environment."
+        },
+        {
+          "name": "Seismic Reports & Strengthening",
+          "description": "Our structural assessments and upgrade designs are built to meet New Zealand's seismic building codes, with a focus on Rotorua's geothermal activity. We provide detailed seismic reports and strengthening plans to ensure your building is prepared for any seismic event, taking into account the area's unique geothermal influences."
+        },
+        {
+          "name": "Subdivision/ Land Development",
+          "description": "Whether it's for a rural or urban subdivision, our full-service planning support includes feasibility studies, earthworks design, and infrastructure layouts. We guide you through the complexities of Rotorua's local regulations, maximizing the potential of your development across the Bay of Plenty."
+        },
+        {
+          "name": "Council Consent Support",
+          "description": "Navigating the council consent process is made easy with our expert liaison services. We work closely with Rotorua Lakes Council, Bay of Plenty Regional Council, South Waikato District Council, Tauranga City Council, Whakatane District Council, Opotiki District Council, Kawerau District Council, and Western Bay of Plenty District Council ensuring all permits and approvals are in place from the start, minimizing delays and ensuring compliance."
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "Featured Rotorua Projects",
+      "projects": [
+        {
+          "name": "Fairy Spring road Motel",
+          "description": "The motel is having 3 independent accommodation units 2 storey structure, restaurant, a large entry canopy, swimming pool, is constructed using concrete shear walls on a reinforced concrete foundation beams supported by timber piles and Unispan concrete first floor. GDC has done Structural Design and Geotechnical investigation.",
+          "image": "/images/projects/common/New Hotel Complex - Fairy Springs Road, Rotorua, Bay of Plenty.jpg",
+          "labels": [
+            "Structural",
+            "Geotechnical",
+            "Three Waters",
+            "Accommodation"
+          ]
+        },
+        {
+          "name": "Seismic Strengthening and Retrofit Design for 1148 Pukuatua Street",
+          "description": "This earthquake prone two-story commercial building was strengthened to 80%NBS with the use of reinforced concrete walls and timber strong backs, while this was being done the new walls were used to retrofit the building into a fourteen-unit apartment building."
+        }
+      ]
+    },
+    "specialtyExpertise": {
+      "title": "Rotorua Geothermal Building Expertise",
+      "description": "Building in Rotorua requires specialized knowledge. Our team is equipped to handle the region's unique geothermal challenges, including:",
+      "expertiseAreas": [
+        "Thermal ground assessments to assess heat flow, gas emissions, and ground stability.",
+        "Customized foundation solutions designed for thermally active soils, ensuring stability and mitigating the effects of ground heating.",
+        "Hydrogen sulfide corrosion resistance in structural and building materials.",
+        "Compliance with Rotorua Lakes Council's geothermal activity zones and building regulations.",
+        "Environmental impact assessments for developments near geothermal features."
+      ]
+    },
+    "whyChoose": {
+      "title": "Local Expertise, Nationwide Strength",
+      "reasons": [
+        "Based in Rotorua, our team combines deep regional knowledge with the strength of GDC's nationwide resources",
+        "Profound understanding of the geothermal ground conditions that make Rotorua distinct",
+        "Comprehensive solutions for projects across the region, including lifestyle builds, papakāinga housing, and tourism developments",
+        "Trusted by landowners, developers, and rural contractors throughout the Bay of Plenty and South Waikato",
+        "Innovative, compliant, and sustainable solutions for each project"
+      ]
+    },
+    "areasServed": {
+      "title": "Areas We Serve from Our Rotorua Office",
+      "subtitle": "Our Rotorua engineering and architectural team proudly supports clients throughout:",
+      "areas": [
+        "Rotorua City & CBD",
+        "Ngongotahā & Hamurana",
+        "Mamaku & Rerewhakaaitu",
+        "Reporoa & Broadlands",
+        "Kawerau & Edgecumbe",
+        "Tokoroa & Putaruru",
+        "Taupō & Turangi",
+        "Murupara & Galatea",
+        "Tauranga, Whakatane, Opotiki"
+      ],
+      "conclusion": "And all surrounding Bay of Plenty and South Waikato communities"
+    },
+    "contact": {
+      "title": "Contact Our Rotorua Office",
+      "address": "3H Trout Pool Road, Okere Falls, Rotorua 3074",
+      "mainContact": "Dion Herniman, Regional Manager",
+      "email": "rotorua@gdcgroup.co.nz",
+      "phone": "07 282 2173",
+      "mobile": "022 594 5956",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What makes building in Rotorua different from other regions?",
+          "answer": "Rotorua's geothermal activity presents unique challenges such as ground heating, hydrogen sulfide gas emissions, and soil instability. Our local expertise ensures that your project accounts for these factors with specialized foundation designs and material specifications, providing safe, long-lasting structures."
+        },
+        {
+          "question": "Do you handle resource consents for projects near geothermal features?",
+          "answer": "Yes, we have extensive experience navigating the additional consent requirements for developments near Rotorua's geothermal features. We liaise with Rotorua Lakes Council and Bay of Plenty Regional Council to ensure compliance with all environmental regulations."
+        },
+        {
+          "question": "Can you design for lifestyle blocks in the wider Bay of Plenty region?",
+          "answer": "Absolutely! Our Rotorua office works with lifestyle property owners across the Bay of Plenty, providing everything from land assessments and geotechnical reports to full architectural and engineering design packages."
+        },
+        {
+          "question": "How do you address corrosion issues in Rotorua's sulfuric environment?",
+          "answer": "We specifically select materials and treatments that resist the corrosive effects of hydrogen sulfide in Rotorua's sulfuric environment. These measures extend the lifespan of your building and help reduce long-term maintenance costs."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View Our Bay of Plenty Projects",
+      "team": "Meet Our Rotorua Team"
+    }
+  },
+  "thames-office": {
+    "id": "thames-office",
+    "title": "Engineering & Architectural Services in Thames & Coromandel Peninsula",
+    "subtitle": "GDC Consultants Thames",
+    "locationImage": "/images/locations/thames.jpg",
+    "description": "We specialize in providing expert engineering, architectural, and planning services tailored to the unique needs of the Coromandel Peninsula and Hauraki Plains. Based in the heart of Thames, we offer practical, compliant solutions designed to meet the challenges of the region's coastal environments, rugged terrains, and rural development projects.",
+    "introduction": "Our experienced Thames-based team brings local knowledge and technical expertise to every project, whether you're building a new coastal home in Te Puru, subdividing land in Kopu, upgrading infrastructure in Paeroa, or developing a rural property in the Hauraki Plains.",
+    "locationDescription": "We understand the specific building challenges in the Coromandel and work closely with local councils to ensure smooth project execution and exceptional results.",
+    "serviceArea": "",
+    "services": {
+      "title": "Our Services in Thames",
+      "subtitle": "",
+      "serviceList": [
+        {
+          "name": "Geotech Assessments",
+          "description": "Comprehensive soil reports and slope stability investigations are essential for safe building in the Coromandel Peninsula's varied terrain. Our experienced Thames-based geotechnical engineers provide critical insights for coastal, hillside, and plains development to ensure your project is safe and sustainable.",
+          "features": [
+            "Coastal erosion risk assessments for coastal properties",
+            "Slope/land stability analysis for hillside developments",
+            "Foundation recommendations for challenging Coromandel sites",
+            "Liquefaction potential evaluations for earthquake-prone areas",
+            "Stormwater and groundwater considerations tailored to Thames and Coromandel Peninsula's unique conditions",
+            "Ground bearing checks"
+          ]
+        },
+        {
+          "name": "Architectural Design",
+          "description": "Our Thames architects specialize in custom designs that respond to the Coromandel Peninsula's distinctive environments and lifestyle opportunities. We create practical and attractive architectural solutions to meet the region's diverse building needs.",
+          "features": [
+            "Rural dwellings and farm buildings suited to the Hauraki Plains and Coromandel countryside",
+            "Batch, Granny flats, and holiday home specialists, designed for coastal relaxation",
+            "Subdivision layout optimization to enhance land value and usability",
+            "Renovations and extensions for existing Coromandel Peninsula properties"
+          ]
+        },
+        {
+          "name": "Structural & Civil Engineering",
+          "description": "Our Thames-based structural and civil engineers provide expert design services addressing the region's specific environmental challenges. We create robust solutions for coastal exposure, rural sites, and difficult access areas, ensuring your projects stand the test of time.",
+          "features": [
+            "Coastal-specific structural systems resistant to salt spray and coastal wear",
+            "Retaining wall designs for sloping sites in Coromandel Peninsula and Hauraki Plains",
+            "Bridge and culvert design for rural properties in Thames and Coromandel",
+            "Foundation systems that adapt to varied Coromandel soil conditions",
+            "Rural and coastal driveway solutions for difficult terrains",
+            "Independent road safety audits conducted by qualified road safety auditors",
+            "Traffic assessments",
+            "Road design"
+          ]
+        },
+        {
+          "name": "Seismic & Building Assessments",
+          "description": "Ensure your building meets New Zealand's seismic codes with our comprehensive building assessments. Our specialists provide strengthening solutions for older residential (standalone and apartments), commercial, industrial, office, education, community/iwi, and farm buildings common throughout Thames, Paeroa, and coastal communities, helping you maintain safety and compliance.",
+          "features": [
+            "Detailed Seismic Assessments (DSA) for earthquake preparedness",
+            "Building condition reports for older structures",
+            "Earthquake strengthening design for homes in seismic zones",
+            "Renovation feasibility assessments to determine the best approach",
+            "Building Act compliance reporting to ensure your project is up to code",
+            "Insurance report/damage report"
+          ]
+        },
+        {
+          "name": "Drainage & Infrastructure",
+          "description": "Specialized drainage and infrastructure solutions are essential for managing Coromandel Peninsula's high rainfall and challenging terrain. Our civil engineers deliver practical systems that address the region's specific conditions and council requirements.",
+          "features": [
+            "On-site wastewater system design for rural properties, Granny flats across Thames, Coromandel and Hauraki",
+            "Stormwater management systems tailored to the region's high-rainfall areas",
+            "Rural water supply solutions to meet the needs of remote areas",
+            "Low-impact drainage systems for environmentally sensitive sites",
+            "Infrastructure layouts that align with Thames-Coromandel and Hauraki District Council requirements"
+          ]
+        },
+        {
+          "name": "Planning & Surveying Services",
+          "description": "Our expert planners and surveyors navigate the specific development requirements of the Coromandel Peninsula. Working closely with local councils, we ensure the best outcomes for your development projects.",
+          "features": [
+            "Subdivision/land development and feasibility studies for Coromandel properties",
+            "Boundary surveys and topographical mapping for accurate planning",
+            "Resource consent preparation, application, and management for smooth approvals",
+            "Rural-residential development planning to maximize land use",
+            "Coastal inundation assessments for safe, sustainable building near the coast"
+          ]
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "Featured Thames Projects",
+      "projects": [
+        {
+          "name": "The Lost Springs, Whitianga, Coromandel",
+          "description": "Multi-phase development including Phase 1 - Walkway Additions, Clamshell SPA pool, and Elevated Deck with comprehensive geotechnical testing, structural design, and architectural 3D modeling. Phase 2 - New Exhibition Centre Wing Extension with specialized steel structure design. Phase 3 - Additional Office spaces and Treatment Rooms with full resource consent and building consent applications.",
+          "image": "/images/projects/common/The Lost Springs.jpg",
+          "labels": [
+            "Structural",
+            "Architectural",
+            "Geotechnical",
+            "Planning",
+            "Traffic",
+            "Three Waters",
+            "Commercial"
+          ]
+        },
+        {
+          "name": "541 Pollen Street (conversion to apartments/office)",
+          "description": "GDC prepared the resource consent application and detailed architectural design for the proposed conversion of a commercial and office building into a new mixed-use space composed of apartments, offices, and commercial space. The building has high heritage and symbolic value for the Thames township community and GDC was able to preserve the clock tower and facades while providing new housing options in the area."
+        }
+      ]
+    },
+    "specialtyExpertise": {
+      "title": "Thames & Coromandel Peninsula Building Expertise",
+      "description": "The Coromandel Peninsula presents unique environmental and engineering challenges. We specialise in addressing these regional demands with practical, tailored solutions.",
+      "expertiseAreas": [
+        "Coastal exposure: We use durable, corrosion-resistant materials and construction techniques suited to salty air and strong coastal winds.",
+        "Challenging terrain: From steep hillsides to flat plains, we design site-specific engineering solutions that work with the land—not against it.",
+        "Environmentally sensitive areas: Our team carefully plans developments to protect the natural beauty and ecosystems of the Coromandel.",
+        "Rural infrastructure needs: We design smart, low-impact systems for water, wastewater, and access on rural and lifestyle properties.",
+        "Flood and erosion risks: We assess and mitigate risks with proven strategies, keeping your investment protected and compliant."
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC Consultants in Thames?",
+      "description": "We bring decades of hands-on experience in Thames and across the Coromandel Peninsula, helping clients build smart, safe, and sustainable developments in one of New Zealand's most unique regions.",
+      "reasons": [
+        "Extensive experience in coastal development throughout the Thames-Coromandel region—we understand the challenges of building near the ocean",
+        "Deep knowledge of local topography, zoning, and regulations—our team simplifies complex council processes to keep your project on track",
+        "Experts in flood-prone and erosion-sensitive areas—we deliver safe, compliant design solutions for even the most challenging Coromandel sites",
+        "Strong working relationships with Thames-Coromandel and Hauraki District Councils—we streamline consent and approval processes",
+        "Trusted by lifestyle block owners, farmers, and developers—with a proven record of successful projects across Thames, Hauraki Plains, and the Coromandel Peninsula"
+      ]
+    },
+    "areasServed": {
+      "title": "Coromandel Areas We Serve",
+      "subtitle": "Our Thames engineering and architectural team proudly supports clients throughout:",
+      "areas": [
+        "Thames & Thames Coast",
+        "Coromandel Town & Colville",
+        "Whitianga & Mercury Bay",
+        "Tairua & Pauanui",
+        "Whangamata & Onemana",
+        "Waihi & Waihi Beach",
+        "Kaiawa",
+        "Paeroa & Ngatea",
+        "Te Aroha & Morrinsville",
+        "Hauraki Plains & rural districts",
+        "Kiripahi"
+      ],
+      "conclusion": ""
+    },
+    "contact": {
+      "title": "Contact Our Thames Office",
+      "address": "541 Pollen Street, Thames 3500",
+      "mainContact": "Kasia Irvine, Regional Manager",
+      "email": "thames@gdcgroup.co.nz",
+      "phone": "07 869 0640",
+      "mobile": "022 594 5950",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Coromandel Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What are the key considerations when building on the Coromandel Peninsula?",
+          "answer": "Building in the Coromandel Peninsula means factoring in coastal exposure, flood and erosion risk, variable soil conditions, and environmental protections. Our Thames team provides expert site assessments and custom designs that address these challenges with confidence."
+        },
+        {
+          "question": "Can GDC Consultants help with resource consent for a coastal property?",
+          "answer": "Yes. Our planning team specialises in coastal development regulations from the Thames-Coromandel District Council. We prepare complete resource consent applications that consider hazards, visual impact, and environmental effects."
+        },
+        {
+          "question": "Do you work with lifestyle blocks in the Hauraki Plains?",
+          "answer": "Absolutely. Our Thames office regularly supports lifestyle property owners throughout the Hauraki Plains, from initial land assessments and subdivision plans to full architectural and engineering design services."
+        },
+        {
+          "question": "How do you manage flood risks in low-lying areas?",
+          "answer": "We conduct in-depth flood risk assessments for vulnerable Coromandel Peninsula areas. Our team designs mitigation strategies such as raised floor levels, stormwater management, and site regrading to ensure safe, flood-resilient development."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View Our Coromandel Projects",
+      "team": "Meet Our Thames Team"
+    }
+  },
+  "wellington-office": {
+    "id": "wellington-office",
+    "title": "Engineering & Architectural Services in Wellington",
+    "subtitle": "GDC Consultants Wellington",
+    "locationImage": "/images/locations/wellington.webp",
+    "description": "GDC Consultants Wellington provides practical, locally focused engineering in Wellington, shaped by the capital's complex terrain, coastal climate, and seismic risks. Whether you're building on a steep section in Kelburn, planning a subdivision in Upper Hutt, or strengthening a heritage building in Thorndon — we know the Wellington region and how to architect a solution that works for it.",
+    "introduction": "Our multidisciplinary Wellington-based team includes experienced structural engineers, civil engineers, and geotechnical engineers Wellington, along with architectural designers and planning experts. Every project we undertake is designed to comply fully with the National Building Code, while also addressing the unique environmental, geological, and regulatory challenges of the region.",
+    "localKnowledge": {
+      "title": "Local Knowledge. Wellington Focused.",
+      "description": "We work across the greater Wellington region — including Wellington City, Lower Hutt, Upper Hutt, Porirua, Kāpiti, Masterton, and Wairarapa — delivering tailored solutions that suit the local land, wind, water, and rules. With our in-depth understanding of the National Building Code and local council processes, we help clients move from concept to consent with confidence and clarity.",
+      "philosophy": "GDC Consultants believes engineering is more than technical know-how — it's about delivering practical, thoughtful solutions that truly work for the people and places we call home."
+    },
+    "services": {
+      "title": "What We Offer",
+      "subtitle": "",
+      "serviceList": [
+        {
+          "name": "Geotechnical & Soil Reports",
+          "description": "Wellington's ground conditions are as diverse as its suburbs. From clay slopes in Karori to reclaimed land in Petone, our experienced geotechnical engineers deliver the insights you need to build safely and meet council requirements.",
+          "details": "Each geotechnical report includes thorough risk assessment, backed by probabilistic risk assessment techniques where appropriate, helping identify uncertainties and plan confidently. We also provide clear cost and benefit analysis to support smart, informed decisions at every stage of your project.",
+          "features": [
+            "Site-specific geotechnical reports for Building Consent/ Resource Consent",
+            "Retaining wall and slope stability assessments",
+            "Foundation design for variable and soft soils",
+            "Liquefaction risk assess reports for areas like Kilbirnie and Miramar",
+            "Earthworks and cut-fill planning for steep, challenging sites"
+          ],
+          "conclusion": "We tailor our advice to Wellington's unique terrain—so you can move forward with clarity and confidence."
+        },
+        {
+          "name": "Architectural Design & Drafting",
+          "description": "Our team blends creativity and practicality to deliver thoughtful architectural design solutions that respond to Wellington's unique landscape. Whether it's wind, weather, or steep terrain, we design homes and buildings that work with the environment — not against it.",
+          "details": "Led by experienced modern architects and supported by skilled draftsmen, we produce detailed architects' drawings that not only bring your vision to life but also meet council and Building Consent requirements. We also integrate elements of interior architecture to ensure your spaces are both functional and beautifully considered from the inside out.",
+          "features": [
+            "Custom design for hillside and coastal homes",
+            "Infill housing for inner-city suburbs like Newtown and Mt Cook",
+            "Designs optimised for wind exposure, solar gain, and site orientation",
+            "Layouts that capture Wellington's best views — from harbour to bush",
+            "Council-compliant, Design and build ready architectural design documentation"
+          ],
+          "conclusion": "We design places you'll be proud to call home — grounded in local knowledge and brought to life with care."
+        },
+        {
+          "name": "Structural Engineering",
+          "description": "We deliver reliable, code-compliant engineering services in Wellington. Which are designed to stand up to the region's high wind zones, seismic activity, and complex terrain. Whether you're building a new home in Brooklyn or retrofitting a commercial space in Lower Hutt, our experienced team brings both technical expertise and local understanding.",
+          "details": "Our structural engineers in Wellington work closely with homeowners, architects, and builders to develop safe, efficient solutions that align with both council requirements and client goals. For residential projects, our residential structural engineers ensure every detail — from footings to framing — is tailored to the unique demands of your site.",
+          "features": [
+            "Timber, steel, and concrete structural design for Wellington buildings",
+            "Foundation solutions for steep or unstable ground",
+            "Seismic strengthening for homes and commercial properties",
+            "Structural design for multi-storey and mixed-use developments",
+            "PS1–PS4 producer statements and independent peer reviews"
+          ],
+          "conclusion": "We combine smart thinking with proven systems to keep Wellington's buildings safe, strong, and future-ready."
+        },
+        {
+          "name": "Seismic Assessments & Strengthening",
+          "description": "We support building owners across Wellington with practical seismic assessments and strengthening strategies — whether you need to meet the bare minimum or are aiming higher.",
+          "features": [
+            "Initial Seismic Assessments (ISA) and Detailed Seismic Assessments (DSA)",
+            "Concept Seismic Strengthening to 34% NBS,67% NBS and 80% NBS",
+            "Cost-effective solutions for earthquake-prone buildings",
+            "Strengthening designs for heritage buildings and older stock",
+            "Compliance advice under the Building Act and local bylaws"
+          ]
+        },
+        {
+          "name": "Environmental Planning",
+          "description": "Getting Resource Consent in Wellington can be tricky — especially for sites in hazard zones, coastal areas, or heritage precincts. Our planners and designers work closely with local councils to smooth the process.",
+          "features": [
+            "Pre-application meetings with Wellington City Council and other councils",
+            "Assessment of Environmental Effects",
+            "Contamination assessment",
+            "Urban design statements and visual impact analysis",
+            "Management of the resource consent process including Council liaison",
+            "Representation at hearings or submissions",
+            "Affected party, community, and iwi consultation",
+            "Consent from Greater Wellington Regional Council for earthworks, discharges, quarries and cleanfills, etc.",
+            "Consent under National Environmental Standards and National Policy Statements"
+          ]
+        },
+        {
+          "name": "Civil Engineering & Infrastructure",
+          "description": "We specialise in civil engineering projects that respond to the region's unique landscape and climate. From steep hillside driveways in suburbs like Karori and Northland to effective stormwater solutions for high-rainfall areas such as Khandallah and Johnsonville — we design infrastructure that works with, not against, the land.",
+          "details": "Our civil engineer Wellington team provides practical, council-compliant solutions that support safe, sustainable development across the greater Wellington region.",
+          "features": [
+            "Stormwater and drainage design tailored to Wellington's heavy rainfall and hilly terrain",
+            "Driveway and vehicle access solutions for complex, sloped sites",
+            "Three Waters infrastructure design for subdivisions and private property development",
+            "Earthworks, erosion, and sediment control planning for compliance and environmental protection",
+            "Infrastructure planning for land development, Subdivision, and site development Wellington-wide"
+          ],
+          "conclusion": "With deep local knowledge and experience, we deliver civil engineering services that help Wellington developments succeed from consent to completion."
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "Wellington Projects We're Proud Of",
+      "projects": [
+        {
+          "name": "Te Whatu Ora – Clock Tower, Lower Hutt",
+          "description": "As part of our commitment to structural engineering in Wellington, we completed an early-stage seismic assessment for one of the structural wings of the Clock Tower. Using advanced displacement-based analysis, our structural engineers Wellington team provided Te Whatu Ora with a clear understanding of the building's seismic performance. The insights helped shape a cost-effective resilience strategy that supports long-term safety and aligns with critical public health infrastructure goals.",
+          "image": "/images/projects/Te Whatu Ora.png",
+          "labels": ["Seismic", "Medical"]
+        },
+        {
+          "name": "172–176 Queen Street, Masterton",
+          "description": "For this commercial building in the wider Wellington region, GDC Consultants delivered full seismic and structural engineering services. Our scope included Concept Seismic Strengthening to 34% and 67% NBS, concrete scanning, accurate as-built plans, and consent-ready documentation. The result? A safer, compliant building that maintained its asset value — while streamlining the approval process and reducing long-term risk.",
+          "image": "/images/projects/content (40).webp",
+          "labels": ["Seismic"]
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC Consultants Wellington, NZ?",
+      "reasons": [
+        "We're proud locals — based right here in Wellington, New Zealand",
+        "We understand the region's unique terrain, council regulations, and seismic challenges",
+        "A full-service team under one roof: geotechnical engineers Wellington, civil engineers Wellington, structural engineers Wellington, architectural designers, and planning specialists",
+        "Strong working relationships with Wellington City Council, Hutt City Council, and other regional authorities",
+        "Practical, efficient, and Building Consent Wellington-ready solutions that keep projects moving"
+      ]
+    },
+    "ctaSection": {
+      "title": "Let's Get Started",
+      "description": "Whether you're planning a new home in Karori, retrofitting a villa in Mount Victoria, or subdividing land in the Hutt Valley — GDC Consultants Wellington has the local experience and technical know-how to guide your project to success.",
+      "tagline": "Building better in Wellington, every step of the way.",
+      "finalMessage": "Let us help you turn your vision into a consented, build-ready reality — the Wellington way."
+    },
+    "contact": {
+      "title": "Contact Our Wellington Office",
+      "description": "Contact your trusted engineering consultants Wellington NZ",
+      "address": "Unit 109, 74 Taranaki Street, Wellington",
+      "email": "wellington@gdcgroup.co.nz",
+      "phone": "+64 4 282 0405",
+      "ctaText": "Get Started with Your Wellington Project"
+    }
+  },
+  "napier-office": {
+    "id": "napier-office",
+    "title": "Engineering & Architectural Services in Napier and Hawke's Bay",
+    "subtitle": "GDC Consultants Napier",
+    "locationImage": "/images/locations/napier.jpg",
+    "description": "We are proud to be your trusted local experts for engineering and architectural services in Napier, Hawke's Bay, and the wider East Coast of New Zealand. Our experienced team offers practical, innovative, and council-compliant solutions for residential, commercial, and civil projects of all sizes.",
+    "introduction": "From the art deco charm of Napier to the scenic landscapes of Havelock North, the vineyards of Bridge Pa, and the coastal communities of Wairoa and Mahia, we understand what makes this region unique. Our deep knowledge of local land conditions, weather patterns, and council requirements allows us to deliver tailored solutions that work.",
+    "locationDescription": "Whether you're planning to build on a rural property, develop a subdivision near the coast, or upgrade civil infrastructure, our multidisciplinary team in Napier is here to help. We combine engineering precision with architectural creativity to bring your vision to life—on time and within budget.",
+    "serviceArea": "Partner with GDC Consultants Napier for reliable, region-specific expertise in engineering and architecture throughout Hawke's Bay.",
+    "services": {
+      "title": "Our Services in Napier",
+      "subtitle": "",
+      "serviceList": [
+        {
+          "name": "Geotechnical Reports",
+          "description": "We offer comprehensive soil investigations and ground assessments specifically designed for Hawke's Bay's unique terrain. Our Napier-based geotechnical engineers provide crucial insights to ensure the success of your development projects across the region.",
+          "features": [
+            "Liquefaction Risk Assessments tailored for Napier's coastal plains",
+            "Slope Stability Analysis for hillside properties in Havelock North, Mission Hills, Hospital Hill, Bluff Hill and Taradale",
+            "Site-specific foundation recommendations",
+            "Soil bearing capacity check/ Reports",
+            "Seismic subsoil class determination",
+            "Earthworks design and supervision"
+          ]
+        },
+        {
+          "name": "Architectural Design Services",
+          "description": "Our Napier architects are dedicated to creating thoughtful architectural solutions that respect and enhance the region's distinctive character. We design with a deep understanding of the East Coast's climate, landscape, and lifestyle needs.",
+          "features": [
+            "Residential and lifestyle home designs that suit Hawke's Bay conditions",
+            "Commercial buildings with art deco influences for Napier CBD",
+            "Coastal home specialists for Mahia and Waimarama",
+            "Winery and cellar door design for vineyard properties",
+            "Rural dwellings and farm/ Industrial buildings across Hawke's Bay and Gisborne"
+          ]
+        },
+        {
+          "name": "Structural Engineering Services",
+          "description": "Our structural engineers specialise in designs that address Hawke's Bay's specific seismic and environmental challenges. From new builds to alterations, we provide robust structural solutions for every type of project.",
+          "features": [
+            "Designs for new builds and alterations that meet local wind zones and seismic risks",
+            "Timber, steel, and concrete structural systems",
+            "Rural and agricultural structure design",
+            "Art deco building alterations and extensions in Napier",
+            "Post-earthquake reconstruction expertise",
+            "Education and Community/Iwi Buildings"
+          ]
+        },
+        {
+          "name": "Civil Infrastructure Solutions",
+          "description": "We provide a wide range of civil engineering solutions for both urban and rural developments in Hawke's Bay. Our Napier-based civil engineers deliver infrastructure designs that are practical and tailored to the region's specific conditions.",
+          "features": [
+            "Subdivision roading optimised for Hawke's Bay terrains",
+            "Stormwater management systems for high-intensity rainfall events",
+            "Wastewater solutions for urban and rural properties",
+            "Erosion and sediment control for hillside developments",
+            "Utility planning and infrastructure layouts"
+          ]
+        },
+        {
+          "name": "Seismic Design and Assessments",
+          "description": "Our seismic experts provide critical earthquake assessment and strengthening services, helping property owners understand and mitigate earthquake risks throughout Hawke's Bay.",
+          "features": [
+            "Initial Seismic Assessments (ISA)",
+            "Detailed Seismic Assessments (DSA) for commercial and public buildings",
+            "Seismic strengthening design for art deco and heritage structures",
+            "Building vulnerabilities identification and mitigation",
+            "Compliance upgrades for older commercial buildings",
+            "Post-earthquake building assessments"
+          ]
+        },
+        {
+          "name": "Subdivision/ Land Development",
+          "description": "Our expert team provides end-to-end subdivision planning services, tailored to Hawke's Bay's diverse environments. We navigate the complexities of local regulations to help maximize your project's development potential.",
+          "features": [
+            "Feasibility studies considering Hawke's Bay market conditions",
+            "Master planning for large-scale residential developments",
+            "Rural subdivision expertise",
+            "Coastal subdivision planning with erosion considerations and Coastal Inundation Assessments",
+            "Council liaison and consent management"
+          ]
+        }
+      ]
+    },
+    "featuredProjects": {
+      "title": "Featured Napier Projects",
+      "projects": [
+        {
+          "name": "The Faraday Centre, Napier",
+          "description": "GDC Consultants has been commissioned to undertake a detailed design and the seismic retrofitting to 80%NBS of the Faraday Centre situated at 2B Faraday Street, Napier South, Napier. The building was designed and originally built in the early 1910's and subsequently altered when part of the original building was strengthened in 1935 after the 1931 Hawke's Bay Earthquake. In 1991, the building was strengthened in one direction only. The building is single storey with a large mezzanine floor, the structural system comprises of reinforced concrete frames in both directions with concrete infill panels along and block shear walls in transverse direction."
+        },
+        {
+          "name": "Napier Municipal Theatre, Napier, Hawke's Bay",
+          "description": "Napier Municipal Theatre was initially constructed in the 1930 and has had several alterations over its life span. The building has a lobby, main two-level auditorium, stage and backstage areas. The current design occupancy is 1350 persons. GDC Consultants has been commissioned to undertake the building assessment in order to install the service access gantries in the main theatre ceiling void.",
+          "image": "/images/projects/common/Napier M Centre.png",
+          "labels": ["Sturctural", "Planning", "Commercial"]
+        }
+      ]
+    },
+    "specialtyExpertise": {
+      "title": "Hawke's Bay Building Expertise",
+      "description": "The Hawke's Bay region presents unique challenges in engineering and architectural design. Our Napier-based team specializes in providing solutions for these regional considerations:",
+      "expertiseAreas": [
+        "Seismic Activity in the area requires specialized structural approaches and foundation designs.",
+        "Liquefaction risk in the coastal plains of Napier demands detailed geotechnical assessments.",
+        "Diverse landscapes from coastal areas to fertile plains and rolling hills call for tailored engineering solutions.",
+        "Art Deco heritage, especially in Napier, requires sensitive design and strengthening approaches to preserve its character.",
+        "Rural and viticultural developments present specific infrastructure and design requirements."
+      ],
+      "conclusion": "Our Napier team is well-equipped to address these challenges, ensuring that all designs not only meet compliance but also harmonize with Hawke's Bay's distinctive environment."
+    },
+    "whyChoose": {
+      "title": "Why Work With GDC Napier?",
+      "description": "We offer deep local experience and specialized expertise in Hawke's Bay's soils, liquefaction zones, and regional planning schemes. This ensures that your project is tailored to address the unique challenges of this region.",
+      "reasons": [
+        "Comprehensive team of engineers, architects, and planners all under one roof for seamless project delivery",
+        "Efficient council consent processes by working closely with Napier City Council, Hastings District Council, Central Hawkes Bay District Council, Wairoa District Council, Hawkes Bay Regional Council and Gisborne District Council",
+        "Trusted by local developers, lifestyle block owners, winemakers, and iwi groups, with proven success across the East Coast",
+        "Expertise in post-earthquake rebuilding, specifically addressing Hawke's Bay's seismic challenges"
+      ]
+    },
+    "areasServed": {
+      "title": "Hawke's Bay Areas We Serve",
+      "subtitle": "Our Napier engineering and architectural team proudly supports clients throughout:",
+      "areas": [
+        "Napier City & CBD",
+        "Taradale & Greenmeadows",
+        "Hastings & Flaxmere",
+        "Havelock North & Te Mata",
+        "Clive & Haumoana",
+        "Bay View & Esk Valley",
+        "Waipawa & Waipukurau",
+        "Wairoa & Mahia Peninsula",
+        "Gisborne & East Coast"
+      ],
+      "conclusion": "And all surrounding rural communities"
+    },
+    "contact": {
+      "title": "Contact Our Napier Office",
+      "address": "Vautier House, Second floor , 180 Dalton Street, Napier 4110",
+      "email": "napier@gdcgroup.co.nz",
+      "phone": "+64 6 281 2270",
+      "ctaText": "Get Started with Your Hawke's Bay Project"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How do you address liquefaction risk in Napier's coastal areas?",
+          "answer": "We carry out detailed geotechnical assessments to evaluate the potential for liquefaction in Napier's coastal plains. Based on these findings, we provide tailored foundation recommendations that may include enhanced foundation systems, ground improvement techniques, or specific structural detailing to mitigate risks."
+        },
+        {
+          "question": "Can you help with the seismic strengthening of art deco buildings?",
+          "answer": "Yes, absolutely! Our Napier team has specialized expertise in working with art deco buildings, common in Napier's CBD. We conduct detailed seismic assessments and design strengthening solutions that preserve the unique architectural character while improving seismic performance."
+        },
+        {
+          "question": "Do you work with vineyard and winery developments in Hawke's Bay?",
+          "answer": "We frequently collaborate with vineyard owners and winemakers across Hawke's Bay, offering services including building design, infrastructure planning, resource consent applications, and geotechnical assessments tailored to the unique needs of viticultural operations."
+        },
+        {
+          "question": "What experience do you have with rural subdivisions in Central Hawke's Bay?",
+          "answer": "Our planners and engineers have extensive experience in rural subdivisions across Central Hawke's Bay. We understand the distinct requirements of rural development and work closely with local councils to ensure optimal outcomes for landowners."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View Our Hawke's Bay Projects",
+      "team": "Meet Our Napier Team"
+    }
+  }
+}
