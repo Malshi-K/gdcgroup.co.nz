@@ -692,7 +692,8 @@
       "projects": [
         {
           "name": "The Faraday Centre, Napier",
-          "description": "GDC Consultants has been commissioned to undertake a detailed design and the seismic retrofitting to 80%NBS of the Faraday Centre situated at 2B Faraday Street, Napier South, Napier. The building was designed and originally built in the early 1910's and subsequently altered when part of the original building was strengthened in 1935 after the 1931 Hawke's Bay Earthquake. In 1991, the building was strengthened in one direction only. The building is single storey with a large mezzanine floor, the structural system comprises of reinforced concrete frames in both directions with concrete infill panels along and block shear walls in transverse direction."
+          "description": "GDC Consultants has been commissioned to undertake a detailed design and the seismic retrofitting to 80%NBS of the Faraday Centre situated at 2B Faraday Street, Napier South, Napier. The building was designed and originally built in the early 1910's and subsequently altered when part of the original building was strengthened in 1935 after the 1931 Hawke's Bay Earthquake. In 1991, the building was strengthened in one direction only. The building is single storey with a large mezzanine floor, the structural system comprises of reinforced concrete frames in both directions with concrete infill panels along and block shear walls in transverse direction.",
+          "image": "/images/projects/common/napier office.png"
         },
         {
           "name": "Napier Municipal Theatre, Napier, Hawke's Bay",
