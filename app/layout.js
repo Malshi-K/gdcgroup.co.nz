@@ -59,10 +59,47 @@ export default function RootLayout({ children }) {
     return () => clearTimeout(timeoutId);
   }, []);
 
+  // Google Ads Conversion Tracking Script
+  useEffect(() => {
+    const conversionScriptId = "google-ads-conversion";
+    if (!document.getElementById(conversionScriptId)) {
+      const conversionScript = document.createElement("script");
+      conversionScript.id = conversionScriptId;
+      conversionScript.innerHTML = `
+        window.addEventListener("load", function () {
+          var contactTimer = setInterval(function () {
+            if (document.querySelectorAll(" .opacity-100.translate-y-0 > p").length != 0) {
+              gtag("event", "conversion", {
+                send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+              })
+              clearInterval(contactTimer)
+            }
+          }, 1000)
+        })
+      `;
+      document.body.appendChild(conversionScript);
+    }
+  }, []);
+
   return (
     <html lang="en">
       <head>
         <GoogleTracking />
+        {/* Google Ads Global Site Tag */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-742615805"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-742615805');
+            `,
+          }}
+        />
       </head>
       <body className="font-sans">
         {!isEngineeringServicesPage && <Header />}
