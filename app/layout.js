@@ -59,13 +59,13 @@ export default function RootLayout({ children }) {
     return () => clearTimeout(timeoutId);
   }, []);
 
-  // Google Ads Conversion Tracking Script
+  // Google Ads Conversion Tracking (Footer Script)
   useEffect(() => {
-    const conversionScriptId = "google-ads-conversion";
-    if (!document.getElementById(conversionScriptId)) {
-      const conversionScript = document.createElement("script");
-      conversionScript.id = conversionScriptId;
-      conversionScript.innerHTML = `
+    const footerScriptId = "google-ads-conversion-footer";
+    if (!document.getElementById(footerScriptId)) {
+      const footerScript = document.createElement("script");
+      footerScript.id = footerScriptId;
+      footerScript.innerHTML = `
         window.addEventListener("load", function () {
           var contactTimer = setInterval(function () {
             if (document.querySelectorAll(" .opacity-100.translate-y-0 > p").length != 0) {
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
           }, 1000)
         })
       `;
-      document.body.appendChild(conversionScript);
+      document.body.appendChild(footerScript);
     }
   }, []);
 
@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <GoogleTracking />
-        {/* Google Ads Global Site Tag */}
+        {/* Google tag (gtag.js) - Header Section */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-742615805"
