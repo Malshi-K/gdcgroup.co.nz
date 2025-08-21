@@ -103,7 +103,7 @@ const officeLocations = [
   {
     id: 11,
     name: "Raglan",
-    email: "info@gdcgroup.co.nz",
+    email: "Raglan@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
     mapSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201537.96798916627!2d174.75682360777284!3d-37.88296356760334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d132aa119f6886d%3A0x500ef6143a2fc50!2sRaglan%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726213492605!5m2!1sen!2slk",
