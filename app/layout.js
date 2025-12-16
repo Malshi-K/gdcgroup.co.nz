@@ -84,6 +84,49 @@ export default function RootLayout({ children }) {
     }
   }, []);
 
+  // Phone Call & Email Click Conversion Tracking
+  useEffect(() => {
+    // Phone call conversion tracking
+    const handlePhoneClick = (e) => {
+      if (e.target.closest('a[href^="tel:"]')) {
+        console.log('[Conversion Debug] Phone click detected');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-742615805/He2gCNrli9IbEP3VjeIC'
+          });
+          console.log('[Conversion Debug] Phone conversion sent');
+        } else {
+          console.error('[Conversion Debug] gtag not available');
+        }
+      }
+    };
+
+    // Email click conversion tracking
+    const handleEmailClick = (e) => {
+      if (e.target.closest('a[href^="mailto:"]')) {
+        console.log('[Conversion Debug] Email click detected');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-742615805/rLvLCKu9hdIbEP3VjeIC'
+          });
+          console.log('[Conversion Debug] Email conversion sent');
+        } else {
+          console.error('[Conversion Debug] gtag not available');
+        }
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener('click', handlePhoneClick);
+    document.addEventListener('click', handleEmailClick);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener('click', handlePhoneClick);
+      document.removeEventListener('click', handleEmailClick);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -111,36 +154,6 @@ export default function RootLayout({ children }) {
         <ScrollToTop />
         <CookieConsent />
         <ClarityScript />
-        
-        {/* Phone Call Conversion Tracking */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                document.addEventListener('click', function(e){
-                  if(e.target.closest('a[href^="tel:"]')){
-                    gtag('event', 'conversion', {'send_to': 'AW-742615805/He2gCNrli9IbEP3VjeIC'});
-                  }
-                });
-              })();
-            `,
-          }}
-        />
-        
-        {/* Email Click Conversion Tracking */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                document.addEventListener('click', function(e){
-                  if(e.target.closest('a[href^="mailto:"]')){
-                    gtag('event', 'conversion', {'send_to': 'AW-742615805/rLvLCKu9hdIbEP3VjeIC'});
-                  }
-                });
-              })();
-            `,
-          }}
-        />
       </body>
     </html>
   );
