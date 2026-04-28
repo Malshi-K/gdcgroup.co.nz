@@ -2,6 +2,7 @@
 import React, { Suspense } from "react";
 import "@/app/globals.css";
 import JoinOurTeam from "@/components/about/JoinOurTeam";
+import JobList from "@/components/about/JobList";
 import CareerFormEmbed from "@/components/about/CareerFormEmbed";
 
 export const generateMetadata = async () => {
@@ -52,6 +53,17 @@ const Careers = () => {
         }
       >
         <JoinOurTeam />
+        <JobList />
+        <div className="py-12 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-customBlue text-center mb-2">
+              Didn't find a position that matches your interests?
+            </h2>
+            <p className="text-center text-gray-600 mb-8">
+              Tell us about your interests and qualifications, and we'll reach out if a suitable opportunity arises!
+            </p>
+          </div>
+        </div>
         <CareerFormEmbed />
       </Suspense>
     </>
