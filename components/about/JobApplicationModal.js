@@ -64,8 +64,8 @@ const JobApplicationModal = ({ isOpen, onClose, job }) => {
             </div>
 
             <div className="mt-6">
-              <h4 className="text-base font-semibold text-customBlue">
-                What You'll Bring
+                <h4 className="text-base font-semibold text-customBlue">
+                What You&apos;ll Bring
               </h4>
               <ul className="mt-2 space-y-2 text-sm text-gray-700">
                 {job?.requirements?.map((item) => (
