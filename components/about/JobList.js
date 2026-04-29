@@ -40,10 +40,10 @@ const jobs = [
   },
 ];
 
-const locationOptions = [
-  "All Locations",
-  ...new Set(jobs.flatMap((job) => job.locations ?? [job.location])),
-];
+// const locationOptions = [
+//   "All Locations",
+//   ...new Set(jobs.flatMap((job) => job.locations ?? [job.location])),
+// ];
 
 // Function to group jobs by category
 const groupByCategory = (jobs) => {
@@ -57,7 +57,7 @@ const groupByCategory = (jobs) => {
 };
 
 export default function JobList() {
-  const [selectedLocation, setSelectedLocation] = useState("All Locations");
+  // const [selectedLocation, setSelectedLocation] = useState("All Locations");
   const [filteredGroupedJobs, setFilteredGroupedJobs] = useState(
     groupByCategory(jobs)
   );
@@ -66,16 +66,16 @@ export default function JobList() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Update filtered jobs based on selected location
-  useEffect(() => {
-    const updatedFilteredJobs =
-      selectedLocation === "All Locations"
-        ? jobs
-        : jobs.filter((job) =>
-            (job.locations ?? [job.location]).includes(selectedLocation)
-          );
+  // useEffect(() => {
+  //   const updatedFilteredJobs =
+  //     selectedLocation === "All Locations"
+  //       ? jobs
+  //       : jobs.filter((job) =>
+  //           (job.locations ?? [job.location]).includes(selectedLocation)
+  //         );
 
-    setFilteredGroupedJobs(groupByCategory(updatedFilteredJobs));
-  }, [selectedLocation]);
+  //   setFilteredGroupedJobs(groupByCategory(updatedFilteredJobs));
+  // }, [selectedLocation]);
 
   // Trigger animations after initial render
   useEffect(() => {
@@ -98,7 +98,7 @@ export default function JobList() {
           <h2 className="text-xl text-customBlue font-semibold">
             Job Openings
           </h2>
-          <div className="relative">
+          {/* <div className="relative">
             <select
               className="bg-gray-100 text-customBlue border border-customBlue rounded-md p-2"
               value={selectedLocation}
@@ -110,7 +110,7 @@ export default function JobList() {
                 </option>
               ))}
             </select>
-          </div>
+          </div> */}
         </div>
 
         {/* Display jobs section-wise based on categories */}
