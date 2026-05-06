@@ -9,9 +9,8 @@ async function fetchBlogs() {
         'Authorization': `Bearer ${process.env.HUBSPOT_BLOG_MANAGER_API_KEY}`,
         'Content-Type': 'application/json'
       },
-      next: { 
-        revalidate: 3600 // Revalidate every hour
-      }
+      // Always fetch the latest publish states so draft changes show immediately.
+      cache: 'no-store'
     });
     
     if (!response.ok) {
@@ -21,8 +20,10 @@ async function fetchBlogs() {
     const data = await response.json();
     // console.log('Fetched blogs:', data); // For debugging
     
-    // Additional safety check to ensure we only get published posts
-    const publishedBlogs = (data.results || []).filter(blog => blog.state === 'PUBLISHED');
+    // Additional safety check to ensure we only get published posts.
+    const publishedBlogs = (data.results || []).filter(
+      (blog) => (blog?.state || '').toUpperCase() === 'PUBLISHED'
+    );
     
     return publishedBlogs;
   } catch (error) {
