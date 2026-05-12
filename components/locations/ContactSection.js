@@ -5,6 +5,128 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import Image from "next/image";
 
+const blockKeywords = [
+  // General job terms
+  "job",
+  "jobs",
+  "career",
+  "careers",
+  "vacancy",
+  "vacancies",
+  "opening",
+  "open position",
+  "position",
+  "opportunity",
+  "employment",
+  "work opportunity",
+
+  // Application-related
+  "apply",
+  "application",
+  "applying",
+  "candidate",
+  "applicant",
+  "recruitment",
+  "recruit",
+  "hiring",
+  "hire me",
+
+  // Documents
+  "cv",
+  "resume",
+  "cover letter",
+  "portfolio",
+
+  // Experience-related
+  "internship",
+  "intern",
+  "trainee",
+  "full time",
+  "part time",
+  "remote job",
+  "freelance",
+
+  // Common phrases
+  "looking for a job",
+  "looking for work",
+  "any vacancies",
+  "are you hiring",
+  "join your team",
+  "work with you",
+  "send my cv",
+  "submit my resume",
+  "job opportunity",
+  "employment opportunity",
+
+  // HR terms
+  "human resources",
+  "hr department",
+  "talent acquisition",
+
+  // Common action words
+  "experience",
+  "skills",
+  "qualification",
+  "availability",
+  "salary expectation",
+  "notice period",
+];
+
+const normalizeText = (text = "") =>
+  text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const toSingular = (word = "") => {
+  if (word.endsWith("ies") && word.length > 3) {
+    return `${word.slice(0, -3)}y`;
+  }
+
+  if (/(s|x|z|ch|sh)es$/.test(word)) {
+    return word.slice(0, -2);
+  }
+
+  if (word.endsWith("s") && !word.endsWith("ss") && word.length > 1) {
+    return word.slice(0, -1);
+  }
+
+  return word;
+};
+
+const toPlural = (word = "") => {
+  if (word.endsWith("y") && !/[aeiou]y$/.test(word)) {
+    return `${word.slice(0, -1)}ies`;
+  }
+
+  if (/(s|x|z|ch|sh)$/.test(word)) {
+    return `${word}es`;
+  }
+
+  if (!word.endsWith("s")) {
+    return `${word}s`;
+  }
+
+  return word;
+};
+
+const getKeywordVariants = (keyword = "") => {
+  const normalizedKeyword = normalizeText(keyword);
+  if (!normalizedKeyword) return [];
+
+  const words = normalizedKeyword.split(" ");
+  const lastWord = words[words.length - 1];
+  const singularVariant = [...words.slice(0, -1), toSingular(lastWord)].join(" ");
+  const pluralVariant = [...words.slice(0, -1), toPlural(lastWord)].join(" ");
+
+  return Array.from(new Set([normalizedKeyword, singularVariant, pluralVariant]));
+};
+
+const normalizedBlockKeywords = Array.from(
+  new Set(blockKeywords.flatMap((keyword) => getKeywordVariants(keyword)))
+);
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     firstname: "",
@@ -18,6 +140,10 @@ const ContactSection = () => {
   const [error, setError] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const normalizedMessage = normalizeText(formData.message);
+  const hasBlockedKeyword = normalizedBlockKeywords.some((keyword) =>
+    normalizedMessage.includes(keyword)
+  );
 
   // Handle intersection observer to detect when section is in view
   useEffect(() => {
@@ -56,8 +182,13 @@ const ContactSection = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
 
     const { firstname, lastname, phone, email, message } = formData;
+
+    if (hasBlockedKeyword) {
+      return;
+    }
 
     try {
       const hubspotPortalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
@@ -261,10 +392,27 @@ const ContactSection = () => {
             {error && <p className="text-red-600">{error}</p>}
             <button
               type="submit"
-              className="w-full bg-customBlue text-white py-2 px-4 rounded-md hover:bg-customYellow transition"
+              disabled={hasBlockedKeyword}
+              className={`w-full text-white py-2 px-4 rounded-md transition ${
+                hasBlockedKeyword
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-customBlue hover:bg-customYellow"
+              }`}
             >
               Send
             </button>
+            {hasBlockedKeyword && (
+              <p className="text-red-600 mt-3">
+                For job applications and career enquiries, please submit the
+                Careers form.{" "}
+                <a
+                  href="/about-us/careers"
+                  className="font-semibold underline hover:text-customBlue"
+                >
+                  Go to Careers Form
+                </a>
+              </p>
+            )}
           </form>
         )}
       </div>
