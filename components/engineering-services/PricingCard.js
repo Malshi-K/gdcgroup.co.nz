@@ -88,7 +88,13 @@ const PricingCard = () => {
         body: JSON.stringify(payload),
       });
 
-      const responseData = await response.json();
+      let responseData = {};
+
+      try {
+        responseData = await response.json();
+      } catch (e) {
+        responseData = {};
+      }
       console.log("HubSpot API response:", responseData);
 
       if (response.ok) {
