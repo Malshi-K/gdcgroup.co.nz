@@ -212,6 +212,12 @@ const ContactSection = () => {
         },
       });
 
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+        });
+      }
+
       setSubmitted(true);
       setFormData({
         firstname: "",
