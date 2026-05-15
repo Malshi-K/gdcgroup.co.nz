@@ -41,11 +41,9 @@ const blockKeywords = [
   "trainee",
   "full time",
   "part time",
-  "remote job",
   "freelance",
 
   // Common phrases
-  "looking for a job",
   "looking for work",
   "any vacancies",
   "are you hiring",
@@ -53,7 +51,6 @@ const blockKeywords = [
   "work with you",
   "send my cv",
   "submit my resume",
-  "job opportunity",
   "employment opportunity",
 
   // HR terms
