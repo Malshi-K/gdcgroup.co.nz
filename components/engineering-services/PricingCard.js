@@ -66,8 +66,13 @@ const PricingCard = () => {
           { name: "message", value: formData.message },
         ],
         context: {
+          hutk: document.cookie
+            .split("; ")
+            .find((row) => row.startsWith("hubspotutk="))
+            ?.split("=")[1],
+
           pageUri: window.location.href,
-          pageName: "Website Development Pricing",
+          pageName: document.title,
         },
         // Add this to ensure notifications are sent
         legalConsentOptions: {
