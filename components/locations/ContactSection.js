@@ -7,8 +7,6 @@ import Image from "next/image";
 
 const blockKeywords = [
   // General job terms
-  "job",
-  "jobs",
   "career",
   "careers",
   "vacancy",
