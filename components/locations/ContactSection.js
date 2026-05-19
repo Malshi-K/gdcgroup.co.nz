@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import Image from "next/image";
@@ -135,6 +136,7 @@ const ContactSection = () => {
   const [error, setError] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const router = useRouter();
   const normalizedMessage = normalizeText(formData.message);
   const hasBlockedKeyword = normalizedBlockKeywords.some((keyword) =>
     normalizedMessage.includes(keyword)
@@ -246,6 +248,8 @@ const ContactSection = () => {
         email: "",
         message: "",
       });
+      // Redirect to thank you page
+      router.push("/contact-us/thank-you");
     } catch (error) {
       setError("There was an error submitting the form. Please try again.");
       console.error("Error submitting to HubSpot:", error);
@@ -338,109 +342,105 @@ const ContactSection = () => {
         <h3 className="text-lg md:text-xl lg:text-2xl text-customBlue font-semibold mb-4">
           Send Message
         </h3>
-        {submitted ? (
-          <p className="text-green-600">Thank you for your message!</p>
-        ) : (
-          <form onSubmit={handleSubmit}>
-            <div className="flex flex-col md:flex-row gap-4 mb-4">
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700">
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  name="firstname"
-                  placeholder="First Name"
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  value={formData.firstname}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  name="lastname"
-                  placeholder="Last Name"
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  value={formData.lastname}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+        <form onSubmit={handleSubmit}>
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <div className="flex-1">
+              <label className="block text-sm font-medium text-gray-700">
+                First Name
+              </label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First Name"
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                value={formData.firstname}
+                onChange={handleChange}
+                required
+              />
             </div>
+            <div className="flex-1">
+              <label className="block text-sm font-medium text-gray-700">
+                Last Name
+              </label>
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Last Name"
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                value={formData.lastname}
+                onChange={handleChange}
+                required
+              />
+            </div>
+          </div>
 
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Mobile Number
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Mobile Number"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
-              <textarea
-                name="message"
-                placeholder="Type your message..."
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                rows="4"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            {error && <p className="text-red-600">{error}</p>}
-            <button
-              type="submit"
-              disabled={hasBlockedKeyword}
-              className={`w-full text-white py-2 px-4 rounded-md transition ${
-                hasBlockedKeyword
-                  ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-customBlue hover:bg-customYellow"
-              }`}
-            >
-              Send
-            </button>
-            {hasBlockedKeyword && (
-              <p className="text-red-600 mt-3">
-                For job applications and career enquiries, please submit the
-                Careers form.{" "}
-                <a
-                  href="/about-us/careers"
-                  className="font-semibold underline hover:text-customBlue"
-                >
-                  Go to Careers Form
-                </a>
-              </p>
-            )}
-          </form>
-        )}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">
+              Mobile Number
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Mobile Number"
+              className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">
+              Message
+            </label>
+            <textarea
+              name="message"
+              placeholder="Type your message..."
+              className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          {error && <p className="text-red-600">{error}</p>}
+          <button
+            type="submit"
+            disabled={hasBlockedKeyword}
+            className={`w-full text-white py-2 px-4 rounded-md transition ${
+              hasBlockedKeyword
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-customBlue hover:bg-customYellow"
+            }`}
+          >
+            Send
+          </button>
+          {hasBlockedKeyword && (
+            <p className="text-red-600 mt-3">
+              For job applications and career enquiries, please submit the
+              Careers form.{" "}
+              <a
+                href="/about-us/careers"
+                className="font-semibold underline hover:text-customBlue"
+              >
+                Go to Careers Form
+              </a>
+            </p>
+          )}
+        </form>
       </div>
     </section>
   );
