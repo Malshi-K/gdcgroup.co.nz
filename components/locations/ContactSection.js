@@ -249,7 +249,7 @@ const ContactSection = () => {
         message: "",
       });
       // Redirect to thank you page
-      router.push("/contact-us/thank-you");
+      router.push("/thank-you");
     } catch (error) {
       setError("There was an error submitting the form. Please try again.");
       console.error("Error submitting to HubSpot:", error);

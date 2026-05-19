@@ -1,6 +1,7 @@
 // PricingCard.jsx
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const PricingCard = () => {
   const [screenSize, setScreenSize] = useState({
@@ -17,6 +18,7 @@ const PricingCard = () => {
   });
   const [formStatus, setFormStatus] = useState("idle");
   const [formMessage, setFormMessage] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
     // Function to update screen size state
@@ -111,13 +113,15 @@ const PricingCard = () => {
         // }
 
         setFormStatus("success");
-        setFormMessage("Thank you! We'll be in touch soon.");
+        setFormMessage("");
         setFormData({
           firstname: "",
           email: "",
           phone: "",
           message: "",
         });
+        // Redirect to thank you page
+        router.push("/thank-you");
       } else {
         console.error("Form submission error:", responseData);
         setFormStatus("error");
@@ -218,12 +222,6 @@ const PricingCard = () => {
                 {formStatus === "submitting" ? "Submitting..." : "Submit"}
               </button>
             </form>
-
-            {formStatus === "success" && (
-              <div className="mt-4 p-3 bg-green-100 text-green-700 rounded-lg">
-                {formMessage}
-              </div>
-            )}
 
             {formStatus === "error" && (
               <div className="mt-4 p-3 bg-red-100 text-red-700 rounded-lg">
