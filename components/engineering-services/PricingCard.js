@@ -108,7 +108,7 @@ const PricingCard = () => {
         // Track form submission conversion if needed
         // if (typeof window !== "undefined" && window.gtag) {
         //   window.gtag("event", "conversion", {
-        //     send_to: "AW-16917143672/LaiLCKf31asaEPjA3II_",
+        //     send_to: "AW-742615805/LaiLCKf31asaEPjA3II_",
         //   });
         // }
 

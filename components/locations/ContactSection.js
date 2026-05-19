@@ -231,12 +231,14 @@ const ContactSection = () => {
       const transactionId =
         Date.now() + "-" + Math.random().toString(36).substring(2, 9);
 
-      if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "conversion", {
-          send_to: "AW-16917143672/LaiLCKf31asaEPjA3II_",
-          transaction_id: transactionId,
-        });
-      }
+     if (typeof window !== "undefined" && window.gtag) {
+       window.gtag("event", "conversion", {
+         send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+         transaction_id: transactionId,
+         value: 4.0,
+         currency: "NZD",
+       });
+     }
 
       console.log("HubSpot form submission successful");
 
