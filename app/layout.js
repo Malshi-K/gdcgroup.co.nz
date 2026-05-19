@@ -63,26 +63,26 @@ export default function RootLayout({ children }) {
   }, []);
 
   // Google Ads Conversion Tracking (Footer Script)
-  useEffect(() => {
-    const footerScriptId = "google-ads-conversion-footer";
-    if (!document.getElementById(footerScriptId)) {
-      const footerScript = document.createElement("script");
-      footerScript.id = footerScriptId;
-      footerScript.innerHTML = `
-        window.addEventListener("load", function () {
-          var contactTimer = setInterval(function () {
-            if (document.querySelectorAll(" .opacity-100.translate-y-0 > p").length != 0) {
-              gtag("event", "conversion", {
-                send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-              })
-              clearInterval(contactTimer)
-            }
-          }, 1000)
-        })
-      `;
-      document.body.appendChild(footerScript);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const footerScriptId = "google-ads-conversion-footer";
+  //   if (!document.getElementById(footerScriptId)) {
+  //     const footerScript = document.createElement("script");
+  //     footerScript.id = footerScriptId;
+  //     footerScript.innerHTML = `
+  //       window.addEventListener("load", function () {
+  //         var contactTimer = setInterval(function () {
+  //           if (document.querySelectorAll(" .opacity-100.translate-y-0 > p").length != 0) {
+  //             gtag("event", "conversion", {
+  //               send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+  //             })
+  //             clearInterval(contactTimer)
+  //           }
+  //         }, 1000)
+  //       })
+  //     `;
+  //     document.body.appendChild(footerScript);
+  //   }
+  // }, []);
 
   // Phone Call & Email Click Conversion Tracking
   useEffect(() => {
@@ -132,7 +132,7 @@ export default function RootLayout({ children }) {
       <head>
         <GoogleTracking />
         {/* Google tag (gtag.js) - Header Section */}
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-742615805"
         />
@@ -145,7 +145,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'AW-742615805');
             `,
           }}
-        />
+        /> */}
       </head>
       <body className="font-sans">
         {!isEngineeringServicesPage && <Header />}

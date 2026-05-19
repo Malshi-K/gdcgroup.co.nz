@@ -191,6 +191,12 @@ const ContactSection = () => {
 
       const url = `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`;
 
+      const hutk =
+        document.cookie
+          .split("; ")
+          .find((row) => row.startsWith("hubspotutk="))
+          ?.split("=")[1] || "";
+
       const payload = {
         fields: [
           { name: "firstname", value: firstname },
@@ -199,6 +205,19 @@ const ContactSection = () => {
           { name: "email", value: email },
           { name: "message", value: message },
         ],
+
+        context: {
+          hutk: hutk,
+          pageUri: window.location.href,
+          pageName: document.title,
+        },
+
+        legalConsentOptions: {
+          consent: {
+            consentToProcess: true,
+            text: "I agree to allow GDC Consultants Ltd to store and process my personal data.",
+          },
+        },
       };
 
       await axios.post(url, payload, {
@@ -206,6 +225,18 @@ const ContactSection = () => {
           "Content-Type": "application/json",
         },
       });
+
+      const transactionId =
+        Date.now() + "-" + Math.random().toString(36).substring(2, 9);
+
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16917143672/LaiLCKf31asaEPjA3II_",
+          transaction_id: transactionId,
+        });
+      }
+
+      console.log("HubSpot form submission successful");
 
       setSubmitted(true);
       setFormData({
