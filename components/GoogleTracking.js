@@ -96,7 +96,7 @@ function useDelayedLoad() {
     const timeoutId = setTimeout(() => {
       setShouldLoad(true)
       logAnalytics('Loaded', 'Analytics ready to load')
-    }, 1000)
+    }, 100)
     return () => clearTimeout(timeoutId)
   }, [])
 
@@ -132,6 +132,7 @@ export default function GoogleTracking() {
                 console.log('[Analytics Debug] dataLayer push:', arguments);
               }
             }
+            window.gtag = gtag;
             gtag('js', new Date());
             
             // Setup consent mode

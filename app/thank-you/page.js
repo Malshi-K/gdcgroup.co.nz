@@ -5,21 +5,32 @@ import { useEffect } from "react";
 
 export default function ThankYouPage() {
   useEffect(() => {
-    document.title = "Thank You | GDC Consultants";
+    console.log("Thank you page loaded");
 
-    const transactionId =
-      Date.now() + "-" + Math.random().toString(36).substring(2, 9);
+    let retries = 0;
 
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "conversion", {
-        send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-        transaction_id: transactionId,
-        value: 4.0,
-        currency: "NZD",
-      });
+    const triggerConversion = () => {
+      if (typeof window !== "undefined" && window.gtag) {
+        const transactionId =
+          Date.now() + "-" + Math.random().toString(36).substring(2, 9);
 
-      console.log("Google Ads conversion triggered");
-    }
+        window.gtag("event", "conversion", {
+          send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+          transaction_id: transactionId,
+          value: 4.0,
+          currency: "NZD",
+        });
+
+        console.log("Google Ads conversion triggered");
+      } else if (retries < 10) {
+        retries++;
+        console.log("gtag not ready yet");
+
+        setTimeout(triggerConversion, 500);
+      }
+    };
+
+    triggerConversion();
   }, []);
 
   return (
