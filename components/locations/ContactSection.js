@@ -251,7 +251,9 @@ const ContactSection = () => {
         message: "",
       });
       // Redirect to thank you page
-      router.push("/thank-you");
+      setTimeout(() => {
+        router.push("/thank-you");
+      }, 1500);
     } catch (error) {
       setError("There was an error submitting the form. Please try again.");
       console.error("Error submitting to HubSpot:", error);
