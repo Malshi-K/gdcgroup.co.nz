@@ -8,7 +8,9 @@ import { hasAnalyticsCookieConsent, hasMarketingCookieConsent } from '@/utils/co
 const GA_MEASUREMENT_ID = 'G-9YLKY3BK26'
 const ADS_CONVERSION_ID = 'AW-742615805'
 const DEBUG_MODE = true // Toggle this for debugging
-const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+const IS_PRODUCTION =
+  typeof window !== 'undefined' &&
+  window.location.hostname === 'gdcgroup.co.nz'
 
 // Debug logger with styled console output
 const logAnalytics = (action, data) => {
@@ -105,7 +107,9 @@ export default function GoogleTracking() {
   // Always call hooks at the top level, regardless of whether we'll use their values
   const shouldLoadGA = useDelayedLoad()
 
-  // Always render the tracking, but with consent mode
+  // Prevent analytics on preview/staging domains
+  if (!IS_PRODUCTION) return null
+
   if (!shouldLoadGA) return null
 
   return (

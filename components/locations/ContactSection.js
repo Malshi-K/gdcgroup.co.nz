@@ -6,67 +6,67 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import Image from "next/image";
 
-const blockKeywords = [
-  // General job terms
-  "career",
-  "careers",
-  "vacancy",
-  "vacancies",
-  "opening",
-  "open position",
-  "position",
-  "opportunity",
-  "employment",
-  "work opportunity",
+// const blockKeywords = [
+//   // General job terms
+//   "career",
+//   "careers",
+//   "vacancy",
+//   "vacancies",
+//   "opening",
+//   "open position",
+//   "position",
+//   "opportunity",
+//   "employment",
+//   "work opportunity",
 
-  // Application-related
-  "apply",
-  "application",
-  "applying",
-  "candidate",
-  "applicant",
-  "recruitment",
-  "recruit",
-  "hiring",
-  "hire me",
+//   // Application-related
+//   "apply",
+//   "application",
+//   "applying",
+//   "candidate",
+//   "applicant",
+//   "recruitment",
+//   "recruit",
+//   "hiring",
+//   "hire me",
 
-  // Documents
-  "cv",
-  "resume",
-  "cover letter",
-  "portfolio",
+//   // Documents
+//   "cv",
+//   "resume",
+//   "cover letter",
+//   "portfolio",
 
-  // Experience-related
-  "internship",
-  "intern",
-  "trainee",
-  "full time",
-  "part time",
-  "freelance",
+//   // Experience-related
+//   "internship",
+//   "intern",
+//   "trainee",
+//   "full time",
+//   "part time",
+//   "freelance",
 
-  // Common phrases
-  "looking for work",
-  "any vacancies",
-  "are you hiring",
-  "join your team",
-  "work with you",
-  "send my cv",
-  "submit my resume",
-  "employment opportunity",
+//   // Common phrases
+//   "looking for work",
+//   "any vacancies",
+//   "are you hiring",
+//   "join your team",
+//   "work with you",
+//   "send my cv",
+//   "submit my resume",
+//   "employment opportunity",
 
-  // HR terms
-  "human resources",
-  "hr department",
-  "talent acquisition",
+//   // HR terms
+//   "human resources",
+//   "hr department",
+//   "talent acquisition",
 
-  // Common action words
-  "experience",
-  "skills",
-  "qualification",
-  "availability",
-  "salary expectation",
-  "notice period",
-];
+//   // Common action words
+//   "experience",
+//   "skills",
+//   "qualification",
+//   "availability",
+//   "salary expectation",
+//   "notice period",
+// ];
 
 const normalizeText = (text = "") =>
   text
@@ -119,9 +119,9 @@ const getKeywordVariants = (keyword = "") => {
   return Array.from(new Set([normalizedKeyword, singularVariant, pluralVariant]));
 };
 
-const normalizedBlockKeywords = Array.from(
-  new Set(blockKeywords.flatMap((keyword) => getKeywordVariants(keyword)))
-);
+// const normalizedBlockKeywords = Array.from(
+//   new Set(blockKeywords.flatMap((keyword) => getKeywordVariants(keyword)))
+// );
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -137,10 +137,10 @@ const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
   const router = useRouter();
-  const normalizedMessage = normalizeText(formData.message);
-  const hasBlockedKeyword = normalizedBlockKeywords.some((keyword) =>
-    normalizedMessage.includes(keyword)
-  );
+  // const normalizedMessage = normalizeText(formData.message);
+  // const hasBlockedKeyword = normalizedBlockKeywords.some((keyword) =>
+  //   normalizedMessage.includes(keyword)
+  // );
 
   // Handle intersection observer to detect when section is in view
   useEffect(() => {
@@ -183,9 +183,9 @@ const ContactSection = () => {
 
     const { firstname, lastname, phone, email, message } = formData;
 
-    if (hasBlockedKeyword) {
-      return;
-    }
+    // if (hasBlockedKeyword) {
+    //   return;
+    // }
 
     try {
       const hubspotPortalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
@@ -421,15 +421,12 @@ const ContactSection = () => {
           {error && <p className="text-red-600">{error}</p>}
           <button
             type="submit"
-            disabled={hasBlockedKeyword}
-            className={`w-full text-white py-2 px-4 rounded-md transition ${
-              hasBlockedKeyword
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-customBlue hover:bg-customYellow"
-            }`}
+            // disabled={hasBlockedKeyword}
+            className={`w-full text-white py-2 px-4 rounded-md transition bg-customBlue hover:bg-customYellow`}
           >
             Send
           </button>
+          {/*
           {hasBlockedKeyword && (
             <p className="text-red-600 mt-3">
               For job applications and career enquiries, please submit the
@@ -442,6 +439,7 @@ const ContactSection = () => {
               </a>
             </p>
           )}
+          */}
         </form>
       </div>
     </section>
