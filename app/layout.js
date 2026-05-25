@@ -4,11 +4,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTracking from "@/components/GoogleTracking";
-import {
-  initializeEssentialCookies,
-  updateAllConsentStates,
-} from "@/utils/cookieUtils";
-import CookieConsent from "@/components/cookie/CookieConsent";
+// import {
+//   initializeEssentialCookies,
+//   updateAllConsentStates,
+// } from "@/utils/cookieUtils";
+// import CookieConsent from "@/components/cookie/CookieConsent";
 import "@/app/globals.css";
 import { usePathname } from "next/navigation";
 import ClarityScript from "@/components/ClarityScript";
@@ -50,17 +50,17 @@ export default function RootLayout({ children }) {
     }
   }, []);
 
-  useEffect(() => {
-    // Initialize essential cookies
-    initializeEssentialCookies();
+  // useEffect(() => {
+  //   // Initialize essential cookies
+  //   initializeEssentialCookies();
 
-    // Check and update all consent states
-    const timeoutId = setTimeout(() => {
-      updateAllConsentStates();
-    }, 2500); // Wait for GA to be fully initialized
+  //   // Check and update all consent states
+  //   const timeoutId = setTimeout(() => {
+  //     updateAllConsentStates();
+  //   }, 2500); // Wait for GA to be fully initialized
 
-    return () => clearTimeout(timeoutId);
-  }, []);
+  //   return () => clearTimeout(timeoutId);
+  // }, []);
 
   // Google Ads Conversion Tracking (Footer Script)
   // useEffect(() => {
@@ -152,7 +152,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
-        <CookieConsent />
+        {/* <CookieConsent /> */}
         <ClarityScript />
       </body>
     </html>
