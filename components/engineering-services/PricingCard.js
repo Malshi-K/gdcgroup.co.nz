@@ -105,13 +105,6 @@ const PricingCard = () => {
       console.log("HubSpot API response:", responseData);
 
       if (response.ok) {
-        // Track form submission conversion if needed
-        // if (typeof window !== "undefined" && window.gtag) {
-        //   window.gtag("event", "conversion", {
-        //     send_to: "AW-742615805/LaiLCKf31asaEPjA3II_",
-        //   });
-        // }
-
         setFormStatus("success");
         setFormMessage("");
         setFormData({

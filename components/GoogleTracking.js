@@ -11,6 +11,7 @@ const DEBUG_MODE = true // Toggle this for debugging
 const IS_PRODUCTION =
   typeof window !== 'undefined' &&
   window.location.hostname === 'gdcgroup.co.nz'
+// const IS_PRODUCTION = true
 
 // Debug logger with styled console output
 const logAnalytics = (action, data) => {

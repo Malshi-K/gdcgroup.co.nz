@@ -8,6 +8,7 @@ export default function ThankYouPage() {
     console.log("Thank you page loaded");
 
     let retries = 0;
+    const maxRetries = 10;
 
     const triggerConversion = () => {
       if (typeof window !== "undefined" && window.gtag) {
@@ -22,11 +23,12 @@ export default function ThankYouPage() {
         });
 
         console.log("Google Ads conversion triggered");
-      } else if (retries < 10) {
+      } else if (retries < maxRetries) {
         retries++;
         console.log("gtag not ready yet");
-
         setTimeout(triggerConversion, 500);
+      } else {
+        console.warn("[Thank You] gtag never became available after 10 retries. Google Ads conversion not fired.");
       }
     };
 

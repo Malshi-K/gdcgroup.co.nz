@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import Image from "next/image";
+import { hasMarketingCookieConsent } from "@/utils/cookieUtils";
 
 // const blockKeywords = [
 //   // General job terms
@@ -113,10 +114,14 @@ const getKeywordVariants = (keyword = "") => {
 
   const words = normalizedKeyword.split(" ");
   const lastWord = words[words.length - 1];
-  const singularVariant = [...words.slice(0, -1), toSingular(lastWord)].join(" ");
+  const singularVariant = [...words.slice(0, -1), toSingular(lastWord)].join(
+    " ",
+  );
   const pluralVariant = [...words.slice(0, -1), toPlural(lastWord)].join(" ");
 
-  return Array.from(new Set([normalizedKeyword, singularVariant, pluralVariant]));
+  return Array.from(
+    new Set([normalizedKeyword, singularVariant, pluralVariant]),
+  );
 };
 
 // const normalizedBlockKeywords = Array.from(
@@ -152,7 +157,7 @@ const ContactSection = () => {
           setIsVisible(false); // Reset for re-animation when scrolling back
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     const currentRef = sectionRef.current;
@@ -222,26 +227,16 @@ const ContactSection = () => {
         },
       };
 
+      // 1. Send data to HubSpot
       await axios.post(url, payload, {
         headers: {
           "Content-Type": "application/json",
         },
       });
 
-      const transactionId =
-        Date.now() + "-" + Math.random().toString(36).substring(2, 9);
-
-     if (typeof window !== "undefined" && window.gtag) {
-       window.gtag("event", "conversion", {
-         send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-         transaction_id: transactionId,
-         value: 4.0,
-         currency: "NZD",
-       });
-     }
-
       console.log("HubSpot form submission successful");
 
+      // 2. Clear the form state
       setSubmitted(true);
       setFormData({
         firstname: "",
@@ -250,10 +245,29 @@ const ContactSection = () => {
         email: "",
         message: "",
       });
-      // Redirect to thank you page
-      setTimeout(() => {
+
+      const transactionId = Date.now() + "-" + Math.random().toString(36).substring(2, 9);
+
+      const marketingConsent = hasMarketingCookieConsent();
+
+      // 3. Send data to Google Ads for conversion tracking
+      if (typeof window !== "undefined" && window.gtag && marketingConsent) {
+        console.log("[Conversion Debug] Sending conversion with consent");
+        window.gtag("event", "conversion", {
+          send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+          transaction_id: transactionId,
+          value: 4.0,
+          currency: "NZD",
+          event_callback: function () {
+            router.push("/thank-you");
+          },
+        });
+        setTimeout(() => {
+          router.push("/thank-you");
+        }, 2000);
+      } else {
         router.push("/thank-you");
-      }, 1500);
+      }
     } catch (error) {
       setError("There was an error submitting the form. Please try again.");
       console.error("Error submitting to HubSpot:", error);
