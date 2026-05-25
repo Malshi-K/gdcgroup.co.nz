@@ -227,37 +227,22 @@ const ContactSection = () => {
         },
       };
 
-      // 1. Send data to HubSpot
+      // 1. ALWAYS submit to HubSpot
       await axios.post(url, payload, {
         headers: {
           "Content-Type": "application/json",
         },
       });
 
-      console.log("HubSpot form submission successful");
-
-      // 2. Clear the form state
-      setSubmitted(true);
-      setFormData({
-        firstname: "",
-        lastname: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
-
-      const transactionId = Date.now() + "-" + Math.random().toString(36).substring(2, 9);
-
-      const marketingConsent = hasMarketingCookieConsent();
-
-      // 3. Send data to Google Ads for conversion tracking
-      if (typeof window !== "undefined" && window.gtag && marketingConsent) {
-        console.log("[Conversion Debug] Sending conversion with consent");
+      // 2. ALWAYS fire Google Ads conversion (regardless of consent)
+      const transactionId = Date.now().toString();
+      
+      if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "conversion", {
           send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-          transaction_id: transactionId,
           value: 4.0,
           currency: "NZD",
+          transaction_id: transactionId,
           event_callback: function () {
             router.push("/thank-you");
           },
