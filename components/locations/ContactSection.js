@@ -234,25 +234,38 @@ const ContactSection = () => {
         },
       });
 
-      // 2. ALWAYS fire Google Ads conversion (regardless of consent)
+      // 2. ALWAYS fire Google Ads conversion (with fixed callback handling)
       const transactionId = Date.now().toString();
-      
       if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "conversion", {
-          send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-          value: 4.0,
-          currency: "NZD",
-          transaction_id: transactionId,
-          event_callback: function () {
-            router.push("/thank-you");
-          },
+        console.log(
+          "[Conversion Debug] Form submitted, tracking conversion...",
+        );
+        // Update the Consent
+        window.gtag("consent", "update", {
+          ad_storage: "granted",
+          ad_user_data: "granted",
+          ad_personalization: "granted",
         });
-        setTimeout(() => {
-          router.push("/thank-you");
-        }, 2000);
-      } else {
-        router.push("/thank-you");
+        await new Promise((resolve) => {
+          let isResolved = false;
+          const done = () => {
+            if (!isResolved) {
+              isResolved = true;
+              resolve();
+            }
+          };
+          window.gtag("event", "conversion", {
+            send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+            value: 4.0,
+            currency: "NZD",
+            transaction_id: transactionId,
+            event_callback: done,
+          });
+          setTimeout(done, 1500);
+        });
       }
+      // 3. Now successfully navigate to the Thank You page, allowing the browser to handle it
+      router.push("/thank-you");
     } catch (error) {
       setError("There was an error submitting the form. Please try again.");
       console.error("Error submitting to HubSpot:", error);

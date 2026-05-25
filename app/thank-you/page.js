@@ -1,40 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
 
 export default function ThankYouPage() {
-  useEffect(() => {
-    console.log("Thank you page loaded");
-
-    let retries = 0;
-    const maxRetries = 10;
-
-    const triggerConversion = () => {
-      if (typeof window !== "undefined" && window.gtag) {
-        const transactionId =
-          Date.now() + "-" + Math.random().toString(36).substring(2, 9);
-
-        window.gtag("event", "conversion", {
-          send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-          transaction_id: transactionId,
-          value: 4.0,
-          currency: "NZD",
-        });
-
-        console.log("Google Ads conversion triggered");
-      } else if (retries < maxRetries) {
-        retries++;
-        console.log("gtag not ready yet");
-        setTimeout(triggerConversion, 500);
-      } else {
-        console.warn("[Thank You] gtag never became available after 10 retries. Google Ads conversion not fired.");
-      }
-    };
-
-    triggerConversion();
-  }, []);
-
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] bg-white text-black p-8">
       <h1 className="text-2xl md:text-3xl font-bold text-customBlue mb-4">
