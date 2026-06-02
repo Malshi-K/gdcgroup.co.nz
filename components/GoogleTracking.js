@@ -8,7 +8,11 @@ import { hasAnalyticsCookieConsent, hasMarketingCookieConsent } from "@/utils/co
 const GA_MEASUREMENT_ID = "G-9YLKY3BK26";
 const ADS_CONVERSION_ID = "AW-742615805";
 const DEBUG_MODE = true; 
-const IS_PRODUCTION = typeof window !== "undefined" && window.location.hostname === "gdcgroup.co.nz";
+const IS_PRODUCTION =
+  process.env.NODE_ENV === "production" &&
+  typeof window !== "undefined" &&
+  (window.location.hostname === "gdcgroup.co.nz" ||
+    window.location.hostname === "www.gdcgroup.co.nz");
 // const IS_PRODUCTION = true;
 
 const logAnalytics = (action, data) => {

@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import axios from "axios";
 import Image from "next/image";
-import { hasMarketingCookieConsent } from "@/utils/cookieUtils";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +15,6 @@ const ContactSection = () => {
     message: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -84,37 +82,32 @@ const ContactSection = () => {
         headers: { "Content-Type": "application/json" },
       });
 
-      // 2. Conditionally fire Google Ads conversion based on user preferences
+      // 2. Fire Google Ads conversion after successful form submission
       if (typeof window !== "undefined" && window.gtag) {
-        const marketingConsent = hasMarketingCookieConsent();
-        
-        if (marketingConsent) {
-          console.log("[Conversion Debug] Marketing consent allowed. Sending tracking signal...");
-          const transactionId = Date.now().toString();
+        const transactionId = Date.now().toString();
 
-          await new Promise((resolve) => {
-            let isResolved = false;
-            const done = () => {
-              if (!isResolved) {
-                isResolved = true;
-                resolve();
-              }
-            };
-            
-            window.gtag("event", "conversion", {
-              send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-              value: 4.0,
-              currency: "NZD",
-              transaction_id: transactionId,
-              event_callback: done,
-            });
-            
-            // Force progress if network lag stops Google's callback from firing within 1 second
-            setTimeout(done, 1000); 
+        await new Promise((resolve) => {
+          let isResolved = false;
+          const done = () => {
+            if (!isResolved) {
+              isResolved = true;
+              resolve();
+            }
+          };
+
+          window.gtag("event", "conversion", {
+            send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+            value: 4.0,
+            currency: "NZD",
+            transaction_id: transactionId,
+            event_callback: done,
           });
-        } else {
-          console.log("[Conversion Debug] Conversion tracking skipped: User denied marketing cookies.");
-        }
+
+          // Force progress if network lag stops Google's callback from firing within 1 second
+          setTimeout(done, 1000);
+        });
+      } else {
+        console.log("[Conversion Debug] Google tag not available on submit.");
       }
 
       // 3. Successful execution path clear, redirect

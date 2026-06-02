@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTracking from "@/components/GoogleTracking";
 import ClarityScript from "@/components/ClarityScript";
+import CookieConsent from "@/components/cookie/CookieConsent";
 import "@/app/globals.css";
 
 export default function RootLayout({ children }) {
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         {!isEngineeringServicesPage && <Header />}
         <main>{children}</main>
         <Footer />
+        <CookieConsent />
         <ScrollToTop />
         <ClarityScript />
       </body>
