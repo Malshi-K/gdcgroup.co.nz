@@ -82,33 +82,33 @@ const ContactSection = () => {
         headers: { "Content-Type": "application/json" },
       });
 
-      // 2. Fire Google Ads conversion after successful form submission
-      if (typeof window !== "undefined" && window.gtag) {
-        const transactionId = Date.now().toString();
-
-        await new Promise((resolve) => {
-          let isResolved = false;
-          const done = () => {
-            if (!isResolved) {
-              isResolved = true;
-              resolve();
-            }
-          };
-
-          window.gtag("event", "conversion", {
-            send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
-            value: 4.0,
-            currency: "NZD",
-            transaction_id: transactionId,
-            event_callback: done,
-          });
-
-          // Force progress if network lag stops Google's callback from firing within 1 second
-          setTimeout(done, 1000);
-        });
-      } else {
-        console.log("[Conversion Debug] Google tag not available on submit.");
-      }
+      // 2. Google Ads conversion tracking commented out — handled via Google Tag Manager
+      // if (typeof window !== "undefined" && window.gtag) {
+      //   const transactionId = Date.now().toString();
+      //
+      //   await new Promise((resolve) => {
+      //     let isResolved = false;
+      //     const done = () => {
+      //       if (!isResolved) {
+      //         isResolved = true;
+      //         resolve();
+      //       }
+      //     };
+      //
+      //     window.gtag("event", "conversion", {
+      //       send_to: "AW-742615805/RGWiCIamnIEbEP3VjeIC",
+      //       value: 4.0,
+      //       currency: "NZD",
+      //       transaction_id: transactionId,
+      //       event_callback: done,
+      //     });
+      //
+      //     // Force progress if network lag stops Google's callback from firing within 1 second
+      //     setTimeout(done, 1000);
+      //   });
+      // } else {
+      //   console.log("[Conversion Debug] Google tag not available on submit.");
+      // }
 
       // 3. Successful execution path clear, redirect
       router.push("/thank-you");
