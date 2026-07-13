@@ -1,21 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["6187835.fs1.hubspotusercontent-na1.net"],
     remotePatterns: [
       {
         protocol: "https",
         hostname: "6187835.fs1.hubspotusercontent-na1.net",
-        port: "",
         pathname: "/hubfs/**",
       },
-    ],    
+      {
+        protocol: "https",
+        hostname: "6187835.fs1.hubspotusercontent-ap1.net",
+        pathname: "/hubfs/**",
+      },
+    ],
   },
   async rewrites() {
     return [
       {
-        source: '/services/:path*',
-        destination: '/services/:path*',
+        source: "/services/:path*",
+        destination: "/services/:path*",
       },
     ];
   },
