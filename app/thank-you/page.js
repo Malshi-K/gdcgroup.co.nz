@@ -9,7 +9,7 @@ export default function ThankYouPage() {
         Thank you for your message!
       </h1>
       <p className="text-lg text-gray-700 mb-6">
-        We appreciate you contacting GDC Consultants (Asia) Ltd. Our team will get back
+        We appreciate you contacting GDC Consultants Ltd. Our team will get back
         to you as soon as possible.
       </p>
       <Link
