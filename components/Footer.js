@@ -344,7 +344,7 @@ export default function Footer() {
                 </a>
                 &nbsp;(the &quot;Website&quot;). These terms and conditions
                 (&quot;Terms&quot;) govern your access to and use of the Website
-                operated by GDC Consultants Ltd. (&quot;we,&quot;
+                operated by GDC Consultants (Asia) Ltd. (&quot;we,&quot;
                 &quot;us,&quot; &quot;our&quot;). By accessing or using the
                 Website, you agree to comply with and be bound by these Terms.
                 If you do not agree to these Terms, please do not use our
@@ -371,13 +371,13 @@ export default function Footer() {
               <p className="text-gray-800">
                 All content on the Website, including but not limited to text,
                 graphics, logos, images, software, and other materials, is the
-                intellectual property of GDC Consultants Ltd. or its licensors.
+                intellectual property of GDC Consultants (Asia) Ltd. or its licensors.
                 You may not reproduce, distribute, or use the content for any
                 commercial purposes without our prior written consent.
               </p>
               <p className="text-gray-800">
                 The trademarks, logos, and service marks displayed on the
-                Website are the property of GDC Consultants Ltd. or third
+                Website are the property of GDC Consultants (Asia) Ltd. or third
                 parties. You are not permitted to use these marks without our
                 prior written permission or the respective third-party
                 owner&apos;s permission.
@@ -404,7 +404,7 @@ export default function Footer() {
                 4. Limitation of Liability
               </h3>
               <p className="text-gray-800">
-                To the fullest extent permitted by law, GDC Consultants Ltd.
+                To the fullest extent permitted by law, GDC Consultants (Asia) Ltd.
                 will not be liable for any direct, indirect, incidental,
                 special, or consequential damages arising from your use of or
                 inability to use the Website, including but not limited to
@@ -480,7 +480,7 @@ export default function Footer() {
                 9. Indemnification
               </h3>
               <p className="text-gray-800">
-                You agree to indemnify and hold harmless GDC Consultants Ltd.
+                You agree to indemnify and hold harmless GDC Consultants (Asia) Ltd.
                 and its affiliates, employees, agents, and licensors from any
                 claims, damages, liabilities, losses, costs, or expenses
                 (including reasonable legal fees) arising out of or related to
@@ -515,27 +515,13 @@ export default function Footer() {
                 If you have any questions about these Terms, please contact us
                 at:
               </p>
-              <p className="text-gray-800">GDC Consultants Ltd.</p>
-              <p className="text-gray-800">89 Church Road, Pukete, Hamilton</p>
+              <p className="text-gray-800">GDC Consultants (Asia) Ltd.</p>
               <p className="text-gray-800">
                 <a
                   href="mailto:info@gdcgroup.co.nz"
                   className="text-customBlue underline"
                 >
                   info@gdcgroup.co.nz
-                </a>
-              </p>
-              <p className="text-gray-800">
-                <a href="tel:078380090" className="text-customBlue underline">
-                  07 838 0090
-                </a>
-              </p>
-              <p className="text-gray-800">
-                <a
-                  href="https://gdcgroup.co.nz"
-                  className="text-customBlue underline"
-                >
-                  gdcgroup.co.nz
                 </a>
               </p>
             </div>

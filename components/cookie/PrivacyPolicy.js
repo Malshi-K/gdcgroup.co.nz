@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       </h1>
       <div className="text-justify max-w-4xl mx-auto space-y-6">
         <p className="text-gray-800 mb-6">
-          At GDC Consultants Ltd. (&quot;we,&quot; &quot;us,&quot;
+          At GDC Consultants (Asia) Ltd. (&quot;we,&quot; &quot;us,&quot;
           &quot;our&quot;), we are committed to protecting your privacy and
           ensuring that your personal information is handled in a safe and
           responsible manner. This privacy policy explains how we collect, use,
@@ -241,27 +241,13 @@ export default function PrivacyPolicy() {
             If you have any questions about this privacy policy or your personal
             information, please contact us at:
           </p>
-          <p className="text-gray-800">GDC Consultants Ltd.</p>
-          <p className="text-gray-800">89 Church Road, Pukete, Hamilton</p>
+          <p className="text-gray-800">GDC Consultants (Asia) Ltd.</p>
           <p className="text-gray-800">
             <a
               href="mailto:info@gdcgroup.co.nz"
               className="text-customBlue underline"
             >
               info@gdcgroup.co.nz
-            </a>
-          </p>
-          <p className="text-gray-800">
-            <a href="tel:078380090" className="text-customBlue underline">
-              07 838 0090
-            </a>
-          </p>
-          <p className="text-gray-800">
-            <a
-              href="https://gdcgroup.co.nz"
-              className="text-customBlue underline"
-            >
-              gdcgroup.co.nz
             </a>
           </p>
         </div>
