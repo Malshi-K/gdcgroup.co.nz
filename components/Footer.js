@@ -79,7 +79,7 @@ export default function Footer() {
       {
         root: null, // Observe the viewport
         threshold: 0.1, // Start loading when 10% of the footer is in view
-      }
+      },
     );
     observer.observe(footer);
   }, []);
@@ -371,9 +371,9 @@ export default function Footer() {
               <p className="text-gray-800">
                 All content on the Website, including but not limited to text,
                 graphics, logos, images, software, and other materials, is the
-                intellectual property of GDC Consultants (Asia) Ltd. or its licensors.
-                You may not reproduce, distribute, or use the content for any
-                commercial purposes without our prior written consent.
+                intellectual property of GDC Consultants (Asia) Ltd. or its
+                licensors. You may not reproduce, distribute, or use the content
+                for any commercial purposes without our prior written consent.
               </p>
               <p className="text-gray-800">
                 The trademarks, logos, and service marks displayed on the
@@ -404,8 +404,8 @@ export default function Footer() {
                 4. Limitation of Liability
               </h3>
               <p className="text-gray-800">
-                To the fullest extent permitted by law, GDC Consultants (Asia) Ltd.
-                will not be liable for any direct, indirect, incidental,
+                To the fullest extent permitted by law, GDC Consultants (Asia)
+                Ltd. will not be liable for any direct, indirect, incidental,
                 special, or consequential damages arising from your use of or
                 inability to use the Website, including but not limited to
                 damages for loss of profits, goodwill, data, or other intangible
@@ -424,9 +424,9 @@ export default function Footer() {
               <p className="text-gray-800">
                 The Website may contain links to third-party websites or
                 services that are not owned or controlled by GDC Consultants
-                Ltd. We have no control over and assume no responsibility for
-                the content, privacy policies, or practices of any third-party
-                websites or services.
+                (Asia) Ltd. We have no control over and assume no responsibility
+                for the content, privacy policies, or practices of any
+                third-party websites or services.
               </p>
               <p className="text-gray-800">
                 Your use of third-party websites is at your own risk, and you
@@ -480,9 +480,9 @@ export default function Footer() {
                 9. Indemnification
               </h3>
               <p className="text-gray-800">
-                You agree to indemnify and hold harmless GDC Consultants (Asia) Ltd.
-                and its affiliates, employees, agents, and licensors from any
-                claims, damages, liabilities, losses, costs, or expenses
+                You agree to indemnify and hold harmless GDC Consultants (Asia)
+                Ltd. and its affiliates, employees, agents, and licensors from
+                any claims, damages, liabilities, losses, costs, or expenses
                 (including reasonable legal fees) arising out of or related to
                 your use of the Website, your violation of these Terms, or your
                 violation of any rights of a third party.
