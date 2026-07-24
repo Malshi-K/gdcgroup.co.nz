@@ -54,6 +54,7 @@ const ServicesSection = ({ services }) => {
       "Architectural Design Services": HomeModernIcon,
       "Architectural Design": HomeModernIcon,
       "Architectural Design & Drafting": HomeModernIcon,
+      "Architectural Services & Building Consent Applications": HomeModernIcon,
 
       // Seismic services
       "Seismic Assessments & Building Strengthening": ShieldCheckIcon,
@@ -66,9 +67,17 @@ const ServicesSection = ({ services }) => {
       "Council Consent Support": ClipboardDocumentListIcon,
       "Environmental Planning": ClipboardDocumentListIcon,
       "Planning & Surveying Services": MapIcon,
+      "Resource Consent, Subdivisions & Environmental Planning": ClipboardDocumentListIcon,
 
       // Surveying
       "Surveying Services": MagnifyingGlassIcon,
+      "Land Surveying & Project Management": MagnifyingGlassIcon,
+
+      // Geotechnical / Structural / Civil / Fire (suburb pages)
+      "Geotechnical Engineering, Soil Testing & Site Inspections": ScaleIcon,
+      "Structural Engineering, Seismic Assessments & Heritage Buildings": BuildingOfficeIcon,
+      "Fire Engineering & Safety Compliance": ShieldCheckIcon,
+      "Civil Engineering, Stormwater & Three Waters": TruckIcon,
 
       // Subdivision/Development
       "Subdivision/ Land Development": BriefcaseIcon,

@@ -1,6 +1,7 @@
 // components/location-sections/AreasServedSection.js
 
 import React from 'react';
+import Link from 'next/link';
 
 const AreasServedSection = ({ areasServed }) => {
   if (!areasServed) return null;
@@ -13,11 +14,25 @@ const AreasServedSection = ({ areasServed }) => {
         <p className="text-lg text-gray-700 text-center mb-8">{areasServed.subtitle}</p>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
-          {areasServed.areas.map((area, index) => (
-            <div key={index} className="bg-white rounded-lg p-4 text-center shadow-sm">
-              <p className="text-gray-700 font-medium">{area}</p>
-            </div>
-          ))}
+          {areasServed.areas.map((area, index) => {
+            const name = typeof area === 'string' ? area : area.name;
+            const href = typeof area === 'object' ? area.href : null;
+
+            return (
+              <div key={index} className="bg-white rounded-lg p-4 text-center shadow-sm">
+                {href ? (
+                  <Link
+                    href={href}
+                    className="text-customBlue font-medium hover:text-customYellow transition-colors"
+                  >
+                    {name}
+                  </Link>
+                ) : (
+                  <p className="text-gray-700 font-medium">{name}</p>
+                )}
+              </div>
+            );
+          })}
         </div>
         
         {areasServed.conclusion && (
