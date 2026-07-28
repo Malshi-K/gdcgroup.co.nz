@@ -75,9 +75,26 @@ const ServicesSection = ({ services }) => {
 
       // Geotechnical / Structural / Civil / Fire (suburb pages)
       "Geotechnical Engineering, Soil Testing & Site Inspections": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Land Hazard Reports": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Land Reports": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Hazard Checks": ScaleIcon,
       "Structural Engineering, Seismic Assessments & Heritage Buildings": BuildingOfficeIcon,
+      "Structural Engineering, Seismic Assessments & Character Buildings": BuildingOfficeIcon,
+      "Structural Engineering & Structural Designs": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Safety": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Assessments": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Evaluations": BuildingOfficeIcon,
       "Fire Engineering & Safety Compliance": ShieldCheckIcon,
       "Civil Engineering, Stormwater & Three Waters": TruckIcon,
+      "Civil Engineering, Drainage & Three Waters Infrastructure": TruckIcon,
+      "Civil Engineering, Drainage & Three Waters Management": TruckIcon,
+      "Architectural Services & Building Consent Processing": HomeModernIcon,
+      "Architectural Services & Building Consent Submissions": HomeModernIcon,
+      "Land Surveying & Construction Management": MagnifyingGlassIcon,
+      "Land Surveying & Construction Oversight": MagnifyingGlassIcon,
+      "Land Surveying & Construction Project Oversight": MagnifyingGlassIcon,
+      "Resource Consent, Subdivisions & Environmental Planning": ClipboardDocumentListIcon,
+      "Resource Consents, Subdivisions & Environmental Services": ClipboardDocumentListIcon,
 
       // Subdivision/Development
       "Subdivision/ Land Development": BriefcaseIcon,

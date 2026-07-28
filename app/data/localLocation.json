@@ -68,13 +68,21 @@
           "name": "Waikato DHB – Wairoa Building seismic",
           "description": "GDC provided Structural Design services for the Molecular Labs Accommodation Project. This included alterations to Level 3 and Level 4 of the Wairoa Building, covering Developed Design, Detailed Design, and Construction Monitoring.",
           "image": "/images/projects/9.webp",
-          "labels": ["Structural", "Medical"]
+          "labels": [
+            "Structural",
+            "Medical"
+          ]
         },
         {
           "name": "Ray Staiger Building",
           "description": "GDC completed a Topographical Survey, Three Waters Design, Pavement Design, Drawings, and Documentation to support Building Consent. GDC completed a Geotechnical Investigation and Report, Structural Engineering Design including calculations, drawings, specifications, PS1, Independent Peer Review (PS2), and Construction Monitoring for this project.",
           "image": "/images/projects/commercial/5.webp",
-          "labels": ["Structural", "Geotechnical", "Three Waters", "Commercial"]
+          "labels": [
+            "Structural",
+            "Geotechnical",
+            "Three Waters",
+            "Commercial"
+          ]
         }
       ]
     },
@@ -95,6 +103,34 @@
         {
           "name": "Hamilton Central",
           "href": "/locations/hamilton-head-office/hamilton-central"
+        },
+        {
+          "name": "Rototuna",
+          "href": "/locations/hamilton-head-office/rototuna"
+        },
+        {
+          "name": "Nawton",
+          "href": "/locations/hamilton-head-office/nawton"
+        },
+        {
+          "name": "Huntington",
+          "href": "/locations/hamilton-head-office/huntington"
+        },
+        {
+          "name": "Hamilton East",
+          "href": "/locations/hamilton-head-office/hamilton-east"
+        },
+        {
+          "name": "Frankton",
+          "href": "/locations/hamilton-head-office/frankton"
+        },
+        {
+          "name": "Dinsdale",
+          "href": "/locations/hamilton-head-office/dinsdale"
+        },
+        {
+          "name": "Chartwell",
+          "href": "/locations/hamilton-head-office/chartwell"
         },
         "Hamilton City & CBD",
         "Rototuna & Flagstaff",
@@ -422,6 +458,1940 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "A resource consent typically requires an Assessment of Environmental Effects (AEE), civil plans, Three Waters assessments, and sometimes traffic or soil contamination reports (PSI/DSI). GDC Group prepares and submits the complete application directly to the council on your behalf."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rototuna": {
+    "id": "rototuna",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Rototuna",
+    "subtitle": "Your Complete Development & Engineering Partner in Rototuna",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group provides surveying, resource consent planning, civil and structural engineering, and architectural design services under one roof in Rototuna — from house designs and townhouses to geotechnical testing, Three Waters, and building consents.",
+    "description": "GDC Group provides complete surveying, resource consent planning, civil and structural engineering, and architectural design services under one roof in Rototuna. Serving one of Hamilton's fastest-growing suburban hubs characterized by modern residential subdivisions, top-rated schools, and vibrant neighborhood shopping centers our team manages everything from new house designs, townhouse developments, and retail fitouts to geotechnical soil testing, Three Waters stormwater infrastructure, traffic reports, and building consents.",
+    "introduction": "Rototuna is a thriving suburban growth engine on the northern edge of Hamilton. Defined by contemporary master-planned housing, high-performing schools, and expanding retail centers like Rototuna Village, the area sees continuous demand for high-quality residential builds, section subdivisions, and commercial upgrades. When planning a build in Rototuna, juggling separate architects, geotechnical consultants, structural engineers, and land planners often leads to project friction, communication breakdowns, and delays with the Hamilton City Council.",
+    "locationDescription": "GDC Group takes a streamlined, all-in-one approach. We bring architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners together within a single team.",
+    "serviceArea": "Having one coordinated consultancy simplifies your workflow, eliminates costly design mismatches, speeds up council consent approvals, and ensures your project progresses smoothly from concept design to final inspection.",
+    "services": {
+      "title": "Full Spectrum Consultancy Services for Rototuna",
+      "subtitle": "Complete multi-disciplinary support for residential, retail, and commercial projects across Rototuna and northern Hamilton.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Processing",
+          "description": "From modern multi-bedroom family homes to vibrant commercial spaces in local retail hubs.",
+          "features": [
+            "Residential Projects: Custom modern house plans, high-density residential designs, townhouses, duplexes, secondary dwellings (granny flats), and home extension concepts.",
+            "Commercial & Retail: Retail store fitouts and alterations, commercial office spaces, industrial buildings, warehouse designs, farm sheds, pole sheds, and landscape planning.",
+            "Consents & Documentation: Detailed working drawings, structural drafting, and full building consent management submitted directly to council."
+          ]
+        },
+        {
+          "name": "Geotechnical Soil Testing, Inspections & Land Hazard Reports",
+          "description": "Rototuna's varied soil types and ongoing ground development require precise site evaluations to guarantee foundation stability.",
+          "features": [
+            "Soil Testing & Investigations: Comprehensive soil testing, soil bearing capacity reports, pre-purchase due diligence reports, and site stability checks.",
+            "Geotechnical Risk Analysis: Liquefaction risk assessments, slope stability analysis, ground movement checks, and technical hazard reports.",
+            "Engineering Inspections & Certifications: On-site inspections, structural damage evaluations, insurance checks, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering & Structural Designs",
+          "description": "Ensure your residential or commercial build meets modern building standards, bank conditions, and insurance requirements.",
+          "features": [
+            "Seismic & Structural Assessments: Initial (IEP/ISA) and Detailed Seismic Assessments (DSA reports) for local commercial blocks, medical centers, and educational facilities.",
+            "Structural Engineering Design: Foundation designs, pile systems, engineered rib raft slabs, retaining wall structures, portal frames, warehouse designs, bridge assessments, and seismic bracing.",
+            "Specialized Evaluations: Wind load calculations, structural evaluations, and independent engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Tailored fire safety engineering for high-occupancy commercial venues, schools, and multi-unit developments.",
+          "features": [
+            "Comprehensive fire safety strategy reports and emergency egress planning.",
+            "Post-event fire damage inspections and structural insurance assessment reports.",
+            "Independent fire safety peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Drainage & Three Waters Infrastructure",
+          "description": "Delivering efficient stormwater and infrastructure layouts designed to meet council capacity requirements.",
+          "features": [
+            "Three Waters & Stormwater: Stormwater design, flood risk modeling, soakage testing, soakhole and soakpit engineering, and Three Waters network connections.",
+            "Wastewater & Environmental: Septic tank system design, effluent disposal fields, wastewater engineering, rainwater harvesting setups, and wetland management.",
+            "Access & Pavements: Civil design for residential driveway accessways, multi-unit carparks, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Effortlessly navigating Hamilton's District Plan, medium-density residential standards, and subdivision requirements.",
+          "features": [
+            "Resource Consent Approvals: Full resource consent preparation, environmental hazard assessments, and Assessment of Environmental Effects (AEE) reports.",
+            "Environmental Site Investigations: Soil contamination testing including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) reports.",
+            "Subdivision Planning: Modern urban subdivisions, rural land development engineering, roading and access designs, traffic impact reports, and traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Construction Management",
+          "description": "End-to-end guidance ensuring your build remains organized, compliant, and on budget.",
+          "features": [
+            "Land Surveying: On-site boundary surveys, topographical mapping, and subdivision lot layouts.",
+            "Project Management: Tender document preparation, procurement strategy, schedules of quantities, and complete construction supervision."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Rototuna Capabilities Overview",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "Modern house plans, townhouses, retail fitouts, consents",
+          "applications": "New residential subdivision builds, shopping center fitouts"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil test reports, PS1–PS4 certificates, PSI/DSI check",
+          "applications": "Pre-construction soil checks, rib raft foundation design"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP assessments, retaining walls, foundation engineering",
+          "applications": "New residential foundations, commercial strengthening"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire compliance reports, damage assessments, peer reviews",
+          "applications": "Multi-unit residential developments, retail venue compliance"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater design, flood assessments, soakage testing",
+          "applications": "High-density stormwater management, accessway approvals"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Infill section subdivisions, medium-density consent approvals"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Rototuna?",
+      "reasons": [
+        "All-in-one team — architecture, geotech, structural, civil, fire, and planning under one roof",
+        "One coordinated consultancy that eliminates design mismatches and speeds up council approvals",
+        "Deep familiarity with Hamilton City Council processes for Rototuna's growth suburbs",
+        "Specialist experience with modern subdivisions, townhouses, and retail centre fitouts",
+        "End-to-end delivery from concept design through to final inspection"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why choose an integrated team for a residential development in Rototuna?",
+          "answer": "When architectural designers, structural engineers, civil specialists, and planners collaborate in-house at GDC Group, project communication is direct and efficient. This prevents design oversights, streamlines the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+        },
+        {
+          "question": "What consents do I need to build a duplex or townhouse in Rototuna?",
+          "answer": "Building a multi-unit dwelling or subdividing a lot in Rototuna typically requires both a resource consent (including an Assessment of Environmental Effects, civil stormwater plans, and traffic assessments) and a building consent with structural engineering sign-off. GDC Group manages both processes from start to finish."
+        },
+        {
+          "question": "Why is geotechnical soil testing crucial before building in Rototuna?",
+          "answer": "Rototuna features a mix of ground conditions that demand correct foundation design—such as engineered rib raft slabs. Hamilton City Council requires a certified geotechnical soil report and bearing capacity check (PS1) to ensure the ground can support your structure safely."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Rototuna, Hamilton, NZ.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Rototuna",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "House Plans and Townhouse Design",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "House plans, townhouses, duplexes, retail shop fitouts, home extensions, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI environmental contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, foundation engineering, retaining wall design, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, driveway accessway designs, traffic reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, residential subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/rototuna/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why choose an integrated team for residential development in Rototuna?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architectural designers, structural engineers, civil specialists, and planners collaborate in-house at GDC Group, project communication is direct and efficient. This prevents design oversights, streamlines the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What consents do I need to build a duplex or townhouse in Rototuna?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Building a multi-unit dwelling or subdividing a lot in Rototuna typically requires both a resource consent (including an Assessment of Environmental Effects, civil stormwater plans, and traffic assessments) and a building consent with structural engineering sign-off. GDC Group manages both processes from start to finish."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is geotechnical soil testing crucial before building in Rototuna?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rototuna features a mix of ground conditions that demand correct foundation design—such as engineered rib raft slabs. Hamilton City Council requires a certified geotechnical soil report and bearing capacity check (PS1) to ensure the ground can support your structure safely."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "nawton": {
+    "id": "nawton",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Nawton",
+    "subtitle": "Your Single-Source Development Partner in Nawton",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group provides surveying, resource consent planning, civil and structural engineering, and architectural design under one roof in Nawton — from house plans and infill housing to geotechnical reports, Three Waters, and building consents.",
+    "description": "GDC Group provides complete surveying, resource consent planning, civil and structural engineering, and architectural design under one roof in Nawton. Serving this established residential suburb known for its vibrant community hubs, family parks, and local schools, our team manages everything from residential house plans, infill housing, and section subdivisions to geotechnical soil reports, Three Waters stormwater management, driveways, and building consents.",
+    "introduction": "Nawton is one of Hamilton's largest residential suburbs, offering a welcoming, family-oriented atmosphere with abundant parklands, local schools, and active community facilities. As property owners in the area look to build modern family homes, construct secondary dwellings (granny flats), or subdivide sections to maximize land value, balancing multiple consultants can cause project friction and unexpected costs.",
+    "locationDescription": "We make property development simple and efficient. We integrate architects, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into one collaborative team.",
+    "serviceArea": "Working with a single consultancy eliminates miscommunication between trades, accelerates building and resource consents with the Hamilton City Council, and keeps your project moving seamlessly from initial concept to site sign-off.",
+    "services": {
+      "title": "Complete Building & Engineering Solutions for Nawton",
+      "subtitle": "Complete multi-disciplinary support for residential builds, infill housing, and local commercial projects across Nawton.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Submissions",
+          "description": "From custom modern homes and family extensions to multi-unit developments.",
+          "features": [
+            "Residential Projects: Custom house plans, concept designs, modern family homes, home alterations/additions, granny flats, duplexes, and multi-unit residential plans.",
+            "Commercial & Local Services: Shop fitouts and alterations, commercial/industrial building and shed designs, warehouse designs, farm shed designs, pole shed designs, and landscape planning.",
+            "Consents & Drafting: Complete working drawings, structural details, and full building consent applications submitted on your behalf."
+          ]
+        },
+        {
+          "name": "Geotechnical Soil Testing, Inspections & Land Reports",
+          "description": "Ensuring ground stability before construction is vital for safe and compliant building in Nawton.",
+          "features": [
+            "Soil Testing & Investigations: Comprehensive soil reports, soil bearing capacity checks, pre-purchase due diligence reports, and site investigations.",
+            "Land Hazards & Risk Analysis: Liquefaction assessments, slope stability analysis, land slip inspections, and detailed stability reports.",
+            "Engineering Inspections & Certificates: Site evaluations, insurance assessment reports, fire damage evaluations, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering & Seismic Safety",
+          "description": "Protecting your structural investment and satisfying council, bank, and insurance standards.",
+          "features": [
+            "Seismic Evaluations: Initial Seismic Assessments (IEP/ISA) and Detailed Seismic Assessments (DSA reports) for commercial, educational, and community structures.",
+            "Structural Design: Custom foundation designs, pile layouts, rib raft slab designs, retaining wall designs, portal frame structures, warehouse designs, bridge designs/assessments, and seismic restraints.",
+            "Specialized Reports: Wind loading assessments, structural condition reports, and independent structural peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Customized fire safety engineering for local commercial facilities, schools, and multi-residential builds.",
+          "features": [
+            "Customized fire engineering reports and life-safety strategy designs.",
+            "Post event fire damage inspections and insurance assessment reports.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Drainage & Three Waters Infrastructure",
+          "description": "Delivering effective stormwater, wastewater, and access solutions for residential developments.",
+          "features": [
+            "Three Waters Infrastructure: Stormwater design, flood assessments, soakage testing, soakhole and soakpit designs, and Three Waters capacity evaluations.",
+            "Wastewater & Environmental: Septic tank design, effluent field layouts, wastewater designs, rainwater harvesting setups, and wetland designs.",
+            "Driveways & Accessways: Civil engineering for multi-unit accessways, carpark layouts, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Steering projects through Hamilton City Council's District Plan, subdivision rules, and zoning regulations.",
+          "features": [
+            "Resource Consent Approvals: Complete resource consent application preparation, environmental hazard assessments, and Assessment of Environmental Effects (AEE) reports.",
+            "Environmental Site Assessments: Soil contamination checks including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) reports.",
+            "Subdivision Engineering: Infill urban subdivisions, rural subdivision design, accessway and road design, traffic impact assessments, and specialized traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Construction Oversight",
+          "description": "Providing hands-on management from initial site measurement through to completion.",
+          "features": [
+            "Land Surveying: Boundary identification, topographical surveying, and subdivision lot layouts.",
+            "Project & Construction Management: Tender document preparation, procurement guidance, schedule of quantities, and total construction supervision."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Nawton Capabilities Overview",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "House plans, granny flats, multi-unit designs, consents",
+          "applications": "Home extensions, infill housing, community shop fitouts"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil testing, PS1–PS4 certificates, PSI/DSI reports",
+          "applications": "Foundation safety checks, pre-purchase due diligence"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP assessments, retaining walls, foundation design",
+          "applications": "Structural upgrades, retaining walls, residential foundations"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire compliance reports, damage checks, peer reviews",
+          "applications": "Community venue compliance, multi-unit fire safety"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater designs, flood assessments, soakage testing",
+          "applications": "Infill site drainage, driveway approvals, soakage systems"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Backyard section subdivisions, council consent approvals"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Nawton?",
+      "reasons": [
+        "All-in-one team — architecture, geotech, structural, civil, fire, and planning under one roof",
+        "Single consultancy that eliminates miscommunication and accelerates Hamilton City Council consents",
+        "Specialist experience with family homes, granny flats, and backyard section subdivisions",
+        "Deep familiarity with Nawton's residential character and District Plan requirements",
+        "End-to-end delivery from initial concept through to site sign-off"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why hire a multidisciplinary team for a building project in Nawton?",
+          "answer": "When architectural designers, structural engineers, geotechnical specialists, and land planners work together within the same team at GDC Group, communication is seamless. This eliminates design clashes, minimizes council delays, speeds up building consents with the Hamilton City Council, and keeps your project within budget."
+        },
+        {
+          "question": "Do I need a resource consent to subdivide a section in Nawton?",
+          "answer": "Yes. Subdividing a section to create an extra residential lot or building multi-unit infill housing requires a resource consent and an Assessment of Environmental Effects (AEE) under the Hamilton District Plan. We manage the entire consent process from initial site planning to final submission."
+        },
+        {
+          "question": "What geotechnical reports are required before laying a foundation in Nawton?",
+          "answer": "Hamilton City Council usually requires a geotechnical soil report and bearing capacity check to ensure the ground can support your foundation especially for infill developments or areas with variable soil. GDC Group performs on-site soil testing and provides the required PS1 producer statements for building consent sign-off."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Nawton, Hamilton, NZ.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Nawton",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "House Plans and Granny Flats",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "Custom house plans, granny flats, multi-unit designs, alterations, shop fitouts, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil testing reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, retaining wall designs, foundation engineering, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, driveway accessway designs, traffic reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, residential subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/nawton/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why hire a multidisciplinary team for a building project in Nawton?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architectural designers, structural engineers, geotechnical specialists, and land planners work together within the same team at GDC Group, communication is seamless. This eliminates design clashes, minimizes council delays, speeds up building consents with the Hamilton City Council, and keeps your project within budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a resource consent to subdivide a section in Nawton?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Subdividing a section to create an extra residential lot or building multi-unit infill housing requires a resource consent and an Assessment of Environmental Effects (AEE) under the Hamilton District Plan. GDC Group manages the entire consent process from initial site planning to final submission."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What geotechnical reports are required before laying a foundation in Nawton?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hamilton City Council usually requires a geotechnical soil report and bearing capacity check to ensure the ground can support your foundation—especially for infill developments or areas with variable soil. GDC Group performs on-site soil testing and provides the required PS1 producer statements for building consent sign-off."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "huntington": {
+    "id": "huntington",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Huntington",
+    "subtitle": "Your Single-Source Development Partner in Huntington",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group offers integrated surveying, resource consent planning, structural and civil engineering, and architectural design under one roof in Huntington — from luxury house plans and subdivisions to geotechnical testing, Three Waters, and building consents.",
+    "description": "GDC Group offers integrated surveying, resource consent planning, structural and civil engineering, and architectural design under one roof in Huntington. Serving this modern, sought-after residential suburb located close to Rototuna and Chartwell amenities, our multidisciplinary team handles custom luxury house plans, home alterations, section subdivisions, geotechnical soil testing, Three Waters stormwater design, and building consent approvals.",
+    "introduction": "Huntington is one of Hamilton's most desirable residential neighborhoods, celebrated for its modern housing stock, quality streetscapes, and convenient proximity to the commercial hubs of both Rototuna and Chartwell. As property owners in Huntington seek to construct bespoke luxury homes, add high-end alterations, or subdivide residential land, coordinating separate consultants frequently introduces friction, delays, and unexpected costs.",
+    "locationDescription": "GDC Group does things differently. We bring architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineering consultants, and land planners under one roof.",
+    "serviceArea": "Having a single point of contact simplifies your project workflow, eliminates miscommunication between trades, accelerates building and resource consents with the Hamilton City Council, and keeps your project moving smoothly from preliminary draft to final sign-off.",
+    "services": {
+      "title": "Full-Spectrum Consultancy Services in Huntington",
+      "subtitle": "Complete multi-disciplinary support for luxury homes, alterations, and residential subdivisions across Huntington.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Applications",
+          "description": "From custom luxury residences to modern suburban infill housing, we deliver detailed concept plans and complete working drawings.",
+          "features": [
+            "Residential Projects: Architectural house plans, high-spec concept designs, modern family homes, house additions/renovations, duplexes, and secondary dwellings (granny flats).",
+            "Commercial & Local Spaces: Shop fitouts and alterations, commercial building plans, warehouse designs, industrial sheds, farm shed designs, pole sheds, and landscape planning.",
+            "Documentation & Approvals: Complete working drawings, structural drafting, and full building consent applications managed directly on your behalf."
+          ]
+        },
+        {
+          "name": "Geotechnical Engineering, Soil Testing & Site Inspections",
+          "description": "Huntington's varied soil profiles require clear technical data to ensure long-term foundation performance.",
+          "features": [
+            "Soil Testing & Reports: Site soil testing, soil bearing capacity reports, pre-purchase due diligence assessments, and comprehensive land evaluations.",
+            "Land Stability & Risk Analysis: Liquefaction risk assessments, slope stability analysis, ground movement checks, and technical stability reports.",
+            "Inspections & Certifications: Engineering site inspections, insurance assessment reports, fire damage evaluations, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering & Seismic Assessments",
+          "description": "Protect your real estate investment, keep occupants safe, and fulfill bank or insurance compliance requirements.",
+          "features": [
+            "Seismic Assessments: Initial Seismic Assessments (IEP/ISA) and Detailed Seismic Assessments (DSA reports) for modern commercial properties and community buildings.",
+            "Structural & Foundation Design: Custom foundation engineering, pile designs, engineered rib raft slabs, retaining wall designs, portal frames, warehouse designs, bridge assessments, and seismic restraints.",
+            "Specialised Analysis: Wind load assessments, structural condition evaluations, and independent structural peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Fire safety strategies tailored for multi-unit housing developments and commercial spaces.",
+          "features": [
+            "Comprehensive fire engineering reports and custom life-safety strategies.",
+            "Post-event fire damage inspections and structural insurance assessment reports.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Drainage & Three Waters Management",
+          "description": "Keeping your site environmentally compliant and aligned with local infrastructure capacity.",
+          "features": [
+            "Three Waters & Stormwater: Stormwater layout design, flood hazard assessments, soakage testing, soakhole and soakpit engineering, and Three Waters capacity evaluations.",
+            "Wastewater & Environmental: Septic tank designs, effluent field planning, wastewater engineering, rainwater collection systems, and wetland management.",
+            "Driveways & Accessways: Civil engineering for driveway layouts, multi-unit carparks, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Effortlessly navigating the Hamilton District Plan, density standards, and subdivision requirements.",
+          "features": [
+            "Resource Consent Approvals: Full resource consent application preparation, environmental hazard assessment reports, and Assessment of Environmental Effects (AEE) documentation.",
+            "Site Contamination Assessments: Soil checks including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) reports.",
+            "Subdivisions & Infrastructure: Urban residential subdivisions, rural land development engineering, road design, accessway layouts, traffic assessments, and traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Project Management",
+          "description": "End-to-end delivery ensuring your project stays on schedule and within budget.",
+          "features": [
+            "Surveying: On-site land surveying, boundary identification, and topographical surveys for development projects.",
+            "Project Management: Preparing tender documents, procurement strategies, schedules of quantities, and complete construction oversight."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Huntington Capabilities",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "Custom house plans, granny flats, multi-unit designs, consents",
+          "applications": "Luxury new builds, home extensions, residential infill"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil test reports, PS1–PS4 certificates, PSI/DSI checks",
+          "applications": "Foundation checks, rib raft design, pre-purchase checks"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP evaluations, retaining walls, foundation designs",
+          "applications": "Residential foundations, retaining structures, structural upgrades"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire compliance reports, damage checks, peer reviews",
+          "applications": "Multi-unit housing safety, commercial venue compliance"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater designs, flood assessments, soakage testing",
+          "applications": "On-site drainage solutions, driveway access approvals"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Backyard section subdivisions, residential consent approvals"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Huntington?",
+      "reasons": [
+        "All-in-one team — architecture, geotech, structural, civil, fire, and planning under one roof",
+        "Single point of contact that simplifies workflow and accelerates Hamilton City Council consents",
+        "Specialist experience with luxury homes, high-end alterations, and residential subdivisions",
+        "Deep familiarity with Huntington's modern housing character and District Plan requirements",
+        "End-to-end delivery from preliminary draft through to final sign-off"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why choose an all-in-one team for a project in Huntington?",
+          "answer": "When architects, structural engineers, geotechnical specialists, and planners collaborate in-house at GDC Group, communication is direct and efficient. This eliminates design clashes, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+        },
+        {
+          "question": "Do I need a geotechnical soil report before building or extending in Huntington?",
+          "answer": "Yes. Hamilton City Council typically requires a certified geotechnical soil report and bearing capacity check (PS1) to ensure ground stability—especially for new house builds or high-load additions. GDC Group conducts on-site soil testing and delivers the required producer statements."
+        },
+        {
+          "question": "How do I subdivide a residential section in Huntington?",
+          "answer": "Subdividing a lot to create an additional dwelling or residential lot requires a resource consent with an Assessment of Environmental Effects (AEE), civil engineering plans for stormwater management, and boundary surveys. GDC Group handles the entire subdivision submission process on your behalf."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Huntington, Hamilton, NZ.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Huntington",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "Custom House Plans",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "Custom house plans, concept designs, home additions, granny flats, multi-unit plans, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil testing reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, retaining wall designs, foundation engineering, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, driveway accessway designs, traffic reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, residential subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/huntington/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why choose an all-in-one team for a project in Huntington?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architects, structural engineers, geotechnical specialists, and planners collaborate in-house at GDC Group, communication is direct and efficient. This eliminates design clashes, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a geotechnical soil report before building or extending in Huntington?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Hamilton City Council typically requires a certified geotechnical soil report and bearing capacity check (PS1) to ensure ground stability—especially for new house builds or high-load additions. GDC Group conducts on-site soil testing and delivers the required producer statements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I subdivide a residential section in Huntington?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Subdividing a lot to create an additional dwelling or residential lot requires a resource consent with an Assessment of Environmental Effects (AEE), civil engineering plans for stormwater management, and boundary surveys. GDC Group handles the entire subdivision submission process on your behalf."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "hamilton-east": {
+    "id": "hamilton-east",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Hamilton East",
+    "subtitle": "Your All in One Development Partner in Hamilton East",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group delivers surveying, resource consent/planning, engineering, and architectural services under one roof in Hamilton East — from character home extensions and shop fitouts to seismic assessments, Three Waters, and project management.",
+    "description": "GDC Group delivers complete surveying, resource consent/planning, engineering, and architectural services under one roof in Hamilton East. Servicing this vibrant, historic riverside suburb home to character villas, bustling cafés, and access to the Hamilton Gardens, our team handles everything from character home extensions, shop fitouts, and subdivisions to geotechnical soil reports, seismic assessments (DSA/IEP), fire engineering, Three Waters stormwater design, traffic reports, and project management.",
+    "introduction": "Hamilton East is one of the city's most iconic neighborhoods. Known for its rich history, tree-lined streets, character villas, thriving local cafés, and close proximity to the Waikato River and Hamilton Gardens, it is a suburb experiencing active revitalization. Whether you're extending a heritage villa, designing a modern infill residential development, or upgrading a commercial property along Grey Street, coordinating multiple separate consultants can lead to miscommunication and frustrating council delays.",
+    "locationDescription": "GDC Group simplifies the entire process. We bring surveying, architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineers, and land planners together under one roof.",
+    "serviceArea": "Having a single point of contact speeds up your Hamilton City Council approvals and keeps your project running smoothly from initial concept to final sign-off.",
+    "services": {
+      "title": "Our Full Range of Services in Hamilton East",
+      "subtitle": "Complete multi-disciplinary support for character homes, Grey Street retail, and riverside infill projects across Hamilton East.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Applications",
+          "description": "Balancing modern living with the unique architectural charm of Hamilton East requires thoughtful design.",
+          "features": [
+            "Residential Projects: Custom house plans, concept plans, new home designs, character house additions/alterations, granny flats, and high-density apartments/duplexes.",
+            "Commercial & Retail: Shop fitouts and alterations, office redesigns, commercial and industrial building/shed designs, warehouse designs, farm shed designs, pole shed designs, and landscape designs.",
+            "Consents & Drafting: Complete architectural drafting services and building consent applications managed directly on your behalf."
+          ]
+        },
+        {
+          "name": "Geotechnical Engineering, Soil Testing & Site Inspections",
+          "description": "Given Hamilton East's riverside location and varied soil conditions, proper ground investigation is essential before building or extending.",
+          "features": [
+            "Soil Testing & Reports: Soil reports, soil tests, soil bearing capacity checks, and pre purchase due diligence reports.",
+            "Land Stability & Hazards: Liquefaction and slope stability assessments/analysis, land slip inspections, and land stability reports.",
+            "Inspections & Certifications: Engineering inspections, engineering assessment reports, post-event fire damage reports, insurance inspections, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering, Seismic Assessments & Character Buildings",
+          "description": "Hamilton East features many older character homes and commercial structures that require expert structural care.",
+          "features": [
+            "Seismic Assessments: IEP/ISA reports, Detailed Seismic Assessments (DSA reports), earthquake reports, and specialized engineering assessments for heritage and vintage properties.",
+            "Structural & Retrofit Design: Seismic retrofit designs, concept design, portal designs, warehouse designs, bridge designs/assessments by experienced bridge engineers, and seismic restraints.",
+            "Foundations & Wall Design: Retaining wall designs, foundation designs, pile designs, and rib raft designs.",
+            "Specialised Analysis: Wind assessments, engineering reports, and independent structural peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Protecting occupants and satisfying compliance across commercial spaces, multi unit builds, and heritage restorations.",
+          "features": [
+            "Custom fire engineering reports and tailored safety solutions.",
+            "Fire damage reports and engineering assessments for insurance claims.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Stormwater & Three Waters",
+          "description": "Ensure your property handles drainage and infrastructure requirements seamlessly near the Waikato River catchment.",
+          "features": [
+            "Three Waters & Stormwater: Stormwater design, stormwater assessments, soakage testing, soakhole designs, soakpit designs, flood assessments/reports, and Three Waters assessments.",
+            "Wastewater & Environmental: Septic tank design, effluent field designs, wastewater designs, rainwater harvesting systems, wetland design, and effluent pond designs.",
+            "Pavement & Traffic: Civil engineering for carpark designs, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Navigating character zone overlays, infill rules, and Hamilton City Council District Plan rules.",
+          "features": [
+            "Resource Consent Approvals: Preparing complete resource consent applications, hazard assessment reports, and Assessment of Environmental Effects (AEE) applications/reports.",
+            "Environmental Inspections: Site contamination reports and environmental assessments, including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) reports.",
+            "Subdivisions & Infrastructure: Urban subdivisions, rural subdivision design, land development engineering, road design, accessway designs, traffic assessments, traffic reports, and specialized traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Project Management",
+          "description": "End to end management ensuring your project stays on schedule and on budget.",
+          "features": [
+            "Surveying: On site land surveying and boundary determinations for infill and expansion projects.",
+            "Project & Construction Management: Preparing tender documents, procurement strategies, tender evaluations, preparing schedules of quantities, and complete construction oversight."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Hamilton East Capabilities",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "House alterations, shop fitouts, duplexes, building consents",
+          "applications": "Villa extensions, Grey St retail upgrades, infill housing"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil reports, PS1–PS4 certificates, PSI/DSI reports",
+          "applications": "Slope stability near river zones, foundation design checks"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP assessments, seismic retrofits, retaining walls",
+          "applications": "Older home strengthening, commercial building retrofits"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire safety reports, fire damage reports, peer reviews",
+          "applications": "Commercial renovations, multi unit residential compliance"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater, flood assessments, carparks, traffic reports",
+          "applications": "Infill site drainage, flood plain impact assessments"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Subdividing residential lots, historic character consents"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Hamilton East?",
+      "reasons": [
+        "All-in-one team — surveying, architecture, engineering, fire, and planning under one roof",
+        "Single point of contact that speeds up Hamilton City Council approvals",
+        "Specialist experience with character villas, Grey Street retail, and riverside sites",
+        "Deep familiarity with heritage overlays and District Plan rules in Hamilton East",
+        "End-to-end delivery from initial concept through to final sign-off"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why choose an all-in-one team for a project in Hamilton East?",
+          "answer": "When architects, engineers, and planners collaborate under one roof, communication is seamless. This prevents costly design oversights, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your budget intact."
+        },
+        {
+          "question": "How do character overlays in Hamilton East affect my home extension or subdivision?",
+          "answer": "Hamilton East has specific heritage and character residential guidelines. Renovations or subdivisions often require a resource consent with an Assessment of Environmental Effects (AEE). GDC Group manages the design and council consent application process to ensure your plans meet local rules smoothly."
+        },
+        {
+          "question": "Do older commercial properties in Hamilton East require a Detailed Seismic Assessment (DSA)?",
+          "answer": "Yes. Banks, insurers, and council rules often require a DSA or IEP report for older or heritage commercial buildings to verify their %NBS (New Building Standard) rating. We provide comprehensive seismic reports and design practical retrofits when strengthening is needed."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton East.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Hamilton East",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "Character Home Renovations & Extensions",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "Custom house plans, villa extensions, concept plans, shop fitouts, commercial office alterations, duplexes/apartments, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI environmental contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, heritage building evaluations, seismic retrofit designs, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, carpark designs, traffic impact reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/hamilton-east/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why choose an all-in-one team for a project in Hamilton East?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architects, engineers, and planners collaborate under one roof at GDC Group, communication is seamless. This prevents costly design oversights, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your budget intact."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do character overlays in Hamilton East affect my home extension or subdivision?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hamilton East has specific heritage and character residential guidelines. Renovations or subdivisions often require a resource consent with an Assessment of Environmental Effects (AEE). GDC Group manages the design and council consent application process to ensure your plans meet local rules smoothly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do older commercial properties in Hamilton East require a Detailed Seismic Assessment (DSA)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Banks, insurers, and council rules often require a DSA or IEP report for older or heritage commercial buildings to verify their %NBS (New Building Standard) rating. GDC Group provides comprehensive seismic reports and designs practical retrofits when strengthening is needed."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "frankton": {
+    "id": "frankton",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Frankton",
+    "subtitle": "Your All-in-One Development Partner in Frankton",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group provides surveying, resource consent/planning, engineering, and architectural services under one roof in Frankton — from industrial warehouse designs and shop fitouts to seismic assessments, Three Waters, and project management.",
+    "description": "GDC Group provides complete surveying, resource consent/planning, engineering, and architectural services under one roof in Frankton. Servicing this busy transport and commercial hub known for its railway heritage and thriving local services, our team handles everything from industrial warehouse designs, shop fitouts, and subdivisions to geotechnical soil reports, seismic assessments (DSA/IEP), fire engineering, Three Waters stormwater design, traffic reports, and project management.",
+    "introduction": "Frankton stands as one of Hamilton's most important commercial, light industrial, and transport hubs. With its rich railway history, busy retail corridors along Commerce Street, and expanding industrial parks, Frankton is a vital engine for local businesses and services. Whether you're designing a new industrial warehouse, refitting a retail shop, upgrading an older commercial building for seismic compliance, or subdividing a residential plot, managing multiple separate consultants often creates communication gaps and costly council delays.",
+    "locationDescription": "GDC Group streamlines your development. We bring surveying, architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineers, and land planners under one roof.",
+    "serviceArea": "Having a single point of contact speeds up your Hamilton City Council approvals and keeps your project moving seamlessly from preliminary sketch to final site sign-off.",
+    "services": {
+      "title": "Our Full Range of Services in Frankton",
+      "subtitle": "Complete multi-disciplinary support for industrial, commercial, and residential projects across Frankton.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Applications",
+          "description": "From industrial sheds and commercial retail spaces to modern residential housing, we deliver detailed concept plans and complete working drawings.",
+          "features": [
+            "Commercial & Industrial: Commercial and industrial building/shed designs, warehouse designs, shop fitouts and alterations, office alterations, fitout work, farm shed designs, pole shed designs, and landscape designs.",
+            "Residential Projects: Custom house plans, concept plans, new designs, apartments/duplexes designs, house additions/alterations, and granny flats.",
+            "Documentation & Approvals: Full drafting services and complete building consent applications managed directly on your behalf."
+          ]
+        },
+        {
+          "name": "Geotechnical Engineering, Soil Testing & Site Inspections",
+          "description": "Frankton's mixed industrial and transport land uses demand reliable ground data before breaking ground.",
+          "features": [
+            "Soil Testing & Reports: Soil reports, soil tests, soil bearing capacity checks, and due diligence reports for prospective buyers.",
+            "Land Stability & Hazards: Liquefaction and slope stability assessments/analysis, land slip inspections, and land stability reports.",
+            "Inspections & Certifications: Engineering inspections, engineering assessment reports, post-event fire damage reports, insurance inspections, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering, Seismic Assessments & Heritage Buildings",
+          "description": "Protect your real estate investment, support heavy commercial operations, and satisfy bank or insurance requirements.",
+          "features": [
+            "Seismic Assessments: IEP/ISA reports, Detailed Seismic Assessments (DSA reports), earthquake reports, and specialized engineering assessments for historic railway-era and commercial properties.",
+            "Structural & Retrofit Design: Seismic retrofit designs, concept design, portal designs, warehouse designs, bridge designs/assessments by experienced bridge engineers, and seismic restraints.",
+            "Foundations & Wall Design: Retaining wall designs, foundation designs, pile designs, and rib raft designs.",
+            "Specialised Analysis: Wind assessments, engineering reports, and independent structural peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Essential fire safety solutions for high-occupancy commercial venues, industrial warehouses, and storage facilities.",
+          "features": [
+            "Custom fire engineering reports and tailored safety solutions.",
+            "Fire damage reports and engineering assessments for insurance claims.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Stormwater & Three Waters",
+          "description": "Keep your commercial site environmentally sound and compliant with local infrastructure standards.",
+          "features": [
+            "Three Waters & Stormwater: Stormwater design, stormwater assessments, soakage testing, soakhole designs, soakpit designs, flood assessments/reports, and Three Waters assessments.",
+            "Wastewater & Environmental: Septic tank design, effluent field designs, wastewater designs, rainwater harvesting systems, wetland design, and effluent pond designs.",
+            "Pavement & Traffic: Civil engineering for heavy-vehicle carpark designs, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Navigating industrial zoning rules, transport overlays, and Hamilton City Council District Plan regulations.",
+          "features": [
+            "Resource Consent Approvals: Preparing full resource consent applications, hazard assessment reports, and Assessment of Environmental Effects (AEE) applications/reports.",
+            "Environmental Inspections: Site contamination reports and environmental assessments, including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) reports.",
+            "Subdivisions & Infrastructure: Urban subdivisions, rural subdivision design, land development engineering, road design, accessway designs, traffic assessments, traffic reports, and specialized traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Project Management",
+          "description": "End to end delivery ensuring your commercial or residential build stays on time and within budget.",
+          "features": [
+            "Surveying: On-site land surveying and boundary determinations for development projects.",
+            "Project & Construction Management: Preparing tender documents, procurement strategies, tender evaluations, preparing schedules of quantities, and complete construction oversight."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Frankton Capabilities",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "Warehouse designs, shop fitouts, industrial sheds, building consents",
+          "applications": "Commercial upgrades, industrial fitouts, retail alterations"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil reports, PS1–PS4 certificates, PSI/DSI reports",
+          "applications": "Pre-purchase due diligence, heavy foundation design checks"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP assessments, portal designs, seismic retrofits",
+          "applications": "Industrial strengthening, railway heritage upgrades"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire safety reports, fire damage reports, peer reviews",
+          "applications": "Warehouse compliance, commercial renovations"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater, flood assessments, carparks, traffic reports",
+          "applications": "Heavy transport access, commercial site drainage"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Commercial subdivisions, industrial zoning consents"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Frankton?",
+      "reasons": [
+        "All-in-one team — surveying, architecture, engineering, fire, and planning under one roof",
+        "Single point of contact that speeds up Hamilton City Council approvals",
+        "Specialist experience with industrial warehouses, Commerce Street retail, and transport sites",
+        "Deep familiarity with industrial zoning, traffic overlays, and contamination assessments",
+        "End-to-end delivery from preliminary sketch through to final site sign-off"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why choose an all-in-one team for a project in Frankton?",
+          "answer": "When architects, structural engineers, geotechnical specialists, and planners collaborate under one roof at GDC Group, communication is seamless. This prevents costly design conflicts, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+        },
+        {
+          "question": "Do commercial and industrial buildings in Frankton require a Detailed Seismic Assessment (DSA)?",
+          "answer": "In many cases, yes. Property owners, tenants, banks, and insurers often require a DSA or IEP report to establish a building's %NBS (New Building Standard) rating—especially for older commercial structures or conversion projects. We carry out thorough assessments and design practical seismic retrofits."
+        },
+        {
+          "question": "How do traffic and contamination reports affect resource consents in Frankton?",
+          "answer": "Given Frankton's heavy transport links and industrial history, the Hamilton City Council often requests Traffic Impact Assessments and environmental contamination reports (PSI/DSI). GDC Group carries out these technical assessments in-house and submits the complete resource consent application on your behalf."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Frankton.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Frankton",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "Warehouse & Industrial Design",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "Warehouse designs, industrial sheds, shop fitouts, commercial office alterations, house plans, duplexes/apartments, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI environmental contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, heritage building evaluations, portal designs, seismic retrofit designs, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, carpark designs, traffic impact reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/frankton/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why choose an all-in-one team for a project in Frankton?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architects, structural engineers, geotechnical specialists, and planners collaborate under one roof at GDC Group, communication is seamless. This prevents costly design conflicts, speeds up the resource consent and building consent application process with Hamilton City Council, and keeps your project on budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do commercial and industrial buildings in Frankton require a Detailed Seismic Assessment (DSA)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In many cases, yes. Property owners, tenants, banks, and insurers often require a DSA or IEP report to establish a building's %NBS (New Building Standard) rating—especially for older commercial structures or conversion projects. GDC Group carries out thorough assessments and designs practical seismic retrofits."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do traffic and contamination reports affect resource consents in Frankton?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Given Frankton's heavy transport links and industrial history, the Hamilton City Council often requests Traffic Impact Assessments and environmental contamination reports (PSI/DSI). GDC Group carries out these technical assessments in-house and submits the complete resource consent application on your behalf."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "dinsdale": {
+    "id": "dinsdale",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Dinsdale",
+    "subtitle": "Your Integrated Development & Engineering Team in Dinsdale",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group offers full service surveying, resource consent planning, civil and structural engineering, and architectural design under one roof in Dinsdale — from house plans and granny flats to geotechnical reports, Three Waters, and building consents.",
+    "description": "GDC Group offers full service surveying, resource consent planning, civil and structural engineering, and architectural design under one roof in Dinsdale. Serving this established residential suburb known for its local schools, family parks, and bustling neighbourhood shopping centres, our team manages everything from residential house plans, granny flats, and property subdivisions to geotechnical soil reports, Three Waters stormwater management, driveways, and building consents.",
+    "introduction": "Dinsdale is one of Hamilton's most sought after residential suburbs, offering a strong community atmosphere, quality schools, expansive parks, and convenient neighbourhood shopping centers. As property owners look to upgrade existing homes, build granny flats, or subdivide residential sections to meet housing demand, managing multiple independent contractors can quickly become overwhelming.",
+    "locationDescription": "GDC Group takes the stress out of your building project. We house architects, structural engineers, geotechnical consultants, civil engineers, fire safety experts, and land planners together in one unified team.",
+    "serviceArea": "Having a single point of contact reduces design miscommunications, accelerates council sign-offs with Hamilton City Council, and keeps your project on track from first sketch to final sign-off.",
+    "services": {
+      "title": "Comprehensive Consultancy Services for Dinsdale Properties",
+      "subtitle": "Complete multi-disciplinary support for home extensions, granny flats, and neighbourhood commercial projects across Dinsdale.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Processing",
+          "description": "Whether you're planning a family home extension, a minor dwelling, or a small commercial refurbishment.",
+          "features": [
+            "Residential Projects: Custom house plans, concept designs, modern family homes, house additions/alterations, granny flats, duplexes, and multi-unit apartment designs.",
+            "Commercial & Retail: Neighbourhood shop fitouts and alterations, office redesigns, commercial/industrial building and shed designs, warehouse designs, farm shed designs, pole shed designs, and landscape planning.",
+            "Consent Applications: Professional drafting services and complete building consent documentation submitted directly to council."
+          ]
+        },
+        {
+          "name": "Geotechnical Soil Testing, Inspections & Hazard Checks",
+          "description": "Before breaking ground in Dinsdale, thorough site testing ensures your foundations are safe and compliant.",
+          "features": [
+            "Soil Testing & Ground Analysis: Soil reports, soil bearing capacity checks, pre-purchase due diligence reports, and site investigations.",
+            "Stability & Risk Assessments: Liquefaction analysis, slope stability assessments, land slip inspections, and detailed stability reports.",
+            "Engineering Certifications: Site inspections, engineering evaluation reports, fire damage reports, insurance inspections, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering & Seismic Evaluations",
+          "description": "Ensure structural safety, extend the lifespan of your property, and meet lender requirements.",
+          "features": [
+            "Seismic Assessments: Initial (IEP/ISA) and Detailed Seismic Assessments (DSA reports) for commercial properties and local community buildings.",
+            "Structural Design: Custom foundation designs, pile designs, rib raft slabs, retaining wall designs, portal frame structures, warehouse designs, bridge designs/assessments, and seismic restraints.",
+            "Peer Reviews & Reports: Wind load assessments, structural condition reports, and independent engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Tailored fire safety designs for local shops, multi-unit residential units, and commercial premises.",
+          "features": [
+            "Custom fire safety engineering reports and life-safety strategy designs.",
+            "Post event fire damage inspections and insurance evaluation reports.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Drainage & Three Waters Infrastructure",
+          "description": "Ensure your residential or commercial site handles stormwater and local infrastructure demands without issue.",
+          "features": [
+            "Three Waters & Drainage: Stormwater design, flood risk assessments, soakage testing, soakhole and soakpit designs, and Three Waters capacity evaluations.",
+            "Wastewater Management: Septic tank design, effluent field layouts, wastewater management, rainwater harvesting setups, and wetland designs.",
+            "Access & Pavements: Civil engineering for driveway accessways, neighbourhood carpark layouts, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consents, Subdivisions & Environmental Services",
+          "description": "Navigating Hamilton's District Plan rules, residential density overlays, and environmental regulations.",
+          "features": [
+            "Resource Consent Approvals: Full resource consent preparation, environmental hazard assessments, and Assessment of Environmental Effects (AEE) reports.",
+            "Environmental Site Checks: Preliminary Site Investigations (PSI) and Detailed Site Investigations (DSI) for soil contamination and hazard management.",
+            "Subdivision Planning: Urban residential subdivisions, rural subdivision engineering, accessway and roading design, traffic impact reports, and traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Construction Project Oversight",
+          "description": "Keeping your build organized, compliant, and cost-effective from day one.",
+          "features": [
+            "Land Surveying: Boundary identification, site surveys, and subdivision lot layouts.",
+            "Project & Construction Management: Tender document preparation, procurement guidance, schedule of quantities, and complete construction oversight."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Dinsdale Capability Overview",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "House plans, granny flats, shop fitouts, building consents",
+          "applications": "Home extensions, minor dwellings, retail updates"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil reports, PS1–PS4 certificates, PSI/DSI reports",
+          "applications": "Pre-purchase checks, foundation design, slope stability"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP assessments, retaining walls, foundation designs",
+          "applications": "Earthquake assessments, retaining structures, home strengthening"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire compliance reports, damage assessments, peer reviews",
+          "applications": "Local commercial refurbishments, multi-unit compliance"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater, flood assessments, accessways, traffic reports",
+          "applications": "Infill site drainage, driveway approvals, soakage testing"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Subdividing backyards, residential density approvals"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Dinsdale?",
+      "reasons": [
+        "All-in-one team — architecture, geotech, structural, civil, fire, and planning under one roof",
+        "Single point of contact that reduces miscommunications and accelerates council sign-offs",
+        "Specialist experience with home extensions, granny flats, and backyard subdivisions",
+        "Deep familiarity with Dinsdale's residential character and District Plan density rules",
+        "End-to-end delivery from first sketch through to final sign-off"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why hire an integrated consultancy for a home project in Dinsdale?",
+          "answer": "When architectural designers, structural engineers, civil specialists, and planners work together within the same team at GDC Group, project communication is seamless. This prevents design clashes, reduces council rework, speeds up building consents with Hamilton City Council, and keeps your project within budget."
+        },
+        {
+          "question": "Do I need a resource consent to build a granny flat or subdivide in Dinsdale?",
+          "answer": "Depending on your site size, boundary setbacks, and local zoning under the Hamilton District Plan, adding a minor dwelling or subdividing a section often requires resource consent alongside an Assessment of Environmental Effects (AEE). We handle the complete planning and application process on your behalf."
+        },
+        {
+          "question": "What soil testing is needed before building an extension in Dinsdale?",
+          "answer": "Hamilton City Council typically requires a soil report and bearing capacity check to verify foundation requirements especially in areas with tricky ground or slope conditions. We conduct complete geotechnical soil testing and issue the required PS1 producer statements for building consent approval."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Dinsdale.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Dinsdale",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "House Plans and Granny Flats",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "House plans, granny flats, concept designs, home alterations, shop fitouts, duplexes/apartments, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil testing reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI environmental contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, retaining wall designs, foundation engineering, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood risk assessments, soakage testing, driveway accessway designs, traffic reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, residential subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/dinsdale/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why hire an integrated consultancy for a home project in Dinsdale?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architectural designers, structural engineers, civil specialists, and planners work together within the same team at GDC Group, project communication is seamless. This prevents design clashes, reduces council rework, speeds up building consents with Hamilton City Council, and keeps your project within budget."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a resource consent to build a granny flat or subdivide in Dinsdale?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depending on your site size, boundary setbacks, and local zoning under the Hamilton District Plan, adding a minor dwelling or subdividing a section often requires a resource consent alongside an Assessment of Environmental Effects (AEE). GDC Group handles the complete planning and application process on your behalf."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What soil testing is needed before building an extension in Dinsdale?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hamilton City Council typically requires a soil report and bearing capacity check to verify foundation requirements—especially in areas with tricky ground or slope conditions. GDC Group conducts complete geotechnical soil testing and issues the required PS1 producer statements for building consent approval."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "chartwell": {
+    "id": "chartwell",
+    "parentSlug": "hamilton-head-office",
+    "title": "Architectural, Engineering & Planning Services in Chartwell",
+    "subtitle": "Your Integrated Development Partner in Chartwell",
+    "locationImage": "/images/locations/hamilton.jpg",
+    "metaDescription": "GDC Group delivers surveying, resource consent planning, structural/civil engineering, and architectural design under one roof in Chartwell — from house extensions and retail fitouts to geotechnical testing, Three Waters, and building consents.",
+    "description": "GDC Group delivers an end to end suite of surveying, resource consent planning, structural/civil engineering, and architectural design services under one roof in Chartwell. Catering to one of Hamilton's premier retail and residential hubs home to the Chartwell Shopping Centre and surrounding family neighborhoods our team manages everything from house extensions, duplex designs, and retail alterations to geotechnical soil testing, Three Waters stormwater solutions, traffic assessments, and building consents.",
+    "introduction": "Chartwell is a key commercial and residential anchor on the eastern side of the Waikato River. Known for its bustling retail precinct around Chartwell Shopping Centre, top-rated schools, and quiet suburban streets, Chartwell is continuously evolving through residential infill, shop fitouts, and property modernizations. Whether you're refurbishing a retail space near the shopping center, building a multi-unit townhouse development, or extending a suburban family home, managing separate designers, engineers, and planners usually results in project bottlenecks and unnecessary council delays.",
+    "locationDescription": "GDC Group streamlines the entire process. We integrate architects, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into one cohesive team.",
+    "serviceArea": "Having a single, experienced point of contact eliminates miscommunications, speeds up approvals with the Hamilton City Council, and keeps your project moving efficiently from conceptual sketch to final code compliance.",
+    "services": {
+      "title": "Our Complete Service Spectrum in Chartwell",
+      "subtitle": "Complete multi-disciplinary support for retail precinct updates, townhouses, and suburban home projects across Chartwell.",
+      "serviceList": [
+        {
+          "name": "Architectural Services & Building Consent Processing",
+          "description": "From commercial retail updates near the shopping hub to high-density modern housing, we provide full working drawings and submission management.",
+          "features": [
+            "Commercial & Retail: Retail store fitouts and alterations, office redesigns, commercial building plans, warehouse designs, industrial sheds, farm shed designs, pole shed designs, and site landscape layouts.",
+            "Residential Builds: Custom home designs, concept plans, house extensions/additions, secondary dwellings (granny flats), duplexes, townhouses, and multi-unit apartment plans.",
+            "Documentation & Consents: Complete architectural drafting and hassle-free building consent management directly with council."
+          ]
+        },
+        {
+          "name": "Geotechnical Soil Testing, Inspections & Land Hazard Reports",
+          "description": "Chartwell's varied topography and ground conditions require accurate subsurface testing to protect foundation integrity.",
+          "features": [
+            "Soil Analysis & Reports: Soil testing, ground bearing capacity reports, pre-purchase due diligence reports, and site stability checks.",
+            "Hazard & Slope Assessment: Liquefaction risk evaluations, slope stability modeling, landslip inspections, and comprehensive geotechnical hazard reports.",
+            "Engineering Certifications: On-site inspections, insurance evaluations, fire damage reports, and producer statements (PS1, PS2, and PS4 certificates)."
+          ]
+        },
+        {
+          "name": "Structural Engineering & Seismic Safety",
+          "description": "Protect your property investment, maintain occupant safety, and satisfy bank or insurer guidelines.",
+          "features": [
+            "Seismic Assessments: Initial Seismic Assessments (IEP/ISA reports) and Detailed Seismic Assessments (DSA reports) for retail properties, commercial blocks, and community facilities.",
+            "Structural Engineering: Custom foundation design, pile layouts, rib raft slabs, retaining wall engineering, portal frame structures, warehouse designs, bridge designs/assessments, and seismic bracing design.",
+            "Peer Reviews & Analysis: Wind load reports, structural stability evaluations, and independent engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Fire Engineering & Safety Compliance",
+          "description": "Tailored fire safety designs for retail venues, high-occupancy commercial properties, and residential complexes.",
+          "features": [
+            "Comprehensive fire safety engineering reports and life-safety compliance plans.",
+            "Insurance-related fire damage inspections and structural assessment reports.",
+            "Independent fire engineering peer reviews."
+          ]
+        },
+        {
+          "name": "Civil Engineering, Drainage & Three Waters Management",
+          "description": "Ensure your commercial site or residential section handles stormwater and infrastructure demands cleanly.",
+          "features": [
+            "Three Waters & Stormwater: Stormwater design, flood hazard assessments, soakage testing, soakhole and soakpit engineering, and Three Waters network capacity assessments.",
+            "Wastewater & Environmental: Septic tank designs, effluent field planning, wastewater engineering, rainwater collection systems, and wetland designs.",
+            "Carparking & Access: Civil layout designs for retail carparks, residential driveway accessways, engineering certifications, and peer reviews."
+          ]
+        },
+        {
+          "name": "Resource Consent, Subdivisions & Environmental Planning",
+          "description": "Smoothly navigate the Hamilton District Plan, density standards, and council land regulations.",
+          "features": [
+            "Resource Consent Approvals: Full resource consent preparation, environmental hazard reports, and Assessment of Environmental Effects (AEE) documentation.",
+            "Site Environmental Checks: Soil contamination reports including Preliminary Site Investigation (PSI) and Detailed Site Investigation (DSI) evaluations.",
+            "Subdivisions & Traffic: Urban section subdivisions, rural land development engineering, roading/access design, traffic impact assessments, and traffic engineering."
+          ]
+        },
+        {
+          "name": "Land Surveying & Construction Oversight",
+          "description": "End-to-end project coordination to keep your build structured, on time, and within budget.",
+          "features": [
+            "Land Surveying: On site topographical surveys, boundary checks, and subdivision layouts.",
+            "Project Management: Tender preparation, procurement strategy, quantity estimations, and complete construction supervision."
+          ]
+        }
+      ]
+    },
+    "quickReference": {
+      "title": "Quick Reference: Chartwell Capabilities",
+      "headers": [
+        "Domain",
+        "Key Deliverables & Reports",
+        "Common Local Applications"
+      ],
+      "rows": [
+        {
+          "domain": "Architecture & Fitouts",
+          "deliverables": "Retail fitouts, townhouse layouts, house plans, building consents",
+          "applications": "Shopping precinct updates, residential extensions, infill housing"
+        },
+        {
+          "domain": "Geotechnical",
+          "deliverables": "Soil test reports, PS1–PS4 certificates, PSI/DSI reports",
+          "applications": "Pre-purchase checks, foundation safety, slope assessments"
+        },
+        {
+          "domain": "Structural & Seismic",
+          "deliverables": "DSA/IEP evaluations, retaining walls, foundation designs",
+          "applications": "Retail earthquake strengthening, retaining structures, new builds"
+        },
+        {
+          "domain": "Fire Engineering",
+          "deliverables": "Fire compliance reports, damage checks, peer reviews",
+          "applications": "Multi-unit housing safety, commercial shop fitouts"
+        },
+        {
+          "domain": "Civil & Three Waters",
+          "deliverables": "Stormwater designs, flood assessments, carpark plans",
+          "applications": "Commercial drainage, soakage testing, driveway access approvals"
+        },
+        {
+          "domain": "Planning & Management",
+          "deliverables": "Resource consents, AEE reports, subdivisions, project management",
+          "applications": "Backyard section subdivisions, high density residential consents"
+        }
+      ]
+    },
+    "whyChoose": {
+      "title": "Why Choose GDC in Chartwell?",
+      "reasons": [
+        "All-in-one team — architecture, geotech, structural, civil, fire, and planning under one roof",
+        "Single point of contact that eliminates miscommunications and speeds up council approvals",
+        "Specialist experience with Chartwell Shopping Centre retail fitouts and residential infill",
+        "Deep familiarity with Hamilton District Plan density standards and subdivision requirements",
+        "End-to-end delivery from conceptual sketch through to final code compliance"
+      ]
+    },
+    "contact": {
+      "title": "Contact Our Hamilton Office",
+      "address": "89 Church Road, Pukete, Hamilton 3200",
+      "mainContact": "Clement Fernando, Regional Manager",
+      "email": "hamilton@gdcgroup.co.nz",
+      "phone": "07 838 0090",
+      "mobile": "021 594 595",
+      "hours": "Monday-Friday, 8:30am-5:00pm",
+      "ctaText": "Request a Free Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "Why hire a unified consultancy for a development project in Chartwell?",
+          "answer": "When architectural designers, structural engineers, geotechnical consultants, and planning experts collaborate under one roof at GDC Group, project communication is direct and clear. This eliminates design oversights, streamlines the resource and building consent process with Hamilton City Council, and keeps project budgets on track."
+        },
+        {
+          "question": "Do retail fitouts near Chartwell Shopping Centre require building or fire consents?",
+          "answer": "In most cases, commercial alterations that modify layout, egress routes, or fire safety systems require both a building consent and a updated fire engineering strategy. GDC Group designs compliant fitout plans, handles the fire reports, and submits the consent documentation directly to the council."
+        },
+        {
+          "question": "What is required to subdivide a residential section in Chartwell?",
+          "answer": "Subdividing an existing section generally requires a resource consent featuring an Assessment of Environmental Effects (AEE), civil engineering plans (for stormwater and access), and geotechnical site testing. GDC Group manages the full subdivision process from initial site survey through to final council sign-off."
+        }
+      ]
+    },
+    "additionalLinks": {
+      "portfolio": "View our Hamilton Project Portfolio",
+      "team": "Meet our Hamilton Team"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gdcgroup.co.nz/#organization",
+          "name": "GDC Group",
+          "url": "https://gdcgroup.co.nz/",
+          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Chartwell, Hamilton, NZ.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Chartwell",
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": "Waikato"
+            }
+          },
+          "knowsAbout": [
+            "Architectural Services",
+            "Building Consent Applications",
+            "Retail Fitout Design",
+            "Detailed Seismic Assessments (DSA)",
+            "IEP/ISA Seismic Reports",
+            "Geotechnical Engineering",
+            "Soil Reports and PS1 PS2 PS4 Certificates",
+            "Three Waters Infrastructure",
+            "Stormwater & Flood Assessments",
+            "Resource Consent & AEE Reports",
+            "PSI and DSI Contamination Reports",
+            "Subdivision Design",
+            "Fire Engineering",
+            "Traffic Engineering",
+            "Structural Engineering",
+            "Civil Engineering"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architectural, Engineering & Planning Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Architectural Services & Building Consents",
+                  "description": "House plans, retail shop fitouts, multi-unit townhouses, additions, commercial redesigns, and building consent applications."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Geotechnical & Soil Engineering",
+                  "description": "Soil reports, bearing capacity checks, PS1, PS2, PS4 certificates, liquefaction assessments, and PSI/DSI contamination reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural & Seismic Engineering",
+                  "description": "Detailed Seismic Assessments (DSA), IEP/ISA reports, retaining wall designs, foundation engineering, and structural peer reviews."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Civil & Three Waters Engineering",
+                  "description": "Stormwater designs, flood assessments, soakage testing, carpark access designs, traffic reports, and wastewater management."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Resource Consent & Subdivisions",
+                  "description": "Preparing resource consent applications, Assessment of Environmental Effects (AEE) reports, subdivision design, and project management."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gdcgroup.co.nz/locations/hamilton-head-office/chartwell/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why hire a unified consultancy for a development project in Chartwell?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When architectural designers, structural engineers, geotechnical consultants, and planning experts collaborate under one roof at GDC Group, project communication is direct and clear. This eliminates design oversights, streamlines the resource and building consent process with Hamilton City Council, and keeps project budgets on track."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do retail fitouts near Chartwell Shopping Centre require building or fire consents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In most cases, commercial alterations that modify layout, egress routes, or fire safety systems require both a building consent and an updated fire engineering strategy. GDC Group designs compliant fitout plans, handles the fire reports, and submits the consent documentation directly to the council."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is required to subdivide a residential section in Chartwell?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Subdividing an existing section generally requires a resource consent featuring an Assessment of Environmental Effects (AEE), civil engineering plans (for stormwater and access), and geotechnical site testing. GDC Group manages the full subdivision process from initial site survey through to final council sign-off."
               }
             }
           ]
@@ -848,13 +2818,18 @@
           "name": "Te Whatu Ora – Clock Tower, Lower Hutt",
           "description": "As part of our commitment to structural engineering in Wellington, we completed an early-stage seismic assessment for one of the structural wings of the Clock Tower. Using advanced displacement-based analysis, our structural engineers Wellington team provided Te Whatu Ora with a clear understanding of the building's seismic performance. The insights helped shape a cost-effective resilience strategy that supports long-term safety and aligns with critical public health infrastructure goals.",
           "image": "/images/projects/Te Whatu Ora.png",
-          "labels": ["Seismic", "Medical"]
+          "labels": [
+            "Seismic",
+            "Medical"
+          ]
         },
         {
           "name": "172–176 Queen Street, Masterton",
           "description": "For this commercial building in the wider Wellington region, GDC Consultants delivered full seismic and structural engineering services. Our scope included Concept Seismic Strengthening to 34% and 67% NBS, concrete scanning, accurate as-built plans, and consent-ready documentation. The result? A safer, compliant building that maintained its asset value — while streamlining the approval process and reducing long-term risk.",
           "image": "/images/projects/content (40).webp",
-          "labels": ["Seismic"]
+          "labels": [
+            "Seismic"
+          ]
         }
       ]
     },
@@ -979,7 +2954,11 @@
           "name": "Napier Municipal Theatre, Napier, Hawke's Bay",
           "description": "Napier Municipal Theatre was initially constructed in the 1930 and has had several alterations over its life span. The building has a lobby, main two-level auditorium, stage and backstage areas. The current design occupancy is 1350 persons. GDC Consultants has been commissioned to undertake the building assessment in order to install the service access gantries in the main theatre ceiling void.",
           "image": "/images/projects/common/Napier M Centre.png",
-          "labels": ["Sturctural", "Planning", "Commercial"]
+          "labels": [
+            "Sturctural",
+            "Planning",
+            "Commercial"
+          ]
         }
       ]
     },

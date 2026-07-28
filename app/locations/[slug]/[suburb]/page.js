@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${locationData.title} - GDC Group`,
     description: locationData.metaDescription || locationData.description,
-    keywords: `engineering, architectural services, ${suburb}, Hamilton Central, GDC Group`,
+    keywords: `engineering, architectural services, ${locationData.title || suburb}, GDC Group`,
     alternates: {
       canonical: `https://gdcgroup.co.nz/locations/${slug}/${suburb}`,
     },

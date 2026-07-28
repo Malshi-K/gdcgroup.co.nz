@@ -7,7 +7,16 @@ import locationContentData from '@/app/data/localLocation.json';
  * Keyed by parent slug → suburb slug list.
  */
 const suburbRoutes = {
-  'hamilton-head-office': ['hamilton-central'],
+  'hamilton-head-office': [
+    'hamilton-central',
+    'rototuna',
+    'nawton',
+    'huntington',
+    'hamilton-east',
+    'frankton',
+    'dinsdale',
+    'chartwell',
+  ],
 };
 
 /**
@@ -35,7 +44,8 @@ export const getAvailableLocationSlugs = () => {
  * @returns {boolean} - True if location exists
  */
 export const locationExists = (locationSlug) => {
-  return locationSlug in locationContentData;
+  const content = locationContentData[locationSlug];
+  return Boolean(content && !content.parentSlug);
 };
 
 /**
