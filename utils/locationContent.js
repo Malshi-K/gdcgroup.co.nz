@@ -16,6 +16,15 @@ const suburbRoutes = {
     'frankton',
     'dinsdale',
     'chartwell',
+    'te-rapa',
+    'silverdale',
+    'pukete',
+    'melville',
+    'hillcrest',
+    'glenview',
+    'flagstaff',
+    'enderley',
+    'claudelands',
   ],
 };
 
