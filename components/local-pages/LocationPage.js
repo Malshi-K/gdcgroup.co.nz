@@ -12,6 +12,7 @@ import CTASection from '@/components/local-pages/CTASection';
 import ContactSection from '@/components/local-pages/ContactSection';
 import FAQSection from '@/components/local-pages/FAQSection';
 import AdditionalLinksSection from '@/components/local-pages/AdditionalLinksSection';
+import QuickReferenceSection from '@/components/local-pages/QuickReferenceSection';
 
 const LocationPage = ({ locationData }) => {
   if (!locationData) {
@@ -36,17 +37,26 @@ const LocationPage = ({ locationData }) => {
     services,
     featuredProjects,
     specialtyExpertise,
+    quickReference,
     whyChoose,
     areasServed,
     ctaSection,
     contact,
     faq,
     additionalLinks,
-    locationImage
+    locationImage,
+    structuredData
   } = locationData;
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+
       {/* Hero Section */}
       <HeroSection 
         title={title}
@@ -69,6 +79,9 @@ const LocationPage = ({ locationData }) => {
 
       {/* Specialty Expertise Section (for locations like Rotorua, Thames & Napier) */}
       <SpecialtyExpertiseSection specialtyExpertise={specialtyExpertise} />
+
+      {/* Quick Reference Table */}
+      <QuickReferenceSection quickReference={quickReference} />
 
       {/* Why Choose Section */}
       <WhyChooseSection whyChoose={whyChoose} />

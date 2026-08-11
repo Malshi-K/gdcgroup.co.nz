@@ -54,6 +54,7 @@ const ServicesSection = ({ services }) => {
       "Architectural Design Services": HomeModernIcon,
       "Architectural Design": HomeModernIcon,
       "Architectural Design & Drafting": HomeModernIcon,
+      "Architectural Services & Building Consent Applications": HomeModernIcon,
 
       // Seismic services
       "Seismic Assessments & Building Strengthening": ShieldCheckIcon,
@@ -66,9 +67,41 @@ const ServicesSection = ({ services }) => {
       "Council Consent Support": ClipboardDocumentListIcon,
       "Environmental Planning": ClipboardDocumentListIcon,
       "Planning & Surveying Services": MapIcon,
+      "Resource Consent, Subdivisions & Environmental Planning": ClipboardDocumentListIcon,
 
       // Surveying
       "Surveying Services": MagnifyingGlassIcon,
+      "Land Surveying & Project Management": MagnifyingGlassIcon,
+
+      // Geotechnical / Structural / Civil / Fire (suburb pages)
+      "Geotechnical Engineering, Soil Testing & Site Inspections": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Land Hazard Reports": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Land Reports": ScaleIcon,
+      "Geotechnical Soil Testing, Inspections & Hazard Checks": ScaleIcon,
+      "Geotechnical Soil Testing, Site Investigations & Land Hazard Reports": ScaleIcon,
+      "Structural Engineering, Seismic Assessments & Heritage Buildings": BuildingOfficeIcon,
+      "Structural Engineering, Seismic Assessments & Character Buildings": BuildingOfficeIcon,
+      "Structural Engineering & Structural Designs": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Safety": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Assessments": BuildingOfficeIcon,
+      "Structural Engineering & Seismic Evaluations": BuildingOfficeIcon,
+      "Structural Engineering & Building Integrity": BuildingOfficeIcon,
+      "Structural Engineering & Heritage Strengthening": BuildingOfficeIcon,
+      "Fire Engineering & Safety Compliance": ShieldCheckIcon,
+      "Civil Engineering, Stormwater & Three Waters": TruckIcon,
+      "Civil Engineering, Drainage & Three Waters Infrastructure": TruckIcon,
+      "Civil Engineering, Drainage & Three Waters Management": TruckIcon,
+      "Architectural Services & Building Consent Processing": HomeModernIcon,
+      "Architectural Services & Building Consent Submissions": HomeModernIcon,
+      "Architectural Design & Building Consent Approvals": HomeModernIcon,
+      "Land Surveying & Construction Management": MagnifyingGlassIcon,
+      "Land Surveying & Construction Oversight": MagnifyingGlassIcon,
+      "Land Surveying & Construction Project Oversight": MagnifyingGlassIcon,
+      "Resource Consent, Subdivisions & Environmental Planning": ClipboardDocumentListIcon,
+      "Resource Consents, Subdivisions & Environmental Services": ClipboardDocumentListIcon,
+      "Geotechnical Engineering, Soil Testing & Land Hazard Assessments": ScaleIcon,
+      "Geotechnical Engineering, Soil Testing & Slope Stability Reports": ScaleIcon,
+      "Structural Engineering, Seismic Upgrades & Commercial Integrity": BuildingOfficeIcon,
 
       // Subdivision/Development
       "Subdivision/ Land Development": BriefcaseIcon,
