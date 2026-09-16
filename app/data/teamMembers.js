@@ -6,19 +6,6 @@ export const teamMembers = [
     qualifications: "MSc (Eng), CPEng, IntPE(NZ), CMEngNZ, APEC Engineer",
   },
   {
-    image: "/images/team/Alin-Poanta.webp",
-    name: "Alin Poanta",
-    position: "Senior Associate - Lead Structural Engineer",
-    qualifications: "BE(Civil) CPEng, CMEngNZ, IntPE(NZ)",
-  },
-  {
-    image: "/images/team/Yi-Su.webp",
-    name: "Yi Su",
-    position: "Senior Associate - Principal Structural Engineer",
-    qualifications:
-      "BE(Hons), MEngSt(Hons), CPEng, CMEngNZ, IntPE(NZ)/APEC Engineer",
-  },
-  {
     image: "/images/team/David Mcbryde.webp",
     name: "David Mcbryde",
     position: "Three Waters Senior Consultant",
@@ -37,12 +24,6 @@ export const teamMembers = [
     position: "Director of Operations",
     qualifications:
       "Bachelor of Arts with Honours - Victoria University of Wellington",
-  },
-  {
-    image: "/images/team/John-Kim.webp",
-    name: "John Kim",
-    position: "Geotechnical Manager",
-    qualifications: "MEngNZ, MEngSt (University of Canterbury)",
   },
   {
     image: "/images/team/Kasia-Irvine.webp",
@@ -64,5 +45,21 @@ export const teamMembers = [
     phone: "0225945956",
     qualifications:
       "Bachelor of Engineering (Honours) in Civil Engineering - University of Waikato",
+  },
+  {
+    image: "/images/team/Hung Ly.jpg",
+    name: "Hung Ly",
+    position: "Architectural Designer / Revit BIM Manager",
+    phone: "",
+    qualifications:
+      "BArch, Dip. BIM management, Design LBP.",
+  },
+  {
+    image: "/images/team/Jackie Cao.jpg",
+    name: "Jackie Cao",
+    position: "Project Engineer",
+    phone: "",
+    qualifications:
+      "BE(Hons) (Civil), MEngNZ",
   },
 ];
