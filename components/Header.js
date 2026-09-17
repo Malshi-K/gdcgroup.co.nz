@@ -174,7 +174,7 @@ const Header = () => {
                   { href: "/locations", label: "Our Locations" },
                 ],
               },
-              { href: "/team", label: "OUR TEAM" },
+              {/* { href: "/team", label: "OUR TEAM" }, */}
               { href: "/blogs", label: "BLOGS" },
             ].map((item) =>
               item.items ? (
@@ -321,7 +321,7 @@ const Header = () => {
                   { href: "/locations", label: "Our Locations" },
                 ],
               },
-              { href: "/team", label: "Our Team" },
+              {/* { href: "/team", label: "Our Team" }, */}
               { href: "/blogs", label: "Blogs" },
               { href: "tel:+6478380090", label: "Call Now" },
               { href: "/contact-us", label: "Our Locations" },
