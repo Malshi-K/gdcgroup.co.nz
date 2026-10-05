@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const ProjectHeader = () => {
   return (
-    <section className="bg-gray-100 w-full py-10 md:py-16 transition-all duration-500 ease-in-out">
+    <section className="bg-off-white w-full py-10 md:py-16 transition-all duration-500 ease-in-out">
       <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-0 px-4 md:px-8 lg:px-16">
         {/* Left Content Column */}
         <div className="flex flex-col space-y-4 md:space-y-6 animate-fade-in-up text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-customYellow leading-tight animate-slide-in-left">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-blue leading-tight animate-slide-in-left">
             Our Projects
           </h1>
-          <h2 className="text-xl md:text-2xl text-customBlue font-semibold animate-slide-in-right">
+          <h2 className="text-xl md:text-2xl text-primary-navy font-semibold animate-slide-in-right">
             Building a Better Future, Today
           </h2>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed animate-fade-in-up">
+          <p className="text-base md:text-lg text-secondary leading-relaxed animate-fade-in-up">
             Our projects page showcases how we’re making a difference in the
             communities we serve. From sustainable building practices to using
             locally sourced materials, we’re proud to be leading the way in

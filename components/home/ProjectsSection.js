@@ -168,17 +168,17 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 bg-[#F3F5F6] overflow-hidden">
+    <section ref={sectionRef} className="py-16 bg-off-white overflow-hidden">
       <div
         className={`text-center mb-12 px-6 md:px-10 xl:px-16 transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ transform: "translateZ(0)" }} // Force GPU acceleration
       >
-        <h2 className="text-4xl text-customYellow uppercase font-bold mt-2">
+        <h2 className="text-4xl text-primary-blue uppercase font-bold mt-2">
           Explore Our Portfolio
         </h2>
-        <h3 className="text-md text-customBlue tracking-wide max-w-3xl mx-auto">
+        <h3 className="text-md text-primary-navy tracking-wide max-w-3xl mx-auto">
           Our portfolio showcases the diverse range of successful projects
           we&apos;ve completed across New Zealand. From large-scale commercial
           developments to smaller residential builds.
@@ -187,7 +187,7 @@ const ProjectsSection = () => {
 
       {/* Show message if no front page projects are found */}
       {projects.length === 0 && (
-        <div className="text-center text-gray-500 py-10">
+        <div className="text-center text-secondary py-10">
           No featured projects to display. Please check project data
           configuration.
         </div>
@@ -254,14 +254,14 @@ const ProjectsSection = () => {
                     <span
                       key={`${project.title}-${category}-${catIndex}`}
                       className="text-xs font-semibold px-2 py-1 rounded-full
-                              border border-customYellow text-customBlue"
+                              border border-primary-blue text-primary-navy"
                     >
                       {category}
                     </span>
                   ))}
               </div>
 
-              <h4 className="text-lg text-customBlue font-semibold mt-2">
+              <h4 className="text-lg text-primary-navy font-semibold mt-2">
                 {project.title}
               </h4>
               
@@ -274,7 +274,7 @@ const ProjectsSection = () => {
       <div className="flex justify-center mt-10">
         <Link
           href="/portfolio/all-projects"
-          className="bg-customYellow text-white font-semibold px-6 py-3 rounded-md hover:bg-customBlue transition duration-300"
+          className="bg-primary-blue text-white font-semibold px-6 py-3 rounded-md hover:bg-primary-navy transition duration-300"
         >
           View All Projects
         </Link>

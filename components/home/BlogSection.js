@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 
 const BlogSkeleton = () => (
   <div className="bg-white shadow-lg rounded-lg overflow-hidden animate-pulse">
-    <div className="h-48 bg-gray-200" />
+    <div className="h-48 bg-light-blue" />
     <div className="p-6">
-      <div className="h-4 bg-gray-200 rounded w-3/4 mb-4" />
-      <div className="h-8 bg-gray-200 rounded mb-4" />
-      <div className="h-4 bg-gray-200 rounded w-1/4" />
+      <div className="h-4 bg-light-blue rounded w-3/4 mb-4" />
+      <div className="h-8 bg-light-blue rounded mb-4" />
+      <div className="h-4 bg-light-blue rounded w-1/4" />
     </div>
   </div>
 );
@@ -87,7 +87,7 @@ const BlogSection = () => {
   }
 
   return (
-    <section className="py-12 bg-gray-50 overflow-hidden">
+    <section className="py-12 bg-off-white overflow-hidden">
       <motion.div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         initial="hidden"
@@ -96,10 +96,10 @@ const BlogSection = () => {
         variants={animations.container}
       >
         <motion.div className="text-center mb-12" variants={animations.item}>
-          <h2 className="text-4xl text-customYellow uppercase font-bold mt-2">
+          <h2 className="text-4xl text-primary-blue uppercase font-bold mt-2">
             Latest News & Updates
           </h2>
-          <h3 className="text-md text-customBlue tracking-wide max-w-3xl mx-auto">
+          <h3 className="text-md text-primary-navy tracking-wide max-w-3xl mx-auto">
             Stay up-to-date with the latest news and insights from the
             construction industry by checking out our blog.
           </h3>
@@ -127,13 +127,13 @@ const BlogSection = () => {
               </div>
 
               <div className="p-6 text-center">
-                <h4 className="text-lg font-semibold text-customBlue mb-4 line-clamp-2 group-hover:text-customYellow transition-colors duration-300">
+                <h4 className="text-lg font-semibold text-primary-navy mb-4 line-clamp-2 group-hover:text-primary-blue transition-colors duration-300">
                   {blog.name}
                 </h4>
 
                 <Link
                   href={blog.slug}
-                  className="m-auto inline-block text-sm text-white bg-customBlue py-2 px-4 rounded-full hover:bg-customYellow transition-colors duration-300"
+                  className="m-auto inline-block text-sm text-white bg-primary-blue py-2 px-4 rounded-full hover:bg-primary-blue-dark transition-colors duration-300"
                 >
                   Read More
                 </Link>

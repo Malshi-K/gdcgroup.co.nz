@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/locations/[slug]/page.js
 
 import { notFound } from 'next/navigation';
@@ -20,11 +21,13 @@ export async function generateMetadata({ params }) {
   
   if (!locationData) {
     return {
+      metadataBase: new URL(SITE_URL),
       title: 'Location Not Found - GDC Group',
     };
   }
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: `${locationData.title} - GDC Group`,
     description: locationData.description,
     keywords: `engineering, architectural services, ${slug}, GDC Group`,

@@ -46,11 +46,11 @@ const JoinOurTeam = () => {
           }`}
           style={{ transitionDelay: "100ms" }}
         >
-          <nav className="text-lg md:text-2xl text-customBlue font-bold flex items-center justify-center md:justify-start space-x-2">
-            <h1 className="text-customBlue">Careers</h1>
+          <nav className="text-lg md:text-2xl text-primary-navy font-bold flex items-center justify-center md:justify-start space-x-2">
+            <h1 className="text-primary-navy">Careers</h1>
           </nav>
           <h1
-            className={`text-4xl md:text-5xl font-bold text-customYellow leading-tight transition-all duration-600 ease-out ${
+            className={`text-4xl md:text-5xl font-bold text-primary-blue leading-tight transition-all duration-600 ease-out ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
             style={{ transitionDelay: "200ms" }}
@@ -58,7 +58,7 @@ const JoinOurTeam = () => {
             Career Opportunities for Graduates and Internships
           </h1>
           <p
-            className={`text-base md:text-lg text-gray-600 leading-relaxed transition-all duration-600 ease-out ${
+            className={`text-base md:text-lg text-secondary leading-relaxed transition-all duration-600 ease-out ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }`}
             style={{ transitionDelay: "300ms" }}

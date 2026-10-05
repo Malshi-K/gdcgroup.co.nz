@@ -46,16 +46,16 @@ const AwardAnnouncement = ({
             <div className="w-full text-center md:text-left">
               {/* Title */}
               <Link href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_results/Health/CPA/Results/Results_2025/Health.aspx?hkey=3db5dd1c-898e-46bf-9703-1d6b9a3941f9">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-customBlue mb-4 leading-tight tracking-wide">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-navy mb-4 leading-tight tracking-wide">
                   {awardTitle} for {projectName}
                 </h1>
               </Link>
 
               {/* Divider line */}
-              <div className="border-t border-gray-300 my-6 max-w-md mx-auto md:mx-0"></div>
+              <div className="border-t border-light my-6 max-w-md mx-auto md:mx-0"></div>
 
               {/* Description text */}
-              <p className="text-lg md:text-2xl text-[#727D73] leading-relaxed">
+              <p className="text-lg md:text-2xl text-secondary leading-relaxed">
                 {description}
               </p>
             </div>

@@ -8,7 +8,7 @@ export default function NotFound() {
         <p className="mb-4">Could not find the requested service.</p>
         <Link 
           href="/services"
-          className="text-blue-600 hover:underline"
+          className="text-primary-blue hover:underline"
         >
           View All Services
         </Link>

@@ -77,22 +77,24 @@ const Header = () => {
       {/* Header */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 px-2 sm:px-4 md:px-6 lg:px-10 ${
-          isScrolled ? "bg-black bg-opacity-80 shadow-md" : "bg-transparent"
+          isScrolled ? "bg-primary-navy bg-opacity-90 shadow-md" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between py-3 sm:py-4 px-2 sm:px-4 md:px-6">
           {/* Logo with increased size */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/GDC logo 2024 white.webp"
-              alt="GDC Consultants"
+              src="/images/gdc-group-logo.png"
+              alt="GDC Group"
               width={320}  /* Increased from 240 */
-              height={80}  /* Increased from 60 */
+              height={128}  /* matches new logo aspect ratio (1983x793) */
               className="h-auto w-auto max-w-[200px] sm:max-w-[250px] md:max-w-[280px] lg:max-w-[320px]"  /* Increased all max-width values */
               priority={true}
               loading="eager"
               sizes="(max-width: 640px) 200px, (max-width: 768px) 250px, (max-width: 1024px) 280px, 320px"  /* Updated sizes attribute */
               quality={85}
+              // TODO: replace with official white/reversed logo
+              style={{ filter: "brightness(0) invert(1)" }}
             />
           </Link>
         </div>

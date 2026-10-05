@@ -107,7 +107,7 @@ export default function Footer() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <button
-            className="bg-customBlue text-white p-3 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none tracking-wide"
+            className="bg-primary-navy text-white p-3 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none tracking-wide"
             onClick={handleSubscribe}
           >
             SUBSCRIBE
@@ -117,19 +117,20 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="relative z-10 mx-auto bg-customBlue bg-opacity-80 p-10 backdrop-blur-sm shadow-lg mt-10">
+      <div className="relative z-10 mx-auto bg-primary-navy bg-opacity-80 p-10 backdrop-blur-sm shadow-lg mt-10">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo and Company Info Column */}
           <div className="flex flex-col items-start">
             {/* Main logo */}
             <div className="transition-transform hover:scale-105">
               <Image
-                src="/images/GDC logo 2024 white.webp"
-                alt="GDC Consultants"
+                src="/images/gdc-group-logo.png"
+                alt="GDC Group"
                 width={150}
-                height={35}
+                height={60}
                 className="h-auto object-contain"
-                style={{ objectFit: "contain" }}
+                // TODO: replace with official white/reversed logo
+                style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
               />
             </div>
           </div>
@@ -143,7 +144,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Our Services
                 </Link>
@@ -151,7 +152,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us/who-we-are"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Who We Are
                 </Link>
@@ -159,7 +160,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/blogs"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Blog
                 </Link>
@@ -167,7 +168,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us/careers"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Careers
                 </Link>
@@ -184,7 +185,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact-us"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Contact Us
                 </Link>
@@ -192,7 +193,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/locations"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Our Locations
                 </Link>
@@ -200,7 +201,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us/review"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   Leave Us a Review
                 </Link>
@@ -217,7 +218,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/portfolio/all-projects"
-                  className="hover:text-customYellow tracking-wide"
+                  className="hover:text-light-blue tracking-wide"
                 >
                   All Projects
                 </Link>
@@ -240,11 +241,11 @@ export default function Footer() {
                 href="https://www.facebook.com/GdcConsultantsLtd/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
-                aria-label="Visit GDC Consultants on Facebook"
+                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
+                aria-label="Visit GDC Group on Facebook"
               >
                 <span className="sr-only">
-                  Visit GDC Consultants on Facebook
+                  Visit GDC Group on Facebook
                 </span>
                 <FaFacebookF size={24} aria-hidden="true" title="Facebook" />
               </a>
@@ -254,11 +255,11 @@ export default function Footer() {
                 href="https://nz.linkedin.com/company/gdcconsultants"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
-                aria-label="Connect with GDC Consultants on LinkedIn"
+                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
+                aria-label="Connect with GDC Group on LinkedIn"
               >
                 <span className="sr-only">
-                  Connect with GDC Consultants on LinkedIn
+                  Connect with GDC Group on LinkedIn
                 </span>
                 <FaLinkedinIn size={24} aria-hidden="true" title="LinkedIn" />
               </a>
@@ -268,11 +269,11 @@ export default function Footer() {
                 href="https://www.instagram.com/gdc_consultants/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-customYellow transition-colors duration-300 p-2"
-                aria-label="Follow GDC Consultants on Instagram"
+                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
+                aria-label="Follow GDC Group on Instagram"
               >
                 <span className="sr-only">
-                  Follow GDC Consultants on Instagram
+                  Follow GDC Group on Instagram
                 </span>
                 <FaInstagram size={24} aria-hidden="true" title="Instagram" />
               </a>
@@ -282,7 +283,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer Section */}
-      <div className="relative z-10 bg-customBlue bg-opacity-80 text-gray-400 text-xs py-4 mx-auto backdrop-blur-sm">
+      <div className="relative z-10 bg-primary-navy bg-opacity-80 text-light-blue text-xs py-4 mx-auto backdrop-blur-sm">
         <div className="flex flex-col sm:flex-row items-center justify-between px-10 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
             <button
@@ -310,7 +311,7 @@ export default function Footer() {
               href="https://www.gdcdigital.net/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-customYellow"
+              className="text-light-blue"
             >
               GDC Digital Solutions
             </a>
@@ -330,114 +331,112 @@ export default function Footer() {
               <XMarkIcon className="h-6 w-6 text-black" />{" "}
               {/* Icon as the close button */}
             </button>
-            <h2 className="text-2xl font-bold mb-4 text-customBlue">
+            <h2 className="text-2xl font-bold mb-4 text-primary-navy">
               Terms and Conditions
             </h2>
             <div className="overflow-y-auto max-h-96 pr-4 scrollbar-hide">
-              <p className="text-gray-800">
+              <p className="text-dark">
                 Welcome to&nbsp;
                 <a
                   href="https://gdcgroup.co.nz"
-                  className="text-customBlue underline"
+                  className="text-primary-navy underline"
                 >
                   gdcgroup.co.nz
                 </a>
                 &nbsp;(the &quot;Website&quot;). These terms and conditions
                 (&quot;Terms&quot;) govern your access to and use of the Website
-                operated by GDC Consultants Ltd. (&quot;we,&quot;
+                operated by GDC Group trading as GDC Consultants (Asia) Limited (&quot;we,&quot;
                 &quot;us,&quot; &quot;our&quot;). By accessing or using the
                 Website, you agree to comply with and be bound by these Terms.
                 If you do not agree to these Terms, please do not use our
                 Website.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 1. Use of the Website
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 You agree to use the Website only for lawful purposes and in a
                 manner that does not infringe the rights of, restrict, or
                 inhibit anyone else&apos;s use and enjoyment of the Website.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 You agree not to disrupt the operation of the Website or
                 transmit any harmful content such as viruses, malware, or any
                 other destructive code.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 2. Intellectual Property
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 All content on the Website, including but not limited to text,
                 graphics, logos, images, software, and other materials, is the
-                intellectual property of GDC Consultants Ltd. or its licensors.
+                intellectual property of GDC Group trading as GDC Consultants (Asia) Limited or its licensors.
                 You may not reproduce, distribute, or use the content for any
                 commercial purposes without our prior written consent.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 The trademarks, logos, and service marks displayed on the
-                Website are the property of GDC Consultants Ltd. or third
+                Website are the property of GDC Group trading as GDC Consultants (Asia) Limited or third
                 parties. You are not permitted to use these marks without our
                 prior written permission or the respective third-party
                 owner&apos;s permission.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 3. Disclaimer of Warranties
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 The Website is provided on an &quot;as-is&quot; and
                 &quot;as-available&quot; basis without any warranties of any
                 kind, whether express or implied, including but not limited to
                 implied warranties of merchantability, fitness for a particular
                 purpose, or non-infringement.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 While we strive to ensure that the information on our Website is
                 accurate and up to date, we do not warrant the completeness,
                 accuracy, or reliability of any information or content found on
                 the Website.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 4. Limitation of Liability
               </h3>
-              <p className="text-gray-800">
-                To the fullest extent permitted by law, GDC Consultants (Asia)
-                Ltd. will not be liable for any direct, indirect, incidental,
+              <p className="text-dark">
+                To the fullest extent permitted by law, GDC Group trading as GDC Consultants (Asia) Limited will not be liable for any direct, indirect, incidental,
                 special, or consequential damages arising from your use of or
                 inability to use the Website, including but not limited to
                 damages for loss of profits, goodwill, data, or other intangible
                 losses.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 We shall not be liable for any loss or damage caused by a
                 distributed denial-of-service attack, viruses, or other
                 technologically harmful material that may infect your computer
                 equipment, programs, or data due to your use of the Website.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 5. Third-Party Links
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 The Website may contain links to third-party websites or
-                services that are not owned or controlled by GDC Consultants
-                Ltd. We have no control over and assume no responsibility for
+                services that are not owned or controlled by GDC Group trading as GDC Consultants (Asia) Limited. We have no control over and assume no responsibility for
                 the content, privacy policies, or practices of any third-party
                 websites or services.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 Your use of third-party websites is at your own risk, and you
                 should review the terms and conditions of those websites before
                 using them.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 6. User-Generated Content
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 If you submit or post any content, comments, or materials on the
                 Website (&quot;User Content&quot;), you grant us a
                 non-exclusive, royalty-free, perpetual, irrevocable, and fully
@@ -445,20 +444,20 @@ export default function Footer() {
                 translate, create derivative works from, distribute, and display
                 such User Content in any media.
               </p>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 You are solely responsible for any User Content you post and you
                 agree not to post any content that is unlawful, defamatory,
                 infringing, or otherwise objectionable.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 7. Privacy
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 Your use of the Website is also governed by our{" "}
                 <Link
                   href="/privacy-policy"
-                  className="text-customBlue underline"
+                  className="text-primary-navy underline"
                   onClick={closeTermsModal} // Close the Terms modal when navigating
                 >
                   Privacy Policy
@@ -467,59 +466,58 @@ export default function Footer() {
                 protect your personal data.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 8. Termination
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 We reserve the right to suspend or terminate your access to the
                 Website at any time without notice for any reason, including if
                 we believe that you have violated these Terms.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 9. Indemnification
               </h3>
-              <p className="text-gray-800">
-                You agree to indemnify and hold harmless GDC Consultants (Asia)
-                Ltd. and its affiliates, employees, agents, and licensors from
+              <p className="text-dark">
+                You agree to indemnify and hold harmless GDC Group trading as GDC Consultants (Asia) Limited and its affiliates, employees, agents, and licensors from
                 any claims, damages, liabilities, losses, costs, or expenses
                 (including reasonable legal fees) arising out of or related to
                 your use of the Website, your violation of these Terms, or your
                 violation of any rights of a third party.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 10. Governing Law
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 These Terms are governed by and construed in accordance with the
                 laws of New Zealand. Any disputes arising from or relating to
                 these Terms or your use of the Website will be subject to the
                 exclusive jurisdiction of the courts of New Zealand.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 11. Changes to These Terms
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 We reserve the right to modify or update these Terms at any
                 time. Any changes will be posted on this page with an updated
                 effective date. Your continued use of the Website after any
                 changes indicates your acceptance of the new Terms.
               </p>
 
-              <h3 className="mt-4 font-semibold text-lg text-customBlue">
+              <h3 className="mt-4 font-semibold text-lg text-primary-navy">
                 12. Contact Us
               </h3>
-              <p className="text-gray-800">
+              <p className="text-dark">
                 If you have any questions about these Terms, please contact us
                 at:
               </p>
-              <p className="text-gray-800">GDC Consultants Ltd.</p>
-              <p className="text-gray-800">
+              <p className="text-dark">GDC Group trading as GDC Consultants (Asia) Limited</p>
+              <p className="text-dark">
                 <a
                   href="mailto:info@gdcgroup.co.nz"
-                  className="text-customBlue underline"
+                  className="text-primary-navy underline"
                 >
                   info@gdcgroup.co.nz
                 </a>

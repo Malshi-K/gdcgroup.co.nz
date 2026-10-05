@@ -66,36 +66,36 @@ const CardsSection = () => {
       animateCount('projects', 10000, 2500); // Increased duration for smoother animation
       animateCount('locations', 14, 1500);
       animateCount('services', 10, 1500);
-      animateCount('experience', 16, 1500);
+      animateCount('experience', 10, 1500);
     }
   }, [isVisible, animationTriggered]);
 
   const cardData = [
     {
-      color: "bg-customBlue",
-      gradient: "from-black to-customBlue",
+      color: "bg-primary-navy",
+      gradient: "from-black to-primary-navy",
       Icon: BriefcaseIcon,
       count: `${counts.projects.toLocaleString()}+`,
       label: "Projects Completed",
     },
     {
-      color: "bg-customYellow",
-      gradient: "from-yellow-500 to-yellow-300",
+      color: "bg-primary-blue",
+      gradient: "from-primary-blue to-primary-blue-dark",
       Icon: MapPinIcon,
       count: counts.locations.toLocaleString(),
       label: "Locations Serviced",
     },
     {
-      color: "bg-customBlue",
-      gradient: "from-black to-customBlue",
+      color: "bg-primary-navy",
+      gradient: "from-black to-primary-navy",
       Icon: Cog6ToothIcon,
       count: `${counts.services.toLocaleString()}+`,
       label: "Services Provided",
       link: "/services",
     },
     {
-      color: "bg-customYellow",
-      gradient: "from-yellow-500 to-yellow-300",
+      color: "bg-primary-blue",
+      gradient: "from-primary-blue to-primary-blue-dark",
       Icon: CalendarIcon,
       count: `${counts.experience.toLocaleString()}+`,
       label: "Years in Operation",
@@ -115,8 +115,8 @@ const CardsSection = () => {
         }}
       >
         <div className={`absolute inset-0 bg-gradient-to-r ${gradient} opacity-60`} />
-        <div className="relative z-10 bg-customYellow rounded-full p-3 flex items-center justify-center">
-          <Icon className={`${iconBaseStyle} text-customBlue transition-transform duration-500 ease-in-out hover:scale-110`} />
+        <div className="relative z-10 bg-white rounded-full p-3 flex items-center justify-center">
+          <Icon className={`${iconBaseStyle} text-primary-blue transition-transform duration-500 ease-in-out hover:scale-110`} />
         </div>
         <div className={`relative z-10 text-center ${textBaseStyle}`}>
           <p className="text-3xl md:text-4xl font-extrabold leading-tight">{count}</p>

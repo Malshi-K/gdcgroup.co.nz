@@ -11,12 +11,12 @@ const JobApplicationModal = ({ isOpen, onClose, job }) => {
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="sticky top-0 bg-white border-b p-6 flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-customBlue">
+          <h2 className="text-2xl font-bold text-primary-navy">
             Apply for Position
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 text-2xl"
+            className="text-secondary hover:text-dark text-2xl"
           >
             ✕
           </button>
@@ -24,39 +24,39 @@ const JobApplicationModal = ({ isOpen, onClose, job }) => {
 
         {/* Content */}
         <div className="p-6">
-          <div className="mb-8 rounded-lg bg-gray-50 p-6">
+          <div className="mb-8 rounded-lg bg-off-white p-6">
             <div className="flex flex-wrap items-center gap-3">
-              <h3 className="text-2xl font-semibold text-customYellow">
+              <h3 className="text-2xl font-semibold text-primary-blue">
                 {job?.title}
               </h3>
               {job?.type ? (
-                <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-customBlue">
+                <span className="rounded-full bg-light-blue px-3 py-1 text-sm font-medium text-primary-navy">
                   {job.type}
                 </span>
               ) : null}
             </div>
-            <p className="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-secondary">
               {job?.location} | {job?.postedDate}
             </p>
-            <p className="mt-4 text-gray-700">{job?.description}</p>
+            <p className="mt-4 text-dark">{job?.description}</p>
 
             <div className="mt-6">
-              <h4 className="text-base font-semibold text-customBlue">
+              <h4 className="text-base font-semibold text-primary-navy">
                 About the Role
               </h4>
-              <p className="mt-2 text-sm leading-6 text-gray-700">
+              <p className="mt-2 text-sm leading-6 text-dark">
                 {job?.aboutRole}
               </p>
             </div>
 
             <div className="mt-6">
-              <h4 className="text-base font-semibold text-customBlue">
+              <h4 className="text-base font-semibold text-primary-navy">
                 Key Responsibilities
               </h4>
-              <ul className="mt-2 space-y-2 text-sm text-gray-700">
+              <ul className="mt-2 space-y-2 text-sm text-dark">
                 {job?.responsibilities?.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-customYellow" />
+                    <span className="mt-1 h-2 w-2 rounded-full bg-primary-blue" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -64,13 +64,13 @@ const JobApplicationModal = ({ isOpen, onClose, job }) => {
             </div>
 
             <div className="mt-6">
-                <h4 className="text-base font-semibold text-customBlue">
+                <h4 className="text-base font-semibold text-primary-navy">
                 What You&apos;ll Bring
               </h4>
-              <ul className="mt-2 space-y-2 text-sm text-gray-700">
+              <ul className="mt-2 space-y-2 text-sm text-dark">
                 {job?.requirements?.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-customYellow" />
+                    <span className="mt-1 h-2 w-2 rounded-full bg-primary-blue" />
                     <span>{item}</span>
                   </li>
                 ))}

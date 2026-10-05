@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 // 1. page.js (Server Component)
 import ContactSection from "@/components/locations/ContactSection";
 import MapSection from "@/components/locations/MapSection";
@@ -5,15 +6,16 @@ import "@/app/globals.css";
 
 export const generateMetadata = async () => {
   return {
-    title: 'Our Locations | GDC Consultants - Engineering Consulting Locations',
+    metadataBase: new URL(SITE_URL),
+    title: 'Our Locations | GDC Group - Engineering Consulting Locations',
     description: 'Leading engineering consulting firm offering innovative solutions across New Zealand. Find your nearest GDC office for expert guidance and support. Contact us today.',
     keywords: 'GDC locations, engineering consultants, New Zealand offices, engineering firm locations, contact GDC, Hamilton office, Auckland office, Thames office, Whitianga office',
     openGraph: {
-      title: 'Our Locations | GDC Consultants - Engineering Consulting Locations',
+      title: 'Our Locations | GDC Group - Engineering Consulting Locations',
       description: 'Find your nearest GDC office for expert engineering and architectural solutions.',
       type: 'website',
       url: 'https://gdcgroup.co.nz/locations',
-      siteName: 'GDC Consultants',
+      siteName: SITE_NAME,
       locale: 'en_NZ',      
     },
     robots: {

@@ -87,7 +87,7 @@ const BlogGalleryClient = ({ blogs }) => {
           style={{ transitionDelay: "150ms" }}
         >
           <nav className="text-2xl text-white font-bold mb-2 flex items-center justify-center md:justify-start space-x-1">
-            <h1 className="hover:text-customYellow">Our Blog</h1>
+            <h1 className="hover:text-primary-blue">Our Blog</h1>
           </nav>
           <h2 className="text-white text-5xl font-bold leading-tight">
             Latest News & Updates
@@ -134,7 +134,7 @@ const BlogGalleryClient = ({ blogs }) => {
             })}
           </section>
         ) : (
-          <p className="text-center text-gray-500">No blogs available.</p>
+          <p className="text-center text-secondary">No blogs available.</p>
         )}
       </div>
     </>

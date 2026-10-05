@@ -33,10 +33,10 @@ const MapSection = () => {
   };
 
   return (
-    <section className="py-12 px-4 md:px-16 lg:px-24 bg-gray-100">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-customBlue text-center mb-8 relative">
+    <section className="py-12 px-4 md:px-16 lg:px-24 bg-off-white">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary-navy text-center mb-8 relative">
         All Offices
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-customYellow mt-2"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-primary-blue mt-2"></div>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {officeLocations.map((office) => {
@@ -74,23 +74,23 @@ const MapSection = () => {
                 {/* Conditional rendering: Link only if office has location page */}
                 {hasPage ? (
                   <Link href={`/locations/${officeSlug}`}>
-                    <h3 className="text-xl text-customBlue font-semibold text-center cursor-pointer hover:text-customYellow transition-colors duration-200 hover:underline">
+                    <h3 className="text-xl text-primary-navy font-semibold text-center cursor-pointer hover:text-primary-blue transition-colors duration-200 hover:underline">
                       {office.name}
-                      <span className="ml-2 text-xs text-customYellow">• View Details</span>
+                      <span className="ml-2 text-xs text-primary-blue">• View Details</span>
                     </h3>
                   </Link>
                 ) : (
-                  <h3 className="text-xl text-customBlue font-semibold text-center">
+                  <h3 className="text-xl text-primary-navy font-semibold text-center">
                     {office.name}
                   </h3>
                 )}
 
                 {office.address && office.address.trim() !== "" && (
-                  <div className="flex items-start mt-2 text-gray-600">
-                    <MapPinIcon className="h-5 w-5 text-customBlue" />
+                  <div className="flex items-start mt-2 text-secondary">
+                    <MapPinIcon className="h-5 w-5 text-primary-navy" />
                     <div className="ml-2">
-                      <p className="font-bold text-customBlue">Our Address</p>
-                      <p className="text-sm text-gray-700 mt-1">
+                      <p className="font-bold text-primary-navy">Our Address</p>
+                      <p className="text-sm text-dark mt-1">
                         {office.address}
                       </p>
                     </div>
@@ -98,13 +98,13 @@ const MapSection = () => {
                 )}
 
                 {office.email && (
-                  <div className="flex items-start mt-4 text-gray-600">
-                    <EnvelopeIcon className="h-5 w-5 text-customBlue" />
+                  <div className="flex items-start mt-4 text-secondary">
+                    <EnvelopeIcon className="h-5 w-5 text-primary-navy" />
                     <div className="ml-2">
-                      <p className="font-bold text-customBlue">Email Address</p>
+                      <p className="font-bold text-primary-navy">Email Address</p>
                       <a
                         href={`mailto:${office.email}`}
-                        className="text-sm text-gray-700 mt-1 block hover:text-customBlue transition-colors"
+                        className="text-sm text-dark mt-1 block hover:text-primary-navy transition-colors"
                       >
                         {office.email}
                       </a>
@@ -113,13 +113,13 @@ const MapSection = () => {
                 )}
 
                 {office.phone && (
-                  <div className="flex items-start mt-4 text-gray-600">
-                    <PhoneIcon className="h-5 w-5 text-customBlue" />
+                  <div className="flex items-start mt-4 text-secondary">
+                    <PhoneIcon className="h-5 w-5 text-primary-navy" />
                     <div className="ml-2">
-                      <p className="font-bold text-customBlue">Call us on</p>
+                      <p className="font-bold text-primary-navy">Call us on</p>
                       <a
                         href={`tel:${office.phone}`}
-                        className="text-sm text-gray-700 mt-1 block hover:text-customBlue transition-colors"
+                        className="text-sm text-dark mt-1 block hover:text-primary-navy transition-colors"
                       >
                         {office.phone}
                       </a>

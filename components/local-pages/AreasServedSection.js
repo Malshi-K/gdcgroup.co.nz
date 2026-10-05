@@ -7,11 +7,11 @@ const AreasServedSection = ({ areasServed }) => {
   if (!areasServed) return null;
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-off-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-customBlue text-center mb-4">{areasServed.title}</h2>
-        <div className="w-24 h-1 bg-customYellow mx-auto mb-8"></div>
-        <p className="text-lg text-gray-700 text-center mb-8">{areasServed.subtitle}</p>
+        <h2 className="text-3xl font-bold text-primary-navy text-center mb-4">{areasServed.title}</h2>
+        <div className="w-24 h-1 bg-primary-blue mx-auto mb-8"></div>
+        <p className="text-lg text-dark text-center mb-8">{areasServed.subtitle}</p>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
           {areasServed.areas.map((area, index) => {
@@ -23,12 +23,12 @@ const AreasServedSection = ({ areasServed }) => {
                 {href ? (
                   <Link
                     href={href}
-                    className="text-customBlue font-medium hover:text-customYellow transition-colors"
+                    className="text-primary-navy font-medium hover:text-primary-blue transition-colors"
                   >
                     {name}
                   </Link>
                 ) : (
-                  <p className="text-gray-700 font-medium">{name}</p>
+                  <p className="text-dark font-medium">{name}</p>
                 )}
               </div>
             );
@@ -36,7 +36,7 @@ const AreasServedSection = ({ areasServed }) => {
         </div>
         
         {areasServed.conclusion && (
-          <p className="text-center text-gray-600 italic">{areasServed.conclusion}</p>
+          <p className="text-center text-secondary italic">{areasServed.conclusion}</p>
         )}
       </div>
     </section>

@@ -300,9 +300,9 @@ const ProjectSlider = () => {
             className={`px-4 py-2 rounded-full m-1 md:m-2 transition duration-300 ease-in-out transform hover:scale-105 ${
               selectedCategory === category
                 ? sectorCategories.includes(category)
-                  ? "bg-customYellow text-white shadow-lg"
-                  : "bg-customBlue text-white shadow-lg"
-                : "bg-gray-200 text-gray-700 hover:bg-customBlue hover:text-white"
+                  ? "bg-primary-blue text-white shadow-lg"
+                  : "bg-primary-navy text-white shadow-lg"
+                : "bg-light-blue text-dark hover:bg-primary-navy hover:text-white"
             }`}
             aria-pressed={selectedCategory === category}
           >
@@ -325,11 +325,11 @@ const ProjectSlider = () => {
               >
                 {filteredProjects.length > 1 && (
                   <button
-                    className="absolute left-0 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-200"
+                    className="absolute left-0 z-10 p-2 bg-white rounded-full shadow-md hover:bg-light-blue"
                     onClick={handlePrev}
                     aria-label="Previous project"
                   >
-                    <ChevronLeftIcon className="h-6 w-6 text-customBlue" />
+                    <ChevronLeftIcon className="h-6 w-6 text-primary-navy" />
                   </button>
                 )}
 
@@ -372,29 +372,29 @@ const ProjectSlider = () => {
 
                 {filteredProjects.length > 1 && (
                   <button
-                    className="absolute right-0 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-200"
+                    className="absolute right-0 z-10 p-2 bg-white rounded-full shadow-md hover:bg-light-blue"
                     onClick={handleNext}
                     aria-label="Next project"
                   >
-                    <ChevronRightIcon className="h-6 w-6 text-customBlue" />
+                    <ChevronRightIcon className="h-6 w-6 text-primary-navy" />
                   </button>
                 )}
               </div>
 
               <div className="mt-8 text-center" aria-live="polite">
-                <h3 className="text-2xl font-semibold text-customBlue mb-2">
+                <h3 className="text-2xl font-semibold text-primary-navy mb-2">
                   {currentProject?.title}
                 </h3>
-                <p className="text-sm max-w-xl mx-auto text-customBlue text-center mb-2">
+                <p className="text-sm max-w-xl mx-auto text-primary-navy text-center mb-2">
                   {currentProject?.jobDescription}
                 </p>
-                <p className="text-sm max-w-xl mx-auto text-customBlue text-center">
+                <p className="text-sm max-w-xl mx-auto text-primary-navy text-center">
                   {currentProject?.description}
                 </p>
               </div>
             </>
           ) : (
-            <p className="text-center text-lg text-gray-600 py-20">
+            <p className="text-center text-lg text-secondary py-20">
               Projects coming soon.
             </p>
           )}

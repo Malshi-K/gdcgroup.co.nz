@@ -1,34 +1,33 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import Hero from "@/components/home/Hero";
 import CardsSection from "@/components/home/CardsSection";
 import ServicesSection from "@/components/home/ServicesSection";
-import ProjectsSection from "@/components/home/ProjectsSection";
 import BlogSection from "@/components/home/BlogSection";
-import CertificationSection from "@/components/home/CertificationSection";
 import "../app/globals.css";
-import AwardAnnouncement from "@/components/home/AwardAnnouncement";
 
 // Metadata generation
 export const generateMetadata = async () => {
   return {
-    title: "GDC Consultants | Engineering & Architectural Design Solutions",
+    metadataBase: new URL(SITE_URL),
+    title: "GDC Group | Engineering & Architectural Design Solutions",
     description:
-      "GDC Consultants provides innovative solutions and expert guidance in architectural and engineering design. Serving New Zealand with a commitment to excellence.",
+      "GDC Group provides innovative solutions and expert guidance in architectural and engineering design. Serving New Zealand with a commitment to excellence.",
     keywords:
-      "engineering consultants, architectural design, New Zealand engineering, GDC Consultants, structural engineering, building design",
+      "engineering consultants, architectural design, New Zealand engineering, GDC Group, structural engineering, building design",
     openGraph: {
-      title: "GDC Consultants | Engineering & Architectural Design Solutions",
+      title: "GDC Group | Engineering & Architectural Design Solutions",
       description:
         "Leading engineering and architectural design consultancy in New Zealand",
       type: "website",
       url: "https://gdcgroup.co.nz",
-      siteName: "GDC Consultants",
+      siteName: SITE_NAME,
       locale: "en_NZ",
       images: [
         {
           url: "/images/gdc-og-image.jpg", // Replace with your actual OG image path
           width: 1200,
           height: 630,
-          alt: "GDC Consultants Engineering Solutions",
+          alt: "GDC Group Engineering Solutions",
         },
       ],
     },
@@ -84,18 +83,8 @@ export default async function HomePage() {
     <>
       <Hero />
       <CardsSection />
-      <AwardAnnouncement
-        awardTitle="GDC Celebrates Gold Award"
-        projectName="Waikato Hospital Molecular Biology Laboratory Project"
-        description="We're proud to have been part of the project team behind the Waikato Hospital Molecular Biology Laboratory refurbishment, which has been recognised with a Gold Award at the Master Builders NZ Commercial Project Awards 2025."
-        videoSrc="/images/awards/Award.mp4"
-        awardImageSrc="/images/awards/NZCPA QMs 2025_Gold.png"
-      />
       <ServicesSection />
-      <ProjectsSection />
       <BlogSection blogs={blogs} error={error} />
-
-      <CertificationSection />
     </>
   );
 }

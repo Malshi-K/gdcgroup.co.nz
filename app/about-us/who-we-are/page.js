@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import AboutCardSection from "@/components/about/AboutCardSection";
 import OurValues from "@/components/about/OurValues";
 import LogoSlider from "@/components/about/LogoSlider";
@@ -6,19 +7,20 @@ import "@/app/globals.css";
 
 export const generateMetadata = async () => {
   return {
-    title: "GDC Consultants - Development Engineering Excellence",
+    metadataBase: new URL(SITE_URL),
+    title: "GDC Group - Development Engineering Excellence",
     description:
       "Discover expert Development Engineering Consultants dedicated to delivering innovative solutions. Our team ensures quality and efficiency in every project across New Zealand.",
     keywords:
-      "GDC consultants, development engineering, New Zealand engineers, engineering consultancy, professional engineers, engineering expertise, engineering solutions",
+      "GDC Group, development engineering, New Zealand engineers, engineering consultancy, professional engineers, engineering expertise, engineering solutions",
     openGraph: {
       title:
-        "GDC Consultants - Development Engineering Excellence",
+        "GDC Group - Development Engineering Excellence",
       description:
         "Leading engineering consultancy delivering innovative solutions across New Zealand. Meet our expert team and discover our values.",
       type: "website",
       url: "https://gdcgroup.co.nz/about-us/who-we-are",
-      siteName: "GDC Consultants",
+      siteName: SITE_NAME,
       locale: "en_NZ",
     },
     robots: {

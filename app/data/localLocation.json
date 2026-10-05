@@ -2,7 +2,7 @@
   "hamilton-head-office": {
     "id": "hamilton-head-office",
     "title": "Engineering & Architectural Services in Hamilton, Waikato, New Zealand",
-    "subtitle": "GDC Consultants Hamilton",
+    "subtitle": "GDC Group Hamilton",
     "locationImage": "/images/locations/hamilton.jpg",
     "description": "we're your reliable local partner for end-to-end engineering and architectural services throughout Hamilton and the wider Waikato region. Based in Hamilton, Cambridge, and Raglan, our offices are perfectly positioned to support growth and development in one of New Zealand's most dynamic regions.",
     "introduction": "Our team includes Chartered Professional Engineers, Architectural Designers, Architectural Draftsman, and Landscape Designers, allowing us to deliver fully integrated solutions that address every aspect of your project—from planning and design to compliance and construction.",
@@ -186,7 +186,7 @@
       "questions": [
         {
           "question": "What areas of Hamilton and the Waikato region do you service?",
-          "answer": "Our Hamilton office delivers professional engineering and architectural services across the entire Waikato region, including Hamilton City, Cambridge, Te Awamutu, Ngāruawāhia, Huntly, Morrinsville, and all surrounding towns and rural communities. Wherever you are in Hamilton or Waikato, GDC Consultants is ready to support your project."
+          "answer": "Our Hamilton office delivers professional engineering and architectural services across the entire Waikato region, including Hamilton City, Cambridge, Te Awamutu, Ngāruawāhia, Huntly, Morrinsville, and all surrounding towns and rural communities. Wherever you are in Hamilton or Waikato, GDC Group is ready to support your project."
         },
         {
           "question": "How familiar are you with Hamilton City Council requirements?",
@@ -376,7 +376,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton Central.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -651,7 +651,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Rototuna, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -927,7 +927,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Nawton, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -1203,7 +1203,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Huntington, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -1480,7 +1480,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton East.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -1757,7 +1757,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Frankton.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -2033,7 +2033,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Dinsdale.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -2309,7 +2309,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Chartwell, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -2585,7 +2585,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton for Te Rapa.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -2861,7 +2861,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Silverdale, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -3137,7 +3137,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton for Pukete.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -3413,7 +3413,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Melville, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -3689,7 +3689,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hillcrest, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -3965,7 +3965,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Glenview, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -4241,7 +4241,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Flagstaff, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -4517,7 +4517,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Enderley, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -4793,7 +4793,7 @@
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
           "url": "https://gdcgroup.co.nz/",
-          "logo": "https://gdcgroup.co.nz/wp-content/uploads/logo.png",
+          "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
           "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Claudelands, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -4904,7 +4904,7 @@
   "rotorua-office": {
     "id": "rotorua-office",
     "title": "Engineering & Architectural Services in Rotorua & Bay of Plenty",
-    "subtitle": "GDC Consultants Rotorua",
+    "subtitle": "GDC Group Rotorua",
     "locationImage": "/images/locations/rotorua.jpg",
     "description": "We combine local knowledge with national expertise, offering comprehensive engineering and architectural design services across Rotorua and the Bay of Plenty. Known for its unique building challenges, this region demands specialized solutions—and that's where our team comes in.",
     "introduction": "From the geothermal soils of Rotorua to the rural landscapes of Reporoa, we bring our deep understanding of the local environment to every project. Our Rotorua-based engineering team is skilled in addressing the specific challenges posed by geothermal zones, such as soil movement, thermal activity, and strict environmental regulations.",
@@ -5036,7 +5036,7 @@
   "thames-office": {
     "id": "thames-office",
     "title": "Engineering & Architectural Services in Thames & Coromandel Peninsula",
-    "subtitle": "GDC Consultants Thames",
+    "subtitle": "GDC Group Thames",
     "locationImage": "/images/locations/thames.jpg",
     "description": "We specialize in providing expert engineering, architectural, and planning services tailored to the unique needs of the Coromandel Peninsula and Hauraki Plains. Based in the heart of Thames, we offer practical, compliant solutions designed to meet the challenges of the region's coastal environments, rugged terrains, and rural development projects.",
     "introduction": "Our experienced Thames-based team brings local knowledge and technical expertise to every project, whether you're building a new coastal home in Te Puru, subdividing land in Kopu, upgrading infrastructure in Paeroa, or developing a rural property in the Hauraki Plains.",
@@ -5153,7 +5153,7 @@
       ]
     },
     "whyChoose": {
-      "title": "Why Choose GDC Consultants in Thames?",
+      "title": "Why Choose GDC Group in Thames?",
       "description": "We bring decades of hands-on experience in Thames and across the Coromandel Peninsula, helping clients build smart, safe, and sustainable developments in one of New Zealand's most unique regions.",
       "reasons": [
         "Extensive experience in coastal development throughout the Thames-Coromandel region—we understand the challenges of building near the ocean",
@@ -5199,7 +5199,7 @@
           "answer": "Building in the Coromandel Peninsula means factoring in coastal exposure, flood and erosion risk, variable soil conditions, and environmental protections. Our Thames team provides expert site assessments and custom designs that address these challenges with confidence."
         },
         {
-          "question": "Can GDC Consultants help with resource consent for a coastal property?",
+          "question": "Can GDC Group help with resource consent for a coastal property?",
           "answer": "Yes. Our planning team specialises in coastal development regulations from the Thames-Coromandel District Council. We prepare complete resource consent applications that consider hazards, visual impact, and environmental effects."
         },
         {
@@ -5220,14 +5220,14 @@
   "wellington-office": {
     "id": "wellington-office",
     "title": "Engineering & Architectural Services in Wellington",
-    "subtitle": "GDC Consultants Wellington",
+    "subtitle": "GDC Group Wellington",
     "locationImage": "/images/locations/wellington.webp",
-    "description": "GDC Consultants Wellington provides practical, locally focused engineering in Wellington, shaped by the capital's complex terrain, coastal climate, and seismic risks. Whether you're building on a steep section in Kelburn, planning a subdivision in Upper Hutt, or strengthening a heritage building in Thorndon — we know the Wellington region and how to architect a solution that works for it.",
+    "description": "GDC Group Wellington provides practical, locally focused engineering in Wellington, shaped by the capital's complex terrain, coastal climate, and seismic risks. Whether you're building on a steep section in Kelburn, planning a subdivision in Upper Hutt, or strengthening a heritage building in Thorndon — we know the Wellington region and how to architect a solution that works for it.",
     "introduction": "Our multidisciplinary Wellington-based team includes experienced structural engineers, civil engineers, and geotechnical engineers Wellington, along with architectural designers and planning experts. Every project we undertake is designed to comply fully with the National Building Code, while also addressing the unique environmental, geological, and regulatory challenges of the region.",
     "localKnowledge": {
       "title": "Local Knowledge. Wellington Focused.",
       "description": "We work across the greater Wellington region — including Wellington City, Lower Hutt, Upper Hutt, Porirua, Kāpiti, Masterton, and Wairarapa — delivering tailored solutions that suit the local land, wind, water, and rules. With our in-depth understanding of the National Building Code and local council processes, we help clients move from concept to consent with confidence and clarity.",
-      "philosophy": "GDC Consultants believes engineering is more than technical know-how — it's about delivering practical, thoughtful solutions that truly work for the people and places we call home."
+      "philosophy": "GDC Group believes engineering is more than technical know-how — it's about delivering practical, thoughtful solutions that truly work for the people and places we call home."
     },
     "services": {
       "title": "What We Offer",
@@ -5327,7 +5327,7 @@
         },
         {
           "name": "172–176 Queen Street, Masterton",
-          "description": "For this commercial building in the wider Wellington region, GDC Consultants delivered full seismic and structural engineering services. Our scope included Concept Seismic Strengthening to 34% and 67% NBS, concrete scanning, accurate as-built plans, and consent-ready documentation. The result? A safer, compliant building that maintained its asset value — while streamlining the approval process and reducing long-term risk.",
+          "description": "For this commercial building in the wider Wellington region, GDC Group delivered full seismic and structural engineering services. Our scope included Concept Seismic Strengthening to 34% and 67% NBS, concrete scanning, accurate as-built plans, and consent-ready documentation. The result? A safer, compliant building that maintained its asset value — while streamlining the approval process and reducing long-term risk.",
           "image": "/images/projects/content (40).webp",
           "labels": [
             "Seismic"
@@ -5336,7 +5336,7 @@
       ]
     },
     "whyChoose": {
-      "title": "Why Choose GDC Consultants Wellington, NZ?",
+      "title": "Why Choose GDC Group Wellington, NZ?",
       "reasons": [
         "We're proud locals — based right here in Wellington, New Zealand",
         "We understand the region's unique terrain, council regulations, and seismic challenges",
@@ -5347,7 +5347,7 @@
     },
     "ctaSection": {
       "title": "Let's Get Started",
-      "description": "Whether you're planning a new home in Karori, retrofitting a villa in Mount Victoria, or subdividing land in the Hutt Valley — GDC Consultants Wellington has the local experience and technical know-how to guide your project to success.",
+      "description": "Whether you're planning a new home in Karori, retrofitting a villa in Mount Victoria, or subdividing land in the Hutt Valley — GDC Group Wellington has the local experience and technical know-how to guide your project to success.",
       "tagline": "Building better in Wellington, every step of the way.",
       "finalMessage": "Let us help you turn your vision into a consented, build-ready reality — the Wellington way."
     },
@@ -5363,12 +5363,12 @@
   "napier-office": {
     "id": "napier-office",
     "title": "Engineering & Architectural Services in Napier and Hawke's Bay",
-    "subtitle": "GDC Consultants Napier",
+    "subtitle": "GDC Group Napier",
     "locationImage": "/images/locations/napier.jpg",
     "description": "We are proud to be your trusted local experts for engineering and architectural services in Napier, Hawke's Bay, and the wider East Coast of New Zealand. Our experienced team offers practical, innovative, and council-compliant solutions for residential, commercial, and civil projects of all sizes.",
     "introduction": "From the art deco charm of Napier to the scenic landscapes of Havelock North, the vineyards of Bridge Pa, and the coastal communities of Wairoa and Mahia, we understand what makes this region unique. Our deep knowledge of local land conditions, weather patterns, and council requirements allows us to deliver tailored solutions that work.",
     "locationDescription": "Whether you're planning to build on a rural property, develop a subdivision near the coast, or upgrade civil infrastructure, our multidisciplinary team in Napier is here to help. We combine engineering precision with architectural creativity to bring your vision to life—on time and within budget.",
-    "serviceArea": "Partner with GDC Consultants Napier for reliable, region-specific expertise in engineering and architecture throughout Hawke's Bay.",
+    "serviceArea": "Partner with GDC Group Napier for reliable, region-specific expertise in engineering and architecture throughout Hawke's Bay.",
     "services": {
       "title": "Our Services in Napier",
       "subtitle": "",
@@ -5449,12 +5449,12 @@
       "projects": [
         {
           "name": "The Faraday Centre, Napier",
-          "description": "GDC Consultants has been commissioned to undertake a detailed design and the seismic retrofitting to 80%NBS of the Faraday Centre situated at 2B Faraday Street, Napier South, Napier. The building was designed and originally built in the early 1910's and subsequently altered when part of the original building was strengthened in 1935 after the 1931 Hawke's Bay Earthquake. In 1991, the building was strengthened in one direction only. The building is single storey with a large mezzanine floor, the structural system comprises of reinforced concrete frames in both directions with concrete infill panels along and block shear walls in transverse direction.",
+          "description": "GDC Group has been commissioned to undertake a detailed design and the seismic retrofitting to 80%NBS of the Faraday Centre situated at 2B Faraday Street, Napier South, Napier. The building was designed and originally built in the early 1910's and subsequently altered when part of the original building was strengthened in 1935 after the 1931 Hawke's Bay Earthquake. In 1991, the building was strengthened in one direction only. The building is single storey with a large mezzanine floor, the structural system comprises of reinforced concrete frames in both directions with concrete infill panels along and block shear walls in transverse direction.",
           "image": "/images/projects/common/napier office.png"
         },
         {
           "name": "Napier Municipal Theatre, Napier, Hawke's Bay",
-          "description": "Napier Municipal Theatre was initially constructed in the 1930 and has had several alterations over its life span. The building has a lobby, main two-level auditorium, stage and backstage areas. The current design occupancy is 1350 persons. GDC Consultants has been commissioned to undertake the building assessment in order to install the service access gantries in the main theatre ceiling void.",
+          "description": "Napier Municipal Theatre was initially constructed in the 1930 and has had several alterations over its life span. The building has a lobby, main two-level auditorium, stage and backstage areas. The current design occupancy is 1350 persons. GDC Group has been commissioned to undertake the building assessment in order to install the service access gantries in the main theatre ceiling void.",
           "image": "/images/projects/common/Napier M Centre.png",
           "labels": [
             "Sturctural",

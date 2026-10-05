@@ -69,31 +69,31 @@ const OurValues = () => {
 
   const visions = [
     {
-      icon: <BeakerIcon className="w-16 h-16 text-customBlue" />,
+      icon: <BeakerIcon className="w-16 h-16 text-primary-navy" />,
       title: "Competence",
       description:
         "We believe that competence is essential to achieving excellency. We always apply our technical, creative, and social competency to innovate, build, and assure long-term success.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-navy" />,
       title: "Innovation",
       description:
         "We pride ourselves on our ability to innovate. You provide us with a vision, and we will provide the ideas and designs to make it a reality.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-navy" />,
       title: "Commitment",
       description:
         "We believe in the power of teamwork, and we always strive to create synergies to enhance our performance. We have a strong sense of responsibility for every project we undertake, no matter how big or small.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-navy" />,
       title: "Work Ethics and Compliance",
       description:
         "We believe that our actions speak for our ethics. We always show strong moral responsibility and respect for applicable laws, standards, and rules.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-navy" />,
       title: "Competence",
       description:
         "We constantly liaise with our clients to ensure that all of their individual needs, requirements, and concerns are met. We aim to enhance the competitiveness and value of assets for all of our clients.",
@@ -102,19 +102,19 @@ const OurValues = () => {
 
   const missions = [
     {
-      icon: <BeakerIcon className="w-16 h-16 text-customBlue" />,
+      icon: <BeakerIcon className="w-16 h-16 text-primary-navy" />,
       title: "Empowered by Advanced Technology",
       description:
         "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering and architecture services – especially at solving persistent and complex engineering problems.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-navy" />,
       title: "Futuristic Approach",
       description:
         "We use our extensive knowledge and experience to create development solutions which far exceed current market requirements. We aim not just to meet our client's current needs, but also to predict and meet their future needs too.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-navy" />,
       title: "Guaranteed Quality",
       description:
         "By using the latest and best diagnostic technology and solutions, we guarantee optimal quality outcomes for all of our projects.",
@@ -136,8 +136,8 @@ const OurValues = () => {
             }`}
             style={{ transitionDelay: "100ms" }}
           >
-            <h2 className="text-3xl text-customBlue font-bold mb-4">Our Vision</h2>
-            <p className="text-gray-600 max-w-md">
+            <h2 className="text-3xl text-primary-navy font-bold mb-4">Our Vision</h2>
+            <p className="text-secondary max-w-md">
               Our vision is to provide unmatched quality, competitive solutions,
               and customized approaches.
             </p>
@@ -158,7 +158,7 @@ const OurValues = () => {
               >
                 <div className="flex justify-center mb-4">{vision.icon}</div>
                 <h3 className="text-lg font-bold">{vision.title}</h3>
-                <p className="text-gray-600 mt-2">{vision.description}</p>
+                <p className="text-secondary mt-2">{vision.description}</p>
               </div>
             ))}
           </Slider>
@@ -187,7 +187,7 @@ const OurValues = () => {
               >
                 <div className="flex justify-center mb-4">{mission.icon}</div>
                 <h3 className="text-lg font-bold">{mission.title}</h3>
-                <p className="text-gray-600 mt-2">{mission.description}</p>
+                <p className="text-secondary mt-2">{mission.description}</p>
               </div>
             ))}
           </Slider>
@@ -199,7 +199,7 @@ const OurValues = () => {
             }`}
             style={{ transitionDelay: "400ms" }}
           >
-            <h2 className="text-3xl text-customBlue font-bold mb-4">Our Mission</h2>
+            <h2 className="text-3xl text-primary-navy font-bold mb-4">Our Mission</h2>
           </div>
         </div>
       </div>

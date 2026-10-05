@@ -40,7 +40,7 @@ const SubContact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Complete Professional Package Section */}
           <div
-            className={`bg-customBlue rounded-lg text-center p-6 md:p-8 h-[300px] md:h-[350px] flex flex-col justify-center ${
+            className={`bg-primary-navy rounded-lg text-center p-6 md:p-8 h-[300px] md:h-[350px] flex flex-col justify-center ${
               isVisible
                 ? "animate-slide-in-left transition duration-300 ease-in-out hover:scale-105"
                 : ""
@@ -55,7 +55,7 @@ const SubContact = () => {
             <div className="flex justify-center">
               <Link
                 href="/services"
-                className="py-2 px-4 bg-customYellow text-white rounded-lg hover:bg-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105"
+                className="py-2 px-4 bg-primary-blue text-white rounded-lg hover:bg-primary-blue-dark transition-transform duration-300 ease-in-out hover:scale-105"
               >
                 View Services
               </Link>
@@ -64,7 +64,7 @@ const SubContact = () => {
 
           {/* Worked With Us Lately Section */}
           <div
-            className={`bg-customYellow rounded-lg p-6 md:p-8 h-[300px] md:h-[350px] text-center flex flex-col justify-center ${
+            className={`bg-primary-blue rounded-lg p-6 md:p-8 h-[300px] md:h-[350px] text-center flex flex-col justify-center ${
               isVisible
                 ? "animate-slide-in-right transition duration-300 ease-in-out hover:scale-105"
                 : ""
@@ -75,8 +75,8 @@ const SubContact = () => {
             </h2>
             <p className="text-md md:text-lg text-white">
               GDC would love to hear from you and your experience with GDC
-              Consultants Ltd. All feedback is appreciated and used to help GDC
-              Consultants Ltd to provide the best services to you in the future.
+              Group. All feedback is appreciated and used to help GDC
+              Group to provide the best services to you in the future.
               Feel free to send us a message or contact us on{" "}
               <a href="tel:078380090" className="underline">
                 07 838 0090

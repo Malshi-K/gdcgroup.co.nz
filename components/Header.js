@@ -95,10 +95,10 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/images/GDC LOGOS 2024 BLUE.webp"
-                alt="GDC Consultants Ltd Logo"
-                width={200} // Reduced from 500 to actual display size
-                height={80} // Maintained aspect ratio
+                src="/images/gdc-group-logo.png"
+                alt="GDC Group Logo"
+                width={1983} // Actual pixel width; displayed size set via className
+                height={793} // Actual pixel height (keeps aspect ratio)
                 priority // Critical for above-the-fold logo
                 className="w-[150px] h-auto md:w-[150px] lg:w-[200px] cursor-pointer"
                 quality={90} // Higher quality for logo
@@ -189,7 +189,7 @@ const Header = () => {
                   }
                 >
                   <button
-                    className="flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer text-customBlue"
+                    className="flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer text-primary-navy"
                     onClick={() =>
                       isMobileView
                         ? handleMobileDropdownToggle(item.dropdown)
@@ -224,9 +224,9 @@ const Header = () => {
                             href={subItem.href}
                             className={`block px-2 py-2 text-sm sm:text-base font-semibold ${
                               pathname === subItem.href
-                                ? "text-customYellow"
-                                : "text-customBlue"
-                            } hover:text-customYellow hover:rounded-md transition-all duration-300`}
+                                ? "text-primary-blue"
+                                : "text-primary-navy"
+                            } hover:text-primary-blue hover:rounded-md transition-all duration-300`}
                           >
                             {subItem.label}
                           </Link>
@@ -241,8 +241,8 @@ const Header = () => {
                     href={item.href}
                     className={`block text-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 ${
                       pathname === item.href
-                        ? "text-customYellow"
-                        : "text-customBlue"
+                        ? "text-primary-blue"
+                        : "text-primary-navy"
                     }`}
                   >
                     {item.label}
@@ -327,7 +327,7 @@ const Header = () => {
               item.items ? (
                 <li key={item.label} className="relative">
                   <button
-                    className="flex justify-between items-center w-full py-2 px-4 text-left font-light text-gray-800"
+                    className="flex justify-between items-center w-full py-2 px-4 text-left font-light text-dark"
                     onClick={() => handleMobileDropdownToggle(item.dropdown)}
                   >
                     <span className="flex items-center">
@@ -342,7 +342,7 @@ const Header = () => {
                   <ul
                     className={`${
                       activeDropdown === item.dropdown ? "block" : "hidden"
-                    } pl-4 bg-gray-50 border-l border-gray-200`}
+                    } pl-4 bg-off-white border-l border-light`}
                   >
                     {item.items
                       .slice(0, isMoreOpen ? item.items.length : 4)
@@ -352,9 +352,9 @@ const Header = () => {
                             href={subItem.href}
                             className={`block py-2 px-11 ${
                               pathname === subItem.href
-                                ? "text-customYellow"
-                                : "text-gray-700"
-                            } hover:text-customBlue transition-all duration-300`}
+                                ? "text-primary-blue"
+                                : "text-dark"
+                            } hover:text-primary-navy transition-all duration-300`}
                           >
                             {subItem.label}
                           </Link>
@@ -364,7 +364,7 @@ const Header = () => {
                       <li>
                         <button
                           onClick={toggleMoreItems}
-                          className="block w-full text-left py-2 px-11 font-semibold text-customBlue"
+                          className="block w-full text-left py-2 px-11 font-semibold text-primary-navy"
                         >
                           {isMoreOpen ? "Less" : "More"}
                         </button>
@@ -378,9 +378,9 @@ const Header = () => {
                     href={item.href}
                     className={`block py-2 px-11 font-light ${
                       pathname === item.href
-                        ? "text-customYellow"
-                        : "text-gray-800"
-                    } hover:text-customBlue transition-all duration-300`}
+                        ? "text-primary-blue"
+                        : "text-dark"
+                    } hover:text-primary-navy transition-all duration-300`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
@@ -395,7 +395,7 @@ const Header = () => {
             {/* CALL NOW Button */}
             <Link
               href="tel:+6478380090"
-              className="hidden text-center lg:flex justify-center items-center bg-customYellow text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-yellow-600"
+              className="hidden text-center lg:flex justify-center items-center bg-primary-blue text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-primary-blue-dark"
               onClick={() => setIsMenuOpen(false)}
             >
               CALL NOW
@@ -404,7 +404,7 @@ const Header = () => {
             {/* OUR LOCATIONS Button */}
             <Link
               href="/contact-us"
-              className="hidden text-center lg:flex justify-center items-center bg-customYellow text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-yellow-600"
+              className="hidden text-center lg:flex justify-center items-center bg-primary-blue text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-primary-blue-dark"
               onClick={() => setIsMenuOpen(false)}
             >
               OUR LOCATIONS

@@ -9,11 +9,11 @@ import axios from "axios";
 export function BlogContent({ blog, comments, recentArticles }) {
   return (
     <>
-      <div className="bg-gray-50 min-h-screen">
+      <div className="bg-off-white min-h-screen">
         <main className="max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-3 gap-8 px-6">
           <article className="lg:col-span-2">
-            <h1 className="text-4xl text-customBlue font-bold">{blog.name}</h1>
-            <p className="text-gray-600 flex items-center gap-2 py-3">
+            <h1 className="text-4xl text-primary-navy font-bold">{blog.name}</h1>
+            <p className="text-secondary flex items-center gap-2 py-3">
               GDC Admin <span className="mx-1">•</span>{" "}
               {new Date(blog.publishDate).toLocaleDateString("en-US", {
                 month: "2-digit",
@@ -33,7 +33,7 @@ export function BlogContent({ blog, comments, recentArticles }) {
             </div>
 
             <div
-              className="text-md text-gray-700 text-justify mb-4 leading-relaxed space-y-4"
+              className="text-md text-dark text-justify mb-4 leading-relaxed space-y-4"
               dangerouslySetInnerHTML={{ __html: blog.postBody }}
             />
 
@@ -99,39 +99,39 @@ function CommentSection({ blogSlug }) {
 
   return (
     <section className="mt-12">
-      <h2 className="text-2xl text-customBlue font-bold mb-4">Leave a Reply</h2>
-      <p className="text-gray-600 mb-4">
+      <h2 className="text-2xl text-primary-navy font-bold mb-4">Leave a Reply</h2>
+      <p className="text-secondary mb-4">
         Your email address will not be published. Required fields are marked *
       </p>
 
-      {message && <p className="text-green-500 mb-4">{message}</p>}
+      {message && <p className="text-dark border-l-4 border-accent-teal pl-3 mb-4">{message}</p>}
       {error && <p className="text-red-500 mb-4">{error}</p>}
 
       <form onSubmit={handleFormSubmit} className="space-y-4">
         <div>
-          <label className="block text-gray-700">Comment*</label>
+          <label className="block text-dark">Comment*</label>
           <textarea
             name="comment"
             value={formData.comment}
             onChange={handleInputChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md text-black"
+            className="w-full p-2 border border-light rounded-md text-black"
           ></textarea>
         </div>
         <div>
-          <label className="block text-gray-700">Email*</label>
+          <label className="block text-dark">Email*</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md text-black"
+            className="w-full p-2 border border-light rounded-md text-black"
           />
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-customBlue text-white rounded-md hover:bg-customYellow transition-colors"
+          className="px-4 py-2 bg-primary-blue text-white rounded-md hover:bg-primary-blue-dark transition-colors"
         >
           Submit
         </button>
@@ -143,7 +143,7 @@ function CommentSection({ blogSlug }) {
 function RecentArticles({ articles }) {
   return (
     <div>
-      <h2 className="text-xl text-customBlue font-bold">Recent Articles</h2>
+      <h2 className="text-xl text-primary-navy font-bold">Recent Articles</h2>
       {articles.map((article, index) => (
         <Link
           href={`/${article.slug}`}
@@ -160,8 +160,8 @@ function RecentArticles({ articles }) {
             />
           </div>
           <div>
-            <h3 className="text-md font-semibold text-gray-900">{article.name}</h3>
-            <p className="text-sm text-gray-500">Author</p>
+            <h3 className="text-md font-semibold text-dark">{article.name}</h3>
+            <p className="text-sm text-secondary">Author</p>
           </div>
         </Link>
       ))}
@@ -172,17 +172,17 @@ function RecentArticles({ articles }) {
 function RecentComments({ comments }) {
   return (
     <div className="p-4">
-      <h2 className="text-xl text-customBlue font-bold mb-4">Recent Comments</h2>
+      <h2 className="text-xl text-primary-navy font-bold mb-4">Recent Comments</h2>
       <ul className="list-none space-y-4">
         {comments.length > 0 ? (
           comments.map((comment, index) => (
             <li key={index} className="flex space-x-3">
               <div>
                 <div className="flex items-center space-x-2">
-                  <p className="text-sm font-semibold text-gray-800">
+                  <p className="text-sm font-semibold text-dark">
                     {comment.name || "Anonymous"}
                   </p>
-                  <small className="text-xs text-gray-500">
+                  <small className="text-xs text-secondary">
                     {new Date(comment.submittedOn).toLocaleDateString("en-US", {
                       month: "long",
                       day: "numeric",
@@ -190,12 +190,12 @@ function RecentComments({ comments }) {
                     })}
                   </small>
                 </div>
-                <p className="mt-1 text-sm text-gray-700">{comment.comment}</p>
+                <p className="mt-1 text-sm text-dark">{comment.comment}</p>
               </div>
             </li>
           ))
         ) : (
-          <p className="text-gray-500">No comments yet.</p>
+          <p className="text-secondary">No comments yet.</p>
         )}
       </ul>
     </div>

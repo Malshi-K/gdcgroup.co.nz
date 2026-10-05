@@ -17,20 +17,20 @@ const ContactSection = ({ contact, locationImage }) => {
     
     return (
       <div className="flex items-start">
-        <div className="bg-customYellow rounded-full p-3 mr-4 flex-shrink-0">
-          <IconComponent className="h-6 w-6 text-customBlue" />
+        <div className="bg-white rounded-full p-3 mr-4 flex-shrink-0">
+          <IconComponent className="h-6 w-6 text-primary-blue" />
         </div>
         <div>
           <h3 className="font-bold text-lg mb-2">{label}</h3>
           {isLink ? (
             <a
               href={linkType === 'email' ? `mailto:${value}` : `tel:${value}`}
-              className="text-gray-100 hover:text-customYellow transition-colors duration-200 text-base break-all"
+              className="text-light-blue hover:text-white transition-colors duration-200 text-base break-all"
             >
               {value}
             </a>
           ) : (
-            <p className="text-gray-100 text-base leading-relaxed whitespace-pre-line">
+            <p className="text-light-blue text-base leading-relaxed whitespace-pre-line">
               {value}
             </p>
           )}
@@ -44,15 +44,15 @@ const ContactSection = ({ contact, locationImage }) => {
       <div className="max-w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
           {/* Left Column - Contact Information */}
-          <div className="bg-customBlue text-white flex items-center">
+          <div className="bg-primary-navy text-white flex items-center">
             <div className="w-full px-8 lg:px-16 py-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">{contact.title}</h2>
-              <div className="w-24 h-1 bg-customYellow mb-12"></div>
+              <div className="w-24 h-1 bg-primary-blue mb-12"></div>
 
               {/* Contact Description */}
               {contact.description && (
                 <div className="mb-8">
-                  <p className="text-lg text-gray-100 leading-relaxed">
+                  <p className="text-lg text-light-blue leading-relaxed">
                     {contact.description}
                   </p>
                 </div>
@@ -113,7 +113,7 @@ const ContactSection = ({ contact, locationImage }) => {
                 {/* CTA Button */}
                 {contact.ctaText && (
                   <div className="pt-8">
-                    <button className="bg-customYellow text-customBlue px-8 py-4 rounded-lg font-bold hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105 shadow-lg text-lg w-full sm:w-auto">
+                    <button className="bg-primary-blue text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-blue-dark transition-all duration-200 transform hover:scale-105 shadow-lg text-lg w-full sm:w-auto">
                       {contact.ctaText}
                     </button>
                   </div>
@@ -132,8 +132,8 @@ const ContactSection = ({ contact, locationImage }) => {
                 style={{ objectPosition: 'center' }}
               />
             ) : (
-              <div className="w-full h-64 lg:h-full lg:min-h-screen bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-400 text-xl">Location Image</span>
+              <div className="w-full h-64 lg:h-full lg:min-h-screen bg-light-blue flex items-center justify-center">
+                <span className="text-secondary text-xl">Location Image</span>
               </div>
             )}
             

@@ -140,17 +140,17 @@ export default function CareerForm() {
     <div className="max-w-xl mx-auto p-6 m-6 bg-white shadow-xl rounded-md">
       <div className="flex flex-col items-center mb-6">
         <Image
-          src="/images/GDC LOGOS 2024 BLUE.webp"
-          alt="Logo"
+          src="/images/gdc-group-logo.png"
+          alt="GDC Group Logo"
           className="mb-4 w-60"
           width={240}
           height={96}
         />
-        <h1 className="text-2xl text-customBlue font-semibold">Apply Now</h1>
+        <h1 className="text-2xl text-primary-navy font-semibold">Apply Now</h1>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             First Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -159,13 +159,13 @@ export default function CareerForm() {
             placeholder="First Name"
             value={formData.firstname}
             onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+            className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Last Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -174,13 +174,13 @@ export default function CareerForm() {
             placeholder="Last Name"
             value={formData.lastname}
             onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+            className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Email <span className="text-red-500">*</span>
           </label>
           <input
@@ -189,13 +189,13 @@ export default function CareerForm() {
             placeholder="email@address.com"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+            className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Phone <span className="text-red-500">*</span>
           </label>
           <input
@@ -204,13 +204,13 @@ export default function CareerForm() {
             placeholder="071 234 5678"
             value={formData.phone}
             onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+            className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Street Address
           </label>
           <input
@@ -219,7 +219,7 @@ export default function CareerForm() {
             placeholder="Street Address"
             value={formData.address}
             onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+            className="mt-1 block w-full p-2 border border-light rounded-md text-black"
           />
         </div>
 
@@ -231,7 +231,7 @@ export default function CareerForm() {
               placeholder="City"
               value={formData.city}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+              className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             />
           </div>
 
@@ -242,7 +242,7 @@ export default function CareerForm() {
               placeholder="State / Province / Region"
               value={formData.state}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+              className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             />
           </div>
         </div>
@@ -255,7 +255,7 @@ export default function CareerForm() {
               placeholder="Zip Code"
               value={formData.zip_code}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-black"
+              className="mt-1 block w-full p-2 border border-light rounded-md text-black"
             />
           </div>
 
@@ -266,7 +266,7 @@ export default function CareerForm() {
               placeholder="Country"
               value={formData.country}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+              className="mt-1 block w-full p-2 border border-light rounded-md"
             />
           </div> */}
 
@@ -275,7 +275,7 @@ export default function CareerForm() {
               name="country"
               value={formData.country}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-gray-700"
+              className="mt-1 block w-full p-2 border border-light rounded-md text-dark"
             >
               <option value="">--- Select country ---</option>
               <option value="New Zealand">New Zealand</option>
@@ -290,7 +290,7 @@ export default function CareerForm() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Field of Interest
           </label>
           <div className="flex flex-col">
@@ -304,7 +304,7 @@ export default function CareerForm() {
             ].map((field) => (
               <label
                 key={field}
-                className="inline-flex items-center mt-2 text-gray-700"
+                className="inline-flex items-center mt-2 text-dark"
               >
                 <input
                   type="checkbox"
@@ -321,11 +321,11 @@ export default function CareerForm() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-dark">
             Cover Letter & Resume
           </label>
           <div
-            className="border-2 border-dashed border-gray-300 rounded-md p-4 text-center cursor-pointer"
+            className="border-2 border-dashed border-light rounded-md p-4 text-center cursor-pointer"
             onClick={() => document.getElementById("resume-upload").click()}
           >
             <input
@@ -336,12 +336,12 @@ export default function CareerForm() {
               onChange={handleFileChange}
               className="hidden"
             />
-            <p className="text-gray-500">
+            <p className="text-secondary">
               Click or drag files to this area to upload. You can upload up to 2
               files.
             </p>
             {formData.resume && (
-              <div className="mt-2 text-sm text-gray-600">
+              <div className="mt-2 text-sm text-secondary">
                 {Array.from(formData.resume).map((file, index) => (
                   <p key={index}>{file.name}</p>
                 ))}
@@ -351,7 +351,7 @@ export default function CareerForm() {
         </div>
 
         {/* <div className="mb-4">
-          <label className="flex items-center text-gray-700">
+          <label className="flex items-center text-dark">
             <input
               type="checkbox"
               name="do_you_agree_to_our_contact_policy_"
@@ -360,7 +360,7 @@ export default function CareerForm() {
               className="mr-2"
             />
             Do you agree to our&nbsp;
-            <a href="#" className="text-blue-500 underline">
+            <a href="#" className="text-primary-blue underline">
               contact policy
             </a>
             &nbsp;?
@@ -369,12 +369,12 @@ export default function CareerForm() {
 
         <button
           type="submit"
-          className="w-full bg-customBlue text-white py-2 px-4 rounded-md hover:bg-customYellow transition"
+          className="w-full bg-primary-blue text-white py-2 px-4 rounded-md hover:bg-primary-blue-dark transition"
         >
           Submit Application
         </button>
 
-        {success && <p className="text-green-500 mt-4">{success}</p>}
+        {success && <p className="text-dark border-l-4 border-accent-teal pl-3 mt-4">{success}</p>}
         {error && <p className="text-red-500 mt-4">{error}</p>}
       </form>
     </div>

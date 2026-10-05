@@ -27,7 +27,7 @@ export const WatersUniqueContent = () => {
             Claudelands Arena
           </h2>
           <p className="text-sm md:text-base mb-4 md:mb-6">
-            GDC Consultants are experts in delivering quality services. We have
+            GDC Group are experts in delivering quality services. We have
             access to the right resources in all contaminated land disciplines
             including soil science, hydrogeology, geotechnical, toxicology, risk
             analysis, and remedial technologies.
@@ -37,7 +37,7 @@ export const WatersUniqueContent = () => {
 
       {/* Cards */}
       <div className="mt-10 px-6 lg:px-10">
-        <h1 className="text-4xl text-customBlue font-bold text-center mb-8">
+        <h1 className="text-4xl text-primary-navy font-bold text-center mb-8">
           3 Waters Engineering
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 justify-center">
@@ -45,7 +45,7 @@ export const WatersUniqueContent = () => {
             {
               title: "Storm Water",
               description:
-                "GDC Consultants can help with technical design plans, strategy development, cohesive catchment planning, and fit-for-purpose design solutions.",
+                "GDC Group can help with technical design plans, strategy development, cohesive catchment planning, and fit-for-purpose design solutions.",
               image: "/images/services/storm-water.webp",
             },
             {
@@ -167,7 +167,7 @@ export const ElectricalEngineeringUniqueContent = () => {
             }`}
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">
-              Electrical Engineering Services by GDC Consultants
+              Electrical Engineering Services by GDC Group
             </h2>
             <p className="text-sm md:text-base mb-2 md:mb-4">
               We take pride in creating beautiful surroundings for your property
@@ -207,7 +207,7 @@ export const ElectricalEngineeringUniqueContent = () => {
               {
                 title: "Earthing",
                 description:
-                  "Earthing is crucial to ensure the safety of any electrical system. At GDC Consultants, we always ensure proper grounding, to make sure that people and equipment are appropriately protected during fault issues.",
+                  "Earthing is crucial to ensure the safety of any electrical system. At GDC Group, we always ensure proper grounding, to make sure that people and equipment are appropriately protected during fault issues.",
               },
               {
                 title: "Machine Safety Systems",
@@ -224,10 +224,10 @@ export const ElectricalEngineeringUniqueContent = () => {
                 key={index}
                 className="bg-white bg-opacity-70 rounded-lg shadow-lg p-4 flex flex-col items-start transition-transform transform hover:scale-95"
               >
-                <h3 className="text-lg md:text-xl text-customBlue font-bold mb-1 md:mb-2">
+                <h3 className="text-lg md:text-xl text-primary-navy font-bold mb-1 md:mb-2">
                   {item.title}
                 </h3>
-                <p className="text-xs md:text-sm text-customBlue">
+                <p className="text-xs md:text-sm text-primary-navy">
                   {item.description}
                 </p>
               </div>
@@ -323,7 +323,7 @@ export const PavementDesignUniqueContent = () => {
             By employing the latest technologies and techniques, our solutions
             are designed with a life-long approach that will ensure long-term
             design viability. Successful projects are the product of innovation,
-            experience, and expertise. By choosing GDC Consultants, you ensure
+            experience, and expertise. By choosing GDC Group, you ensure
             that your project has all three.
           </p>
         </div>
@@ -438,10 +438,10 @@ export const CivilStructuralUniqueContent = () => {
               key={index}
               className="bg-white bg-opacity-90 rounded-lg shadow-lg p-4 flex flex-col items-start transition-transform transform hover:scale-105"
             >
-              <h3 className="text-xl text-customBlue font-bold mb-2">
+              <h3 className="text-xl text-primary-navy font-bold mb-2">
                 {item.title}
               </h3>
-              <p className="text-customBlue">{item.description}</p>
+              <p className="text-primary-navy">{item.description}</p>
             </div>
           ))}
         </div>

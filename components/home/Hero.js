@@ -72,10 +72,10 @@ const Hero = () => {
   return (
     <>
       <Head>
-        <title>GDC Consultants: Your Engineering Partner for Success</title>
+        <title>GDC Group: Your Engineering Partner for Success</title>
         <meta
           name="description"
-          content="GDC Consultants Ltd offers expert engineering consulting services, delivering innovative solutions tailored to meet your project's unique needs and challenges."
+          content="GDC Group offers expert engineering consulting services, delivering innovative solutions tailored to meet your project's unique needs and challenges."
         />
         {/* Explicitly preload critical assets */}
         <link rel="preload" href="/images/hero-poster.webp" as="image" />
@@ -96,7 +96,7 @@ const Hero = () => {
       {/* Fixed height container to prevent layout shift */}
       <section className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[580px] overflow-hidden">
         {/* Content overlay - now with fixed positioning rather than absolute */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center md:text-left z-10">
+        <div className="absolute inset-0 bg-primary-navy bg-opacity-60 flex items-center justify-center text-center md:text-left z-10">
           <div className="container mx-auto px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-16 lg:py-20 text-white flex flex-col items-center md:items-start">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
               TRUSTED ADVISORS FOR EVERY STAGE OF YOUR PROJECT
@@ -108,13 +108,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
               <button 
                 onClick={() => router.push("/locations")} 
-                className="bg-customYellow text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+                className="bg-primary-blue text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
               >
                 GET IN TOUCH
               </button>
               <button 
                 onClick={() => router.push("/portfolio/all-projects")} 
-                className="bg-white text-customBlue px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+                className="bg-white text-primary-navy px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
               >
                 EXPLORE OUR PROJECTS
               </button>
@@ -126,7 +126,7 @@ const Hero = () => {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-poster.webp"
-            alt="GDC Consultants Hero"
+            alt="GDC Group Hero"
             fill
             priority
             sizes="100vw"

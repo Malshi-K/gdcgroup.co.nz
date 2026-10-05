@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/siteConfig";
 import "@/app/globals.css";
 import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
@@ -30,12 +31,14 @@ export async function generateMetadata(props) {
   
   if (!serviceData) {
     return {
+      metadataBase: new URL(SITE_URL),
       title: 'Service Not Found',
       description: 'The requested service could not be found.'
     };
   }
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: serviceData.metaTitle,
     description: serviceData.metaDescription,
     alternates: {

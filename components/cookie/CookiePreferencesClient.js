@@ -117,18 +117,18 @@ export default function CookiePreferencesClient() {
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-3xl font-bold mb-8 text-customBlue">
+      <h1 className="text-3xl font-bold mb-8 text-primary-navy">
         Cookie Preferences
       </h1>
 
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm mb-8 max-w-2xl">
+      <div className="bg-off-white p-6 rounded-lg shadow-sm mb-8 max-w-2xl">
         <div className="mb-6 pb-4 border-b">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h3 className="text-lg font-medium text-customBlue">
+              <h3 className="text-lg font-medium text-primary-navy">
                 Essential Cookies
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-secondary text-sm">
                 These cookies are necessary for the website to function
                 properly.
               </p>
@@ -145,10 +145,10 @@ export default function CookiePreferencesClient() {
         <div className="mb-6 pb-4 border-b">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h3 className="text-lg font-medium text-customBlue">
+              <h3 className="text-lg font-medium text-primary-navy">
                 Analytics Cookies
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-secondary text-sm">
                 These cookies help us understand how visitors interact with our
                 website.
               </p>
@@ -178,10 +178,10 @@ export default function CookiePreferencesClient() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h3 className="text-lg font-medium text-customBlue">
+              <h3 className="text-lg font-medium text-primary-navy">
                 Marketing Cookies
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-secondary text-sm">
                 These cookies are used to deliver relevant advertisements and
                 track conversions.
               </p>
@@ -211,14 +211,14 @@ export default function CookiePreferencesClient() {
         <div className="flex space-x-4 mt-8">
           <button
             onClick={savePreferences}
-            className="bg-customBlue text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
+            className="bg-primary-navy text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
           >
             Save Preferences
           </button>
           <Link
             href="/"
             onClick={handleCancel}
-            className="border border-customBlue text-customBlue px-6 py-2 rounded hover:bg-gray-100 transition-colors"
+            className="border border-primary-navy text-primary-navy px-6 py-2 rounded hover:bg-off-white transition-colors"
           >
             Cancel
           </Link>
@@ -236,7 +236,7 @@ export default function CookiePreferencesClient() {
               });
             }
           }}
-          className="text-customBlue underline"
+          className="text-primary-navy underline"
         >
           View our Privacy Policy
         </Link>

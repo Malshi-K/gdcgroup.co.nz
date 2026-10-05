@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import "@/app/globals.css";
 import ProjectHeader from "@/components/projects/ProjectHeader";
 import GetInTouch from "@/components/GetInTouch";
@@ -5,18 +6,19 @@ import ProjectsFilterView from "@/components/projects/ProjectsFilterView";
 
 export const generateMetadata = async () => {
   return {
-    title: "Engineering Projects | GDC Consultants",
+    metadataBase: new URL(SITE_URL),
+    title: "Engineering Projects | GDC Group",
     description:
-      "Discover cutting-edge engineering solutions with GDC Consultant. Our innovative projects and expert consultancy services drive success in every endeavor.",
+      "Discover cutting-edge engineering solutions with GDC Group. Our innovative projects and expert consultancy services drive success in every endeavor.",
     keywords:
-      "engineering projects, GDC consultants, architectural projects, New Zealand construction, engineering solutions, heritage buildings, educational facilities, medical facilities",
+      "engineering projects, GDC Group, architectural projects, New Zealand construction, engineering solutions, heritage buildings, educational facilities, medical facilities",
     openGraph: {
-      title: "Engineering Projects | GDC Consultants",
+      title: "Engineering Projects | GDC Group",
       description:
         "Explore our portfolio of cutting-edge engineering and architectural projects across New Zealand.",
       type: "website",
       url: "https://gdcgroup.co.nz/portfolio/all-projects",
-      siteName: "GDC Consultants",
+      siteName: SITE_NAME,
       locale: "en_NZ",
     },
     robots: {

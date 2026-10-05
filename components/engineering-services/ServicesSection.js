@@ -29,7 +29,7 @@ const services = [
   {
     title: "Structural Engineering",
     description:
-      "At GDC Consultants, we match every structure with a redesign that is innovative and responsive to changing demands. From large corporate structures to distinctive home designs – we create a masterpiece every time.",
+      "At GDC Group, we match every structure with a redesign that is innovative and responsive to changing demands. From large corporate structures to distinctive home designs – we create a masterpiece every time.",
     icon: icons.BuildingOfficeIcon,
     url: "https://gdcgroup.co.nz/services/structural-engineering"
   },
@@ -43,7 +43,7 @@ const services = [
   {
     title: "Seismic Engineering",
     description:
-      "At GDC Consultants, our commitment to Seismic engineering excellence in New Zealand sets us apart. With a wealth of expertise, we specialize in crafting robust designs for buildings and structures, ensuring their resilience to seismic activity.",
+      "At GDC Group, our commitment to Seismic engineering excellence in New Zealand sets us apart. With a wealth of expertise, we specialize in crafting robust designs for buildings and structures, ensuring their resilience to seismic activity.",
     icon: icons.WrenchScrewdriverIcon,
     url: "https://gdcgroup.co.nz/services/seismic-engineering"
   },
@@ -77,18 +77,18 @@ const ServicesSection = () => {
     <section
       id="services"
       ref={sectionRef}
-      className="px-20 py-8 bg-gray-50 overflow-hidden"
+      className="px-20 py-8 bg-off-white overflow-hidden"
     >
       <div
         className={`text-center mb-8 px-4 md:px-8 xl:px-12 transition-all duration-600 ease-out ${
           isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-5"
         }`}
       >
-        <h1 className="text-3xl text-customYellow uppercase font-bold mt-2">
+        <h1 className="text-3xl text-primary-blue uppercase font-bold mt-2">
           Our Expertise and Services
         </h1>
-        <h2 className="text-md text-customBlue tracking-wide">
-          At GDC Consultants, we offer a wide range of specialised consulting
+        <h2 className="text-md text-primary-navy tracking-wide">
+          At GDC Group, we offer a wide range of specialised consulting
           services to help our clients successfully complete their construction
           projects. Explore our services to see how we can help you reach your
           goals.
@@ -107,7 +107,7 @@ const ServicesSection = () => {
               className="text-decoration-none h-full"
             >
               <div
-                className={`relative bg-white shadow-md overflow-hidden transition duration-300 group flex flex-col items-center border-b-4 border-customBlue transform cursor-pointer h-full ${
+                className={`relative bg-white shadow-md overflow-hidden transition duration-300 group flex flex-col items-center border-b-4 border-primary-navy transform cursor-pointer h-full ${
                   isVisible
                     ? "opacity-100 transform-none"
                     : "opacity-0 translate-y-12"
@@ -122,13 +122,13 @@ const ServicesSection = () => {
                 {/* Sliding background effect */}
                 <div className="absolute inset-0 bg-white"></div>
                 <div className="flex flex-col items-center p-4 z-10 relative group-hover:text-white h-full w-full flex-grow">
-                  <div className="bg-white rounded-full p-3 shadow-lg transition duration-300 group-hover:bg-customYellow group-hover:text-white animate-fade-in">
-                    <IconComponent className="w-12 h-12 text-customBlue group-hover:text-white animate-scale-up" />
+                  <div className="bg-white rounded-full p-3 shadow-lg transition duration-300 group-hover:bg-primary-blue group-hover:text-white animate-fade-in">
+                    <IconComponent className="w-12 h-12 text-primary-navy group-hover:text-white animate-scale-up" />
                   </div>
-                  <h4 className="text-lg font-bold mt-3 text-center text-customBlue group-hover:text-customYellow animate-fade-in">
+                  <h4 className="text-lg font-bold mt-3 text-center text-primary-navy group-hover:text-primary-blue animate-fade-in">
                     {service.title}
                   </h4>
-                  <p className="font-semibold mt-3 text-center text-customBlue group-hover:text-customYellow animate-fade-in flex-grow">
+                  <p className="font-semibold mt-3 text-center text-primary-navy group-hover:text-primary-blue animate-fade-in flex-grow">
                     {service.description}
                   </p>
                 </div>
@@ -143,7 +143,7 @@ const ServicesSection = () => {
           href="https://gdcgroup.co.nz/services"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-customBlue hover:bg-customYellow text-white py-3 px-8 rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 text-lg font-medium"
+          className="inline-block bg-primary-blue hover:bg-primary-blue-dark text-white py-3 px-8 rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50 text-lg font-medium"
         >
           Check for other services
         </a>

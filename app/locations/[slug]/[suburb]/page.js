@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/locations/[slug]/[suburb]/page.js
 
 import { notFound } from 'next/navigation';
@@ -17,6 +18,7 @@ export async function generateMetadata({ params }) {
 
   if (!suburbExistsUnderParent(slug, suburb)) {
     return {
+      metadataBase: new URL(SITE_URL),
       title: 'Location Not Found - GDC Group',
     };
   }
@@ -24,6 +26,7 @@ export async function generateMetadata({ params }) {
   const locationData = getLocationContent(suburb);
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: `${locationData.title} - GDC Group`,
     description: locationData.metaDescription || locationData.description,
     keywords: `engineering, architectural services, ${locationData.title || suburb}, GDC Group`,
