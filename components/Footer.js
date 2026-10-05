@@ -123,7 +123,7 @@ export default function Footer() {
             {/* Main logo */}
             <div className="transition-transform hover:scale-105">
               <Image
-                src="/images/gdc-group-logo.png"
+                src="/images/gdc-group-logo-white.png"
                 alt="GDC Group"
                 width={150}
                 height={60}
