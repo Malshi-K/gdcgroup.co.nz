@@ -8,7 +8,7 @@ export const WatersUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Use the hook inside the component
 
   return (
-    <div className="mt-10 px-4 md:px-6 lg:px-15">
+    <div className="mt-10 site-x">
       {/* First Unique Section */}
       <div
         ref={ref} // Attach the ref to the section
@@ -36,7 +36,7 @@ export const WatersUniqueContent = () => {
       </div>
 
       {/* Cards */}
-      <div className="mt-10 px-6 lg:px-10">
+      <div className="mt-10 site-x">
         <h1 className="text-4xl text-primary-navy font-bold text-center mb-8">
           3 Waters Engineering
         </h1>
@@ -99,7 +99,7 @@ export const LandscapingUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Set the threshold as needed
 
   return (
-    <div className="mt-10 px-6 lg:px-15">
+    <div className="mt-10 site-x">
       {/* First Unique Section */}
       <div
         ref={ref} // Attach the ref to the section to observe
@@ -243,7 +243,7 @@ export const InternshipsUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Set the threshold as needed
 
   return (
-    <div className="mt-10 px-6 lg:px-15">
+    <div className="mt-10 site-x">
       {/* First Unique Section */}
       <div
         ref={ref} // Attach the ref to the section to observe
@@ -287,7 +287,7 @@ export const PavementDesignUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Set the threshold as needed
 
   return (
-    <div className="mt-10 px-4 md:px-6 lg:px-8">
+    <div className="mt-10 site-x">
       {/* First Unique Section */}
       <div
         ref={ref} // Attach the ref to the section to observe
@@ -336,7 +336,7 @@ export const SeismicEngineeringUniqueContent = () => {
   const [ref, isVisible] = useInView({ threshold: 0.2 }); // Set the threshold as needed
 
   return (
-    <div className="mt-10 px-6 lg:px-15">
+    <div className="mt-10 site-x">
       {/* First Unique Section */}
       <div
         ref={ref} // Attach the ref to the section to observe
@@ -486,7 +486,7 @@ export const PlanningUniqueContent = () => {
 
   return (
     <div className="mt-10">
-      <div className="mt-10 px-6 lg:px-15">
+      <div className="mt-10 site-x">
         {/* First Unique Section */}
         <div
           ref={ref} // Attach the ref to the section to observe

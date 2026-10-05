@@ -77,10 +77,10 @@ const ServicesSection = () => {
     <section
       id="services"
       ref={sectionRef}
-      className="px-20 py-8 bg-off-white overflow-hidden"
+      className="site-x py-8 bg-off-white overflow-hidden"
     >
       <div
-        className={`text-center mb-8 px-4 md:px-8 xl:px-12 transition-all duration-600 ease-out ${
+        className={`text-center mb-8 transition-all duration-600 ease-out ${
           isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-5"
         }`}
       >
@@ -95,7 +95,7 @@ const ServicesSection = () => {
         </h2>
       </div>
 
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-6 xl:px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((service, index) => {
           const IconComponent = service.icon; // Use dynamically imported icon component
           return (

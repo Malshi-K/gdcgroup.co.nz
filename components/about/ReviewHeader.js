@@ -36,7 +36,7 @@ const ReviewHeader = () => {
   return (
     <section
       id="review-header-section"
-      className={`px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden transition-opacity duration-600 ease-out ${
+      className={`site-x py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden transition-opacity duration-600 ease-out ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >

@@ -312,7 +312,7 @@ const ProjectSlider = () => {
       </div>
 
       <section className="pb-10" aria-label="Project Showcase">
-        <div className="max-w-screen-xl mx-auto px-6 md:px-10 xl:px-16">
+        <div className="site-x">
           {filteredProjects.length > 0 ? (
             <>
               <div

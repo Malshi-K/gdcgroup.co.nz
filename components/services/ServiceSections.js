@@ -33,7 +33,7 @@ const ServiceSections = ({ sections }) => {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row px-4 lg:px-20 py-6">
+    <div className="flex flex-col lg:flex-row site-x py-6">
       {/* Left side: list of section titles */}
       <div className="lg:w-1/4 p-4 overflow-auto max-h-[500px]">
         <ul className="space-y-4">

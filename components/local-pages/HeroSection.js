@@ -23,7 +23,7 @@ const HeroSection = ({
         <div className="absolute inset-0 bg-primary-navy bg-opacity-70"></div>
       )}
       
-      <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+      <div className="relative z-10 site-x text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
         <div className="w-24 h-1 bg-primary-blue mb-6 mx-auto"></div>
         <h2 className="text-xl md:text-2xl font-semibold mb-4">{subtitle}</h2>

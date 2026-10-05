@@ -112,7 +112,7 @@ const ServicesSection = ({ services }) => {
 
   return (
     <section className="py-16 bg-off-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="site-x">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-primary-navy mb-4">

@@ -10,7 +10,7 @@ export function BlogContent({ blog, comments, recentArticles }) {
   return (
     <>
       <div className="bg-off-white min-h-screen">
-        <main className="max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-3 gap-8 px-6">
+        <main className="site-x py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
           <article className="lg:col-span-2">
             <h1 className="text-4xl text-primary-navy font-bold">{blog.name}</h1>
             <p className="text-secondary flex items-center gap-2 py-3">

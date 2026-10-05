@@ -131,9 +131,9 @@ const CardsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative z-10 mt-4 md:mt-8 lg:mt-[-100px] xl:mt-[-150px] px-4 sm:px-6 lg:px-0 py-10"
+      className="relative z-10 mt-4 md:mt-8 lg:mt-[-100px] xl:mt-[-150px] site-x py-10"
     >
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0">
         {cardData.map((card, index) => {
           // Add sequential delay to each card
           const delay = index * 150;

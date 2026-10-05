@@ -51,7 +51,7 @@ const AboutSection = () => {
   return (
     <section
       id="about-section"
-      className="px-20 py-12 bg-white text-center overflow-hidden"
+      className="site-x py-12 bg-white text-center overflow-hidden"
     >
       <div className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h1 className="text-lg uppercase font-semibold text-secondary">

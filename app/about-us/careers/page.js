@@ -57,7 +57,7 @@ const Careers = () => {
         <JoinOurTeam />
         <JobList />
         <div className="py-12 bg-off-white">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="site-x">
             <h2 className="text-3xl font-bold text-primary-navy text-center mb-2">
               Didn&apos;t find a position that matches your interests?
             </h2>

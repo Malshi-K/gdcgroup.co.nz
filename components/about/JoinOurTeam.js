@@ -36,9 +36,9 @@ const JoinOurTeam = () => {
   return (
     <section
       id="project-header-section"
-      className="w-full p-10 md:p-16 transition-all duration-500 ease-in-out"
+      className="w-full py-10 md:py-16 transition-all duration-500 ease-in-out"
     >
-      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-0 px-4 md:px-8 lg:px-16">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-0 site-x">
         {/* Left Content Column */}
         <div
           className={`flex flex-col space-y-4 md:space-y-6 text-center md:text-left transition-all duration-600 ease-out ${

@@ -76,11 +76,11 @@ const Header = () => {
     <>
       {/* Header */}
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 px-2 sm:px-4 md:px-6 lg:px-10 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 site-x ${
           isScrolled ? "bg-primary-navy bg-opacity-90 shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto flex items-center justify-between py-3 sm:py-4 px-2 sm:px-4 md:px-6">
+        <div className="w-full flex items-center justify-between py-3 sm:py-4">
           {/* Logo with increased size */}
           <Link href="/" className="flex items-center">
             <Image

@@ -60,7 +60,7 @@ const BlogSection = () => {
 
   if (loading) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-x">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[1, 2, 3].map((n) => (
             <BlogSkeleton key={n} />
@@ -72,7 +72,7 @@ const BlogSection = () => {
 
   if (error) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center text-red-500">
+      <div className="site-x py-12 text-center text-red-500">
         Error loading blogs: {error}
       </div>
     );
@@ -80,7 +80,7 @@ const BlogSection = () => {
 
   if (!blogs?.length) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+      <div className="site-x py-12 text-center">
         No blogs available at the moment.
       </div>
     );
@@ -89,7 +89,7 @@ const BlogSection = () => {
   return (
     <section className="py-12 bg-off-white overflow-hidden">
       <motion.div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="site-x"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

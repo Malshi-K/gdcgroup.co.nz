@@ -124,7 +124,7 @@ const OurValues = () => {
   return (
     <section ref={sectionRef} className="overflow-hidden">
       <div 
-        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+        className={`site-x py-6 transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -166,7 +166,7 @@ const OurValues = () => {
       </div>
 
       <div 
-        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+        className={`site-x py-6 transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ transitionDelay: "300ms" }}

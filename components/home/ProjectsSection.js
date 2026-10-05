@@ -170,7 +170,7 @@ const ProjectsSection = () => {
   return (
     <section ref={sectionRef} className="py-16 bg-off-white overflow-hidden">
       <div
-        className={`text-center mb-12 px-6 md:px-10 xl:px-16 transition-opacity duration-600 ease-out ${
+        className={`text-center mb-12 site-x transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ transform: "translateZ(0)" }} // Force GPU acceleration
@@ -194,7 +194,7 @@ const ProjectsSection = () => {
       )}
 
       {/* Projects grid */}
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+      <div className="site-x grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={`${project.title}-${index}`}

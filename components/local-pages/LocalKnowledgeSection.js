@@ -7,7 +7,7 @@ const LocalKnowledgeSection = ({ localKnowledge }) => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="site-x">
         <h2 className="text-3xl font-bold text-primary-navy text-center mb-4">{localKnowledge.title}</h2>
         <div className="w-24 h-1 bg-primary-blue mx-auto mb-8"></div>
         <div className="max-w-4xl mx-auto text-center space-y-6">

@@ -291,7 +291,7 @@ const HeroSection = ({ RightSideComponent }) => {
       `}</style>
 
       <div
-        className={`relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 
+        className={`relative z-10 w-full site-x 
           ${
             screenSize.isMobile
               ? "pt-24 pb-12"

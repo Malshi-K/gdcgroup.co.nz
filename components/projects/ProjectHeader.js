@@ -5,22 +5,21 @@ import Image from "next/image";
 const ProjectHeader = () => {
   return (
     <section className="bg-off-white w-full py-10 md:py-16 transition-all duration-500 ease-in-out">
-      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-0 px-4 md:px-8 lg:px-16">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10 site-x">
         {/* Left Content Column */}
-        <div className="flex flex-col space-y-4 md:space-y-6 animate-fade-in-up text-center md:text-left">
+        <div className="flex flex-col space-y-3 md:space-y-4 animate-fade-in-up text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-primary-blue leading-tight animate-slide-in-left">
             Our Projects
           </h1>
           <h2 className="text-xl md:text-2xl text-primary-navy font-semibold animate-slide-in-right">
-            Building a Better Future, Today
+            Experience That Delivers
           </h2>
-          <p className="text-base md:text-lg text-secondary leading-relaxed animate-fade-in-up">
-            Our projects page showcases how we’re making a difference in the
-            communities we serve. From sustainable building practices to using
-            locally sourced materials, we’re proud to be leading the way in
-            responsible construction that benefits both our clients and the
-            planet.
-          </p>
+          <div className="space-y-3 text-sm md:text-base text-secondary leading-relaxed animate-fade-in-up">
+            <p>Our project portfolio reflects the depth of experience, technical expertise and commitment our team brings to every project.</p>
+            <p>Across engineering, architecture and the built environment, our team has contributed to a diverse range of projects throughout New Zealand. From commercial and residential developments to infrastructure and community projects, our experience spans a wide range of sectors, scales and challenges.</p>
+            <p>The projects showcased here represent the collective experience of our team, including work delivered through previous business entities and throughout our professional history.</p>
+            <p>We bring this established knowledge and experience into every new project — combining practical expertise, innovative thinking and a strong focus on delivering outcomes that make a lasting difference for our clients and communities.</p>
+          </div>
         </div>
 
         {/* Right Image Column */}

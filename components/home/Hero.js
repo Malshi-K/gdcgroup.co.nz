@@ -97,7 +97,7 @@ const Hero = () => {
       <section className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[580px] overflow-hidden">
         {/* Content overlay - now with fixed positioning rather than absolute */}
         <div className="absolute inset-0 bg-primary-navy bg-opacity-60 flex items-center justify-center text-center md:text-left z-10">
-          <div className="container mx-auto px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-16 lg:py-20 text-white flex flex-col items-center md:items-start">
+          <div className="w-full site-x py-8 sm:py-10 md:py-16 lg:py-20 text-white flex flex-col items-center md:items-start">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
               TRUSTED ADVISORS FOR EVERY STAGE OF YOUR PROJECT
             </h1>

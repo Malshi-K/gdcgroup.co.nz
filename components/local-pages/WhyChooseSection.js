@@ -7,7 +7,7 @@ const WhyChooseSection = ({ whyChoose }) => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="site-x">
         <h2 className="text-3xl font-bold text-primary-navy text-center mb-4">{whyChoose.title}</h2>
         <div className="w-24 h-1 bg-primary-blue mx-auto mb-8"></div>
         

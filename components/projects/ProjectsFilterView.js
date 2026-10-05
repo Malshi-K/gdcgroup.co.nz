@@ -361,7 +361,7 @@ const ProjectsFilterView = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8 projects-content-wrapper">
+    <div className="flex flex-col md:flex-row site-x py-8 projects-content-wrapper">
       {/* Left Side - Filter Options */}
       <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:self-start">
         <div className="bg-white rounded-lg shadow-md p-4 mb-6">

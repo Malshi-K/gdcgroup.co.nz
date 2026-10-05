@@ -52,32 +52,32 @@ const AboutCardSection = () => {
   return (
     <section
       id="about-section"
-      className="px-6 py-12 bg-white text-center overflow-hidden"
+      className="site-x py-12 bg-white text-center overflow-hidden"
     >
-      <div className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h1 className="text-lg uppercase font-semibold text-secondary">
-          About Us
-        </h1>
-        <h2
-          className="text-4xl text-primary-navy font-bold mt-2 mb-4 transition-all duration-700 ease-out delay-100"
-        >
-          GDC Group
-        </h2>
-        <h3 className="text-xl text-dark mb-8 transition-all duration-700 ease-out delay-200">
-          Chartered Professional Engineers & Architectural Designers
-        </h3>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
+        <div className={`text-center md:text-left transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <h1 className="text-lg uppercase font-semibold text-secondary">
+            About Us
+          </h1>
+          <h2
+            className="text-4xl md:text-5xl text-primary-navy font-bold mt-2 mb-4 transition-all duration-700 ease-out delay-100"
+          >
+            GDC Group
+          </h2>
+          <h3 className="text-xl text-dark transition-all duration-700 ease-out delay-200">
+            Chartered Professional Engineers & Architectural Designers
+          </h3>
+        </div>
 
-      <div className="w-full rounded-lg overflow-hidden">
-        <Image
-          src="/images/about/who-we-are.webp"
-          alt="who we are"
-          layout="responsive"
-          width={800}
-          height={450}
-          objectFit="contain"
-          className="transition-transform duration-300 hover:scale-105"
-        />
+        <div className="w-full rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src="/images/hero-poster.webp"
+            alt="GDC Group engineering and architectural design"
+            width={1920}
+            height={1080}
+            className="w-full h-auto transition-transform duration-300 hover:scale-105"
+          />
+        </div>
       </div>
 
       {/* Card Container */}

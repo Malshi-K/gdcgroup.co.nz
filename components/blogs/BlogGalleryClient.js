@@ -81,7 +81,7 @@ const BlogGalleryClient = ({ blogs }) => {
         </div>
 
         <div
-          className={`absolute bottom-5 left-5 p-6 text-center md:text-left transition-all duration-600 ease-out ${
+          className={`absolute bottom-5 left-0 site-x py-6 text-center md:text-left transition-all duration-600 ease-out ${
             isHeroVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
           }`}
           style={{ transitionDelay: "150ms" }}
@@ -96,7 +96,7 @@ const BlogGalleryClient = ({ blogs }) => {
       </div>
 
       {/* Blog grid section */}
-      <div className="px-10 py-10" id="blog-grid-section">
+      <div className="site-x py-10" id="blog-grid-section">
         {Array.isArray(blogs) && blogs.length > 0 ? (
           <section
             className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 transition-all duration-600 ease-out ${

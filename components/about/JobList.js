@@ -85,7 +85,7 @@ export default function JobList() {
   return (
     <div className="bg-off-white">
       <div 
-        className={`max-w-6xl p-6 mx-auto rounded-md transition-all duration-500 ease-out ${
+        className={`site-x py-6 rounded-md transition-all duration-500 ease-out ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >

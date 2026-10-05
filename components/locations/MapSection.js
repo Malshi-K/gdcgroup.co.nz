@@ -3,7 +3,6 @@
 import React from "react";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import officeLocations from "@/app/data/officeLocations";
-import Image from "next/image";
 import Link from "next/link";
 
 const MapSection = () => {
@@ -33,12 +32,12 @@ const MapSection = () => {
   };
 
   return (
-    <section className="py-12 px-4 md:px-16 lg:px-24 bg-off-white">
+    <section className="py-12 site-x bg-off-white">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary-navy text-center mb-8 relative">
         All Offices
         <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-primary-blue mt-2"></div>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {officeLocations.map((office) => {
           const officeSlug = generateSlug(office.name);
           const hasPage = hasLocationPage(office.name);
@@ -61,16 +60,6 @@ const MapSection = () => {
               )}
 
               <div className="p-6">
-                {office.qrCodeSrc && (
-                  <Image
-                    src={office.qrCodeSrc}
-                    alt={`${office.name} QR Code`}
-                    className="mb-4 w-30 h-30 mx-auto"
-                    width={120}
-                    height={120}
-                  />
-                )}
-
                 {/* Conditional rendering: Link only if office has location page */}
                 {hasPage ? (
                   <Link href={`/locations/${officeSlug}`}>

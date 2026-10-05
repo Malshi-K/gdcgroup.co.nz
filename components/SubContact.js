@@ -36,7 +36,7 @@ const SubContact = () => {
       ref={sectionRef}
       className={`py-10 ${isVisible ? "animate-fade-in" : ""}`}
     >
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div className="site-x">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Complete Professional Package Section */}
           <div

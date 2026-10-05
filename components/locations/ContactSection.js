@@ -121,7 +121,7 @@ const ContactSection = () => {
   return (
     <section
       ref={sectionRef}
-      className={`relative flex flex-col lg:flex-row bg-white text-black py-6 px-4 md:px-8 lg:px-16 overflow-hidden transition-all duration-600 ease-out ${
+      className={`relative flex flex-col lg:flex-row bg-white text-black py-6 site-x overflow-hidden transition-all duration-600 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
     >

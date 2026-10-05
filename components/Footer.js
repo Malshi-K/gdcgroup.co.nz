@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -72,7 +71,7 @@ export default function Footer() {
       ([entry], observer) => {
         if (entry.isIntersecting) {
           footer.style.backgroundImage =
-            "url('/images/GDC-OFFICE-EDIT-scaled.webp')";
+            "url('/images/locations/hamilton.jpg')";
           observer.disconnect();
         }
       },
@@ -117,8 +116,8 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="relative z-10 mx-auto bg-primary-navy bg-opacity-80 p-10 backdrop-blur-sm shadow-lg mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="relative z-10 mx-auto bg-primary-navy bg-opacity-80 py-10 site-x backdrop-blur-sm shadow-lg mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Company Info Column */}
           <div className="flex flex-col items-start">
             {/* Main logo */}
@@ -225,66 +224,12 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* FOLLOW Section */}
-          <div className="flex flex-col items-start">
-            <h4 className="font-semibold mb-4 text-md tracking-wide">
-              FOLLOW US
-            </h4>
-            <div
-              className="flex space-x-4"
-              role="navigation"
-              aria-label="Social Media Links"
-            >
-              {/* Facebook Icon */}
-              <a
-                href="https://www.facebook.com/GdcConsultantsLtd/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
-                aria-label="Visit GDC Group on Facebook"
-              >
-                <span className="sr-only">
-                  Visit GDC Group on Facebook
-                </span>
-                <FaFacebookF size={24} aria-hidden="true" title="Facebook" />
-              </a>
-
-              {/* LinkedIn Icon */}
-              <a
-                href="https://nz.linkedin.com/company/gdcconsultants"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
-                aria-label="Connect with GDC Group on LinkedIn"
-              >
-                <span className="sr-only">
-                  Connect with GDC Group on LinkedIn
-                </span>
-                <FaLinkedinIn size={24} aria-hidden="true" title="LinkedIn" />
-              </a>
-
-              {/* Instagram Icon */}
-              <a
-                href="https://www.instagram.com/gdc_consultants/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-light-blue transition-colors duration-300 p-2"
-                aria-label="Follow GDC Group on Instagram"
-              >
-                <span className="sr-only">
-                  Follow GDC Group on Instagram
-                </span>
-                <FaInstagram size={24} aria-hidden="true" title="Instagram" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Bottom Footer Section */}
       <div className="relative z-10 bg-primary-navy bg-opacity-80 text-light-blue text-xs py-4 mx-auto backdrop-blur-sm">
-        <div className="flex flex-col sm:flex-row items-center justify-between px-10 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row items-center justify-between site-x text-center sm:text-left">
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
             <button
               onClick={openTermsModal}
