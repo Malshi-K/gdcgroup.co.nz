@@ -1298,7 +1298,7 @@ const services = {
     },
   },
 
-  "road-transport": {
+  "transport-engineering": {
     metaTitle: "Transport Engineering Services | GDC Group",
     metaDescription:
       "GDC Group provides transport engineering solutions that support the safe, efficient and sustainable movement of people and goods across New Zealand, from local roads and subdivision access to larger infrastructure projects.",

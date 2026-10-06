@@ -107,7 +107,7 @@ export const services = [
     slug: "research-development",
     icon: icons.AcademicCapIcon,
   },
-  { title: "Road Transport", slug: "road-transport", icon: icons.TruckIcon },
+  { title: "Transport Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
   {
     title: "Seismic Engineering",
     slug: "seismic-engineering",
