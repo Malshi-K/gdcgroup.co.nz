@@ -9,13 +9,13 @@ import "../app/globals.css";
 export const generateMetadata = async () => {
   return {
     metadataBase: new URL(SITE_URL),
-    title: "GDC Group | Engineering & Architectural Design Solutions",
+    title: "GDC Group | Engineering Consultants",
     description:
       "GDC Group provides innovative solutions and expert guidance in architectural and engineering design. Serving New Zealand with a commitment to excellence.",
     keywords:
       "engineering consultants, architectural design, New Zealand engineering, GDC Group, structural engineering, building design",
     openGraph: {
-      title: "GDC Group | Engineering & Architectural Design Solutions",
+      title: "GDC Group | Engineering Consultants",
       description:
         "Leading engineering and architectural design consultancy in New Zealand",
       type: "website",
