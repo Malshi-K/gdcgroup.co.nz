@@ -14,6 +14,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/architectural-designs",
+        destination: "/services",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {

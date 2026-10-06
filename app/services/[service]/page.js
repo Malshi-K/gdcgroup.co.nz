@@ -4,6 +4,7 @@ import Image from "next/image";
 import GetInTouch from "@/components/GetInTouch";
 import ServiceDescription from "@/components/services/ServiceDescription";
 import ServiceSections from "@/components/services/ServiceSections";
+import ServiceModernLayout from "@/components/services/ServiceModernLayout";
 import services from "@/app/data/servicesData";
 import {
   ElectricalEngineeringUniqueContent,
@@ -19,7 +20,7 @@ import { Suspense } from "react";
 
 // Generate static params for all services
 export async function generateStaticParams() {
-  return Object.keys(services).map((service) => ({
+  return Object.keys(services).filter((k) => !k.startsWith("_")).map((service) => ({
     service: service,
   }));
 }
@@ -27,7 +28,7 @@ export async function generateStaticParams() {
 // Generate metadata for the page
 export async function generateMetadata(props) {
   const service = await Promise.resolve(props.params.service);
-  const serviceData = services[service];
+  const serviceData = service.startsWith("_") ? undefined : services[service];
   
   if (!serviceData) {
     return {
@@ -50,7 +51,7 @@ export async function generateMetadata(props) {
 // Main page component
 export default async function Page(props) {
   const service = await Promise.resolve(props.params.service);
-  const serviceData = services[service];
+  const serviceData = service.startsWith("_") ? undefined : services[service];
 
   // Handle 404 for unknown services
   if (!serviceData) {
@@ -70,6 +71,19 @@ export default async function Page(props) {
 
   // Get the appropriate unique content component
   const UniqueContentComponent = uniqueContentComponents[serviceData.uniqueContent];
+
+  // Services with a `modern` content object use the new layout
+  if (serviceData.modern) {
+    return (
+      <main>
+        <ServiceModernLayout
+          title={serviceData.title}
+          image={serviceData.image}
+          content={serviceData.modern}
+        />
+      </main>
+    );
+  }
 
   return (
     <main>

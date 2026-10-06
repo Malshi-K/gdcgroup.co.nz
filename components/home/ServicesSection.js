@@ -10,10 +10,6 @@ const icons = {
     () => import("@heroicons/react/24/solid").then((mod) => mod.GlobeAltIcon),
     { ssr: false }
   ),
-  HomeModernIcon: dynamic(
-    () => import("@heroicons/react/24/solid").then((mod) => mod.HomeModernIcon),
-    { ssr: false }
-  ),
   Cog6ToothIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.Cog6ToothIcon),
     { ssr: false }
@@ -68,6 +64,10 @@ const icons = {
       ),
     { ssr: false }
   ),
+  FireIcon: dynamic(
+    () => import("@heroicons/react/24/solid").then((mod) => mod.FireIcon),
+    { ssr: false }
+  ),
   BookOpenIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.BookOpenIcon),
     { ssr: false }
@@ -82,11 +82,6 @@ const services = [
     icon: icons.GlobeAltIcon,
   },
   {
-    title: "Architectural Designs",
-    slug: "architectural-designs",
-    icon: icons.HomeModernIcon,
-  },
-  {
     title: "Electrical Engineering",
     slug: "electrical-engineering",
     icon: icons.Cog6ToothIcon,
@@ -96,6 +91,7 @@ const services = [
     slug: "construction-management",
     icon: icons.ClipboardDocumentListIcon,
   },
+  { title: "Fire Engineering", slug: "fire-engineering", icon: icons.FireIcon },
   {
     title: "Geotechnical Engineering",
     slug: "geotechnical-engineering",
@@ -106,11 +102,11 @@ const services = [
     slug: "infrastructure",
     icon: icons.BriefcaseIcon,
   },
-  // {
-  //   title: "Research & Development",
-  //   slug: "research-development",
-  //   icon: icons.AcademicCapIcon,
-  // },
+  {
+    title: "Research & Development",
+    slug: "research-development",
+    icon: icons.AcademicCapIcon,
+  },
   { title: "Road Transport", slug: "road-transport", icon: icons.TruckIcon },
   {
     title: "Seismic Engineering",
@@ -128,7 +124,7 @@ const services = [
     icon: icons.PresentationChartLineIcon,
   },
   { title: "Surveying", slug: "surveying", icon: icons.MagnifyingGlassIcon },
-  // { title: "Training", slug: "training", icon: icons.BookOpenIcon },
+  { title: "Training", slug: "training", icon: icons.BookOpenIcon },
 ];
 
 const ServicesSection = () => {
