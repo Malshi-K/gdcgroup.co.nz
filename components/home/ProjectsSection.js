@@ -274,7 +274,7 @@ const ProjectsSection = () => {
       <div className="flex justify-center mt-10">
         <Link
           href="/portfolio/all-projects"
-          className="bg-primary-blue text-white font-semibold px-6 py-3 rounded-md hover:bg-primary-navy transition duration-300"
+          className="btn-primary"
         >
           View All Projects
         </Link>

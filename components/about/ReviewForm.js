@@ -176,7 +176,7 @@ export default function ReviewForm() {
 
           <button
             type="submit"
-            className="w-full bg-primary-blue text-white py-2 px-4 rounded-md hover:bg-primary-blue-dark transition"
+            className="btn-primary w-full"
           >
             Submit
           </button>

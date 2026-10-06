@@ -569,7 +569,7 @@ const ProjectsFilterView = () => {
               <div className="flex justify-center mt-8">
                 <button
                   onClick={handleShowMoreClick}
-                  className="px-6 py-3 bg-primary-blue text-white rounded-lg hover:bg-primary-blue-dark transition-colors flex items-center"
+                  className="btn-primary"
                 >
                   <span>
                     Show More Projects ({remainingProjects} remaining of{" "}

@@ -211,14 +211,14 @@ export default function CookiePreferencesClient() {
         <div className="flex space-x-4 mt-8">
           <button
             onClick={savePreferences}
-            className="bg-primary-navy text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
+            className="btn-primary btn-sm"
           >
             Save Preferences
           </button>
           <Link
             href="/"
             onClick={handleCancel}
-            className="border border-primary-navy text-primary-navy px-6 py-2 rounded hover:bg-off-white transition-colors"
+            className="btn-outline btn-sm"
           >
             Cancel
           </Link>

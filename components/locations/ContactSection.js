@@ -184,7 +184,7 @@ const ContactSection = () => {
             <textarea name="message" placeholder="Type your message..." className="mt-1 block w-full p-2 border border-light rounded-md" rows="4" value={formData.message} onChange={handleChange} required />
           </div>
           {error && <p className="text-red-600 mb-2">{error}</p>}
-          <button type="submit" className="w-full text-white py-2 px-4 rounded-md transition bg-primary-blue hover:bg-primary-blue-dark">
+          <button type="submit" className="btn-primary w-full">
             Send
           </button>
         </form>

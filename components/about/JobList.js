@@ -163,7 +163,7 @@ export default function JobList() {
                         setSelectedJob(job);
                         setIsModalOpen(true);
                       }}
-                      className="w-full px-4 py-3 bg-primary-blue text-white font-semibold rounded-md hover:bg-primary-blue-dark transition-colors"
+                      className="btn-primary w-full"
                     >
                       Apply for this role
                     </button>

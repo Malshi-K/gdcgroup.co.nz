@@ -256,7 +256,7 @@ export default function PrivacyPolicy() {
       <div className="mt-10 mb-8 text-center">
         <Link
           href="/"
-          className="bg-primary-navy text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-block"
+          className="btn-primary"
         >
           Return to Home
         </Link>

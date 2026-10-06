@@ -75,7 +75,7 @@ const icons = {
 };
 
 // Define services with dynamically imported icons
-const services = [
+export const services = [
   {
     title: "3 Waters & Contamination",
     slug: "3-waters",

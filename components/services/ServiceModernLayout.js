@@ -446,7 +446,7 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
               <div className="mt-8">
                 <a
                   href="#our-services"
-                  className="inline-block bg-primary-blue hover:bg-primary-blue-dark text-white text-sm font-semibold uppercase tracking-wide px-7 py-3 rounded-md transition-colors duration-300"
+                  className="btn-primary text-sm uppercase tracking-wide"
                 >
                   Our Services
                 </a>
@@ -639,7 +639,7 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
             </p>
             <Link
               href={closing.ctaHref}
-              className="inline-block rounded-lg bg-primary-blue px-8 py-3 font-semibold text-white transition-colors duration-300 hover:bg-primary-blue-dark"
+              className="btn-primary"
             >
               {closing.ctaLabel}
             </Link>

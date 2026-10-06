@@ -143,7 +143,7 @@ const ServicesSection = () => {
           href="https://gdcgroup.co.nz/services"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-primary-blue hover:bg-primary-blue-dark text-white py-3 px-8 rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50 text-lg font-medium"
+          className="btn-primary text-lg focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50"
         >
           Check for other services
         </a>

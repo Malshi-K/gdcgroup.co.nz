@@ -131,7 +131,7 @@ function CommentSection({ blogSlug }) {
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-primary-blue text-white rounded-md hover:bg-primary-blue-dark transition-colors"
+          className="btn-primary btn-sm"
         >
           Submit
         </button>

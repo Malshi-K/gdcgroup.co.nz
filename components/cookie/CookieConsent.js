@@ -221,7 +221,7 @@ export default function CookieConsent() {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={handleCustomizeClick}
-            className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-primary-navy transition-colors"
+            className="btn-outline-light btn-sm"
           >
             {showOptions ? "Hide Options" : "Customize"}
           </button>
@@ -229,7 +229,7 @@ export default function CookieConsent() {
           {showOptions ? (
             <button
               onClick={acceptSelectedCookies}
-              className="bg-white text-primary-navy px-6 py-2 text-sm rounded font-medium hover:bg-light-blue transition-colors"
+              className="btn-primary btn-sm"
             >
               Save Preferences
             </button>
@@ -237,7 +237,7 @@ export default function CookieConsent() {
             <>
               <Link
                 href="/privacy-policy"
-                className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-primary-navy transition-colors"
+                className="btn-outline-light btn-sm"
                 onClick={() => {
                   if (typeof window !== "undefined" && window.gtag) {
                     window.gtag('event', 'cookie_banner_interaction', {
@@ -251,7 +251,7 @@ export default function CookieConsent() {
               </Link>
               <button
                 onClick={acceptAllCookies}
-                className="bg-primary-blue text-white px-6 py-2 text-sm rounded font-medium hover:bg-primary-blue-dark transition-colors"
+                className="btn-primary btn-sm"
               >
                 Accept All
               </button>

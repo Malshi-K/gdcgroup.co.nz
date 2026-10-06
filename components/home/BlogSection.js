@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Eyebrow } from "./homeTheme";
 
 const BlogSkeleton = () => (
   <div className="bg-white shadow-lg rounded-lg overflow-hidden animate-pulse">
@@ -87,7 +88,7 @@ const BlogSection = () => {
   }
 
   return (
-    <section className="py-12 bg-off-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
       <motion.div
         className="site-x"
         initial="hidden"
@@ -96,6 +97,7 @@ const BlogSection = () => {
         variants={animations.container}
       >
         <motion.div className="text-center mb-12" variants={animations.item}>
+          <Eyebrow center>From Our Blog</Eyebrow>
           <h2 className="text-4xl text-primary-blue uppercase font-bold mt-2">
             Latest News & Updates
           </h2>
@@ -109,7 +111,7 @@ const BlogSection = () => {
           {blogs.map((blog, index) => (
             <motion.article
               key={blog.id}
-              className="bg-white shadow-lg rounded-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
+              className="bg-white border border-light rounded-xl overflow-hidden group hover:border-primary-blue hover:-translate-y-1 hover:shadow-lg transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
               variants={animations.item}
             >
               <div className="relative aspect-video overflow-hidden">
@@ -133,7 +135,7 @@ const BlogSection = () => {
 
                 <Link
                   href={blog.slug}
-                  className="m-auto inline-block text-sm text-white bg-primary-blue py-2 px-4 rounded-full hover:bg-primary-blue-dark transition-colors duration-300"
+                  className="btn-primary btn-sm"
                 >
                   Read More
                 </Link>

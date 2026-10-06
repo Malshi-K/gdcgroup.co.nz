@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -65,68 +65,25 @@ export default function Footer() {
     setIsTermsModalOpen(false);
   };
 
-  useEffect(() => {
-    const footer = document.getElementById("footer");
-    const observer = new IntersectionObserver(
-      ([entry], observer) => {
-        if (entry.isIntersecting) {
-          footer.style.backgroundImage =
-            "url('/images/locations/hamilton.jpg')";
-          observer.disconnect();
-        }
-      },
-      {
-        root: null, // Observe the viewport
-        threshold: 0.1, // Start loading when 10% of the footer is in view
-      },
-    );
-    observer.observe(footer);
-  }, []);
+  const linkClass =
+    "text-sm text-white/75 hover:text-white transition-colors tracking-wide";
 
   return (
     <footer
       id="footer"
-      className="relative bg-cover bg-center text-white"
-      style={{ backgroundImage: "none" }} // Initially no background image
+      className="relative overflow-hidden bg-gradient-to-br from-primary-navy via-primary-navy to-[#0b2a4a] text-white"
     >
-      {/* Dark Overlay for the Entire Footer */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-
-      {/* Subscription Section */}
-      <div className="relative z-10 flex flex-col items-center pt-10">
-        <h4 className="text-white text-xl font-bold mb-4 tracking-wide text-center">
-          Subscribe to our Newsletter
-        </h4>
-        <div className="flex flex-col sm:flex-row items-center justify-center">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            className="p-3 rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none outline-none w-80 text-black mb-2 sm:mb-0"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button
-            className="bg-primary-navy text-white p-3 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none tracking-wide"
-            onClick={handleSubscribe}
-          >
-            SUBSCRIBE
-          </button>
-        </div>
-        {message && <p className="text-white mt-2">{message}</p>}
-      </div>
-
       {/* Main Footer Content */}
-      <div className="relative z-10 mx-auto bg-primary-navy bg-opacity-80 py-10 site-x backdrop-blur-sm shadow-lg mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Company Info Column */}
+      <div className="site-x relative z-10 py-14 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.1fr_1fr_1fr_1fr_1.7fr] gap-10 lg:gap-12">
+          {/* Logo */}
           <div className="flex flex-col items-start">
-            {/* Main logo */}
             <div className="transition-transform hover:scale-105">
               <Image
                 src="/images/gdc-group-logo-white.png"
                 alt="GDC Group"
-                width={150}
-                height={60}
+                width={170}
+                height={68}
                 className="h-auto object-contain"
                 // TODO: replace with official white/reversed logo
                 style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
@@ -136,39 +93,27 @@ export default function Footer() {
 
           {/* COMPANY Section */}
           <div className="flex flex-col items-start">
-            <h4 className="font-semibold mb-4 text-md tracking-wide">
-              COMPANY
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-light-blue mb-5">
+              Company
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3">
               <li>
-                <Link
-                  href="/services"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/services" className={linkClass}>
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about-us/who-we-are"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/about-us/who-we-are" className={linkClass}>
                   Who We Are
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/blogs"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/blogs" className={linkClass}>
                   Blog
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about-us/careers"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/about-us/careers" className={linkClass}>
                   Careers
                 </Link>
               </li>
@@ -177,31 +122,22 @@ export default function Footer() {
 
           {/* GET IN TOUCH Section */}
           <div className="flex flex-col items-start">
-            <h4 className="font-semibold mb-4 text-md tracking-wide">
-              GET IN TOUCH
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-light-blue mb-5">
+              Get in Touch
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3">
               <li>
-                <Link
-                  href="/contact-us"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/contact-us" className={linkClass}>
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/locations"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/locations" className={linkClass}>
                   Our Locations
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about-us/review"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/about-us/review" className={linkClass}>
                   Leave Us a Review
                 </Link>
               </li>
@@ -210,26 +146,47 @@ export default function Footer() {
 
           {/* PORTFOLIO Section */}
           <div className="flex flex-col items-start">
-            <h4 className="font-semibold mb-4 text-md tracking-wide">
-              PORTFOLIO
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-light-blue mb-5">
+              Portfolio
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3">
               <li>
-                <Link
-                  href="/portfolio/all-projects"
-                  className="hover:text-light-blue tracking-wide"
-                >
+                <Link href="/portfolio/all-projects" className={linkClass}>
                   All Projects
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Newsletter */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h4 className="text-lg font-bold tracking-wide mb-4">
+              Subscribe to our Newsletter
+            </h4>
+            <div className="flex flex-row max-w-md">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                aria-label="Email address"
+                className="min-w-0 flex-1 px-4 py-3 rounded-l-lg rounded-r-none border-2 border-white outline-none text-dark bg-white placeholder:text-secondary focus:border-light-blue"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button
+                className="bg-primary-blue hover:bg-primary-blue-dark transition-colors text-white font-semibold px-6 py-3 rounded-r-lg rounded-l-none border-2 border-primary-blue hover:border-primary-blue-dark tracking-wide"
+                onClick={handleSubscribe}
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+            {message && <p className="text-white/90 text-sm mt-3">{message}</p>}
+          </div>
         </div>
       </div>
 
       {/* Bottom Footer Section */}
-      <div className="relative z-10 bg-primary-navy bg-opacity-80 text-light-blue text-xs py-4 mx-auto backdrop-blur-sm">
-        <div className="flex flex-col sm:flex-row items-center justify-between site-x text-center sm:text-left">
+      <div className="relative z-10 border-t border-white/10 text-white/70 text-xs py-5">
+        <div className="flex flex-col sm:flex-row items-center justify-between site-x text-center sm:text-left gap-3">
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
             <button
               onClick={openTermsModal}
@@ -250,13 +207,13 @@ export default function Footer() {
               COOKIE SETTINGS
             </Link>
           </div>
-          <span className="tracking-wide mt-2 sm:mt-0">
+          <span className="tracking-wide">
             © {currentYear}{" "}
             <a
               href="https://www.gdcdigital.net/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-light-blue"
+              className="text-light-blue hover:text-white"
             >
               GDC Digital Solutions
             </a>

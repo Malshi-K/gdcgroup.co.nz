@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
 import Image from "next/image";
+import { Eyebrow, BlueprintGrid, Crosshair } from "./homeTheme";
 
 const Hero = () => {
   const router = useRouter();
@@ -94,10 +95,13 @@ const Hero = () => {
       </Head>
       
       {/* Fixed height container to prevent layout shift */}
-      <section className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[580px] overflow-hidden">
+      <section className="relative z-10 h-[440px] sm:h-[440px] md:h-[540px] lg:h-[620px] overflow-hidden bg-primary-navy [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)]">
         {/* Content overlay - now with fixed positioning rather than absolute */}
-        <div className="absolute inset-0 bg-primary-navy bg-opacity-60 flex items-center justify-center text-center md:text-left z-10">
-          <div className="w-full site-x py-8 sm:py-10 md:py-16 lg:py-20 text-white flex flex-col items-center md:items-start">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/90 via-primary-navy/75 to-primary-navy/55 flex items-center justify-center text-center md:text-left z-10">
+          <BlueprintGrid />
+          <Crosshair tone="dark" className="absolute right-6 top-24 hidden opacity-50 md:block" />
+          <div className="relative w-full site-x pt-24 pb-12 sm:pt-24 sm:pb-12 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 text-white flex flex-col items-center md:items-start">
+            <Eyebrow tone="dark">Engineering Consultants</Eyebrow>
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
               TRUSTED ADVISORS FOR EVERY STAGE OF YOUR PROJECT
             </h1>
@@ -108,13 +112,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
               <button 
                 onClick={() => router.push("/locations")} 
-                className="bg-primary-blue text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+                className="btn-primary w-full sm:w-auto"
               >
                 GET IN TOUCH
               </button>
               <button 
                 onClick={() => router.push("/portfolio/all-projects")} 
-                className="bg-white text-primary-navy px-6 py-3 rounded-xl font-semibold transition-colors duration-300 hover:bg-opacity-90 w-full sm:w-auto"
+                className="btn-outline-light w-full sm:w-auto"
               >
                 EXPLORE OUR PROJECTS
               </button>

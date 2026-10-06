@@ -55,7 +55,7 @@ const SubContact = () => {
             <div className="flex justify-center">
               <Link
                 href="/services"
-                className="py-2 px-4 bg-primary-blue text-white rounded-lg hover:bg-primary-blue-dark transition-transform duration-300 ease-in-out hover:scale-105"
+                className="btn-primary btn-sm"
               >
                 View Services
               </Link>

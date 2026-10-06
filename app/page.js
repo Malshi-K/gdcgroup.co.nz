@@ -1,7 +1,7 @@
 import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import Hero from "@/components/home/Hero";
 import CardsSection from "@/components/home/CardsSection";
-import ServicesSection from "@/components/home/ServicesSection";
+import ServicesSection from "@/components/home/ServicesSectionHome";
 import BlogSection from "@/components/home/BlogSection";
 import "../app/globals.css";
 

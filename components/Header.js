@@ -22,6 +22,18 @@ const Header = () => {
 
   const pathname = usePathname(); // Get the current pathname
 
+  // Homepage only: transparent header over the hero, white once the page is scrolled
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  const isHome = pathname === "/";
+  const overlay = isHome && !scrolled && !isMenuOpen;
+  const navText = overlay ? "text-white" : "text-primary-navy";
+
   // Detect if the current view is mobile or desktop
   useEffect(() => {
     const checkMobileView = () => {
@@ -87,7 +99,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-white shadow-md">
+    <header
+      className={`w-full top-0 z-50 transition-colors duration-300 motion-reduce:transition-none ${
+        isHome ? "fixed inset-x-0" : "sticky"
+      } ${
+        overlay
+          ? "bg-gradient-to-b from-primary-navy/70 to-transparent"
+          : "bg-white shadow-md"
+      }`}
+    >
       {/* Navigation Bar */}
       <div className="max-w-screen-full mx-auto px-5 sm:px-8 md:px-10">
         <nav className="flex justify-between items-center py-3 px-4 lg:px-6">
@@ -101,6 +121,7 @@ const Header = () => {
                 height={793} // Actual pixel height (keeps aspect ratio)
                 priority // Critical for above-the-fold logo
                 className="w-[150px] h-auto md:w-[150px] lg:w-[200px] cursor-pointer"
+                style={overlay ? { filter: "brightness(0) invert(1)" } : undefined}
                 quality={90} // Higher quality for logo
               />
             </Link>
@@ -113,7 +134,7 @@ const Header = () => {
               {isMenuOpen ? (
                 <XMarkIcon className="w-6 h-6 text-black transition-transform duration-300" />
               ) : (
-                <Bars3Icon className="w-6 h-6 text-black transition-transform duration-300" />
+                <Bars3Icon className={`w-6 h-6 transition-transform duration-300 ${overlay ? "text-white" : "text-black"}`} />
               )}
             </button>
           </div>
@@ -191,7 +212,7 @@ const Header = () => {
                   }
                 >
                   <button
-                    className="flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer text-primary-navy"
+                    className={`flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer ${navText}`}
                     onClick={() =>
                       isMobileView
                         ? handleMobileDropdownToggle(item.dropdown)
@@ -243,8 +264,10 @@ const Header = () => {
                     href={item.href}
                     className={`block text-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 ${
                       pathname === item.href
-                        ? "text-primary-blue"
-                        : "text-primary-navy"
+                        ? overlay
+                          ? "text-white underline underline-offset-8 decoration-2"
+                          : "text-primary-blue"
+                        : navText
                     }`}
                   >
                     {item.label}
@@ -394,7 +417,7 @@ const Header = () => {
             {/* CALL NOW Button */}
             <Link
               href="tel:+6478380090"
-              className="hidden text-center lg:flex justify-center items-center bg-primary-blue text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-primary-blue-dark"
+              className="btn-primary btn-sm hidden lg:flex"
               onClick={() => setIsMenuOpen(false)}
             >
               CALL NOW
@@ -403,7 +426,7 @@ const Header = () => {
             {/* OUR LOCATIONS Button */}
             <Link
               href="/contact-us"
-              className="hidden text-center lg:flex justify-center items-center bg-primary-blue text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-primary-blue-dark"
+              className={`${overlay ? "btn-outline-light" : "btn-outline"} btn-sm hidden lg:flex`}
               onClick={() => setIsMenuOpen(false)}
             >
               OUR LOCATIONS

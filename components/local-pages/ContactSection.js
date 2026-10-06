@@ -113,7 +113,7 @@ const ContactSection = ({ contact, locationImage }) => {
                 {/* CTA Button */}
                 {contact.ctaText && (
                   <div className="pt-8">
-                    <button className="bg-primary-blue text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-blue-dark transition-all duration-200 transform hover:scale-105 shadow-lg text-lg w-full sm:w-auto">
+                    <button className="btn-primary text-lg w-full sm:w-auto">
                       {contact.ctaText}
                     </button>
                   </div>
