@@ -4,6 +4,7 @@
 
 import { useState, useEffect } from "react";
 import JobApplicationModal from "./JobApplicationModal";
+import { Crosshair } from "@/components/home/homeTheme";
 
 // Current job openings
 const jobs = [
@@ -83,7 +84,9 @@ export default function JobList() {
   }, []);
 
   return (
-    <div className="bg-off-white">
+    <div className="relative -mt-5 bg-off-white pt-8 md:-mt-14 md:pt-16">
+      <Crosshair className="absolute left-6 top-24 hidden opacity-40 md:block" />
+      <Crosshair className="absolute right-6 top-24 hidden opacity-40 md:block" />
       <div 
         className={`site-x py-6 rounded-md transition-all duration-500 ease-out ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
@@ -130,7 +133,7 @@ export default function JobList() {
             {filteredGroupedJobs[category].map((job, index) => (
               <div
                 key={job.title}
-                className={`p-6 bg-white shadow-sm rounded-md hover:border hover:border-primary-navy transition-all duration-300 ${
+                className={`p-6 bg-white border border-light rounded-xl hover:border-primary-blue hover:-translate-y-1 hover:shadow-lg transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
                   isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
                 }`}
                 style={{ transitionDelay: `${(categoryIndex * 100) + (index * 75)}ms` }}

@@ -109,8 +109,8 @@ const CareerFormEmbed = ({
   }, [containerId, hiddenFields, region, resolvedFormId, resolvedPortalId, scriptSrc, targetId]);
 
   return (
-    <div className="flex justify-center w-full px-4">
-      <div className="career-form-container w-full max-w-2xl">
+    <div className="flex justify-center w-full bg-off-white px-4 pb-16">
+      <div className="career-form-container w-full max-w-2xl rounded-2xl border border-light bg-white p-6 md:p-10">
         <div className="flex flex-col items-center mb-6">
           {showLogo ? (
             <Image
