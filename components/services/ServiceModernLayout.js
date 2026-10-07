@@ -17,6 +17,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  Eyebrow,
+  BlueprintGrid,
+  Crosshair,
+  TrussArt,
+  BuildingFrameArt,
+} from "@/components/home/homeTheme";
+import {
   ArrowPathIcon,
   ArrowsRightLeftIcon,
   ArrowTrendingDownIcon,
@@ -156,21 +163,14 @@ const splitTagline = (t) => {
   return [w.slice(0, mid).join(" "), w.slice(mid).join(" ")];
 };
 
-const Eyebrow = ({ children, light = false }) => (
-  <p
-    className={`text-xs uppercase tracking-widest font-semibold mb-3 ${light ? "text-light-blue" : "text-primary-blue"}`}
-  >
-    {children}
-  </p>
-);
-
 const SectionHeading = ({ eyebrow, children }) => (
-  <div className="text-center mb-12">
-    {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+  <div className="relative mb-12 text-center">
+    <TrussArt className="pointer-events-none absolute -left-8 top-0 hidden w-56 opacity-50 2xl:block" />
+    <BuildingFrameArt className="pointer-events-none absolute -right-4 -top-4 hidden w-32 opacity-40 2xl:block" />
+    {eyebrow && <Eyebrow center>{eyebrow}</Eyebrow>}
     <h2 className="text-3xl md:text-4xl font-bold text-primary-navy">
       {children}
     </h2>
-    <div className="w-24 h-1 bg-primary-blue mx-auto mt-4" />
   </div>
 );
 
@@ -266,7 +266,12 @@ const CardGridBlock = ({ block, bg }) => {
   const three = block.columns === 3;
   const odd = block.cards.length % 2 === 1;
   return (
-    <section id={block.id} className={`${bg} py-16 md:py-24 scroll-mt-24`}>
+    <section
+      id={block.id}
+      className={`relative ${bg} py-16 md:py-24 scroll-mt-24`}
+    >
+      <Crosshair className="absolute left-6 top-6 hidden opacity-40 md:block" />
+      <Crosshair className="absolute right-6 top-6 hidden opacity-40 md:block" />
       <div className="site-x">
         {block.heading && (
           <SectionHeading eyebrow="What we do">{block.heading}</SectionHeading>
@@ -280,18 +285,12 @@ const CardGridBlock = ({ block, bg }) => {
               <article
                 id={slugify(card.title)}
                 key={card.title}
-                className={`group relative flex scroll-mt-24 flex-col overflow-hidden rounded-2xl border border-light bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${!three && odd && last ? "lg:col-span-2" : ""}`}
+                className={`group relative flex scroll-mt-24 flex-col overflow-hidden rounded-2xl border border-light bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-blue hover:shadow-xl motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${!three && odd && last ? "lg:col-span-2" : ""}`}
               >
                 <div className="h-1.5 bg-gradient-to-r from-primary-blue to-primary-navy" />
                 <div className="flex flex-1 flex-col p-6 md:p-8">
-                  <div className="mb-5 flex items-start justify-between">
+                  <div className="mb-5">
                     <IconTile name={card.icon} size="lg" />
-                    <span
-                      className="select-none text-5xl font-bold leading-none text-light-blue"
-                      aria-hidden="true"
-                    >
-                      {String(ci + 1).padStart(2, "0")}
-                    </span>
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold leading-tight text-primary-navy">
                     {card.title}
@@ -424,23 +423,22 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-white to-light-blue">
+      <section className="relative z-10 overflow-hidden bg-primary-navy [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)]">
+        <BlueprintGrid className="z-[1]" />
         <div className="relative">
-          <div className="site-x relative z-10 flex flex-col justify-center py-14 md:min-h-[540px] md:py-24 pb-24 md:pb-36">
+          <div className="site-x relative z-10 flex flex-col justify-center pb-24 pt-36 md:min-h-[600px] md:pb-40 md:pt-44">
             <div className="max-w-xl">
-              <p className="text-xs md:text-sm uppercase tracking-widest font-semibold text-primary-blue mb-4">
-                {title}
-              </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-navy">
+              <Eyebrow tone="dark">{title}</Eyebrow>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
                 {headA}
                 {headB && (
                   <>
                     <br />
-                    <span className="text-primary-blue">{headB}</span>
+                    <span className="text-light-blue">{headB}</span>
                   </>
                 )}
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-secondary">
+              <p className="mt-6 text-lg leading-relaxed text-light-blue">
                 {intro[0]}
               </p>
               <div className="mt-8">
@@ -461,7 +459,7 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
               priority
               quality={90}
               sizes="(min-width: 768px) 58vw, 100vw"
-              className="object-cover"
+              className="object-cover opacity-80"
             />
           </div>
         </div>
@@ -471,10 +469,10 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
       {overview && (
         <section
           id="our-services"
-          className="relative z-10 -mt-16 md:-mt-24 pb-10 scroll-mt-24"
+          className="relative -mt-16 pb-10 scroll-mt-24 md:-mt-24 bg-[linear-gradient(to_bottom,#1A242F_0,#1A242F_6rem,transparent_6rem)] md:bg-[linear-gradient(to_bottom,#1A242F_0,#1A242F_8rem,transparent_8rem)]"
         >
           <div className="site-x">
-            <div className="bg-white rounded-2xl shadow-xl border border-light p-6 md:p-10 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+            <div className="relative z-20 bg-white rounded-2xl shadow-xl border border-light p-6 md:p-10 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
               <div className="lg:col-span-2">
                 <Eyebrow>Our Services</Eyebrow>
                 <h2 className="text-2xl md:text-3xl font-bold text-primary-navy leading-tight mb-3">
@@ -522,8 +520,9 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
       )}
 
       {/* Highlights strip */}
-      <section className="bg-light-blue border-y border-light py-8">
-        <div className="site-x grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x divide-light">
+      <section className="relative overflow-hidden bg-primary-navy py-10">
+        <BlueprintGrid />
+        <div className="site-x relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x divide-white/20">
           {highlights.map((h) => {
             const Icon = h.icon;
             return (
@@ -532,14 +531,14 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
                 className="flex items-start gap-3 lg:px-6 first:lg:pl-0 last:lg:pr-0"
               >
                 <Icon
-                  className="h-8 w-8 flex-shrink-0 text-primary-blue"
+                  className="h-8 w-8 flex-shrink-0 text-light-blue"
                   aria-hidden="true"
                 />
                 <div>
-                  <p className="font-bold text-primary-navy text-sm">
+                  <p className="font-bold text-white text-sm">
                     {h.title}
                   </p>
-                  <p className="text-sm text-secondary leading-snug mt-1">
+                  <p className="text-sm text-light-blue leading-snug mt-1">
                     {h.text}
                   </p>
                 </div>
@@ -621,9 +620,10 @@ const ServiceModernLayout = ({ title, image, content: rawContent }) => {
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-navy via-primary-navy/90 to-primary-navy/70" />
+        <BlueprintGrid />
         <div className="site-x relative grid grid-cols-1 items-center gap-10 lg:grid-cols-5 lg:gap-14">
           <div className="lg:col-span-3">
-            <Eyebrow light>GDC Group</Eyebrow>
+            <Eyebrow tone="dark">GDC Group</Eyebrow>
             <h2 className="mb-5 text-3xl md:text-4xl font-bold leading-tight">
               {closing.title}
             </h2>
