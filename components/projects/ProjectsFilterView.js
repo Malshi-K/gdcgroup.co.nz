@@ -364,7 +364,7 @@ const ProjectsFilterView = () => {
     <div className="flex flex-col md:flex-row site-x py-8 projects-content-wrapper">
       {/* Left Side - Filter Options */}
       <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:self-start">
-        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+        <div className="bg-white rounded-xl border border-light p-4 mb-6">
           <h2 className="text-xl font-semibold text-primary-navy mb-4">
             Filter projects
           </h2>
@@ -428,7 +428,7 @@ const ProjectsFilterView = () => {
                 <div
                   id={`project-${index}`}
                   key={`project-${index}`}
-                  className={`bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer project-card ${
+                  className={`bg-white rounded-xl border border-light overflow-hidden hover:border-primary-blue hover:-translate-y-1 hover:shadow-lg transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0 cursor-pointer project-card ${
                     index >= (currentPage - 1) * PROJECTS_PER_PAGE
                       ? "animate-fadeIn"
                       : ""

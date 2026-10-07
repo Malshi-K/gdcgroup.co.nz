@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import ProjectHeader from "@/components/projects/ProjectHeader";
 import GetInTouch from "@/components/GetInTouch";
 import ProjectsFilterView from "@/components/projects/ProjectsFilterView";
+import { Crosshair } from "@/components/home/homeTheme";
 
 export const generateMetadata = async () => {
   return {
@@ -46,7 +47,11 @@ const ProjectsPage = () => {
   return (
     <>
       <ProjectHeader />
-      <ProjectsFilterView />
+      <section className="relative -mt-5 bg-off-white pt-8 md:-mt-14 md:pt-16">
+        <Crosshair className="absolute left-6 top-24 hidden opacity-40 md:block" />
+        <Crosshair className="absolute right-6 top-24 hidden opacity-40 md:block" />
+        <ProjectsFilterView />
+      </section>
       <GetInTouch />
     </>
   );

@@ -30,8 +30,11 @@ const Header = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  // Homepage and service detail pages start with a dark hero, so the header can overlay it
-  const isHome = pathname === "/" || pathname.startsWith("/services/");
+  // Homepage, service detail and portfolio pages start with a dark hero, so the header can overlay it
+  const isHome =
+    pathname === "/" ||
+    pathname.startsWith("/services/") ||
+    pathname.startsWith("/portfolio");
   const overlay = isHome && !scrolled && !isMenuOpen;
   const navText = overlay ? "text-white" : "text-primary-navy";
 
