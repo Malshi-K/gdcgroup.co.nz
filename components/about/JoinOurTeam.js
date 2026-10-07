@@ -76,7 +76,7 @@ const JoinOurTeam = () => {
           style={{ transitionDelay: "400ms" }}
         >
           <Image
-            src="/images/about/career.webp"
+            src="/images/about/career.jfif"
             alt="Our Projects"
             width={700}
             height={500}

@@ -2,6 +2,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { BlueprintGrid } from "@/components/home/homeTheme";
 
 const SubContact = () => {
   const sectionRef = useRef(null);
@@ -34,25 +35,24 @@ const SubContact = () => {
   return (
     <section
       ref={sectionRef}
-      className={`py-10 ${isVisible ? "animate-fade-in" : ""}`}
+      className={`bg-off-white py-12 md:py-16 ${isVisible ? "animate-fade-in" : ""}`}
     >
       <div className="site-x">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Complete Professional Package Section */}
           <div
-            className={`bg-primary-navy rounded-lg text-center p-6 md:p-8 h-[300px] md:h-[350px] flex flex-col justify-center ${
-              isVisible
-                ? "animate-slide-in-left transition duration-300 ease-in-out hover:scale-105"
-                : ""
+            className={`relative overflow-hidden bg-primary-navy rounded-2xl text-center p-6 md:p-8 h-[300px] md:h-[350px] flex flex-col justify-center ${
+              isVisible ? "animate-slide-in-left" : ""
             }`}
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <BlueprintGrid />
+            <h2 className="relative text-2xl md:text-3xl font-bold text-white mb-4">
               Complete Professional Package
             </h2>
-            <p className="text-md md:text-lg text-white mb-4 md:mb-6">
+            <p className="relative text-md md:text-lg text-light-blue mb-4 md:mb-6">
               Have a look at our services that we provide
             </p>
-            <div className="flex justify-center">
+            <div className="relative flex justify-center">
               <Link
                 href="/services"
                 className="btn-primary btn-sm"
@@ -64,10 +64,8 @@ const SubContact = () => {
 
           {/* Worked With Us Lately Section */}
           <div
-            className={`bg-primary-blue rounded-lg p-6 md:p-8 h-[300px] md:h-[350px] text-center flex flex-col justify-center ${
-              isVisible
-                ? "animate-slide-in-right transition duration-300 ease-in-out hover:scale-105"
-                : ""
+            className={`bg-primary-blue rounded-2xl p-6 md:p-8 h-[300px] md:h-[350px] text-center flex flex-col justify-center ${
+              isVisible ? "animate-slide-in-right" : ""
             }`}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
