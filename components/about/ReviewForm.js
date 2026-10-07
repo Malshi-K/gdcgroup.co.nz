@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import axios from "axios"; // Add axios for API requests
+import { Crosshair } from "@/components/home/homeTheme";
 
 export default function ReviewForm() {
   const [formData, setFormData] = useState({
@@ -66,8 +67,10 @@ export default function ReviewForm() {
   };
 
   return (
-    <div className="bg-off-white">
-      <div className="max-w-xl mx-auto p-6">
+    <div className="relative -mt-5 bg-off-white px-4 pb-16 pt-10 md:-mt-14 md:pt-20">
+      <Crosshair className="absolute left-6 top-24 hidden opacity-40 md:block" />
+      <Crosshair className="absolute right-6 top-24 hidden opacity-40 md:block" />
+      <div className="relative mx-auto max-w-xl rounded-2xl border border-light bg-white p-6 md:p-10">
         <div className="flex flex-col items-center mb-6">
           <Image
             src="/images/gdc-group-logo.png"
@@ -92,7 +95,7 @@ export default function ReviewForm() {
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+                className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
                 required
               />
             </div>
@@ -106,7 +109,7 @@ export default function ReviewForm() {
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+                className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
                 required
               />
             </div>
@@ -122,7 +125,7 @@ export default function ReviewForm() {
               placeholder="email@address.com"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+              className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
               required
             />
           </div>
@@ -138,7 +141,7 @@ export default function ReviewForm() {
                 placeholder="+xx xx xxx xxxx"
                 value={formData.phone}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+                className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
                 required
               />
             </div>
@@ -152,7 +155,7 @@ export default function ReviewForm() {
                 placeholder="Job Number"
                 value={formData.jobNumber}
                 onChange={handleChange}
-                className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+                className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
                 required
               />
             </div>
@@ -168,7 +171,7 @@ export default function ReviewForm() {
               placeholder="Your feedback..."
               value={formData.feedback}
               onChange={handleChange}
-              className="mt-1 block w-full p-2 border border-light rounded-md text-black" // Ensure text color is visible
+              className="mt-1 block w-full p-2 border border-light rounded-lg text-black focus:border-primary-blue focus:outline-none" // Ensure text color is visible
               required
               rows="4"
             />

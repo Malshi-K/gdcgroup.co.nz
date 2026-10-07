@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Eyebrow, BlueprintGrid } from "@/components/home/homeTheme";
 
 const ReviewHeader = () => {
   // State to control animation
@@ -36,42 +37,43 @@ const ReviewHeader = () => {
   return (
     <section
       id="review-header-section"
-      className={`site-x py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center overflow-hidden transition-opacity duration-600 ease-out ${
+      className={`relative z-10 overflow-hidden bg-primary-navy transition-opacity duration-600 ease-out motion-reduce:transition-none [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)] ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      {/* Image Section */}
-      <div
-        className={`flex justify-center relative overflow-hidden transition-all duration-600 ease-out ${
-          isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
-        }`}
-      >
-        <Image
-          src="/images/about/review.webp" // Replace with the actual path to your image
-          alt="Feedback Illustration"
-          width={800} // Adjust width according to your design needs
-          height={250}
-          className="object-cover"
-        />
-      </div>
+      <BlueprintGrid className="z-[1]" />
+      <div className="relative">
+        {/* Text Section */}
+        <div className="site-x relative z-10 flex flex-col justify-center pb-24 pt-36 md:min-h-[520px] md:pb-40 md:pt-44">
+          <div
+            className={`max-w-xl text-center transition-all duration-600 ease-out motion-reduce:transition-none md:text-left ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+            }`}
+            style={{ transitionDelay: "150ms" }}
+          >
+            <Eyebrow tone="dark">Leave us a Review</Eyebrow>
+            <h1 className="mb-4 mt-2 text-4xl font-bold text-white md:text-5xl">
+              Share Your Experience With Us
+            </h1>
+            <p className="text-xl text-light-blue">
+              Please provide your feedback for any job you have previously
+              completed with us, and kindly include the job number for easy
+              reference.
+            </p>
+          </div>
+        </div>
 
-      {/* Text Section */}
-      <div
-        className={`text-center md:text-left relative overflow-hidden transition-all duration-600 ease-out ${
-          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
-        }`}
-        style={{ transitionDelay: "150ms" }}
-      >
-        <h1 className="text-lg uppercase font-semibold text-secondary">
-          Leave us a Review
-        </h1>
-        <h2 className="text-4xl text-primary-navy font-bold mt-2 mb-4">
-          Share Your Experience With Us
-        </h2>
-        <p className="text-xl text-dark mb-8">
-          Please provide your feedback for any job you have previously completed
-          with us, and kindly include the job number for easy reference.
-        </p>
+        {/* Background image, blended into the text */}
+        <div className="hero-fade relative h-64 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[58%]">
+          <Image
+            src="/images/about/review.jfif"
+            alt="Feedback Illustration"
+            fill
+            priority
+            sizes="(min-width: 768px) 58vw, 100vw"
+            className="object-cover opacity-80"
+          />
+        </div>
       </div>
     </section>
   );
