@@ -37,7 +37,8 @@ const Header = () => {
     pathname.startsWith("/portfolio") ||
     pathname === "/about-us/who-we-are" ||
     pathname === "/about-us/careers" ||
-    pathname === "/about-us/review";
+    pathname === "/about-us/review" ||
+    pathname === "/blogs";
   const overlay = isHome && !scrolled && !isMenuOpen;
   const navText = overlay ? "text-white" : "text-primary-navy";
 
