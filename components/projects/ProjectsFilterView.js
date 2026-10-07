@@ -449,19 +449,6 @@ const ProjectsFilterView = () => {
                         className="object-cover w-full h-full"
                       />
 
-                      {/* Award badge overlaid on the image */}
-                      {isAwardWinningProject(project.title) && (
-                        <div className="badge-container">
-                          <Image
-                            src="/images/awards/NZCPA QMs 2025_Gold.png"
-                            alt="Gold Award 2025"
-                            width={90}
-                            height={90}
-                            priority
-                          />
-                        </div>
-                      )}
-
                       {/* Image count badge - only show if there are multiple images */}
                       {project.relatedImages.length > 1 && (
                         <div className="absolute top-2 left-2 bg-primary-navy text-white rounded-full p-2 text-xs font-bold flex items-center">
@@ -731,21 +718,6 @@ const ProjectsFilterView = () => {
                           sizes="(max-width: 768px) 100vw, 50vw"
                           className="object-cover rounded-lg"
                         />
-
-                        {/* Add badge to first image in modal */}
-                        {index === 0 &&
-                          isAwardWinningProject(selectedProject.title) && (
-                            <div className="absolute top-[-20px] right-[-20px] z-50 w-24 h-24 overflow-visible">
-                              <Image
-                                src="/images/awards/NZCPA QMs 2025_Gold.png"
-                                alt="Gold Award 2025"
-                                width={96}
-                                height={96}
-                                className="object-contain"
-                                priority
-                              />
-                            </div>
-                          )}
 
                         {/* Show Google Street View attribution in modal images too */}
                         {selectedProject.googleStreetView && (
