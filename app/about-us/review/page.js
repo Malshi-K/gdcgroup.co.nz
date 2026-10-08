@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 // 1. page.js (Server Component)
 import ReviewHeader from "@/components/about/ReviewHeader";
 import ReviewForm from "@/components/about/ReviewForm";
@@ -5,18 +6,19 @@ import "@/app/globals.css";
 
 export const generateMetadata = async () => {
   return {
-    title: "Share Your Experience | GDC Consultants Review",
+    metadataBase: new URL(SITE_URL),
+    title: "Share Your Experience | GDC Group Review",
     description:
-      "Share your experience with GDC Consultants. We value your feedback to help us improve our services in architecture, engineering, and project management across New Zealand.",
+      "Share your experience with GDC Group. We value your feedback to help us improve our services in architecture, engineering, and project management across New Zealand.",
     keywords:
       "GDC reviews, engineering consultant reviews, client feedback, architecture reviews, New Zealand engineering services, project management feedback",
     openGraph: {
-      title: "Share Your Experience | GDC Consultants Review",
+      title: "Share Your Experience | GDC Group Review",
       description:
         "Help us improve our engineering and architectural services by sharing your valuable feedback.",
       type: "website",
       url: "https://gdcgroup.co.nz/about-us/review",
-      siteName: "GDC Consultants",
+      siteName: SITE_NAME,
       locale: "en_NZ",
     },
 

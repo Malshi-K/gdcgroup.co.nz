@@ -4,6 +4,7 @@
 
 import { useState, useEffect } from "react";
 import JobApplicationModal from "./JobApplicationModal";
+import { Crosshair } from "@/components/home/homeTheme";
 
 // Current job openings
 const jobs = [
@@ -15,7 +16,7 @@ const jobs = [
     category: "Geotechnical",
     type: "Part Time",
     description:
-      "GDC Consultants Ltd is seeking a part time Geotechnical Field Technician to support our teams in Napier and Gisborne.",
+      "GDC Group is seeking a part time Geotechnical Field Technician to support our teams in Napier and Gisborne.",
     aboutRole:
       "This is a varied, practical position ideal for someone who enjoys working outdoors, learning new skills, and supporting project delivery. Hours can be structured to suit workload and availability, making it a great fit for someone seeking part time employment while still engaging in meaningful technical work.",
     responsibilities: [
@@ -83,9 +84,11 @@ export default function JobList() {
   }, []);
 
   return (
-    <div className="bg-gray-100">
+    <div className="relative -mt-5 bg-off-white pt-8 md:-mt-14 md:pt-16">
+      <Crosshair className="absolute left-6 top-24 hidden opacity-40 md:block" />
+      <Crosshair className="absolute right-6 top-24 hidden opacity-40 md:block" />
       <div 
-        className={`max-w-6xl p-6 mx-auto rounded-md transition-all duration-500 ease-out ${
+        className={`site-x py-6 rounded-md transition-all duration-500 ease-out ${
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
@@ -95,12 +98,12 @@ export default function JobList() {
             isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
           }`}
         >
-          <h2 className="text-xl text-customBlue font-semibold">
+          <h2 className="text-xl text-primary-navy font-semibold">
             Job Openings
           </h2>
           {/* <div className="relative">
             <select
-              className="bg-gray-100 text-customBlue border border-customBlue rounded-md p-2"
+              className="bg-off-white text-primary-navy border border-primary-navy rounded-md p-2"
               value={selectedLocation}
               onChange={(e) => setSelectedLocation(e.target.value)}
             >
@@ -123,14 +126,14 @@ export default function JobList() {
             style={{ transitionDelay: `${categoryIndex * 100}ms` }}
           >
             {/* <div className="border-b pb-2">
-              <h3 className="text-lg text-customBlue font-medium">
+              <h3 className="text-lg text-primary-navy font-medium">
                 {category}
               </h3>
             </div> */}
             {filteredGroupedJobs[category].map((job, index) => (
               <div
                 key={job.title}
-                className={`p-6 bg-white shadow-sm rounded-md hover:border hover:border-customBlue transition-all duration-300 ${
+                className={`p-6 bg-white border border-light rounded-xl hover:border-primary-blue hover:-translate-y-1 hover:shadow-lg transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
                   isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
                 }`}
                 style={{ transitionDelay: `${(categoryIndex * 100) + (index * 75)}ms` }}
@@ -139,20 +142,20 @@ export default function JobList() {
                   <div className="flex-1 space-y-4">
                     <div>
                       <div className="flex flex-wrap items-center gap-3">
-                        <h4 className="text-xl text-customYellow font-bold">
+                        <h4 className="text-xl text-primary-blue font-bold">
                           {job.title}
                         </h4>
-                        <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-customBlue">
+                        <span className="rounded-full bg-light-blue px-3 py-1 text-sm font-medium text-primary-navy">
                           {job.type}
                         </span>
                       </div>
-                      <p className="mt-2 text-sm text-gray-500">
+                      <p className="mt-2 text-sm text-secondary">
                         {job.location} | {job.postedDate}
                       </p>
                     </div>
 
-                    <p className="text-gray-700">{job.description}</p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-dark">{job.description}</p>
+                    <p className="text-sm text-secondary">
                       Click apply to view the full job details and submit your application.
                     </p>
                   </div>
@@ -163,7 +166,7 @@ export default function JobList() {
                         setSelectedJob(job);
                         setIsModalOpen(true);
                       }}
-                      className="w-full px-4 py-3 bg-customYellow text-white font-semibold rounded-md hover:bg-yellow-500 transition-colors"
+                      className="btn-primary w-full"
                     >
                       Apply for this role
                     </button>

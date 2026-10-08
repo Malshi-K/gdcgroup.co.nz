@@ -111,16 +111,16 @@ const ServicesSection = ({ services }) => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-16 bg-off-white">
+      <div className="site-x">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-customBlue mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-primary-navy mb-4">
             {services.title}
           </h2>
-          <div className="w-24 h-1 bg-customYellow mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-primary-blue mx-auto mb-6"></div>
           {services.subtitle && (
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-dark max-w-4xl mx-auto leading-relaxed">
               {services.subtitle}
             </p>
           )}
@@ -155,7 +155,7 @@ const ServicesSection = ({ services }) => {
                   {/* Expand/Collapse Button */}
                   <button
                     onClick={() => toggleCard(index)}
-                    className="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm hover:bg-customYellow text-customBlue hover:text-customBlue p-2 rounded-full transition-all duration-200"
+                    className="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm hover:bg-primary-blue text-primary-navy hover:text-white p-2 rounded-full transition-all duration-200"
                     aria-label={isExpanded ? "Collapse" : "Expand"}
                   >
                     {isExpanded ? (
@@ -167,8 +167,8 @@ const ServicesSection = ({ services }) => {
 
                   {/* Icon */}
                   <div className="relative z-10 text-center">
-                    <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full shadow-xl p-6 mx-auto w-fit group-hover:bg-customYellow group-hover:bg-opacity-90 transition-all duration-300">
-                      <IconComponent className="w-16 h-16 text-customBlue group-hover:text-white transition-colors duration-300" />
+                    <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full shadow-xl p-6 mx-auto w-fit group-hover:bg-primary-blue group-hover:bg-opacity-90 transition-all duration-300">
+                      <IconComponent className="w-16 h-16 text-primary-navy group-hover:text-white transition-colors duration-300" />
                     </div>
                   </div>
                 </div>
@@ -176,12 +176,12 @@ const ServicesSection = ({ services }) => {
                 {/* Bottom Section - Content Area */}
                 <div className="p-6">
                   {/* Service Title */}
-                  <h3 className="text-xl font-bold text-customBlue mb-3 group-hover:text-customYellow transition-colors duration-200 text-center">
+                  <h3 className="text-xl font-bold text-primary-navy mb-3 group-hover:text-primary-blue transition-colors duration-200 text-center">
                     {service.name}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed mb-4 text-center text-sm">
+                  <p className="text-dark leading-relaxed mb-4 text-center text-sm">
                     {service.description}
                   </p>
                 </div>
@@ -192,16 +192,16 @@ const ServicesSection = ({ services }) => {
                     service.additional ||
                     service.conclusion ||
                     service.features) && (
-                    <div className="border-t border-gray-100 p-6 bg-gray-50">
+                    <div className="border-t border-light p-6 bg-off-white">
                       {/* Details Column */}
                       <div className="space-y-6">
                         {service.details && (
                           <div>
-                            <h4 className="text-lg font-semibold text-customBlue mb-3 flex items-center">
+                            <h4 className="text-lg font-semibold text-primary-navy mb-3 flex items-center">
                               <ClipboardDocumentListIcon className="w-5 h-5 mr-2" />
                               Service Details
                             </h4>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-dark leading-relaxed">
                               {service.details}
                             </p>
                           </div>
@@ -209,23 +209,23 @@ const ServicesSection = ({ services }) => {
 
                         {service.additional && (
                           <div>
-                            <h4 className="text-lg font-semibold text-customBlue mb-3 flex items-center">
+                            <h4 className="text-lg font-semibold text-primary-navy mb-3 flex items-center">
                               <WrenchScrewdriverIcon className="w-5 h-5 mr-2" />
                               Additional Information
                             </h4>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-dark leading-relaxed">
                               {service.additional}
                             </p>
                           </div>
                         )}
 
                         {service.conclusion && (
-                          <div className="border-l-4 border-customYellow p-4 rounded-r">
-                            <h4 className="text-lg font-semibold text-customBlue mb-2 flex items-center">
+                          <div className="border-l-4 border-primary-blue p-4 rounded-r">
+                            <h4 className="text-lg font-semibold text-primary-navy mb-2 flex items-center">
                               <ShieldCheckIcon className="w-5 h-5 mr-2" />
                               Summary
                             </h4>
-                            <p className="text-gray-700 leading-relaxed italic">
+                            <p className="text-dark leading-relaxed italic">
                               {service.conclusion}
                             </p>
                           </div>
@@ -235,7 +235,7 @@ const ServicesSection = ({ services }) => {
                       {/* Features Column */}
                       {service.features && service.features.length > 0 && (
                         <div>
-                          <h4 className="text-lg font-semibold text-customBlue mt-3 mb-3 flex items-center">
+                          <h4 className="text-lg font-semibold text-primary-navy mt-3 mb-3 flex items-center">
                             <BriefcaseIcon className="w-5 h-5 mr-2" />
                             Key Features & Services
                           </h4>
@@ -245,8 +245,8 @@ const ServicesSection = ({ services }) => {
                                 key={featureIndex}
                                 className="flex items-start"
                               >
-                                <div className="bg-customYellow w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span className="text-gray-700 leading-relaxed text-sm">
+                                <div className="bg-primary-blue w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span className="text-dark leading-relaxed text-sm">
                                   {feature}
                                 </span>
                               </li>
@@ -259,7 +259,7 @@ const ServicesSection = ({ services }) => {
                       <div className="flex justify-center mt-6">
                         <button
                           onClick={() => toggleCard(index)}
-                          className="flex items-center gap-2 text-customBlue hover:text-customYellow transition-colors duration-200 font-medium"
+                          className="flex items-center gap-2 text-primary-navy hover:text-primary-blue transition-colors duration-200 font-medium"
                         >
                           <span>Show Less</span>
                           <ChevronUpIcon className="w-4 h-4" />

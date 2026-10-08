@@ -135,7 +135,7 @@ export default function CookieConsent() {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-customBlue bg-opacity-95 text-white py-4 px-6 z-50 shadow-lg">
+    <div className="fixed bottom-0 left-0 right-0 bg-primary-navy bg-opacity-95 text-white py-4 px-6 z-50 shadow-lg">
       <div className="container mx-auto flex flex-col justify-between items-start">
         <div className="mb-4 text-sm md:text-base">
           This website uses cookies to ensure proper operation and enhance your
@@ -148,7 +148,7 @@ export default function CookieConsent() {
               <div className="flex items-center justify-between mb-3 pb-3 border-b border-white border-opacity-20">
                 <div>
                   <h4 className="font-medium">Essential Cookies</h4>
-                  <p className="text-sm text-gray-200">
+                  <p className="text-sm text-light-blue">
                     These cookies are necessary for the website to function
                     properly.
                   </p>
@@ -166,7 +166,7 @@ export default function CookieConsent() {
               <div className="flex items-center justify-between mb-3 pb-3 border-b border-white border-opacity-20">
                 <div>
                   <h4 className="font-medium">Analytics Cookies</h4>
-                  <p className="text-sm text-gray-200">
+                  <p className="text-sm text-light-blue">
                     These cookies help us understand how visitors interact with
                     our website.
                   </p>
@@ -192,7 +192,7 @@ export default function CookieConsent() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Marketing Cookies</h4>
-                  <p className="text-sm text-gray-200">
+                  <p className="text-sm text-light-blue">
                     These cookies are used to deliver relevant advertisements
                     and track conversions.
                   </p>
@@ -221,7 +221,7 @@ export default function CookieConsent() {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={handleCustomizeClick}
-            className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
+            className="btn-outline-light btn-sm"
           >
             {showOptions ? "Hide Options" : "Customize"}
           </button>
@@ -229,7 +229,7 @@ export default function CookieConsent() {
           {showOptions ? (
             <button
               onClick={acceptSelectedCookies}
-              className="bg-white text-customBlue px-6 py-2 text-sm rounded font-medium hover:bg-customYellow transition-colors"
+              className="btn-primary btn-sm"
             >
               Save Preferences
             </button>
@@ -237,7 +237,7 @@ export default function CookieConsent() {
             <>
               <Link
                 href="/privacy-policy"
-                className="text-white border border-white px-4 py-2 text-sm rounded hover:bg-white hover:text-customBlue transition-colors"
+                className="btn-outline-light btn-sm"
                 onClick={() => {
                   if (typeof window !== "undefined" && window.gtag) {
                     window.gtag('event', 'cookie_banner_interaction', {
@@ -251,7 +251,7 @@ export default function CookieConsent() {
               </Link>
               <button
                 onClick={acceptAllCookies}
-                className="bg-customYellow text-customBlue px-6 py-2 text-sm rounded font-medium hover:bg-white transition-colors"
+                className="btn-primary btn-sm"
               >
                 Accept All
               </button>

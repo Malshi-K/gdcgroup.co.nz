@@ -21,7 +21,7 @@
   width: 100%;
   padding: 12px;
   margin-bottom: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid #DDE3E8;
   border-radius: 4px;
   font-size: 1rem;
   box-sizing: border-box;
@@ -31,12 +31,12 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: block;
-  color: #374151;
+  color: #26323B;
 }
 
 .career-form-container #hubspotForm .hs-button {
-  background-color: #0056b3 !important;
-  border-color: #0056b3 !important;
+  background-color: #0061B4 !important;
+  border-color: #0061B4 !important;
   color: #ffffff !important;
   padding: 12px;
   font-size: 1rem;
@@ -47,7 +47,7 @@
 }
 
 .career-form-container #hubspotForm .hs-button:hover {
-  background-color: #004494 !important;
+  background-color: #00559F !important;
 }
 
 /* Responsive adjustments */

@@ -2,14 +2,20 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image"; // Import Image from Next.js
+import {
+  StarIcon,
+  GlobeAltIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
+import { Eyebrow, BlueprintGrid, Crosshair } from "@/components/home/homeTheme";
 
 const AboutCardSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  
+
   useEffect(() => {
     // Set visible after component mounts to trigger animations
     setIsVisible(true);
-    
+
     // Optional: Set up intersection observer for scroll-based animation
     const observer = new IntersectionObserver(
       (entries) => {
@@ -17,12 +23,12 @@ const AboutCardSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
-    
-    const section = document.getElementById('about-section');
+
+    const section = document.getElementById("about-section");
     if (section) observer.observe(section);
-    
+
     return () => {
       if (section) observer.unobserve(section);
     };
@@ -31,95 +37,134 @@ const AboutCardSection = () => {
   const teamMembers = [
     {
       id: 1,
-      title: "We Are Industry Leaders",
-      description:
-        "GDC Consultants are a nationwide provider of innovative solutions in all areas of the engineering and architecture process chains. Our unique success story is predicated on our core values of innovation, competency, and strict coordination on client needs.",
+      title: "Engineering Better Outcomes",
+      tagline: "Your vision. Our expertise.",
+      paragraphs: [
+        "GDC Group is a New Zealand engineering consultancy delivering practical, innovative and technically robust solutions for building, infrastructure and development projects.",
+        "We combine specialist engineering knowledge with a collaborative, client-focused approach to solve complex challenges, manage risk and deliver outcomes that stand the test of time.",
+        "Our success is built on three principles: **technical excellence, practical thinking and trusted relationships.**",
+      ],
     },
     {
       id: 2,
-      title: "We Provide Sustainable Solutions",
-      description:
-        "We understand the vital necessity of sustainability in everything we do. Our corporate practice is founded on ethical behavior, innovation, and ensuring the sustainability of our community and environment.",
+      title: "Engineering with Purpose",
+      paragraphs: [
+        "We believe good engineering goes beyond meeting technical requirements. It is about creating solutions that are safe, efficient, resilient and responsible — delivering long-term value for our clients and the communities we serve.",
+        "Sustainability, considered design and responsible decision-making are embedded in the way we approach our projects, from early planning and design through to construction and delivery.",
+      ],
     },
     {
       id: 3,
       title: "Who We Are",
-      description:
-        "Through our expertise, competency, and continuous client support, we have earned the trust of our clients. By developing long lasting partnerships and consistently providing the best possible solutions and services, we are considered industry leaders. \nAt GDC Consultants, we believe in having strong values and priorities in everything we do. We take responsibility for the way our work affects society and the environment, and we are constantly aiming to give back to our community.",
+      paragraphs: [
+        "GDC Group brings together experienced engineering professionals with a shared commitment to quality, integrity and service.",
+        "We work closely with clients, architects, contractors, developers and project teams to understand the challenges behind every project and provide clear, practical engineering advice.",
+        "Our relationships are built on trust, communication and accountability. We take pride in delivering work that meets the highest professional standards while providing solutions that are practical to build, efficient to deliver and designed for the future.",
+      ],
+      closing:
+        "At GDC Group, we don't just engineer projects — we help shape better outcomes for New Zealand.",
     },
   ];
 
+  const cardIcons = [StarIcon, GlobeAltIcon, UserGroupIcon];
+  const cardAnim = [
+    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12",
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
+    isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12",
+  ];
+
   return (
-    <section
-      id="about-section"
-      className="px-6 py-12 bg-white text-center overflow-hidden"
-    >
-      <div className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h1 className="text-lg uppercase font-semibold text-gray-500">
-          About Us
-        </h1>
-        <h2
-          className="text-4xl text-customBlue font-bold mt-2 mb-4 transition-all duration-700 ease-out delay-100"
-        >
-          GDC Consultants LTD
-        </h2>
-        <h3 className="text-xl text-gray-700 mb-8 transition-all duration-700 ease-out delay-200">
-          Chartered Professional Engineers & Architectural Designers
-        </h3>
-      </div>
+    <>
+      {/* Hero */}
+      <section
+        id="about-section"
+        className="relative z-10 overflow-hidden bg-primary-navy [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)]"
+      >
+        <BlueprintGrid className="z-[1]" />
+        <div className="relative">
+          <div className="site-x relative z-10 flex flex-col justify-center pb-24 pt-36 md:min-h-[560px] md:pb-40 md:pt-44">
+            <div
+              className={`max-w-xl text-center md:text-left transition-all duration-700 ease-out transform motion-reduce:transition-none ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            >
+              <Eyebrow tone="dark">About Us</Eyebrow>
+              <h1 className="mb-4 mt-2 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+                GDC Group
+              </h1>
+              <h3 className="text-xl text-light-blue">
+                At GDC, we engineer solutions to meet client and national needs
+                to improve the performance of the infrastructure and people
+                lives
+              </h3>
+            </div>
+          </div>
+          <div className="hero-fade relative h-64 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[58%]">
+            <Image
+              src="/images/about/who-we-are.jfif"
+              alt="GDC Group engineering and architectural design"
+              fill
+              priority
+              sizes="(min-width: 768px) 58vw, 100vw"
+              className="object-cover opacity-80"
+            />
+          </div>
+        </div>
+      </section>
 
-      <div className="w-full rounded-lg overflow-hidden">
-        <Image
-          src="/images/about/who-we-are.webp"
-          alt="who we are"
-          layout="responsive"
-          width={800}
-          height={450}
-          objectFit="contain"
-          className="transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-
-      {/* Card Container */}
-      <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-8 md:mt-12 overflow-hidden">
-        {/* First Card */}
-        <div
-          className={`overflow-hidden md:w-1/3 flex flex-col relative transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}
-        >
-          <div className="p-4 bg-white rounded-lg shadow-md h-full hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-lg text-customBlue font-bold mb-2">
-              {teamMembers[0].title}
-            </h3>
-            <p className="text-gray-600 mb-2">&ldquo;Your vision. Our expertise.&rdquo;</p>
-            <p className="text-gray-600">{teamMembers[0].description}</p>
-          </div>
+      {/* Cards (overlap the hero edge) */}
+      <section className="relative -mt-5 bg-off-white pb-14 pt-12 md:-mt-14 md:pb-20 md:pt-20">
+        <Crosshair className="absolute left-6 top-8 hidden opacity-40 md:block" />
+        <Crosshair className="absolute right-6 top-8 hidden opacity-40 md:block" />
+        <div className="site-x flex flex-col items-stretch justify-center gap-6 md:flex-row">
+          {teamMembers.map((member, i) => {
+            const Icon = cardIcons[i];
+            return (
+              <div
+                key={member.id}
+                className={`flex md:w-1/3 transform flex-col transition-all duration-700 ease-out motion-reduce:transition-none ${cardAnim[i]}`}
+                style={{ transitionDelay: `${i * 150}ms` }}
+              >
+                <div className="h-full rounded-2xl border border-light bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-blue hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                  <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-blue to-primary-navy">
+                    <Icon className="h-6 w-6 text-white" aria-hidden="true" />
+                  </span>
+                  <h3 className="mb-2 text-lg font-bold text-primary-navy">
+                    {member.title}
+                  </h3>
+                  {member.tagline && (
+                    <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-primary-blue">
+                      {member.tagline}
+                    </p>
+                  )}
+                  <div className="space-y-3 text-secondary">
+                    {member.paragraphs.map((text) => (
+                      <p key={text}>
+                        {text.split("**").map((part, n) =>
+                          n % 2 ? (
+                            <strong
+                              key={n}
+                              className="font-semibold text-primary-navy"
+                            >
+                              {part}
+                            </strong>
+                          ) : (
+                            part
+                          ),
+                        )}
+                      </p>
+                    ))}
+                  </div>
+                  {member.closing && (
+                    <p className="mt-4 border-t border-light pt-4 font-semibold text-primary-navy">
+                      {member.closing}
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
-        
-        {/* Middle Card */}
-        <div
-          className={`overflow-hidden md:w-1/3 flex flex-col relative transition-all duration-700 ease-out transform delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
-        >
-          <div className="p-4 bg-white rounded-lg shadow-md h-full hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-lg text-customBlue font-bold mb-2">
-              {teamMembers[1].title}
-            </h3>
-            <p className="text-gray-600">{teamMembers[1].description}</p>
-          </div>
-        </div>
-        
-        {/* Third Card */}
-        <div
-          className={`overflow-hidden md:w-1/3 flex flex-col relative transition-all duration-700 ease-out transform delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}
-        >
-          <div className="p-4 bg-white rounded-lg shadow-md h-full hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-lg text-customBlue font-bold mb-2">
-              {teamMembers[2].title}
-            </h3>
-            <p className="text-gray-600">{teamMembers[2].description}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

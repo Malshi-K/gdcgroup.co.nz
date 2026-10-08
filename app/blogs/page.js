@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/blogs/page.js
 import BlogGalleryClient from '@/components/blogs/BlogGalleryClient';
 
@@ -33,8 +34,12 @@ async function fetchBlogs() {
 }
 
 export const metadata = {
-  title: 'Our Blog | GDC Consultants - Latest News & Updates',
-  description: 'Stay updated with the latest news, insights, and updates from GDC Consultants.',
+  metadataBase: new URL(SITE_URL),
+  title: 'Our Blog | GDC Group - Latest News & Updates',
+  description: 'Stay updated with the latest news, insights, and updates from GDC Group.',
+  alternates: {
+    canonical: 'https://gdcgroup.co.nz/blogs',
+  },
 }
 
 export default async function BlogPage() {

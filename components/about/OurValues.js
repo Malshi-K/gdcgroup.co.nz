@@ -6,6 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Crosshair } from "@/components/home/homeTheme";
 
 // Correct Heroicons imports for v2
 import {
@@ -69,31 +70,31 @@ const OurValues = () => {
 
   const visions = [
     {
-      icon: <BeakerIcon className="w-16 h-16 text-customBlue" />,
+      icon: <BeakerIcon className="w-16 h-16 text-primary-blue" />,
       title: "Competence",
       description:
         "We believe that competence is essential to achieving excellency. We always apply our technical, creative, and social competency to innovate, build, and assure long-term success.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-blue" />,
       title: "Innovation",
       description:
         "We pride ourselves on our ability to innovate. You provide us with a vision, and we will provide the ideas and designs to make it a reality.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-blue" />,
       title: "Commitment",
       description:
         "We believe in the power of teamwork, and we always strive to create synergies to enhance our performance. We have a strong sense of responsibility for every project we undertake, no matter how big or small.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-blue" />,
       title: "Work Ethics and Compliance",
       description:
         "We believe that our actions speak for our ethics. We always show strong moral responsibility and respect for applicable laws, standards, and rules.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-blue" />,
       title: "Competence",
       description:
         "We constantly liaise with our clients to ensure that all of their individual needs, requirements, and concerns are met. We aim to enhance the competitiveness and value of assets for all of our clients.",
@@ -102,19 +103,19 @@ const OurValues = () => {
 
   const missions = [
     {
-      icon: <BeakerIcon className="w-16 h-16 text-customBlue" />,
+      icon: <BeakerIcon className="w-16 h-16 text-primary-blue" />,
       title: "Empowered by Advanced Technology",
       description:
-        "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering and architecture services – especially at solving persistent and complex engineering problems.",
+        "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering services – especially at solving persistent and complex engineering problems.",
     },
     {
-      icon: <LightBulbIcon className="w-16 h-16 text-customBlue" />,
+      icon: <LightBulbIcon className="w-16 h-16 text-primary-blue" />,
       title: "Futuristic Approach",
       description:
         "We use our extensive knowledge and experience to create development solutions which far exceed current market requirements. We aim not just to meet our client's current needs, but also to predict and meet their future needs too.",
     },
     {
-      icon: <Cog6ToothIcon className="w-16 h-16 text-customBlue" />,
+      icon: <Cog6ToothIcon className="w-16 h-16 text-primary-blue" />,
       title: "Guaranteed Quality",
       description:
         "By using the latest and best diagnostic technology and solutions, we guarantee optimal quality outcomes for all of our projects.",
@@ -122,22 +123,24 @@ const OurValues = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="overflow-hidden">
+    <section ref={sectionRef} className="relative overflow-hidden bg-white py-10 md:py-16">
+      <Crosshair className="absolute left-6 top-6 hidden opacity-40 md:block" />
+      <Crosshair className="absolute right-6 top-6 hidden opacity-40 md:block" />
       <div 
-        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+        className={`site-x py-6 transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Static Introductory Column */}
           <div
-            className={`flex flex-col items-center justify-center text-center p-6 bg-white transition-all duration-600 ease-out ${
+            className={`flex flex-col items-center justify-center text-center p-6 bg-primary-navy rounded-2xl transition-all duration-600 ease-out motion-reduce:transition-none ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
             style={{ transitionDelay: "100ms" }}
           >
-            <h2 className="text-3xl text-customBlue font-bold mb-4">Our Vision</h2>
-            <p className="text-gray-600 max-w-md">
+            <h2 className="text-3xl text-white font-bold mb-4">Our Vision</h2>
+            <p className="text-light-blue max-w-md">
               Our vision is to provide unmatched quality, competitive solutions,
               and customized approaches.
             </p>
@@ -157,8 +160,8 @@ const OurValues = () => {
                 }}
               >
                 <div className="flex justify-center mb-4">{vision.icon}</div>
-                <h3 className="text-lg font-bold">{vision.title}</h3>
-                <p className="text-gray-600 mt-2">{vision.description}</p>
+                <h3 className="text-lg font-bold text-primary-navy">{vision.title}</h3>
+                <p className="text-secondary mt-2">{vision.description}</p>
               </div>
             ))}
           </Slider>
@@ -166,7 +169,7 @@ const OurValues = () => {
       </div>
 
       <div 
-        className={`px-10 py-6 transition-opacity duration-600 ease-out ${
+        className={`site-x py-6 transition-opacity duration-600 ease-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         style={{ transitionDelay: "300ms" }}
@@ -186,20 +189,20 @@ const OurValues = () => {
                 }}
               >
                 <div className="flex justify-center mb-4">{mission.icon}</div>
-                <h3 className="text-lg font-bold">{mission.title}</h3>
-                <p className="text-gray-600 mt-2">{mission.description}</p>
+                <h3 className="text-lg font-bold text-primary-navy">{mission.title}</h3>
+                <p className="text-secondary mt-2">{mission.description}</p>
               </div>
             ))}
           </Slider>
 
           {/* Static Introductory Column */}
           <div
-            className={`flex flex-col items-center justify-center text-center p-6 bg-white transition-all duration-600 ease-out ${
+            className={`flex flex-col items-center justify-center text-center p-6 bg-primary-navy rounded-2xl transition-all duration-600 ease-out motion-reduce:transition-none ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
             }`}
             style={{ transitionDelay: "400ms" }}
           >
-            <h2 className="text-3xl text-customBlue font-bold mb-4">Our Mission</h2>
+            <h2 className="text-3xl text-white font-bold mb-4">Our Mission</h2>
           </div>
         </div>
       </div>

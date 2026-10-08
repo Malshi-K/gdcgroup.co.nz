@@ -72,7 +72,7 @@ const ContactSection = () => {
         legalConsentOptions: {
           consent: {
             consentToProcess: true,
-            text: "I agree to allow GDC Consultants Ltd to store and process my personal data.",
+            text: "I agree to allow GDC Group to store and process my personal data.",
           },
         },
       };
@@ -121,31 +121,31 @@ const ContactSection = () => {
   return (
     <section
       ref={sectionRef}
-      className={`relative flex flex-col lg:flex-row bg-white text-black py-6 px-4 md:px-8 lg:px-16 overflow-hidden transition-all duration-600 ease-out ${
+      className={`relative flex flex-col lg:flex-row bg-white text-black py-6 site-x overflow-hidden transition-all duration-600 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
     >
       <div className="flex-1 flex items-center justify-center py-6 md:py-0">
         <div className="text-left max-w-sm -mt-20 md:mt-0">
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-customBlue">Head Office</h1>
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-primary-navy">Head Office</h1>
           <div className="space-y-4">
             <div className="flex items-start">
-              <div className="bg-customBlue p-3 rounded-full"><MapPinIcon className="h-6 w-6 text-white" /></div>
-              <div className="ml-4 text-customBlue">
+              <div className="bg-primary-navy p-3 rounded-full"><MapPinIcon className="h-6 w-6 text-white" /></div>
+              <div className="ml-4 text-primary-navy">
                 <p className="font-semibold">Address</p>
-                <p>89 Church Road, Pukete, Hamilton 3200</p>
+                <p>29 Orchard Te Kauwhata</p>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-customBlue p-3 rounded-full"><PhoneIcon className="h-6 w-6 text-white" /></div>
-              <div className="ml-4 text-customBlue">
+              <div className="bg-primary-navy p-3 rounded-full"><PhoneIcon className="h-6 w-6 text-white" /></div>
+              <div className="ml-4 text-primary-navy">
                 <p className="font-semibold">Phone</p>
                 <a href="tel:+6478380090" className="hover:underline">+64 7 838 0090</a>
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-customBlue p-3 rounded-full"><EnvelopeIcon className="h-6 w-6 text-white" /></div>
-              <div className="ml-4 text-customBlue">
+              <div className="bg-primary-navy p-3 rounded-full"><EnvelopeIcon className="h-6 w-6 text-white" /></div>
+              <div className="ml-4 text-primary-navy">
                 <p className="font-semibold">Email</p>
                 <a href="mailto:hamilton@gdcgroup.co.nz" className="hover:underline">hamilton@gdcgroup.co.nz</a>
               </div>
@@ -159,32 +159,32 @@ const ContactSection = () => {
       </div>
 
       <div className="flex-1 p-6 bg-white shadow-md rounded-md mt-8 lg:mt-0">
-        <h3 className="text-lg md:text-xl lg:text-2xl text-customBlue font-semibold mb-4">Send Message</h3>
+        <h3 className="text-lg md:text-xl lg:text-2xl text-primary-navy font-semibold mb-4">Send Message</h3>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row gap-4 mb-4">
             <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700">First Name</label>
-              <input type="text" name="firstname" placeholder="First Name" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" value={formData.firstname} onChange={handleChange} required />
+              <label className="block text-sm font-medium text-dark">First Name</label>
+              <input type="text" name="firstname" placeholder="First Name" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.firstname} onChange={handleChange} required />
             </div>
             <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700">Last Name</label>
-              <input type="text" name="lastname" placeholder="Last Name" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" value={formData.lastname} onChange={handleChange} required />
+              <label className="block text-sm font-medium text-dark">Last Name</label>
+              <input type="text" name="lastname" placeholder="Last Name" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.lastname} onChange={handleChange} required />
             </div>
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Mobile Number</label>
-            <input type="tel" name="phone" placeholder="Mobile Number" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" value={formData.phone} onChange={handleChange} required />
+            <label className="block text-sm font-medium text-dark">Mobile Number</label>
+            <input type="tel" name="phone" placeholder="Mobile Number" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.phone} onChange={handleChange} required />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" name="email" placeholder="Email" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" value={formData.email} onChange={handleChange} required />
+            <label className="block text-sm font-medium text-dark">Email</label>
+            <input type="email" name="email" placeholder="Email" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.email} onChange={handleChange} required />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700">Message</label>
-            <textarea name="message" placeholder="Type your message..." className="mt-1 block w-full p-2 border border-gray-300 rounded-md" rows="4" value={formData.message} onChange={handleChange} required />
+            <label className="block text-sm font-medium text-dark">Message</label>
+            <textarea name="message" placeholder="Type your message..." className="mt-1 block w-full p-2 border border-light rounded-md" rows="4" value={formData.message} onChange={handleChange} required />
           </div>
           {error && <p className="text-red-600 mb-2">{error}</p>}
-          <button type="submit" className="w-full text-white py-2 px-4 rounded-md transition bg-customBlue hover:bg-customYellow">
+          <button type="submit" className="btn-primary w-full">
             Send
           </button>
         </form>

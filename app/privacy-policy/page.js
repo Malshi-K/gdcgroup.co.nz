@@ -17,9 +17,9 @@ export default function PrivacyPolicyPage() {
 }
 
 export const metadata = {
-  title: "Privacy Policy | GDC Consultants NZ",
+  title: "Privacy Policy | GDC Group",
   description:
-    "Learn how GDC Consultants NZ collects, uses, and protects your personal information. Read our full privacy policy to understand your data rights and security.",
+    "Learn how GDC Group collects, uses, and protects your personal information. Read our full privacy policy to understand your data rights and security.",
   keywords:
     "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
   

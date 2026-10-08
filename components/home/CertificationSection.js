@@ -58,11 +58,11 @@ const CertificationSection = () => {
           }`}
           style={{ transitionDelay: "150ms" }}
         >
-          <h3 className="text-2xl text-center sm:text-3xl md:text-3xl lg:text-4xl text-customYellow uppercase font-bold mt-2 mb-4">
+          <h3 className="text-2xl text-center sm:text-3xl md:text-3xl lg:text-4xl text-primary-blue uppercase font-bold mt-2 mb-4">
             ISO 9001 Certified Firm
           </h3>
-          <h4 className="text-sm text-justify sm:text-base md:text-lg lg:text-lg text-customBlue leading-relaxed">
-            As an ISO 9001:2015 Certified firm, GDC Consultants Ltd works
+          <h4 className="text-sm text-justify sm:text-base md:text-lg lg:text-lg text-primary-navy leading-relaxed">
+            As an ISO 9001:2015 Certified firm, GDC Group works
             closely with local and central Government Agencies in New Zealand.
             This is important to ensure our policies and guidelines are always
             up to date with the national and regional standards.

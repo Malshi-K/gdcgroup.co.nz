@@ -50,7 +50,7 @@ const ServicesBar = () => {
   const scrollServices = [...services, ...services, ...services];
   
   return (
-    <div className="w-full bg-customBlue py-4 overflow-hidden" ref={scrollContainerRef}>
+    <div className="w-full bg-primary-navy py-4 overflow-hidden" ref={scrollContainerRef}>
       {/* CSS for scrolling animation */}
       <style jsx>{`
         @keyframes scrollServices {
@@ -89,7 +89,7 @@ const ServicesBar = () => {
             {scrollServices.map((service, index) => (
               <React.Fragment key={index}>
                 <span 
-                  className="service-item text-customBlue text-lg"
+                  className="service-item text-primary-navy text-lg"
                   data-index={index % services.length}
                 >
                   {service}

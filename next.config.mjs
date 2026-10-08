@@ -14,12 +14,13 @@ const nextConfig = {
       },
     ],
   },
-  async rewrites() {
+  async redirects() {
     return [
-      {
-        source: "/services/:path*",
-        destination: "/services/:path*",
-      },
+      { source: "/services/architectural-designs", destination: "/services", permanent: true },
+      { source: "/services/research-development", destination: "/services", permanent: true },
+      { source: "/services/training", destination: "/services", permanent: true },
+      { source: "/services/road-transport", destination: "/services/transport-engineering", permanent: true },
+      { source: "/team", destination: "/about-us/who-we-are", permanent: true },
     ];
   },
 };

@@ -243,7 +243,7 @@ const ProjectsFilterView = () => {
       return (
         <>
           {description.replace("(Heritage Bricks)", "")}
-          <span className="block font-medium text-customYellow mt-1">
+          <span className="block font-medium text-primary-blue mt-1">
             (Heritage Bricks)
           </span>
         </>
@@ -253,7 +253,7 @@ const ProjectsFilterView = () => {
       return (
         <>
           {description.replace("(Heritage early age concrete)", "")}
-          <span className="block font-medium text-customYellow mt-1">
+          <span className="block font-medium text-primary-blue mt-1">
             (Heritage early age concrete)
           </span>
         </>
@@ -361,22 +361,22 @@ const ProjectsFilterView = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto px-4 py-8 projects-content-wrapper">
+    <div className="flex flex-col md:flex-row site-x py-8 projects-content-wrapper">
       {/* Left Side - Filter Options */}
       <div className="w-full md:w-1/4 p-4 md:sticky md:top-4 md:self-start">
-        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-          <h2 className="text-xl font-semibold text-customBlue mb-4">
+        <div className="bg-white rounded-xl border border-light p-4 mb-6">
+          <h2 className="text-xl font-semibold text-primary-navy mb-4">
             Filter projects
           </h2>
 
           {/* Categories Filter - Now with max height and hidden scrollbar */}
           <div className="mb-6">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="font-medium text-customBlue">
+              <h3 className="font-medium text-primary-navy">
                 Filter By Category
               </h3>
               <svg
-                className="w-4 h-4 text-customBlue"
+                className="w-4 h-4 text-primary-navy"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -391,12 +391,12 @@ const ProjectsFilterView = () => {
               </svg>
             </div>
             <div
-              className="pl-2 pr-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+              className="pl-2 pr-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-primary-blue scrollbar-track-light-blue"
               style={{
                 overflowY: "auto",
                 maxHeight: "400px",
                 boxSizing: "border-box",
-                border: "1px solid #f0f0f0",
+                border: "1px solid #DDE3E8",
                 borderRadius: "4px",
               }}
             >
@@ -406,8 +406,8 @@ const ProjectsFilterView = () => {
                     onClick={() => handleCategoryClick(category)}
                     className={`text-left w-full py-1 px-2 rounded ${
                       selectedCategory === category
-                        ? "bg-customBlue text-white"
-                        : "text-gray-700 hover:bg-gray-100"
+                        ? "bg-primary-navy text-white"
+                        : "text-dark hover:bg-off-white"
                     }`}
                   >
                     {category}
@@ -428,7 +428,7 @@ const ProjectsFilterView = () => {
                 <div
                   id={`project-${index}`}
                   key={`project-${index}`}
-                  className={`bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer project-card ${
+                  className={`bg-white rounded-xl border border-light overflow-hidden hover:border-primary-blue hover:-translate-y-1 hover:shadow-lg transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0 cursor-pointer project-card ${
                     index >= (currentPage - 1) * PROJECTS_PER_PAGE
                       ? "animate-fadeIn"
                       : ""
@@ -449,22 +449,9 @@ const ProjectsFilterView = () => {
                         className="object-cover w-full h-full"
                       />
 
-                      {/* Award badge overlaid on the image */}
-                      {isAwardWinningProject(project.title) && (
-                        <div className="badge-container">
-                          <Image
-                            src="/images/awards/NZCPA QMs 2025_Gold.png"
-                            alt="Gold Award 2025"
-                            width={90}
-                            height={90}
-                            priority
-                          />
-                        </div>
-                      )}
-
                       {/* Image count badge - only show if there are multiple images */}
                       {project.relatedImages.length > 1 && (
-                        <div className="absolute top-2 left-2 bg-customBlue text-white rounded-full p-2 text-xs font-bold flex items-center">
+                        <div className="absolute top-2 left-2 bg-primary-navy text-white rounded-full p-2 text-xs font-bold flex items-center">
                           <svg
                             className="w-4 h-4 mr-1"
                             fill="none"
@@ -492,23 +479,23 @@ const ProjectsFilterView = () => {
                     </div>
                   )}
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-customBlue mb-2">
+                    <h3 className="text-lg font-semibold text-primary-navy mb-2">
                       {project.title}
                     </h3>
                     {project.jobDescription && (
-                      <p className="text-sm text-gray-600 mb-2">
+                      <p className="text-sm text-secondary mb-2">
                         {formatJobDescription(project.jobDescription)}
                       </p>
                     )}
                     {project.description && project.description !== "" && (
-                      <p className="text-sm text-gray-800 mb-2">
+                      <p className="text-sm text-dark mb-2">
                         {project.description}
                       </p>
                     )}
 
                     {/* Display points as a bullet list if they exist */}
                     {project.points && project.points.length > 0 && (
-                      <ul className="list-disc list-inside text-sm text-gray-700 mb-3 pl-1 mt-2">
+                      <ul className="list-disc list-inside text-sm text-dark mb-3 pl-1 mt-2">
                         {project.points.map((point, pointIndex) => (
                           <li key={`point-${pointIndex}`} className="mb-1">
                             {formatBoldText(point)}
@@ -519,7 +506,7 @@ const ProjectsFilterView = () => {
 
                     <div className="flex flex-wrap gap-2 mt-3">
                       {project.sector && (
-                        <span className="px-2 py-1 bg-customYellow text-white text-xs rounded-full">
+                        <span className="px-2 py-1 bg-primary-blue text-white text-xs rounded-full">
                           {project.sector}
                         </span>
                       )}
@@ -530,7 +517,7 @@ const ProjectsFilterView = () => {
                         project.categories.map((category, catIndex) => (
                           <span
                             key={`category-${catIndex}`}
-                            className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
+                            className="px-2 py-1 border border-primary-blue text-primary-navy text-xs rounded-full"
                           >
                             {category}
                           </span>
@@ -539,7 +526,7 @@ const ProjectsFilterView = () => {
 
                     {/* View more indicator - only show if there are multiple images */}
                     {project.relatedImages.length > 1 && (
-                      <div className="mt-3 text-customBlue flex items-center">
+                      <div className="mt-3 text-primary-navy flex items-center">
                         <span className="text-sm">
                           View all {project.relatedImages.length} images
                         </span>
@@ -569,7 +556,7 @@ const ProjectsFilterView = () => {
               <div className="flex justify-center mt-8">
                 <button
                   onClick={handleShowMoreClick}
-                  className="px-6 py-3 bg-customBlue text-white rounded-lg hover:bg-customYellow transition-colors flex items-center"
+                  className="btn-primary"
                 >
                   <span>
                     Show More Projects ({remainingProjects} remaining of{" "}
@@ -594,7 +581,7 @@ const ProjectsFilterView = () => {
             )}
 
             {/* Projects count indicator */}
-            <div className="text-center mt-4 text-sm text-gray-600">
+            <div className="text-center mt-4 text-sm text-secondary">
               Showing{" "}
               {Math.min(
                 currentPage * PROJECTS_PER_PAGE,
@@ -605,7 +592,7 @@ const ProjectsFilterView = () => {
           </>
         ) : (
           <div className="bg-white rounded-lg shadow-md p-10 text-center">
-            <p className="text-center text-lg text-gray-600 py-10">
+            <p className="text-center text-lg text-secondary py-10">
               Projects coming soon.
             </p>
           </div>
@@ -625,11 +612,11 @@ const ProjectsFilterView = () => {
           >
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold text-customBlue">
+                <h2 className="text-2xl font-bold text-primary-navy">
                   {selectedProject.title}
                 </h2>
                 <button
-                  className="text-gray-500 hover:text-gray-700"
+                  className="text-secondary hover:text-dark"
                   onClick={handleCloseModal}
                 >
                   <svg
@@ -653,14 +640,14 @@ const ProjectsFilterView = () => {
               {isAwardWinningProject(selectedProject.title) && (
                 <div className="mb-4 flex items-center">
                   <div>
-                    <p className="text-md font-medium text-customBlue">
+                    <p className="text-md font-medium text-primary-navy">
                       Gold Award at the Master Builders commercial project award 2025
                     </p>
                     <a
                       href="https://www.commercialprojectawards.co.nz/CPA/Entries%20and%20Results/2025_results/Health/CPA/Results/Results_2025/Health.aspx?hkey=3db5dd1c-898e-46bf-9703-1d6b9a3941f9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-md text-customYellow hover:underline"
+                      className="text-md text-primary-blue hover:underline"
                     >
                       View award details
                     </a>
@@ -669,14 +656,14 @@ const ProjectsFilterView = () => {
               )}
 
               {selectedProject.jobDescription && (
-                <p className="text-gray-600 mb-4">
+                <p className="text-secondary mb-4">
                   {formatJobDescription(selectedProject.jobDescription)}
                 </p>
               )}
 
               {selectedProject.description &&
                 selectedProject.description !== "" && (
-                  <p className="text-gray-800 mb-6">
+                  <p className="text-dark mb-6">
                     {selectedProject.description}
                   </p>
                 )}
@@ -684,7 +671,7 @@ const ProjectsFilterView = () => {
               {/* Display points as a bullet list in modal if they exist */}
               {selectedProject.points && selectedProject.points.length > 0 && (
                 <div className="mb-6">
-                  <ul className="list-disc list-inside text-gray-700 pl-2">
+                  <ul className="list-disc list-inside text-dark pl-2">
                     {selectedProject.points.map((point, pointIndex) => (
                       <li key={`modal-point-${pointIndex}`} className="mb-2">
                         {formatBoldText(point)}
@@ -697,7 +684,7 @@ const ProjectsFilterView = () => {
               {/* Display category tags in modal */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.sector && (
-                  <span className="px-2 py-1 bg-customYellow text-white text-xs rounded-full">
+                  <span className="px-2 py-1 bg-primary-blue text-white text-xs rounded-full">
                     {selectedProject.sector}
                   </span>
                 )}
@@ -708,7 +695,7 @@ const ProjectsFilterView = () => {
                   selectedProject.categories.map((category, catIndex) => (
                     <span
                       key={`modal-category-${catIndex}`}
-                      className="px-2 py-1 border border-customYellow text-customBlue text-xs rounded-full"
+                      className="px-2 py-1 border border-primary-blue text-primary-navy text-xs rounded-full"
                     >
                       {category}
                     </span>
@@ -731,21 +718,6 @@ const ProjectsFilterView = () => {
                           sizes="(max-width: 768px) 100vw, 50vw"
                           className="object-cover rounded-lg"
                         />
-
-                        {/* Add badge to first image in modal */}
-                        {index === 0 &&
-                          isAwardWinningProject(selectedProject.title) && (
-                            <div className="absolute top-[-20px] right-[-20px] z-50 w-24 h-24 overflow-visible">
-                              <Image
-                                src="/images/awards/NZCPA QMs 2025_Gold.png"
-                                alt="Gold Award 2025"
-                                width={96}
-                                height={96}
-                                className="object-contain"
-                                priority
-                              />
-                            </div>
-                          )}
 
                         {/* Show Google Street View attribution in modal images too */}
                         {selectedProject.googleStreetView && (

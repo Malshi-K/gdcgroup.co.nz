@@ -22,6 +22,26 @@ const Header = () => {
 
   const pathname = usePathname(); // Get the current pathname
 
+  // Homepage only: transparent header over the hero, white once the page is scrolled
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  // Homepage, service detail, portfolio and who-we-are pages start with a dark hero, so the header can overlay it
+  const isHome =
+    pathname === "/" ||
+    pathname.startsWith("/services/") ||
+    pathname.startsWith("/portfolio") ||
+    pathname === "/about-us/who-we-are" ||
+    pathname === "/about-us/careers" ||
+    pathname === "/about-us/review" ||
+    pathname === "/blogs";
+  const overlay = isHome && !scrolled && !isMenuOpen;
+  const navText = overlay ? "text-white" : "text-primary-navy";
+
   // Detect if the current view is mobile or desktop
   useEffect(() => {
     const checkMobileView = () => {
@@ -87,7 +107,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-white shadow-md">
+    <header
+      className={`w-full top-0 z-50 transition-colors duration-300 motion-reduce:transition-none ${
+        isHome ? "fixed inset-x-0" : "sticky"
+      } ${
+        overlay
+          ? "bg-gradient-to-b from-primary-navy/70 to-transparent"
+          : "bg-white shadow-md"
+      }`}
+    >
       {/* Navigation Bar */}
       <div className="max-w-screen-full mx-auto px-5 sm:px-8 md:px-10">
         <nav className="flex justify-between items-center py-3 px-4 lg:px-6">
@@ -95,12 +123,15 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/images/GDC LOGOS 2024 BLUE.webp"
-                alt="GDC Consultants Ltd Logo"
-                width={200} // Reduced from 500 to actual display size
-                height={80} // Maintained aspect ratio
+                src="/images/gdc-group-logo.png"
+                alt="GDC Group Logo"
+                width={1983} // Actual pixel width; displayed size set via className
+                height={793} // Actual pixel height (keeps aspect ratio)
                 priority // Critical for above-the-fold logo
                 className="w-[150px] h-auto md:w-[150px] lg:w-[200px] cursor-pointer"
+                style={
+                  overlay ? { filter: "brightness(0) invert(1)" } : undefined
+                }
                 quality={90} // Higher quality for logo
               />
             </Link>
@@ -113,7 +144,9 @@ const Header = () => {
               {isMenuOpen ? (
                 <XMarkIcon className="w-6 h-6 text-black transition-transform duration-300" />
               ) : (
-                <Bars3Icon className="w-6 h-6 text-black transition-transform duration-300" />
+                <Bars3Icon
+                  className={`w-6 h-6 transition-transform duration-300 ${overlay ? "text-white" : "text-black"}`}
+                />
               )}
             </button>
           </div>
@@ -123,24 +156,33 @@ const Header = () => {
             {[
               { href: "/", label: "HOME" },
               {
+                label: "ABOUT US",
+                dropdown: "aboutus",
+                items: [
+                  { href: "/about-us/who-we-are", label: "Who We Are" },
+                  { href: "/about-us/review", label: "Leave us a Review" },
+                  { href: "/locations", label: "Our Locations" },
+                ],
+              },
+              {
                 label: "SERVICES",
                 dropdown: "services",
                 items: [
                   {
-                    href: "/services/3-waters",
-                    label: "3 Waters & Contamination",
+                    href: "/services/transport-engineering",
+                    label: "Civil Engineering",
                   },
                   {
-                    href: "/services/architectural-designs",
-                    label: "Architectural Designs",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
                   },
                   {
-                    href: "/services/construction-management",
-                    label: "Construction Management",
+                    href: "/services/fire-engineering",
+                    label: "Fire Engineering",
                   },
                   {
                     href: "/services/geotechnical-engineering",
@@ -149,8 +191,11 @@ const Header = () => {
                   {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
-                  },                  
-                  { href: "/services/road-transport", label: "Road Transport" },
+                  },
+                  {
+                    href: "/services/planning",
+                    label: "Resource & Building Consents",
+                  },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -159,22 +204,14 @@ const Header = () => {
                     href: "/services/structural-engineering",
                     label: "Structural Engineering",
                   },
-                  { href: "/services/planning", label: "Planning" },
-                  { href: "/services/surveying", label: "Surveying" },                  
+                  { href: "/services/surveying", label: "Surveying" },
+                  {
+                    href: "/services/3-waters",
+                    label: "Three Waters Engineering",
+                  },
                 ],
               },
-              { href: "/portfolio/all-projects", label: "OUR PORTFOLIO" },
-              {
-                label: "ABOUT US",
-                dropdown: "aboutus",
-                items: [
-                  { href: "/about-us/who-we-are", label: "Who We Are" },
-                  { href: "/about-us/careers", label: "Careers" },
-                  { href: "/about-us/review", label: "Leave us a Review" },
-                  { href: "/locations", label: "Our Locations" },
-                ],
-              },
-              { href: "/blogs", label: "BLOGS" },
+              { href: "/about-us/careers", label: "CAREERS" },
             ].map((item) =>
               item.items ? (
                 <li
@@ -189,7 +226,7 @@ const Header = () => {
                   }
                 >
                   <button
-                    className="flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer text-customBlue"
+                    className={`flex items-center justify-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 cursor-pointer ${navText}`}
                     onClick={() =>
                       isMobileView
                         ? handleMobileDropdownToggle(item.dropdown)
@@ -210,7 +247,7 @@ const Header = () => {
                     <div
                       className={`grid ${
                         item.dropdown === "services"
-                          ? "grid-cols-2"
+                          ? "grid-flow-col grid-rows-6"
                           : "grid-cols-1"
                       }`}
                     >
@@ -224,9 +261,9 @@ const Header = () => {
                             href={subItem.href}
                             className={`block px-2 py-2 text-sm sm:text-base font-semibold ${
                               pathname === subItem.href
-                                ? "text-customYellow"
-                                : "text-customBlue"
-                            } hover:text-customYellow hover:rounded-md transition-all duration-300`}
+                                ? "text-primary-blue"
+                                : "text-primary-navy"
+                            } hover:text-primary-blue hover:rounded-md transition-all duration-300`}
                           >
                             {subItem.label}
                           </Link>
@@ -241,14 +278,16 @@ const Header = () => {
                     href={item.href}
                     className={`block text-center text-sm sm:text-base font-semibold py-1 px-2 lg:py-2 lg:px-3 ${
                       pathname === item.href
-                        ? "text-customYellow"
-                        : "text-customBlue"
+                        ? overlay
+                          ? "text-white underline underline-offset-8 decoration-2"
+                          : "text-primary-blue"
+                        : navText
                     }`}
                   >
                     {item.label}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
 
@@ -268,20 +307,20 @@ const Header = () => {
                 dropdown: "services",
                 items: [
                   {
-                    href: "/services/3-waters",
-                    label: "3 Waters & Contamination",
+                    href: "/services/transport-engineering",
+                    label: "Civil Engineering",
                   },
                   {
-                    href: "/services/architectural-designs",
-                    label: "Architectural Designs",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
                   },
                   {
-                    href: "/services/construction-management",
-                    label: "Construction Management",
+                    href: "/services/fire-engineering",
+                    label: "Fire Engineering",
                   },
                   {
                     href: "/services/geotechnical-engineering",
@@ -292,10 +331,9 @@ const Header = () => {
                     label: "Infrastructure & Subdivision Engineering",
                   },
                   {
-                    href: "/services/research-development",
-                    label: "Research & Development",
+                    href: "/services/planning",
+                    label: "Resource & Building Consents",
                   },
-                  { href: "/services/road-transport", label: "Road Transport" },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -304,30 +342,30 @@ const Header = () => {
                     href: "/services/structural-engineering",
                     label: "Structural Engineering",
                   },
-                  { href: "/services/planning", label: "Planning" },
                   { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/training", label: "Training" },
+                  {
+                    href: "/services/3-waters",
+                    label: "Three Waters Engineering",
+                  },
                 ],
               },
-              { href: "/portfolio/all-projects", label: "Our Portfolio" },
+              { href: "/about-us/careers", label: "Careers" },
               {
                 label: "About Us",
                 dropdown: "aboutus",
                 items: [
                   { href: "/about-us/who-we-are", label: "Who We Are" },
-                  { href: "/about-us/careers", label: "Careers" },
                   { href: "/about-us/review", label: "Leave us a Review" },
                   { href: "/locations", label: "Our Locations" },
                 ],
               },
-              { href: "/blogs", label: "Blogs" },
               { href: "tel:+6478380090", label: "Call Now" },
-              { href: "/contact-us", label: "Our Locations" },
+              { href: "/contact-us", label: "Contact us" },
             ].map((item) =>
               item.items ? (
                 <li key={item.label} className="relative">
                   <button
-                    className="flex justify-between items-center w-full py-2 px-4 text-left font-light text-gray-800"
+                    className="flex justify-between items-center w-full py-2 px-4 text-left font-light text-dark"
                     onClick={() => handleMobileDropdownToggle(item.dropdown)}
                   >
                     <span className="flex items-center">
@@ -342,7 +380,7 @@ const Header = () => {
                   <ul
                     className={`${
                       activeDropdown === item.dropdown ? "block" : "hidden"
-                    } pl-4 bg-gray-50 border-l border-gray-200`}
+                    } pl-4 bg-off-white border-l border-light`}
                   >
                     {item.items
                       .slice(0, isMoreOpen ? item.items.length : 4)
@@ -352,9 +390,9 @@ const Header = () => {
                             href={subItem.href}
                             className={`block py-2 px-11 ${
                               pathname === subItem.href
-                                ? "text-customYellow"
-                                : "text-gray-700"
-                            } hover:text-customBlue transition-all duration-300`}
+                                ? "text-primary-blue"
+                                : "text-dark"
+                            } hover:text-primary-navy transition-all duration-300`}
                           >
                             {subItem.label}
                           </Link>
@@ -364,7 +402,7 @@ const Header = () => {
                       <li>
                         <button
                           onClick={toggleMoreItems}
-                          className="block w-full text-left py-2 px-11 font-semibold text-customBlue"
+                          className="block w-full text-left py-2 px-11 font-semibold text-primary-navy"
                         >
                           {isMoreOpen ? "Less" : "More"}
                         </button>
@@ -377,37 +415,35 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className={`block py-2 px-11 font-light ${
-                      pathname === item.href
-                        ? "text-customYellow"
-                        : "text-gray-800"
-                    } hover:text-customBlue transition-all duration-300`}
+                      pathname === item.href ? "text-primary-blue" : "text-dark"
+                    } hover:text-primary-navy transition-all duration-300`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
 
           {/* Desktop version of the "OUR LOCATIONS" button */}
           <div className="flex items-center lg:space-x-4">
             {/* CALL NOW Button */}
-            <Link
+            {/* <Link
               href="tel:+6478380090"
-              className="hidden text-center lg:flex justify-center items-center bg-customYellow text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-yellow-600"
+              className="btn-primary btn-sm hidden lg:flex"
               onClick={() => setIsMenuOpen(false)}
             >
               CALL NOW
-            </Link>
+            </Link> */}
 
             {/* OUR LOCATIONS Button */}
             <Link
               href="/contact-us"
-              className="hidden text-center lg:flex justify-center items-center bg-customYellow text-white text-xs sm:text-sm font-semibold px-3 py-1 lg:px-4 lg:py-2 rounded-md hover:bg-yellow-600"
+              className={`${overlay ? "btn-outline-light" : "btn-outline"} btn-sm hidden lg:flex`}
               onClick={() => setIsMenuOpen(false)}
             >
-              OUR LOCATIONS
+              CONTACT US
             </Link>
           </div>
         </nav>

@@ -1,9 +1,11 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/cookie-preferences/page.js
 // This is a Server Component that handles metadata
 
 import CookiePreferencesClient from '@/components/cookie/CookiePreferencesClient';
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Cookie Preferences | GDC Group",
   description: "Manage your cookie preferences for GDC Group website",
   keywords:

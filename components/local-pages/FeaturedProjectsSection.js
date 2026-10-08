@@ -15,18 +15,18 @@ const FeaturedProjectsSection = ({ featuredProjects }) => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-customBlue text-center mb-4">
+      <div className="site-x">
+        <h2 className="text-3xl font-bold text-primary-navy text-center mb-4">
           {featuredProjects.title}
         </h2>
-        <div className="w-24 h-1 bg-customYellow mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-primary-blue mx-auto mb-12"></div>
 
         {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               {/* Project Image */}
-              <div className="relative h-64 bg-gray-200">
+              <div className="relative h-64 bg-light-blue">
                 {project.image ? (
                   <img
                     src={project.image}
@@ -34,7 +34,7 @@ const FeaturedProjectsSection = ({ featuredProjects }) => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                  <div className="w-full h-full bg-off-white flex items-center justify-center">
                     <div className="max-w-xs">
                       <img
                         src="/images/coming soon.png"
@@ -50,12 +50,12 @@ const FeaturedProjectsSection = ({ featuredProjects }) => {
               {/* Project Content */}
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-customBlue mb-2 flex-1">
+                  <h3 className="text-xl font-bold text-primary-navy mb-2 flex-1">
                     {project.name}
                   </h3>
                 </div>
 
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-secondary leading-relaxed mb-4">
                   {project.description}
                 </p>
 
@@ -65,7 +65,7 @@ const FeaturedProjectsSection = ({ featuredProjects }) => {
                     {project.labels.map((label, labelIndex) => (
                       <span
                         key={labelIndex}
-                        className="px-3 py-1 bg-customBlue text-white text-sm font-medium rounded-full"
+                        className="px-3 py-1 bg-primary-navy text-white text-sm font-medium rounded-full"
                       >
                         {label}
                       </span>

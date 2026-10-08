@@ -137,10 +137,10 @@ const PricingCard = () => {
       <div className="mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8">
         {/* Header Text - Responsive sizing */}
         <div className="mb-4 sm:mb-5 text-center">
-          <h2 className="text-customBlue font-bold mb-2 sm:mb-3 text-3xl sm:text-4xl leading-tight">
+          <h2 className="text-primary-navy font-bold mb-2 sm:mb-3 text-3xl sm:text-4xl leading-tight">
             Need Expert Engineering Solutions?
           </h2>
-          <p className="text-gray-900 text-sm sm:text-base mb-3 max-w-xl mx-auto">
+          <p className="text-dark text-sm sm:text-base mb-3 max-w-xl mx-auto">
             Our team of structural, geotechnical, and seismic engineering
             experts is ready to help with your project. Whether you&apos;re building
             a new structure or needing assessment of an existing one, we deliver
@@ -149,57 +149,57 @@ const PricingCard = () => {
           </p>
         </div>
 
-        {/* Card with proper sizing - white background and yellow border matching screenshot */}
+        {/* Card with proper sizing - white background and blue border matching screenshot */}
         <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 text-center mx-auto">
           {/* Form Section with improved text visibility */}
           <div className="w-full">
             <form onSubmit={handleSubmit} className="space-y-4 text-left">
               {/* Name field with improved text visibility - using firstname instead of full_name */}
-              <div className="bg-gray-100 rounded-lg p-1">
+              <div className="bg-off-white rounded-lg p-1">
                 <input
                   type="text"
                   name="firstname"
                   value={formData.firstname}
                   onChange={handleChange}
                   placeholder="Name"
-                  className="w-full p-2 bg-gray-100 text-gray-900 font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="w-full p-2 bg-off-white text-dark font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue"
                   required
                 />
               </div>
 
               {/* Email field with improved text visibility */}
-              <div className="bg-gray-100 rounded-lg p-1">
+              <div className="bg-off-white rounded-lg p-1">
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email Address*"
-                  className="w-full p-2 bg-gray-100 text-gray-900 font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="w-full p-2 bg-off-white text-dark font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue"
                   required
                 />
               </div>
 
               {/* Phone field with improved text visibility */}
-              <div className="flex bg-gray-100 rounded-lg p-1">
+              <div className="flex bg-off-white rounded-lg p-1">
                 <input
                   type="tel"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone Number"
-                  className="w-full p-2 bg-gray-100 text-gray-900 font-medium rounded-r-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="w-full p-2 bg-off-white text-dark font-medium rounded-r-lg focus:outline-none focus:ring-2 focus:ring-primary-blue"
                 />
               </div>
 
               {/* Message field with improved text visibility */}
-              <div className="bg-gray-100 rounded-lg p-1">
+              <div className="bg-off-white rounded-lg p-1">
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Message"
-                  className="w-full p-2 bg-gray-100 text-gray-900 font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 h-24 resize-none"
+                  className="w-full p-2 bg-off-white text-dark font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-blue h-24 resize-none"
                 />
               </div>
 
@@ -208,8 +208,8 @@ const PricingCard = () => {
                 disabled={formStatus === "submitting"}
                 className={`w-full py-3 ${
                   formStatus === "submitting"
-                    ? "bg-gray-400"
-                    : "bg-customBlue hover:bg-customBlue"
+                    ? "bg-secondary"
+                    : "bg-primary-blue hover:bg-primary-blue-dark"
                 } text-white rounded-lg font-medium transition duration-300`}
               >
                 {formStatus === "submitting" ? "Submitting..." : "Submit"}

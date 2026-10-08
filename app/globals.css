@@ -2,15 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Page gutter: matches the header inset (36 / 48 / 56 / 64px) */
+.site-x {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+@media (min-width: 640px) {
+  .site-x { padding-left: 3rem; padding-right: 3rem; }
+}
+@media (min-width: 768px) {
+  .site-x { padding-left: 3.5rem; padding-right: 3.5rem; }
+}
+@media (min-width: 1024px) {
+  .site-x { padding-left: 4rem; padding-right: 4rem; }
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
+  --foreground: #26323B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #ffffff;
+    --foreground: #26323B;
   }
 }
 
@@ -24,20 +39,53 @@ body {
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #EAF4FB;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #66727C;
   border-radius: 3px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #0061B4;
 }
 
 /* For Firefox */
 .scrollbar-thin {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+  scrollbar-color: #66727C #EAF4FB;
+}
+
+/* Service page hero: photo fades into the light background */
+.hero-fade {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 30%);
+  mask-image: linear-gradient(to bottom, transparent, black 30%);
+}
+@media (min-width: 768px) {
+  .hero-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 38%);
+    mask-image: linear-gradient(to right, transparent, black 38%);
+  }
+}
+
+/* Shared button design (from the homepage hero): filled + outline */
+@layer components {
+  .btn-primary,
+  .btn-outline,
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center rounded-xl border-2 px-6 py-3 font-semibold transition-colors duration-300;
+  }
+  .btn-primary {
+    @apply border-primary-blue bg-primary-blue text-white hover:border-primary-blue-dark hover:bg-primary-blue-dark;
+  }
+  .btn-outline {
+    @apply border-primary-blue bg-transparent text-primary-blue hover:bg-primary-blue hover:text-white;
+  }
+  .btn-outline-light {
+    @apply border-white bg-transparent text-white hover:bg-white hover:text-primary-navy;
+  }
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
 }

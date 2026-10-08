@@ -19,8 +19,8 @@ const LocationPage = ({ locationData }) => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-700">Location not found</h1>
-          <p className="text-gray-500 mt-2">The requested location page could not be found.</p>
+          <h1 className="text-2xl font-bold text-dark">Location not found</h1>
+          <p className="text-secondary mt-2">The requested location page could not be found.</p>
         </div>
       </div>
     );
@@ -49,7 +49,7 @@ const LocationPage = ({ locationData }) => {
   } = locationData;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-off-white">
       {structuredData && (
         <script
           type="application/ld+json"

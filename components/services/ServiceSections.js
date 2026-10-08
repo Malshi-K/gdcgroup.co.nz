@@ -33,19 +33,19 @@ const ServiceSections = ({ sections }) => {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row px-4 lg:px-20 py-6">
+    <div className="flex flex-col lg:flex-row site-x py-6">
       {/* Left side: list of section titles */}
       <div className="lg:w-1/4 p-4 overflow-auto max-h-[500px]">
         <ul className="space-y-4">
           {sections.map((section) => (
             <li
               key={section.id}
-              className={`cursor-pointer p-2 text-sm lg:text-md rounded-md flex items-center text-customBlue transition-all duration-300 ${
+              className={`cursor-pointer p-2 text-sm lg:text-md rounded-md flex items-center text-primary-navy transition-all duration-300 ${
                 activeSection === section.id ? "font-semibold" : ""
-              } hover:text-customYellow hover:scale-105`}
+              } hover:text-primary-blue hover:scale-105`}
               onClick={() => handleSectionClick(section.id)}
             >
-              <FaMinus className="mr-2 text-customBlue" />
+              <FaMinus className="mr-2 text-primary-navy" />
               {section.title || "Untitled Section"}
             </li>
           ))}
@@ -71,7 +71,7 @@ const ServiceSections = ({ sections }) => {
                   
                   {/* Photo credit - positioned inside the image at the bottom */}
                   {activeContent.photoCredit && (
-                    <div className="absolute bottom-4 right-4 bg-gray-800 text-white px-2 py-1 text-xs">
+                    <div className="absolute bottom-4 right-4 bg-primary-navy text-white px-2 py-1 text-xs">
                       {activeContent.photoCredit}
                     </div>
                   )}
@@ -81,11 +81,11 @@ const ServiceSections = ({ sections }) => {
 
             {/* Content Row */}
             <div className="w-full px-4 lg:px-6 flex flex-col">
-              <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-customBlue text-center">
+              <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-primary-navy text-center">
                 {activeContent.title || "Untitled Section"}
               </h3>
               {activeContent.description && (
-                <p className="text-gray-700 mb-4 text-justify">
+                <p className="text-dark mb-4 text-justify">
                   {activeContent.description}
                 </p>
               )}
@@ -94,9 +94,9 @@ const ServiceSections = ({ sections }) => {
                   {activeContent.points.map((point, idx) => (
                     <li
                       key={idx}
-                      className="text-gray-700 mb-2 flex items-start"
+                      className="text-dark mb-2 flex items-start"
                     >
-                      <FaRegCircle className="text-gray-600 mr-2 mt-1" />
+                      <FaRegCircle className="text-secondary mr-2 mt-1" />
                       {point}
                     </li>
                   ))}

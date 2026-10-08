@@ -1,9 +1,11 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/services/page.js
 import ServicesSection from "@/components/home/ServicesSection";
 import { Suspense } from "react";
 
 // Add metadata for SEO
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Professional Services | GDC Group",
   description:
     "Explore GDC Group's comprehensive range of engineering, architectural, and project management services for businesses and organizations across New Zealand.",

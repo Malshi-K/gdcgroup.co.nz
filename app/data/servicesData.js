@@ -1,652 +1,2586 @@
 const services = {
   "3-waters": {
-    metaTitle:
-      "Three Waters GDC Consultants: Expert Water Management Solutions",
+    metaTitle: "Three Waters Engineering | GDC Group",
     metaDescription:
-      "Discover expert solutions in water contamination and waste water management with GDC Consultants. Your trusted engineering consultancy for sustainable water practices.",
-    title: "3 Waters & Contamination",
-    description:
-      "Climate change is taking a toll on New Zealand’s aging three water infrastructure. There is now a vital need to renew and rebuild these systems to ensure that they continue to meet performance standards.\nOur mission at GDC Consultants is to provide sustainable, effective, and value-added engineering solutions for your 3 Waters project. We pride ourselves on being both experts in technical design guidance and pioneers of innovative solutions in the industry.",
+      "GDC Group provides practical, sustainable and cost-effective engineering solutions for New Zealand's stormwater, wastewater and water supply infrastructure, plus contaminated land assessment and remediation.",
+    title: "Three Waters Engineering",
     image: "/images/services/1/3 Waters and Contamination 2.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Contamination Assessments",
-        description:
-          "Site contamination can have a major impact on human health and the environment, as well as serious economic and legal consequences for landowners. We offer a pragmatic and tailored approach to get effective results and minimize harm. We can assist our clients with a full spectrum of contaminated land analysis services, including:",
-        points: [
-          "Site investigation",
-          "Contaminated land auditing",
-          "Groundwater analysis",
-          "Site remedial planning and contracting",
-          "Ecological risk and human health and safety services",
-          "Due diligence and contamination liability cost assessment",
-          "Property portfolio risk analysis.",
-        ],
-        image: "/images/services/1/3 Waters and Contamination 4.webp",
-      },
-      {
-        id: 2,
-        title: "Our Other Services Include",
-        description:
-          "We provide a wide range of additional services to support various aspects of water management and contamination solutions. Our expertise extends to:",
-        points: [
+    modern: {
+      images: ["/images/services/1/3 Waters and Contamination 3.webp", "/images/services/1/3 Waters and Contamination 4.webp"],
+      tagline: "Engineering Solutions for New Zealand’s Water Infrastructure",
+      intro: [
+        "At GDC Group, we provide practical, sustainable and cost-effective engineering solutions for New Zealand’s three waters infrastructure.",
+        "Our team works across stormwater, wastewater and water supply, supporting councils, developers, infrastructure providers and private clients with planning, assessment, modelling, design and project delivery.",
+        "With ageing infrastructure, population growth, changing environmental requirements and increasing pressure from extreme weather events, well-planned and resilient water infrastructure is more important than ever.",
+        "We combine technical expertise with practical project experience to deliver solutions that are fit for purpose, cost-effective and designed for the long term.",
+      ],
+      aside: {
+        title: "Our Three Waters Capabilities",
+        style: "list",
+        items: [
+          "Stormwater planning, modelling and design",
+          "Wastewater network analysis and design",
+          "Water supply planning and design",
+          "Catchment and network assessments",
           "Hydraulic modelling",
-          "Feasibility studies",
-          "Flood impact assessment",
-          "Erosion, sediment, and dust management",
-          "Construction supervision",
-          "Environmental effect analysis",
-          "Resource consent application",
-          "Soakage survey and analysis",
-          "Water infrastructure design",
-          "Optimization and cost analysis",
-          "Stormwater treatment device design",
-          "Erosion protection design",
-          "Regeneration of waterways.",
+          "Infrastructure capacity assessments",
+          "Infrastructure renewal and upgrades",
+          "Development servicing",
+          "Technical design and documentation",
+          "Strategy and master planning",
+          "Construction support and technical advice",
         ],
-        image: "/images/services/1/3 Waters and Contamination.webp",
       },
-    ],
-    uniqueContent: "watersUniqueContent",
+      blocks: [
+        {
+          type: "split",
+          id: "contaminated-land",
+          icon: "contamination",
+          heading: "Contaminated Land",
+          subheading: "Understanding and Managing Environmental Risk",
+          paragraphs: [
+            "Contaminated land can create significant environmental, health, planning and financial risks for property owners and developers.",
+            "GDC Group provides practical contaminated land assessments and environmental engineering services to help clients understand these risks and make informed decisions.",
+            "Our approach is tailored to each site and project, providing clear technical advice from initial investigation through to remediation and project delivery.",
+          ],
+          listLabel: "Our Services Include",
+          items: [
+            "Preliminary site investigations",
+            "Detailed site investigations",
+            "Contaminated land assessments",
+            "Soil and groundwater investigations",
+            "Groundwater analysis",
+            "Contaminated land auditing",
+            "Remediation planning",
+            "Remediation design and project support",
+            "Human health risk assessments",
+            "Ecological risk assessments",
+            "Environmental risk analysis",
+            "Due diligence investigations",
+            "Contamination liability and cost assessments",
+            "Property portfolio risk assessments",
+          ],
+          after: [
+            "Our multidisciplinary capability draws on expertise across environmental science, soil science, hydrogeology, geotechnical engineering, toxicology, risk assessment and remediation.",
+            "This enables us to provide practical, coordinated solutions for complex contaminated land and environmental challenges.",
+          ],
+        },
+        {
+          type: "cardGrid",
+          id: "three-waters-engineering",
+          heading: "Three Waters Engineering",
+          columns: 3,
+          cards: [
+            {
+              icon: "stormwater",
+              title: "Stormwater",
+              summary: [
+                "Effective stormwater management is essential to resilient communities, safe developments and sustainable infrastructure.",
+                "GDC Group provides stormwater engineering services from catchment planning and hydraulic modelling through to detailed design and project delivery.",
+                "We consider existing infrastructure, site constraints, future development, flood risk and environmental requirements to develop practical and effective solutions.",
+              ],
+              listLabel: "Stormwater Services",
+              items: [
+                "Stormwater modelling",
+                "Catchment assessments",
+                "Hydraulic assessments",
+                "Network analysis",
+                "Detention and attenuation design",
+                "Stormwater infrastructure design",
+                "Development servicing",
+                "Overland flow assessments",
+                "Flood risk assessments",
+                "Detailed engineering design",
+              ],
+            },
+            {
+              icon: "wastewater",
+              title: "Wastewater",
+              summary: [
+                "Reliable wastewater infrastructure is fundamental to the health, wellbeing and long-term sustainability of New Zealand communities.",
+                "GDC Group provides wastewater engineering services for new developments, network upgrades, infrastructure renewals and improvement programmes.",
+                "We assess existing network performance, identify capacity constraints and develop practical solutions that balance performance, constructability and cost.",
+              ],
+              listLabel: "Wastewater Services",
+              items: [
+                "Wastewater network assessments",
+                "Hydraulic modelling",
+                "Capacity assessments",
+                "Network performance analysis",
+                "Infrastructure upgrade planning",
+                "Development servicing",
+                "Network extension design",
+                "Pump station assessments",
+                "Rising main assessments",
+                "Detailed engineering design",
+                "Renewal and improvement planning",
+              ],
+            },
+            {
+              icon: "supply",
+              title: "Water Supply",
+              summary: [
+                "A reliable and resilient water supply is critical to communities, businesses and new developments.",
+                "GDC Group provides professional engineering services for water supply infrastructure, network planning and site-specific water systems, including surface water and groundwater supplies.",
+                "We develop solutions that consider capacity, reliability, future demand, site conditions and the specific requirements of each project.",
+              ],
+              listLabel: "Water Supply Services",
+              items: [
+                "Water supply assessments",
+                "Network planning",
+                "Hydraulic modelling",
+                "Capacity assessments",
+                "Development servicing",
+                "Water infrastructure design",
+                "Surface water assessments",
+                "Groundwater assessments",
+                "Water storage design",
+                "Reticulation design",
+                "Infrastructure upgrade planning",
+              ],
+            },
+          ],
+        },
+      ],
+      closing: {
+        title: "Practical Engineering. Designed for the Future.",
+        paragraphs: [
+          "At GDC Group, we believe good engineering is about more than technical design. It is about understanding the project, the people and the environment in which it operates.",
+          "From strategic planning and investigation through to detailed design and delivery, we work alongside our clients to develop practical, resilient and cost-effective solutions for New Zealand.",
+          "Whether you are developing a new site, upgrading existing infrastructure or addressing a complex environmental challenge, GDC Group is here to help.",
+        ],
+        ctaLead: "Talk to our team about your next project.",
+        ctaLabel: "Contact GDC Group",
+        ctaHref: "/contact-us",
+      },
+    },
   },
 
-  "architectural-designs": {
-    metaTitle: "GDC Consultant: Unique Architectural Home Designs",
+  // ARCHIVED (GDC Group no longer offers architecture). Rename key back to "architectural-designs" to restore.
+  "_archived-architectural-designs": {
+    metaTitle: "Architectural Design Services | GDC Group",
     metaDescription:
-      "Discover innovative architectural home designs and expert engineering consultancy at GDC Consultant. Transform your vision into reality with our concept designs.",
-    title: "Architectural Designs",
-    description:
-      "GDC Consultants excel in delivering high-end, sustainable architecture solutions tailored to complex design requirements. Their services include concept design, construction documentation, project management, and site feasibility studies.",
+      "GDC Group creates architectural solutions that bring together design, functionality, sustainability and buildability, from residential homes to commercial and specialised projects.",
+    title: "Architectural Design",
     image: "/images/services/8/Architectural Designs 1.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Pursuit of Architectural Excellence",
-        description:
-          "We are experts in developing comprehensive and sustainable architecture solutions. Equipped with a deep understanding of New Zealand’s local intricacies, expertise, and experience, we plan and design high-end architecture while providing long-lasting, sustainable, and impactful solutions to unique and complex design requirements. The architectural services that GDC Consultants typically provide include concept design and development, preparation of construction documents, and construction administration. We also provide additional services such as architectural programming, project management, and site feasibility checks.",
-        image: "/images/services/8/Architectural Designs 2.webp",
+    modern: {
+      images: ["/images/services/8/Architectural Designs 2.webp", "/images/services/8/Architectural Designs 3.webp", "/images/services/8/Architectural Designs 4.webp"],
+      tagline: "Architecture Designed for New Zealand",
+      intro: [
+        "At GDC Group, we create architectural solutions that bring together design, functionality, sustainability and buildability.",
+        "From residential homes and commercial developments to complex and specialised projects, we work with clients to develop spaces that respond to their vision, site and long-term requirements.",
+        "Our approach combines architectural design with GDC Group's broader engineering capability, allowing us to consider the project as a whole — from site conditions and structure through to building performance, functionality and construction.",
+        "We work closely with clients, engineers, builders and project teams to turn ideas into well-considered, practical and enduring spaces.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "architectural-services",
+          heading: "Our Architectural Services",
+          columns: 2,
+          cards: [
+            {
+              icon: "design",
+              title: "Concept Design & Development",
+              summary: [
+                "Every successful project starts with a strong concept.",
+                "We work with clients to understand their objectives, site characteristics, budget and aspirations before developing a design direction that brings these elements together.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Initial design concepts",
+                "Site and context analysis",
+                "Design development",
+                "Architectural planning",
+                "Spatial planning",
+                "Feasibility studies",
+                "Design options and reviews",
+                "Preliminary plans and documentation",
+              ],
+            },
+            {
+              icon: "residential",
+              title: "Residential Architecture",
+              summary: [
+                "We design homes that respond to the way people live, while considering the character of the site, surrounding environment and long-term performance of the building.",
+                "From new homes to alterations and larger residential developments, our team can guide projects from initial concept through to detailed documentation.",
+              ],
+              listLabel: "Our residential services include:",
+              items: [
+                "New home design",
+                "Custom residential architecture",
+                "Alterations and additions",
+                "Multi-unit residential developments",
+                "Site planning",
+                "Interior spatial planning",
+                "3D visualisation",
+                "Construction documentation",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "Commercial & Development Projects",
+              summary: [
+                "GDC Group provides architectural design services for commercial and development projects where functionality, efficiency and long-term value are critical.",
+                "We consider the relationship between the building, its users, the site and the wider development to create practical architectural solutions.",
+              ],
+              listLabel: "Our services can support:",
+              items: [
+                "Commercial buildings",
+                "Office developments",
+                "Retail projects",
+                "Industrial buildings",
+                "Mixed-use developments",
+                "Multi-unit developments",
+                "Community and public facilities",
+                "Development feasibility",
+              ],
+            },
+            {
+              icon: "sustainable",
+              title: "Sustainable & Performance-Focused Design",
+              summary: [
+                "Good architecture should respond to both people and the environment.",
+                "At GDC Group, we consider opportunities to improve energy efficiency, natural light, ventilation, material selection, durability and long-term building performance throughout the design process.",
+                "Our goal is to develop solutions that are not only visually considered, but also practical, resilient and appropriate for New Zealand's climate and environment.",
+              ],
+              items: [],
+            },
+            {
+              icon: "model",
+              title: "3D Modelling & Visualisation",
+              summary: [
+                "Clear visualisation helps clients understand how a project will look and function before construction begins.",
+                "We use 3D modelling and visualisation to communicate design intent, explore options and support informed decision-making throughout the design process.",
+              ],
+              listLabel: "This can assist with:",
+              items: [
+                "3D building models",
+                "Design presentations",
+                "Spatial planning",
+                "Design development",
+                "Material and finish selection",
+                "Client reviews",
+                "Design coordination",
+              ],
+            },
+            {
+              icon: "documentation",
+              title: "Construction Documentation",
+              summary: [
+                "A well-developed set of construction documents is essential for a successful project.",
+                "GDC Group prepares coordinated architectural documentation to communicate design intent and support the construction process.",
+              ],
+              listLabel: "Our documentation services can include:",
+              items: [
+                "Architectural drawings",
+                "Floor plans",
+                "Elevations",
+                "Sections",
+                "Detailed drawings",
+                "Schedules",
+                "Construction documentation",
+                "Coordination with engineering disciplines",
+                "Consent documentation support",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-architecture-engineering",
+          icon: "integrated",
+          heading: "Integrated Architecture & Engineering",
+          paragraphs: [
+            "One of the advantages of working with GDC Group is our ability to bring architectural and engineering expertise together.",
+          ],
+          listLabel: "Our wider multidisciplinary capability includes:",
+          items: [
+            "Architectural design",
+            "Structural engineering",
+            "Civil engineering",
+            "Geotechnical engineering",
+            "Three waters engineering",
+            "Environmental and contaminated land services",
+          ],
+          after: [
+            "This integrated approach helps identify potential challenges early, improve coordination between disciplines and create more efficient project outcomes.",
+          ],
+        },
+      ],
+      closing: {
+        title: "From Concept to Completion",
+        paragraphs: [
+          "At GDC Group, we believe great architecture balances vision with practicality.",
+          "Our team works alongside clients and project partners to develop designs that are distinctive, functional, buildable and suited to their environment.",
+          "Whether you're planning a new home, commercial development, industrial facility or complex architectural project, we can help take your project from initial concept through to construction documentation and delivery.",
+        ],
+        ctaLead: "Bring your next project to life with GDC Group.",
+        ctaLabel: "Talk to Our Team",
+        ctaHref: "/contact-us",
       },
-      {
-        id: 2,
-        title: "Structural Plan and Design",
-        description:
-          "The substructure of your building project needs to be well-designed before the construction phase of its superstructure. During the schematic design phase, our experts make drawings and plans related to the foundation sections, floor plans of slabs, structural beams, slab reinforcement, doors, windows, and lintel, and other custom structural needs as per the requirements of the individual project.",
-        image: "/images/services/8/Architectural Designs 3.webp",
-      },
-      {
-        id: 3,
-        title: "MEP Engineering",
-        description:
-          "We can design safe and functional MEP drawings that perfectly cater to your requirements timeline. Our services include master designs of HVAC, electrical, plumbing, sewage, and other systems.",
-        image: "/images/services/plan_design_full.webp",
-      },
-      {
-        id: 4,
-        title: "Interior Plans",
-        description:
-          "We design safe and functional MEP drawings that perfectly cater to your requirements timeline. Our services include master designs of HVAC, electrical, plumbing, sewage, and other systems.",
-        image: "/images/services/image-25.webp",
-      },
-      {
-        id: 5,
-        title: "3D Modelling",
-        description:
-          "We use state-of-the-art techniques to provide our clients with a comprehensive 3D model of their building before construction starts. This ensures that clients are completely satisfied with the designs before they are implemented, and helps in saving a significant amount of time, energy, and cost that might have been wasted correcting designs during construction.",
-        image: "/images/services/Vertex_BD_005.webp",
-      },
-    ],
-    uniqueContent: "landscapingUniqueContent",
+    },
   },
 
   "electrical-engineering": {
-    metaTitle: "New Zealand’s Best Electrical Engineering GDC Consultants",
+    metaTitle: "Electrical Engineering Services | GDC Group",
     metaDescription:
-      "Discover expert electrical engineering services in New Zealand with GDC Consultant. We provide innovative solutions tailored to your project needs",
+      "GDC Group provides electrical engineering solutions that combine technical expertise, practical design and a strong understanding of how buildings, infrastructure and industrial facilities operate.",
     title: "Electrical Engineering",
-    description: "",
     image: "/images/services/2/Electrical Engineering 1.webp",
-    sections: [
-      {
-        id: 1,
-        title:
-          "GDC Consultants : New Zealand’s Top Electrical Engineering Specialists",
-        description:
-          "GDC Consultants are industry leaders in electrical engineering. Our clients know us for providing high-quality designs, innovative electrical engineering solutions, and comprehensive control systems. Our extensive experience in the industrial engineering sector enables us to execute projects with a high level of professionalism, attention to detail, and integrity.",
-        
-      },
-      {
-        id: 2,
-        title:
-          "Hire GDC Consultants for the Conceptual Framework & Electrical Setup for your Project",
-        description:
-          "Our electrical engineering solutions will provide the best answers to your problems.",
-        points: [
-          "We look beyond the problem to the causes – the why behind the what",
-          "We evaluate multiple possible solutions and cater our final selection to the exact needs of the project",
-          "We are able to design, plan, execute, and implement the entire project",
-          "We make sure to provide an upfront and reasonable estimate of the total cost of all entailed project work",
+    modern: {
+      images: ["/images/services/2/Electrical Engineering 2.webp", "/images/services/2/Electrical Engineering 3.webp", "/images/services/2/Electrical Engineering 4.webp"],
+      tagline: "Intelligent Electrical Engineering for Modern Projects",
+      intro: [
+        "At GDC Group, we provide electrical engineering solutions that combine technical expertise, practical design and a strong understanding of how buildings, infrastructure and industrial facilities operate.",
+        "From early-stage concept design through to detailed engineering and project delivery, our team develops electrical systems that are safe, reliable, efficient and designed for long-term performance.",
+        "We work closely with architects, developers, contractors, building owners and other engineering disciplines to ensure electrical systems are integrated seamlessly into the wider project.",
+        "Our approach is grounded in sound engineering principles, applicable New Zealand standards and regulations, and a practical understanding of construction and operational requirements.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "electrical-services",
+          heading: "Our Electrical Engineering Services",
+          columns: 2,
+          cards: [
+            {
+              icon: "design",
+              title: "Electrical Design & Engineering",
+              summary: [
+                "We develop electrical systems tailored to the specific requirements of each building, facility or infrastructure project.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Electrical system design",
+                "Electrical load assessments",
+                "Power distribution design",
+                "Lighting design",
+                "Emergency lighting",
+                "Small power systems",
+                "Switchboard design",
+                "Cable and equipment selection",
+                "Electrical layouts and documentation",
+                "Electrical specifications",
+                "Design coordination",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "Commercial & Industrial Electrical Engineering",
+              summary: [
+                "GDC Group has experience supporting electrical requirements across commercial, industrial and specialised projects.",
+                "We understand that industrial and commercial environments often require robust systems that can accommodate demanding operating conditions, future expansion and complex equipment requirements.",
+              ],
+              listLabel: "Our services can support:",
+              items: [
+                "Commercial buildings",
+                "Industrial facilities",
+                "Manufacturing facilities",
+                "Warehouses",
+                "Workshops",
+                "Offices",
+                "Retail developments",
+                "Infrastructure projects",
+                "Specialised facilities",
+              ],
+              after: [
+                "We focus on practical electrical solutions that support operational reliability, safety, efficiency and maintainability.",
+              ],
+            },
+            {
+              icon: "power",
+              title: "Power Distribution & Infrastructure",
+              summary: [
+                "Reliable power distribution is fundamental to the operation of modern buildings and facilities.",
+                "GDC Group can assist with the planning and design of electrical distribution systems from incoming supply through to final circuits and connected equipment.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Power distribution systems",
+                "Main switchboard design",
+                "Sub-main distribution",
+                "Distribution board design",
+                "Load assessments",
+                "Electrical capacity assessments",
+                "Equipment connections",
+                "Cable sizing and selection",
+                "Power quality considerations",
+                "Future capacity planning",
+              ],
+            },
+            {
+              icon: "lighting",
+              title: "Lighting Design",
+              summary: [
+                "Well-designed lighting can improve the functionality, safety, comfort and energy performance of a building.",
+                "GDC Group develops lighting solutions that consider the purpose of each space, occupant requirements, energy efficiency and applicable standards.",
+              ],
+              listLabel: "Our lighting services can include:",
+              items: [
+                "Internal lighting design",
+                "External lighting",
+                "Emergency lighting",
+                "Energy-efficient lighting solutions",
+                "Lighting calculations",
+                "Lighting layouts",
+                "Control systems",
+                "Design coordination",
+              ],
+            },
+            {
+              icon: "controls",
+              title: "Controls & Automation",
+              summary: [
+                "Modern facilities increasingly rely on integrated control and automation systems to improve efficiency, reliability and operational performance.",
+                "GDC Group can assist with electrical control systems and engineering solutions that integrate equipment, controls and operational requirements.",
+              ],
+              listLabel: "Our capability can include:",
+              items: [
+                "Control system design",
+                "Electrical control panels",
+                "Equipment control",
+                "Automation systems",
+                "Monitoring systems",
+                "Control and instrumentation interfaces",
+                "System integration",
+              ],
+            },
+            {
+              icon: "sustainable",
+              title: "Energy Efficiency & Future-Focused Design",
+              summary: [
+                "Electrical systems have a significant role to play in improving the overall energy performance of a building or facility.",
+                "At GDC Group, we consider opportunities to improve efficiency and reduce long-term operating costs through appropriate system design and technology selection.",
+              ],
+              listLabel: "Depending on the project, this may include consideration of:",
+              items: [
+                "Energy-efficient lighting",
+                "Intelligent lighting controls",
+                "Electrical load management",
+                "Energy monitoring",
+                "Renewable energy integration",
+                "Solar photovoltaic systems",
+                "Electric vehicle charging infrastructure",
+                "Future electrical capacity",
+                "Building energy performance",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-engineering",
+          icon: "integrated",
+          heading: "Integrated Engineering",
+          paragraphs: [
+            "Electrical engineering is closely connected with the architectural, structural, mechanical and civil elements of a project.",
+          ],
+          listLabel:
+            "As a multidisciplinary engineering practice, GDC Group can coordinate electrical requirements with our wider project capability, including:",
+          items: [
+            "Architectural design",
+            "Structural engineering",
+            "Civil engineering",
+            "Geotechnical engineering",
+            "Three waters engineering",
+            "Building services",
+            "Project coordination",
+          ],
+          after: [
+            "This integrated approach helps improve design coordination, identify potential issues early and deliver more efficient project outcomes.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Safe. Reliable. Efficient.",
+        paragraphs: [
+          "At GDC Group, we believe effective electrical engineering should deliver more than a compliant design.",
+          "It should provide systems that are safe, reliable, efficient, maintainable and ready to support the future needs of the building or facility.",
+          "From concept and planning through to detailed design and construction, we work with our clients and project partners to deliver electrical engineering solutions that perform.",
         ],
-        image: "/images/services/2/Electrical Engineering 2.webp",
+        ctaLead:
+          "Planning a new project or upgrading an existing facility? Talk to GDC Group about your electrical engineering requirements.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-    ],
-    uniqueContent: "electricalEngineeringUniqueContent",
+    },
   },
 
   "construction-management": {
-    metaTitle: "Top GDC Consultants for Your Civil Construction Needs",
+    metaTitle: "Construction Management Services | GDC Group",
     metaDescription:
-      "Elevate your civil construction projects with GDC Consultant. We provide exceptional project management and engineering consultancy services in Wellington, NZ",
+      "GDC Group's construction management services bring together project planning, technical expertise, contractor coordination and construction oversight to help deliver projects safely, efficiently and to the required standard.",
     title: "Construction Management",
-    description: "​",
     image: "/images/services/9/Construction Management 1.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Thinking of starting a new project?",
-        description:
-          "We are able to manage your project from start to finish – all according to your exact requirements.\nGDC are specialists in planning and design, quality control, contractor management, and government approvals.\nWe are active in a variety of sectors that include housing, infrastructure, commercial, healthcare, education, and corporate.",
-        image: "/images/services/1.jpg",
-        photoCredit: "Photo by Tima Miroshnichenko"
-      },
-      {
-        id: 2,
-        title: "Project Management",
-        description:
-          "As a project manager operating on our client’s behalf, we aim to manage the project timeline with consistent and complete quality, achieving or exceeding all financial goals. We strive to keep every stakeholder on-board through regular project reports. \nFrom developing integrated plans for logistics, to managing budget and expenditure, to coordination of schedules and resources –our team utilizes their expertise to achieve outstanding results. Some of our key project management services include;",
-        points: [
-          "Preconstruction/Design",
-          "Scope definition",
-          "Communications protocols",
-          "Master schedule development",
-          "Site selection assistance",
-          "Architecture consultancy",
-          "Cost estimate and value analysis",
-          "Procedure and logistic assessment",
-        ],
-        image: "/images/services/9/Construction Management 2.webp",
-      },
-      {
-        id: 3,
-        title: "Construction Management",
-        description:
-          "GDC Consultants provide a range of construction consultancy and management services for a variety of projects. From roadways and buildings, to utility lines and restorations –our construction managers, engineers, and inspectors are able to deliver projects well within estimated timeframes and budgets. \nOur construction management services include;",
-        points: [
-          "Program management",
+    modern: {
+      images: ["/images/services/9/Construction Management 2.webp", "/images/services/9/Construction Management 3.webp"],
+      tagline: "From Design to Delivery",
+      intro: [
+        "Successful construction requires more than a good design. It requires careful planning, clear communication, disciplined project management and strong coordination throughout delivery.",
+        "At GDC Group, our construction management services bring together project planning, technical expertise, contractor coordination and construction oversight to help deliver projects safely, efficiently and to the required standard.",
+        "Our multidisciplinary approach means construction decisions can be informed by the same architectural and engineering expertise involved in the design, helping reduce disconnects between design intent and construction delivery.",
+      ],
+      aside: {
+        title: "Our Construction Management Services",
+        lead: "We provide end-to-end construction and project management support, including:",
+        style: "list",
+        items: [
           "Construction management",
-          "Engineering and inspection",
-          "Quality control",
-          "A/E selection",
-          "Cost estimation and bid management",
-          "Construction scheduling",
-          "Dispute resolution and claims mitigation",
-          "Constructability assessment",
-          "Contractor services",
-          "Asset management",
+          "Project management",
+          "Pre-construction planning",
+          "Procurement and tender management",
+          "Contractor procurement and coordination",
+          "Construction programming",
+          "Cost and budget monitoring",
+          "Programme management",
+          "Design coordination",
+          "Consultant coordination",
+          "Quality assurance and quality control",
+          "Site inspections and construction monitoring",
+          "Health and safety coordination",
+          "Contract administration",
+          "Variations and change management",
+          "Progress claims and payment assessments",
+          "Defects management",
+          "Practical completion",
+          "Project close-out and handover",
         ],
-        image: "/images/services/9/Construction Management 3.webp",
       },
-    ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "construction-services",
+          columns: 2,
+          cards: [
+            {
+              icon: "planning",
+              title: "Pre-Construction Planning",
+              summary: [
+                "Good construction outcomes start well before work begins on site.",
+                "We assist clients with planning and preparation to establish a clear pathway from design through to construction.",
+              ],
+              listLabel: "This can include:",
+              items: [
+                "Project scope development",
+                "Construction methodology",
+                "Programme development",
+                "Procurement strategy",
+                "Tender documentation",
+                "Contractor selection",
+                "Cost planning",
+                "Construction sequencing",
+                "Risk identification",
+                "Resource planning",
+                "Consent and approval coordination",
+              ],
+              after: [
+                "Early planning helps identify potential issues before construction begins and provides the project team with a clear delivery strategy.",
+              ],
+            },
+            {
+              icon: "liaison",
+              title: "Project Management",
+              summary: [
+                "Our project management services provide clients with a central point of coordination throughout the project lifecycle.",
+              ],
+              listLabel: "We can coordinate:",
+              items: [
+                "Consultants",
+                "Contractors",
+                "Suppliers",
+                "Authorities",
+                "Designers",
+                "Engineers",
+                "Project stakeholders",
+              ],
+              after: [
+                "We monitor project progress, programme, quality, cost and key deliverables to help keep the project moving towards completion.",
+              ],
+            },
+            {
+              icon: "earthworks",
+              title: "Construction Management",
+              summary: [
+                "During construction, our team can provide practical oversight and technical coordination to help ensure the works are delivered in accordance with the approved design, specifications and project requirements.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Construction monitoring",
+                "Site inspections",
+                "Contractor coordination",
+                "Technical queries",
+                "Design clarification",
+                "Programme monitoring",
+                "Quality control",
+                "Construction sequencing",
+                "Progress reporting",
+                "Defect identification",
+                "Practical completion inspections",
+              ],
+              after: [
+                "Our focus is on identifying issues early, communicating clearly and supporting timely resolution.",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "Tendering & Procurement",
+              summary: [
+                "Selecting the right contractor and establishing a clear procurement process can have a significant impact on project outcomes.",
+              ],
+              listLabel: "GDC Group can assist with:",
+              items: [
+                "Tender documentation",
+                "Contractor procurement",
+                "Tender management",
+                "Tender evaluation",
+                "Scope clarification",
+                "Contractor comparisons",
+                "Contract recommendations",
+                "Pre-construction coordination",
+              ],
+              after: [
+                "We help clients make informed procurement decisions based on project requirements, capability, programme and commercial considerations.",
+              ],
+            },
+            {
+              icon: "investigation",
+              title: "Cost, Programme & Risk Management",
+              summary: [
+                "Construction projects involve multiple moving parts. Effective management of cost, programme and risk is essential to maintaining control.",
+              ],
+              listLabel: "We monitor key project considerations including:",
+              items: [
+                "Construction programme",
+                "Project budget",
+                "Variations",
+                "Progress claims",
+                "Procurement",
+                "Construction risks",
+                "Design changes",
+                "Programme delays",
+                "Quality issues",
+                "Outstanding works",
+              ],
+              after: [
+                "Our approach is focused on identifying issues early and providing practical options for resolution.",
+              ],
+            },
+            {
+              icon: "documentation",
+              title: "Contract Administration",
+              summary: [
+                "Where required, GDC Group can provide contract administration and technical support throughout construction.",
+              ],
+              listLabel: "This may include:",
+              items: [
+                "Contract documentation",
+                "Progress claims",
+                "Variation assessment",
+                "Extension of time considerations",
+                "Contractor correspondence",
+                "Site instructions",
+                "Defects management",
+                "Practical completion",
+                "Final completion",
+                "Handover documentation",
+              ],
+              after: [
+                "We work to maintain clear communication between the client, consultants and contractor throughout the project.",
+              ],
+            },
+            {
+              icon: "safety",
+              title: "Quality & Construction Assurance",
+              summary: [
+                "Quality is considered throughout the project, from design and procurement through to construction and completion.",
+                "Our construction management approach includes appropriate inspection, documentation and coordination to help ensure works are delivered in accordance with the project requirements.",
+              ],
+              listLabel: "We focus on:",
+              items: [
+                "Design compliance",
+                "Construction quality",
+                "Material and workmanship considerations",
+                "Inspection and verification",
+                "Defect identification",
+                "Documentation",
+                "Handover requirements",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-expertise",
+          icon: "integrated",
+          heading: "Integrated Design & Construction Expertise",
+          paragraphs: [
+            "One of GDC Group's key strengths is the ability to combine architecture, engineering, surveying, planning and construction expertise within a coordinated project environment.",
+          ],
+          listLabel: "Our multidisciplinary services include:",
+          items: [
+            "Architectural design",
+            "Structural engineering",
+            "Civil engineering",
+            "Geotechnical engineering",
+            "Transport engineering",
+            "Three waters engineering",
+            "Surveying",
+            "Seismic engineering",
+            "Resource and building consents",
+            "Construction management",
+          ],
+          after: [
+            "This integrated approach provides continuity from concept and design through to construction and completion, helping reduce coordination issues and improve project delivery.",
+          ],
+        },
+        {
+          type: "split",
+          id: "sectors",
+          icon: "development",
+          heading: "Construction Across Multiple Sectors",
+          paragraphs: [],
+          listLabel:
+            "We provide project and construction management support across a range of sectors, including:",
+          items: [
+            "Residential",
+            "Multi-unit housing",
+            "Commercial",
+            "Industrial",
+            "Infrastructure",
+            "Healthcare",
+            "Education",
+            "Community facilities",
+            "Property development",
+            "Land development",
+          ],
+          after: [
+            "Each project is approached according to its specific scope, complexity, programme and delivery requirements.",
+          ],
+        },
+      ],
+      closing: {
+        title: "From Concept to Completion",
+        paragraphs: [
+          "At GDC Group, we believe successful project delivery comes from bringing the right expertise together at the right time.",
+          "From pre-construction planning and procurement through to construction, completion and handover, we provide practical project management and technical support to help clients deliver with greater confidence.",
+        ],
+        ctaLead:
+          "Planning a new development or construction project? Talk to GDC Group about your project management and construction management requirements.",
+        ctaLabel: "Talk to GDC Group",
+        ctaHref: "/contact-us",
+      },
+    },
   },
 
   "geotechnical-engineering": {
-    metaTitle: "Expert Geotechnical Engineering Consultant Services Near You",
+    metaTitle: "Geotechnical Engineering Services | GDC Group",
     metaDescription:
-      "Discover expert geotechnical engineering consultancy services at GDC Consultant. We specialize in geotech inspections to ensure your project's success and safety.",
+      "GDC Group's geotechnical engineering services help clients understand ground conditions, manage geotechnical risks and make informed decisions throughout the life of a project.",
     title: "Geotechnical Engineering",
-    description: "​",
     image: "/images/services/3/Geotechnical Engineering 1.webp",
-    sections: [
-      {
-        id: 1,
-        title: "We Specialise in Geotechnical Engineering & Reporting",
-        description:
-          "We strive to design safe and effective retention systems and foundations, employing our extensive expertise and experience and a pragmatic approach. From investigation, to reporting, to designing and implementing solutions, we provide industry-leading geotechnical services within New Zealand.",
-        image: "/images/services/3/Geotechnical Engineering 2.webp",
-      },
-      {
-        id: 2,
-        title: "Geotechnical Engineering",
-        description:
-          "Geotechnical inspections, site observations, and testing are an essential requirement from council before embarking on many kinds of project. They are undertaken during the construction phase by specialist geotechnical engineers. It is always important to confirm that the ground conditions are appropriate for the kind of development you are proposing, and that it is possible to build adequate foundations in the area. \nThe following are some of the services we offer:",
-        points: [
-          "Inspection of building platform subgrade",
-          "Pad foundation/shallow strip excavation inspection",
-          "Bored pipe hole assessment",
-          "Earthworks monitoring and inspection",
-          "Hard-fill density observation and floor slabs underneath testing",
-          "CBR testing of road, pavement, access way etc.",
-          "Slope stability assessment",
-          "Excavation support system design",
-          "Seepage analysis of water retaining structures",
-          "Dynamic design parameters analysis for foundations",
-          "Remediation of problematic soil conditions",
-          "Site improvement systems design",
-          "Pile load test analysis",
+    modern: {
+      images: ["/images/services/3/Geotechnical Engineering 2.webp", "/images/services/3/Geotechnical Engineering 3.webp"],
+      tagline: "Understanding the Ground. Engineering with Confidence.",
+      intro: [
+        "At GDC Group, our geotechnical engineering services help clients understand ground conditions, manage geotechnical risks and make informed decisions throughout the life of a project.",
+        "Ground conditions can have a significant impact on the design, construction and long-term performance of buildings, infrastructure and developments. Our team provides practical geotechnical investigation, assessment, testing and engineering advice to help ensure projects are designed and constructed on a sound foundation.",
+        "We work alongside property developers, councils, architects, engineers, contractors and private clients to provide practical solutions that are technically robust, cost-effective and appropriate for the site.",
+      ],
+      audience: [
+        "Property developers",
+        "Councils",
+        "Architects",
+        "Engineers",
+        "Contractors",
+        "Private clients",
+      ],
+      servicesHeading: "Our Geotechnical Engineering Services",
+      services: [
+        {
+          icon: "investigation",
+          title: "Site Investigations & Geotechnical Assessments",
+          summary: [
+            "Understanding the ground conditions early can help identify potential constraints and reduce unexpected costs during construction.",
+            "GDC Group undertakes geotechnical inspections, site assessments and testing to establish ground conditions and provide engineering recommendations appropriate to the proposed development.",
+          ],
+          items: [
+            "Geotechnical site investigations",
+            "Ground condition assessments",
+            "Geotechnical inspections and site observations",
+            "Building platform assessments",
+            "Foundation assessments",
+            "Earthworks assessments",
+            "Groundwater and seepage assessments",
+            "Geotechnical reporting",
+            "Construction monitoring and verification",
+          ],
+        },
+        {
+          icon: "foundation",
+          title: "Foundation & Building Platform Assessments",
+          summary: [
+            "The performance of a building depends on the suitability and stability of the ground beneath it.",
+            "GDC Group provides geotechnical engineering advice for foundations and building platforms, helping determine whether proposed foundation systems are appropriate for the site's ground conditions.",
+          ],
+          items: [
+            "Building platform subgrade inspections",
+            "Foundation excavation inspections",
+            "Shallow foundation and strip footing assessments",
+            "Bored pile and drilled foundation assessments",
+            "Foundation recommendations",
+            "Dynamic foundation design parameters",
+            "Pile load test analysis",
+            "Ground improvement recommendations",
+          ],
+        },
+        {
+          icon: "earthworks",
+          title: "Earthworks & Construction Monitoring",
+          summary: [
+            "Effective earthworks management is essential to achieving stable and compliant building platforms, roads and infrastructure.",
+            "Our team can provide geotechnical monitoring and inspections throughout construction to verify that ground conditions and earthworks are consistent with the design requirements.",
+          ],
+          items: [
+            "Earthworks monitoring",
+            "Fill placement inspections",
+            "Compaction assessments",
+            "Hard-fill density observations",
+            "Floor slab subgrade assessments",
+            "Construction verification",
+            "Road and pavement testing",
+            "CBR testing",
+            "Building platform certification support",
+          ],
+        },
+        {
+          icon: "slope",
+          title: "Slope Stability & Ground Risk",
+          summary: [
+            "New Zealand's varied terrain means that slope stability and ground conditions can be important considerations for many developments.",
+            "GDC Group provides geotechnical assessments to identify potential ground movement and stability risks and develop practical solutions for managing those risks.",
+          ],
+          items: [
+            "Slope stability assessments",
+            "Ground movement assessments",
+            "Cut and fill slope assessments",
+            "Excavation stability assessments",
+            "Retaining and excavation support advice",
+            "Groundwater and seepage assessments",
+            "Remediation of problematic ground conditions",
+            "Slope stabilisation recommendations",
+          ],
+        },
+        {
+          icon: "improvement",
+          title: "Ground Improvement & Remediation",
+          summary: [
+            "Where ground conditions present challenges, there are often practical engineering solutions available.",
+            "GDC Group can assess problematic ground conditions and develop appropriate ground improvement or remediation strategies to support safe and efficient construction.",
+          ],
+          items: [
+            "Problematic soil assessment",
+            "Ground improvement design",
+            "Site improvement systems",
+            "Foundation improvement solutions",
+            "Settlement considerations",
+            "Remediation strategies",
+            "Ground stabilisation",
+            "Geotechnical construction advice",
+          ],
+        },
+      ],
+      development: {
+        title: "Geotechnical Engineering for Development",
+        paragraphs: [
+          "Geotechnical considerations can influence everything from site feasibility and subdivision through to foundation design, earthworks and construction.",
+          "By engaging GDC Group early, clients can better understand potential ground-related constraints and incorporate appropriate engineering solutions into the project from the outset.",
         ],
-        image: "/images/services/3/Geotechnical Engineering 3.webp",
-      },
-      {
-        id: 3,
-        title: "Geotechnical Engineering",
-        description:
-          "A Geotechnical or Soil report is a mandatory requirement for building development as a part of Building Consent Process.Commissioning a Geotechnical Investigation Report minimizes the risk of future foundation issues or stability concerns. This report also provides the information required by architects and structural engineers to continue to the design process. \nExamples of some types of projects which usually require a geotechnical report include:",
-        points: [
-          "Residential and Commercial (remedial works, addition and renovation, alteration, multi-story buildings, new projects)",
-          "Land Development",
-          "Large, medium and small scale subdivision",
-          "Infrastructure and Public works (pipelines, pavements, roads)",
+        items: [
+          "Residential developments",
+          "Commercial developments",
+          "Industrial developments",
+          "Subdivisions",
+          "Infrastructure projects",
+          "Roads and accessways",
+          "Retaining structures",
+          "Building projects",
+          "Earthworks",
+          "Civil construction",
         ],
-        image: "/images/services/3/Geotechnical Engineering 1.webp",
       },
-    ],
+      closing: {
+        title: "Practical Advice. Strong Foundations.",
+        paragraphs: [
+          "At GDC Group, we believe geotechnical engineering should provide more than a technical report. It should give our clients a clear understanding of the ground conditions, the associated risks and the practical options available.",
+          "Our approach combines technical engineering expertise, site experience and practical project knowledge to help deliver solutions that work in the real world.",
+          "From initial site investigation through to construction monitoring and geotechnical verification, GDC Group provides the expertise you need to build with confidence.",
+        ],
+        ctaLead:
+          "Planning a project? Talk to GDC Group about your geotechnical requirements.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
+      },
+    },
   },
 
   infrastructure: {
-    metaTitle: "Accurate Commercial Building Valuation: GDC Insights",
+    metaTitle: "Infrastructure & Subdivision Engineering | GDC Group",
     metaDescription:
-      "Discover expert insights on commercial building valuation, subdivision costs in NZ, and engineering consultancy services with GDC Consultant.",
+      "GDC Group provides integrated infrastructure and subdivision engineering services for residential, commercial, industrial and mixed-use developments across New Zealand, from feasibility through to completion.",
     title: "Infrastructure & Subdivision Engineering",
-    description: "",
     image: "/images/services/10/Infrastructure and Subdivision Engineering 1.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Our Vision of Creating Liveable Communities",
-        description:
-          "GDC Consultants provide a wide range of infrastructure and subdivision engineering services, with a focus on land development and municipal infrastructure. \nWe offer a complete consultancy package, including feasibility checks, planning, design approvals, and construction. Throughout the entire process, we remain focused on project quality, performance, efficiency, and client satisfaction.",
-        image: "/images/services/paul-hanaoka-303768-unsplash.webp",
+    modern: {
+      images: ["/images/services/10/Infrastructure and Subdivision Engineering 2.webp", "/images/services/10/Infrastructure and Subdivision Engineering 3.webp"],
+      tagline: "Engineering the Infrastructure Behind Successful Development",
+      intro: [
+        "Successful land development depends on infrastructure that is carefully planned, efficiently designed and built to perform for the long term.",
+        "At GDC Group, we provide integrated infrastructure and subdivision engineering services for residential, commercial, industrial and mixed-use developments across New Zealand. From early feasibility and master planning through to detailed design, approvals, construction and completion, we work with clients and project teams to turn development opportunities into practical, consentable and deliverable projects.",
+        "Our multidisciplinary approach brings together civil, structural, geotechnical, transport, surveying, planning and three waters expertise to provide coordinated solutions throughout the development process.",
+      ],
+      aside: {
+        title: "Our Infrastructure & Subdivision Services",
+        lead: "Our capabilities include:",
+        style: "list",
+        items: [
+          "Land development feasibility and due diligence",
+          "Infrastructure planning and master planning",
+          "Subdivision engineering",
+          "Residential subdivision design",
+          "Commercial and industrial development",
+          "Three waters infrastructure",
+          "Stormwater management and drainage",
+          "Wastewater infrastructure",
+          "Water supply infrastructure",
+          "Road and access design",
+          "Earthworks and site development",
+          "Low-impact and sustainable development solutions",
+          "Stormwater quality and quantity management",
+          "Erosion and sediment control",
+          "Infrastructure capacity assessments",
+          "Development servicing assessments",
+          "Engineering design and documentation",
+          "Resource and building consent support",
+          "Council and infrastructure provider coordination",
+          "Construction observation and support",
+          "Contract administration",
+          "As-built documentation and project completion",
+        ],
       },
-      {
-        id: 2,
-        title: "Master Infrastructure Planning Support",
-        description:
-          "Being a team of expert urban planners, environmental specialists, architects, and civil engineers, we are able to collaborate to provide infrastructure planning services for individual outline plans, neighborhood structure plans, and area structure plans.",
-        image: "/images/services/1x-1-1536x1014.webp",
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "infrastructure-services",
+          columns: 2,
+          cards: [
+            {
+              icon: "investigation",
+              title: "Development Feasibility",
+              summary: [
+                "Understanding whether a development is technically and financially viable is critical before significant investment is made.",
+                "GDC Group can provide early-stage engineering and infrastructure advice to identify opportunities, constraints and potential development requirements.",
+              ],
+              listLabel: "Our feasibility assessments can consider:",
+              items: [
+                "Site constraints",
+                "Topography and existing conditions",
+                "Geotechnical considerations",
+                "Existing infrastructure",
+                "Three waters capacity",
+                "Stormwater requirements",
+                "Roading and access",
+                "Earthworks requirements",
+                "Development staging",
+                "Infrastructure upgrades",
+                "Easements and servicing constraints",
+                "Consenting considerations",
+              ],
+              after: [
+                "This early advice helps clients understand the engineering implications of a site and make informed decisions before progressing into detailed design.",
+              ],
+            },
+            {
+              icon: "planning",
+              title: "Infrastructure Planning & Master Planning",
+              summary: [
+                "Well-planned infrastructure provides the foundation for successful communities and developments.",
+                "We develop infrastructure strategies that consider both the immediate project and the wider development context, including future stages and potential growth.",
+              ],
+              listLabel: "Our infrastructure planning can incorporate:",
+              items: [
+                "Water supply",
+                "Wastewater",
+                "Stormwater",
+                "Roads and access",
+                "Earthworks",
+                "Utilities",
+                "Open space and public infrastructure",
+                "Development staging",
+                "Future infrastructure requirements",
+              ],
+              after: [
+                "By considering these elements together, we can develop infrastructure solutions that are coordinated, efficient and capable of supporting long-term development.",
+              ],
+            },
+            {
+              icon: "development",
+              title: "Subdivision Engineering",
+              summary: [
+                "GDC Group provides engineering support throughout the subdivision process, from initial site assessment through to construction and completion.",
+              ],
+              listLabel: "Our subdivision engineering services can include:",
+              items: [
+                "Preliminary subdivision investigations",
+                "Site servicing assessments",
+                "Lot layout and development planning",
+                "Road and access design",
+                "Three waters design",
+                "Stormwater management",
+                "Earthworks design",
+                "Retaining solutions",
+                "Utility coordination",
+                "Infrastructure upgrades",
+                "Construction documentation",
+                "Council liaison",
+                "Construction support",
+                "As-built information",
+              ],
+              after: [
+                "Our engineers work closely with surveyors, planners, architects and other specialists to ensure subdivision designs are coordinated from the outset.",
+              ],
+            },
+            {
+              icon: "stormwater",
+              title: "Three Waters & Stormwater",
+              summary: [
+                "Effective three waters infrastructure is fundamental to sustainable development.",
+              ],
+              listLabel:
+                "Our multidisciplinary engineering capability allows us to plan and design:",
+              items: [
+                "Stormwater networks",
+                "Stormwater treatment and management",
+                "Water supply networks",
+                "Wastewater networks",
+                "Pump systems where required",
+                "Drainage infrastructure",
+                "Development connections",
+                "Infrastructure upgrades",
+                "Catchment and capacity assessments",
+              ],
+              after: [
+                "We consider both site-specific requirements and the wider network to develop practical infrastructure solutions.",
+              ],
+            },
+            {
+              icon: "sustainable",
+              title: "Low-Impact & Sustainable Development",
+              summary: [
+                "Modern developments need to consider how infrastructure interacts with the natural environment.",
+                "GDC Group incorporates low-impact development principles where appropriate to help manage stormwater, reduce environmental impacts and support more resilient developments.",
+              ],
+              listLabel: "Solutions may include:",
+              items: [
+                "Water-sensitive design",
+                "On-site stormwater management",
+                "Infiltration and attenuation",
+                "Stormwater treatment",
+                "Natural drainage approaches",
+                "Reduced impervious surfaces",
+                "Sustainable infrastructure strategies",
+              ],
+              after: [
+                "Our aim is to develop solutions that are practical, technically appropriate and suited to the characteristics of each site.",
+              ],
+            },
+            {
+              icon: "earthworks",
+              title: "Earthworks, Erosion & Sediment Control",
+              summary: [
+                "Earthworks can significantly influence the performance, cost and environmental impact of a development.",
+              ],
+              listLabel: "We provide engineering support for:",
+              items: [
+                "Bulk earthworks",
+                "Cut and fill assessments",
+                "Earthworks planning",
+                "Site grading",
+                "Platform development",
+                "Retaining requirements",
+                "Erosion and sediment control",
+                "Construction staging",
+                "Stormwater management during construction",
+              ],
+              after: [
+                "We consider earthworks alongside geotechnical conditions, stormwater, access and infrastructure requirements to achieve efficient site development.",
+              ],
+            },
+            {
+              icon: "improvement",
+              title: "Construction Support & Contract Administration",
+              summary: [
+                "Our involvement does not end when the design is complete.",
+                "GDC Group can support clients throughout construction to help ensure infrastructure is delivered in accordance with the approved design and project requirements.",
+              ],
+              listLabel: "Services can include:",
+              items: [
+                "Construction observation",
+                "Site inspections",
+                "Technical support",
+                "Design clarifications",
+                "Contractor coordination",
+                "Progress assessments",
+                "Variation reviews",
+                "Quality and compliance observations",
+                "Contract administration",
+                "Practical completion support",
+                "As-built documentation",
+              ],
+              after: [
+                "This provides continuity from design through to delivery and helps address issues efficiently as they arise.",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-development-engineering",
+          icon: "integrated",
+          heading: "Integrated Development Engineering",
+          paragraphs: [
+            "Land development rarely involves a single engineering discipline.",
+          ],
+          listLabel: "GDC Group brings together:",
+          items: [
+            "Civil engineering",
+            "Structural engineering",
+            "Geotechnical engineering",
+            "Transport engineering",
+            "Surveying",
+            "Three waters engineering",
+            "Stormwater engineering",
+            "Architectural design",
+            "Planning and consenting",
+          ],
+          after: [
+            "This integrated capability allows project constraints to be identified early and solutions to be developed collectively rather than in isolation.",
+          ],
+        },
+      ],
+      closing: {
+        title: "From Development Opportunity to Completed Project",
+        paragraphs: [
+          "Whether you are assessing a new development opportunity, planning a subdivision or delivering a larger residential, commercial or industrial development, GDC Group can provide the engineering expertise required throughout the project lifecycle.",
+          "From feasibility and infrastructure planning through to detailed design, consenting, construction and completion, we help turn development opportunities into well-planned, buildable and resilient projects.",
+        ],
+        ctaLead:
+          "Planning a subdivision or land development project? Talk to GDC Group about your infrastructure, subdivision and development engineering requirements.",
+        ctaLabel: "Talk to GDC Group",
+        ctaHref: "/contact-us",
       },
-      {
-        id: 3,
-        title: "Feasibility Studies",
-        description:
-          "GDC Consultants can help with evaluating the financial feasibility of a project by performing a comprehensive study of its design costs, maintenance and construction costs, servicing capacities, and any applicable council rates and fees.",
-        image: "/images/services/10/Infrastructure and Subdivision Engineering 2.webp",
-      },
-      {
-        id: 4,
-        title: "Low Impact Development",
-        description:
-          "Low Impact Development is a progressive approach to storm water management that utilizes rainfall as a resource to benefit and enhance the natural environment of your property and its surroundings. We have embraced LID at GDC, and we are able to design green roofs, rain gardens, absorbent landscapes, bio-swales, permeable pavements, and other innovative designs which encourage on-site retention and absorption.",
-        image: "/images/services/10/Infrastructure and Subdivision Engineering 3.webp",
-      },
-      {
-        id: 5,
-        title: "Subdivision Design",
-        description:
-          "We are able to provide comprehensive deigns for all types of subdivision – small and large, public and private sector. We provide 3D surface modelling, detailed site grading and earth balance calculations, storm water management, sewer system design, report preparation, water distribution system designs, and much more.",
-        image: "/images/services/subdivision-design.webp",
-      },
-      {
-        id: 6,
-        title: "Sedimentation and Erosion Control",
-        description:
-          "Side grading, dewatering, and the disturbance of exposed subsoils by wind and construction equipment are all significant potential issues for your project because they can result in sediments blocking storm sewers and water channels. \nWe are certified experts in preparing erosion and sediment control reports, recommending potential mitigation methods, and providing construction monitoring to ensure that these methods are properly implemented.",
-        image: "/images/services/10/Infrastructure and Subdivision Engineering 1.webp",
-      },
-      {
-        id: 7,
-        title: "Contract Administration",
-        description:
-          "We can provide you with comprehensive contract administration, including: preparation of documents such as tenders, contracts, and progress payments; inspection services throughout the construction phase; and progress monitoring to document and ensure compliance with standards.",
-        image: "/images/services/ContractLaw.webp",
-      },
-    ],
+    },
   },
 
-  "research-development": {
-    metaTitle: "GDC Consultant R&D: Boost Your Success Today",
+  // ARCHIVED. Rename key back to "research-development" to restore.
+  "_archived-research-development": {
+    metaTitle: "GDC Group R&D: Boost Your Success Today",
     metaDescription:
-      "Process consultancy and R&D are both essential to any successful project. The need to ensure quality, follow a timeline, and facilitate collaboration between disciplines, all has to be balanced against the need for R&D.Research and Development is crucial to any project involving unusual design or construction challenges. We embrace these challenges, and pride ourselves on our ability to deliver innovative solutions every time. By keeping our skills updated, developing extensive expertise, and maintaining a high capacity for flexibility, we offer high-quality and innovative product development that can be completely customized to the needs of any particular client and their problems",
+      "Process consultancy and R&D are both essential to any successful project. Research and Development is crucial to any project involving unusual design or construction challenges. We embrace these challenges, and pride ourselves on our ability to deliver innovative solutions every time.",
     title: "Research & Development",
-    description: "",
     image: "/images/services/4/Research and Development 2.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Key Benefits of Contracting GDC",
-        description:
-          "Process consultancy and R&D are both essential to any successful project. The need to ensure quality, follow a timeline, and facilitate collaboration between disciplines, all has to be balanced against the need for R&D.Research and Development is crucial to any project involving unusual design or construction challenges. We embrace these challenges, and pride ourselves on our ability to deliver innovative solutions every time. By keeping our skills updated, developing extensive expertise, and maintaining a high capacity for flexibility, we offer high-quality and innovative product development that can be completely customized to the needs of any particular client and their problems.",
-        points: [
-          "Access to the latest planning and construction technology",
-          "Wider operational experience",
-          "Risk reduction through comprehensive engineering",
-          "Reliable solutions for complex issues",
-          "Cost optimization through extensive R&D expertise.",
-        ],
-        image: "/images/services/4/Research and Development 3.webp",
-      },
-      {
-        id: 2,
-        title:
-          "GDC Consultants LTD Recent Research & Development Studies Include:",
-        description: "",
-        points: [
-          "Product development",
-          "Studies",
-          "Micro simulation and analysis",
-          "Trials",
-        ],
-        image:
-          "/images/services/Architects at a construction site looking at blueprints.webp",
-      },
-      {
-        id: 3,
-        title: "GDC Consultants - The Solution to All your Engineering R&D",
-        description:
-          "We possess the latest and best science and technology in a wide range of engineering disciplines – mechanical, electrical, petroleum, physical, chemical, civil, and software –all under one roof. \nSo that we can quickly and comprehensively understand the nature of each project, we work alongside our clients from the earliest possible stage. We typically undertake feasibility studies which employ the full range of our research and development and pilot engineering to deliver a practical and economic solution.",
-        image: "/images/services/R-and-D-ProcessConsulting_Header.webp",
-      },
-      {
-        id: 4,
-        title: "We provide research and development services that cover:",
-        description:
-          "We often consult clients that need innovative solutions for unusual challenges or wish to make use of our up-to-date technical skills and high operational experience.",
-        points: [
+    modern: {
+      images: [
+        "/images/services/4/Research and Development 3.webp",
+        "/images/services/4/Research and Development.webp",
+        "/images/services/R-and-D-ProcessConsulting_Header.webp",
+      ],
+      tagline: "The Solution to All Your Engineering R&D",
+      intro: [
+        "Process consultancy and R&D are both essential to any successful project. The need to ensure quality, follow a timeline, and facilitate collaboration between disciplines, all has to be balanced against the need for R&D.",
+        "Research and Development is crucial to any project involving unusual design or construction challenges. We embrace these challenges, and pride ourselves on our ability to deliver innovative solutions every time. By keeping our skills updated, developing extensive expertise, and maintaining a high capacity for flexibility, we offer high-quality and innovative product development that can be completely customized to the needs of any particular client and their problems.",
+      ],
+      aside: {
+        title: "Our Research & Development Services",
+        lead: "We provide research and development services that cover:",
+        style: "list",
+        items: [
           "Feasibility studies",
           "Modelling and simulation",
           "Scientific assessment and documentation",
           "Prototyping",
           "Full scale testing",
-          "Product development.",
+          "Product development",
         ],
-        image: "/images/services/4/Research and Development.webp",
       },
-    ],
-    uniqueContent: "internshipsUniqueContent",
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "rd-services",
+          heading: "How We Can Help",
+          columns: 3,
+          cards: [
+            {
+              icon: "investigation",
+              title: "Research & Development Services",
+              summary: [
+                "We often consult clients that need innovative solutions for unusual challenges or wish to make use of our up-to-date technical skills and high operational experience.",
+              ],
+              listLabel: "Our services cover:",
+              items: [
+                "Feasibility studies",
+                "Modelling and simulation",
+                "Scientific assessment and documentation",
+                "Prototyping",
+                "Full scale testing",
+                "Product development",
+              ],
+            },
+            {
+              icon: "improvement",
+              title: "Key Benefits of Contracting GDC",
+              summary: [
+                "By keeping our skills updated and maintaining a high capacity for flexibility, we offer solutions that are customised to your needs.",
+              ],
+              listLabel: "Benefits include:",
+              items: [
+                "Access to the latest planning and construction technology",
+                "Wider operational experience",
+                "Risk reduction through comprehensive engineering",
+                "Reliable solutions for complex issues",
+                "Cost optimization through extensive R&D expertise",
+              ],
+            },
+            {
+              icon: "model",
+              title: "Recent Research & Development Studies",
+              summary: [
+                "GDC Group recent research and development studies include:",
+              ],
+              items: [
+                "Product development",
+                "Studies",
+                "Micro simulation and analysis",
+                "Trials",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "engineering-rd",
+          icon: "integrated",
+          heading: "GDC Group - The Solution to All your Engineering R&D",
+          paragraphs: [
+            "We possess the latest and best science and technology in a wide range of engineering disciplines – mechanical, electrical, petroleum, physical, chemical, civil, and software – all under one roof.",
+            "So that we can quickly and comprehensively understand the nature of each project, we work alongside our clients from the earliest possible stage. We typically undertake feasibility studies which employ the full range of our research and development and pilot engineering to deliver a practical and economic solution.",
+          ],
+          listLabel: "Engineering disciplines under one roof:",
+          items: [
+            "Mechanical",
+            "Electrical",
+            "Petroleum",
+            "Physical",
+            "Chemical",
+            "Civil",
+            "Software",
+          ],
+        },
+      ],
+      closing: {
+        title: "Innovative Solutions, Every Time",
+        paragraphs: [
+          "We embrace unusual design and construction challenges, and pride ourselves on our ability to deliver innovative solutions every time.",
+        ],
+        ctaLead:
+          "Have an unusual design or construction challenge? Talk to GDC Group about your research and development requirements.",
+        ctaLabel: "Talk to GDC Group",
+        ctaHref: "/contact-us",
+      },
+    },
   },
 
-  "road-transport": {
-    metaTitle: "GDC Consultant: Latest on Land Transport Road Closures",
+  "transport-engineering": {
+    metaTitle: "Civil Engineering Services | GDC Group",
     metaDescription:
-      "Stay informed about land transport road closures with GDC Consultant. Our engineering consultancy provides timely updates and expert insights for safe travel.",
-    title: "Road Transport",
-    description: "​",
+      "GDC Group provides transport engineering solutions that support the safe, efficient and sustainable movement of people and goods across New Zealand, from local roads and subdivision access to larger infrastructure projects.",
+    title: "Civil Engineering",
     image: "/images/services/11/Roading 2.webp",
-    sections: [
-      {
-        id: 1,
-        title:
-          "GDC Consultants: Road Engineering & Design Services for Modern Infrastructure",
-        description:
-          "For our communities to progress and thrive economically, they must have the latest and most effective transportation infrastructure possible. Our industry-leading road engineering and design consultancy services provide a variety of transportation infrastructure solutions, from major highways, roads, and bridges to works on local transport networks. \nWe are constantly helping our country grow by connecting its people, services, and goods.We operate across several different infrastructure markets as both an employer and a design contractor. Our clients include government and local authorities, contractors, and private developers.",
-        image: "/images/projects/content (23).webp",
-      },
-      {
-        id: 2,
-        title: "Road Safety Consultancy",
-        description:
-          "In addition to providing our own designs, we also offer advice and support to other roading designers by undertaking road safety audits. Our services can consider junction geometry, vehicle restraint, traffic signage, road markings, and other utility management features.",
-        image: "/images/services/11/Roading 4.webp",
-      },
-      {
-        id: 3,
-        title: "Smart Civil Engineering Services",
-        description:
-          "We are able to deliver and implement smart engineering designs for roads, pavements, and highways; including full smart motorways. \nGDC Consultants are specialists in BIM (Building Information Modelling), a digital system which allows us to make informed decisions throughout the project timeline, from design, to the creation of an execution plan, to the preparation and management of data, to construction. We are experts in modelling, data analytics, and clash detection.",
-        image: "/images/services/0.-Waihi-NZ.-ITA.webp",
-      },
-      {
-        id: 4,
-        title:
-          "We are one of the industry leaders for road engineering in New Zealand. We offer:",
-        description: "",
-        points: [
-          "Asphalt surfacing",
-          "Highways construction",
-          "Groundworks",
-          "Carriageway remodeling",
-          "Town centre improvements",
-          "Civil engineering",
-          "Clash detection",
-          "Junction geometry",
-          "Road markings",
-          "Traffic signs",
-          "Utility management",
+    modern: {
+      images: ["/images/services/11/Roading 3.webp", "/images/services/11/Roading 4.webp", "/images/services/11/Roading 5.webp"],
+      tagline: "Connecting Communities Through Better Transport Infrastructure",
+      intro: [
+        "At GDC Group, we provide transport engineering solutions that support the safe, efficient and sustainable movement of people and goods across New Zealand.",
+        "From local roads and intersections to subdivision access, transport networks and larger infrastructure projects, we provide practical engineering advice and design solutions that respond to the needs of communities, developers, contractors and asset owners.",
+        "Our approach considers safety, accessibility, network performance, constructability and long-term value, ensuring transport infrastructure is designed to work effectively today and into the future.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "transport-services",
+          heading: "Our Civil Engineering Services",
+          columns: 2,
+          cards: [
+            {
+              icon: "planning",
+              title: "Transport Planning & Engineering",
+              summary: [
+                "Effective transport planning is essential for creating connected, accessible and efficient communities.",
+                "GDC Group works with clients to assess existing transport conditions, identify network requirements and develop practical solutions that integrate with surrounding infrastructure and land development.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Transport assessments",
+                "Transport planning",
+                "Traffic impact assessments",
+                "Transport network analysis",
+                "Development-related transport assessments",
+                "Access and connectivity assessments",
+                "Intersection assessments",
+                "Traffic flow analysis",
+                "Transport infrastructure planning",
+                "Transport strategy development",
+              ],
+            },
+            {
+              icon: "road",
+              title: "Road Engineering & Design",
+              summary: [
+                "Well-designed roads provide safe and reliable connections between communities, businesses and essential services.",
+                "GDC Group provides road engineering and design services for new infrastructure, upgrades and network improvements.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Road design",
+                "Local road design",
+                "Rural road design",
+                "Urban road design",
+                "Road upgrades",
+                "Road widening",
+                "Intersection design",
+                "Accessway design",
+                "Pavement design",
+                "Car park and internal road design",
+                "Earthworks coordination",
+                "Road drainage coordination",
+                "Detailed engineering design",
+              ],
+            },
+            {
+              icon: "safety",
+              title: "Traffic & Road Safety",
+              summary: [
+                "Safety is at the heart of effective transport engineering.",
+                "GDC Group considers the interaction between vehicles, pedestrians, cyclists and other road users when developing transport solutions.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Road safety assessments",
+                "Traffic assessments",
+                "Intersection safety reviews",
+                "Access safety assessments",
+                "Pedestrian and cyclist considerations",
+                "Sight distance assessments",
+                "Traffic management advice",
+                "Road safety improvement recommendations",
+              ],
+              after: [
+                "We aim to develop transport environments that are safe, intuitive and accessible for all road users.",
+              ],
+            },
+            {
+              icon: "development",
+              title: "Development & Subdivision Transport",
+              summary: [
+                "Transport infrastructure is a key consideration for residential, commercial and industrial development.",
+                "GDC Group can assist developers and project teams with transport requirements from early feasibility through to detailed design and construction.",
+              ],
+              listLabel: "We provide advice and design services for:",
+              items: [
+                "Subdivision access",
+                "New roads",
+                "Right-of-way access",
+                "Vehicle crossings",
+                "Intersection upgrades",
+                "Internal access roads",
+                "Parking areas",
+                "Loading and servicing areas",
+                "Pedestrian connections",
+                "Cycle connections",
+                "Development traffic assessments",
+                "Transport infrastructure requirements",
+              ],
+              after: [
+                "Our integrated engineering approach allows transport considerations to be coordinated with civil, structural, geotechnical, stormwater and architectural requirements.",
+              ],
+            },
+            {
+              icon: "infrastructure",
+              title: "Roads, Streets & Infrastructure",
+              summary: [
+                "Transport infrastructure needs to respond to the environment in which it operates.",
+                "GDC Group considers factors including existing networks, terrain, drainage, land use, traffic demand, safety and future development when developing transport solutions.",
+              ],
+              listLabel: "We can support projects involving:",
+              items: [
+                "Local roads",
+                "State highway interfaces",
+                "Rural transport networks",
+                "Urban streets",
+                "Industrial access",
+                "Commercial developments",
+                "Residential developments",
+                "Subdivisions",
+                "Bridges and associated infrastructure",
+                "Pedestrian and cycling infrastructure",
+                "Transport network upgrades",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-engineering",
+          icon: "integrated",
+          heading: "Integrated Engineering",
+          paragraphs: [
+            "Transport engineering often sits at the centre of a wider development or infrastructure project.",
+          ],
+          listLabel:
+            "At GDC Group, our multidisciplinary capability allows transport requirements to be considered alongside:",
+          items: [
+            "Civil engineering",
+            "Structural engineering",
+            "Geotechnical engineering",
+            "Three waters engineering",
+            "Stormwater design",
+            "Architectural design",
+            "Environmental considerations",
+            "Development planning",
+          ],
+          after: [
+            "This integrated approach helps reduce design conflicts, improve coordination and deliver more efficient project outcomes.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Engineering Better Connections",
+        paragraphs: [
+          "At GDC Group, we believe transport infrastructure should do more than move traffic.",
+          "It should connect communities, support economic growth, improve safety and create better places for people to live, work and do business.",
+          "From local accessways and subdivision roads through to complex transport infrastructure, our team provides practical engineering solutions designed around the needs of each project.",
+          "Whether you're a developer, council, contractor, infrastructure provider or private client, GDC Group can provide the transport engineering expertise to move your project forward.",
         ],
-        image: "/images/services/jason-goodman-bzqU01v-G54-unsplash-1.webp",
+        ctaLead: "Planning a transport or development project? Talk to GDC Group.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-    ],
-    uniqueContent: "pavementDesignUniqueContent",
+    },
   },
 
   "seismic-engineering": {
-    metaTitle: "GDC Consultant: Leading Seismic Engineering Solutions",
+    metaTitle: "Seismic Engineering Services | GDC Group",
     metaDescription:
-      "Discover expert soil testing services in New Zealand, along with comprehensive environmental impact assessments. An Engineering consultancy tailored to your needs.",
+      "GDC Group provides specialist seismic engineering services for new and existing buildings, from initial seismic assessments through to strengthening design and construction support.",
     title: "Seismic Engineering",
-    description: "​",
     image: "/images/services/5/Seismic Engineering 2.webp",
-    sections: [
-      {
-        id: 1,
-        title: "One of the Forefront Areas for Engineering",
-        description:
-          "At GDC Consultants, our commitment to Seismic engineering excellence in New Zealand sets us apart. With a wealth of expertise, we specialize in crafting robust designs for buildings and structures, ensuring their resilience to seismic activity. Our approach is meticulous, considering the unique requirements of each project, the geographical location, and the inherent level of seismic risk. \nAdhering to the highest standards and codes, our dedicated team employs cutting-edge techniques to develop structures that not only meet regulatory requirements but also exceed expectations. We understand the importance of risk reduction, and our designs are strategically crafted to minimize the reliance on seismic braces, promoting a streamlined and efficient structural response during seismic events. \nIn our pursuit of innovation, GDC Consultants prioritizes the integration of cost-effective solutions that not only enhance seismic performance but also optimize construction efficiency. By implementing state-of-the-art technology and forward-thinking engineering practices, we ensure that our designs not only withstand seismic challenges but also contribute to sustainable and resource-efficient construction processes. \nOur commitment to seismic engineering excellence is underlined by our continuous efforts to stay abreast of the latest developments in the field. At GDC Consultants, we pride ourselves on being at the forefront of seismic engineering in New Zealand, delivering solutions that safeguard lives, investments, and the integrity of structures in the face of seismic uncertainties.",
-        image: "/images/services/5/Seismic Engineering 3.webp",
-      },
-      {
-        id: 2,
-        title: "Our seismic engineering services include",
-        description: "",
-        points: [
-          "Seismic calculations",
-          "Design engineering",
-          "Vibration isolation design",
-          "Site inspection, support, and installation",
-          "Equipment anchorage design and calculations",
-          "BOM assistance",
-          "Anchors, fixings, and fasteners",
-          "Restraint HVAC, tanks, and sprinkler systems",
-          "Seismic braces installation",
-          "Components and services clearance",
-          "Passive fire restraint",
-          "Full 3D Revit BIM service and development",
-          "Seismic risk assessment",
-          "Performance evaluation",
-          "Peer review of new design",
-          "Seismic repair design",
-          "Non-structural systems assessment",
-          // Newly added details
-          "IEP Reports (Initial Evaluation Procedure Reports) for assessing building seismic resilience",
-          "Detailed Seismic Assessments (DSA) for in-depth building evaluations",
-          "Building strengthening services for buildings with performance levels above 34% NBS (New Building Standard)",
-          "Building strengthening services for buildings with performance levels above 67% NBS (New Building Standard)",
+    modern: {
+      images: ["/images/services/5/Seismic Engineering 1.webp", "/images/services/5/Seismic Engineering 3.webp", "/images/services/5/Seismic Engineering 4.webp"],
+      tagline: "Seismic Assessment, Strengthening & Resilience",
+      intro: [
+        "New Zealand’s seismic environment makes the assessment and strengthening of buildings an important part of responsible structural engineering. GDC Group provides specialist seismic engineering services for new and existing buildings, from initial seismic investigations and assessments through to strengthening design and construction support.",
+        "We work with building owners, developers, architects and project teams to understand seismic risk and develop practical, proportionate and cost-effective solutions.",
+      ],
+      aside: {
+        title: "Our Seismic Engineering Services",
+        lead: "GDC Group provides a comprehensive range of seismic engineering services, including:",
+        style: "list",
+        items: [
+          "Initial Seismic Assessments (ISAs)",
+          "Detailed Seismic Assessments (DSAs)",
+          "Earthquake-Prone Building Assessments",
+          "Seismic Risk Assessments",
+          "Seismic Evaluation of Existing Buildings",
+          "Concept Seismic Strengthening",
+          "Seismic Strengthening & Retrofit Design",
+          "Seismic Upgrade Design",
+          "Structural Seismic Analysis",
+          "Seismic Design for New Buildings",
+          "Structural Condition Assessments",
+          "Seismic Due Diligence",
+          "Seismic Advice for Property Acquisition & Development",
+          "Strengthening Feasibility Studies",
+          "Detailed Strengthening Design",
+          "Construction Documentation & Engineering Support",
         ],
-        image: "/images/services/5/Seismic Engineering 1.webp",
       },
-      {
-        id: 3,
-        title: "Why you need GDC Consultants Seismic Engineering Services",
-        description:
-          "Effective seismic analysis and design requires a practical understanding of seismology and structure responses. Having investigated numerous major structures in the past, we have an in-depth understanding of the seismic behavior of a range of structures. This allows to achieve performance-based design engineering that achieves the desired seismic response. \nResearch Based Seismic Testing Capability \nWe are experts in seismic engineering and material science. From evaluating the performance of building elements to fatigue and fracture testing of individual structural works –we provide solutions that make structures safer, limit earthquake damage, and allow clients to safely and quickly return their buildings to regular service. We aim to minimize disruption to your operations throughout the seismic strengthening process.",
-        image: "/images/services/mmexport1567995357055.webp",
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "seismic-services",
+          columns: 2,
+          cards: [
+            {
+              icon: "investigation",
+              title: "Initial Seismic Assessments (ISAs)",
+              summary: [
+                "An Initial Seismic Assessment (ISA) provides an initial understanding of a building's potential seismic performance and identifies areas that may require further investigation.",
+                "GDC Group can undertake preliminary seismic investigations to help building owners understand potential vulnerabilities and determine whether a more detailed assessment is appropriate.",
+                "Our assessments consider the building's age, structural form, construction materials, alterations, location and available information.",
+              ],
+              items: [],
+            },
+            {
+              icon: "design",
+              title: "Detailed Seismic Assessments (DSAs)",
+              summary: [
+                "A Detailed Seismic Assessment (DSA) provides a more comprehensive engineering evaluation of an existing building's seismic performance.",
+                "Our engineers undertake detailed structural investigations and analysis to identify potential weaknesses and assess the building's performance against relevant seismic criteria.",
+              ],
+              listLabel: "A DSA may include:",
+              items: [
+                "Review of existing structural information",
+                "Site investigations and building inspections",
+                "Structural system identification",
+                "Review of alterations and previous strengthening",
+                "Structural modelling and analysis",
+                "Identification of critical structural elements",
+                "Seismic capacity assessment",
+                "Identification of structural weaknesses",
+                "Assessment of potential seismic deficiencies",
+                "Engineering recommendations",
+                "Seismic strengthening options",
+              ],
+              after: [
+                "Where appropriate, we coordinate with other engineering disciplines to ensure ground conditions, foundations and the wider building system are considered.",
+              ],
+            },
+            {
+              icon: "improvement",
+              title: "Concept Seismic Strengthening",
+              summary: [
+                "Where a building requires seismic improvement, understanding the strengthening options, likely scope and potential cost at an early stage can be critical.",
+                "GDC Group provides Concept Seismic Strengthening services to develop practical options for improving a building's seismic performance before progressing to detailed design.",
+              ],
+              listLabel: "Concept strengthening may consider:",
+              items: [
+                "Strengthening of existing structural elements",
+                "New structural walls or frames",
+                "Bracing systems",
+                "Beam and column strengthening",
+                "Connection strengthening",
+                "Foundation strengthening",
+                "Diaphragm and load-path improvements",
+                "Localised strengthening",
+                "Alternative strengthening strategies",
+              ],
+              after: [
+                "We can compare potential solutions based on structural performance, constructability, architectural impact, project disruption and indicative cost, helping clients make informed decisions before committing to detailed strengthening design.",
+              ],
+            },
+            {
+              icon: "foundation",
+              title: "Seismic Strengthening & Retrofit",
+              summary: [
+                "Following assessment and concept development, GDC Group can progress strengthening solutions through detailed structural design and construction documentation.",
+                "Our approach is to develop strengthening solutions that are technically appropriate while minimising unnecessary intervention into the existing building.",
+              ],
+              listLabel: "We consider:",
+              items: [
+                "Existing structural conditions",
+                "Building use and occupancy",
+                "Construction methodology",
+                "Architectural requirements",
+                "Foundation capacity",
+                "Access and construction constraints",
+                "Cost and project programme",
+                "Integration with other building services",
+              ],
+            },
+            {
+              icon: "safety",
+              title: "Earthquake-Prone Building Advice",
+              summary: [
+                "GDC Group can assist building owners and property stakeholders in understanding their seismic obligations and the engineering considerations associated with potentially earthquake-prone buildings.",
+                "We can provide technical advice, assessment and engineering recommendations to support discussions with building owners, councils, architects and other project stakeholders.",
+              ],
+              items: [],
+            },
+            {
+              icon: "documentation",
+              title: "Seismic Due Diligence",
+              summary: [
+                "Seismic risk can be an important consideration when acquiring, developing or managing property.",
+                "GDC Group can undertake seismic due diligence to help clients understand the potential structural risks associated with an existing building.",
+              ],
+              listLabel: "This can assist with:",
+              items: [
+                "Property acquisition decisions",
+                "Development feasibility",
+                "Building upgrades",
+                "Investment due diligence",
+                "Insurance and risk considerations",
+                "Long-term asset planning",
+                "Seismic strengthening strategies",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "New Building Seismic Design",
+              summary: [
+                "For new buildings, seismic performance is integrated into the structural design from the outset.",
+                "Our structural engineers work alongside architects, geotechnical engineers and other consultants to develop efficient structural systems that respond to the building's use, site conditions and project requirements.",
+                "Early coordination can help achieve efficient structural systems, reduce design conflicts and minimise unnecessary construction complexity.",
+              ],
+              items: [],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-engineering",
+          icon: "integrated",
+          heading: "Integrated Engineering",
+          paragraphs: [
+            "Seismic performance does not sit in isolation from the rest of a building.",
+          ],
+          listLabel:
+            "Our multidisciplinary capability allows seismic engineering to be coordinated with:",
+          items: [
+            "Structural engineering",
+            "Geotechnical engineering",
+            "Architectural design",
+            "Civil engineering",
+            "Foundation design",
+            "Building services",
+            "Construction requirements",
+          ],
+          after: [
+            "This integrated approach allows seismic considerations to be addressed early and carried through the project from assessment and concept through to detailed design and construction.",
+          ],
+        },
+      ],
+      closing: {
+        title: "From Seismic Assessment to Strengthening",
+        paragraphs: [
+          "Whether you require an ISA, DSA, seismic due diligence, concept strengthening or detailed seismic strengthening design, GDC Group can provide practical engineering advice tailored to the building and its requirements.",
+        ],
+        ctaLead:
+          "Talk to GDC Group about your seismic assessment, strengthening or structural engineering requirements.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-      {
-        id: 4,
-        title: "Our Seismic Engineering Assessments",
-        description:
-          "From our Seismic assessments, our expert engineers are able to develop Retrofit Design plans to make the building more resistant to seismic activity, ground motion or soil failure due to earthquakes. These are mainly structural improvements to the core of the building to increase strengthening and give a high NBS%",
-        image: "/images/services/Cambridge-Museum-DSA-retrofit-J002258.webp",
+    },
+  },
+
+  "fire-engineering": {
+    metaTitle: "Fire Engineering Services | GDC Group",
+    metaDescription:
+      "GDC Group provides practical fire engineering solutions that help protect people, property and building assets while supporting efficient, compliant and buildable design.",
+    title: "Fire Engineering",
+    image: "/images/services/12/Structural Engineering 3.webp",
+    modern: {
+      images: ["/images/services/12/Structural Engineering 1.webp", "/images/services/12/Structural Engineering 2.webp", "/images/services/12/Structural Engineering 4.webp"],
+      tagline: "Fire Safety Designed for People, Buildings & Performance",
+      intro: [
+        "At GDC Group, we provide practical fire engineering solutions that help protect people, property and building assets while supporting efficient, compliant and buildable design.",
+        "From new buildings and developments through to alterations, change-of-use projects and existing building assessments, our fire engineers work with clients, architects, contractors and project teams to develop solutions that address the specific fire safety requirements of each project.",
+        "Our approach considers life safety, property protection, building performance, compliance and constructability, while integrating fire engineering requirements with the wider architectural and engineering design.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "fire-services",
+          heading: "Our Fire Engineering Services",
+          columns: 2,
+          cards: [
+            {
+              icon: "fire",
+              title: "Fire Safety Design & Engineering",
+              summary: [
+                "Effective fire engineering requires a clear understanding of how a building will be occupied, constructed and operated.",
+                "GDC Group develops fire safety solutions that respond to the characteristics and requirements of each building and project.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Fire engineering design",
+                "Fire safety assessments",
+                "Fire safety strategies",
+                "Fire engineering reports",
+                "Fire safety reviews",
+                "Building Code compliance assessments",
+                "Alternative solution assessments",
+                "Performance-based fire engineering",
+                "Fire safety documentation",
+                "Fire safety design coordination",
+              ],
+            },
+            {
+              icon: "investigation",
+              title: "Performance-Based Fire Engineering",
+              summary: [
+                "Not every building can be effectively addressed through a simple prescriptive approach.",
+                "GDC Group can develop performance-based fire engineering solutions where appropriate, providing a structured assessment of the building, fire hazards, occupant characteristics and proposed fire safety systems.",
+              ],
+              listLabel: "Our approach can consider:",
+              items: [
+                "Fire scenarios",
+                "Occupant characteristics",
+                "Evacuation requirements",
+                "Fire growth and development",
+                "Smoke movement",
+                "Fire resistance",
+                "Structural fire performance",
+                "Fire brigade intervention",
+                "Means of escape",
+                "Fire protection systems",
+                "Building configuration and use",
+              ],
+              after: [
+                "The objective is to develop practical fire safety solutions that achieve the required performance while supporting the architectural and functional objectives of the project.",
+              ],
+            },
+            {
+              icon: "documentation",
+              title: "Alternative Solutions & Building Code Compliance",
+              summary: [
+                "Building projects can present situations where a standard Acceptable Solution or Verification Method does not provide the most appropriate outcome.",
+                "GDC Group can assist with the development and assessment of alternative fire safety solutions, supported by appropriate engineering analysis and documentation.",
+              ],
+              listLabel:
+                "We work with project teams to identify practical solutions that address the relevant performance requirements while considering:",
+              items: [
+                "Building use and occupancy",
+                "Fire and smoke hazards",
+                "Means of escape",
+                "Fire resistance",
+                "Detection and alarm systems",
+                "Fire suppression systems",
+                "Firefighting access",
+                "Structural considerations",
+                "Architectural constraints",
+                "Existing building conditions",
+              ],
+              after: [
+                "Our goal is to provide clear engineering advice that supports informed design and consenting decisions.",
+              ],
+            },
+            {
+              icon: "road",
+              title: "Evacuation & Means of Escape",
+              summary: [
+                "Ensuring occupants can safely evacuate a building is a fundamental component of fire safety design.",
+                "GDC Group assesses evacuation and means-of-escape requirements based on the characteristics and intended use of each building.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Means of escape assessments",
+                "Occupant load assessments",
+                "Travel distance assessments",
+                "Exit capacity assessments",
+                "Exit and corridor analysis",
+                "Evacuation strategy development",
+                "Fire and smoke separation",
+                "Egress assessments",
+                "Accessibility considerations",
+                "Evacuation modelling where required",
+              ],
+              after: [
+                "We work closely with architects and other consultants to integrate evacuation requirements into the building design from an early stage.",
+              ],
+            },
+            {
+              icon: "safety",
+              title: "Fire & Smoke Control",
+              summary: [
+                "Fire and smoke can significantly affect occupant safety and building performance.",
+                "GDC Group can assist with the assessment and design coordination of systems and measures intended to control the spread of fire and smoke.",
+              ],
+              listLabel: "This can include consideration of:",
+              items: [
+                "Fire separations",
+                "Fire cells",
+                "Smoke separations",
+                "Fire doors",
+                "Smoke control",
+                "Compartmentation",
+                "Protected escape routes",
+                "Fire-rated construction",
+                "Fire stopping requirements",
+                "Service penetrations",
+                "Vertical and horizontal fire spread",
+              ],
+              after: [
+                "Our integrated engineering approach helps ensure fire and smoke control measures are coordinated with architectural, structural and building services requirements.",
+              ],
+            },
+            {
+              icon: "controls",
+              title: "Fire Protection Systems",
+              summary: [
+                "Fire protection systems are an important part of a building's overall fire safety strategy.",
+              ],
+              listLabel:
+                "GDC Group can provide engineering advice and coordination relating to fire protection systems, including:",
+              items: [
+                "Automatic sprinkler systems",
+                "Fire detection and alarm systems",
+                "Emergency warning systems",
+                "Fire hydrant systems",
+                "Fire hose reels",
+                "Fire extinguishing systems",
+                "Emergency lighting",
+                "Firefighting facilities",
+                "Fire service access",
+                "Fire protection system coordination",
+              ],
+              after: [
+                "We consider the relationship between active fire protection systems and the wider passive fire protection and building design.",
+              ],
+            },
+            {
+              icon: "foundation",
+              title: "Existing Buildings & Fire Safety Assessments",
+              summary: [
+                "Existing buildings can present unique fire safety challenges, particularly where buildings are being altered, extended, repurposed or upgraded.",
+                "GDC Group can assess existing buildings and identify practical opportunities to improve fire safety and address relevant compliance requirements.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Existing building fire safety assessments",
+                "Change-of-use assessments",
+                "Alteration and addition assessments",
+                "Fire safety gap analysis",
+                "Existing fire protection reviews",
+                "Means of escape assessments",
+                "Fire separation assessments",
+                "Fire safety upgrade recommendations",
+                "Remediation advice",
+                "Fire engineering reports",
+              ],
+              after: [
+                "We focus on practical solutions that recognise the existing building conditions, project objectives and potential construction constraints.",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "Commercial & Industrial Fire Engineering",
+              summary: [
+                "Commercial and industrial buildings can involve complex fire hazards, large occupant numbers, specialised processes and significant property risks.",
+              ],
+              listLabel:
+                "GDC Group provides fire engineering services for projects including:",
+              items: [
+                "Commercial buildings",
+                "Industrial facilities",
+                "Warehouses",
+                "Manufacturing facilities",
+                "Office buildings",
+                "Retail developments",
+                "Mixed-use developments",
+                "Multi-storey buildings",
+                "Storage facilities",
+                "Specialised facilities",
+              ],
+              after: [
+                "We consider the specific characteristics of each facility and develop fire safety solutions that balance life safety, operational requirements, property protection and practical construction.",
+              ],
+            },
+            {
+              icon: "residential",
+              title: "Residential & Multi-Unit Developments",
+              summary: [
+                "Fire safety is an important consideration for residential buildings, particularly multi-unit and higher-density developments.",
+              ],
+              listLabel:
+                "GDC Group can assist with fire engineering requirements for:",
+              items: [
+                "New residential buildings",
+                "Apartment developments",
+                "Multi-unit developments",
+                "Townhouse developments",
+                "Residential alterations",
+                "Mixed-use developments",
+                "Common areas and shared access",
+                "Means of escape",
+                "Fire and smoke separation",
+                "Fire protection systems",
+              ],
+              after: [
+                "Our fire engineering team works alongside architects and structural engineers to ensure fire safety requirements are incorporated into the overall building design.",
+              ],
+            },
+            {
+              icon: "improvement",
+              title: "Fire Engineering for Structural Design",
+              summary: [
+                "Fire engineering and structural engineering are closely connected.",
+                "Where required, GDC Group can coordinate fire engineering requirements with structural design to consider the performance of structural elements during a fire.",
+              ],
+              listLabel: "This may include consideration of:",
+              items: [
+                "Structural fire resistance",
+                "Fire exposure",
+                "Fire-rated structural elements",
+                "Protection systems",
+                "Structural stability",
+                "Steel structures",
+                "Concrete structures",
+                "Timber structures",
+                "Fire engineering assessments",
+                "Strengthening or protection requirements",
+              ],
+              after: [
+                "Our multidisciplinary capability helps ensure fire performance is considered alongside the structural and architectural requirements of the building.",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-fire-engineering",
+          icon: "integrated",
+          heading: "Integrated Fire Engineering",
+          paragraphs: ["Fire safety does not exist in isolation."],
+          listLabel:
+            "At GDC Group, our multidisciplinary capability allows fire engineering requirements to be coordinated with:",
+          items: [
+            "Architectural design",
+            "Structural engineering",
+            "Civil engineering",
+            "Geotechnical engineering",
+            "Electrical engineering",
+            "Building services",
+            "Three waters engineering",
+            "Transport engineering",
+            "Project management",
+            "Construction",
+          ],
+          after: [
+            "This integrated approach helps identify potential fire safety issues early, reduce design conflicts and develop more efficient project outcomes.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Practical Fire Engineering. Designed for Performance.",
+        paragraphs: [
+          "At GDC Group, we believe effective fire engineering should provide more than a compliant solution.",
+          "It should provide clear, practical and technically robust advice that supports life safety, building performance and successful project delivery.",
+          "From early concept design and feasibility through to detailed design, consenting and construction, we work with our clients and project teams to develop fire engineering solutions that are appropriate for the building and its intended use.",
+          "Whether you are developing a new building, undertaking an alteration, changing the use of an existing building or addressing a complex fire safety issue, GDC Group can provide the fire engineering expertise required.",
+        ],
+        ctaLead:
+          "Planning a new project or need advice on an existing building? Talk to GDC Group about your fire engineering requirements.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-    ],
-    uniqueContent: "seismicEngineeringUniqueContent",
+    },
   },
 
   "structural-engineering": {
-    metaTitle:
-      "Trusted Structural Engineering Services | GDC Consultant",
+    metaTitle: "Structural Engineering Services | GDC Group",
     metaDescription:
-      " Looking for a reliable structural engineer and GDC consultant? Look no further! Our team provides top-quality services to ensure the success of your project. Contact us today.",
+      "GDC Group provides structural engineering solutions that combine technical expertise, practical design and a strong understanding of construction, from residential buildings to complex industrial and infrastructure projects.",
     title: "Structural Engineering",
-    description:
-      "At GDC Consultants, we match every structure with a redesign that is innovative and responsive to changing demands. From large corporate structures to distinctive home designs –we create a masterpiece every time. Stay on schedule and avoid expensive and time-consuming reworkings with GDC’s flexible structural engineering consulting services!​",
     image: "/images/services/12/Structural Engineering 1.webp",
-    sections: [
-      {
-        id: 1,
-        title:
-          "Expert Structural Engineering for Safe and Cost-Effective Designs",
-        description:
-          "Having an expert structural team like ours onboard is crucial for the success of any multi-discipline engineering project. We cater to a wide range of industrial designs for small and large construction projects. We offer our services to owners and operators in both conventional and emerging industries. \nWe believe that design and construction should go hand-in-hand! This means that our structural engineering designs are always based not just on the applicable codes and standards, but also the latest and best design principles and ideas – making them both functional and aesthetic spaces. \nGDC’s structural engineering designs are created with a focus on safety, ease of installation, and constructability. We are experienced in designing optimal-modularized building systems, which lower costs, enhance safety, and help to limit field-work. \nWe are consistently ranked amongst the top consulting engineering companies in New Zealand – so you can be sure that we will provide cost-effective designs every time.",
-        image: "/images/projects/commercial/1.webp",
-      },
-      {
-        id: 2,
-        title: "Structural Engineering Services",
-        description: "",
-        points: [
-          "Structural Engineering Services",
-          "Reviews for structural adequacy and alignment with IFC structural drawings.",
-          "Structural designs, rack supports, foundation drawings and main structural frames, platforms and access, architectural plans, and load foundation calculations.",
-          "Structural engineering designs that include concrete and steel structures, piling and foundations, steel buildings, and related elements.",
+    modern: {
+      images: ["/images/services/12/Structural Engineering 1.webp", "/images/services/12/Structural Engineering 2.webp", "/images/services/12/Structural Engineering 4.webp"],
+      tagline: "Intelligent Structural Design. Built for Performance.",
+      intro: [
+        "At GDC Group, we provide structural engineering solutions that combine technical expertise, practical design and a strong understanding of construction.",
+        "From residential buildings and commercial developments through to complex industrial and infrastructure projects, our structural engineers develop solutions that are safe, efficient, buildable and cost-effective.",
+        "We work closely with architects, developers, contractors, project managers and other engineering disciplines to ensure structural considerations are integrated into the project from the outset.",
+        "Our approach is focused on delivering structures that perform throughout their lifecycle while meeting relevant New Zealand standards, Building Code requirements and project-specific objectives.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "structural-services",
+          heading: "Structural Engineering Services",
+          columns: 2,
+          cards: [
+            {
+              icon: "design",
+              title: "Structural Design & Analysis",
+              summary: [
+                "Every project presents different structural requirements. We develop designs that respond to the specific characteristics, function and architectural intent of each building or structure.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Structural analysis and design",
+                "Structural calculations",
+                "New building design",
+                "Commercial and industrial structures",
+                "Residential structural design",
+                "Structural steel design",
+                "Reinforced concrete design",
+                "Timber structural design",
+                "Foundation and substructure design",
+                "Structural framing systems",
+                "Seismic design and assessment",
+                "Structural detailing and documentation",
+              ],
+            },
+            {
+              icon: "commercial",
+              title: "Commercial & Industrial Structures",
+              summary: [
+                "GDC Group provides structural engineering services for commercial, industrial and large-scale building projects.",
+                "We understand the importance of balancing structural performance, constructability, programme and cost.",
+                "Our engineers work with project teams to develop efficient structural systems that support the architectural and functional requirements of the building.",
+              ],
+              listLabel: "We can assist with:",
+              items: [
+                "Commercial buildings",
+                "Industrial facilities",
+                "Warehouses",
+                "Manufacturing facilities",
+                "Office buildings",
+                "Retail developments",
+                "Multi-storey structures",
+                "Structural steel systems",
+                "Concrete structures",
+                "Modular and prefabricated systems",
+              ],
+            },
+            {
+              icon: "residential",
+              title: "Residential Structural Engineering",
+              summary: [
+                "From individual homes to larger residential developments, GDC Group provides structural engineering solutions tailored to the requirements of each project.",
+                "We work with homeowners, architects, builders and developers to deliver practical structural solutions that integrate with the overall building design.",
+              ],
+              listLabel: "Our residential services include:",
+              items: [
+                "New home structural design",
+                "Alterations and additions",
+                "Structural assessments",
+                "Foundation design",
+                "Retaining structures",
+                "Timber framing",
+                "Steel beams and framing",
+                "Seismic considerations",
+                "Structural remediation",
+                "Producer statement support",
+              ],
+            },
+            {
+              icon: "seismic",
+              title: "Seismic Engineering & Structural Assessment",
+              summary: [
+                "New Zealand's seismic environment means that structural resilience is an important consideration for both new and existing buildings.",
+                "GDC Group provides structural assessments and engineering advice to help clients understand the performance and condition of existing structures and identify appropriate strengthening or remediation options.",
+              ],
+              listLabel: "Our services include:",
+              items: [
+                "Seismic assessments",
+                "Existing building assessments",
+                "Structural condition assessments",
+                "Seismic strengthening",
+                "Structural remediation",
+                "Earthquake damage assessments",
+                "Strengthening design",
+                "Structural performance reviews",
+              ],
+            },
+          ],
+        },
+        {
+          type: "text",
+          id: "constructability",
+          icon: "constructability",
+          heading: "Design for Constructability",
+          paragraphs: [
+            "Good structural engineering considers more than calculations.",
+            "At GDC Group, we consider how a structure will actually be constructed, including material selection, construction methodology, access, sequencing and installation.",
+            "Our designs are developed with constructability in mind, helping to minimise unnecessary complexity, reduce rework and support efficient construction.",
+            "Where appropriate, we also consider modular and prefabricated structural systems that can improve construction efficiency, safety and cost control.",
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-engineering",
+          icon: "integrated",
+          heading: "Integrated Engineering",
+          paragraphs: [
+            "Structural design rarely exists in isolation.",
+            "GDC Group works across multiple engineering disciplines to provide coordinated solutions for complex projects.",
+          ],
+          listLabel: "Our structural engineers collaborate with:",
+          items: [
+            "Geotechnical engineers",
+            "Civil engineers",
+            "Water infrastructure specialists",
+            "Architects",
+            "Building services engineers",
+            "Contractors",
+            "Developers",
+            "Project managers",
+          ],
+          after: [
+            "This integrated approach helps ensure structural solutions are coordinated with the wider project requirements.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Engineering That Performs",
+        paragraphs: [
+          "At GDC Group, our focus is on delivering structural engineering solutions that are safe, practical, efficient and built to last.",
+          "We combine technical engineering knowledge with practical construction experience to create structures that meet today's requirements while providing long-term value.",
+          "Whether you are developing a new building, undertaking an alteration, assessing an existing structure or delivering a complex commercial or industrial project, our team can provide the structural expertise required.",
         ],
-        image: "/images/services/12/Structural Engineering 3.webp",
+        ctaLead: "Talk to GDC Group about your next project.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-    ],
+    },
   },
 
   planning: {
-    metaTitle:
-      "Custom Designed House Plans in NZ | Expert Consultation with GDC",
+    metaTitle: "Resource & Building Consents | GDC Group",
     metaDescription:
-      "Discover innovative house plans and floor plans tailored for New Zealand. GDC Consultant offers expert engineering consultancy to bring your dream home to life. ",
-    title: "Planning",
-    description: "",
+      "GDC Group helps clients navigate the resource and building consent process with practical planning, engineering and design expertise, from initial feasibility through to lodgement and approval.",
+    title: "Resource & Building Consents",
     image: "/images/services/pexels-alena-darmel-7642124-scaled.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Planning Made Easy",
-        description:
-          "The resource consent stage of your project can be one of the most challenging. \nNo matter the scope, size, or complexity of your project, GDC Consultants can guide you through the resource management process with expertise. \nWith our team of experienced environmental planners (also known as resource planners, urban planners, and town and country planners) and with assistance from our expert in-house engineers and designers, GDC promises to provide a streamlined delivery on-time and within-budget.",
-        image: "/images/services/Planning.webp",
-      },
-      {
-        id: 2,
-        title: "Our Planning and Resource Management services include",
-        description: "",
-        points: [
-          "Site suitability assessments and general planning advice",
-          "Applications for certificates of compliance",
-          "Preparation of resource consents",
-          "Assessment of environmental effects",
-          "Representation in council and/or court hearings",
-          "Resource consent condition compliance assistance",
-          "Assistance with plan change applications",
-          "Consultation with affected parties",
+    modern: {
+      images: ["/images/services/6/Planning.webp", "/images/services/6/Planning 2.webp", "/images/services/6/Planning 3.webp"],
+      tagline: "Expert Guidance Through the Consent Process",
+      intro: [
+        "Obtaining resource and building consents can be one of the most complex stages of a development or construction project.",
+        "At GDC Group, we help clients navigate the consent process with practical planning, engineering and design expertise. From initial feasibility through to lodgement and responding to council requests, we coordinate the information required to help keep projects moving.",
+        "Our multidisciplinary team brings together planning, architectural and engineering expertise, allowing us to consider the wider project requirements and identify potential issues early.",
+        "Whether you are developing a new home, subdivision, commercial property or infrastructure project, we can help guide your application from concept through to approval.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "consent-services",
+          columns: 2,
+          cards: [
+            {
+              icon: "planning",
+              title: "Resource Consents",
+              subtitle: "Navigating New Zealand's Resource Management Requirements",
+              summary: [
+                "A well-prepared resource consent application can help reduce delays, avoid unnecessary information requests and provide greater certainty throughout the approval process.",
+                "GDC Group can assist with assessing your proposal, identifying consent requirements and preparing and coordinating the supporting technical information required for lodgement.",
+              ],
+              listLabel: "Our resource consent services include:",
+              items: [
+                "Resource consent assessments",
+                "Consent pathway advice",
+                "Planning assessments",
+                "Land use consent applications",
+                "Subdivision consent applications",
+                "Development proposals",
+                "Site development assessments",
+                "Assessment of environmental effects",
+                "Planning reports",
+                "Supporting technical documentation",
+                "Coordination with councils and other authorities",
+                "Responses to requests for further information",
+                "Consent conditions and compliance advice",
+              ],
+              after: [
+                "Where specialist technical information is required, our in-house engineering and design capability allows us to coordinate the relevant disciplines as part of the application.",
+              ],
+            },
+            {
+              icon: "documentation",
+              title: "Building Consents",
+              subtitle: "From Design to Building Consent",
+              summary: [
+                "Building consent documentation needs to clearly demonstrate that the proposed work meets the requirements of the New Zealand Building Code and applicable legislation and standards.",
+                "GDC Group can coordinate the design and technical information required for building consent applications, working across architectural and engineering disciplines to provide a coordinated submission.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Building consent applications",
+                "Building consent documentation",
+                "Architectural drawings",
+                "Structural engineering documentation",
+                "Geotechnical information",
+                "Civil engineering information",
+                "Three waters design",
+                "Stormwater design",
+                "Site development plans",
+                "Engineering calculations and reports",
+                "Producer Statement coordination",
+                "Responses to council requests",
+                "Consent amendment support",
+                "Construction documentation",
+              ],
+            },
+            {
+              icon: "development",
+              title: "Subdivision & Development Consents",
+              summary: [
+                "Development projects often involve multiple consent and engineering requirements.",
+                "GDC Group can assist with subdivision and development projects from the initial feasibility stage through to consent and detailed design.",
+              ],
+              listLabel: "Our multidisciplinary services can include:",
+              items: [
+                "Subdivision planning",
+                "Subdivision consent applications",
+                "Development feasibility",
+                "Site assessments",
+                "Earthworks planning",
+                "Access and transport assessments",
+                "Stormwater and wastewater planning",
+                "Water supply design",
+                "Infrastructure requirements",
+                "Road and access design",
+                "Geotechnical assessments",
+                "Contaminated land assessments",
+                "Engineering design",
+                "Consent documentation",
+              ],
+              after: [
+                "By coordinating these disciplines early, we can help identify constraints and opportunities before they become costly issues later in the project.",
+              ],
+            },
+            {
+              icon: "liaison",
+              title: "Council Liaison & Consent Support",
+              summary: [
+                "The consent process doesn't necessarily end when an application is lodged.",
+                "GDC Group can continue to support clients throughout the assessment process, including responding to council queries and coordinating additional technical information where required.",
+              ],
+              listLabel: "We can assist with:",
+              items: [
+                "Council correspondence",
+                "Requests for further information",
+                "Technical responses",
+                "Design amendments",
+                "Consent conditions",
+                "Additional supporting documentation",
+                "Consent variations and amendments",
+                "Construction-stage consent support",
+              ],
+              after: [
+                "Our aim is to provide clients with a single, coordinated point of contact throughout the consent process.",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "multidisciplinary-approach",
+          icon: "integrated",
+          heading: "A Multidisciplinary Approach",
+          paragraphs: [
+            "One of GDC Group's key strengths is our ability to bring planning, architectural and engineering expertise together.",
+          ],
+          listLabel: "Depending on the project, our team can coordinate:",
+          items: [
+            "Resource planning",
+            "Architectural design",
+            "Structural engineering",
+            "Geotechnical engineering",
+            "Civil engineering",
+            "Transport engineering",
+            "Three waters engineering",
+            "Stormwater design",
+            "Contaminated land assessments",
+            "Development planning",
+          ],
+          after: [
+            "This integrated approach helps create more coordinated applications and allows potential issues to be addressed early.",
+          ],
+        },
+      ],
+      closing: {
+        title: "From Concept to Consent",
+        paragraphs: [
+          "At GDC Group, we understand that every project is different.",
+          "Whether you're building a new home, developing a subdivision, constructing a commercial property or delivering a larger infrastructure project, our team can help you understand the consent requirements and coordinate the technical work needed to progress your project.",
+          "We provide practical advice, clear communication and multidisciplinary expertise throughout the process.",
         ],
-        image: "/images/services/2022-Guide-to-Resource-Management.webp",
+        ctaLead:
+          "Planning a new development or building project? Talk to GDC Group about your resource and building consent requirements.",
+        ctaLabel: "Contact Our Team",
+        ctaHref: "/contact-us",
       },
-      {
-        id: 3,
-        title: "Extensive Experience",
-        description:
-          "Our planners have extensive experience in both the public and private sectors. \nOur previous private sector projects have ranged from multi-unit commercial developments to rural subdivisions, to holiday parks, to simple residential alterations. \nWe have also worked on papākainga and other projects for Iwi. \nOur previous projects for local and central government include:",
-        points: ["Pedestrian/cycle walkways", "Dog pounds"],
-        image:
-          "/images/services/businesspeople-team-collaboration-analyzing-monthl-2024-05-21-00-08-08-utc-1024x683.webp",
-      },
-      {
-        id: 4,
-        title: "We also offer:",
-        description: "",
-        points: [
-          "Natural Hazard Assessments",
-          "Assessment against National Policy Statements (NES) and National Policy Statements (NPS), including NPS - Indigenous Biodiversity, NPS - Freshwater, NPS – Highly Productive Land",
-          "Surveying",
-          "Traffic and Transport Engineering",
-          "Landscape design",
-          "A full range of architectural, structural, and engineering services",
-        ],
-        image:
-          "/images/services/pexels-thisisengineering-3862384-1536x1025.webp",
-      },
-      {
-        id: 5,
-        title: "Nationwide Service",
-        description:
-          "GDC offers planning services anywhere in New Zealand. We have office locations in:",
-        points: [
-          "Auckland",
-          "Hamilton",
-          "Rotorua",
-          "Thames",
-          "Napier",
-          "Wellington",
-        ],
-        image: "/images/services/iStock-1176054530.jpg.webp",
-      },
-    ],
-    uniqueContent: "PlanningUniqueContent",
+    },
   },
 
   surveying: {
-    metaTitle: "GDC Consultants: Your Trusted Surveying Partner",
+    metaTitle: "Surveying Services | GDC Group",
     metaDescription:
-      "GDC Consultant specializes in advanced surveying techniques for civil engineering. Explore our expertise to elevate your engineering projects to new heights. ",
+      "GDC Group's surveying services provide the reliable spatial information and technical expertise needed to support property, subdivision, infrastructure and construction projects.",
     title: "Surveying",
-    description: "​",
     image: "/images/services/13/Surveying 2.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Quantity Surveying",
-        description:
-          "Our Quantity Surveying services encompass a detailed range of activities. This involves meticulously estimating project costs by analysing materials, labor, and other resources. \nThe Surveyor team creates comprehensive bills of quantities, outline the quantities and costs of all project elements.  ",
-        image: "/images/services/valerie-v-8CACa5kjqMM-unsplash-1536x946.webp",
+    modern: {
+      images: ["/images/services/13/Surveying 1.webp", "/images/services/13/Surveying 3.webp"],
+      tagline: "Precise Surveying for Property, Development & Construction",
+      intro: [
+        "Accurate surveying is fundamental to successful property development, subdivision, infrastructure and construction projects. At GDC Group, our surveying services provide the reliable spatial information and technical expertise needed to support projects from initial site investigation through to design, consenting and construction.",
+        "We work closely with architects, engineers, developers, contractors, property owners and councils to provide practical surveying solutions that align with the wider requirements of each project.",
+      ],
+      aside: {
+        title: "Our Surveying Services",
+        lead: "GDC Group provides surveying services across property, land development and construction, including:",
+        style: "list",
+        items: [
+          "Cadastral surveying",
+          "Boundary identification and definition",
+          "Topographical and detail surveys",
+          "Land development surveying",
+          "Subdivision surveying",
+          "Construction set-out",
+          "As-built surveys",
+          "Level and contour surveys",
+          "Site feature surveys",
+          "Engineering surveys",
+          "Building set-out",
+          "Earthworks and volume calculations",
+          "Monitoring and deformation surveys",
+          "Easement and right-of-way surveys",
+          "Property and development surveys",
+          "Survey information for resource and building consents",
+          "Survey data for engineering and architectural design",
+        ],
       },
-      {
-        id: 2,
-        title: "Precision in Project Finances: Excel in Quantity Surveying",
-        description:
-          "Additionally, our surveyors excel in budget preparation, cost monitoring, and value engineering to ensure optimal financial control throughout the lifecycle of the construction process. \nOur commitment lies in delivering detailed and accurate Quantity Surveying solutions to enhance overall project efficiency and success. \nWe utilise industry-leading systems, backed by comprehensive local data, ensuring that our clients can always rely on us for superior support and outcomes.",
-        image: "/images/services/13/Surveying 3.webp",
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "surveying-services",
+          columns: 2,
+          cards: [
+            {
+              icon: "planning",
+              title: "Cadastral Surveying",
+              summary: [
+                "Cadastral surveying provides the foundation for understanding property boundaries, titles and land interests.",
+              ],
+              listLabel: "Our cadastral surveying services can support:",
+              items: [
+                "Boundary definition",
+                "Subdivision schemes",
+                "Boundary adjustments",
+                "Easement definition",
+                "Right-of-way surveys",
+                "Land title requirements",
+                "Legal survey plans",
+                "Property development",
+                "Land development projects",
+              ],
+              after: [
+                "We work with clients and project teams to ensure survey information is accurate, appropriately documented and suitable for the intended purpose.",
+              ],
+            },
+            {
+              icon: "slope",
+              title: "Topographical & Site Surveys",
+              summary: [
+                "Reliable site information is essential before commencing design or construction.",
+              ],
+              listLabel:
+                "Our topographical and detail surveys capture the existing characteristics of a site, which may include:",
+              items: [
+                "Ground levels and contours",
+                "Buildings and structures",
+                "Roads and driveways",
+                "Kerbs and footpaths",
+                "Fences and boundaries",
+                "Retaining walls",
+                "Trees and vegetation",
+                "Drainage features",
+                "Services and utility information",
+                "Other relevant site features",
+              ],
+              after: [
+                "This information can then be used by our architectural, civil, structural, geotechnical and other engineering teams to develop coordinated project designs.",
+              ],
+            },
+            {
+              icon: "development",
+              title: "Subdivision & Land Development",
+              summary: [
+                "Surveying plays an important role throughout the land development and subdivision process.",
+                "GDC Group can support subdivision projects from initial site investigations through to the preparation of survey information required for design, consenting and completion.",
+              ],
+              listLabel: "Our services can include:",
+              items: [
+                "Preliminary subdivision investigations",
+                "Site and boundary surveys",
+                "Subdivision planning support",
+                "Lot configuration",
+                "Easement requirements",
+                "Development surveying",
+                "Construction set-out",
+                "As-built surveys",
+                "Subdivision completion requirements",
+              ],
+              after: [
+                "Our multidisciplinary approach allows surveying to be coordinated with civil engineering, planning, geotechnical engineering, three waters and architectural requirements.",
+              ],
+            },
+            {
+              icon: "design",
+              title: "Construction Set-Out",
+              summary: [
+                "Accurate construction set-out helps ensure that buildings, structures, roads and site works are constructed in accordance with the approved design.",
+              ],
+              listLabel: "Our construction surveying services can assist with:",
+              items: [
+                "Building set-out",
+                "Foundation set-out",
+                "Structural set-out",
+                "Site levels",
+                "Road and infrastructure set-out",
+                "Earthworks",
+                "Drainage works",
+                "Boundary and location verification",
+                "Construction checks",
+              ],
+              after: [
+                "We provide survey information that helps contractors and project teams work confidently from the approved design.",
+              ],
+            },
+            {
+              icon: "documentation",
+              title: "As-Built & Verification Surveys",
+              summary: [
+                "As-built surveying provides an accurate record of what has been constructed.",
+                "We can undertake surveys to verify the location, levels and dimensions of completed works, supporting project documentation, quality assurance and relevant council or project requirements.",
+              ],
+              listLabel: "As-built surveys may cover:",
+              items: [
+                "Buildings",
+                "Foundations",
+                "Earthworks",
+                "Roads",
+                "Drainage",
+                "Stormwater infrastructure",
+                "Wastewater infrastructure",
+                "Water infrastructure",
+                "Site works and services",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "integrated-surveying",
+          icon: "integrated",
+          heading: "Surveying Integrated with Engineering & Design",
+          paragraphs: [
+            "One of GDC Group's key advantages is the ability to integrate surveying with our wider engineering and architectural capabilities.",
+          ],
+          listLabel:
+            "Survey information can be directly incorporated into project planning and design across:",
+          items: [
+            "Architectural design",
+            "Civil engineering",
+            "Structural engineering",
+            "Geotechnical engineering",
+            "Transport engineering",
+            "Three waters",
+            "Land development",
+            "Resource and building consents",
+          ],
+          after: [
+            "This integrated approach helps reduce information gaps, improve coordination and provide a clearer understanding of site conditions from the beginning of a project.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Accurate Information. Better Decisions.",
+        paragraphs: [
+          "From a residential subdivision to a major development or infrastructure project, accurate survey information provides the foundation for better design and construction decisions.",
+          "GDC Group delivers practical, precise surveying services that support projects from site investigation and planning through to construction and completion.",
+        ],
+        ctaLead:
+          "Planning a subdivision, development or construction project? Talk to GDC Group about your surveying requirements.",
+        ctaLabel: "Talk to GDC Group",
+        ctaHref: "/contact-us",
       },
-      {
-        id: 3,
-        title: "Cadastral Surveying",
-        description:
-          "Our surveying services involve precise measurement, analysis, and mapping of land parcels. Our expertise lies in delineating property boundaries, preparing legal surveys, and ensuring compliance with land regulations. Through meticulous cadastral surveys, our team provides accurate records of land ownership, aiding in property transactions, land development, and overall land management. Our commitment is to deliver reliable cadastral surveying solutions to meet the specific needs of clients in land-related projects.",
-        image:
-          "/images/services/valerie-v-zSrksQgp4W0-unsplash-1-1536x1025.webp",
-      },
-    ],
+    },
   },
 
-  training: {
-    metaTitle: "Enhance Your Career with GDC Consultant Training",
+  // ARCHIVED. Rename key back to "training" to restore.
+  "_archived-training": {
+    metaTitle: "Enhance Your Career with GDC Group Training",
     metaDescription:
-      "Elevate your engineering expertise with GDC Consultant's training and consultancy services. Achieve your professional goals with our dedicated support and resources",
+      "Elevate your engineering expertise with GDC Group’s training and consultancy services. Achieve your professional goals with our dedicated support and resources",
     title: "Training",
-    description:
-      "Training and retaining fresh talent is vital for a company’s future success. At GDC, we believe in supporting young engineers and consider them an important resource. The experienced professionals at GDC Consultants share always giving advice which accelerates the professional development of young talent. We strongly believe that by developing our staff, we increase the value of the company as a whole.​",
     image: "/images/services/7/Training 1.webp",
-    sections: [
-      {
-        id: 1,
-        title: "Nurturing Young Minds to Become Leading Professionals",
-        description:
-          "GDC Consultants offer multiple targeted training programmes taught by our in-house subject experts. The purpose of these programmes is to increase our bench strength in the areas we are focusing on for future growth. Each new employee at GDC Consultants participates in a number of general training classes intended to provide them with a deeper understanding of corporate ethics, culture, safety, and career growth. Additionally, each department offers industry-specific training. We also offer formal mentorship and training to passionate engineers who are majored in civil and structural engineering. These training programs can be customized according to the needs of individuals or organizations. \nOur standard coaching, mentoring, & training systems include:",
-        points: [
-          "Pathway assistance and mentorship to become a Chartered Professional Engineer.",
-          "Infra-training NZQA Level 6 qualifications in civil engineering and asset management.",
-          "Contract management and procurement procedures.",
-          "Training programs related to improving business intelligence, technical skills, and performance.",
-          "Member development through one-on-one coaching, career guidance, and performance management",
-          "Leadership mentorship to prepare the bench strength of leaders for management responsibilities.",
+    modern: {
+      images: [
+        "/images/services/7/Training 2.webp",
+        "/images/services/Training.webp",
+      ],
+      tagline: "Nurturing Young Minds to Become Leading Professionals",
+      intro: [
+        "Training and retaining fresh talent is vital for a company’s future success. At GDC, we believe in supporting young engineers and consider them an important resource.",
+        "The experienced professionals at GDC Group share always giving advice which accelerates the professional development of young talent. We strongly believe that by developing our staff, we increase the value of the company as a whole.",
+      ],
+      blocks: [
+        {
+          type: "cardGrid",
+          id: "training-programmes",
+          heading: "Training at GDC Group",
+          columns: 2,
+          cards: [
+            {
+              icon: "improvement",
+              title: "Targeted Training Programmes",
+              summary: [
+                "GDC Group offers multiple targeted training programmes taught by our in-house subject experts. The purpose of these programmes is to increase our bench strength in the areas we are focusing on for future growth.",
+              ],
+            },
+            {
+              icon: "liaison",
+              title: "Induction & Department Training",
+              summary: [
+                "Each new employee at GDC Group participates in a number of general training classes intended to provide them with a deeper understanding of corporate ethics, culture, safety, and career growth. Additionally, each department offers industry-specific training.",
+              ],
+            },
+            {
+              icon: "foundation",
+              title: "Formal Mentorship for Engineers",
+              summary: [
+                "We also offer formal mentorship and training to passionate engineers who are majored in civil and structural engineering.",
+              ],
+            },
+            {
+              icon: "design",
+              title: "Customised Programmes",
+              summary: [
+                "These training programs can be customized according to the needs of individuals or organizations.",
+              ],
+            },
+          ],
+        },
+        {
+          type: "split",
+          id: "coaching-systems",
+          icon: "integrated",
+          heading: "Coaching, Mentoring & Training Systems",
+          paragraphs: [],
+          listLabel:
+            "Our standard coaching, mentoring, & training systems include:",
+          items: [
+            "Pathway assistance and mentorship to become a Chartered Professional Engineer.",
+            "Infra-training NZQA Level 6 qualifications in civil engineering and asset management.",
+            "Contract management and procurement procedures.",
+            "Training programs related to improving business intelligence, technical skills, and performance.",
+            "Member development through one-on-one coaching, career guidance, and performance management",
+            "Leadership mentorship to prepare the bench strength of leaders for management responsibilities.",
+          ],
+        },
+      ],
+      closing: {
+        title: "Grow Your Career With GDC Group",
+        paragraphs: [
+          "We strongly believe that by developing our staff, we increase the value of the company as a whole.",
         ],
-        image: "/images/services/7/Training 2.webp",
+        ctaLead:
+          "Interested in training or mentorship with GDC Group? Get in touch with our team.",
+        ctaLabel: "Talk to GDC Group",
+        ctaHref: "/contact-us",
       },
-    ],
+    },
   },
 };
 

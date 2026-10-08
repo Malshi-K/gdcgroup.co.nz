@@ -93,7 +93,7 @@ const HeroSection = ({ RightSideComponent }) => {
 
   return (
     <section
-      className="relative transition-all duration-300 overflow-hidden bg-black bg-opacity-80"
+      className="relative transition-all duration-300 overflow-hidden bg-primary-navy bg-opacity-90"
       style={{
         minHeight: screenSize.isMobile ? "auto" : "100vh",
         backgroundImage: "url('/images/hero-poster.webp')",
@@ -115,7 +115,7 @@ const HeroSection = ({ RightSideComponent }) => {
 
         .scroll-container {
           position: relative;
-          background-color: #044e80;
+          background-color: #1A242F;
           border-radius: 9999px;
           overflow: hidden;
           width: 100%;
@@ -144,7 +144,7 @@ const HeroSection = ({ RightSideComponent }) => {
         }
 
         .scroll-word {
-          color: #333333;
+          color: #26323B;
           font-weight: bold;
           display: inline-flex;
           align-items: center;
@@ -207,7 +207,7 @@ const HeroSection = ({ RightSideComponent }) => {
           }
           .scroll-word {
             font-size: 3rem;
-            color: #ffb500;
+            color: #0061B4;
           }
           .scroll-container {
             border-radius: 32px;
@@ -248,7 +248,7 @@ const HeroSection = ({ RightSideComponent }) => {
           transform: translate(-50%, -50%);
           width: 60px;
           height: 60px;
-          background-color: #044e80;
+          background-color: #1A242F;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -291,7 +291,7 @@ const HeroSection = ({ RightSideComponent }) => {
       `}</style>
 
       <div
-        className={`relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 
+        className={`relative z-10 w-full site-x 
           ${
             screenSize.isMobile
               ? "pt-24 pb-12"
@@ -342,7 +342,7 @@ const HeroSection = ({ RightSideComponent }) => {
               {/* Description text with circular button positioned to the right */}
               <div className="mt-6 sm:mt-8 mb-6 text-left max-w-xl relative">
                 <p className="text-white text-xl leading-relaxed pr-16 sm:pr-32">
-                  GDC Consultants delivers practical and compliant engineering
+                  GDC Group delivers practical and compliant engineering
                   solutions to ensure your buildings stand the test of time—and
                   nature.
                 </p>

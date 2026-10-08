@@ -109,21 +109,21 @@ const CareerFormEmbed = ({
   }, [containerId, hiddenFields, region, resolvedFormId, resolvedPortalId, scriptSrc, targetId]);
 
   return (
-    <div className="flex justify-center w-full px-4">
-      <div className="career-form-container w-full max-w-2xl">
+    <div className="flex justify-center w-full bg-off-white px-4 pb-16">
+      <div className="career-form-container w-full max-w-2xl rounded-2xl border border-light bg-white p-6 md:p-10">
         <div className="flex flex-col items-center mb-6">
           {showLogo ? (
             <Image
-              src="/images/GDC LOGOS 2024 BLUE.webp"
-              alt="Logo"
+              src="/images/gdc-group-logo.png"
+              alt="GDC Group Logo"
               className="mb-4 w-60"
               width={240}
               height={96}
             />
           ) : null}
-          <h2 className="text-2xl text-customBlue font-semibold">{title}</h2>
+          <h2 className="text-2xl text-primary-navy font-semibold">{title}</h2>
           {intro ? (
-            <p className="mt-2 text-center text-sm text-gray-600">{intro}</p>
+            <p className="mt-2 text-center text-sm text-secondary">{intro}</p>
           ) : null}
         </div>
         <div id={containerId} className="w-full"></div>

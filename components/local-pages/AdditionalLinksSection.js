@@ -6,19 +6,19 @@ const AdditionalLinksSection = ({ additionalLinks }) => {
   if (!additionalLinks) return null;
 
   return (
-    <section className="py-8 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+    <section className="py-8 bg-off-white">
+      <div className="site-x text-center">
         <div className="space-x-4">
           {additionalLinks.portfolio && (
-            <a href="#" className="text-customBlue hover:text-customYellow transition-colors font-medium">
+            <a href="#" className="text-primary-navy hover:text-primary-blue transition-colors font-medium">
               {additionalLinks.portfolio}
             </a>
           )}
           {additionalLinks.team && (
-            <span className="text-gray-400">|</span>
+            <span className="text-secondary">|</span>
           )}
           {additionalLinks.team && (
-            <a href="#" className="text-customBlue hover:text-customYellow transition-colors font-medium">
+            <a href="#" className="text-primary-navy hover:text-primary-blue transition-colors font-medium">
               {additionalLinks.team}
             </a>
           )}

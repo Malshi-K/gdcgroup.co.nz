@@ -1,9 +1,11 @@
+import { SITE_URL } from "@/lib/siteConfig";
 // app/locations/page.js
 import MapSection from "@/components/locations/MapSection";
 import { Suspense } from "react";
 
 // Add metadata for SEO
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Our Locations | GDC Group",
   description: "Find GDC Group offices and service locations across New Zealand. Contact our local teams for engineering, architectural, and project management services in your area.",
   keywords: "GDC locations, GDC offices, New Zealand engineering offices, GDC Auckland, GDC Wellington, GDC Christchurch, engineering consultancy locations",

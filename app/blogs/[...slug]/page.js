@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
 import { BlogContent } from "@/components/blogs/BlogContent";
 import axios from "axios";
 import "@/app/globals.css";
@@ -5,23 +6,23 @@ import "@/app/globals.css";
 // Specific meta tags for certain blog posts
 const specificMetaTags = {
   "gold-award-win-for-waikato-hospital-molecular-biology-laboratory-project": {
-    title: "Gold Award for Waikato Hospital Project | GDC Consultants",
-    description: "GDC Consultants proudly contributed to the award-winning Waikato Hospital Molecular Biology Lab project, honored at the NZ Commercial Project Awards 2025.",
-    imageAlt: "Award-winning Waikato Hospital Molecular Biology Laboratory building designed by GDC Consultants NZ.",
+    title: "Gold Award for Waikato Hospital Project | GDC Group",
+    description: "GDC Group proudly contributed to the award-winning Waikato Hospital Molecular Biology Lab project, honored at the NZ Commercial Project Awards 2025.",
+    imageAlt: "Award-winning Waikato Hospital Molecular Biology Laboratory building designed by GDC Group.",
     ogImage: "/images/waikato-hospital-award-og.jpg",
     twitterImage: "/images/waikato-hospital-award-twitter.jpg",
   },
   "a-day-in-the-life-with-rojesh-koshy-operation-manager-civil-engineer": {
-    title: "A Day in the Life of Rojesh Koshy | GDC Consultants NZ",
-    description: "Go behind the scenes with Rojesh Koshy, Operations Manager & Civil Engineer at GDC Consultants, as he shares insights into his daily work and project leadership.",
-    imageAlt: "Rojesh Koshy, Civil Engineer and Operations Manager at GDC Consultants NZ, on-site.",
+    title: "A Day in the Life of Rojesh Koshy | GDC Group",
+    description: "Go behind the scenes with Rojesh Koshy, Operations Manager & Civil Engineer at GDC Group, as he shares insights into his daily work and project leadership.",
+    imageAlt: "Rojesh Koshy, Civil Engineer and Operations Manager at GDC Group, on-site.",
     ogImage: "/images/rojesh-koshy-day-life-og.jpg",
     twitterImage: "/images/rojesh-koshy-day-life-twitter.jpg",
   },
   "meet-the-team-maurice-bellantoni-architectural-designer": {
     title: "Meet Maurice Bellantoni – Architectural Designer | GDC NZ",
-    description: "Get to know Maurice Bellantoni, an experienced Architectural Designer at GDC Consultants NZ. Discover his design approach and passion for innovative architecture.",
-    imageAlt: "Portrait of Maurice Bellantoni, Architectural Designer at GDC Consultants NZ.",
+    description: "Get to know Maurice Bellantoni, an experienced Architectural Designer at GDC Group. Discover his design approach and passion for innovative architecture.",
+    imageAlt: "Portrait of Maurice Bellantoni, Architectural Designer at GDC Group.",
     ogImage: "/images/maurice-bellantoni-profile-og.jpg",
     twitterImage: "/images/maurice-bellantoni-profile-twitter.jpg",
   },
@@ -105,6 +106,7 @@ export async function generateMetadata({ params }) {
 
   if (!data?.blog) {
     return {
+      metadataBase: new URL(SITE_URL),
       title: "Blog Not Found",
     };
   }
@@ -134,6 +136,7 @@ export async function generateMetadata({ params }) {
   if (specificMeta) {
     console.log("Using specific meta tags for:", slug);
     return {
+      metadataBase: new URL(SITE_URL),
       title: specificMeta.title,
       description: specificMeta.description,
       
@@ -142,7 +145,7 @@ export async function generateMetadata({ params }) {
         title: specificMeta.title,
         description: specificMeta.description,
         url: `https://gdcgroup.co.nz/blogs/${slug}`,
-        siteName: "GDC Consultants NZ",
+        siteName: SITE_NAME,
         type: "article",
         locale: "en_NZ",
         images: [
@@ -175,17 +178,18 @@ export async function generateMetadata({ params }) {
   
   // Default meta tags for other blog posts
   return {
+    metadataBase: new URL(SITE_URL),
     title: data.blog.name,
     description:
       data.blog.metaDescription ||
-      "Read the latest blog post from GDC Consultants about architecture, engineering, and project management.",
+      "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
     
     // Default Open Graph tags
     openGraph: {
       title: data.blog.name,
-      description: data.blog.metaDescription || "Read the latest blog post from GDC Consultants about architecture, engineering, and project management.",
+      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
       url: `https://gdcgroup.co.nz/blogs/${slug}`,
-      siteName: "GDC Consultants NZ",
+      siteName: SITE_NAME,
       type: "article",
       locale: "en_NZ",
       images: data.blog.featuredImage ? [
@@ -202,7 +206,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: data.blog.name,
-      description: data.blog.metaDescription || "Read the latest blog post from GDC Consultants about architecture, engineering, and project management.",
+      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
       images: data.blog.featuredImage ? [data.blog.featuredImage] : [],
       creator: "@gdcnz",
       site: "@gdcnz",
@@ -224,10 +228,10 @@ export default async function Page({ params }) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+          <h1 className="text-3xl font-bold text-dark mb-4">
             Blog Not Found
           </h1>
-          <p className="text-gray-600">
+          <p className="text-secondary">
             The blog post you&apos;re looking for doesn&apos;t exist or has been removed.
           </p>
         </div>

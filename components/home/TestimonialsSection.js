@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
     >
       {/* Left Side - Title and Content */}
       <div
-        className={`bg-customYellow text-white px-6 py-6 md:px-10 lg:px-16 flex flex-col justify-center items-center md:items-start text-center md:text-left transition-all duration-700 ease-out ${
+        className={`bg-primary-blue text-white px-6 py-6 md:px-10 lg:px-16 flex flex-col justify-center items-center md:items-start text-center md:text-left transition-all duration-700 ease-out ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
         }`}
       >
@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
 
       {/* Right Side - Testimonial Carousel */}
       <div
-        className={`bg-customBlue text-white p-4 md:p-6 lg:p-8 flex items-center justify-center transition-all duration-600 ease-out ${
+        className={`bg-primary-navy text-white p-4 md:p-6 lg:p-8 flex items-center justify-center transition-all duration-600 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
         style={{ transitionDelay: "150ms" }}
@@ -124,7 +124,7 @@ const TestimonialsSection = () => {
                   <h4 className="font-semibold text-white text-base md:text-lg mt-2">
                     {testimonial.author}
                   </h4>
-                  <p className="text-xs md:text-sm text-customYellow uppercase tracking-widest">
+                  <p className="text-xs md:text-sm text-light-blue uppercase tracking-widest">
                     {testimonial.role}
                   </p>
                 </div>
