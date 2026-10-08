@@ -176,10 +176,6 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },                  
-                  {
-                    href: "/services/research-development",
-                    label: "Research & Development",
-                  },
                   { href: "/services/transport-engineering", label: "Transport Engineering" },
                   {
                     href: "/services/seismic-engineering",
@@ -191,7 +187,6 @@ const Header = () => {
                   },
                   { href: "/services/planning", label: "Planning" },
                   { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/training", label: "Training" },                  
                 ],
               },
               { href: "/portfolio/all-projects", label: "OUR PORTFOLIO" },
@@ -321,10 +316,6 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },
-                  {
-                    href: "/services/research-development",
-                    label: "Research & Development",
-                  },
                   { href: "/services/transport-engineering", label: "Transport Engineering" },
                   {
                     href: "/services/seismic-engineering",
@@ -336,7 +327,6 @@ const Header = () => {
                   },
                   { href: "/services/planning", label: "Planning" },
                   { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/training", label: "Training" },
                 ],
               },
               { href: "/portfolio/all-projects", label: "Our Portfolio" },

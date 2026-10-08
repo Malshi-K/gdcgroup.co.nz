@@ -1181,7 +1181,8 @@ const services = {
     },
   },
 
-  "research-development": {
+  // ARCHIVED. Rename key back to "research-development" to restore.
+  "_archived-research-development": {
     metaTitle: "GDC Group R&D: Boost Your Success Today",
     metaDescription:
       "Process consultancy and R&D are both essential to any successful project. Research and Development is crucial to any project involving unusual design or construction challenges. We embrace these challenges, and pride ourselves on our ability to deliver innovative solutions every time.",
@@ -2497,7 +2498,8 @@ const services = {
     },
   },
 
-  training: {
+  // ARCHIVED. Rename key back to "training" to restore.
+  "_archived-training": {
     metaTitle: "Enhance Your Career with GDC Group Training",
     metaDescription:
       "Elevate your engineering expertise with GDC Group’s training and consultancy services. Achieve your professional goals with our dedicated support and resources",

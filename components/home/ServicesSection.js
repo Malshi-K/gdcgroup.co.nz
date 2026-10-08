@@ -102,11 +102,6 @@ export const services = [
     slug: "infrastructure",
     icon: icons.BriefcaseIcon,
   },
-  {
-    title: "Research & Development",
-    slug: "research-development",
-    icon: icons.AcademicCapIcon,
-  },
   { title: "Transport Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
   {
     title: "Seismic Engineering",
@@ -124,7 +119,6 @@ export const services = [
     icon: icons.PresentationChartLineIcon,
   },
   { title: "Surveying", slug: "surveying", icon: icons.MagnifyingGlassIcon },
-  { title: "Training", slug: "training", icon: icons.BookOpenIcon },
 ];
 
 const ServicesSection = () => {
