@@ -114,7 +114,7 @@ export const services = [
     icon: icons.BuildingOfficeIcon,
   },
   {
-    title: "Planning",
+    title: "Resource & Building Consents",
     slug: "planning",
     icon: icons.PresentationChartLineIcon,
   },
