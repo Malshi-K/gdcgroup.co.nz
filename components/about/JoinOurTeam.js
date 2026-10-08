@@ -7,7 +7,7 @@ import { Eyebrow, BlueprintGrid } from "@/components/home/homeTheme";
 const JoinOurTeam = () => {
   // State to control animation
   const [isVisible, setIsVisible] = useState(false);
-  
+
   // Use IntersectionObserver to trigger animations when section comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,21 +19,21 @@ const JoinOurTeam = () => {
           setIsVisible(false);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
-    
-    const section = document.getElementById('project-header-section');
+
+    const section = document.getElementById("project-header-section");
     if (section) {
       observer.observe(section);
     }
-    
+
     return () => {
       if (section) {
         observer.unobserve(section);
       }
     };
   }, []);
-  
+
   return (
     <section
       id="project-header-section"
@@ -45,14 +45,18 @@ const JoinOurTeam = () => {
           {/* Left Content Column */}
           <div
             className={`flex max-w-xl flex-col space-y-4 text-center transition-all duration-600 ease-out motion-reduce:transition-none md:space-y-6 md:text-left ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-5"
             }`}
             style={{ transitionDelay: "100ms" }}
           >
             <Eyebrow tone="dark">Careers</Eyebrow>
             <h1
               className={`text-4xl font-bold leading-tight text-white transition-all duration-600 ease-out motion-reduce:transition-none md:text-5xl ${
-                isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+                isVisible
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-12"
               }`}
               style={{ transitionDelay: "200ms" }}
             >
@@ -60,12 +64,14 @@ const JoinOurTeam = () => {
             </h1>
             <p
               className={`text-base leading-relaxed text-light-blue transition-all duration-600 ease-out motion-reduce:transition-none md:text-lg ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-5"
               }`}
               style={{ transitionDelay: "300ms" }}
             >
-              At GDC, we&apos;re always looking for talented and motivated individuals
-              to join our team.
+              Experienced Professionals and Early Careers - We are interested in
+              hearing from professionals working with us
             </p>
           </div>
         </div>

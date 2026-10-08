@@ -96,7 +96,7 @@ const Hero = () => {
       </Head>
 
       {/* Fixed height container to prevent layout shift */}
-      <section className="relative z-10 h-[440px] sm:h-[440px] md:h-[540px] lg:h-[620px] overflow-hidden bg-primary-navy [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)]">
+      <section className="relative z-10 h-[440px] sm:h-[440px] md:h-[480px] lg:h-[540px] overflow-hidden bg-primary-navy [clip-path:polygon(0_0,100%_0,100%_calc(100%-20px),0_100%)] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-56px),0_100%)]">
         {/* Content overlay - now with fixed positioning rather than absolute */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/90 via-primary-navy/75 to-primary-navy/55 flex items-center justify-center text-center md:text-left z-10">
           <BlueprintGrid />
@@ -104,17 +104,19 @@ const Hero = () => {
             tone="dark"
             className="absolute right-6 top-24 hidden opacity-50 md:block"
           />
-          <div className="relative w-full site-x pt-24 pb-12 sm:pt-24 sm:pb-12 md:pt-44 md:pb-20 lg:pt-52 lg:pb-24 text-white flex flex-col items-center md:items-start">
-            <Eyebrow tone="dark">Engineering Consultants</Eyebrow>
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
-              TRUSTED ENGINEERING EXPERTISE FOR EVERY STAGE OF YOUR PROJECT
+          <div className="relative w-full site-x pt-24 pb-12 sm:pt-24 sm:pb-12 md:pt-36 md:pb-12 lg:pt-40 lg:pb-0 text-white flex flex-col items-center md:items-start">
+            <Eyebrow tone="dark">
+              Infrastructure - Engineering Consultants
+            </Eyebrow>
+            <h1 className="uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
+              We deliver together
             </h1>
-            <p className="mb-6 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
+            {/* <p className="mb-6 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
               A New Zealand-based multidisciplinary team of Chartered
               Professional Engineers and technical specialists delivering
               innovative, practical and cost-effective engineering solutions
               from concept and design through to construction and completion.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
               <button
                 onClick={() => router.push("/locations")}
@@ -122,12 +124,12 @@ const Hero = () => {
               >
                 GET IN TOUCH
               </button>
-              <button
+              {/* <button
                 onClick={() => router.push("/portfolio/all-projects")}
                 className="btn-outline-light w-full sm:w-auto"
               >
                 EXPLORE OUR PROJECTS
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

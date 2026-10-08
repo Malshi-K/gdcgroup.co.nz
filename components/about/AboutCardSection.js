@@ -91,7 +91,9 @@ const AboutCardSection = () => {
                 GDC Group
               </h1>
               <h3 className="text-xl text-light-blue">
-                Chartered Professional Engineers
+                At GDC, we engineer solutions to meet client and national needs
+                to improve the performance of the infrastructure and people
+                lives
               </h3>
             </div>
           </div>
@@ -138,7 +140,10 @@ const AboutCardSection = () => {
                       <p key={text}>
                         {text.split("**").map((part, n) =>
                           n % 2 ? (
-                            <strong key={n} className="font-semibold text-primary-navy">
+                            <strong
+                              key={n}
+                              className="font-semibold text-primary-navy"
+                            >
                               {part}
                             </strong>
                           ) : (

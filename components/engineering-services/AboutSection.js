@@ -63,7 +63,8 @@ const AboutSection = () => {
           GDC Group
         </h2>
         <h3 className="text-xl text-dark mb-8 transition-all duration-700 ease-out delay-200">
-          Chartered Professional Engineers
+          At GDC, we engineer solutions to meet client and national needs to
+          improve the performance of the infrastructure and people lives
         </h3>
       </div>
 

@@ -129,7 +129,9 @@ const Header = () => {
                 height={793} // Actual pixel height (keeps aspect ratio)
                 priority // Critical for above-the-fold logo
                 className="w-[150px] h-auto md:w-[150px] lg:w-[200px] cursor-pointer"
-                style={overlay ? { filter: "brightness(0) invert(1)" } : undefined}
+                style={
+                  overlay ? { filter: "brightness(0) invert(1)" } : undefined
+                }
                 quality={90} // Higher quality for logo
               />
             </Link>
@@ -142,7 +144,9 @@ const Header = () => {
               {isMenuOpen ? (
                 <XMarkIcon className="w-6 h-6 text-black transition-transform duration-300" />
               ) : (
-                <Bars3Icon className={`w-6 h-6 transition-transform duration-300 ${overlay ? "text-white" : "text-black"}`} />
+                <Bars3Icon
+                  className={`w-6 h-6 transition-transform duration-300 ${overlay ? "text-white" : "text-black"}`}
+                />
               )}
             </button>
           </div>
@@ -152,10 +156,22 @@ const Header = () => {
             {[
               { href: "/", label: "HOME" },
               {
+                label: "ABOUT US",
+                dropdown: "aboutus",
+                items: [
+                  { href: "/about-us/who-we-are", label: "Who We Are" },
+                  { href: "/about-us/review", label: "Leave us a Review" },
+                  { href: "/locations", label: "Our Locations" },
+                ],
+              },
+              {
                 label: "SERVICES",
                 dropdown: "services",
                 items: [
-                  { href: "/services/transport-engineering", label: "Civil Engineering" },
+                  {
+                    href: "/services/transport-engineering",
+                    label: "Civil Engineering",
+                  },
                   {
                     href: "/services/construction-management",
                     label: "Construction Management",
@@ -164,7 +180,10 @@ const Header = () => {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
                   },
-                  { href: "/services/fire-engineering", label: "Fire Engineering" },
+                  {
+                    href: "/services/fire-engineering",
+                    label: "Fire Engineering",
+                  },
                   {
                     href: "/services/geotechnical-engineering",
                     label: "Geotechnical Engineering",
@@ -173,7 +192,10 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },
-                  { href: "/services/planning", label: "Resource & Building Consents" },
+                  {
+                    href: "/services/planning",
+                    label: "Resource & Building Consents",
+                  },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -183,21 +205,13 @@ const Header = () => {
                     label: "Structural Engineering",
                   },
                   { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/3-waters", label: "Three Waters Engineering" },
+                  {
+                    href: "/services/3-waters",
+                    label: "Three Waters Engineering",
+                  },
                 ],
               },
-              { href: "/portfolio/all-projects", label: "OUR PORTFOLIO" },
-              {
-                label: "ABOUT US",
-                dropdown: "aboutus",
-                items: [
-                  { href: "/about-us/who-we-are", label: "Who We Are" },
-                  { href: "/about-us/careers", label: "Careers" },
-                  { href: "/about-us/review", label: "Leave us a Review" },
-                  { href: "/locations", label: "Our Locations" },
-                ],
-              },
-              { href: "/blogs", label: "BLOGS" },
+              { href: "/about-us/careers", label: "CAREERS" },
             ].map((item) =>
               item.items ? (
                 <li
@@ -273,7 +287,7 @@ const Header = () => {
                     {item.label}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
 
@@ -292,7 +306,10 @@ const Header = () => {
                 label: "Services",
                 dropdown: "services",
                 items: [
-                  { href: "/services/transport-engineering", label: "Civil Engineering" },
+                  {
+                    href: "/services/transport-engineering",
+                    label: "Civil Engineering",
+                  },
                   {
                     href: "/services/construction-management",
                     label: "Construction Management",
@@ -301,7 +318,10 @@ const Header = () => {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
                   },
-                  { href: "/services/fire-engineering", label: "Fire Engineering" },
+                  {
+                    href: "/services/fire-engineering",
+                    label: "Fire Engineering",
+                  },
                   {
                     href: "/services/geotechnical-engineering",
                     label: "Geotechnical Engineering",
@@ -310,7 +330,10 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },
-                  { href: "/services/planning", label: "Resource & Building Consents" },
+                  {
+                    href: "/services/planning",
+                    label: "Resource & Building Consents",
+                  },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -320,23 +343,24 @@ const Header = () => {
                     label: "Structural Engineering",
                   },
                   { href: "/services/surveying", label: "Surveying" },
-                  { href: "/services/3-waters", label: "Three Waters Engineering" },
+                  {
+                    href: "/services/3-waters",
+                    label: "Three Waters Engineering",
+                  },
                 ],
               },
-              { href: "/portfolio/all-projects", label: "Our Portfolio" },
+              { href: "/about-us/careers", label: "Careers" },
               {
                 label: "About Us",
                 dropdown: "aboutus",
                 items: [
                   { href: "/about-us/who-we-are", label: "Who We Are" },
-                  { href: "/about-us/careers", label: "Careers" },
                   { href: "/about-us/review", label: "Leave us a Review" },
                   { href: "/locations", label: "Our Locations" },
                 ],
               },
-              { href: "/blogs", label: "Blogs" },
               { href: "tel:+6478380090", label: "Call Now" },
-              { href: "/contact-us", label: "Our Locations" },
+              { href: "/contact-us", label: "Contact us" },
             ].map((item) =>
               item.items ? (
                 <li key={item.label} className="relative">
@@ -391,29 +415,27 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className={`block py-2 px-11 font-light ${
-                      pathname === item.href
-                        ? "text-primary-blue"
-                        : "text-dark"
+                      pathname === item.href ? "text-primary-blue" : "text-dark"
                     } hover:text-primary-navy transition-all duration-300`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
 
           {/* Desktop version of the "OUR LOCATIONS" button */}
           <div className="flex items-center lg:space-x-4">
             {/* CALL NOW Button */}
-            <Link
+            {/* <Link
               href="tel:+6478380090"
               className="btn-primary btn-sm hidden lg:flex"
               onClick={() => setIsMenuOpen(false)}
             >
               CALL NOW
-            </Link>
+            </Link> */}
 
             {/* OUR LOCATIONS Button */}
             <Link
@@ -421,7 +443,7 @@ const Header = () => {
               className={`${overlay ? "btn-outline-light" : "btn-outline"} btn-sm hidden lg:flex`}
               onClick={() => setIsMenuOpen(false)}
             >
-              OUR LOCATIONS
+              CONTACT US
             </Link>
           </div>
         </nav>

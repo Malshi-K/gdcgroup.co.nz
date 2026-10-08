@@ -8,7 +8,7 @@ import {
   MapPinIcon,
   Cog6ToothIcon,
   CalendarIcon,
-} from "@heroicons/react/24/solid";
+} from "@heroicons/react/24/outline";
 
 const CardsSection = () => {
   const [counts, setCounts] = useState({
@@ -103,7 +103,7 @@ const CardsSection = () => {
         }`}
         style={{ transitionDelay: isVisible ? `${index * 120}ms` : "0ms" }}
       >
-        <Icon className="mb-3 h-6 w-6 text-light-blue" aria-hidden="true" />
+        <Icon className="mb-4 h-9 w-9 text-light-blue md:h-11 md:w-11 lg:h-12 lg:w-12" aria-hidden="true" />
         <p className="text-4xl font-bold leading-none text-white md:text-5xl lg:text-6xl">
           {count}
         </p>
