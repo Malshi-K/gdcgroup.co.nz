@@ -133,7 +133,7 @@ const ContactSection = () => {
               <div className="bg-primary-navy p-3 rounded-full"><MapPinIcon className="h-6 w-6 text-white" /></div>
               <div className="ml-4 text-primary-navy">
                 <p className="font-semibold">Address</p>
-                <p>89 Church Road, Pukete, Hamilton 3200</p>
+                <p>29 Orchard Te Kauwhata</p>
               </div>
             </div>
             <div className="flex items-start">

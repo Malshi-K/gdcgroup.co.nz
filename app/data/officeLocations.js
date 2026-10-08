@@ -4,7 +4,7 @@ const officeLocations = [
   {
     id: 1,
     name: "Hamilton (Head Office)",
-    address: "89 Church Road, Pukete, Hamilton 3200",
+    address: "29 Orchard Te Kauwhata",
     email: "hamilton@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
     mapSrc:
@@ -60,16 +60,16 @@ const officeLocations = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.9320362298663!2d176.91473347540466!3d-39.49344923188966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d684cdb8b529353%3A0x3a6325723c07937d!2s180%20Dalton%20Street%2C%20Napier%20South%2C%20Napier%204110%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726213376761!5m2!1sen!2slk",
     qrCodeSrc: "/images/qr-code/Napier-QR.webp",
   },
-  {
-    id: 7,
-    name: "Whitianga Office",
-    address: "21 Coghill Street, Whitianga 3510, New Zealand",
-    email: "whitianga@gdcgroup.co.nz",
-    phone: "+64 7 869 0640",
-    mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.3168173691115!2d175.70063197524362!3d-36.83488777872999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d725dcac2d18871%3A0xb4588155f6a986f2!2s21%20Coghill%20Street%2C%20Whitianga%203510%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726213405367!5m2!1sen!2slk",
-    qrCodeSrc: "/images/qr-code/Whitianga-QR.webp",
-  },
+  // {
+  //   id: 7,
+  //   name: "Whitianga Office",
+  //   address: "21 Coghill Street, Whitianga 3510, New Zealand",
+  //   email: "whitianga@gdcgroup.co.nz",
+  //   phone: "+64 7 869 0640",
+  //   mapSrc:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.3168173691115!2d175.70063197524362!3d-36.83488777872999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d725dcac2d18871%3A0xb4588155f6a986f2!2s21%20Coghill%20Street%2C%20Whitianga%203510%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726213405367!5m2!1sen!2slk",
+  //   qrCodeSrc: "/images/qr-code/Whitianga-QR.webp",
+  // },
   {
     id: 8,
     name: "Asia Office- Sri Lanka",
@@ -80,16 +80,16 @@ const officeLocations = [
       "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.57021590905!2d79.87140877499561!3d6.822009093175786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDknMTkuMiJOIDc5wrA1MicyNi4zIkU!5e0!3m2!1sen!2slk!4v1726212942252!5m2!1sen!2slk",
     qrCodeSrc: "/images/qr-code/Sri-Lanka-QR.webp",
   },
-  {
-    id: 9,
-    name: "Whakatāne Office",
-    address: "233A Harbour Road, Ohope, Whakatāne",
-    email: "whakatane@gdcgroup.co.nz",
-    phone: "+64 7 282 2173",
-    mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8559648277055!2d177.09309557574477!3d-37.98049057193414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6f0856c57880ad%3A0xa1b32c0f07fe7dcd!2s233A%20Harbour%20Road%2C%20%C5%8Chope%203121%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1745906785320!5m2!1sen!2slk",
-    qrCodeSrc: "/images/qr-code/Whakatāne-QR.png",
-  },
+  // {
+  //   id: 9,
+  //   name: "Whakatāne Office",
+  //   address: "233A Harbour Road, Ohope, Whakatāne",
+  //   email: "whakatane@gdcgroup.co.nz",
+  //   phone: "+64 7 282 2173",
+  //   mapSrc:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.8559648277055!2d177.09309557574477!3d-37.98049057193414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6f0856c57880ad%3A0xa1b32c0f07fe7dcd!2s233A%20Harbour%20Road%2C%20%C5%8Chope%203121%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1745906785320!5m2!1sen!2slk",
+  //   qrCodeSrc: "/images/qr-code/Whakatāne-QR.png",
+  // },
   {
     id: 10,
     name: "Cambridge",

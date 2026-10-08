@@ -9,7 +9,7 @@ export const generateMetadata = async () => {
     metadataBase: new URL(SITE_URL),
     title: 'Our Locations | GDC Group - Engineering Consulting Locations',
     description: 'Leading engineering consulting firm offering innovative solutions across New Zealand. Find your nearest GDC office for expert guidance and support. Contact us today.',
-    keywords: 'GDC locations, engineering consultants, New Zealand offices, engineering firm locations, contact GDC, Hamilton office, Auckland office, Thames office, Whitianga office',
+    keywords: 'GDC locations, engineering consultants, New Zealand offices, engineering firm locations, contact GDC, Hamilton office, Auckland office, Thames office',
     openGraph: {
       title: 'Our Locations | GDC Group - Engineering Consulting Locations',
       description: 'Find your nearest GDC office for expert engineering and architectural solutions.',
