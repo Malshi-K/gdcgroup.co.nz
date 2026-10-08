@@ -76,20 +76,16 @@ const icons = {
 
 // Define services with dynamically imported icons
 export const services = [
+  { title: "Civil Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
   {
-    title: "3 Waters & Contamination",
-    slug: "3-waters",
-    icon: icons.GlobeAltIcon,
+    title: "Construction Management",
+    slug: "construction-management",
+    icon: icons.ClipboardDocumentListIcon,
   },
   {
     title: "Electrical Engineering",
     slug: "electrical-engineering",
     icon: icons.Cog6ToothIcon,
-  },
-  {
-    title: "Construction Management",
-    slug: "construction-management",
-    icon: icons.ClipboardDocumentListIcon,
   },
   { title: "Fire Engineering", slug: "fire-engineering", icon: icons.FireIcon },
   {
@@ -102,7 +98,11 @@ export const services = [
     slug: "infrastructure",
     icon: icons.BriefcaseIcon,
   },
-  { title: "Civil Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
+  {
+    title: "Resource & Building Consents",
+    slug: "planning",
+    icon: icons.PresentationChartLineIcon,
+  },
   {
     title: "Seismic Engineering",
     slug: "seismic-engineering",
@@ -113,12 +113,12 @@ export const services = [
     slug: "structural-engineering",
     icon: icons.BuildingOfficeIcon,
   },
-  {
-    title: "Resource & Building Consents",
-    slug: "planning",
-    icon: icons.PresentationChartLineIcon,
-  },
   { title: "Surveying", slug: "surveying", icon: icons.MagnifyingGlassIcon },
+  {
+    title: "Three Waters Engineering",
+    slug: "3-waters",
+    icon: icons.GlobeAltIcon,
+  },
 ];
 
 const ServicesSection = () => {

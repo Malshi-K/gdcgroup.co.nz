@@ -155,17 +155,14 @@ const Header = () => {
                 label: "SERVICES",
                 dropdown: "services",
                 items: [
+                  { href: "/services/transport-engineering", label: "Civil Engineering" },
                   {
-                    href: "/services/3-waters",
-                    label: "3 Waters & Contamination",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
-                  },
-                  {
-                    href: "/services/construction-management",
-                    label: "Construction Management",
                   },
                   { href: "/services/fire-engineering", label: "Fire Engineering" },
                   {
@@ -175,8 +172,8 @@ const Header = () => {
                   {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
-                  },                  
-                  { href: "/services/transport-engineering", label: "Civil Engineering" },
+                  },
+                  { href: "/services/planning", label: "Resource & Building Consents" },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -185,8 +182,8 @@ const Header = () => {
                     href: "/services/structural-engineering",
                     label: "Structural Engineering",
                   },
-                  { href: "/services/planning", label: "Resource & Building Consents" },
                   { href: "/services/surveying", label: "Surveying" },
+                  { href: "/services/3-waters", label: "Three Waters Engineering" },
                 ],
               },
               { href: "/portfolio/all-projects", label: "OUR PORTFOLIO" },
@@ -236,7 +233,7 @@ const Header = () => {
                     <div
                       className={`grid ${
                         item.dropdown === "services"
-                          ? "grid-cols-2"
+                          ? "grid-flow-col grid-rows-6"
                           : "grid-cols-1"
                       }`}
                     >
@@ -295,17 +292,14 @@ const Header = () => {
                 label: "Services",
                 dropdown: "services",
                 items: [
+                  { href: "/services/transport-engineering", label: "Civil Engineering" },
                   {
-                    href: "/services/3-waters",
-                    label: "3 Waters & Contamination",
+                    href: "/services/construction-management",
+                    label: "Construction Management",
                   },
                   {
                     href: "/services/electrical-engineering",
                     label: "Electrical Engineering",
-                  },
-                  {
-                    href: "/services/construction-management",
-                    label: "Construction Management",
                   },
                   { href: "/services/fire-engineering", label: "Fire Engineering" },
                   {
@@ -316,7 +310,7 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },
-                  { href: "/services/transport-engineering", label: "Civil Engineering" },
+                  { href: "/services/planning", label: "Resource & Building Consents" },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -325,8 +319,8 @@ const Header = () => {
                     href: "/services/structural-engineering",
                     label: "Structural Engineering",
                   },
-                  { href: "/services/planning", label: "Resource & Building Consents" },
                   { href: "/services/surveying", label: "Surveying" },
+                  { href: "/services/3-waters", label: "Three Waters Engineering" },
                 ],
               },
               { href: "/portfolio/all-projects", label: "Our Portfolio" },

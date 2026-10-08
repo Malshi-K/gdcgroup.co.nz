@@ -1,9 +1,9 @@
 const services = {
   "3-waters": {
-    metaTitle: "Three Waters & Contaminated Land Engineering | GDC Group",
+    metaTitle: "Three Waters Engineering | GDC Group",
     metaDescription:
       "GDC Group provides practical, sustainable and cost-effective engineering solutions for New Zealand's stormwater, wastewater and water supply infrastructure, plus contaminated land assessment and remediation.",
-    title: "Three Waters & Contaminated Land",
+    title: "Three Waters Engineering",
     image: "/images/services/1/3 Waters and Contamination 2.webp",
     modern: {
       images: ["/images/services/1/3 Waters and Contamination 3.webp", "/images/services/1/3 Waters and Contamination 4.webp"],

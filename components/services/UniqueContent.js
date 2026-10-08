@@ -38,7 +38,7 @@ export const WatersUniqueContent = () => {
       {/* Cards */}
       <div className="mt-10 site-x">
         <h1 className="text-4xl text-primary-navy font-bold text-center mb-8">
-          3 Waters Engineering
+          Three Waters Engineering
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 justify-center">
           {[
