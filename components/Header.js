@@ -176,7 +176,7 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },                  
-                  { href: "/services/transport-engineering", label: "Transport Engineering" },
+                  { href: "/services/transport-engineering", label: "Civil Engineering" },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",
@@ -316,7 +316,7 @@ const Header = () => {
                     href: "/services/infrastructure",
                     label: "Infrastructure & Subdivision Engineering",
                   },
-                  { href: "/services/transport-engineering", label: "Transport Engineering" },
+                  { href: "/services/transport-engineering", label: "Civil Engineering" },
                   {
                     href: "/services/seismic-engineering",
                     label: "Seismic Engineering",

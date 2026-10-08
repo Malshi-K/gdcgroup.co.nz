@@ -1300,10 +1300,10 @@ const services = {
   },
 
   "transport-engineering": {
-    metaTitle: "Transport Engineering Services | GDC Group",
+    metaTitle: "Civil Engineering Services | GDC Group",
     metaDescription:
       "GDC Group provides transport engineering solutions that support the safe, efficient and sustainable movement of people and goods across New Zealand, from local roads and subdivision access to larger infrastructure projects.",
-    title: "Transport Engineering",
+    title: "Civil Engineering",
     image: "/images/services/11/Roading 2.webp",
     modern: {
       images: ["/images/services/11/Roading 3.webp", "/images/services/11/Roading 4.webp", "/images/services/11/Roading 5.webp"],
@@ -1317,7 +1317,7 @@ const services = {
         {
           type: "cardGrid",
           id: "transport-services",
-          heading: "Our Transport Engineering Services",
+          heading: "Our Civil Engineering Services",
           columns: 2,
           cards: [
             {

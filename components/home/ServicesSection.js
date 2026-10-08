@@ -102,7 +102,7 @@ export const services = [
     slug: "infrastructure",
     icon: icons.BriefcaseIcon,
   },
-  { title: "Transport Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
+  { title: "Civil Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
   {
     title: "Seismic Engineering",
     slug: "seismic-engineering",
