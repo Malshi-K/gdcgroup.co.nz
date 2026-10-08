@@ -477,7 +477,7 @@ const services = {
             "Electrical engineering is closely connected with the architectural, structural, mechanical and civil elements of a project.",
           ],
           listLabel:
-            "As a multidisciplinary engineering and architecture practice, GDC Group can coordinate electrical requirements with our wider project capability, including:",
+            "As a multidisciplinary engineering practice, GDC Group can coordinate electrical requirements with our wider project capability, including:",
           items: [
             "Architectural design",
             "Structural engineering",

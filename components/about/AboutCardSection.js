@@ -7,19 +7,15 @@ import {
   GlobeAltIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Eyebrow,
-  BlueprintGrid,
-  Crosshair,
-} from "@/components/home/homeTheme";
+import { Eyebrow, BlueprintGrid, Crosshair } from "@/components/home/homeTheme";
 
 const AboutCardSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  
+
   useEffect(() => {
     // Set visible after component mounts to trigger animations
     setIsVisible(true);
-    
+
     // Optional: Set up intersection observer for scroll-based animation
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,12 +23,12 @@ const AboutCardSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
-    
-    const section = document.getElementById('about-section');
+
+    const section = document.getElementById("about-section");
     if (section) observer.observe(section);
-    
+
     return () => {
       if (section) observer.unobserve(section);
     };
@@ -43,7 +39,7 @@ const AboutCardSection = () => {
       id: 1,
       title: "We Are Industry Leaders",
       description:
-        "GDC Group is a nationwide provider of innovative solutions in all areas of the engineering and architecture process chains. Our unique success story is predicated on our core values of innovation, competency, and strict coordination on client needs.",
+        "GDC Group is a nationwide provider of innovative solutions in all areas of the engineering process chains. Our unique success story is predicated on our core values of innovation, competency, and strict coordination on client needs.",
     },
     {
       id: 2,
@@ -84,13 +80,13 @@ const AboutCardSection = () => {
                 GDC Group
               </h1>
               <h3 className="text-xl text-light-blue">
-                Chartered Professional Engineers & Architectural Designers
+                Chartered Professional Engineers
               </h3>
             </div>
           </div>
           <div className="hero-fade relative h-64 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[58%]">
             <Image
-              src="/images/about/who-we-are.jfif"
+              src="/images/about/who-we-are.png"
               alt="GDC Group engineering and architectural design"
               fill
               priority

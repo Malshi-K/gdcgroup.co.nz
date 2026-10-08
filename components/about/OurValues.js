@@ -106,7 +106,7 @@ const OurValues = () => {
       icon: <BeakerIcon className="w-16 h-16 text-primary-blue" />,
       title: "Empowered by Advanced Technology",
       description:
-        "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering and architecture services – especially at solving persistent and complex engineering problems.",
+        "Our ultimate objective is to be the New Zealand's most competent provider of multidisciplinary civil engineering services – especially at solving persistent and complex engineering problems.",
     },
     {
       icon: <LightBulbIcon className="w-16 h-16 text-primary-blue" />,

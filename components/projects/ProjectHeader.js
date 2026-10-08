@@ -20,7 +20,7 @@ const ProjectHeader = () => {
             </h2>
             <div className="space-y-3 text-sm md:text-base text-light-blue leading-relaxed animate-fade-in-up">
               <p>Our project portfolio reflects the depth of experience, technical expertise and commitment our team brings to every project.</p>
-              <p>Across engineering, architecture and the built environment, our team has contributed to a diverse range of projects throughout New Zealand. From commercial and residential developments to infrastructure and community projects, our experience spans a wide range of sectors, scales and challenges.</p>
+              <p>Across engineering, our team has contributed to a diverse range of projects throughout New Zealand. From commercial and residential developments to infrastructure and community projects, our experience spans a wide range of sectors, scales and challenges.</p>
               <p>The projects showcased here represent the collective experience of our team, including work delivered through previous business entities and throughout our professional history.</p>
               <p>We bring this established knowledge and experience into every new project — combining practical expertise, innovative thinking and a strong focus on delivering outcomes that make a lasting difference for our clients and communities.</p>
             </div>

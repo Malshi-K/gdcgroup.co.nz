@@ -54,7 +54,6 @@ const officeLocations = [
   {
     id: 6,
     name: "Napier Office",
-    address: "Vautier House, Second floor , 180 Dalton Street, Napier 4110",
     email: "napier@gdcgroup.co.nz",
     phone: "+64 6 281 2270",
     mapSrc:
