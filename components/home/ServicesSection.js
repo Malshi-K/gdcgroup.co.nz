@@ -8,75 +8,79 @@ import dynamic from "next/dynamic"; // Dynamic import for optimized loading
 const icons = {
   GlobeAltIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.GlobeAltIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   Cog6ToothIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.Cog6ToothIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   ClipboardDocumentListIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then(
-        (mod) => mod.ClipboardDocumentListIcon
+        (mod) => mod.ClipboardDocumentListIcon,
       ),
-    { ssr: false }
+    { ssr: false },
   ),
   ScaleIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.ScaleIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   BriefcaseIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.BriefcaseIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   AcademicCapIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then((mod) => mod.AcademicCapIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   TruckIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.TruckIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   WrenchScrewdriverIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then(
-        (mod) => mod.WrenchScrewdriverIcon
+        (mod) => mod.WrenchScrewdriverIcon,
       ),
-    { ssr: false }
+    { ssr: false },
   ),
   BuildingOfficeIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then((mod) => mod.BuildingOfficeIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   PresentationChartLineIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then(
-        (mod) => mod.PresentationChartLineIcon
+        (mod) => mod.PresentationChartLineIcon,
       ),
-    { ssr: false }
+    { ssr: false },
   ),
   MagnifyingGlassIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then(
-        (mod) => mod.MagnifyingGlassIcon
+        (mod) => mod.MagnifyingGlassIcon,
       ),
-    { ssr: false }
+    { ssr: false },
   ),
   FireIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.FireIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   BookOpenIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.BookOpenIcon),
-    { ssr: false }
+    { ssr: false },
   ),
 };
 
 // Define services with dynamically imported icons
 export const services = [
-  { title: "Civil Engineering", slug: "transport-engineering", icon: icons.TruckIcon },
+  {
+    title: "Civil Engineering",
+    slug: "transport-engineering",
+    icon: icons.TruckIcon,
+  },
   {
     title: "Construction Management",
     slug: "construction-management",
@@ -134,7 +138,7 @@ const ServicesSection = () => {
           setAnimationTriggered(true); // Ensures animations are triggered only once
         }
       },
-      { root: null, threshold: 0.2 }
+      { root: null, threshold: 0.2 },
     );
 
     const currentSection = sectionRef.current;
@@ -160,10 +164,10 @@ const ServicesSection = () => {
           Our Expertise and Services
         </h1>
         <h2 className="text-md text-primary-navy tracking-wide">
-          At GDC Group, we offer a wide range of specialised consulting
-          services to help our clients successfully complete their construction
-          projects. Explore our services to see how we can help you reach your
-          goals.
+          At GDC Group, we provide a comprehensive range of specialist
+          engineering services to support the successful delivery of building,
+          infrastructure and development projects across New Zealand. Explore
+          our services to find the right expertise for your project.
         </h2>
       </div>
 
@@ -174,13 +178,15 @@ const ServicesSection = () => {
             <div
               key={index}
               className={`relative bg-white shadow-md overflow-hidden transition duration-300 group flex flex-col items-center border-b-4 border-primary-navy transform ${
-                isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-12"
+                isVisible
+                  ? "opacity-100 transform-none"
+                  : "opacity-0 translate-y-12"
               }`}
-              style={{ 
-                transitionProperty: 'all',
-                transitionDuration: '500ms',
-                transitionTimingFunction: 'ease-out',
-                transitionDelay: `${index * 30}ms` 
+              style={{
+                transitionProperty: "all",
+                transitionDuration: "500ms",
+                transitionTimingFunction: "ease-out",
+                transitionDelay: `${index * 30}ms`,
               }}
             >
               {/* Sliding background effect */}

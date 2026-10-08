@@ -104,14 +104,16 @@ const Hero = () => {
             tone="dark"
             className="absolute right-6 top-24 hidden opacity-50 md:block"
           />
-          <div className="relative w-full site-x pt-24 pb-12 sm:pt-24 sm:pb-12 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 text-white flex flex-col items-center md:items-start">
+          <div className="relative w-full site-x pt-24 pb-12 sm:pt-24 sm:pb-12 md:pt-44 md:pb-20 lg:pt-52 lg:pb-24 text-white flex flex-col items-center md:items-start">
             <Eyebrow tone="dark">Engineering Consultants</Eyebrow>
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left mb-6 leading-snug max-w-3xl text-white">
-              TRUSTED ADVISORS FOR EVERY STAGE OF YOUR PROJECT
+              TRUSTED ENGINEERING EXPERTISE FOR EVERY STAGE OF YOUR PROJECT
             </h1>
             <p className="mb-6 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
-              Team of chartered professional engineers providing innovative
-              solutions and expert guidance.
+              A New Zealand-based multidisciplinary team of Chartered
+              Professional Engineers and technical specialists delivering
+              innovative, practical and cost-effective engineering solutions
+              from concept and design through to construction and completion.
             </p>
             <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
               <button

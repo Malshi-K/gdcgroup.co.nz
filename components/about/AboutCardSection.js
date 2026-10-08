@@ -37,21 +37,32 @@ const AboutCardSection = () => {
   const teamMembers = [
     {
       id: 1,
-      title: "We Are Industry Leaders",
-      description:
-        "GDC Group is a nationwide provider of innovative solutions in all areas of the engineering process chains. Our unique success story is predicated on our core values of innovation, competency, and strict coordination on client needs.",
+      title: "Engineering Better Outcomes",
+      tagline: "Your vision. Our expertise.",
+      paragraphs: [
+        "GDC Group is a New Zealand engineering consultancy delivering practical, innovative and technically robust solutions for building, infrastructure and development projects.",
+        "We combine specialist engineering knowledge with a collaborative, client-focused approach to solve complex challenges, manage risk and deliver outcomes that stand the test of time.",
+        "Our success is built on three principles: **technical excellence, practical thinking and trusted relationships.**",
+      ],
     },
     {
       id: 2,
-      title: "We Provide Sustainable Solutions",
-      description:
-        "We understand the vital necessity of sustainability in everything we do. Our corporate practice is founded on ethical behavior, innovation, and ensuring the sustainability of our community and environment.",
+      title: "Engineering with Purpose",
+      paragraphs: [
+        "We believe good engineering goes beyond meeting technical requirements. It is about creating solutions that are safe, efficient, resilient and responsible — delivering long-term value for our clients and the communities we serve.",
+        "Sustainability, considered design and responsible decision-making are embedded in the way we approach our projects, from early planning and design through to construction and delivery.",
+      ],
     },
     {
       id: 3,
       title: "Who We Are",
-      description:
-        "Through our expertise, competency, and continuous client support, we have earned the trust of our clients. By developing long lasting partnerships and consistently providing the best possible solutions and services, we are considered industry leaders. \nAt GDC Group, we believe in having strong values and priorities in everything we do. We take responsibility for the way our work affects society and the environment, and we are constantly aiming to give back to our community.",
+      paragraphs: [
+        "GDC Group brings together experienced engineering professionals with a shared commitment to quality, integrity and service.",
+        "We work closely with clients, architects, contractors, developers and project teams to understand the challenges behind every project and provide clear, practical engineering advice.",
+        "Our relationships are built on trust, communication and accountability. We take pride in delivering work that meets the highest professional standards while providing solutions that are practical to build, efficient to deliver and designed for the future.",
+      ],
+      closing:
+        "At GDC Group, we don't just engineer projects — we help shape better outcomes for New Zealand.",
     },
   ];
 
@@ -117,12 +128,31 @@ const AboutCardSection = () => {
                   <h3 className="mb-2 text-lg font-bold text-primary-navy">
                     {member.title}
                   </h3>
-                  {i === 0 && (
-                    <p className="mb-2 text-secondary">
-                      &ldquo;Your vision. Our expertise.&rdquo;
+                  {member.tagline && (
+                    <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-primary-blue">
+                      {member.tagline}
                     </p>
                   )}
-                  <p className="text-secondary">{member.description}</p>
+                  <div className="space-y-3 text-secondary">
+                    {member.paragraphs.map((text) => (
+                      <p key={text}>
+                        {text.split("**").map((part, n) =>
+                          n % 2 ? (
+                            <strong key={n} className="font-semibold text-primary-navy">
+                              {part}
+                            </strong>
+                          ) : (
+                            part
+                          ),
+                        )}
+                      </p>
+                    ))}
+                  </div>
+                  {member.closing && (
+                    <p className="mt-4 border-t border-light pt-4 font-semibold text-primary-navy">
+                      {member.closing}
+                    </p>
+                  )}
                 </div>
               </div>
             );

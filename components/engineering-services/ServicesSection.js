@@ -9,18 +9,18 @@ const icons = {
   BuildingOfficeIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then((mod) => mod.BuildingOfficeIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   ScaleIcon: dynamic(
     () => import("@heroicons/react/24/solid").then((mod) => mod.ScaleIcon),
-    { ssr: false }
+    { ssr: false },
   ),
   WrenchScrewdriverIcon: dynamic(
     () =>
       import("@heroicons/react/24/solid").then(
-        (mod) => mod.WrenchScrewdriverIcon
+        (mod) => mod.WrenchScrewdriverIcon,
       ),
-    { ssr: false }
+    { ssr: false },
   ),
 };
 
@@ -31,21 +31,21 @@ const services = [
     description:
       "At GDC Group, we match every structure with a redesign that is innovative and responsive to changing demands. From large corporate structures to distinctive home designs – we create a masterpiece every time.",
     icon: icons.BuildingOfficeIcon,
-    url: "https://gdcgroup.co.nz/services/structural-engineering"
+    url: "https://gdcgroup.co.nz/services/structural-engineering",
   },
   {
     title: "Geotechnical Engineering",
     description:
       "We strive to design safe and effective retention systems and foundations, employing our extensive expertise and experience and a pragmatic approach.",
     icon: icons.ScaleIcon,
-    url: "https://gdcgroup.co.nz/services/geotechnical-engineering"
+    url: "https://gdcgroup.co.nz/services/geotechnical-engineering",
   },
   {
     title: "Seismic Engineering",
     description:
       "At GDC Group, our commitment to Seismic engineering excellence in New Zealand sets us apart. With a wealth of expertise, we specialize in crafting robust designs for buildings and structures, ensuring their resilience to seismic activity.",
     icon: icons.WrenchScrewdriverIcon,
-    url: "https://gdcgroup.co.nz/services/seismic-engineering"
+    url: "https://gdcgroup.co.nz/services/seismic-engineering",
   },
 ];
 
@@ -62,7 +62,7 @@ const ServicesSection = () => {
           setAnimationTriggered(true); // Ensures animations are triggered only once
         }
       },
-      { root: null, threshold: 0.2 }
+      { root: null, threshold: 0.2 },
     );
 
     const currentSection = sectionRef.current;
@@ -88,10 +88,10 @@ const ServicesSection = () => {
           Our Expertise and Services
         </h1>
         <h2 className="text-md text-primary-navy tracking-wide">
-          At GDC Group, we offer a wide range of specialised consulting
-          services to help our clients successfully complete their construction
-          projects. Explore our services to see how we can help you reach your
-          goals.
+          At GDC Group, we provide a comprehensive range of specialist
+          engineering services to support the successful delivery of building,
+          infrastructure and development projects across New Zealand. Explore
+          our services to find the right expertise for your project.
         </h2>
       </div>
 

@@ -51,10 +51,10 @@ const ServicesSectionHome = () => {
             Our Expertise and Services
           </h1>
           <h2 className="text-md mt-3 tracking-wide text-primary-navy">
-            At GDC Group, we offer a wide range of specialised consulting
-            services to help our clients successfully complete their
-            construction projects. Explore our services to see how we can help
-            you reach your goals.
+            At GDC Group, we provide a comprehensive range of specialist
+            engineering services to support the successful delivery of building,
+            infrastructure and development projects across New Zealand. Explore
+            our services to find the right expertise for your project.
           </h2>
         </div>
 
@@ -69,7 +69,9 @@ const ServicesSectionHome = () => {
                 className={`group relative flex flex-col rounded-xl border border-light bg-white p-5 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-primary-blue hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0 md:p-6 ${
                   isVisible ? "opacity-100" : "translate-y-8 opacity-0"
                 }`}
-                style={{ transitionDelay: isVisible ? `${index * 40}ms` : "0ms" }}
+                style={{
+                  transitionDelay: isVisible ? `${index * 40}ms` : "0ms",
+                }}
               >
                 <IconComponent
                   className="h-9 w-9 text-primary-blue"
