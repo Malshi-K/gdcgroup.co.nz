@@ -14,7 +14,7 @@ export const generateMetadata = async () => {
       title: 'Our Locations | GDC Group - Engineering Consulting Locations',
       description: 'Find your nearest GDC office for expert engineering and architectural solutions.',
       type: 'website',
-      url: 'https://gdcgroup.co.nz/locations',
+      url: 'https://gdcgroup.co.nz/contact-us',
       siteName: SITE_NAME,
       locale: 'en_NZ',      
     },
@@ -30,10 +30,10 @@ export const generateMetadata = async () => {
       },
     },
     alternates: {
-      canonical: 'https://gdcgroup.co.nz/locations',
+      canonical: 'https://gdcgroup.co.nz/contact-us',
       languages: {
-        'en-NZ': 'https://gdcgroup.co.nz/locations',
-        'en': 'https://gdcgroup.co.nz/locations',
+        'en-NZ': 'https://gdcgroup.co.nz/contact-us',
+        'en': 'https://gdcgroup.co.nz/contact-us',
       },
     },
   };

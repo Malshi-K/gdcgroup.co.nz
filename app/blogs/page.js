@@ -37,6 +37,9 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'Our Blog | GDC Group - Latest News & Updates',
   description: 'Stay updated with the latest news, insights, and updates from GDC Group.',
+  alternates: {
+    canonical: 'https://gdcgroup.co.nz/blogs',
+  },
 }
 
 export default async function BlogPage() {

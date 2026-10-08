@@ -31,6 +31,9 @@ export async function generateMetadata({ params }) {
     title: `${locationData.title} - GDC Group`,
     description: locationData.description,
     keywords: `engineering, architectural services, ${slug}, GDC Group`,
+    alternates: {
+      canonical: `https://gdcgroup.co.nz/locations/${slug}`,
+    },
   };
 }
 
