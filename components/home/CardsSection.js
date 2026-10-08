@@ -75,17 +75,17 @@ const CardsSection = () => {
     {
       Icon: BriefcaseIcon,
       count: `${counts.projects.toLocaleString()}+`,
-      label: "Projects Completed",
+      label: "Projects Delivered",
     },
     {
       Icon: MapPinIcon,
       count: counts.locations.toLocaleString(),
-      label: "Locations Serviced",
+      label: "Locations Served",
     },
     {
       Icon: Cog6ToothIcon,
       count: `${counts.services.toLocaleString()}+`,
-      label: "Services Provided",
+      label: "Engineering & Design Disciplines",
       link: "/services",
     },
     {
