@@ -7,7 +7,7 @@ import { Suspense } from "react";
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Our Locations | GDC Group",
-  description: "Find GDC Group offices and service locations across New Zealand. Contact our local teams for engineering, architectural, and project management services in your area.",
+  description: "Find GDC Group offices and service locations across New Zealand. Contact our local teams for engineering and project management services in your area.",
   keywords: "GDC locations, GDC offices, New Zealand engineering offices, GDC Auckland, GDC Wellington, GDC Christchurch, engineering consultancy locations",
   robots: {
     index: true,

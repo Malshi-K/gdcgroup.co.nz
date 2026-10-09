@@ -205,7 +205,9 @@
     "additionalLinks": {
       "portfolio": "View our Hamilton Project Portfolio",
       "team": "Meet our Hamilton Team"
-    }
+    },
+    "metaTitle": "Engineering Services in Hamilton, Waikato, New Zealand",
+    "metaDescription": "GDC Group's Hamilton office provides structural, geotechnical, civil, seismic and planning engineering to clients across Hamilton and the Waikato."
   },
   "hamilton-central": {
     "id": "hamilton-central",
@@ -213,7 +215,7 @@
     "title": "Architectural, Engineering & Planning Services in Hamilton Central",
     "subtitle": "Your All-in-One Development Partner in Hamilton Central",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hamilton Central — from shop fitouts and seismic assessments to Three Waters and project management.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Hamilton Central, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hamilton Central. Servicing the CBD's shops, offices, restaurants, and civic facilities, the team handles everything from house plans, shop fitouts, and subdivisions to geotechnical soil reports, seismic assessments (DSA/IEP), fire engineering, Three Waters stormwater design, traffic reports, and project management.",
     "introduction": "Hamilton Central is the lively core of the Waikato, packed with retail shops, busy offices, popular restaurants, and vital civic facilities. Whether you're refurbishing a commercial space on Victoria Street, strengthening a historic CBD building, or planning a multi unit residential development, managing multiple contractors often leads to communication gaps and costly delays with the Hamilton City Council.",
     "locationDescription": "GDC Group does things differently. The business brings surveying, architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineers, and land planners under one roof.",
@@ -375,9 +377,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton Central.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Hamilton Central.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Hamilton Central",
@@ -387,7 +389,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
@@ -405,16 +406,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, concept plans, shop fitouts, commercial office alterations, warehouse designs, duplexes/apartments, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -481,7 +474,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Hamilton Central"
   },
   "rototuna": {
     "id": "rototuna",
@@ -489,7 +483,7 @@
     "title": "Architectural, Engineering & Planning Services in Rototuna",
     "subtitle": "Your Complete Development & Engineering Partner in Rototuna",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Rototuna — from house designs and townhouses to geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Rototuna, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Rototuna. Servicing one of Hamilton's fastest-growing suburban hubs characterized by modern residential subdivisions, top-rated schools, and vibrant neighbourhood shopping centres, our team manages everything from new house designs, townhouse developments, and retail fitouts to geotechnical soil testing, Three Waters stormwater infrastructure, traffic reports, and building consents.",
     "introduction": "Rototuna is a thriving suburban growth engine on the northern edge of Hamilton. Defined by contemporary master-planned housing, high-performing schools, and expanding retail centres like Rototuna Village, the area sees continuous demand for high-quality residential builds, section subdivisions, and commercial upgrades. When planning a build in Rototuna, juggling separate architects, geotechnical consultants, structural engineers, and land planners often leads to project friction, communication breakdowns, and delays with the Hamilton City Council.",
     "locationDescription": "GDC Group takes a streamlined, all-in-one approach. We bring architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners together within a single team.",
@@ -650,9 +644,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Rototuna, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Rototuna, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Rototuna",
@@ -662,9 +656,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "House Plans and Townhouse Design",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -681,16 +673,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, townhouses, duplexes, retail shop fitouts, home extensions, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -757,7 +741,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Rototuna"
   },
   "nawton": {
     "id": "nawton",
@@ -765,7 +750,7 @@
     "title": "Architectural, Engineering & Planning Services in Nawton",
     "subtitle": "Your Single-Source Development Partner in Nawton",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Nawton — from house plans and infill housing to geotechnical reports, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Nawton, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Nawton. Servicing this established residential suburb known for its vibrant community hubs, family parks, and local schools, our team manages everything from residential house plans, infill housing, and section subdivisions to geotechnical soil reports, Three Waters stormwater management, driveways, and building consents.",
     "introduction": "Nawton is one of Hamilton's largest residential suburbs, offering a welcoming, family-oriented atmosphere with abundant parklands, local schools, and active community facilities. As property owners in the area look to build modern family homes, construct secondary dwellings (granny flats), or subdivide sections to maximize land value, balancing multiple consultants can cause project friction and unexpected costs.",
     "locationDescription": "We make property development simple and efficient. We integrate architects, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into one collaborative team.",
@@ -926,9 +911,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Nawton, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Nawton, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Nawton",
@@ -938,9 +923,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "House Plans and Granny Flats",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -957,16 +940,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Custom house plans, granny flats, multi-unit designs, alterations, shop fitouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -1033,7 +1008,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Nawton"
   },
   "huntington": {
     "id": "huntington",
@@ -1041,7 +1017,7 @@
     "title": "Architectural, Engineering & Planning Services in Huntington",
     "subtitle": "Your Single-Point Development Partner in Huntington",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Huntington — from luxury house plans and subdivisions to geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Huntington, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Huntington. Servicing this modern, sought-after residential suburb located close to Rototuna and Chartwell amenities, our multidisciplinary team handles custom luxury house plans, home alterations, section subdivisions, geotechnical soil testing, Three Waters stormwater design, and building consent approvals.",
     "introduction": "Huntington is one of Hamilton's most desirable residential neighbourhoods, celebrated for its modern housing stock, quality streetscapes, and convenient proximity to the commercial hubs of both Rototuna and Chartwell. As property owners in Huntington seek to construct bespoke luxury homes, add high-end alterations, or subdivide residential land, coordinating separate consultants frequently introduces friction, delays, and unexpected costs.",
     "locationDescription": "GDC Group does things differently. We bring architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineering consultants, and land planners under one roof.",
@@ -1202,9 +1178,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Huntington, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Huntington, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Huntington",
@@ -1214,9 +1190,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -1233,16 +1207,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Custom house plans, concept designs, home additions, granny flats, multi-unit plans, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -1309,7 +1275,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Huntington"
   },
   "hamilton-east": {
     "id": "hamilton-east",
@@ -1317,7 +1284,7 @@
     "title": "Architectural, Engineering & Planning Services in Hamilton East",
     "subtitle": "Your All-in-One Development Partner in Hamilton East",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hamilton East — from character home extensions and shop fitouts to seismic assessments, Three Waters, and project management.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Hamilton East, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hamilton East. Servicing this vibrant, historic riverside suburb home to character villas, bustling cafés, and access to the Hamilton Gardens, our team handles everything from character home extensions, shop fitouts, and subdivisions to geotechnical soil reports, seismic assessments (DSA/IEP), fire engineering, Three Waters stormwater design, traffic reports, and project management.",
     "introduction": "Hamilton East is one of the city's most iconic neighbourhoods. Known for its rich history, tree-lined streets, character villas, thriving local cafés, and close proximity to the Waikato River and Hamilton Gardens, it is a suburb experiencing active revitalization. Whether you're extending a heritage villa, designing a modern infill residential development, or upgrading a commercial property along Grey Street, coordinating multiple separate consultants can lead to miscommunication and frustrating council delays.",
     "locationDescription": "GDC Group simplifies the entire process. We bring surveying, architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineers, and land planners together under one roof.",
@@ -1479,9 +1446,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton East.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Hamilton East.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Hamilton East",
@@ -1491,7 +1458,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Character Home Renovations & Extensions",
             "Detailed Seismic Assessments (DSA)",
@@ -1510,16 +1476,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Custom house plans, villa extensions, concept plans, shop fitouts, commercial office alterations, duplexes/apartments, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -1586,7 +1544,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Hamilton East"
   },
   "frankton": {
     "id": "frankton",
@@ -1594,7 +1553,7 @@
     "title": "Architectural, Engineering & Planning Services in Frankton",
     "subtitle": "Your All-in-One Development Partner in Frankton",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Frankton — from industrial warehouse designs and shop fitouts to seismic assessments, Three Waters, and project management.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Frankton, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Frankton. Servicing this busy transport and commercial hub known for its railway heritage and thriving local services, our team handles everything from industrial warehouse designs, shop fitouts, and subdivisions to geotechnical soil reports, seismic assessments (DSA/IEP), fire engineering, Three Waters stormwater design, traffic reports, and project management.",
     "introduction": "Frankton stands as one of Hamilton's most important commercial, light industrial, and transport hubs. With its rich railway history, busy retail corridors along Commerce Street, and expanding industrial parks, Frankton is a vital engine for local businesses and services. Whether you're designing a new industrial warehouse, refitting a retail shop, upgrading an older commercial building for seismic compliance, or subdividing a residential plot, managing multiple separate consultants often creates communication gaps and costly council delays.",
     "locationDescription": "GDC Group streamlines your development. We bring surveying, architectural designers, structural engineers, geotechnical experts, civil engineers, fire engineers, and land planners under one roof.",
@@ -1756,9 +1715,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Frankton.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Frankton.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Frankton",
@@ -1768,7 +1727,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Warehouse & Industrial Design",
             "Detailed Seismic Assessments (DSA)",
@@ -1787,16 +1745,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Warehouse designs, industrial sheds, shop fitouts, commercial office alterations, house plans, duplexes/apartments, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -1863,7 +1813,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Frankton"
   },
   "dinsdale": {
     "id": "dinsdale",
@@ -1871,7 +1822,7 @@
     "title": "Architectural, Engineering & Planning Services in Dinsdale",
     "subtitle": "Your Integrated Development & Engineering Team in Dinsdale",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Dinsdale — from house plans and granny flats to subdivisions, geotechnical reports, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Dinsdale, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Dinsdale. Servicing this established residential suburb known for its local schools, family parks, and bustling neighbourhood shopping centres, our team manages everything from residential house plans, granny flats, and property subdivisions to geotechnical soil reports, Three Waters stormwater management, driveways, and building consents.",
     "introduction": "Dinsdale is one of Hamilton's most sought after residential suburbs, offering a strong community atmosphere, quality schools, expansive parks, and convenient neighbourhood shopping centres. As property owners look to upgrade existing homes, build granny flats, or subdivide residential sections to meet housing demand, managing multiple independent contractors can quickly become overwhelming.",
     "locationDescription": "GDC Group takes the stress out of your building project. We house architects, structural engineers, geotechnical consultants, civil engineers, fire safety experts, and land planners together in one unified team.",
@@ -2032,9 +1983,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Dinsdale.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Dinsdale.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Dinsdale",
@@ -2044,9 +1995,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "House Plans and Granny Flats",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -2063,16 +2012,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, granny flats, concept designs, home alterations, shop fitouts, duplexes/apartments, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -2139,7 +2080,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Dinsdale"
   },
   "chartwell": {
     "id": "chartwell",
@@ -2147,7 +2089,7 @@
     "title": "Architectural, Engineering & Planning Services in Chartwell",
     "subtitle": "Your Integrated Development Partner in Chartwell",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Chartwell — from house extensions and retail fitouts to geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Chartwell, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Chartwell. Catering to one of Hamilton's premier retail and residential hubs home to the Chartwell Shopping Centre and surrounding family neighbourhoods our team manages everything from house extensions, duplex designs, and retail alterations to geotechnical soil testing, Three Waters stormwater solutions, traffic assessments, and building consents.",
     "introduction": "Chartwell is a key commercial and residential anchor on the eastern side of the Waikato River. Known for its bustling retail precinct around Chartwell Shopping Centre, top-rated schools, and quiet suburban streets, Chartwell is continuously evolving through residential infill, shop fitouts, and property modernisations. Whether you're refurbishing a retail space near the shopping centre, building a multi-unit townhouse development, or extending a suburban family home, managing separate designers, engineers, and planners usually results in project bottlenecks and unnecessary council delays.",
     "locationDescription": "GDC Group streamlines the entire process. We integrate architects, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into one cohesive team.",
@@ -2308,9 +2250,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Chartwell, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Chartwell, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Chartwell",
@@ -2320,7 +2262,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Retail Fitout Design",
             "Detailed Seismic Assessments (DSA)",
@@ -2339,16 +2280,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, retail shop fitouts, multi-unit townhouses, additions, commercial redesigns, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -2415,7 +2348,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Chartwell"
   },
   "te-rapa": {
     "id": "te-rapa",
@@ -2423,7 +2357,7 @@
     "title": "Architectural, Engineering & Planning Services in Te Rapa",
     "subtitle": "Your Complete Industrial & Commercial Development Partner in Te Rapa",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group delivers surveying, resource consent planning, structural, geotechnical, civil engineering, and architectural services under one roof in Hamilton for Te Rapa — from warehouse designs and commercial fitouts to seismic assessments, Three Waters, and project management.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Te Rapa, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group delivers end-to-end surveying, resource consent planning, structural, geotechnical, civil engineering, and architectural services under one roof in Hamilton for Te Rapa. Serving Hamilton's premier industrial, retail, and commercial employment district, our multidisciplinary consultancy handles everything from large-scale warehouse designs, portal frame structures, and commercial fitouts to detailed seismic assessments (DSA/IEP), geotechnical soil testing, Three Waters stormwater design, traffic impact reports, and project management.",
     "introduction": "Te Rapa stands as the powerhouse of Hamilton's economy—an extensive industrial and commercial sector home to massive retail precincts, modern business parks, logistics hubs, and manufacturing facilities. Whether you are constructing a high-span industrial warehouse, refurbishing a retail footprint near Te Awa @ The Base, or undertaking structural upgrades on commercial premises, navigating complex district plan requirements and managing separate technical contractors frequently leads to operational delays and budget overruns with the Hamilton City Council.",
     "locationDescription": "We eliminate project friction through an integrated model. We bring architectural designers, structural engineers, geotechnical specialists, civil engineering consultants, fire engineers, land surveyors, and planners together under one roof in Hamilton for Te Rapa.",
@@ -2584,9 +2518,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton for Te Rapa.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Hamilton for Te Rapa.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Te Rapa, Hamilton",
@@ -2596,7 +2530,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Warehouse & Portal Frame Design",
             "Detailed Seismic Assessments (DSA)",
@@ -2615,16 +2548,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Commercial office alterations, warehouse designs, shop fitouts, industrial building layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -2691,7 +2616,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Te Rapa"
   },
   "silverdale": {
     "id": "silverdale",
@@ -2699,7 +2625,7 @@
     "title": "Architectural, Engineering & Planning Services in Silverdale",
     "subtitle": "Our End-to-End Consultancy Services in Silverdale",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Silverdale — from house plans and infill subdivisions to geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Silverdale, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Silverdale. Serving this popular residential area close to the University of Waikato, local parks, and shopping hubs, our multidisciplinary team handles custom house plans, property extensions, infill subdivisions, geotechnical soil testing, Three Waters stormwater design, and council building consents.",
     "introduction": "Silverdale is a long-standing, vibrant Hamilton suburb located just minutes from the University of Waikato. Renowned for its quiet residential streets, convenient local shopping centres, and proximity to neighbourhood parks, Silverdale is a hotspot for homeowners looking to modernize existing properties, as well as investors seeking to add secondary dwellings or subdivide suburban lots for student and family living. When planning a home addition, new build, or section subdivision in Silverdale, managing multiple independent designers, soil technicians, structural engineers, and land planners can easily lead to communication breakdowns and costly delays with the Hamilton City Council.",
     "locationDescription": "GDC Group solves this challenge through full team integration. We combine architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners under one roof.",
@@ -2860,9 +2786,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Silverdale, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Silverdale, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Silverdale",
@@ -2872,9 +2798,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -2891,16 +2815,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, concept designs, home extensions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -2967,7 +2883,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Silverdale"
   },
   "pukete": {
     "id": "pukete",
@@ -2975,7 +2892,7 @@
     "title": "Architectural, Engineering & Planning Services in Pukete",
     "subtitle": "Your Complete Development & Engineering Partner in Pukete",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural, and planning under one roof in Hamilton for Pukete — from house plans and granny flats to subdivisions, geotechnical reports, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Pukete, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural, and planning under one roof in Hamilton for Pukete. Serving this popular northern riverside suburb celebrated for its family homes, picturesque parks, and direct access to Waikato River walking trails our multidisciplinary team manages everything from custom house plans and secondary dwellings (granny flats) to section subdivisions, geotechnical soil reports, Three Waters stormwater management, and council building consents.",
     "introduction": "Pukete is one of northern Hamilton's most sought-after residential communities, cherished for its scenic riverbank setting, family-focused neighbourhoods, expansive reserves, and seamless access to the Te Awa River Ride trail. Because of its quiet suburban lifestyle and convenient proximity to the northern commercial precincts, homeowners and property developers in Pukete are actively upgrading existing residences, constructing secondary dwellings (granny flats), and subdividing larger residential sections to accommodate modern infill living. However, coordinating independent draughtspeople, soil technicians, structural engineers, and planning consultants often leads to misaligned plans and expensive delays with the Hamilton City Council.",
     "locationDescription": "We eliminate project friction. We bring architectural designers, structural engineers, geotechnical specialists, civil engineers, fire engineers, land surveyors, and planners together under one roof in Hamilton for Pukete.",
@@ -3136,9 +3053,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hamilton for Pukete.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Hamilton for Pukete.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Pukete, Hamilton",
@@ -3148,9 +3065,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -3167,16 +3082,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Custom house plans, concept designs, home additions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -3243,7 +3150,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Pukete"
   },
   "melville": {
     "id": "melville",
@@ -3251,7 +3159,7 @@
     "title": "Architectural, Engineering & Planning Services in Melville",
     "subtitle": "Your Complete Development & Engineering Team in Melville",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Melville — from house plans and granny flats to subdivisions, geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Melville, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Melville. Servicing this growing southern residential suburb—home to local schools, sports parks, and community hubs near Waikato Hospital—our multidisciplinary team manages everything from custom house plans and granny flats to section subdivisions, geotechnical soil testing, Three Waters stormwater designs, and council building consents.",
     "introduction": "Melville is a thriving southern residential hub in Hamilton, appreciated for its family-friendly neighbourhoods, well-equipped sports grounds, local schools, and close proximity to key regional services like Waikato Hospital. Due to its location and generous lot sizes, Melville is seeing a surge in suburban renewal, including residential extensions, secondary dwellings (granny flats), and section subdivisions tailored to health sector workers and growing families. When embarking on a residential renovation, infill build, or commercial upgrade in Melville, coordinating separate architects, soil technicians, structural engineers, and planning consultants often leads to misaligned plans and expensive delays with the Hamilton City Council.",
     "locationDescription": "GDC Group streamlines the entire process. We combine architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into a single in-house team.",
@@ -3412,9 +3320,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Melville, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Melville, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Melville",
@@ -3424,9 +3332,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -3443,16 +3349,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, concept designs, home extensions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -3519,7 +3417,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Melville"
   },
   "hillcrest": {
     "id": "hillcrest",
@@ -3527,7 +3426,7 @@
     "title": "Architectural, Engineering & Planning Services in Hillcrest",
     "subtitle": "Your Go-To Development & Engineering Partner in Hillcrest",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hillcrest — from house plans and student accommodation to subdivisions, geotechnical reports, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Hillcrest, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Hillcrest. Servicing this bustling eastern suburb anchored by the University of Waikato and top local schools, our multidisciplinary team handles custom house plans, student accommodation designs, section subdivisions, geotechnical soil reports, Three Waters stormwater solutions, and council consent approvals.",
     "introduction": "Hillcrest is one of Hamilton's most active residential sectors, driven largely by the presence of the University of Waikato, prominent secondary colleges, and family-friendly neighbourhoods. With high demand for both multi-bedroom student rentals and modern family housing, property owners frequently look to optimize their land through urban infill, secondary dwellings (granny flats), and residential subdivisions. However, coordinating independent designers, structural engineers, soil testers, and planning consultants often leads to communication gaps, conflicting plans, and costly delays with the Hamilton City Council.",
     "locationDescription": "GDC Group eliminates multi-vendor hassle. We unite architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into a single in-house team.",
@@ -3688,9 +3587,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Hillcrest, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Hillcrest, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Hillcrest",
@@ -3700,7 +3599,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Student Accommodation Design",
             "Detailed Seismic Assessments (DSA)",
@@ -3719,16 +3617,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, student accommodation layouts, retail fitouts, duplexes/townhouses, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -3795,7 +3685,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Hillcrest"
   },
   "glenview": {
     "id": "glenview",
@@ -3803,7 +3694,7 @@
     "title": "Architectural, Engineering & Planning Services in Glenview",
     "subtitle": "Your Complete Development & Engineering Team in Glenview",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Glenview — from house plans and granny flats to subdivisions, geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Glenview, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Glenview. Serving this vibrant southern residential suburb known for its convenient shopping hubs, local parks, and direct access to major southern routes our multidisciplinary team handles everything from custom house plans and secondary dwellings (granny flats) to section subdivisions, geotechnical soil testing, Three Waters stormwater solutions, and council building consents.",
     "introduction": "Glenview is a favoured residential area in southern Hamilton, appreciated for its spacious family properties, local shopping centres, community parks, and strategic access to state highway routes leading south. Due to its prime position near major employment bases and healthcare facilities, homeowners and land developers in Glenview are actively upgrading existing housing stock, constructing secondary dwellings (granny flats), and subdividing suburban sections for modern infill living. However, coordinating independent architectural designers, land surveyors, structural engineers, and planning consultants often leads to misaligned plans and expensive delays with the Hamilton City Council.",
     "locationDescription": "GDC Group streamlines the entire project lifecycle. We integrate architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into a single in-house team.",
@@ -3964,9 +3855,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Glenview, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Glenview, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Glenview",
@@ -3976,9 +3867,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -3995,16 +3884,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, concept designs, home extensions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -4071,7 +3952,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Glenview"
   },
   "flagstaff": {
     "id": "flagstaff",
@@ -4079,7 +3961,7 @@
     "title": "Architectural, Engineering & Planning Services in Flagstaff",
     "subtitle": "Your All-in-One Development Partner in Flagstaff",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Flagstaff — from custom house designs and infill subdivisions to geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Flagstaff, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Flagstaff. Servicing this premier northern Hamilton suburb known for quality family homes, parklands, and river access, our team handles custom house designs, property extensions, infill subdivisions, geotechnical soil testing, Three Waters stormwater solutions, and council consent approvals.",
     "introduction": "Flagstaff is one of Hamilton's most sought-after northern suburbs, prized for its high-calibre family residences, excellent schooling, expansive parks, and direct access to the Waikato River trails. As property owners look to design custom residences, renovate existing homes, or maximise site value through residential section subdivisions, coordinating separate contractors often causes communication bottlenecks and unnecessary delays with the Hamilton City Council.",
     "locationDescription": "GDC Group streamlines your entire build journey. We bring architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners into a single integrated team.",
@@ -4240,9 +4122,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Flagstaff, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Flagstaff, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Flagstaff",
@@ -4252,9 +4134,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "Custom House Plans",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -4271,16 +4151,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "Custom house plans, concept designs, home extensions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -4347,7 +4219,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Flagstaff"
   },
   "enderley": {
     "id": "enderley",
@@ -4355,7 +4228,7 @@
     "title": "Architectural, Engineering & Planning Services in Enderley",
     "subtitle": "Your All-in-One Development & Engineering Partner in Enderley",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Enderley — from house plans and home extensions to subdivisions, geotechnical reports, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Enderley, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Enderley. Servicing this established residential suburb close to local schools, parks, and community centres, our team manages everything from house plans, home extensions, and section subdivisions to geotechnical soil reports, Three Waters stormwater solutions, traffic assessments, and building consent approvals.",
     "introduction": "Enderley is an established Hamilton suburb experiencing steady residential updates, housing modernisations, and urban infill projects. Conveniently positioned near key community facilities, schools, and local transport routes, Enderley presents strong opportunities for homeowners and developers looking to add value to existing sections. When planning a build or section subdivision in Enderley, coordinating separate designers, structural engineers, geotechnical consultants, and land planners often creates communication barriers and unexpected council delays.",
     "locationDescription": "GDC Group eliminates the stress of multi-consultant management. We combine architectural designers, structural engineers, geotechnical specialists, civil engineers, fire engineering experts, and land planners into one unified team.",
@@ -4516,9 +4389,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Enderley, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Enderley, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Enderley",
@@ -4528,9 +4401,7 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
-            "House Plans and Extensions",
             "Detailed Seismic Assessments (DSA)",
             "IEP/ISA Seismic Reports",
             "Geotechnical Engineering",
@@ -4547,16 +4418,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, concept designs, home extensions, granny flats, multi-unit layouts, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -4623,7 +4486,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Enderley"
   },
   "claudelands": {
     "id": "claudelands",
@@ -4631,7 +4495,7 @@
     "title": "Architectural, Engineering & Planning Services in Claudelands",
     "subtitle": "Your All-in-One Development & Engineering Partner in Claudelands",
     "locationImage": "/images/locations/hamilton.jpg",
-    "metaDescription": "GDC Group offers full-service structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Claudelands — from character renovations and heritage alterations to subdivisions, geotechnical testing, Three Waters, and building consents.",
+    "metaDescription": "GDC Group provides structural, geotechnical, civil and planning engineering in Claudelands, Hamilton, from seismic assessments to Three Waters and consents.",
     "description": "GDC Group offers full-service in-house structural, civil, geotechnical, architectural and planning under one roof in Hamilton for Claudelands. Servicing this sought-after suburb close to Hamilton CBD—home to the Claudelands Event Centre, lush public parks, and character residences—our multidisciplinary team manages everything from custom house plans, heritage alterations, and section subdivisions to geotechnical soil testing, Three Waters stormwater design, traffic reports, and council building consents.",
     "introduction": "Claudelands is a unique and bustling Hamilton suburb positioned right on the edge of the central city. Known for its rich character homes, leafy green spaces, and the iconic Claudelands Events Centre, the area experiences high demand for character renovations, modern urban infill housing, and commercial fitouts catering to local visitors and event traffic. Whether you're planning a sympathetic home extension, subdividing a residential section, or upgrading a local commercial venue, managing separate architects, engineers, and land planners frequently leads to miscommunications, budget bloat, and frustrating delays with the Hamilton City Council.",
     "locationDescription": "GDC Group takes a unified approach. We bring architectural designers, structural engineers, geotechnical experts, civil consultants, fire engineers, and land planners together within a single team.",
@@ -4792,9 +4656,9 @@
           "@type": "ProfessionalService",
           "@id": "https://gdcgroup.co.nz/#organization",
           "name": "GDC Group",
-          "url": "https://gdcgroup.co.nz/",
+          "url": "https://gdcgroup.co.nz",
           "logo": "https://gdcgroup.co.nz/images/gdc-group-logo.png",
-          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering, and architectural services under one roof in Claudelands, Hamilton, NZ.",
+          "description": "Multi-disciplinary consultancy offering surveying, resource consent planning, geotechnical, structural, civil, fire engineering services under one roof in Claudelands, Hamilton, NZ.",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Claudelands",
@@ -4804,7 +4668,6 @@
             }
           },
           "knowsAbout": [
-            "Architectural Services",
             "Building Consent Applications",
             "Heritage Building Renovations",
             "Detailed Seismic Assessments (DSA)",
@@ -4823,16 +4686,8 @@
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Architectural, Engineering & Planning Services",
+            "name": "Engineering & Planning Services",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Architectural Services & Building Consents",
-                  "description": "House plans, character home alterations, retail fitouts, duplexes/townhouses, and building consent applications."
-                }
-              },
               {
                 "@type": "Offer",
                 "itemOffered": {
@@ -4899,7 +4754,8 @@
           ]
         }
       ]
-    }
+    },
+    "metaTitle": "Engineering & Planning Services in Claudelands"
   },
   "rotorua-office": {
     "id": "rotorua-office",
@@ -5031,7 +4887,9 @@
     "additionalLinks": {
       "portfolio": "View Our Bay of Plenty Projects",
       "team": "Meet Our Rotorua Team"
-    }
+    },
+    "metaTitle": "Engineering Services in Rotorua & Bay of Plenty",
+    "metaDescription": "GDC Group's Rotorua office provides structural, geotechnical, civil, seismic and planning engineering to clients across Rotorua and the Bay of Plenty."
   },
   "thames-office": {
     "id": "thames-office",
@@ -5215,7 +5073,9 @@
     "additionalLinks": {
       "portfolio": "View Our Coromandel Projects",
       "team": "Meet Our Thames Team"
-    }
+    },
+    "metaTitle": "Engineering Services in Thames & Coromandel Peninsula",
+    "metaDescription": "GDC Group's Thames office provides structural, geotechnical, civil, seismic and planning engineering to clients across Thames and the Coromandel Peninsula."
   },
   "wellington-office": {
     "id": "wellington-office",
@@ -5358,7 +5218,9 @@
       "email": "wellington@gdcgroup.co.nz",
       "phone": "+64 4 282 0405",
       "ctaText": "Get Started with Your Wellington Project"
-    }
+    },
+    "metaTitle": "Engineering Services in Wellington",
+    "metaDescription": "GDC Group's Wellington office provides structural, geotechnical, civil, seismic and planning engineering to clients across Wellington."
   },
   "napier-office": {
     "id": "napier-office",
@@ -5533,6 +5395,8 @@
     "additionalLinks": {
       "portfolio": "View Our Hawke's Bay Projects",
       "team": "Meet Our Napier Team"
-    }
+    },
+    "metaTitle": "Engineering Services in Napier & Hawke's Bay",
+    "metaDescription": "GDC Group's Napier office provides structural, geotechnical, civil, seismic and planning engineering to clients across Napier and Hawke's Bay."
   }
 }

@@ -2,7 +2,7 @@ const services = {
   "3-waters": {
     metaTitle: "Three Waters Engineering | GDC Group",
     metaDescription:
-      "GDC Group provides practical, sustainable and cost-effective engineering solutions for New Zealand's stormwater, wastewater and water supply infrastructure, plus contaminated land assessment and remediation.",
+      "GDC Group delivers practical, sustainable stormwater, wastewater and water supply engineering across New Zealand, including contaminated land assessment.",
     title: "Three Waters Engineering",
     image: "/images/services/1/3 Waters and Contamination 2.webp",
     modern: {
@@ -325,7 +325,7 @@ const services = {
   "electrical-engineering": {
     metaTitle: "Electrical Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group provides electrical engineering solutions that combine technical expertise, practical design and a strong understanding of how buildings, infrastructure and industrial facilities operate.",
+      "GDC Group provides electrical engineering for buildings, infrastructure and industrial facilities, combining technical expertise with practical design.",
     title: "Electrical Engineering",
     image: "/images/services/2/Electrical Engineering 1.webp",
     modern: {
@@ -510,7 +510,7 @@ const services = {
   "construction-management": {
     metaTitle: "Construction Management Services | GDC Group",
     metaDescription:
-      "GDC Group's construction management services bring together project planning, technical expertise, contractor coordination and construction oversight to help deliver projects safely, efficiently and to the required standard.",
+      "GDC Group's construction management services combine project planning, contractor coordination and site oversight to deliver projects safely.",
     title: "Construction Management",
     image: "/images/services/9/Construction Management 1.webp",
     modern: {
@@ -776,7 +776,7 @@ const services = {
   "geotechnical-engineering": {
     metaTitle: "Geotechnical Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group's geotechnical engineering services help clients understand ground conditions, manage geotechnical risks and make informed decisions throughout the life of a project.",
+      "GDC Group's geotechnical engineering services help clients understand ground conditions and manage geotechnical risk throughout the life of a project.",
     title: "Geotechnical Engineering",
     image: "/images/services/3/Geotechnical Engineering 1.webp",
     modern: {
@@ -927,7 +927,7 @@ const services = {
   infrastructure: {
     metaTitle: "Infrastructure & Subdivision Engineering | GDC Group",
     metaDescription:
-      "GDC Group provides integrated infrastructure and subdivision engineering services for residential, commercial, industrial and mixed-use developments across New Zealand, from feasibility through to completion.",
+      "GDC Group provides infrastructure and subdivision engineering for residential, commercial and industrial developments, from feasibility to completion.",
     title: "Infrastructure & Subdivision Engineering",
     image: "/images/services/10/Infrastructure and Subdivision Engineering 1.webp",
     modern: {
@@ -1302,7 +1302,7 @@ const services = {
   "transport-engineering": {
     metaTitle: "Civil Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group provides transport engineering solutions that support the safe, efficient and sustainable movement of people and goods across New Zealand, from local roads and subdivision access to larger infrastructure projects.",
+      "GDC Group provides civil and transport engineering for safe, efficient roads and infrastructure across New Zealand, from subdivision access to major projects.",
     title: "Civil Engineering",
     image: "/images/services/11/Roading 2.webp",
     modern: {
@@ -1480,7 +1480,7 @@ const services = {
   "seismic-engineering": {
     metaTitle: "Seismic Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group provides specialist seismic engineering services for new and existing buildings, from initial seismic assessments through to strengthening design and construction support.",
+      "GDC Group provides specialist seismic engineering for new and existing buildings, from initial seismic assessments to strengthening design.",
     title: "Seismic Engineering",
     image: "/images/services/5/Seismic Engineering 2.webp",
     modern: {
@@ -1675,7 +1675,7 @@ const services = {
   "fire-engineering": {
     metaTitle: "Fire Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group provides practical fire engineering solutions that help protect people, property and building assets while supporting efficient, compliant and buildable design.",
+      "GDC Group provides practical fire engineering solutions that protect people, property and building assets while supporting compliant, buildable design.",
     title: "Fire Engineering",
     image: "/images/services/12/Structural Engineering 3.webp",
     modern: {
@@ -1979,7 +1979,7 @@ const services = {
   "structural-engineering": {
     metaTitle: "Structural Engineering Services | GDC Group",
     metaDescription:
-      "GDC Group provides structural engineering solutions that combine technical expertise, practical design and a strong understanding of construction, from residential buildings to complex industrial and infrastructure projects.",
+      "GDC Group provides structural engineering for projects from residential buildings to complex industrial and infrastructure works.",
     title: "Structural Engineering",
     image: "/images/services/12/Structural Engineering 1.webp",
     modern: {
@@ -2138,7 +2138,7 @@ const services = {
   planning: {
     metaTitle: "Resource & Building Consents | GDC Group",
     metaDescription:
-      "GDC Group helps clients navigate the resource and building consent process with practical planning, engineering and design expertise, from initial feasibility through to lodgement and approval.",
+      "GDC Group helps clients navigate resource and building consents with practical planning and engineering expertise, from feasibility to approval.",
     title: "Resource & Building Consents",
     image: "/images/services/pexels-alena-darmel-7642124-scaled.webp",
     modern: {
@@ -2306,7 +2306,7 @@ const services = {
   surveying: {
     metaTitle: "Surveying Services | GDC Group",
     metaDescription:
-      "GDC Group's surveying services provide the reliable spatial information and technical expertise needed to support property, subdivision, infrastructure and construction projects.",
+      "GDC Group's surveying services provide reliable spatial information to support property, subdivision, infrastructure and construction projects.",
     title: "Surveying",
     image: "/images/services/13/Surveying 2.webp",
     modern: {

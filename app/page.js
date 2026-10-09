@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL } from "@/lib/siteConfig";
+import { SITE_URL } from "@/lib/siteConfig";
 import Hero from "@/components/home/Hero";
 import CardsSection from "@/components/home/CardsSection";
 import ServicesSection from "@/components/home/ServicesSectionHome";
@@ -9,25 +9,37 @@ import "../app/globals.css";
 export const generateMetadata = async () => {
   return {
     metadataBase: new URL(SITE_URL),
-    title: "GDC Group | Engineering Consultants",
+    title: "GDC Group | Infrastructure & Engineering Consultants",
     description:
-      "GDC Group provides innovative solutions and expert guidance in architectural and engineering design. Serving New Zealand with a commitment to excellence.",
+      "GDC Group provides structural, geotechnical, civil, seismic, fire and infrastructure engineering consultancy across New Zealand. We deliver together.",
     keywords:
-      "engineering consultants, architectural design, New Zealand engineering, GDC Group, structural engineering, building design",
+      "GDC Group, engineering consultants, infrastructure engineering, structural engineering, geotechnical engineering, civil engineering, seismic engineering, fire engineering, New Zealand",
     openGraph: {
-      title: "GDC Group | Engineering Consultants",
+      title: "GDC Group | Infrastructure & Engineering Consultants",
       description:
-        "Leading engineering and architectural design consultancy in New Zealand",
+        "GDC Group provides structural, geotechnical, civil, seismic, fire and infrastructure engineering consultancy across New Zealand. We deliver together.",
       type: "website",
       url: "https://gdcgroup.co.nz",
-      siteName: SITE_NAME,
+      siteName: "GDC Group",
       locale: "en_NZ",
       images: [
         {
           url: "/images/gdc-og-image.jpg", // Replace with your actual OG image path
           width: 1200,
           height: 630,
-          alt: "GDC Group Engineering Solutions",
+          alt: "GDC Group – Infrastructure & Engineering Consultants",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "GDC Group | Infrastructure & Engineering Consultants",
+      description:
+        "GDC Group provides structural, geotechnical, civil, seismic, fire and infrastructure engineering consultancy across New Zealand. We deliver together.",
+      images: [
+        {
+          url: "/images/gdc-og-image.jpg",
+          alt: "GDC Group – Infrastructure & Engineering Consultants",
         },
       ],
     },

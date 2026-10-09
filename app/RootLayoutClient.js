@@ -11,6 +11,14 @@ import ClarityScript from "@/components/ClarityScript";
 import CookieConsent from "@/components/cookie/CookieConsent";
 import "@/app/globals.css";
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "GDC Group",
+  alternateName: "GDC Consultants",
+  url: "https://gdcgroup.co.nz",
+};
+
 export default function RootLayoutClient({ children }) {
   const pathname = usePathname();
   const isEngineeringServicesPage = pathname === "/engineering-services";
@@ -60,6 +68,10 @@ export default function RootLayoutClient({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

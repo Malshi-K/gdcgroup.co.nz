@@ -33,7 +33,7 @@ export async function generateMetadata(props) {
   if (!serviceData) {
     return {
       metadataBase: new URL(SITE_URL),
-      title: 'Service Not Found',
+      title: 'Service Not Found | GDC Group',
       description: 'The requested service could not be found.'
     };
   }

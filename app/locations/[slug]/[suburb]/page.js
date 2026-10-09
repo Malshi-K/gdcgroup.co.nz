@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   if (!suburbExistsUnderParent(slug, suburb)) {
     return {
       metadataBase: new URL(SITE_URL),
-      title: 'Location Not Found - GDC Group',
+      title: 'Location Not Found | GDC Group',
     };
   }
 
@@ -27,9 +27,9 @@ export async function generateMetadata({ params }) {
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: `${locationData.title} - GDC Group`,
+    title: `${locationData.metaTitle || locationData.title} | GDC Group`,
     description: locationData.metaDescription || locationData.description,
-    keywords: `engineering, architectural services, ${locationData.title || suburb}, GDC Group`,
+    keywords: `engineering, planning, ${locationData.metaTitle || locationData.title || suburb}, GDC Group`,
     alternates: {
       canonical: `https://gdcgroup.co.nz/locations/${slug}/${suburb}`,
     },
