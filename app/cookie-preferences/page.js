@@ -7,9 +7,9 @@ import CookiePreferencesClient from '@/components/cookie/CookiePreferencesClient
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Cookie Preferences | GDC Group",
-  description: "Manage your cookie preferences for GDC Group website",
+  description: "Manage your cookie preferences for the GDC Group website, including analytics and marketing cookies, and update your consent at any time.",
   keywords:
-    "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
+    "GDC Group cookie preferences, cookie consent, analytics cookies, marketing cookies, New Zealand engineering consultants",
   
   robots: {
     index: true,

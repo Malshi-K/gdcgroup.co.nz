@@ -21,7 +21,7 @@ export const metadata = {
   description:
     "Learn how GDC Group collects, uses, and protects your personal information. Read our full privacy policy to understand your data rights and security.",
   keywords:
-    "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
+    "GDC Group privacy policy, personal information, data protection, privacy rights, New Zealand engineering consultants",
   
   robots: {
     index: true,

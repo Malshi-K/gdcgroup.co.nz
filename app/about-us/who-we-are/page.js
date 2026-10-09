@@ -8,14 +8,14 @@ import "@/app/globals.css";
 export const generateMetadata = async () => {
   return {
     metadataBase: new URL(SITE_URL),
-    title: "GDC Group - Development Engineering Excellence",
+    title: "Development Engineering Excellence | GDC Group",
     description:
-      "Discover expert Development Engineering Consultants dedicated to delivering innovative solutions. Our team ensures quality and efficiency in every project across New Zealand.",
+      "Meet the engineering consultants at GDC Group, dedicated to delivering innovative, quality solutions and efficient outcomes on every project across New Zealand.",
     keywords:
       "GDC Group, development engineering, New Zealand engineers, engineering consultancy, professional engineers, engineering expertise, engineering solutions",
     openGraph: {
       title:
-        "GDC Group - Development Engineering Excellence",
+        "Development Engineering Excellence | GDC Group",
       description:
         "Leading engineering consultancy delivering innovative solutions across New Zealand. Meet our expert team and discover our values.",
       type: "website",

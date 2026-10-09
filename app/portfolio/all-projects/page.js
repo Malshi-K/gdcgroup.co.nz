@@ -10,13 +10,13 @@ export const generateMetadata = async () => {
     metadataBase: new URL(SITE_URL),
     title: "Engineering Projects | GDC Group",
     description:
-      "Discover cutting-edge engineering solutions with GDC Group. Our innovative projects and expert consultancy services drive success in every endeavor.",
+      "Explore engineering projects delivered by GDC Group across New Zealand, from heritage buildings to educational and medical facilities.",
     keywords:
-      "engineering projects, GDC Group, architectural projects, New Zealand construction, engineering solutions, heritage buildings, educational facilities, medical facilities",
+      "engineering projects, GDC Group, New Zealand construction, engineering solutions, heritage buildings, educational facilities, medical facilities",
     openGraph: {
       title: "Engineering Projects | GDC Group",
       description:
-        "Explore our portfolio of cutting-edge engineering and architectural projects across New Zealand.",
+        "Explore our portfolio of engineering projects delivered across New Zealand.",
       type: "website",
       url: "https://gdcgroup.co.nz/portfolio/all-projects",
       siteName: SITE_NAME,

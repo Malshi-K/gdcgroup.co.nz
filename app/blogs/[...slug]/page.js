@@ -20,7 +20,7 @@ const specificMetaTags = {
     twitterImage: "/images/rojesh-koshy-day-life-twitter.jpg",
   },
   "meet-the-team-maurice-bellantoni-architectural-designer": {
-    title: "Meet Maurice Bellantoni – Architectural Designer | GDC NZ",
+    title: "Meet Maurice Bellantoni – Architectural Designer | GDC Group",
     description: "Get to know Maurice Bellantoni, an experienced Architectural Designer at GDC Group. Discover his design approach and passion for innovative architecture.",
     imageAlt: "Portrait of Maurice Bellantoni, Architectural Designer at GDC Group.",
     ogImage: "/images/maurice-bellantoni-profile-og.jpg",
@@ -107,7 +107,7 @@ export async function generateMetadata({ params }) {
   if (!data?.blog) {
     return {
       metadataBase: new URL(SITE_URL),
-      title: "Blog Not Found",
+      title: "Blog Not Found | GDC Group",
     };
   }
 
@@ -179,15 +179,15 @@ export async function generateMetadata({ params }) {
   // Default meta tags for other blog posts
   return {
     metadataBase: new URL(SITE_URL),
-    title: data.blog.name,
+    title: `${data.blog.name} | GDC Group`,
     description:
       data.blog.metaDescription ||
-      "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
+      "Read the latest blog post from GDC Group about engineering, infrastructure and project management.",
     
     // Default Open Graph tags
     openGraph: {
-      title: data.blog.name,
-      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
+      title: `${data.blog.name} | GDC Group`,
+      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about engineering, infrastructure and project management.",
       url: `https://gdcgroup.co.nz/blogs/${slug}`,
       siteName: SITE_NAME,
       type: "article",
@@ -205,8 +205,8 @@ export async function generateMetadata({ params }) {
     // Default Twitter Card tags
     twitter: {
       card: "summary_large_image",
-      title: data.blog.name,
-      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about architecture, engineering, and project management.",
+      title: `${data.blog.name} | GDC Group`,
+      description: data.blog.metaDescription || "Read the latest blog post from GDC Group about engineering, infrastructure and project management.",
       images: data.blog.featuredImage ? [data.blog.featuredImage] : [],
       creator: "@gdcnz",
       site: "@gdcnz",

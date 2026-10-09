@@ -22,15 +22,15 @@ export async function generateMetadata({ params }) {
   if (!locationData) {
     return {
       metadataBase: new URL(SITE_URL),
-      title: 'Location Not Found - GDC Group',
+      title: 'Location Not Found | GDC Group',
     };
   }
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: `${locationData.title} - GDC Group`,
-    description: locationData.description,
-    keywords: `engineering, architectural services, ${slug}, GDC Group`,
+    title: `${locationData.metaTitle || locationData.title} | GDC Group`,
+    description: locationData.metaDescription || locationData.description,
+    keywords: `engineering, planning, ${slug}, GDC Group`,
     alternates: {
       canonical: `https://gdcgroup.co.nz/locations/${slug}`,
     },

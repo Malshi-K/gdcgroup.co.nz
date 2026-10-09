@@ -9,15 +9,15 @@ import CareerFormEmbed from "@/components/about/CareerFormEmbed";
 export const generateMetadata = async () => {
   return {
     metadataBase: new URL(SITE_URL),
-    title: "Careers at GDC Group | Join Our Engineering Team",
+    title: "Join Our Engineering Team | GDC Group",
     description:
-      "Explore exciting career opportunities at GDC Group. Join our team of professionals in architecture, engineering, and project management across New Zealand.",
+      "Explore career opportunities at GDC Group. Join our team of engineers and project management professionals across New Zealand.",
     keywords:
-      "GDC careers, engineering jobs, architectural jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
+      "GDC careers, engineering jobs, New Zealand engineering careers, project management jobs, engineering consultant positions",
     openGraph: {
-      title: "Careers at GDC Group | Join Our Engineering Team",
+      title: "Join Our Engineering Team | GDC Group",
       description:
-        "Join our team of innovative engineers and architects at GDC Group. Discover exciting career opportunities across New Zealand.",
+        "Join our team of innovative engineers at GDC Group. Discover career opportunities across New Zealand.",
       type: "website",
       url: "https://gdcgroup.co.nz/about-us/careers",
       siteName: SITE_NAME,

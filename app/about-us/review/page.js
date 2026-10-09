@@ -7,15 +7,15 @@ import "@/app/globals.css";
 export const generateMetadata = async () => {
   return {
     metadataBase: new URL(SITE_URL),
-    title: "Share Your Experience | GDC Group Review",
+    title: "Share Your Experience | GDC Group",
     description:
-      "Share your experience with GDC Group. We value your feedback to help us improve our services in architecture, engineering, and project management across New Zealand.",
+      "Share your experience with GDC Group. We value your feedback to help us improve our engineering and project management services across New Zealand.",
     keywords:
-      "GDC reviews, engineering consultant reviews, client feedback, architecture reviews, New Zealand engineering services, project management feedback",
+      "GDC reviews, engineering consultant reviews, client feedback, New Zealand engineering services, project management feedback",
     openGraph: {
-      title: "Share Your Experience | GDC Group Review",
+      title: "Share Your Experience | GDC Group",
       description:
-        "Help us improve our engineering and architectural services by sharing your valuable feedback.",
+        "Help us improve our engineering services by sharing your valuable feedback with GDC Group.",
       type: "website",
       url: "https://gdcgroup.co.nz/about-us/review",
       siteName: SITE_NAME,
