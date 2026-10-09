@@ -8,7 +8,7 @@ const officeLocations = [
     email: "hamilton@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
     mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.0480253585765!2d175.22814517529756!3d-37.74201752994008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d231d7dddfbe9%3A0xd8873cbdb5f08674!2s89%20Church%20Road%2C%20Pukete%2C%20Hamilton%203200%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1726210526023!5m2!1sen!2slk",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.604674139115!2d175.1219604828417!3d-37.39918033845772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d456d4e7aea19%3A0x8c664b36058d54e!2s29%20Orchard%20Road%2C%20Te%20Kauwhata%203782%2C%20New%20Zealand!5e0!3m2!1sen!2slk!4v1791509894880!5m2!1sen!2slk",
     qrCodeSrc: "/images/qr-code/Hamilton-QR.webp",
   },
   {
