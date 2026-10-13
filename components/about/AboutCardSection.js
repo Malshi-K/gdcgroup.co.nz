@@ -99,7 +99,7 @@ const AboutCardSection = () => {
           </div>
           <div className="hero-fade relative h-64 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[58%]">
             <Image
-              src="/images/about/who-we-are.jfif"
+              src="/images/about/who-we-are.png"
               alt="GDC Group engineering and architectural design"
               fill
               priority
