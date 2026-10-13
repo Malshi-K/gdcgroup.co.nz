@@ -18,7 +18,7 @@ const contactDetails = [
     id: 2,
     title: "OFFICE",
     description: "Come say hello at our office HQ.",
-    contactInfo: "29 Orchard Te Kauwhata",
+    contactInfo: "29 Orchard Road, Te Kauwhata",
     link: "https://www.google.com/maps?q=89+Church+Road,+Pukete,+Hamilton+3200",
     icon: <MapPinIcon/>, 
   },

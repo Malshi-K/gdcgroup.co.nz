@@ -4,7 +4,7 @@ const officeLocations = [
   {
     id: 1,
     name: "Hamilton (Head Office)",
-    address: "29 Orchard Te Kauwhata",
+    address: "29 Orchard Road, Te Kauwhata",
     email: "hamilton@gdcgroup.co.nz",
     phone: "+64 7 838 0090",
     mapSrc:
