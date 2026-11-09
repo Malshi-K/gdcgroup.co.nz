@@ -12,6 +12,7 @@ const ContactSection = () => {
     lastname: "",
     phone: "",
     email: "",
+    property_address: "",
     message: "",
   });
 
@@ -45,7 +46,7 @@ const ContactSection = () => {
     e.preventDefault();
     setError("");
 
-    const { firstname, lastname, phone, email, message } = formData;
+    const { firstname, lastname, phone, email, property_address, message } = formData;
 
     try {
       const hubspotPortalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
@@ -62,6 +63,7 @@ const ContactSection = () => {
           { name: "lastname", value: lastname },
           { name: "phone", value: phone },
           { name: "email", value: email },
+          { name: "property_address", value: property_address },
           { name: "message", value: message },
         ],
         context: {
@@ -178,6 +180,10 @@ const ContactSection = () => {
           <div className="mb-4">
             <label className="block text-sm font-medium text-dark">Email</label>
             <input type="email" name="email" placeholder="Email" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.email} onChange={handleChange} required />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-dark">Property Address</label>
+            <input type="text" name="property_address" placeholder="Property Address" className="mt-1 block w-full p-2 border border-light rounded-md" value={formData.property_address} onChange={handleChange} required />
           </div>
           <div className="mb-4">
             <label className="block text-sm font-medium text-dark">Message</label>
