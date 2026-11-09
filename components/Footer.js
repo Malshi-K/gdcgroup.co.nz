@@ -210,7 +210,7 @@ export default function Footer() {
           <span className="tracking-wide">
             © {currentYear}{" "}
             <a
-              href="https://www.gdcdigital.net/"
+              href="https://www.gdcdigital.co.nz/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-blue hover:text-white"
